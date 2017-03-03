@@ -1,0 +1,98 @@
+\hypertarget{class_text_test_result}{\section{Text\-Test\-Result Class Reference}
+\label{class_text_test_result}\index{Text\-Test\-Result@{Text\-Test\-Result}}
+}
+
+
+Holds printable test result (D\-E\-P\-R\-E\-C\-A\-T\-E\-D).
+
+deprecated Use class \hyperlink{class_text_test_progress_listener}{Text\-Test\-Progress\-Listener} and \hyperlink{class_text_outputter}{Text\-Outputter} instead.  
+
+
+
+
+{\ttfamily \#include $<$Text\-Test\-Result.\-h$>$}
+
+Inheritance diagram for Text\-Test\-Result\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_text_test_result}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_text_test_result_a7496d86526a7d21286aeecdcf6cf2458}{Text\-Test\-Result} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}{add\-Failure} (const \hyperlink{class_test_failure}{Test\-Failure} \&failure)
+\begin{DoxyCompactList}\small\item\em Called when a failure occurs while running a test. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}{start\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Informs \hyperlink{class_test_listener}{Test\-Listener} that a test will be started. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_result_a35fdfec0767de9f4c4fa0e319dfedb3b}{print} (\hyperlink{_stream_8h_a80291a4e32881b445c8d4f839a9dd979}{O\-Stream} \&\hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Holds printable test result (D\-E\-P\-R\-E\-C\-A\-T\-E\-D).
+
+deprecated Use class \hyperlink{class_text_test_progress_listener}{Text\-Test\-Progress\-Listener} and \hyperlink{class_text_outputter}{Text\-Outputter} instead. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_text_test_result_a7496d86526a7d21286aeecdcf6cf2458}{\index{Text\-Test\-Result@{Text\-Test\-Result}!Text\-Test\-Result@{Text\-Test\-Result}}
+\index{Text\-Test\-Result@{Text\-Test\-Result}!TextTestResult@{Text\-Test\-Result}}
+\subsubsection[{Text\-Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}Text\-Test\-Result\-::\-Text\-Test\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_result_a7496d86526a7d21286aeecdcf6cf2458}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}{\index{Text\-Test\-Result@{Text\-Test\-Result}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!TextTestResult@{Text\-Test\-Result}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Test\-Result\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Failure} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}
+
+
+Called when a failure occurs while running a test. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+{\itshape failure} is a temporary object that is destroyed after the method call. Use \hyperlink{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}{Test\-Failure\-::clone()} to create a duplicate. 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}{Test\-Result\-Collector}.
+
+\hypertarget{class_text_test_result_a35fdfec0767de9f4c4fa0e319dfedb3b}{\index{Text\-Test\-Result@{Text\-Test\-Result}!print@{print}}
+\index{print@{print}!TextTestResult@{Text\-Test\-Result}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Test\-Result\-::print (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_test_result_a35fdfec0767de9f4c4fa0e319dfedb3b}
+\hypertarget{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}{\index{Text\-Test\-Result@{Text\-Test\-Result}!start\-Test@{start\-Test}}
+\index{start\-Test@{start\-Test}!TextTestResult@{Text\-Test\-Result}}
+\subsubsection[{start\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Test\-Result\-::start\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}
+
+
+Informs \hyperlink{class_test_listener}{Test\-Listener} that a test will be started. 
+
+
+
+Reimplemented from \hyperlink{class_test_result_a4acd959411284f57a26eefe4c79c30d3}{Test\-Result}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_text_test_result_8h}{Text\-Test\-Result.\-h}\end{DoxyCompactItemize}

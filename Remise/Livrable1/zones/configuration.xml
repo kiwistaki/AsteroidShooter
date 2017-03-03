@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<configuration>
+    <CScene CALCULS_PAR_IMAGE="50" />
+</configuration>

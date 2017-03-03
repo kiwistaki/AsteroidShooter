@@ -1,0 +1,66 @@
+\hypertarget{class_text_test_result}{\section{Text\-Test\-Result Class Reference}
+\label{class_text_test_result}\index{Text\-Test\-Result@{Text\-Test\-Result}}
+}
+
+
+Holds printable test result (D\-E\-P\-R\-E\-C\-A\-T\-E\-D).
+
+deprecated Use class \hyperlink{class_text_test_progress_listener}{Text\-Test\-Progress\-Listener} and \hyperlink{class_text_outputter}{Text\-Outputter} instead.  
+
+
+
+
+{\ttfamily \#include $<$Text\-Test\-Result.\-h$>$}
+
+Inheritance diagram for Text\-Test\-Result\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_text_test_result}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}{add\-Failure} (const \hyperlink{class_test_failure}{Test\-Failure} \&failure)
+\begin{DoxyCompactList}\small\item\em Called when a failure occurs while running a test. \end{DoxyCompactList}\item 
+\hypertarget{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}{virtual void \hyperlink{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}{start\-Test} (\hyperlink{class_test}{Test} $\ast$test)}\label{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}
+
+\begin{DoxyCompactList}\small\item\em Informs \hyperlink{class_test_listener}{Test\-Listener} that a test will be started. \end{DoxyCompactList}\item 
+\hypertarget{class_text_test_result_a35fdfec0767de9f4c4fa0e319dfedb3b}{virtual void {\bfseries print} (O\-Stream \&stream)}\label{class_text_test_result_a35fdfec0767de9f4c4fa0e319dfedb3b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Holds printable test result (D\-E\-P\-R\-E\-C\-A\-T\-E\-D).
+
+deprecated Use class \hyperlink{class_text_test_progress_listener}{Text\-Test\-Progress\-Listener} and \hyperlink{class_text_outputter}{Text\-Outputter} instead. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}{\index{Text\-Test\-Result@{Text\-Test\-Result}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!TextTestResult@{Text\-Test\-Result}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Text\-Test\-Result\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Failure} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}
+
+
+Called when a failure occurs while running a test. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+{\itshape failure} is a temporary object that is destroyed after the method call. Use Test\-Failure\-::clone() to create a duplicate. 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}{Test\-Result\-Collector}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Text\-Test\-Result.\-h\end{DoxyCompactItemize}

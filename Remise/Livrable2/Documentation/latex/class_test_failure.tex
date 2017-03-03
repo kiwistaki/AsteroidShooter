@@ -1,0 +1,130 @@
+\hypertarget{class_test_failure}{\section{Test\-Failure Class Reference}
+\label{class_test_failure}\index{Test\-Failure@{Test\-Failure}}
+}
+
+
+Record of a failed \hyperlink{class_test}{Test} execution.
+
+A \hyperlink{class_test_failure}{Test\-Failure} collects a failed test together with the caught exception.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Failure.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_failure_a0ecf7ad4ab673974d30d10ffb2b01790}{Test\-Failure} (\hyperlink{class_test}{Test} $\ast$\hyperlink{class_test_failure_a35aa1b953feff8635c832a53d3c6946d}{failed\-Test}, \hyperlink{class_exception}{Exception} $\ast$\hyperlink{class_test_failure_a8e60e0c1ea068bef6c546d20d8260400}{thrown\-Exception}, bool \hyperlink{class_test_failure_a23b25cf3452b3ab7dc84c70664f13ff0}{is\-Error})
+\item 
+virtual \hyperlink{class_test_failure_a000c058419a8177d64d1019c6c2f624d}{$\sim$\-Test\-Failure} ()
+\item 
+virtual \hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_failure_a35aa1b953feff8635c832a53d3c6946d}{failed\-Test} () const 
+\item 
+virtual \hyperlink{class_exception}{Exception} $\ast$ \hyperlink{class_test_failure_a8e60e0c1ea068bef6c546d20d8260400}{thrown\-Exception} () const 
+\item 
+virtual \hyperlink{class_source_line}{Source\-Line} \hyperlink{class_test_failure_aa3c6a076dca224d7e440212cfd127305}{source\-Line} () const 
+\item 
+virtual bool \hyperlink{class_test_failure_a23b25cf3452b3ab7dc84c70664f13ff0}{is\-Error} () const 
+\item 
+virtual \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_failure_aca471a29c01d3c5e4d439aadbb1825bf}{failed\-Test\-Name} () const 
+\item 
+virtual \hyperlink{class_test_failure}{Test\-Failure} $\ast$ \hyperlink{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}{clone} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_failure_a2ba79089909967b45aedc4992b51553a}{m\-\_\-failed\-Test}
+\item 
+\hyperlink{class_exception}{Exception} $\ast$ \hyperlink{class_test_failure_a96bfae3c1f32d0c1729501d68016f431}{m\-\_\-thrown\-Exception}
+\item 
+bool \hyperlink{class_test_failure_abf258e5bec289b51fb13147a62b8b75d}{m\-\_\-is\-Error}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Record of a failed \hyperlink{class_test}{Test} execution.
+
+A \hyperlink{class_test_failure}{Test\-Failure} collects a failed test together with the caught exception. 
+
+\hyperlink{class_test_failure}{Test\-Failure} assumes lifetime control for any exception passed to it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_failure_a0ecf7ad4ab673974d30d10ffb2b01790}{\index{Test\-Failure@{Test\-Failure}!Test\-Failure@{Test\-Failure}}
+\index{Test\-Failure@{Test\-Failure}!TestFailure@{Test\-Failure}}
+\subsubsection[{Test\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Failure\-::\-Test\-Failure (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{failed\-Test, }
+\item[{{\bf Exception} $\ast$}]{thrown\-Exception, }
+\item[{bool}]{is\-Error}
+\end{DoxyParamCaption}
+)}}\label{class_test_failure_a0ecf7ad4ab673974d30d10ffb2b01790}
+\hypertarget{class_test_failure_a000c058419a8177d64d1019c6c2f624d}{\index{Test\-Failure@{Test\-Failure}!$\sim$\-Test\-Failure@{$\sim$\-Test\-Failure}}
+\index{$\sim$\-Test\-Failure@{$\sim$\-Test\-Failure}!TestFailure@{Test\-Failure}}
+\subsubsection[{$\sim$\-Test\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-Failure\-::$\sim$\-Test\-Failure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_a000c058419a8177d64d1019c6c2f624d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}{\index{Test\-Failure@{Test\-Failure}!clone@{clone}}
+\index{clone@{clone}!TestFailure@{Test\-Failure}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test\-Failure}$\ast$ Test\-Failure\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}
+\hypertarget{class_test_failure_a35aa1b953feff8635c832a53d3c6946d}{\index{Test\-Failure@{Test\-Failure}!failed\-Test@{failed\-Test}}
+\index{failed\-Test@{failed\-Test}!TestFailure@{Test\-Failure}}
+\subsubsection[{failed\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test}$\ast$ Test\-Failure\-::failed\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_a35aa1b953feff8635c832a53d3c6946d}
+\hypertarget{class_test_failure_aca471a29c01d3c5e4d439aadbb1825bf}{\index{Test\-Failure@{Test\-Failure}!failed\-Test\-Name@{failed\-Test\-Name}}
+\index{failed\-Test\-Name@{failed\-Test\-Name}!TestFailure@{Test\-Failure}}
+\subsubsection[{failed\-Test\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf std\-::string} Test\-Failure\-::failed\-Test\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_aca471a29c01d3c5e4d439aadbb1825bf}
+\hypertarget{class_test_failure_a23b25cf3452b3ab7dc84c70664f13ff0}{\index{Test\-Failure@{Test\-Failure}!is\-Error@{is\-Error}}
+\index{is\-Error@{is\-Error}!TestFailure@{Test\-Failure}}
+\subsubsection[{is\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Test\-Failure\-::is\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_a23b25cf3452b3ab7dc84c70664f13ff0}
+\hypertarget{class_test_failure_aa3c6a076dca224d7e440212cfd127305}{\index{Test\-Failure@{Test\-Failure}!source\-Line@{source\-Line}}
+\index{source\-Line@{source\-Line}!TestFailure@{Test\-Failure}}
+\subsubsection[{source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Source\-Line} Test\-Failure\-::source\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_aa3c6a076dca224d7e440212cfd127305}
+\hypertarget{class_test_failure_a8e60e0c1ea068bef6c546d20d8260400}{\index{Test\-Failure@{Test\-Failure}!thrown\-Exception@{thrown\-Exception}}
+\index{thrown\-Exception@{thrown\-Exception}!TestFailure@{Test\-Failure}}
+\subsubsection[{thrown\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Exception}$\ast$ Test\-Failure\-::thrown\-Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_failure_a8e60e0c1ea068bef6c546d20d8260400}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_failure_a2ba79089909967b45aedc4992b51553a}{\index{Test\-Failure@{Test\-Failure}!m\-\_\-failed\-Test@{m\-\_\-failed\-Test}}
+\index{m\-\_\-failed\-Test@{m\-\_\-failed\-Test}!TestFailure@{Test\-Failure}}
+\subsubsection[{m\-\_\-failed\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Failure\-::m\-\_\-failed\-Test\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_failure_a2ba79089909967b45aedc4992b51553a}
+\hypertarget{class_test_failure_abf258e5bec289b51fb13147a62b8b75d}{\index{Test\-Failure@{Test\-Failure}!m\-\_\-is\-Error@{m\-\_\-is\-Error}}
+\index{m\-\_\-is\-Error@{m\-\_\-is\-Error}!TestFailure@{Test\-Failure}}
+\subsubsection[{m\-\_\-is\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool Test\-Failure\-::m\-\_\-is\-Error\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_failure_abf258e5bec289b51fb13147a62b8b75d}
+\hypertarget{class_test_failure_a96bfae3c1f32d0c1729501d68016f431}{\index{Test\-Failure@{Test\-Failure}!m\-\_\-thrown\-Exception@{m\-\_\-thrown\-Exception}}
+\index{m\-\_\-thrown\-Exception@{m\-\_\-thrown\-Exception}!TestFailure@{Test\-Failure}}
+\subsubsection[{m\-\_\-thrown\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Exception}$\ast$ Test\-Failure\-::m\-\_\-thrown\-Exception\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_failure_a96bfae3c1f32d0c1729501d68016f431}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_failure_8h}{Test\-Failure.\-h}\end{DoxyCompactItemize}

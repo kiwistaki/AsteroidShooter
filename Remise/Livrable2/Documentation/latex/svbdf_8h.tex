@@ -1,0 +1,63 @@
+\hypertarget{svbdf_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svbdf.h File Reference}
+\label{svbdf_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svbdf.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svbdf.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svbdf_8h_a42123baebacb3c66947d85df761ac0c7}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F}~\char`\"{}bdf\char`\"{}
+\item 
+\#define \hyperlink{svbdf_8h_afe7c4335724ef150e49bbd1e00e4cf0d}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec}(class\-\_\-, get\-\_\-charset\-\_\-id\-\_\-, get\-\_\-property\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svbdf_8h_ab29b59830494217f2deeabf99579945e}{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, const char $\ast$$\ast$acharset\-\_\-encoding, const char $\ast$$\ast$acharset\-\_\-registry)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svbdf_8h_a11bb284d41aad2041213a37b8c607a0c}{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, const char $\ast$prop\-\_\-name, \hyperlink{ftbdf_8h_a1f0880e32cebf4c3d94f2e4ec241c799}{B\-D\-F\-\_\-\-Property\-Rec} $\ast$aproperty)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{svbdf_8h_ac238a8208d2171889a7f948ebaca3034}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E} (B\-D\-F)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svbdf_8h_afe7c4335724ef150e49bbd1e00e4cf0d}{\index{svbdf.\-h@{svbdf.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec}!svbdf.h@{svbdf.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-Rec(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{get\-\_\-charset\-\_\-id\-\_\-, }
+\item[{}]{get\-\_\-property\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{svbdf_8h_afe7c4335724ef150e49bbd1e00e4cf0d}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_BDFRec class\_ =                                \(\backslash\)
+  \{                                                                      \(\backslash\)
+    get\_charset\_id\_, get\_property\_                                       \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{svbdf_8h_a42123baebacb3c66947d85df761ac0c7}{\index{svbdf.\-h@{svbdf.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F}!svbdf.h@{svbdf.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-B\-D\-F~\char`\"{}bdf\char`\"{}}}\label{svbdf_8h_a42123baebacb3c66947d85df761ac0c7}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svbdf_8h_ab29b59830494217f2deeabf99579945e}{\index{svbdf.\-h@{svbdf.\-h}!F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func@{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func}}
+\index{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func@{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func}!svbdf.h@{svbdf.\-h}}
+\subsubsection[{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Charset\-Id\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, const char $\ast$$\ast$acharset\-\_\-encoding, const char $\ast$$\ast$acharset\-\_\-registry)}}\label{svbdf_8h_ab29b59830494217f2deeabf99579945e}
+\hypertarget{svbdf_8h_a11bb284d41aad2041213a37b8c607a0c}{\index{svbdf.\-h@{svbdf.\-h}!F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func@{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func}}
+\index{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func@{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func}!svbdf.h@{svbdf.\-h}}
+\subsubsection[{F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-B\-D\-F\-\_\-\-Get\-Property\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, const char $\ast$prop\-\_\-name, {\bf B\-D\-F\-\_\-\-Property\-Rec} $\ast$aproperty)}}\label{svbdf_8h_a11bb284d41aad2041213a37b8c607a0c}
+
+
+\subsection{Function Documentation}
+\hypertarget{svbdf_8h_ac238a8208d2171889a7f948ebaca3034}{\index{svbdf.\-h@{svbdf.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!svbdf.h@{svbdf.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E (
+\begin{DoxyParamCaption}
+\item[{B\-D\-F}]{}
+\end{DoxyParamCaption}
+)}}\label{svbdf_8h_ac238a8208d2171889a7f948ebaca3034}

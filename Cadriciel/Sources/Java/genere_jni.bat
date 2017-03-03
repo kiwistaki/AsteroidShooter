@@ -1,0 +1,1 @@
+javah -jni -o FacadeJNI.h -classpath ./InterfaceGraphique/bin; InterfaceGraphique.Demarrage

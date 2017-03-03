@@ -1,0 +1,280 @@
+\hypertarget{class_compiler_outputter}{\section{Compiler\-Outputter Class Reference}
+\label{class_compiler_outputter}\index{Compiler\-Outputter@{Compiler\-Outputter}}
+}
+
+
+Outputs a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} in a compiler compatible format.
+
+Printing the test results in a compiler compatible format (assertion location has the same format as compiler error), allow you to use your I\-D\-E to jump to the assertion failure. Location format can be customized (see \hyperlink{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{set\-Location\-Format()} ).  
+
+
+
+
+{\ttfamily \#include $<$Compiler\-Outputter.\-h$>$}
+
+Inheritance diagram for Compiler\-Outputter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_compiler_outputter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_compiler_outputter_a8dd6679e24c18b3ca54a4266d9d1b812}{Compiler\-Outputter} (\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result}, \hyperlink{_stream_8h_a80291a4e32881b445c8d4f839a9dd979}{O\-Stream} \&\hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&location\-Format=\hyperlink{_portability_8h_a17c58ff0a5526dbcd28ebe3af5e7f04d}{C\-P\-P\-U\-N\-I\-T\-\_\-\-C\-O\-M\-P\-I\-L\-E\-R\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-F\-O\-R\-M\-A\-T})
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_compiler_outputter}{Compiler\-Outputter} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_compiler_outputter_ac74daaf4b355850c5e70b743aac2df82}{$\sim$\-Compiler\-Outputter} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{set\-Location\-Format} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&location\-Format)
+\begin{DoxyCompactList}\small\item\em Sets the error location format. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a55ca2189956b9b52bdfb1802bf8da445}{write} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_aaa1d8281f8973552a8e9a4568b7d90b4}{set\-No\-Wrap} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_ab3559c2aaa88cbccb7c3823b3dd4d247}{set\-Wrap\-Column} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_compiler_outputter_a44a670371d545db99603ce88b59aa6c0}{wrap\-Column})
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_compiler_outputter_a44a670371d545db99603ce88b59aa6c0}{wrap\-Column} () const 
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a5fb16745d10fddb67cbcbec270218589}{print\-Success} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_ab277e9b8c4af074593904dbc00853561}{print\-Failure\-Report} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a6919d4e1d44d03e50694aee73dc96d89}{print\-Failures\-List} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_acc3eefc4776b975af3502ef9afaf8b3d}{print\-Statistics} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a2a8fece8722cb0307a5f0f6cd0de41c3}{print\-Failure\-Detail} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_aac88928b23fbae0b33b1624fa5696c31}{print\-Failure\-Location} (\hyperlink{class_source_line}{Source\-Line} source\-Line)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_ae836af9e969ced1ebdb399313df10250}{print\-Failure\-Type} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a3e3fc6d7f2e98161144ab02f5f42dd9b}{print\-Failed\-Test\-Name} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_compiler_outputter_a701ad438ff6a5a0af01acd1d43de4b6c}{print\-Failure\-Message} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_compiler_outputter}{Compiler\-Outputter} $\ast$ \hyperlink{class_compiler_outputter_aa0f8f9b1fb25fe8873b7454f91dcc929}{default\-Outputter} (\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result}, \hyperlink{_stream_8h_a80291a4e32881b445c8d4f839a9dd979}{O\-Stream} \&\hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream})
+\begin{DoxyCompactList}\small\item\em Creates an instance of an outputter that matches your current compiler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Outputs a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} in a compiler compatible format.
+
+Printing the test results in a compiler compatible format (assertion location has the same format as compiler error), allow you to use your I\-D\-E to jump to the assertion failure. Location format can be customized (see \hyperlink{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{set\-Location\-Format()} ). 
+
+For example, when running the test in a post-\/build with V\-C++, if an assertion fails, you can jump to the assertion by pressing F4 (jump to next error).
+
+Heres is an example of usage (from examples/cppunittest/\-Cpp\-Unit\-Test\-Main.\-cpp)\-: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} main( \textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}* argv[] ) \{
+  \textcolor{comment}{// if command line contains "-selftest" then this is the post build check}
+  \textcolor{comment}{// => the output must be in the compiler error format.}
+  \textcolor{keywordtype}{bool} selfTest = (argc > 1)  &&  
+                  (\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}(\textcolor{stringliteral}{"-selftest"}) == argv[1]);
+
+  CppUnit::TextUi::TestRunner runner;
+  runner.addTest( CppUnitTest::suite() );   \textcolor{comment}{// Add the top suite to the test runner}
+
+ \textcolor{keywordflow}{if} ( selfTest )
+  \{ \textcolor{comment}{// Change the default outputter to a compiler error format outputter}
+    \textcolor{comment}{// The test runner owns the new outputter.}
+    runner.setOutputter( \textcolor{keyword}{new} CppUnit::CompilerOutputter( &runner.result(),
+                                                         std::cerr ) );
+  \}
+
+ \textcolor{comment}{// Run the test and don't wait a key if post build check.}
+  \textcolor{keywordtype}{bool} wasSuccessful = runner.run( \textcolor{stringliteral}{""}, !selfTest );
+
+  \textcolor{comment}{// Return error code 1 if the one of test failed.}
+  \textcolor{keywordflow}{return} wasSuccessful ? 0 : 1;
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_compiler_outputter_a8dd6679e24c18b3ca54a4266d9d1b812}{\index{Compiler\-Outputter@{Compiler\-Outputter}!Compiler\-Outputter@{Compiler\-Outputter}}
+\index{Compiler\-Outputter@{Compiler\-Outputter}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{Compiler\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}Compiler\-Outputter\-::\-Compiler\-Outputter (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result\-Collector} $\ast$}]{result, }
+\item[{{\bf O\-Stream} \&}]{stream, }
+\item[{const {\bf std\-::string} \&}]{location\-Format = {\ttfamily {\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-C\-O\-M\-P\-I\-L\-E\-R\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-F\-O\-R\-M\-A\-T}}}
+\end{DoxyParamCaption}
+)}}\label{class_compiler_outputter_a8dd6679e24c18b3ca54a4266d9d1b812}
+
+
+Constructs a \hyperlink{class_compiler_outputter}{Compiler\-Outputter} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of the test run. \\
+\hline
+{\em stream} & Stream used to output test result. \\
+\hline
+{\em location\-Format} & Error location format used by your compiler. Default to {\ttfamily C\-P\-P\-U\-N\-I\-T\-\_\-\-C\-O\-M\-P\-I\-L\-E\-R\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-F\-O\-R\-M\-A\-T} which is defined in the configuration file. See \hyperlink{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{set\-Location\-Format()} for detail. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{set\-Location\-Format()}. 
+\end{DoxySeeAlso}
+\hypertarget{class_compiler_outputter_ac74daaf4b355850c5e70b743aac2df82}{\index{Compiler\-Outputter@{Compiler\-Outputter}!$\sim$\-Compiler\-Outputter@{$\sim$\-Compiler\-Outputter}}
+\index{$\sim$\-Compiler\-Outputter@{$\sim$\-Compiler\-Outputter}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{$\sim$\-Compiler\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}virtual Compiler\-Outputter\-::$\sim$\-Compiler\-Outputter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_ac74daaf4b355850c5e70b743aac2df82}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_compiler_outputter_aa0f8f9b1fb25fe8873b7454f91dcc929}{\index{Compiler\-Outputter@{Compiler\-Outputter}!default\-Outputter@{default\-Outputter}}
+\index{default\-Outputter@{default\-Outputter}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{default\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Compiler\-Outputter}$\ast$ Compiler\-Outputter\-::default\-Outputter (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result\-Collector} $\ast$}]{result, }
+\item[{{\bf O\-Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_compiler_outputter_aa0f8f9b1fb25fe8873b7454f91dcc929}
+
+
+Creates an instance of an outputter that matches your current compiler. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000004}{Deprecated}]This class is specialized through parameterization instead of subclassing... Use \hyperlink{class_compiler_outputter_a8dd6679e24c18b3ca54a4266d9d1b812}{Compiler\-Outputter\-::\-Compiler\-Outputter} instead. \end{DoxyRefDesc}
+\hypertarget{class_compiler_outputter_a3e3fc6d7f2e98161144ab02f5f42dd9b}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failed\-Test\-Name@{print\-Failed\-Test\-Name}}
+\index{print\-Failed\-Test\-Name@{print\-Failed\-Test\-Name}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failed\-Test\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failed\-Test\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_a3e3fc6d7f2e98161144ab02f5f42dd9b}
+\hypertarget{class_compiler_outputter_a2a8fece8722cb0307a5f0f6cd0de41c3}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failure\-Detail@{print\-Failure\-Detail}}
+\index{print\-Failure\-Detail@{print\-Failure\-Detail}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failure\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failure\-Detail (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_a2a8fece8722cb0307a5f0f6cd0de41c3}
+\hypertarget{class_compiler_outputter_aac88928b23fbae0b33b1624fa5696c31}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failure\-Location@{print\-Failure\-Location}}
+\index{print\-Failure\-Location@{print\-Failure\-Location}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failure\-Location}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failure\-Location (
+\begin{DoxyParamCaption}
+\item[{{\bf Source\-Line}}]{source\-Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_aac88928b23fbae0b33b1624fa5696c31}
+\hypertarget{class_compiler_outputter_a701ad438ff6a5a0af01acd1d43de4b6c}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failure\-Message@{print\-Failure\-Message}}
+\index{print\-Failure\-Message@{print\-Failure\-Message}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failure\-Message}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failure\-Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_a701ad438ff6a5a0af01acd1d43de4b6c}
+\hypertarget{class_compiler_outputter_ab277e9b8c4af074593904dbc00853561}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failure\-Report@{print\-Failure\-Report}}
+\index{print\-Failure\-Report@{print\-Failure\-Report}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failure\-Report}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failure\-Report (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_ab277e9b8c4af074593904dbc00853561}
+\hypertarget{class_compiler_outputter_a6919d4e1d44d03e50694aee73dc96d89}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failures\-List@{print\-Failures\-List}}
+\index{print\-Failures\-List@{print\-Failures\-List}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failures\-List}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failures\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_a6919d4e1d44d03e50694aee73dc96d89}
+\hypertarget{class_compiler_outputter_ae836af9e969ced1ebdb399313df10250}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Failure\-Type@{print\-Failure\-Type}}
+\index{print\-Failure\-Type@{print\-Failure\-Type}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Failure\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Failure\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_ae836af9e969ced1ebdb399313df10250}
+\hypertarget{class_compiler_outputter_acc3eefc4776b975af3502ef9afaf8b3d}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Statistics@{print\-Statistics}}
+\index{print\-Statistics@{print\-Statistics}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_acc3eefc4776b975af3502ef9afaf8b3d}
+\hypertarget{class_compiler_outputter_a5fb16745d10fddb67cbcbec270218589}{\index{Compiler\-Outputter@{Compiler\-Outputter}!print\-Success@{print\-Success}}
+\index{print\-Success@{print\-Success}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{print\-Success}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Compiler\-Outputter\-::print\-Success (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_a5fb16745d10fddb67cbcbec270218589}
+\hypertarget{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{\index{Compiler\-Outputter@{Compiler\-Outputter}!set\-Location\-Format@{set\-Location\-Format}}
+\index{set\-Location\-Format@{set\-Location\-Format}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{set\-Location\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Compiler\-Outputter\-::set\-Location\-Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{location\-Format}
+\end{DoxyParamCaption}
+)}}\label{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}
+
+
+Sets the error location format. 
+
+Indicates the format used to report location of failed assertion. This format should match the one used by your compiler.
+
+The location format is a string in which the occurence of the following character sequence are replaced\-:
+
+
+\begin{DoxyItemize}
+\item \char`\"{}\%l\char`\"{} =$>$ replaced by the line number
+\item \char`\"{}\%p\char`\"{} =$>$ replaced by the full path name of the file (\char`\"{}\-G\-:\textbackslash{}prg\textbackslash{}vc\textbackslash{}cppunit\textbackslash{}\-My\-Test.\-cpp\char`\"{})
+\item \char`\"{}\%f\char`\"{} =$>$ replaced by the base name of the file (\char`\"{}\-My\-Test.\-cpp\char`\"{})
+\end{DoxyItemize}
+
+Some examples\-:
+
+
+\begin{DoxyItemize}
+\item V\-C++ error location format\-: \char`\"{}\%p(\%l)\-:\char`\"{} =$>$ produce \char`\"{}\-G\-:\textbackslash{}prg\textbackslash{}\-My\-Test.\-cpp(43)\-:\char`\"{}
+\item G\-C\-C error location format\-: \char`\"{}\%f\-:\%l\-:\char`\"{} =$>$ produce \char`\"{}\-My\-Test.\-cpp\-:43\-:\char`\"{}
+\end{DoxyItemize}
+
+Thoses are the two compilers currently {\itshape supported} (gcc format is used if V\-C++ is not detected). If you want your compiler to be automatically supported by Cpp\-Unit, send a mail to the mailing list (preferred), or submit a feature request that indicates how to detect your compiler with the preprocessor (\#ifdef...) and your compiler location format. \hypertarget{class_compiler_outputter_aaa1d8281f8973552a8e9a4568b7d90b4}{\index{Compiler\-Outputter@{Compiler\-Outputter}!set\-No\-Wrap@{set\-No\-Wrap}}
+\index{set\-No\-Wrap@{set\-No\-Wrap}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{set\-No\-Wrap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Compiler\-Outputter\-::set\-No\-Wrap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_compiler_outputter_aaa1d8281f8973552a8e9a4568b7d90b4}
+\hypertarget{class_compiler_outputter_ab3559c2aaa88cbccb7c3823b3dd4d247}{\index{Compiler\-Outputter@{Compiler\-Outputter}!set\-Wrap\-Column@{set\-Wrap\-Column}}
+\index{set\-Wrap\-Column@{set\-Wrap\-Column}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{set\-Wrap\-Column}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Compiler\-Outputter\-::set\-Wrap\-Column (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{wrap\-Column}
+\end{DoxyParamCaption}
+)}}\label{class_compiler_outputter_ab3559c2aaa88cbccb7c3823b3dd4d247}
+\hypertarget{class_compiler_outputter_a44a670371d545db99603ce88b59aa6c0}{\index{Compiler\-Outputter@{Compiler\-Outputter}!wrap\-Column@{wrap\-Column}}
+\index{wrap\-Column@{wrap\-Column}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{wrap\-Column}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Compiler\-Outputter\-::wrap\-Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_compiler_outputter_a44a670371d545db99603ce88b59aa6c0}
+\hypertarget{class_compiler_outputter_a55ca2189956b9b52bdfb1802bf8da445}{\index{Compiler\-Outputter@{Compiler\-Outputter}!write@{write}}
+\index{write@{write}!CompilerOutputter@{Compiler\-Outputter}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Compiler\-Outputter\-::write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_compiler_outputter_a55ca2189956b9b52bdfb1802bf8da445}
+
+
+Implements \hyperlink{class_outputter_a0a5f32693d53ed33ceb8385041cb4b68}{Outputter}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_compiler_outputter_8h}{Compiler\-Outputter.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{classvue_1_1_vue_perspect}{\section{vue\-:\-:Vue\-Perspect Class Reference}
+\label{classvue_1_1_vue_perspect}\index{vue\-::\-Vue\-Perspect@{vue\-::\-Vue\-Perspect}}
+}
+Inheritance diagram for vue\-:\-:Vue\-Perspect\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvue_1_1_vue_perspect}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvue_1_1_vue_perspect_ad638aac9576ad473f36dbefc054bb124}{{\bfseries Vue\-Perspect} (const \hyperlink{classvue_1_1_camera}{Camera} \&camera, int x\-Min\-Cloture, int x\-Max\-Cloture, int y\-Min\-Cloture, int y\-Max\-Cloture, double z\-Avant, double z\-Arriere, double zoom\-In\-Max, double zoom\-Out\-Max, double increment\-Zoom, double x\-Min\-Fenetre, double x\-Max\-Fenetre, double y\-Min\-Fenetre, double y\-Max\-Fenetre)}\label{classvue_1_1_vue_perspect_ad638aac9576ad473f36dbefc054bb124}
+
+\item 
+\hypertarget{classvue_1_1_vue_perspect_a44f43a0aaf421156eba6e5a1d3ee438b}{virtual void \hyperlink{classvue_1_1_vue_perspect_a44f43a0aaf421156eba6e5a1d3ee438b}{obtenir\-Coins\-Max} (int \&coin\-Max\-X, int \&coin\-Max\-Y) const }\label{classvue_1_1_vue_perspect_a44f43a0aaf421156eba6e5a1d3ee438b}
+
+\begin{DoxyCompactList}\small\item\em Obtenir les coins maximum des coins. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_aca0a7224996c3b36704e2691ba90a9db}{virtual const \hyperlink{classvue_1_1_projection}{Projection} \& {\bfseries obtenir\-Projection} () const }\label{classvue_1_1_vue_perspect_aca0a7224996c3b36704e2691ba90a9db}
+
+\item 
+\hypertarget{classvue_1_1_vue_perspect_a1079ac6733ed5cd0dfd32c4ffdf7985c}{virtual void \hyperlink{classvue_1_1_vue_perspect_a1079ac6733ed5cd0dfd32c4ffdf7985c}{appliquer\-Projection} (bool direct=false) const }\label{classvue_1_1_vue_perspect_a1079ac6733ed5cd0dfd32c4ffdf7985c}
+
+\begin{DoxyCompactList}\small\item\em Application de la projection. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_a0ff1ba9e810cb09cc838665d0e34c44c}{virtual void \hyperlink{classvue_1_1_vue_perspect_a0ff1ba9e810cb09cc838665d0e34c44c}{appliquer\-Camera} () const }\label{classvue_1_1_vue_perspect_a0ff1ba9e810cb09cc838665d0e34c44c}
+
+\begin{DoxyCompactList}\small\item\em Application de la camera. \end{DoxyCompactList}\item 
+virtual \hyperlink{classmath_1_1_plan3_d}{math\-::\-Plan3\-D} \hyperlink{classvue_1_1_vue_perspect_a3c00495fa51c5acf49ca07e7b8d99751}{get\-Plan\-Avant} () const 
+\item 
+\hypertarget{classvue_1_1_vue_perspect_a4b0a2e7e940a71f8b190f1e243d4a54a}{virtual void \hyperlink{classvue_1_1_vue_perspect_a4b0a2e7e940a71f8b190f1e243d4a54a}{redimensionner\-Fenetre} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin\-Min, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin\-Max)}\label{classvue_1_1_vue_perspect_a4b0a2e7e940a71f8b190f1e243d4a54a}
+
+\begin{DoxyCompactList}\small\item\em Modification de la clotûre \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_a0405354bd5649c611cef713fa787abda}{virtual void \hyperlink{classvue_1_1_vue_perspect_a0405354bd5649c611cef713fa787abda}{zoomer\-In} ()}\label{classvue_1_1_vue_perspect_a0405354bd5649c611cef713fa787abda}
+
+\begin{DoxyCompactList}\small\item\em Zoom in, c'est-\/a-\/dire un agrandissement. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_abdece808bbdc30dc2dab977d0d4e96c7}{virtual void \hyperlink{classvue_1_1_vue_perspect_abdece808bbdc30dc2dab977d0d4e96c7}{zoomer\-Out} ()}\label{classvue_1_1_vue_perspect_abdece808bbdc30dc2dab977d0d4e96c7}
+
+\begin{DoxyCompactList}\small\item\em Zoom out, c'est-\/a-\/dire un rapetissement. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_addc58ff303db3bc53ee916d8be7cb16e}{virtual void \hyperlink{classvue_1_1_vue_perspect_addc58ff303db3bc53ee916d8be7cb16e}{zoomer\-In\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin1, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin2)}\label{classvue_1_1_vue_perspect_addc58ff303db3bc53ee916d8be7cb16e}
+
+\begin{DoxyCompactList}\small\item\em Zoom in elastique. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_a69d19c6d78cb28871724e6e701f046e3}{virtual void \hyperlink{classvue_1_1_vue_perspect_a69d19c6d78cb28871724e6e701f046e3}{zoomer\-Out\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&)}\label{classvue_1_1_vue_perspect_a69d19c6d78cb28871724e6e701f046e3}
+
+\begin{DoxyCompactList}\small\item\em Zoom out elastique. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_a503a970e5a35f86558e159595ec099d3}{virtual void \hyperlink{classvue_1_1_vue_perspect_a503a970e5a35f86558e159595ec099d3}{deplacer\-X\-Y} (double deplacement\-X, double deplacement\-Y)}\label{classvue_1_1_vue_perspect_a503a970e5a35f86558e159595ec099d3}
+
+\begin{DoxyCompactList}\small\item\em Deplacement dans le plan X\-Y par rapport a la vue. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_a128cb2e7bce6a62fa23fe66a92e81830}{virtual void \hyperlink{classvue_1_1_vue_perspect_a128cb2e7bce6a62fa23fe66a92e81830}{deplacer\-X\-Y} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&deplacement)}\label{classvue_1_1_vue_perspect_a128cb2e7bce6a62fa23fe66a92e81830}
+
+\begin{DoxyCompactList}\small\item\em Deplacement dans le plan X\-Y par rapport a la vue. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_aba16152f9751db6a712ecaefa2503c8e}{virtual void \hyperlink{classvue_1_1_vue_perspect_aba16152f9751db6a712ecaefa2503c8e}{deplacer\-Z} (double deplacement)}\label{classvue_1_1_vue_perspect_aba16152f9751db6a712ecaefa2503c8e}
+
+\begin{DoxyCompactList}\small\item\em Deplacement selon l'axe des Z par rapport a la vue. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_ad66d0cf2b50de80a0ebd5dbc7d2be7e1}{virtual void \hyperlink{classvue_1_1_vue_perspect_ad66d0cf2b50de80a0ebd5dbc7d2be7e1}{rotater\-X\-Y} (double rotation\-X, double rotation\-Y)}\label{classvue_1_1_vue_perspect_ad66d0cf2b50de80a0ebd5dbc7d2be7e1}
+
+\begin{DoxyCompactList}\small\item\em Rotation selon les axes des X et des Y par rapport a la vue. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_ada31313047e0a8f295d68bd70f3fa65a}{virtual void \hyperlink{classvue_1_1_vue_perspect_ada31313047e0a8f295d68bd70f3fa65a}{rotater\-X\-Y} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&rotation)}\label{classvue_1_1_vue_perspect_ada31313047e0a8f295d68bd70f3fa65a}
+
+\begin{DoxyCompactList}\small\item\em Rotation selon les axes des X et des Y par rapport a la vue. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_vue_perspect_a4d2b2ed1f7ea930257fe061979757d40}{virtual void \hyperlink{classvue_1_1_vue_perspect_a4d2b2ed1f7ea930257fe061979757d40}{rotater\-Z} (double rotation)}\label{classvue_1_1_vue_perspect_a4d2b2ed1f7ea930257fe061979757d40}
+
+\begin{DoxyCompactList}\small\item\em Rotation selon l'axe des Z par rapport a la vue. \end{DoxyCompactList}\item 
+virtual Type\-Vue\-\_\-t \hyperlink{classvue_1_1_vue_perspect_a5c9f3521c50950023f83154bcd7fc71b}{get\-Type} () const 
+\item 
+\hypertarget{classvue_1_1_vue_perspect_a9e8bc29e687f42519c53edd5daaf5897}{virtual double {\bfseries get\-Theta} () const }\label{classvue_1_1_vue_perspect_a9e8bc29e687f42519c53edd5daaf5897}
+
+\item 
+\hypertarget{classvue_1_1_vue_perspect_a630409454917a0e543daaa7299da263b}{virtual double {\bfseries get\-Phi} () const }\label{classvue_1_1_vue_perspect_a630409454917a0e543daaa7299da263b}
+
+\item 
+\hypertarget{classvue_1_1_vue_perspect_a9f7b00eee9474681b3e55a83653e1223}{virtual double {\bfseries get\-Distance} () const }\label{classvue_1_1_vue_perspect_a9f7b00eee9474681b3e55a83653e1223}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvue_1_1_vue_perspect_a3c00495fa51c5acf49ca07e7b8d99751}{\index{vue\-::\-Vue\-Perspect@{vue\-::\-Vue\-Perspect}!get\-Plan\-Avant@{get\-Plan\-Avant}}
+\index{get\-Plan\-Avant@{get\-Plan\-Avant}!vue::VuePerspect@{vue\-::\-Vue\-Perspect}}
+\subsubsection[{get\-Plan\-Avant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf math\-::\-Plan3\-D} vue\-::\-Vue\-Perspect\-::get\-Plan\-Avant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvue_1_1_vue_perspect_a3c00495fa51c5acf49ca07e7b8d99751}
+Retourne le plan avant de la caméra 
+
+Implements \hyperlink{classvue_1_1_vue_abec8df690ef358475e6f0b1a2408106a}{vue\-::\-Vue}.
+
+\hypertarget{classvue_1_1_vue_perspect_a5c9f3521c50950023f83154bcd7fc71b}{\index{vue\-::\-Vue\-Perspect@{vue\-::\-Vue\-Perspect}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!vue::VuePerspect@{vue\-::\-Vue\-Perspect}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual Type\-Vue\-\_\-t vue\-::\-Vue\-Perspect\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classvue_1_1_vue_perspect_a5c9f3521c50950023f83154bcd7fc71b}
+Retourne le type de la vue 
+
+Implements \hyperlink{classvue_1_1_vue_ab1b3db0145a1800d0e3d62b5f447ca8a}{vue\-::\-Vue}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/Vue\-Perspect.\-h\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/Vue\-Perspect.\-cpp\end{DoxyCompactItemize}

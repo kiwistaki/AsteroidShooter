@@ -1,0 +1,146 @@
+\hypertarget{class_c_lecture_fichier_binaire}{\section{C\-Lecture\-Fichier\-Binaire Class Reference}
+\label{class_c_lecture_fichier_binaire}\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}}
+}
+
+
+cette classe contient des methodes $>$ permettant de lire dans un fichier binaire des variables de types string, double, float, int, unsigned int, char, et bool.  
+
+
+
+
+{\ttfamily \#include $<$C\-Lecture\-Fichier\-Binaire.\-h$>$}
+
+Inheritance diagram for C\-Lecture\-Fichier\-Binaire\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_lecture_fichier_binaire}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__utilitaire_ga3a259905a2c14513846e6ecb8cf476ad}{C\-Lecture\-Fichier\-Binaire} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_gac16ebab7b172408c2ba14605f61f0f84}{C\-Lecture\-Fichier\-Binaire} (const char $\ast$nom\-Fichier, openmode \hyperlink{glew_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode}=\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{std\-::ios\-::in}$\vert$\hyperlink{glew_8h_a0ace813ee1f7020974174eb65d53ff0d}{std\-::ios\-::binary})
+\begin{DoxyCompactList}\small\item\em Constructeur par parametre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_abc9f4d65dcf682dbf572f5110a00252d}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape std\-::string}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_a8b4123b210cccf9da0d2eb60dc19b8a0}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, double \&\hyperlink{glew_8h_a691492ec0bd6383f91200e49f6ae40ed}{f})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape double}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_a8727572665715de99f2908c711e45114}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \&\hyperlink{glew_8h_a691492ec0bd6383f91200e49f6ae40ed}{f})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape float}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_a327898e8bcb11d00bdb07e3e8bd361bd}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&\hyperlink{glew_8h_a691492ec0bd6383f91200e49f6ae40ed}{f})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape int}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_a10555985d21e9277fd610554eb804ad4}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&\hyperlink{glew_8h_a691492ec0bd6383f91200e49f6ae40ed}{f})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape unsigned} {\itshape int}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_a4a3ac4fa35e1f11664f6612d554d72bd}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, char \&\hyperlink{glew_8h_a691492ec0bd6383f91200e49f6ae40ed}{f})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape char}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \& \hyperlink{class_c_lecture_fichier_binaire_aaf7fbfa5e060c1e9015b0ffbd013f3e3}{operator$>$} (\hyperlink{class_c_lecture_fichier_binaire}{C\-Lecture\-Fichier\-Binaire} \&\hyperlink{glew_8h_a83ad0ee7f1e06b59c90271716e689080}{in}, bool \&\hyperlink{glew_8h_a691492ec0bd6383f91200e49f6ae40ed}{f})
+\begin{DoxyCompactList}\small\item\em Surcharge de l'operateur pour le type {\itshape bool}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+cette classe contient des methodes $>$ permettant de lire dans un fichier binaire des variables de types string, double, float, int, unsigned int, char, et bool. 
+
+\begin{DoxyAuthor}{Author}
+D\-G\-I-\/2990 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2005-\/10-\/15 
+\end{DoxyDate}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_lecture_fichier_binaire_abc9f4d65dcf682dbf572f5110a00252d}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{{\bf std\-::string} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_abc9f4d65dcf682dbf572f5110a00252d}
+
+
+Surcharge de l'operateur pour le type {\itshape std\-::string}. 
+
+\hypertarget{class_c_lecture_fichier_binaire_a8b4123b210cccf9da0d2eb60dc19b8a0}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{double \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_a8b4123b210cccf9da0d2eb60dc19b8a0}
+
+
+Surcharge de l'operateur pour le type {\itshape double}. 
+
+\hypertarget{class_c_lecture_fichier_binaire_a8727572665715de99f2908c711e45114}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{{\bf float} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_a8727572665715de99f2908c711e45114}
+
+
+Surcharge de l'operateur pour le type {\itshape float}. 
+
+\hypertarget{class_c_lecture_fichier_binaire_a327898e8bcb11d00bdb07e3e8bd361bd}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{{\bf int} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_a327898e8bcb11d00bdb07e3e8bd361bd}
+
+
+Surcharge de l'operateur pour le type {\itshape int}. 
+
+\hypertarget{class_c_lecture_fichier_binaire_a10555985d21e9277fd610554eb804ad4}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{{\bf unsigned} {\bf int} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_a10555985d21e9277fd610554eb804ad4}
+
+
+Surcharge de l'operateur pour le type {\itshape unsigned} {\itshape int}. 
+
+\hypertarget{class_c_lecture_fichier_binaire_a4a3ac4fa35e1f11664f6612d554d72bd}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{char \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_a4a3ac4fa35e1f11664f6612d554d72bd}
+
+
+Surcharge de l'operateur pour le type {\itshape char}. 
+
+\hypertarget{class_c_lecture_fichier_binaire_aaf7fbfa5e060c1e9015b0ffbd013f3e3}{\index{C\-Lecture\-Fichier\-Binaire@{C\-Lecture\-Fichier\-Binaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CLectureFichierBinaire@{C\-Lecture\-Fichier\-Binaire}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Lecture\-Fichier\-Binaire}\& operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Lecture\-Fichier\-Binaire} \&}]{in, }
+\item[{bool \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_lecture_fichier_binaire_aaf7fbfa5e060c1e9015b0ffbd013f3e3}
+
+
+Surcharge de l'operateur pour le type {\itshape bool}. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_c_lecture_fichier_binaire_8h}{C\-Lecture\-Fichier\-Binaire.\-h}\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_c_lecture_fichier_binaire_8cpp}{C\-Lecture\-Fichier\-Binaire.\-cpp}\end{DoxyCompactItemize}

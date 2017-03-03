@@ -1,0 +1,181 @@
+\hypertarget{pshints_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/pshints.h File Reference}
+\label{pshints_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/pshints.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/pshints.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_s_h___globals___funcs_rec__}{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_t1___hints___funcs_rec__}{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_t2___hints___funcs_rec__}{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_p_s_hinter___interface__}{P\-S\-Hinter\-\_\-\-Interface\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{pshints_8h_a87259a4b20579cc736a93601ed2ce09e}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}(class\-\_\-, get\-\_\-globals\-\_\-funcs\-\_\-,get\-\_\-t1\-\_\-funcs\-\_\-, get\-\_\-t2\-\_\-funcs\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R \\*
+struct P\-S\-H\-\_\-\-Globals\-Rec\-\_\- $\ast$ \hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\-S\-H\-\_\-\-Globals}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{pshints_8h_afd0042b9254abe050df32974e4c68436}{P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func} )(\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory} memory, \hyperlink{t1tables_8h_a2bf51d2bd6c483a1db05dca29d7c01ce}{T1\-\_\-\-Private} $\ast$private\-\_\-dict, \hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\-S\-H\-\_\-\-Globals} $\ast$aglobals)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{pshints_8h_a1c844127c9b5813d6f063f48e7009e7c}{P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func} )(\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\-S\-H\-\_\-\-Globals} globals, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} x\-\_\-scale, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} y\-\_\-scale, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} x\-\_\-delta, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} y\-\_\-delta)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_ae26d3a2bd4ecf648c4d9f1ee78173f86}{P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func} )(\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\-S\-H\-\_\-\-Globals} globals)
+\item 
+typedef struct \\*
+\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec\-\_\-} \hyperlink{pshints_8h_a8be972c1f146073eb83502c362444114}{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec}
+\item 
+typedef struct \\*
+\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec\-\_\-} $\ast$ \hyperlink{pshints_8h_ac83db932351480e591fa91ea38fca5ac}{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs}
+\item 
+typedef struct T1\-\_\-\-Hints\-Rec\-\_\- $\ast$ \hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints}
+\item 
+typedef const struct \\*
+\hyperlink{struct_t1___hints___funcs_rec__}{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-} $\ast$ \hyperlink{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}{T1\-\_\-\-Hints\-\_\-\-Funcs}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a0aacfe03a588f4d5f93a82a5156826e4}{T1\-\_\-\-Hints\-\_\-\-Open\-Func} )(\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints} hints)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a0ed3fe9a0f4510bc464a12161c00fe7e}{T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func} )(\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} dimension, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} $\ast$\hyperlink{glew_8h_acdbd39c05bd58b1a6ce737d0189ee608}{coords})
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a42a08fed4c8f0716c77fd56d8c3f71cf}{T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func} )(\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} dimension, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} $\ast$\hyperlink{glew_8h_acdbd39c05bd58b1a6ce737d0189ee608}{coords})
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a9a0a20816c0cb4b48effc574e9fd9858}{T1\-\_\-\-Hints\-\_\-\-Reset\-Func} )(\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} end\-\_\-point)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{pshints_8h_a9eb6c13bbe475d2d7100ca0441e483c8}{T1\-\_\-\-Hints\-\_\-\-Close\-Func} )(\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} end\-\_\-point)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{pshints_8h_a436e963b0eacf48d04667143f78e86ab}{T1\-\_\-\-Hints\-\_\-\-Apply\-Func} )(\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\-\_\-\-Hints} hints, \hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline, \hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\-S\-H\-\_\-\-Globals} globals, \hyperlink{freetype_8h_aaa0488bc4d2c5f0a6f4311ddee8edfb7}{F\-T\-\_\-\-Render\-\_\-\-Mode} hint\-\_\-mode)
+\item 
+typedef struct \hyperlink{struct_t1___hints___funcs_rec__}{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-} \hyperlink{pshints_8h_ac60627ad0cebcb7d6b21db715f87c46b}{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec}
+\item 
+typedef struct T2\-\_\-\-Hints\-Rec\-\_\- $\ast$ \hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints}
+\item 
+typedef const struct \\*
+\hyperlink{struct_t2___hints___funcs_rec__}{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-} $\ast$ \hyperlink{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}{T2\-\_\-\-Hints\-\_\-\-Funcs}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a4fd2d49ab2b86a88e4e881959d45f86e}{T2\-\_\-\-Hints\-\_\-\-Open\-Func} )(\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints} hints)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a090a335d4dad20bb0607dcefa667c75f}{T2\-\_\-\-Hints\-\_\-\-Stems\-Func} )(\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} dimension, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} \hyperlink{_free_image_8h_a10b284d589000663becfbc6867a3a9f7}{count}, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} $\ast$coordinates)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_a521ac203e2ed63995555da5fa845c60f}{T2\-\_\-\-Hints\-\_\-\-Mask\-Func} )(\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} end\-\_\-point, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} bit\-\_\-count, const \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte} $\ast$bytes)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{pshints_8h_af65d0cb282888d91ee28b07e9a2c6797}{T2\-\_\-\-Hints\-\_\-\-Counter\-Func} )(\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} bit\-\_\-count, const \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte} $\ast$bytes)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{pshints_8h_a93cc8acd8dce12998bbdeabce5a5278f}{T2\-\_\-\-Hints\-\_\-\-Close\-Func} )(\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints} hints, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} end\-\_\-point)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{pshints_8h_a8f80325664a10068118a121596ea517a}{T2\-\_\-\-Hints\-\_\-\-Apply\-Func} )(\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\-\_\-\-Hints} hints, \hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline, \hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\-S\-H\-\_\-\-Globals} globals, \hyperlink{freetype_8h_aaa0488bc4d2c5f0a6f4311ddee8edfb7}{F\-T\-\_\-\-Render\-\_\-\-Mode} hint\-\_\-mode)
+\item 
+typedef struct \hyperlink{struct_t2___hints___funcs_rec__}{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-} \hyperlink{pshints_8h_a7e4f3926b4ccfe5c902b1b9350b46a6c}{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec}
+\item 
+typedef struct \hyperlink{struct_p_s_hinter___interface__}{P\-S\-Hinter\-\_\-\-Interface\-\_\-} \hyperlink{pshints_8h_a631e5a322a5adc5e55748e97b02773a4}{P\-S\-Hinter\-\_\-\-Interface}
+\item 
+typedef \hyperlink{pshints_8h_a631e5a322a5adc5e55748e97b02773a4}{P\-S\-Hinter\-\_\-\-Interface} $\ast$ \hyperlink{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}{P\-S\-Hinter\-\_\-\-Service}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{pshints_8h_a87259a4b20579cc736a93601ed2ce09e}{\index{pshints.\-h@{pshints.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}!pshints.h@{pshints.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-P\-S\-H\-I\-N\-T\-E\-R\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{get\-\_\-globals\-\_\-funcs\-\_\-, }
+\item[{}]{get\-\_\-t1\-\_\-funcs\-\_\-, }
+\item[{}]{get\-\_\-t2\-\_\-funcs\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{pshints_8h_a87259a4b20579cc736a93601ed2ce09e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_p_s_hinter___interface__}{PSHinter\_Interface} class\_ =                                   \(\backslash\)
+  \{                                                                          \(\backslash\)
+    get\_globals\_funcs\_, get\_t1\_funcs\_, get\_t2\_funcs\_                         \(\backslash\)
+  \};
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{\index{pshints.\-h@{pshints.\-h}!P\-S\-H\-\_\-\-Globals@{P\-S\-H\-\_\-\-Globals}}
+\index{P\-S\-H\-\_\-\-Globals@{P\-S\-H\-\_\-\-Globals}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-H\-\_\-\-Globals}]{\setlength{\rightskip}{0pt plus 5cm}typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R struct P\-S\-H\-\_\-\-Globals\-Rec\-\_\-$\ast$ {\bf P\-S\-H\-\_\-\-Globals}}}\label{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}
+\hypertarget{pshints_8h_ae26d3a2bd4ecf648c4d9f1ee78173f86}{\index{pshints.\-h@{pshints.\-h}!P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func@{P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func}}
+\index{P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func@{P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ P\-S\-H\-\_\-\-Globals\-\_\-\-Destroy\-Func)({\bf P\-S\-H\-\_\-\-Globals} globals)}}\label{pshints_8h_ae26d3a2bd4ecf648c4d9f1ee78173f86}
+\hypertarget{pshints_8h_ac83db932351480e591fa91ea38fca5ac}{\index{pshints.\-h@{pshints.\-h}!P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs@{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs}}
+\index{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs@{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec\-\_\-} $\ast$ {\bf P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs}}}\label{pshints_8h_ac83db932351480e591fa91ea38fca5ac}
+\hypertarget{pshints_8h_a8be972c1f146073eb83502c362444114}{\index{pshints.\-h@{pshints.\-h}!P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec@{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec}}
+\index{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec@{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec\-\_\-}  {\bf P\-S\-H\-\_\-\-Globals\-\_\-\-Funcs\-Rec}}}\label{pshints_8h_a8be972c1f146073eb83502c362444114}
+\hypertarget{pshints_8h_afd0042b9254abe050df32974e4c68436}{\index{pshints.\-h@{pshints.\-h}!P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func@{P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func}}
+\index{P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func@{P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ P\-S\-H\-\_\-\-Globals\-\_\-\-New\-Func)({\bf F\-T\-\_\-\-Memory} memory, {\bf T1\-\_\-\-Private} $\ast$private\-\_\-dict, {\bf P\-S\-H\-\_\-\-Globals} $\ast$aglobals)}}\label{pshints_8h_afd0042b9254abe050df32974e4c68436}
+\hypertarget{pshints_8h_a1c844127c9b5813d6f063f48e7009e7c}{\index{pshints.\-h@{pshints.\-h}!P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func@{P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func}}
+\index{P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func@{P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ P\-S\-H\-\_\-\-Globals\-\_\-\-Set\-Scale\-Func)({\bf P\-S\-H\-\_\-\-Globals} globals, {\bf F\-T\-\_\-\-Fixed} x\-\_\-scale, {\bf F\-T\-\_\-\-Fixed} y\-\_\-scale, {\bf F\-T\-\_\-\-Fixed} x\-\_\-delta, {\bf F\-T\-\_\-\-Fixed} y\-\_\-delta)}}\label{pshints_8h_a1c844127c9b5813d6f063f48e7009e7c}
+\hypertarget{pshints_8h_a631e5a322a5adc5e55748e97b02773a4}{\index{pshints.\-h@{pshints.\-h}!P\-S\-Hinter\-\_\-\-Interface@{P\-S\-Hinter\-\_\-\-Interface}}
+\index{P\-S\-Hinter\-\_\-\-Interface@{P\-S\-Hinter\-\_\-\-Interface}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-Hinter\-\_\-\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-S\-Hinter\-\_\-\-Interface\-\_\-}  {\bf P\-S\-Hinter\-\_\-\-Interface}}}\label{pshints_8h_a631e5a322a5adc5e55748e97b02773a4}
+\hypertarget{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}{\index{pshints.\-h@{pshints.\-h}!P\-S\-Hinter\-\_\-\-Service@{P\-S\-Hinter\-\_\-\-Service}}
+\index{P\-S\-Hinter\-\_\-\-Service@{P\-S\-Hinter\-\_\-\-Service}!pshints.h@{pshints.\-h}}
+\subsubsection[{P\-S\-Hinter\-\_\-\-Service}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf P\-S\-Hinter\-\_\-\-Interface}$\ast$ {\bf P\-S\-Hinter\-\_\-\-Service}}}\label{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}
+\hypertarget{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints@{T1\-\_\-\-Hints}}
+\index{T1\-\_\-\-Hints@{T1\-\_\-\-Hints}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct T1\-\_\-\-Hints\-Rec\-\_\-$\ast$ {\bf T1\-\_\-\-Hints}}}\label{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}
+\hypertarget{pshints_8h_a436e963b0eacf48d04667143f78e86ab}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Apply\-Func@{T1\-\_\-\-Hints\-\_\-\-Apply\-Func}}
+\index{T1\-\_\-\-Hints\-\_\-\-Apply\-Func@{T1\-\_\-\-Hints\-\_\-\-Apply\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Apply\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ T1\-\_\-\-Hints\-\_\-\-Apply\-Func)({\bf T1\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-Outline} $\ast$outline, {\bf P\-S\-H\-\_\-\-Globals} globals, {\bf F\-T\-\_\-\-Render\-\_\-\-Mode} hint\-\_\-mode)}}\label{pshints_8h_a436e963b0eacf48d04667143f78e86ab}
+\hypertarget{pshints_8h_a9eb6c13bbe475d2d7100ca0441e483c8}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Close\-Func@{T1\-\_\-\-Hints\-\_\-\-Close\-Func}}
+\index{T1\-\_\-\-Hints\-\_\-\-Close\-Func@{T1\-\_\-\-Hints\-\_\-\-Close\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Close\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ T1\-\_\-\-Hints\-\_\-\-Close\-Func)({\bf T1\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} end\-\_\-point)}}\label{pshints_8h_a9eb6c13bbe475d2d7100ca0441e483c8}
+\hypertarget{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Funcs@{T1\-\_\-\-Hints\-\_\-\-Funcs}}
+\index{T1\-\_\-\-Hints\-\_\-\-Funcs@{T1\-\_\-\-Hints\-\_\-\-Funcs}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Funcs}]{\setlength{\rightskip}{0pt plus 5cm}typedef const struct {\bf T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-}$\ast$ {\bf T1\-\_\-\-Hints\-\_\-\-Funcs}}}\label{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}
+\hypertarget{pshints_8h_ac60627ad0cebcb7d6b21db715f87c46b}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec@{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec}}
+\index{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec@{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-}  {\bf T1\-\_\-\-Hints\-\_\-\-Funcs\-Rec}}}\label{pshints_8h_ac60627ad0cebcb7d6b21db715f87c46b}
+\hypertarget{pshints_8h_a0aacfe03a588f4d5f93a82a5156826e4}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Open\-Func@{T1\-\_\-\-Hints\-\_\-\-Open\-Func}}
+\index{T1\-\_\-\-Hints\-\_\-\-Open\-Func@{T1\-\_\-\-Hints\-\_\-\-Open\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Open\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T1\-\_\-\-Hints\-\_\-\-Open\-Func)({\bf T1\-\_\-\-Hints} hints)}}\label{pshints_8h_a0aacfe03a588f4d5f93a82a5156826e4}
+\hypertarget{pshints_8h_a9a0a20816c0cb4b48effc574e9fd9858}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Reset\-Func@{T1\-\_\-\-Hints\-\_\-\-Reset\-Func}}
+\index{T1\-\_\-\-Hints\-\_\-\-Reset\-Func@{T1\-\_\-\-Hints\-\_\-\-Reset\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Reset\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T1\-\_\-\-Hints\-\_\-\-Reset\-Func)({\bf T1\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} end\-\_\-point)}}\label{pshints_8h_a9a0a20816c0cb4b48effc574e9fd9858}
+\hypertarget{pshints_8h_a42a08fed4c8f0716c77fd56d8c3f71cf}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func@{T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func}}
+\index{T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func@{T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T1\-\_\-\-Hints\-\_\-\-Set\-Stem3\-Func)({\bf T1\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} dimension, {\bf F\-T\-\_\-\-Fixed} $\ast${\bf coords})}}\label{pshints_8h_a42a08fed4c8f0716c77fd56d8c3f71cf}
+\hypertarget{pshints_8h_a0ed3fe9a0f4510bc464a12161c00fe7e}{\index{pshints.\-h@{pshints.\-h}!T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func@{T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func}}
+\index{T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func@{T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T1\-\_\-\-Hints\-\_\-\-Set\-Stem\-Func)({\bf T1\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} dimension, {\bf F\-T\-\_\-\-Fixed} $\ast${\bf coords})}}\label{pshints_8h_a0ed3fe9a0f4510bc464a12161c00fe7e}
+\hypertarget{pshints_8h_af8b52db788301c01e97599916a2c819e}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints@{T2\-\_\-\-Hints}}
+\index{T2\-\_\-\-Hints@{T2\-\_\-\-Hints}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct T2\-\_\-\-Hints\-Rec\-\_\-$\ast$ {\bf T2\-\_\-\-Hints}}}\label{pshints_8h_af8b52db788301c01e97599916a2c819e}
+\hypertarget{pshints_8h_a8f80325664a10068118a121596ea517a}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Apply\-Func@{T2\-\_\-\-Hints\-\_\-\-Apply\-Func}}
+\index{T2\-\_\-\-Hints\-\_\-\-Apply\-Func@{T2\-\_\-\-Hints\-\_\-\-Apply\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Apply\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ T2\-\_\-\-Hints\-\_\-\-Apply\-Func)({\bf T2\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-Outline} $\ast$outline, {\bf P\-S\-H\-\_\-\-Globals} globals, {\bf F\-T\-\_\-\-Render\-\_\-\-Mode} hint\-\_\-mode)}}\label{pshints_8h_a8f80325664a10068118a121596ea517a}
+\hypertarget{pshints_8h_a93cc8acd8dce12998bbdeabce5a5278f}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Close\-Func@{T2\-\_\-\-Hints\-\_\-\-Close\-Func}}
+\index{T2\-\_\-\-Hints\-\_\-\-Close\-Func@{T2\-\_\-\-Hints\-\_\-\-Close\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Close\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ T2\-\_\-\-Hints\-\_\-\-Close\-Func)({\bf T2\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} end\-\_\-point)}}\label{pshints_8h_a93cc8acd8dce12998bbdeabce5a5278f}
+\hypertarget{pshints_8h_af65d0cb282888d91ee28b07e9a2c6797}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Counter\-Func@{T2\-\_\-\-Hints\-\_\-\-Counter\-Func}}
+\index{T2\-\_\-\-Hints\-\_\-\-Counter\-Func@{T2\-\_\-\-Hints\-\_\-\-Counter\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Counter\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T2\-\_\-\-Hints\-\_\-\-Counter\-Func)({\bf T2\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} bit\-\_\-count, const {\bf F\-T\-\_\-\-Byte} $\ast$bytes)}}\label{pshints_8h_af65d0cb282888d91ee28b07e9a2c6797}
+\hypertarget{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Funcs@{T2\-\_\-\-Hints\-\_\-\-Funcs}}
+\index{T2\-\_\-\-Hints\-\_\-\-Funcs@{T2\-\_\-\-Hints\-\_\-\-Funcs}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Funcs}]{\setlength{\rightskip}{0pt plus 5cm}typedef const struct {\bf T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-}$\ast$ {\bf T2\-\_\-\-Hints\-\_\-\-Funcs}}}\label{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}
+\hypertarget{pshints_8h_a7e4f3926b4ccfe5c902b1b9350b46a6c}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec@{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec}}
+\index{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec@{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec\-\_\-}  {\bf T2\-\_\-\-Hints\-\_\-\-Funcs\-Rec}}}\label{pshints_8h_a7e4f3926b4ccfe5c902b1b9350b46a6c}
+\hypertarget{pshints_8h_a521ac203e2ed63995555da5fa845c60f}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Mask\-Func@{T2\-\_\-\-Hints\-\_\-\-Mask\-Func}}
+\index{T2\-\_\-\-Hints\-\_\-\-Mask\-Func@{T2\-\_\-\-Hints\-\_\-\-Mask\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Mask\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T2\-\_\-\-Hints\-\_\-\-Mask\-Func)({\bf T2\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} end\-\_\-point, {\bf F\-T\-\_\-\-U\-Int} bit\-\_\-count, const {\bf F\-T\-\_\-\-Byte} $\ast$bytes)}}\label{pshints_8h_a521ac203e2ed63995555da5fa845c60f}
+\hypertarget{pshints_8h_a4fd2d49ab2b86a88e4e881959d45f86e}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Open\-Func@{T2\-\_\-\-Hints\-\_\-\-Open\-Func}}
+\index{T2\-\_\-\-Hints\-\_\-\-Open\-Func@{T2\-\_\-\-Hints\-\_\-\-Open\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Open\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T2\-\_\-\-Hints\-\_\-\-Open\-Func)({\bf T2\-\_\-\-Hints} hints)}}\label{pshints_8h_a4fd2d49ab2b86a88e4e881959d45f86e}
+\hypertarget{pshints_8h_a090a335d4dad20bb0607dcefa667c75f}{\index{pshints.\-h@{pshints.\-h}!T2\-\_\-\-Hints\-\_\-\-Stems\-Func@{T2\-\_\-\-Hints\-\_\-\-Stems\-Func}}
+\index{T2\-\_\-\-Hints\-\_\-\-Stems\-Func@{T2\-\_\-\-Hints\-\_\-\-Stems\-Func}!pshints.h@{pshints.\-h}}
+\subsubsection[{T2\-\_\-\-Hints\-\_\-\-Stems\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ T2\-\_\-\-Hints\-\_\-\-Stems\-Func)({\bf T2\-\_\-\-Hints} hints, {\bf F\-T\-\_\-\-U\-Int} dimension, {\bf F\-T\-\_\-\-U\-Int} {\bf count}, {\bf F\-T\-\_\-\-Fixed} $\ast$coordinates)}}\label{pshints_8h_a090a335d4dad20bb0607dcefa667c75f}

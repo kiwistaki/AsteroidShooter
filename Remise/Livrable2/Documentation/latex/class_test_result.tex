@@ -1,0 +1,349 @@
+\hypertarget{class_test_result}{\section{Test\-Result Class Reference}
+\label{class_test_result}\index{Test\-Result@{Test\-Result}}
+}
+
+
+Manages \hyperlink{class_test_listener}{Test\-Listener}.
+
+A single instance of this class is used when running the test. It is usually created by the test runner (\hyperlink{class_test_runner}{Test\-Runner}).  
+
+
+
+
+{\ttfamily \#include $<$Test\-Result.\-h$>$}
+
+Inheritance diagram for Test\-Result\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_test_result}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_a51781d20e0edeceae06589f1d9c90b48}{Test\-Result} (\hyperlink{class_synchronized_object_1_1_synchronization_object}{Synchronization\-Object} $\ast$sync\-Object=0)
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{class_test_result}{Test\-Result}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test_result_a318d2696f70564678f866bad6d5510b6}{$\sim$\-Test\-Result} ()
+\begin{DoxyCompactList}\small\item\em Destroys a test result. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_aaa44db4de1b095eff670e433f12d51de}{add\-Listener} (\hyperlink{class_test_listener}{Test\-Listener} $\ast$listener)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a695fb70894352cead51d0db8ec59b3e8}{remove\-Listener} (\hyperlink{class_test_listener}{Test\-Listener} $\ast$listener)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a5122b5d4edddb4b2d4ea9c214eed8c3f}{reset} ()
+\begin{DoxyCompactList}\small\item\em Resets the stop flag. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_ada481ef1a01dfa7737a1bf019f352855}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stop testing. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_test_result_a20831556df184132ea80836c196ed333}{should\-Stop} () const 
+\begin{DoxyCompactList}\small\item\em Returns whether testing should be stopped. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a4acd959411284f57a26eefe4c79c30d3}{start\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Informs \hyperlink{class_test_listener}{Test\-Listener} that a test will be started. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a25b7f26ec9a52ea4e05b38a490d381c5}{add\-Error} (\hyperlink{class_test}{Test} $\ast$test, \hyperlink{class_exception}{Exception} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Adds an error to the list of errors. The passed in exception caused the error. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a648e7986cd583f7687dfaa88b5b2c080}{add\-Failure} (\hyperlink{class_test}{Test} $\ast$test, \hyperlink{class_exception}{Exception} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Adds a failure to the list of failures. The passed in exception caused the failure. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_abad5c059d9f01f251057c6065a5c35b3}{end\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Informs \hyperlink{class_test_listener}{Test\-Listener} that a test was completed. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a9e21095aa704141c285819b99785326f}{start\-Suite} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Informs \hyperlink{class_test_listener}{Test\-Listener} that a test suite will be started. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_acacd853a4392a0473b3407051d79d471}{end\-Suite} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Informs \hyperlink{class_test_listener}{Test\-Listener} that a test suite was completed. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_ae00af1cdee85b14923b80a01678478ee}{run\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Run the specified test. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_test_result_a243b3097a3d9468abc61e7910bbaa8b7}{protect} (const \hyperlink{class_functor}{Functor} \&functor, \hyperlink{class_test}{Test} $\ast$test, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&short\-Description=\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string}(\char`\"{}\char`\"{}))
+\begin{DoxyCompactList}\small\item\em Protects a call to the specified functor. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a1a4fbbca38cb73e8e00905193b7593dc}{push\-Protector} (\hyperlink{class_protector}{Protector} $\ast$protector)
+\begin{DoxyCompactList}\small\item\em Adds the specified protector to the protector chain. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_acfbbc6037e1af423f93cdb0360076524}{pop\-Protector} ()
+\begin{DoxyCompactList}\small\item\em Removes the last protector from the protector chain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_cpp_unit_deque_8h_a3425728ebb9dff4afd4dcb7e6f270905}{Cpp\-Unit\-Deque}\\*
+$<$ \hyperlink{class_test_listener}{Test\-Listener} $\ast$ $>$ \hyperlink{class_test_result_a781741f5636cab07026c43e141781d19}{Test\-Listeners}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_aa423474527cbc89141763ea41336a188}{add\-Failure} (const \hyperlink{class_test_failure}{Test\-Failure} \&failure)
+\begin{DoxyCompactList}\small\item\em Called to add a failure to the list of failures. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a6263b1ca50fa6bf504332e181bf75670}{start\-Test\-Run} (\hyperlink{class_test}{Test} $\ast$test)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_a9721fc94b9991cfd3efde322701ebf70}{end\-Test\-Run} (\hyperlink{class_test}{Test} $\ast$test)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_a781741f5636cab07026c43e141781d19}{Test\-Listeners} \hyperlink{class_test_result_a6e5daf8393ca6cdd5a9c3b44074b037b}{m\-\_\-listeners}
+\item 
+Protector\-Chain $\ast$ \hyperlink{class_test_result_abb4a702b14af262661a9e02a0193312f}{m\-\_\-protector\-Chain}
+\item 
+bool \hyperlink{class_test_result_ab8c04c2021b19f0c8d19bf4675f2bd86}{m\-\_\-stop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages \hyperlink{class_test_listener}{Test\-Listener}.
+
+A single instance of this class is used when running the test. It is usually created by the test runner (\hyperlink{class_test_runner}{Test\-Runner}). 
+
+This class shouldn't have to be inherited from. Use a \hyperlink{class_test_listener}{Test\-Listener} or one of its subclasses to be informed of the ongoing tests. Use a \hyperlink{class_outputter}{Outputter} to receive a test summary once it has finished
+
+\hyperlink{class_test_result}{Test\-Result} supplies a template method '\hyperlink{class_synchronized_object_a72f0856ba79569fea9907916e085c555}{set\-Synchronization\-Object()}' so that subclasses can provide mutual exclusion in the face of multiple threads. This can be useful when tests execute in one thread and they fill a subclass of \hyperlink{class_test_result}{Test\-Result} which effects change in another thread. To have mutual exclusion, override \hyperlink{class_synchronized_object_a72f0856ba79569fea9907916e085c555}{set\-Synchronization\-Object()} and make sure that you create an instance of Exclusive\-Zone at the beginning of each method.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test}{Test}, \hyperlink{class_test_listener}{Test\-Listener}, \hyperlink{class_test_result_collector}{Test\-Result\-Collector}, \hyperlink{class_outputter}{Outputter}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_test_result_a781741f5636cab07026c43e141781d19}{\index{Test\-Result@{Test\-Result}!Test\-Listeners@{Test\-Listeners}}
+\index{Test\-Listeners@{Test\-Listeners}!TestResult@{Test\-Result}}
+\subsubsection[{Test\-Listeners}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cpp\-Unit\-Deque}$<${\bf Test\-Listener} $\ast$$>$ {\bf Test\-Result\-::\-Test\-Listeners}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_a781741f5636cab07026c43e141781d19}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_result_a51781d20e0edeceae06589f1d9c90b48}{\index{Test\-Result@{Test\-Result}!Test\-Result@{Test\-Result}}
+\index{Test\-Result@{Test\-Result}!TestResult@{Test\-Result}}
+\subsubsection[{Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Result\-::\-Test\-Result (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronization\-Object} $\ast$}]{sync\-Object = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_test_result_a51781d20e0edeceae06589f1d9c90b48}
+
+
+Construct a \hyperlink{class_test_result}{Test\-Result}. 
+
+\hypertarget{class_test_result_a318d2696f70564678f866bad6d5510b6}{\index{Test\-Result@{Test\-Result}!$\sim$\-Test\-Result@{$\sim$\-Test\-Result}}
+\index{$\sim$\-Test\-Result@{$\sim$\-Test\-Result}!TestResult@{Test\-Result}}
+\subsubsection[{$\sim$\-Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-Result\-::$\sim$\-Test\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a318d2696f70564678f866bad6d5510b6}
+
+
+Destroys a test result. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_result_a25b7f26ec9a52ea4e05b38a490d381c5}{\index{Test\-Result@{Test\-Result}!add\-Error@{add\-Error}}
+\index{add\-Error@{add\-Error}!TestResult@{Test\-Result}}
+\subsubsection[{add\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::add\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test, }
+\item[{{\bf Exception} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a25b7f26ec9a52ea4e05b38a490d381c5}
+
+
+Adds an error to the list of errors. The passed in exception caused the error. 
+
+\hypertarget{class_test_result_a648e7986cd583f7687dfaa88b5b2c080}{\index{Test\-Result@{Test\-Result}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!TestResult@{Test\-Result}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test, }
+\item[{{\bf Exception} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a648e7986cd583f7687dfaa88b5b2c080}
+
+
+Adds a failure to the list of failures. The passed in exception caused the failure. 
+
+\hypertarget{class_test_result_aa423474527cbc89141763ea41336a188}{\index{Test\-Result@{Test\-Result}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!TestResult@{Test\-Result}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Result\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Failure} \&}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_aa423474527cbc89141763ea41336a188}
+
+
+Called to add a failure to the list of failures. 
+
+\hypertarget{class_test_result_aaa44db4de1b095eff670e433f12d51de}{\index{Test\-Result@{Test\-Result}!add\-Listener@{add\-Listener}}
+\index{add\-Listener@{add\-Listener}!TestResult@{Test\-Result}}
+\subsubsection[{add\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::add\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_aaa44db4de1b095eff670e433f12d51de}
+\hypertarget{class_test_result_acacd853a4392a0473b3407051d79d471}{\index{Test\-Result@{Test\-Result}!end\-Suite@{end\-Suite}}
+\index{end\-Suite@{end\-Suite}!TestResult@{Test\-Result}}
+\subsubsection[{end\-Suite}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::end\-Suite (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_acacd853a4392a0473b3407051d79d471}
+
+
+Informs \hyperlink{class_test_listener}{Test\-Listener} that a test suite was completed. 
+
+\hypertarget{class_test_result_abad5c059d9f01f251057c6065a5c35b3}{\index{Test\-Result@{Test\-Result}!end\-Test@{end\-Test}}
+\index{end\-Test@{end\-Test}!TestResult@{Test\-Result}}
+\subsubsection[{end\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::end\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_abad5c059d9f01f251057c6065a5c35b3}
+
+
+Informs \hyperlink{class_test_listener}{Test\-Listener} that a test was completed. 
+
+\hypertarget{class_test_result_a9721fc94b9991cfd3efde322701ebf70}{\index{Test\-Result@{Test\-Result}!end\-Test\-Run@{end\-Test\-Run}}
+\index{end\-Test\-Run@{end\-Test\-Run}!TestResult@{Test\-Result}}
+\subsubsection[{end\-Test\-Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::end\-Test\-Run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_test_result_a9721fc94b9991cfd3efde322701ebf70}
+\hypertarget{class_test_result_acfbbc6037e1af423f93cdb0360076524}{\index{Test\-Result@{Test\-Result}!pop\-Protector@{pop\-Protector}}
+\index{pop\-Protector@{pop\-Protector}!TestResult@{Test\-Result}}
+\subsubsection[{pop\-Protector}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::pop\-Protector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_acfbbc6037e1af423f93cdb0360076524}
+
+
+Removes the last protector from the protector chain. 
+
+\hypertarget{class_test_result_a243b3097a3d9468abc61e7910bbaa8b7}{\index{Test\-Result@{Test\-Result}!protect@{protect}}
+\index{protect@{protect}!TestResult@{Test\-Result}}
+\subsubsection[{protect}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Test\-Result\-::protect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Functor} \&}]{functor, }
+\item[{{\bf Test} $\ast$}]{test, }
+\item[{const {\bf std\-::string} \&}]{short\-Description = {\ttfamily {\bf std\-::string}(\char`\"{}\char`\"{})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a243b3097a3d9468abc61e7910bbaa8b7}
+
+
+Protects a call to the specified functor. 
+
+See \hyperlink{class_protector}{Protector} to understand how protector works. A default protector is always present. It captures Cpp\-Unit\-::\-Exception, std\-::exception and any other exceptions, retrieving as much as possible information about the exception as possible.
+
+Additional \hyperlink{class_protector}{Protector} can be added to the chain to support other exception types using \hyperlink{class_test_result_a1a4fbbca38cb73e8e00905193b7593dc}{push\-Protector()} and \hyperlink{class_test_result_acfbbc6037e1af423f93cdb0360076524}{pop\-Protector()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em functor} & \hyperlink{class_functor}{Functor} to call (typically a call to set\-Up(), \hyperlink{class_test_result_ae00af1cdee85b14923b80a01678478ee}{run\-Test()} or tear\-Down(). \\
+\hline
+{\em test} & \hyperlink{class_test}{Test} the functor is associated to (used for failure reporting). \\
+\hline
+{\em short\-Description} & Short description override for the failure message. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_result_a1a4fbbca38cb73e8e00905193b7593dc}{\index{Test\-Result@{Test\-Result}!push\-Protector@{push\-Protector}}
+\index{push\-Protector@{push\-Protector}!TestResult@{Test\-Result}}
+\subsubsection[{push\-Protector}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::push\-Protector (
+\begin{DoxyParamCaption}
+\item[{{\bf Protector} $\ast$}]{protector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a1a4fbbca38cb73e8e00905193b7593dc}
+
+
+Adds the specified protector to the protector chain. 
+
+\hypertarget{class_test_result_a695fb70894352cead51d0db8ec59b3e8}{\index{Test\-Result@{Test\-Result}!remove\-Listener@{remove\-Listener}}
+\index{remove\-Listener@{remove\-Listener}!TestResult@{Test\-Result}}
+\subsubsection[{remove\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::remove\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a695fb70894352cead51d0db8ec59b3e8}
+\hypertarget{class_test_result_a5122b5d4edddb4b2d4ea9c214eed8c3f}{\index{Test\-Result@{Test\-Result}!reset@{reset}}
+\index{reset@{reset}!TestResult@{Test\-Result}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a5122b5d4edddb4b2d4ea9c214eed8c3f}
+
+
+Resets the stop flag. 
+
+\hypertarget{class_test_result_ae00af1cdee85b14923b80a01678478ee}{\index{Test\-Result@{Test\-Result}!run\-Test@{run\-Test}}
+\index{run\-Test@{run\-Test}!TestResult@{Test\-Result}}
+\subsubsection[{run\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::run\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_ae00af1cdee85b14923b80a01678478ee}
+
+
+Run the specified test. 
+
+Calls \hyperlink{class_test_result_a6263b1ca50fa6bf504332e181bf75670}{start\-Test\-Run()}, test-\/$>$run(this), and finally \hyperlink{class_test_result_a9721fc94b9991cfd3efde322701ebf70}{end\-Test\-Run()}. \hypertarget{class_test_result_a20831556df184132ea80836c196ed333}{\index{Test\-Result@{Test\-Result}!should\-Stop@{should\-Stop}}
+\index{should\-Stop@{should\-Stop}!TestResult@{Test\-Result}}
+\subsubsection[{should\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Test\-Result\-::should\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a20831556df184132ea80836c196ed333}
+
+
+Returns whether testing should be stopped. 
+
+\hypertarget{class_test_result_a9e21095aa704141c285819b99785326f}{\index{Test\-Result@{Test\-Result}!start\-Suite@{start\-Suite}}
+\index{start\-Suite@{start\-Suite}!TestResult@{Test\-Result}}
+\subsubsection[{start\-Suite}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::start\-Suite (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a9e21095aa704141c285819b99785326f}
+
+
+Informs \hyperlink{class_test_listener}{Test\-Listener} that a test suite will be started. 
+
+\hypertarget{class_test_result_a4acd959411284f57a26eefe4c79c30d3}{\index{Test\-Result@{Test\-Result}!start\-Test@{start\-Test}}
+\index{start\-Test@{start\-Test}!TestResult@{Test\-Result}}
+\subsubsection[{start\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::start\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_a4acd959411284f57a26eefe4c79c30d3}
+
+
+Informs \hyperlink{class_test_listener}{Test\-Listener} that a test will be started. 
+
+
+
+Reimplemented in \hyperlink{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}{Text\-Test\-Result}.
+
+\hypertarget{class_test_result_a6263b1ca50fa6bf504332e181bf75670}{\index{Test\-Result@{Test\-Result}!start\-Test\-Run@{start\-Test\-Run}}
+\index{start\-Test\-Run@{start\-Test\-Run}!TestResult@{Test\-Result}}
+\subsubsection[{start\-Test\-Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::start\-Test\-Run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_test_result_a6263b1ca50fa6bf504332e181bf75670}
+\hypertarget{class_test_result_ada481ef1a01dfa7737a1bf019f352855}{\index{Test\-Result@{Test\-Result}!stop@{stop}}
+\index{stop@{stop}!TestResult@{Test\-Result}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_ada481ef1a01dfa7737a1bf019f352855}
+
+
+Stop testing. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_result_a6e5daf8393ca6cdd5a9c3b44074b037b}{\index{Test\-Result@{Test\-Result}!m\-\_\-listeners@{m\-\_\-listeners}}
+\index{m\-\_\-listeners@{m\-\_\-listeners}!TestResult@{Test\-Result}}
+\subsubsection[{m\-\_\-listeners}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Listeners} Test\-Result\-::m\-\_\-listeners\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_a6e5daf8393ca6cdd5a9c3b44074b037b}
+\hypertarget{class_test_result_abb4a702b14af262661a9e02a0193312f}{\index{Test\-Result@{Test\-Result}!m\-\_\-protector\-Chain@{m\-\_\-protector\-Chain}}
+\index{m\-\_\-protector\-Chain@{m\-\_\-protector\-Chain}!TestResult@{Test\-Result}}
+\subsubsection[{m\-\_\-protector\-Chain}]{\setlength{\rightskip}{0pt plus 5cm}Protector\-Chain$\ast$ Test\-Result\-::m\-\_\-protector\-Chain\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_abb4a702b14af262661a9e02a0193312f}
+\hypertarget{class_test_result_ab8c04c2021b19f0c8d19bf4675f2bd86}{\index{Test\-Result@{Test\-Result}!m\-\_\-stop@{m\-\_\-stop}}
+\index{m\-\_\-stop@{m\-\_\-stop}!TestResult@{Test\-Result}}
+\subsubsection[{m\-\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}bool Test\-Result\-::m\-\_\-stop\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_ab8c04c2021b19f0c8d19bf4675f2bd86}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_result_8h}{Test\-Result.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classmath_1_1_boite_englobante_orientee}{\section{math\-:\-:Boite\-Englobante\-Orientee Class Reference}
+\label{classmath_1_1_boite_englobante_orientee}\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}}
+}
+
+
+{\ttfamily \#include $<$Boite\-Englobante\-Orientee.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmath_1_1_boite_englobante_orientee_aa7243dd64524ddebf0ba546a75cb9aac}{Boite\-Englobante\-Orientee} ()
+\item 
+\hyperlink{classmath_1_1_boite_englobante_orientee_ab42ccee7bf04a74a91c1e77e57b11e84}{Boite\-Englobante\-Orientee} (const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&coin\-Min, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&coin\-Max)
+\item 
+bool \hyperlink{classmath_1_1_boite_englobante_orientee_aeb78d68ab7515e356fe0f9ad966a617b}{calculer\-Collision} (const \hyperlink{classmath_1_1_boite_englobante_orientee}{Boite\-Englobante\-Orientee} \&obb) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classmath_1_1_boite_englobante_orientee_a65b61bcf844aa3748d4cb50eaf52c3da}{update} (const \hyperlink{structai_vector3_d}{ai\-Vector3\-D} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position}, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{glew_8h_a6d7a98b0d979b9411a4344a98a7a6122}{angle}, const \hyperlink{structai_vector3_d}{ai\-Vector3\-D} \&taille)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classmath_1_1_boite_englobante_orientee_aeb355a19767d9366825e32ccf95dc4fc}{afficher} () const 
+\item 
+const vector$<$ \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} $>$ \hyperlink{classmath_1_1_boite_englobante_orientee_a578c28c8047573d80a7d2e5824155d23}{get\-Coins} () const 
+\item 
+const vector$<$ \hyperlink{classmath_1_1_droite3_d}{Droite3\-D} $>$ \hyperlink{classmath_1_1_boite_englobante_orientee_a3d8d852d08d3190bf686becc86e5e410}{get\-Droites} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classmath_1_1_boite_englobante_orientee_abb2980f581864806cd859e1c382b677b}{get\-Boite\-Englobante\-Non\-Orientee} (\hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \&coin\-Haut\-Gauche, \hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \&coin\-Bas\-Droite) const 
+\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{classmath_1_1_boite_englobante_orientee_a2420d0e0f451857cb8d46143013691fe}{get\-Moitie\-Longueur} () const 
+\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{classmath_1_1_boite_englobante_orientee_ac626bbe542000ef0c491f8139a1ce51a}{get\-Moitie\-Hauteur} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cette classe definie une boite englobante orientee selon l'objet qu'elle englobe. Elle permet de tester les intersections avec d'autres boites englobantes orientees. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmath_1_1_boite_englobante_orientee_aa7243dd64524ddebf0ba546a75cb9aac}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!Boite\-Englobante\-Orientee@{Boite\-Englobante\-Orientee}}
+\index{Boite\-Englobante\-Orientee@{Boite\-Englobante\-Orientee}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{Boite\-Englobante\-Orientee}]{\setlength{\rightskip}{0pt plus 5cm}math\-::\-Boite\-Englobante\-Orientee\-::\-Boite\-Englobante\-Orientee (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmath_1_1_boite_englobante_orientee_aa7243dd64524ddebf0ba546a75cb9aac}
+Constructeur par defaut \hypertarget{classmath_1_1_boite_englobante_orientee_ab42ccee7bf04a74a91c1e77e57b11e84}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!Boite\-Englobante\-Orientee@{Boite\-Englobante\-Orientee}}
+\index{Boite\-Englobante\-Orientee@{Boite\-Englobante\-Orientee}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{Boite\-Englobante\-Orientee}]{\setlength{\rightskip}{0pt plus 5cm}math\-::\-Boite\-Englobante\-Orientee\-::\-Boite\-Englobante\-Orientee (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3f} \&}]{coin\-Min, }
+\item[{const {\bf Vecteur3f} \&}]{coin\-Max}
+\end{DoxyParamCaption}
+)}}\label{classmath_1_1_boite_englobante_orientee_ab42ccee7bf04a74a91c1e77e57b11e84}
+Constructeur. 
+\begin{DoxyParams}{Parameters}
+{\em coin\-Min} & Le coin minimum de la boite englobante \\
+\hline
+{\em coin\-Max} & Le coin maximum de la boite englobante \\
+\hline
+{\em angle} & L'angle de rotation de la boite englobante (0 par defaut) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmath_1_1_boite_englobante_orientee_aeb355a19767d9366825e32ccf95dc4fc}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!afficher@{afficher}}
+\index{afficher@{afficher}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} math\-::\-Boite\-Englobante\-Orientee\-::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmath_1_1_boite_englobante_orientee_aeb355a19767d9366825e32ccf95dc4fc}
+Affiche la boite englobante \hypertarget{classmath_1_1_boite_englobante_orientee_aeb78d68ab7515e356fe0f9ad966a617b}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!calculer\-Collision@{calculer\-Collision}}
+\index{calculer\-Collision@{calculer\-Collision}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{calculer\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}bool math\-::\-Boite\-Englobante\-Orientee\-::calculer\-Collision (
+\begin{DoxyParamCaption}
+\item[{const {\bf Boite\-Englobante\-Orientee} \&}]{obb}
+\end{DoxyParamCaption}
+) const}}\label{classmath_1_1_boite_englobante_orientee_aeb78d68ab7515e356fe0f9ad966a617b}
+Verifie si une autre boite englobante orientee intersecte celle-\/ci 
+\begin{DoxyParams}{Parameters}
+{\em obb} & La seconde boite englobante orientee (Oriented Bounding Box) avec laquelle on veut verifier la collision. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si l'objet est rentre en collision avec la boite englobante 
+\end{DoxyReturn}
+\hypertarget{classmath_1_1_boite_englobante_orientee_abb2980f581864806cd859e1c382b677b}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!get\-Boite\-Englobante\-Non\-Orientee@{get\-Boite\-Englobante\-Non\-Orientee}}
+\index{get\-Boite\-Englobante\-Non\-Orientee@{get\-Boite\-Englobante\-Non\-Orientee}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{get\-Boite\-Englobante\-Non\-Orientee}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} math\-::\-Boite\-Englobante\-Orientee\-::get\-Boite\-Englobante\-Non\-Orientee (
+\begin{DoxyParamCaption}
+\item[{{\bf Vecteur2f} \&}]{coin\-Haut\-Gauche, }
+\item[{{\bf Vecteur2f} \&}]{coin\-Bas\-Droite}
+\end{DoxyParamCaption}
+) const}}\label{classmath_1_1_boite_englobante_orientee_abb2980f581864806cd859e1c382b677b}
+Retourne 2 vecteurs en 2 dimensions qui définissent la boite englobante non-\/orientée dans le plan xy. 
+\begin{DoxyParams}{Parameters}
+{\em coin\-Haut\-Gauche} & Le coin en haut à gauche de la boite non-\/orientée \\
+\hline
+{\em coin\-Bas\-Droite} & Le coin en bas à droite de la boite non-\/orientée \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmath_1_1_boite_englobante_orientee_a578c28c8047573d80a7d2e5824155d23}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!get\-Coins@{get\-Coins}}
+\index{get\-Coins@{get\-Coins}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{get\-Coins}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Vecteur3f} $>$ math\-::\-Boite\-Englobante\-Orientee\-::get\-Coins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmath_1_1_boite_englobante_orientee_a578c28c8047573d80a7d2e5824155d23}
+Retourne les 4 coins de la boite. Les coins sont dans cet ordre\-:
+\begin{DoxyItemize}
+\item Bas gauche;
+\item Haut gauche;
+\item Haut droit;
+\item Bas droit. Cet ordre est correct lorsque l'objet n'est pas tourne. Si l'objet est a l'envers, alors les coins apparaîtront a l'envers, mais ils gardent quand meme cet ordre. 
+\end{DoxyItemize}\hypertarget{classmath_1_1_boite_englobante_orientee_a3d8d852d08d3190bf686becc86e5e410}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!get\-Droites@{get\-Droites}}
+\index{get\-Droites@{get\-Droites}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{get\-Droites}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Droite3\-D} $>$ math\-::\-Boite\-Englobante\-Orientee\-::get\-Droites (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmath_1_1_boite_englobante_orientee_a3d8d852d08d3190bf686becc86e5e410}
+Retourne les 4 droites qui composent la boite. Les droites sont dans cet ordre\-:
+\begin{DoxyItemize}
+\item Bas dans l'axe des x;
+\item Gauche dans l'axe des y;
+\item Haut dans l'axe des x;
+\item Droite dans l'axe des y; Cet ordre est correct lorsque l'objets n'est pas tourné. Si l'objet est à l'envers, alors les droites seronts à l'evers, mais ils gardent quand même cet ordre. 
+\end{DoxyItemize}\hypertarget{classmath_1_1_boite_englobante_orientee_ac626bbe542000ef0c491f8139a1ce51a}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!get\-Moitie\-Hauteur@{get\-Moitie\-Hauteur}}
+\index{get\-Moitie\-Hauteur@{get\-Moitie\-Hauteur}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{get\-Moitie\-Hauteur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} math\-::\-Boite\-Englobante\-Orientee\-::get\-Moitie\-Hauteur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmath_1_1_boite_englobante_orientee_ac626bbe542000ef0c491f8139a1ce51a}
+\hypertarget{classmath_1_1_boite_englobante_orientee_a2420d0e0f451857cb8d46143013691fe}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!get\-Moitie\-Longueur@{get\-Moitie\-Longueur}}
+\index{get\-Moitie\-Longueur@{get\-Moitie\-Longueur}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{get\-Moitie\-Longueur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} math\-::\-Boite\-Englobante\-Orientee\-::get\-Moitie\-Longueur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmath_1_1_boite_englobante_orientee_a2420d0e0f451857cb8d46143013691fe}
+\hypertarget{classmath_1_1_boite_englobante_orientee_a65b61bcf844aa3748d4cb50eaf52c3da}{\index{math\-::\-Boite\-Englobante\-Orientee@{math\-::\-Boite\-Englobante\-Orientee}!update@{update}}
+\index{update@{update}!math::BoiteEnglobanteOrientee@{math\-::\-Boite\-Englobante\-Orientee}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} math\-::\-Boite\-Englobante\-Orientee\-::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\-Vector3\-D} \&}]{position, }
+\item[{{\bf float}}]{angle, }
+\item[{const {\bf ai\-Vector3\-D} \&}]{taille}
+\end{DoxyParamCaption}
+)}}\label{classmath_1_1_boite_englobante_orientee_a65b61bcf844aa3748d4cb50eaf52c3da}
+Met a jour la boite englobante pour avoir sa nouvelle orientation et position 
+\begin{DoxyParams}{Parameters}
+{\em position} & La nouvelle position de la boite englobante \\
+\hline
+{\em angle} & Le nouvel angle de rotation de la boite englobante \\
+\hline
+{\em taille} & La nouvelle taille de la boite englobante \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_boite_englobante_orientee_8h}{Boite\-Englobante\-Orientee.\-h}\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_boite_englobante_orientee_8cpp}{Boite\-Englobante\-Orientee.\-cpp}\end{DoxyCompactItemize}

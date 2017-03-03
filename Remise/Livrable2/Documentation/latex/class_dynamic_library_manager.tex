@@ -1,0 +1,111 @@
+\hypertarget{class_dynamic_library_manager}{\section{Dynamic\-Library\-Manager Class Reference}
+\label{class_dynamic_library_manager}\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}}
+}
+
+
+Manages dynamic libraries.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\-Library\-Manager.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$ \hyperlink{class_dynamic_library_manager_abb1022f448f94bf40c890d38ea41c52b}{Symbol}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$ \hyperlink{class_dynamic_library_manager_aa47563bb349a44ec41af6464300e0688}{Library\-Handle}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dynamic_library_manager_a26d6592077763d9eb31d66d02d17b8d4}{Dynamic\-Library\-Manager} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&library\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Loads the specified library. \end{DoxyCompactList}\item 
+\hyperlink{class_dynamic_library_manager_a1c6a30a61161a8ddb96279bfb44c44c7}{$\sim$\-Dynamic\-Library\-Manager} ()
+\begin{DoxyCompactList}\small\item\em Releases the loaded library.. \end{DoxyCompactList}\item 
+\hyperlink{class_dynamic_library_manager_abb1022f448f94bf40c890d38ea41c52b}{Symbol} \hyperlink{class_dynamic_library_manager_a2bd337473432b0f470f5bb987da77239}{find\-Symbol} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&symbol)
+\begin{DoxyCompactList}\small\item\em Returns a pointer on the specified symbol exported by the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages dynamic libraries. 
+
+The Dynamic Library Manager provides a platform independent way to work with dynamic library. It load a specific dynamic library, and can returns specific symbol exported by the dynamic library.
+
+If an error occurs, a \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception} is thrown. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_dynamic_library_manager_aa47563bb349a44ec41af6464300e0688}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!Library\-Handle@{Library\-Handle}}
+\index{Library\-Handle@{Library\-Handle}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{Library\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$ {\bf Dynamic\-Library\-Manager\-::\-Library\-Handle}}}\label{class_dynamic_library_manager_aa47563bb349a44ec41af6464300e0688}
+\hypertarget{class_dynamic_library_manager_abb1022f448f94bf40c890d38ea41c52b}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{Symbol}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$ {\bf Dynamic\-Library\-Manager\-::\-Symbol}}}\label{class_dynamic_library_manager_abb1022f448f94bf40c890d38ea41c52b}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dynamic_library_manager_a26d6592077763d9eb31d66d02d17b8d4}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}}
+\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{Dynamic\-Library\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Dynamic\-Library\-Manager\-::\-Dynamic\-Library\-Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{library\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_dynamic_library_manager_a26d6592077763d9eb31d66d02d17b8d4}
+
+
+Loads the specified library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em library\-File\-Name} & Name of the library to load. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception}} & if a failure occurs while loading the library (fail to found or load the library). \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_dynamic_library_manager_a1c6a30a61161a8ddb96279bfb44c44c7}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!$\sim$\-Dynamic\-Library\-Manager@{$\sim$\-Dynamic\-Library\-Manager}}
+\index{$\sim$\-Dynamic\-Library\-Manager@{$\sim$\-Dynamic\-Library\-Manager}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{$\sim$\-Dynamic\-Library\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Dynamic\-Library\-Manager\-::$\sim$\-Dynamic\-Library\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dynamic_library_manager_a1c6a30a61161a8ddb96279bfb44c44c7}
+
+
+Releases the loaded library.. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dynamic_library_manager_a2bd337473432b0f470f5bb987da77239}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!find\-Symbol@{find\-Symbol}}
+\index{find\-Symbol@{find\-Symbol}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{find\-Symbol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} Dynamic\-Library\-Manager\-::find\-Symbol (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{symbol}
+\end{DoxyParamCaption}
+)}}\label{class_dynamic_library_manager_a2bd337473432b0f470f5bb987da77239}
+
+
+Returns a pointer on the specified symbol exported by the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & Name of the symbol exported by the library. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the symbol. Should be casted to the actual type. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception}} & if the symbol is not found. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\hyperlink{_dynamic_library_manager_8h}{Dynamic\-Library\-Manager.\-h}\end{DoxyCompactItemize}

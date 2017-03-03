@@ -1,0 +1,93 @@
+\hypertarget{class_commande_rotation}{\section{Commande\-Rotation Class Reference}
+\label{class_commande_rotation}\index{Commande\-Rotation@{Commande\-Rotation}}
+}
+
+
+La classe \hyperlink{class_commande_rotation}{Commande\-Rotation} permet d'effectuer une rotation sur un ou plusieurs objets selectionnes.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Rotation.\-h$>$}
+
+Inheritance diagram for Commande\-Rotation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_rotation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_rotation_a761e2cdab1e1b916643bea637070646d}{Commande\-Rotation} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte, const vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \&objets\-Selectionnes)
+\item 
+virtual \hyperlink{class_commande_rotation_a5e0b92f5c0dd1d93b9f608c02d94608c}{$\sim$\-Commande\-Rotation} ()
+\item 
+virtual void \hyperlink{class_commande_rotation_a2ee611526f6ed7720821dbf8e577fe64}{executer} (int mouse\-X, int mouse\-Y, int boutton, int touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_commande_rotation}{Commande\-Rotation} permet d'effectuer une rotation sur un ou plusieurs objets selectionnes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_rotation_a761e2cdab1e1b916643bea637070646d}{\index{Commande\-Rotation@{Commande\-Rotation}!Commande\-Rotation@{Commande\-Rotation}}
+\index{Commande\-Rotation@{Commande\-Rotation}!CommandeRotation@{Commande\-Rotation}}
+\subsubsection[{Commande\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Rotation\-::\-Commande\-Rotation (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte, }
+\item[{const vector$<$ {\bf Element\-Jeu\-Abstrait} $\ast$ $>$ \&}]{objets\-Selectionnes}
+\end{DoxyParamCaption}
+)}}\label{class_commande_rotation_a761e2cdab1e1b916643bea637070646d}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+{\em objets\-Selectionnes} & Une reference vers un vecteur qui contiendra les objets selectionnes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_rotation_a5e0b92f5c0dd1d93b9f608c02d94608c}{\index{Commande\-Rotation@{Commande\-Rotation}!$\sim$\-Commande\-Rotation@{$\sim$\-Commande\-Rotation}}
+\index{$\sim$\-Commande\-Rotation@{$\sim$\-Commande\-Rotation}!CommandeRotation@{Commande\-Rotation}}
+\subsubsection[{$\sim$\-Commande\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Rotation\-::$\sim$\-Commande\-Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_rotation_a5e0b92f5c0dd1d93b9f608c02d94608c}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_rotation_a2ee611526f6ed7720821dbf8e577fe64}{\index{Commande\-Rotation@{Commande\-Rotation}!executer@{executer}}
+\index{executer@{executer}!CommandeRotation@{Commande\-Rotation}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}void Commande\-Rotation\-::executer (
+\begin{DoxyParamCaption}
+\item[{int}]{mouse\-X, }
+\item[{int}]{mouse\-Y, }
+\item[{int}]{boutton, }
+\item[{int}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_rotation_a2ee611526f6ed7720821dbf8e577fe64}
+Execute la commande. Effectue une rotation sur le ou les objets selectionnes a partir du mouvement de la souris. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_rotation_8h}{Commande\-Rotation.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/Commande\-Rotation.\-cpp\end{DoxyCompactItemize}

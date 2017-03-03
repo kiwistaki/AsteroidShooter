@@ -1,0 +1,745 @@
+\hypertarget{class_interface_graphique_1_1_input_manager}{\section{Interface\-Graphique.\-Input\-Manager Class Reference}
+\label{class_interface_graphique_1_1_input_manager}\index{Interface\-Graphique.\-Input\-Manager@{Interface\-Graphique.\-Input\-Manager}}
+}
+Inheritance diagram for Interface\-Graphique.\-Input\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.333333cm]{class_interface_graphique_1_1_input_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a928d0ff1f9094ab94d016084cd61797d}{attach\-To\-Canvas} (Canvas canvas)
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a4e67848d1bb4e779cf5777d93fbe7ae7}{clear\-Touches\-Appuyees} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a3518690b66a60c40532ec33754aa5ccd}{set\-Main\-Window} (\hyperlink{class_interface_graphique_1_1_demarrage}{Demarrage} fenetre)
+\item 
+boolean \hyperlink{class_interface_graphique_1_1_input_manager_a8b1712588f51aaa9d217d16e5721a3b5}{is\-Key\-Typed} (int key)
+\item 
+boolean \hyperlink{class_interface_graphique_1_1_input_manager_ae6638e8a80f36bb248c040dc071dcf0c}{is\-Key\-Pressed} (int key)
+\item 
+boolean \hyperlink{class_interface_graphique_1_1_input_manager_a4fa51a13e70c37c1a6306e05c23e72e5}{is\-Mouse\-Button\-Pressed} (int button)
+\item 
+boolean \hyperlink{class_interface_graphique_1_1_input_manager_a5f1dac1fe00de4b1c5f0a49036486bc1}{is\-Mouse\-Button\-Clicked} (int button)
+\item 
+Point \hyperlink{class_interface_graphique_1_1_input_manager_a312f35e71847398cb91f4ea70d5804a5}{get\-Mouse\-Position} ()
+\item 
+int \hyperlink{class_interface_graphique_1_1_input_manager_ac019beea51384a4a1c4648504b37078d}{get\-Current\-Scrolled\-Mouse\-Wheel} ()
+\item 
+int \hyperlink{class_interface_graphique_1_1_input_manager_ac20c8faf622f0a876401fe92cc17a7d6}{get\-Current\-Pressed\-Key} ()
+\item 
+int \hyperlink{class_interface_graphique_1_1_input_manager_ac8ba061ba7c04ac09d8deb85ff6b11a6}{get\-Current\-Pressed\-Button} ()
+\item 
+Hash\-Set$<$ Integer $>$ \hyperlink{class_interface_graphique_1_1_input_manager_a29fcbd1cf15a5461421879f12133f3ba}{get\-Pressed\-Keys} ()
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_ad846eba9a62c947116f88c802c477ba9}{void {\bfseries key\-Typed} (Key\-Event e)}\label{class_interface_graphique_1_1_input_manager_ad846eba9a62c947116f88c802c477ba9}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a916ed887434d14d754fe7f24cd793be3}{void {\bfseries key\-Pressed} (Key\-Event e)}\label{class_interface_graphique_1_1_input_manager_a916ed887434d14d754fe7f24cd793be3}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_affb66f19576341f69780056589d9462a}{void {\bfseries key\-Released} (Key\-Event e)}\label{class_interface_graphique_1_1_input_manager_affb66f19576341f69780056589d9462a}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_aba00c4bf0ab95375dd2259fa21e54f31}{void {\bfseries mouse\-Clicked} (Mouse\-Event e)}\label{class_interface_graphique_1_1_input_manager_aba00c4bf0ab95375dd2259fa21e54f31}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a45afeb669cfbfda8f0d7058b847cac98}{void {\bfseries mouse\-Pressed} (Mouse\-Event e)}\label{class_interface_graphique_1_1_input_manager_a45afeb669cfbfda8f0d7058b847cac98}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a84192982d39a3c9990d763b458f3e3ff}{void {\bfseries mouse\-Released} (Mouse\-Event e)}\label{class_interface_graphique_1_1_input_manager_a84192982d39a3c9990d763b458f3e3ff}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_ad9b7501bf8ce0071e6183891cbeceb14}{void {\bfseries mouse\-Entered} (Mouse\-Event e)}\label{class_interface_graphique_1_1_input_manager_ad9b7501bf8ce0071e6183891cbeceb14}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a3d98dae1b59cddaac86fc4178b21a8a5}{void {\bfseries mouse\-Exited} (Mouse\-Event e)}\label{class_interface_graphique_1_1_input_manager_a3d98dae1b59cddaac86fc4178b21a8a5}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_ab277aafa689d996dee87ede6e3d36193}{void {\bfseries mouse\-Dragged} (Mouse\-Event arg0)}\label{class_interface_graphique_1_1_input_manager_ab277aafa689d996dee87ede6e3d36193}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_af9ba61f04581147dd5ca9fefa773d386}{void {\bfseries mouse\-Moved} (Mouse\-Event arg0)}\label{class_interface_graphique_1_1_input_manager_af9ba61f04581147dd5ca9fefa773d386}
+
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a5107c555ab224c5b485ceaaabf060be9}{mouse\-Wheel\-Moved} (Mouse\-Wheel\-Event e)
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a2632f531b395d2f496abed8f1dad2331}{appuyer\-\_\-f} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a888900a2d2f853639d41349bdd35703c}{appuyer\-\_\-d} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_abb9f3c756c7698f74f38a2ea1394e1a0}{appuyer\-\_\-s} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_aeecb09cafb5135bc1d04aa0ba341098e}{appuyer\-\_\-r} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a389b251b807c61e9083e2764122978d3}{appuyer\-\_\-e} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a9e727ec197424caa1a9c88393541b180}{appuyer\-\_\-c} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_af385ee71ed3fbbe72f6704d68ab247f4}{appuyer\-\_\-z} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_aa5f93af909bef218fbef3f9593cc932e}{appuyer\-\_\-m} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_adc5a8349eddaebbc7e9abc4bb0866cb9}{appuyer\-\_\-p} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a129709985b69f9a9a375db02b1d8e949}{appuyer\-\_\-b} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_adf19ee7e453f492a7ed46889e1dda54f}{appuyer\-\_\-g} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_aa50f45de0e2162bff0b2aae953ae29dd}{appuyer\-\_\-t} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_aea476f6a03fe5db1f412fe7993410b5a}{appuyer\-\_\-1} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a1f3b1811698ccd1378b9f5afdfcacec6}{appuyer\-\_\-2} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_ae0f9355524ec2bcba9e73fe16b44672a}{appuyer\-\_\-\-E\-S\-C} ()
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_adf26b00691f2e3066dfb288ea44f543c}{void {\bfseries appuyer\-\_\-backspace} ()}\label{class_interface_graphique_1_1_input_manager_adf26b00691f2e3066dfb288ea44f543c}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a58b95ebbf9c62f9a91090b0978777016}{void {\bfseries appuyer\-\_\-j} ()}\label{class_interface_graphique_1_1_input_manager_a58b95ebbf9c62f9a91090b0978777016}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a5b96135c3f6c0bdbc29d6fc7a766e9a5}{void {\bfseries appuyer\-\_\-k} ()}\label{class_interface_graphique_1_1_input_manager_a5b96135c3f6c0bdbc29d6fc7a766e9a5}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a03183e4def5a1ec9044f6e07a18e292c}{void {\bfseries appuyer\-\_\-l} ()}\label{class_interface_graphique_1_1_input_manager_a03183e4def5a1ec9044f6e07a18e292c}
+
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a27fe6229a80d50860840d94da4fc5d92}{Partie\-Rapide} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a09709cf851c04cf063a714a92a206d56}{Campagne} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_aaf306d14c578f76672c4d49b771c994e}{Configuration\-Campagne} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_ab104f49fa1322971093dc5b809267bac}{Nouveau} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_ab06b1952910501a34530245ada55d51c}{Ouvrir} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_ac0b5346e8bc00b6b6900a681987d81d0}{Enregistrer} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_ad98cb7b9b0c051af34c567c4a96a7d13}{Enregistrer\-Sous} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a36d67af53beef02f2679e829fab5fa51}{Proprietes} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a9e586b8ae8560f4f2391ce922108a14c}{Mode\-Test} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a6bebbff324e7252c39dfd600bbe82f8a}{Menu\-Principal} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a8cadb205f49c743af90d2fd179ad53e1}{Configuration} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a0a161445feef76124e22d37b72ab3c77}{Sauvegarde\-Configuration} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a41a980434b6245b3a3eff3c9160a18fa}{Fenetre\-Edition} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a092761dee7b8fdc9e4b0ef463711213c}{Supprimer} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a9b1ac4651b6112cbf86cd065cf2a01ac}{Selection} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a172d3daf5088008d54a2f10463d69d8d}{Deplacement} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_af05534635274a76a1e8f60ed4e8e5098}{Rotation} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a5c712c708a93b782e5b7f35a50387b7e}{Mise\-A\-Echelle} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a8251bcd2385f2cf7419769b006c980da}{Duplication} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a1c25e8f65230beebf1ad9d85060c26b6}{Zoom} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a81fc16e249ced7ce602900c6518d91d5}{Creation\-Bonus} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a0d11e8b27720ada94131531abf91602b}{Creation\-Portails} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_ab78175fcd4c196550ea83bb2e2d0a266}{Creation\-Barriere} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a037da2aa66f52ab35e789c0c26e6d706}{Creation\-Station} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_afdf14393d23a931b927029f5ffa8bd2d}{Changer\-Vue\-Orbite} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a24a63cff4c87a546a753027114635ca7}{Changer\-Vue\-Orthographique} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a1d3e27dd47a6eb19f8a8db55e97f820c}{Quitter} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_input_manager_a2f51026962423e2ed4407b4cb0133d09}{Aide} ()
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a9eeeb47248b31cac5985763b87237475}{void {\bfseries set\-Parametre\-Panneau\-Config} ()}\label{class_interface_graphique_1_1_input_manager_a9eeeb47248b31cac5985763b87237475}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_ac0806e4a1361db6f86d86cf517bdebb6}{void {\bfseries fermer\-Configuration\-Zone\-Jeu} ()}\label{class_interface_graphique_1_1_input_manager_ac0806e4a1361db6f86d86cf517bdebb6}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_aa01122aeb9e56dc1ac9da645cb95159b}{boolean {\bfseries get\-Mode\-Pause} ()}\label{class_interface_graphique_1_1_input_manager_aa01122aeb9e56dc1ac9da645cb95159b}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a5493ab3409bf22fa3914d04786cb8633}{void {\bfseries reset\-Buttons} ()}\label{class_interface_graphique_1_1_input_manager_a5493ab3409bf22fa3914d04786cb8633}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_ae207e898f3b2c41896b9675f95995126}{static \hyperlink{class_interface_graphique_1_1_input_manager}{Input\-Manager} {\bfseries get\-Instance} ()}\label{class_interface_graphique_1_1_input_manager_ae207e898f3b2c41896b9675f95995126}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a833fb33470c5f1dfe3ba6cc1fd2f9689}{int {\bfseries coop\-\_\-} = 0}\label{class_interface_graphique_1_1_input_manager_a833fb33470c5f1dfe3ba6cc1fd2f9689}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a4a33b46c62b154c3b45d42313d000d6c}{int {\bfseries joueur2\-\_\-} = 0}\label{class_interface_graphique_1_1_input_manager_a4a33b46c62b154c3b45d42313d000d6c}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_input_manager_a97667a0d06d31043b3ed3d2e6d64a3fe}{String {\bfseries nom\-Fichier\-\_\-} = \char`\"{}\char`\"{}}\label{class_interface_graphique_1_1_input_manager_a97667a0d06d31043b3ed3d2e6d64a3fe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_interface_graphique_1_1_input_manager_a2f51026962423e2ed4407b4cb0133d09}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Aide@{Aide}}
+\index{Aide@{Aide}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Aide}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Aide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a2f51026962423e2ed4407b4cb0133d09}
+Fonction appelée lorsque le bouton Aide de la barre d'outils est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_aea476f6a03fe5db1f412fe7993410b5a}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-1@{appuyer\-\_\-1}}
+\index{appuyer\-\_\-1@{appuyer\-\_\-1}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_aea476f6a03fe5db1f412fe7993410b5a}
+Raccourci vue camera orthographique 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a1f3b1811698ccd1378b9f5afdfcacec6}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-2@{appuyer\-\_\-2}}
+\index{appuyer\-\_\-2@{appuyer\-\_\-2}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a1f3b1811698ccd1378b9f5afdfcacec6}
+Raccourci vue camera orbite 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a129709985b69f9a9a375db02b1d8e949}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-b@{appuyer\-\_\-b}}
+\index{appuyer\-\_\-b@{appuyer\-\_\-b}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-b}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-b (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a129709985b69f9a9a375db02b1d8e949}
+Raccourci création bonus 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a9e727ec197424caa1a9c88393541b180}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-c@{appuyer\-\_\-c}}
+\index{appuyer\-\_\-c@{appuyer\-\_\-c}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-c}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-c (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a9e727ec197424caa1a9c88393541b180}
+Raccourci Duplication 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a888900a2d2f853639d41349bdd35703c}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-d@{appuyer\-\_\-d}}
+\index{appuyer\-\_\-d@{appuyer\-\_\-d}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-d}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-d (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a888900a2d2f853639d41349bdd35703c}
+Raccourci déplacement 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a389b251b807c61e9083e2764122978d3}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-e@{appuyer\-\_\-e}}
+\index{appuyer\-\_\-e@{appuyer\-\_\-e}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-e}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-e (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a389b251b807c61e9083e2764122978d3}
+Raccourci Mise a echelle 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_ae0f9355524ec2bcba9e73fe16b44672a}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-\-E\-S\-C@{appuyer\-\_\-\-E\-S\-C}}
+\index{appuyer\-\_\-\-E\-S\-C@{appuyer\-\_\-\-E\-S\-C}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-\-E\-S\-C}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-\-E\-S\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ae0f9355524ec2bcba9e73fe16b44672a}
+Raccourci mode pause 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a2632f531b395d2f496abed8f1dad2331}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-f@{appuyer\-\_\-f}}
+\index{appuyer\-\_\-f@{appuyer\-\_\-f}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-f (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a2632f531b395d2f496abed8f1dad2331}
+Fonction appelée lorsque la touche \char`\"{}f\char`\"{} est appuyée. Elle affiche le nombre d'affichages par seconde. \hypertarget{class_interface_graphique_1_1_input_manager_adf19ee7e453f492a7ed46889e1dda54f}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-g@{appuyer\-\_\-g}}
+\index{appuyer\-\_\-g@{appuyer\-\_\-g}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-g}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-g (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_adf19ee7e453f492a7ed46889e1dda54f}
+Raccourci création station 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_aa5f93af909bef218fbef3f9593cc932e}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-m@{appuyer\-\_\-m}}
+\index{appuyer\-\_\-m@{appuyer\-\_\-m}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-m}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-m (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_aa5f93af909bef218fbef3f9593cc932e}
+Raccourci création barriere 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_adc5a8349eddaebbc7e9abc4bb0866cb9}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-p@{appuyer\-\_\-p}}
+\index{appuyer\-\_\-p@{appuyer\-\_\-p}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-p (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_adc5a8349eddaebbc7e9abc4bb0866cb9}
+Raccourci création portail 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_aeecb09cafb5135bc1d04aa0ba341098e}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-r@{appuyer\-\_\-r}}
+\index{appuyer\-\_\-r@{appuyer\-\_\-r}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-r}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-r (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_aeecb09cafb5135bc1d04aa0ba341098e}
+Raccourci rotation 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_abb9f3c756c7698f74f38a2ea1394e1a0}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-s@{appuyer\-\_\-s}}
+\index{appuyer\-\_\-s@{appuyer\-\_\-s}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-s (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_abb9f3c756c7698f74f38a2ea1394e1a0}
+Raccourci sélection 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_aa50f45de0e2162bff0b2aae953ae29dd}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-t@{appuyer\-\_\-t}}
+\index{appuyer\-\_\-t@{appuyer\-\_\-t}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_aa50f45de0e2162bff0b2aae953ae29dd}
+Raccourci mode test 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_af385ee71ed3fbbe72f6704d68ab247f4}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!appuyer\-\_\-z@{appuyer\-\_\-z}}
+\index{appuyer\-\_\-z@{appuyer\-\_\-z}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{appuyer\-\_\-z}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-appuyer\-\_\-z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_af385ee71ed3fbbe72f6704d68ab247f4}
+Raccourci Zoom 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a928d0ff1f9094ab94d016084cd61797d}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!attach\-To\-Canvas@{attach\-To\-Canvas}}
+\index{attach\-To\-Canvas@{attach\-To\-Canvas}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{attach\-To\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-attach\-To\-Canvas (
+\begin{DoxyParamCaption}
+\item[{Canvas}]{canvas}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a928d0ff1f9094ab94d016084cd61797d}
+Permet d'ajouter les listeners au Canvas \hypertarget{class_interface_graphique_1_1_input_manager_a09709cf851c04cf063a714a92a206d56}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Campagne@{Campagne}}
+\index{Campagne@{Campagne}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Campagne}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Campagne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a09709cf851c04cf063a714a92a206d56}
+Fonction appelée lorsque l'élément Campagne du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_afdf14393d23a931b927029f5ffa8bd2d}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Changer\-Vue\-Orbite@{Changer\-Vue\-Orbite}}
+\index{Changer\-Vue\-Orbite@{Changer\-Vue\-Orbite}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Changer\-Vue\-Orbite}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Changer\-Vue\-Orbite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_afdf14393d23a931b927029f5ffa8bd2d}
+Fonction appelée lorsque l'élément Changer\-Vue\-Orbitale du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a24a63cff4c87a546a753027114635ca7}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Changer\-Vue\-Orthographique@{Changer\-Vue\-Orthographique}}
+\index{Changer\-Vue\-Orthographique@{Changer\-Vue\-Orthographique}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Changer\-Vue\-Orthographique}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Changer\-Vue\-Orthographique (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a24a63cff4c87a546a753027114635ca7}
+Fonction appelée lorsque l'élément Changer\-Vue\-Orthographique du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a4e67848d1bb4e779cf5777d93fbe7ae7}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!clear\-Touches\-Appuyees@{clear\-Touches\-Appuyees}}
+\index{clear\-Touches\-Appuyees@{clear\-Touches\-Appuyees}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{clear\-Touches\-Appuyees}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-clear\-Touches\-Appuyees (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a4e67848d1bb4e779cf5777d93fbe7ae7}
+Réinitialise les touches appuyées \hypertarget{class_interface_graphique_1_1_input_manager_a8cadb205f49c743af90d2fd179ad53e1}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a8cadb205f49c743af90d2fd179ad53e1}
+Fonction appelée lorsque l'élément Configuration du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_aaf306d14c578f76672c4d49b771c994e}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Configuration\-Campagne@{Configuration\-Campagne}}
+\index{Configuration\-Campagne@{Configuration\-Campagne}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Configuration\-Campagne}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Configuration\-Campagne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_aaf306d14c578f76672c4d49b771c994e}
+Fonction appelée lorsque la configuration de la campagne est terminée \hypertarget{class_interface_graphique_1_1_input_manager_ab78175fcd4c196550ea83bb2e2d0a266}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Creation\-Barriere@{Creation\-Barriere}}
+\index{Creation\-Barriere@{Creation\-Barriere}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Creation\-Barriere}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Creation\-Barriere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ab78175fcd4c196550ea83bb2e2d0a266}
+Fonction appelée lorsque l'élément Creation\-Barriere du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a81fc16e249ced7ce602900c6518d91d5}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Creation\-Bonus@{Creation\-Bonus}}
+\index{Creation\-Bonus@{Creation\-Bonus}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Creation\-Bonus}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Creation\-Bonus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a81fc16e249ced7ce602900c6518d91d5}
+Fonction appelée lorsque l'élément Creation\-Bonus du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a0d11e8b27720ada94131531abf91602b}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Creation\-Portails@{Creation\-Portails}}
+\index{Creation\-Portails@{Creation\-Portails}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Creation\-Portails}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Creation\-Portails (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a0d11e8b27720ada94131531abf91602b}
+Fonction appelée lorsque l'élément Creation\-Portails du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a037da2aa66f52ab35e789c0c26e6d706}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Creation\-Station@{Creation\-Station}}
+\index{Creation\-Station@{Creation\-Station}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Creation\-Station}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Creation\-Station (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a037da2aa66f52ab35e789c0c26e6d706}
+Fonction appelée lorsque l'élément Creation\-Station du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a172d3daf5088008d54a2f10463d69d8d}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Deplacement@{Deplacement}}
+\index{Deplacement@{Deplacement}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Deplacement}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Deplacement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a172d3daf5088008d54a2f10463d69d8d}
+Fonction appelée lorsque l'élément Deplacement du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a8251bcd2385f2cf7419769b006c980da}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Duplication@{Duplication}}
+\index{Duplication@{Duplication}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Duplication}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Duplication (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a8251bcd2385f2cf7419769b006c980da}
+Fonction appelée lorsque l'élément Duplication du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_ac0b5346e8bc00b6b6900a681987d81d0}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Enregistrer@{Enregistrer}}
+\index{Enregistrer@{Enregistrer}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Enregistrer}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Enregistrer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ac0b5346e8bc00b6b6900a681987d81d0}
+Fonction appelée lorsque l'élément Enregistrer du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_ad98cb7b9b0c051af34c567c4a96a7d13}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Enregistrer\-Sous@{Enregistrer\-Sous}}
+\index{Enregistrer\-Sous@{Enregistrer\-Sous}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Enregistrer\-Sous}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Enregistrer\-Sous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ad98cb7b9b0c051af34c567c4a96a7d13}
+Fonction appelée lorsque l'élément Enregistrer\-Sous du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a41a980434b6245b3a3eff3c9160a18fa}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Fenetre\-Edition@{Fenetre\-Edition}}
+\index{Fenetre\-Edition@{Fenetre\-Edition}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Fenetre\-Edition}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Fenetre\-Edition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a41a980434b6245b3a3eff3c9160a18fa}
+Fonction appelée lorsque l'élément Fenetre\-Edition du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_ac8ba061ba7c04ac09d8deb85ff6b11a6}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!get\-Current\-Pressed\-Button@{get\-Current\-Pressed\-Button}}
+\index{get\-Current\-Pressed\-Button@{get\-Current\-Pressed\-Button}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{get\-Current\-Pressed\-Button}]{\setlength{\rightskip}{0pt plus 5cm}int Interface\-Graphique.\-Input\-Manager.\-get\-Current\-Pressed\-Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ac8ba061ba7c04ac09d8deb85ff6b11a6}
+Retourne le boutton de la souris qui est présentemment appuyé \hypertarget{class_interface_graphique_1_1_input_manager_ac20c8faf622f0a876401fe92cc17a7d6}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!get\-Current\-Pressed\-Key@{get\-Current\-Pressed\-Key}}
+\index{get\-Current\-Pressed\-Key@{get\-Current\-Pressed\-Key}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{get\-Current\-Pressed\-Key}]{\setlength{\rightskip}{0pt plus 5cm}int Interface\-Graphique.\-Input\-Manager.\-get\-Current\-Pressed\-Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ac20c8faf622f0a876401fe92cc17a7d6}
+Retourne la touche du clavier qui est présentemment appuyé \hypertarget{class_interface_graphique_1_1_input_manager_ac019beea51384a4a1c4648504b37078d}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!get\-Current\-Scrolled\-Mouse\-Wheel@{get\-Current\-Scrolled\-Mouse\-Wheel}}
+\index{get\-Current\-Scrolled\-Mouse\-Wheel@{get\-Current\-Scrolled\-Mouse\-Wheel}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{get\-Current\-Scrolled\-Mouse\-Wheel}]{\setlength{\rightskip}{0pt plus 5cm}int Interface\-Graphique.\-Input\-Manager.\-get\-Current\-Scrolled\-Mouse\-Wheel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ac019beea51384a4a1c4648504b37078d}
+Retourne le scroll de la souris. Positif (vers le bas), negatif (vers le haut) \hypertarget{class_interface_graphique_1_1_input_manager_a312f35e71847398cb91f4ea70d5804a5}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!get\-Mouse\-Position@{get\-Mouse\-Position}}
+\index{get\-Mouse\-Position@{get\-Mouse\-Position}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{get\-Mouse\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Point Interface\-Graphique.\-Input\-Manager.\-get\-Mouse\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a312f35e71847398cb91f4ea70d5804a5}
+Retourne la position courante de la souris \hypertarget{class_interface_graphique_1_1_input_manager_a29fcbd1cf15a5461421879f12133f3ba}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!get\-Pressed\-Keys@{get\-Pressed\-Keys}}
+\index{get\-Pressed\-Keys@{get\-Pressed\-Keys}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{get\-Pressed\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}Hash\-Set$<$Integer$>$ Interface\-Graphique.\-Input\-Manager.\-get\-Pressed\-Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a29fcbd1cf15a5461421879f12133f3ba}
+Retourne toutes les touches qui sont appuyées \hypertarget{class_interface_graphique_1_1_input_manager_ae6638e8a80f36bb248c040dc071dcf0c}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!is\-Key\-Pressed@{is\-Key\-Pressed}}
+\index{is\-Key\-Pressed@{is\-Key\-Pressed}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{is\-Key\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}boolean Interface\-Graphique.\-Input\-Manager.\-is\-Key\-Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ae6638e8a80f36bb248c040dc071dcf0c}
+Permet de vérifier si une touche du clavier a été appuyée 
+\begin{DoxyParams}{Parameters}
+{\em key} & La touche que l'on veut vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si elle a été appuyée, false sinon 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a8b1712588f51aaa9d217d16e5721a3b5}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!is\-Key\-Typed@{is\-Key\-Typed}}
+\index{is\-Key\-Typed@{is\-Key\-Typed}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{is\-Key\-Typed}]{\setlength{\rightskip}{0pt plus 5cm}boolean Interface\-Graphique.\-Input\-Manager.\-is\-Key\-Typed (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a8b1712588f51aaa9d217d16e5721a3b5}
+Permet de vérifier si une touche du clavier a été appuyée puis relâchée 
+\begin{DoxyParams}{Parameters}
+{\em key} & La touche que l'on veut vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si elle a été appuyée puis relâchée, false sinon 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a5f1dac1fe00de4b1c5f0a49036486bc1}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!is\-Mouse\-Button\-Clicked@{is\-Mouse\-Button\-Clicked}}
+\index{is\-Mouse\-Button\-Clicked@{is\-Mouse\-Button\-Clicked}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{is\-Mouse\-Button\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}boolean Interface\-Graphique.\-Input\-Manager.\-is\-Mouse\-Button\-Clicked (
+\begin{DoxyParamCaption}
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a5f1dac1fe00de4b1c5f0a49036486bc1}
+Permet de vérifier si un bouton de la souris a été appuyée 
+\begin{DoxyParams}{Parameters}
+{\em button} & Le bouton que l'on veut vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si elle a été appuyée, false sinon 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a4fa51a13e70c37c1a6306e05c23e72e5}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!is\-Mouse\-Button\-Pressed@{is\-Mouse\-Button\-Pressed}}
+\index{is\-Mouse\-Button\-Pressed@{is\-Mouse\-Button\-Pressed}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{is\-Mouse\-Button\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}boolean Interface\-Graphique.\-Input\-Manager.\-is\-Mouse\-Button\-Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a4fa51a13e70c37c1a6306e05c23e72e5}
+Permet de vérifier si un bouton de la souris a été appuyée puis relâchée 
+\begin{DoxyParams}{Parameters}
+{\em button} & Le bouton que l'on veut vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si elle a été appuyée puis relâchée, false sinon 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_input_manager_a6bebbff324e7252c39dfd600bbe82f8a}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Menu\-Principal@{Menu\-Principal}}
+\index{Menu\-Principal@{Menu\-Principal}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Menu\-Principal}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Menu\-Principal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a6bebbff324e7252c39dfd600bbe82f8a}
+Fonction appelée lorsque l'élément \hyperlink{class_interface_graphique_1_1_menu_principal}{Menu\-Principal} du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a5c712c708a93b782e5b7f35a50387b7e}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Mise\-A\-Echelle@{Mise\-A\-Echelle}}
+\index{Mise\-A\-Echelle@{Mise\-A\-Echelle}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Mise\-A\-Echelle}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Mise\-A\-Echelle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a5c712c708a93b782e5b7f35a50387b7e}
+Fonction appelée lorsque l'élément Mise\-A\-Echelle du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a9e586b8ae8560f4f2391ce922108a14c}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Mode\-Test@{Mode\-Test}}
+\index{Mode\-Test@{Mode\-Test}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Mode\-Test}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Mode\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a9e586b8ae8560f4f2391ce922108a14c}
+Fonction appelée lorsque l'élément \hyperlink{class_mode_test}{Mode\-Test} du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a5107c555ab224c5b485ceaaabf060be9}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!mouse\-Wheel\-Moved@{mouse\-Wheel\-Moved}}
+\index{mouse\-Wheel\-Moved@{mouse\-Wheel\-Moved}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{mouse\-Wheel\-Moved}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-mouse\-Wheel\-Moved (
+\begin{DoxyParamCaption}
+\item[{Mouse\-Wheel\-Event}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a5107c555ab224c5b485ceaaabf060be9}
+Permet de vérifier si un scroll up ou un scroll down a ete effectue Un scroll vers le bas est un int positif, et un scroll vers le haut est un int negatif. \hypertarget{class_interface_graphique_1_1_input_manager_ab104f49fa1322971093dc5b809267bac}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Nouveau@{Nouveau}}
+\index{Nouveau@{Nouveau}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Nouveau}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Nouveau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ab104f49fa1322971093dc5b809267bac}
+Fonction appelée lorsque l'élément Nouveau du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_ab06b1952910501a34530245ada55d51c}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Ouvrir@{Ouvrir}}
+\index{Ouvrir@{Ouvrir}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Ouvrir}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Ouvrir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_ab06b1952910501a34530245ada55d51c}
+Fonction appelée lorsque l'élément Ouvrir du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a27fe6229a80d50860840d94da4fc5d92}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Partie\-Rapide@{Partie\-Rapide}}
+\index{Partie\-Rapide@{Partie\-Rapide}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Partie\-Rapide}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Partie\-Rapide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a27fe6229a80d50860840d94da4fc5d92}
+Fonction appelée lorsque l'élément Partie\-Rapide du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a36d67af53beef02f2679e829fab5fa51}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Proprietes@{Proprietes}}
+\index{Proprietes@{Proprietes}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Proprietes}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Proprietes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a36d67af53beef02f2679e829fab5fa51}
+Fonction appelée lorsque l'élément Proprietes du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a1d3e27dd47a6eb19f8a8db55e97f820c}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Quitter@{Quitter}}
+\index{Quitter@{Quitter}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Quitter}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Quitter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a1d3e27dd47a6eb19f8a8db55e97f820c}
+Fonction appelée lorsque l'élément Quitter du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_af05534635274a76a1e8f60ed4e8e5098}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_af05534635274a76a1e8f60ed4e8e5098}
+Fonction appelée lorsque l'élément Rotation du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a0a161445feef76124e22d37b72ab3c77}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Sauvegarde\-Configuration@{Sauvegarde\-Configuration}}
+\index{Sauvegarde\-Configuration@{Sauvegarde\-Configuration}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Sauvegarde\-Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Sauvegarde\-Configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a0a161445feef76124e22d37b72ab3c77}
+Fonction appelée lorsque le bouton Sauvergarder du panneau de configuration est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a9b1ac4651b6112cbf86cd065cf2a01ac}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Selection@{Selection}}
+\index{Selection@{Selection}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Selection}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a9b1ac4651b6112cbf86cd065cf2a01ac}
+Fonction appelée lorsque l'élément Selection du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a3518690b66a60c40532ec33754aa5ccd}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!set\-Main\-Window@{set\-Main\-Window}}
+\index{set\-Main\-Window@{set\-Main\-Window}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{set\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-set\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Demarrage}}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a3518690b66a60c40532ec33754aa5ccd}
+Permet de lier la fenetre de démarrage au \hyperlink{class_interface_graphique_1_1_input_manager}{Input\-Manager}, permettant ainsi de manipuler les fenetres. 
+\begin{DoxyParams}{Parameters}
+{\em fenetre} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_interface_graphique_1_1_input_manager_a092761dee7b8fdc9e4b0ef463711213c}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Supprimer@{Supprimer}}
+\index{Supprimer@{Supprimer}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Supprimer}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Supprimer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a092761dee7b8fdc9e4b0ef463711213c}
+Fonction appelée lorsque l'élément Supprimer du menu est actionné. \hypertarget{class_interface_graphique_1_1_input_manager_a1c25e8f65230beebf1ad9d85060c26b6}{\index{Interface\-Graphique\-::\-Input\-Manager@{Interface\-Graphique\-::\-Input\-Manager}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!InterfaceGraphique::InputManager@{Interface\-Graphique\-::\-Input\-Manager}}
+\subsubsection[{Zoom}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Input\-Manager.\-Zoom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_input_manager_a1c25e8f65230beebf1ad9d85060c26b6}
+Fonction appelée lorsque l'élément Zoom du menu est actionné. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-Java/\-Interface\-Graphique/src/\-Interface\-Graphique/Input\-Manager.\-java\end{DoxyCompactItemize}

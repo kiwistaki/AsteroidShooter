@@ -1,0 +1,122 @@
+\hypertarget{class_mode_approche}{\section{Mode\-Approche Class Reference}
+\label{class_mode_approche}\index{Mode\-Approche@{Mode\-Approche}}
+}
+
+
+La classe \hyperlink{class_mode_approche}{Mode\-Approche} permet d'implementer le mode d'approche du vaisseau virtuel.  
+
+
+
+
+{\ttfamily \#include $<$Mode\-Approche.\-h$>$}
+
+Inheritance diagram for Mode\-Approche\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mode_approche}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_mode_approche_ac8ef6ac653bfa6ad7ca9706dbaaafeef}{$\sim$\-Mode\-Approche} ()
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mode_approche_aef2707921c0280175f2638f672a4d8e4}{Mode\-Approche} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide\-Cible)
+\item 
+virtual void \hyperlink{class_mode_approche_abfe4098ee8d3a873e6721140520e49fd}{update} (\hyperlink{class_vaisseau_virtuel}{Vaisseau\-Virtuel} \&vaisseau\-Virtuel, float delta\-T)
+\item 
+virtual const Mode \hyperlink{class_mode_approche_a2931e82044b815a9ad8c32af36d101c1}{get\-Etat} () const 
+\item 
+virtual \hyperlink{class_asteroide}{Asteroide} $\ast$ \hyperlink{class_mode_approche_ae744afaeb91afa4b65beb3a5a85c5c86}{get\-Asteroide\-Cible} () const 
+\item 
+\hypertarget{class_mode_approche_a3ab0d139c2ea300f2266df8ad61a22f3}{virtual void {\bfseries set\-Ast\-Null} ()}\label{class_mode_approche_a3ab0d139c2ea300f2266df8ad61a22f3}
+
+\end{DoxyCompactItemize}
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_mode_approche}{Mode\-Approche} permet d'implementer le mode d'approche du vaisseau virtuel. 
+
+Cette classe contiendra des méthodes qui le changement d'etats, un vecteur des elements de jeu qui seront des obstacles et l'asteroide cible. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mode_approche_aef2707921c0280175f2638f672a4d8e4}{\index{Mode\-Approche@{Mode\-Approche}!Mode\-Approche@{Mode\-Approche}}
+\index{Mode\-Approche@{Mode\-Approche}!ModeApproche@{Mode\-Approche}}
+\subsubsection[{Mode\-Approche}]{\setlength{\rightskip}{0pt plus 5cm}Mode\-Approche\-::\-Mode\-Approche (
+\begin{DoxyParamCaption}
+\item[{{\bf Asteroide} $\ast$}]{asteroide\-Cible}
+\end{DoxyParamCaption}
+)}}\label{class_mode_approche_aef2707921c0280175f2638f672a4d8e4}
+Constructeur par parametre \hypertarget{class_mode_approche_ac8ef6ac653bfa6ad7ca9706dbaaafeef}{\index{Mode\-Approche@{Mode\-Approche}!$\sim$\-Mode\-Approche@{$\sim$\-Mode\-Approche}}
+\index{$\sim$\-Mode\-Approche@{$\sim$\-Mode\-Approche}!ModeApproche@{Mode\-Approche}}
+\subsubsection[{$\sim$\-Mode\-Approche}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mode\-Approche\-::$\sim$\-Mode\-Approche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_mode_approche_ac8ef6ac653bfa6ad7ca9706dbaaafeef}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mode_approche_ae744afaeb91afa4b65beb3a5a85c5c86}{\index{Mode\-Approche@{Mode\-Approche}!get\-Asteroide\-Cible@{get\-Asteroide\-Cible}}
+\index{get\-Asteroide\-Cible@{get\-Asteroide\-Cible}!ModeApproche@{Mode\-Approche}}
+\subsubsection[{get\-Asteroide\-Cible}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Asteroide} $\ast$ Mode\-Approche\-::get\-Asteroide\-Cible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mode_approche_ae744afaeb91afa4b65beb3a5a85c5c86}
+Getter de l'asteroide vise par le joueur virtuel \begin{DoxyReturn}{Returns}
+\-: l'asteroide
+\end{DoxyReturn}
+Methode qui permet de retourner l'asteroide cible
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers l'asteroide 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_etat_joueur_virtuel_a9fc759c914d9145f24210fdb2c9c0adc}{Etat\-Joueur\-Virtuel}.
+
+\hypertarget{class_mode_approche_a2931e82044b815a9ad8c32af36d101c1}{\index{Mode\-Approche@{Mode\-Approche}!get\-Etat@{get\-Etat}}
+\index{get\-Etat@{get\-Etat}!ModeApproche@{Mode\-Approche}}
+\subsubsection[{get\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}const Mode Mode\-Approche\-::get\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mode_approche_a2931e82044b815a9ad8c32af36d101c1}
+Getter du mode d'etat \begin{DoxyReturn}{Returns}
+\-: le mode 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_etat_joueur_virtuel_a3b18b9c7cd0181438090b040f6ecff57}{Etat\-Joueur\-Virtuel}.
+
+\hypertarget{class_mode_approche_abfe4098ee8d3a873e6721140520e49fd}{\index{Mode\-Approche@{Mode\-Approche}!update@{update}}
+\index{update@{update}!ModeApproche@{Mode\-Approche}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Mode\-Approche\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Vaisseau\-Virtuel} \&}]{vaisseau\-Virtuel, }
+\item[{float}]{delta\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mode_approche_abfe4098ee8d3a873e6721140520e49fd}
+Update 
+\begin{DoxyParams}{Parameters}
+{\em } & le vaisseau virtuel, \\
+\hline
+{\em } & delta\-T \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_etat_joueur_virtuel_a21b40c0d4306e6073ee0e4ac7ff36a96}{Etat\-Joueur\-Virtuel}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Environnement/\hyperlink{_mode_approche_8h}{Mode\-Approche.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Environnement/\hyperlink{_mode_approche_8cpp}{Mode\-Approche.\-cpp}\end{DoxyCompactItemize}

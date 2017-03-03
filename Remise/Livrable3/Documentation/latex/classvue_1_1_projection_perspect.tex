@@ -1,0 +1,71 @@
+\hypertarget{classvue_1_1_projection_perspect}{\section{vue\-:\-:Projection\-Perspect Class Reference}
+\label{classvue_1_1_projection_perspect}\index{vue\-::\-Projection\-Perspect@{vue\-::\-Projection\-Perspect}}
+}
+Inheritance diagram for vue\-:\-:Projection\-Perspect\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvue_1_1_projection_perspect}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvue_1_1_projection_perspect_a5e9a0ff66c135c6ab91b30095a76d84c}{{\bfseries Projection\-Perspect} (int x\-Min\-Cloture, int x\-Max\-Cloture, int y\-Min\-Cloture, int y\-Max\-Cloture, double z\-Avant, double z\-Arriere, double zoom\-In\-Max, double zoom\-Out\-Max, double increment\-Zoom, double x\-Min\-Fenetre, double x\-Max\-Fenetre, double y\-Min\-Fenetre, double y\-Max\-Fenetre)}\label{classvue_1_1_projection_perspect_a5e9a0ff66c135c6ab91b30095a76d84c}
+
+\item 
+\hypertarget{classvue_1_1_projection_perspect_a04e26600989b1355e4e7964a87559c74}{virtual \hyperlink{classvue_1_1_projection_perspect_a04e26600989b1355e4e7964a87559c74}{$\sim$\-Projection\-Perspect} ()}\label{classvue_1_1_projection_perspect_a04e26600989b1355e4e7964a87559c74}
+
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel vide. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classvue_1_1_projection_perspect_ac86bc4673ca32843aa4f00d845c7560e}{zoomer\-In} ()
+\begin{DoxyCompactList}\small\item\em Zoom in, c'est-\/a-\/dire un agrandissement. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classvue_1_1_projection_perspect_a4775d8b0fd16cd08a5e5047b70ee888b}{zoomer\-Out} ()
+\begin{DoxyCompactList}\small\item\em Zoom out, c'est-\/a-\/dire un rapetissement. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_projection_perspect_ad803b5ef9758323e6f94451dec07ac9d}{virtual void \hyperlink{classvue_1_1_projection_perspect_ad803b5ef9758323e6f94451dec07ac9d}{redimensionner\-Fenetre} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin\-Min, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin\-Max)}\label{classvue_1_1_projection_perspect_ad803b5ef9758323e6f94451dec07ac9d}
+
+\begin{DoxyCompactList}\small\item\em Modification de la clôture. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_projection_perspect_a20b9263aedad49197b1e8c85a45a1de2}{virtual void \hyperlink{classvue_1_1_projection_perspect_a20b9263aedad49197b1e8c85a45a1de2}{appliquer} () const }\label{classvue_1_1_projection_perspect_a20b9263aedad49197b1e8c85a45a1de2}
+
+\begin{DoxyCompactList}\small\item\em Application de la projection. \end{DoxyCompactList}\item 
+\hypertarget{classvue_1_1_projection_perspect_abef0b76cd9e16955f6b06351061f4a77}{virtual \hyperlink{group__utilitaire_ga74210b298fac77de71eff58f3dd3ddb6}{Vecteur4} {\bfseries get\-Dimensions\-Fenetre} () const }\label{classvue_1_1_projection_perspect_abef0b76cd9e16955f6b06351061f4a77}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvue_1_1_projection_perspect_ac86bc4673ca32843aa4f00d845c7560e}{\index{vue\-::\-Projection\-Perspect@{vue\-::\-Projection\-Perspect}!zoomer\-In@{zoomer\-In}}
+\index{zoomer\-In@{zoomer\-In}!vue::ProjectionPerspect@{vue\-::\-Projection\-Perspect}}
+\subsubsection[{zoomer\-In}]{\setlength{\rightskip}{0pt plus 5cm}void vue\-::\-Projection\-Perspect\-::zoomer\-In (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvue_1_1_projection_perspect_ac86bc4673ca32843aa4f00d845c7560e}
+
+
+Zoom in, c'est-\/a-\/dire un agrandissement. 
+
+Zoom in, c'est-\/a-\/dire un grossissement. -\/ Pas défini pour la projection en perspective. 
+
+Implements \hyperlink{classvue_1_1_projection_ac3cd77fd93595b6844bd1b3b66867f55}{vue\-::\-Projection}.
+
+\hypertarget{classvue_1_1_projection_perspect_a4775d8b0fd16cd08a5e5047b70ee888b}{\index{vue\-::\-Projection\-Perspect@{vue\-::\-Projection\-Perspect}!zoomer\-Out@{zoomer\-Out}}
+\index{zoomer\-Out@{zoomer\-Out}!vue::ProjectionPerspect@{vue\-::\-Projection\-Perspect}}
+\subsubsection[{zoomer\-Out}]{\setlength{\rightskip}{0pt plus 5cm}void vue\-::\-Projection\-Perspect\-::zoomer\-Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvue_1_1_projection_perspect_a4775d8b0fd16cd08a5e5047b70ee888b}
+
+
+Zoom out, c'est-\/a-\/dire un rapetissement. 
+
+Zoom out, c'est-\/a-\/dire un rapetissement. -\/ Pas défini pour la projection en perspective. 
+
+Implements \hyperlink{classvue_1_1_projection_a2f411375817ca560d31a66f2da5e51eb}{vue\-::\-Projection}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/Projection\-Perspect.\-h\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/Projection\-Perspect.\-cpp\end{DoxyCompactItemize}

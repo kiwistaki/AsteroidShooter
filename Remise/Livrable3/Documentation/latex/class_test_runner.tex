@@ -1,0 +1,144 @@
+\hypertarget{class_test_runner}{\section{Test\-Runner Class Reference}
+\label{class_test_runner}\index{Test\-Runner@{Test\-Runner}}
+}
+
+
+Generic test runner.
+
+The \hyperlink{class_test_runner}{Test\-Runner} assumes ownership of all added tests\-: you can not add test or suite that are local variable since they can't be deleted.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Runner.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_test_runner_1_1_wrapping_suite}{Wrapping\-Suite}
+\begin{DoxyCompactList}\small\item\em (I\-N\-T\-E\-R\-N\-A\-L) Mutating test suite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_runner_adf6d073e739128299841d29a6701d34b}{\hyperlink{class_test_runner_adf6d073e739128299841d29a6701d34b}{Test\-Runner} ()}\label{class_test_runner_adf6d073e739128299841d29a6701d34b}
+
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_test_runner}{Test\-Runner} object. \end{DoxyCompactList}\item 
+\hypertarget{class_test_runner_a29e222f91f622ee3f1c2b7c1317770c7}{virtual \hyperlink{class_test_runner_a29e222f91f622ee3f1c2b7c1317770c7}{$\sim$\-Test\-Runner} ()}\label{class_test_runner_a29e222f91f622ee3f1c2b7c1317770c7}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_test_runner_ab9f9503b09b0002615869f39b23680d5}{add\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Adds the specified test. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_test_runner_aa6a62ec693b671ed1d73b2184d012733}{run} (\hyperlink{class_test_result}{Test\-Result} \&controller, const std\-::string \&test\-Path=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runs a test using the specified controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_runner_afaf76a3691a45fe2c76910d51e949306}{\hyperlink{class_test_runner_1_1_wrapping_suite}{Wrapping\-Suite} $\ast$ {\bfseries m\-\_\-suite}}\label{class_test_runner_afaf76a3691a45fe2c76910d51e949306}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic test runner.
+
+The \hyperlink{class_test_runner}{Test\-Runner} assumes ownership of all added tests\-: you can not add test or suite that are local variable since they can't be deleted. 
+
+Example of usage\-: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <cppunit/extensions/TestFactoryRegistry.h>}
+\textcolor{preprocessor}{#include <cppunit/CompilerOutputter.h>}
+\textcolor{preprocessor}{#include <cppunit/TestResult.h>}
+\textcolor{preprocessor}{#include <cppunit/TestResultCollector.h>}
+\textcolor{preprocessor}{#include <cppunit/TestRunner.h>}
+\textcolor{preprocessor}{#include <cppunit/TextTestProgressListener.h>}
+
+
+\textcolor{keywordtype}{int} 
+main( \textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}* argv[] )
+\{
+  std::string testPath = (argc > 1) ? std::string(argv[1]) : \textcolor{stringliteral}{""};
+
+  \textcolor{comment}{// Create the event manager and test controller}
+  CppUnit::TestResult controller;
+
+  \textcolor{comment}{// Add a listener that colllects test result}
+  CppUnit::TestResultCollector result;
+  controller.addListener( &result );        
+
+  \textcolor{comment}{// Add a listener that print dots as test run.}
+  CppUnit::TextTestProgressListener progress;
+  controller.addListener( &progress );      
+
+  \textcolor{comment}{// Add the top suite to the test runner}
+  CppUnit::TestRunner runner;
+  runner.addTest( CppUnit::TestFactoryRegistry::getRegistry().makeTest() );   
+  \textcolor{keywordflow}{try}
+  \{
+    std::cout << \textcolor{stringliteral}{"Running "}  <<  testPath;
+    runner.run( controller, testPath );
+
+    std::cerr << std::endl;
+
+    \textcolor{comment}{// Print test in a compiler compatible format.}
+    CppUnit::CompilerOutputter outputter( &result, std::cerr );
+    outputter.write();                      
+  \}
+  \textcolor{keywordflow}{catch} ( std::invalid\_argument &e )  \textcolor{comment}{// Test path not resolved}
+  \{
+    std::cerr  <<  std::endl  
+               <<  \textcolor{stringliteral}{"ERROR: "}  <<  e.what()
+               << std::endl;
+    \textcolor{keywordflow}{return} 0;
+  \}
+
+  \textcolor{keywordflow}{return} result.wasSuccessful() ? 0 : 1;
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_runner_ab9f9503b09b0002615869f39b23680d5}{\index{Test\-Runner@{Test\-Runner}!add\-Test@{add\-Test}}
+\index{add\-Test@{add\-Test}!TestRunner@{Test\-Runner}}
+\subsubsection[{add\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Test\-Runner\-::add\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_runner_ab9f9503b09b0002615869f39b23680d5}
+
+
+Adds the specified test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \hyperlink{class_test}{Test} to add. The \hyperlink{class_test_runner}{Test\-Runner} takes ownership of the test. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_runner_aa6a62ec693b671ed1d73b2184d012733}{\index{Test\-Runner@{Test\-Runner}!run@{run}}
+\index{run@{run}!TestRunner@{Test\-Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Test\-Runner\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} \&}]{controller, }
+\item[{const std\-::string \&}]{test\-Path = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_runner_aa6a62ec693b671ed1d73b2184d012733}
+
+
+Runs a test using the specified controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & Event manager and controller used for testing \\
+\hline
+{\em test\-Path} & \hyperlink{class_test}{Test} path string. See \hyperlink{class_test_aaa1f5a8b47a9ad4feed4603c7e56758c}{Test\-::resolve\-Test\-Path()} for detail. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if no test matching {\itshape test\-Path} is found. see \hyperlink{class_test_path_a5855701e39a328a19f9780a130106cb3}{Test\-Path\-::\-Test\-Path( Test$\ast$, const std\-::string \&)} for detail. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Runner.\-h\end{DoxyCompactItemize}

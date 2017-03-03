@@ -1,0 +1,214 @@
+\hypertarget{class_xml_outputter_hook}{\section{Xml\-Outputter\-Hook Class Reference}
+\label{class_xml_outputter_hook}\index{Xml\-Outputter\-Hook@{Xml\-Outputter\-Hook}}
+}
+
+
+Hook to customize Xml output.  
+
+
+
+
+{\ttfamily \#include $<$Xml\-Outputter\-Hook.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_xml_outputter_hook_a1d2b5d5d0fc42d273d6430522a70ccbb}{begin\-Document} (\hyperlink{class_xml_document}{Xml\-Document} $\ast$document)
+\item 
+virtual void \hyperlink{class_xml_outputter_hook_a300e2a4ef46db4e76428e32f7c7e6a23}{end\-Document} (\hyperlink{class_xml_document}{Xml\-Document} $\ast$document)
+\item 
+virtual void \hyperlink{class_xml_outputter_hook_a77310985e055cc2c67e91a42c524fbbe}{fail\-Test\-Added} (\hyperlink{class_xml_document}{Xml\-Document} $\ast$document, \hyperlink{class_xml_element}{Xml\-Element} $\ast$test\-Element, \hyperlink{class_test}{Test} $\ast$test, \hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\item 
+virtual void \hyperlink{class_xml_outputter_hook_adbcf6ad2cb85d6f1015306fadb7eadcf}{successful\-Test\-Added} (\hyperlink{class_xml_document}{Xml\-Document} $\ast$document, \hyperlink{class_xml_element}{Xml\-Element} $\ast$test\-Element, \hyperlink{class_test}{Test} $\ast$test)
+\item 
+virtual void \hyperlink{class_xml_outputter_hook_a0e602260274d4f005affb4ee84ce4c4a}{statistics\-Added} (\hyperlink{class_xml_document}{Xml\-Document} $\ast$document, \hyperlink{class_xml_element}{Xml\-Element} $\ast$statistics\-Element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hook to customize Xml output. 
+
+\hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook} can be passed to \hyperlink{class_xml_outputter}{Xml\-Outputter} to customize the \hyperlink{class_xml_document}{Xml\-Document}.
+
+Common customizations are\-:
+\begin{DoxyItemize}
+\item adding some datas to successfull or failed test with \hyperlink{class_xml_outputter_hook_a77310985e055cc2c67e91a42c524fbbe}{fail\-Test\-Added()} and \hyperlink{class_xml_outputter_hook_adbcf6ad2cb85d6f1015306fadb7eadcf}{successful\-Test\-Added()},
+\item adding some statistics with \hyperlink{class_xml_outputter_hook_a0e602260274d4f005affb4ee84ce4c4a}{statistics\-Added()},
+\item adding other datas with \hyperlink{class_xml_outputter_hook_a1d2b5d5d0fc42d273d6430522a70ccbb}{begin\-Document()} or \hyperlink{class_xml_outputter_hook_a300e2a4ef46db4e76428e32f7c7e6a23}{end\-Document()}.
+\end{DoxyItemize}
+
+See examples/\-Clocker\-Plug\-In which makes use of most the hook.
+
+Another simple example of an outputter hook is shown below. It may be used to add some meta information to your result files. In the example, the author name as well as the project name and test creation date is added to the head of the xml file.
+
+In order to make this information stored within the xml file, the virtual member function \hyperlink{class_xml_outputter_hook_a1d2b5d5d0fc42d273d6430522a70ccbb}{begin\-Document()} is overriden where a new \hyperlink{class_xml_element}{Xml\-Element} object is created.
+
+This element is simply added to the root node of the document which makes the information automatically being stored when the xml file is written.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <cppunit/XmlOutputterHook.h>}
+\textcolor{preprocessor}{#include <cppunit/XmlElement.h>}
+\textcolor{preprocessor}{#include <cppunit/tools/StringTools.h>}
+
+...
+
+class MyXmlOutputterHook : \textcolor{keyword}{public} CppUnit::XmlOutputterHook
+\{
+\textcolor{keyword}{public}:
+  MyXmlOutputterHook(\textcolor{keyword}{const} std::string projectName,
+                     \textcolor{keyword}{const} std::string author)
+  \{
+     m\_projectName = projectName;
+     m\_author      = author;
+  \};
+
+  \textcolor{keyword}{virtual} ~MyXmlOutputterHook()
+  \{
+  \};
+
+  \textcolor{keywordtype}{void} \hyperlink{class_xml_outputter_hook_a1d2b5d5d0fc42d273d6430522a70ccbb}{beginDocument}(CppUnit::XmlDocument* document)
+  \{
+    \textcolor{keywordflow}{if} (!document)
+      \textcolor{keywordflow}{return};
+
+    \textcolor{comment}{// dump current time}
+    std::string szDate          = CppUnit::StringTools::toString( (\textcolor{keywordtype}{int})time(0) );
+    CppUnit::XmlElement* metaEl = \textcolor{keyword}{new} CppUnit::XmlElement(\textcolor{stringliteral}{"SuiteInfo"}, 
+                                                          \textcolor{stringliteral}{""});
+
+    metaEl->addElement( \textcolor{keyword}{new} CppUnit::XmlElement(\textcolor{stringliteral}{"Author"}, m\_author) );
+    metaEl->addElement( \textcolor{keyword}{new} CppUnit::XmlElement(\textcolor{stringliteral}{"Project"}, m\_projectName) );
+    metaEl->addElement( \textcolor{keyword}{new} CppUnit::XmlElement(\textcolor{stringliteral}{"Date"}, szDate ) );
+   
+    document->rootElement().addElement(metaEl);
+  \};
+\textcolor{keyword}{private}:
+  std::string m\_projectName;
+  std::string m\_author;
+\}; 
+\end{DoxyCode}
+
+
+Within your application's main code, you need to snap the hook object into your xml outputter object like shown below\-:
+
+
+\begin{DoxyCode}
+CppUnit::TextUi::TestRunner runner;
+std::ofstream outputFile(\textcolor{stringliteral}{"testResults.xml"});
+
+CppUnit::XmlOutputter* outputter = \textcolor{keyword}{new} CppUnit::XmlOutputter( &runner.result(),
+                                                              outputFile );    
+MyXmlOutputterHook hook(\textcolor{stringliteral}{"myProject"}, \textcolor{stringliteral}{"meAuthor"});
+outputter->addHook(&hook);
+runner.setOutputter(outputter);    
+runner.addTest( VectorFixture::suite() );   
+runner.run();
+outputFile.close();
+\end{DoxyCode}
+
+
+This results into the following output\-:
+
+
+\begin{DoxyCode}
+<TestRun>
+  <suiteInfo>
+    <author>meAuthor</author>
+    <project>myProject</project>
+    <date>1028143912</date>
+  </suiteInfo>
+  <FailedTests>
+   ...
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_xml_outputter}{Xml\-Outputter}, \hyperlink{struct_cpp_unit_test_plug_in}{Cpp\-Unit\-Test\-Plug\-In}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_xml_outputter_hook_a1d2b5d5d0fc42d273d6430522a70ccbb}{\index{Xml\-Outputter\-Hook@{Xml\-Outputter\-Hook}!begin\-Document@{begin\-Document}}
+\index{begin\-Document@{begin\-Document}!XmlOutputterHook@{Xml\-Outputter\-Hook}}
+\subsubsection[{begin\-Document}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-Hook\-::begin\-Document (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Document} $\ast$}]{document}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_hook_a1d2b5d5d0fc42d273d6430522a70ccbb}
+Called before any elements is added to the root element. 
+\begin{DoxyParams}{Parameters}
+{\em document} & X\-M\-L Document being created. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_hook_a300e2a4ef46db4e76428e32f7c7e6a23}{\index{Xml\-Outputter\-Hook@{Xml\-Outputter\-Hook}!end\-Document@{end\-Document}}
+\index{end\-Document@{end\-Document}!XmlOutputterHook@{Xml\-Outputter\-Hook}}
+\subsubsection[{end\-Document}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-Hook\-::end\-Document (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Document} $\ast$}]{document}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_hook_a300e2a4ef46db4e76428e32f7c7e6a23}
+Called after adding all elements to the root element. 
+\begin{DoxyParams}{Parameters}
+{\em document} & X\-M\-L Document being created. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_hook_a77310985e055cc2c67e91a42c524fbbe}{\index{Xml\-Outputter\-Hook@{Xml\-Outputter\-Hook}!fail\-Test\-Added@{fail\-Test\-Added}}
+\index{fail\-Test\-Added@{fail\-Test\-Added}!XmlOutputterHook@{Xml\-Outputter\-Hook}}
+\subsubsection[{fail\-Test\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-Hook\-::fail\-Test\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Document} $\ast$}]{document, }
+\item[{{\bf Xml\-Element} $\ast$}]{test\-Element, }
+\item[{{\bf Test} $\ast$}]{test, }
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_hook_a77310985e055cc2c67e91a42c524fbbe}
+Called after adding a fail test element. 
+\begin{DoxyParams}{Parameters}
+{\em document} & X\-M\-L Document being created. \\
+\hline
+{\em test\-Element} & $<$Failed\-Test$>$ element. \\
+\hline
+{\em test} & \hyperlink{class_test}{Test} that failed. \\
+\hline
+{\em failure} & \hyperlink{class_test}{Test} failure data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_hook_a0e602260274d4f005affb4ee84ce4c4a}{\index{Xml\-Outputter\-Hook@{Xml\-Outputter\-Hook}!statistics\-Added@{statistics\-Added}}
+\index{statistics\-Added@{statistics\-Added}!XmlOutputterHook@{Xml\-Outputter\-Hook}}
+\subsubsection[{statistics\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-Hook\-::statistics\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Document} $\ast$}]{document, }
+\item[{{\bf Xml\-Element} $\ast$}]{statistics\-Element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_hook_a0e602260274d4f005affb4ee84ce4c4a}
+Called after adding the statistic element. 
+\begin{DoxyParams}{Parameters}
+{\em document} & X\-M\-L Document being created. \\
+\hline
+{\em statistics\-Element} & $<$Statistics$>$ element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_hook_adbcf6ad2cb85d6f1015306fadb7eadcf}{\index{Xml\-Outputter\-Hook@{Xml\-Outputter\-Hook}!successful\-Test\-Added@{successful\-Test\-Added}}
+\index{successful\-Test\-Added@{successful\-Test\-Added}!XmlOutputterHook@{Xml\-Outputter\-Hook}}
+\subsubsection[{successful\-Test\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-Hook\-::successful\-Test\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Document} $\ast$}]{document, }
+\item[{{\bf Xml\-Element} $\ast$}]{test\-Element, }
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_hook_adbcf6ad2cb85d6f1015306fadb7eadcf}
+Called after adding a successful test element. 
+\begin{DoxyParams}{Parameters}
+{\em document} & X\-M\-L Document being created. \\
+\hline
+{\em test\-Element} & $<$\hyperlink{class_test}{Test}$>$ element. \\
+\hline
+{\em test} & \hyperlink{class_test}{Test} that was successful. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Xml\-Outputter\-Hook.\-h\end{DoxyCompactItemize}

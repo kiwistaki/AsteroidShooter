@@ -1,0 +1,336 @@
+\hypertarget{classvue_1_1_camera}{\section{vue\-:\-:Camera Class Reference}
+\label{classvue_1_1_camera}\index{vue\-::\-Camera@{vue\-::\-Camera}}
+}
+
+
+Classe representant une camera dans le monde en 3\-D.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvue_1_1_camera_ab509d5c06a626fb3b1f6c588a5c85ce1}{Camera} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position}, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point\-Vise, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&direction\-Haut\-Camera, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&direction\-Haut\-Monde)
+\begin{DoxyCompactList}\small\item\em Constructeur a partir des coordonnees cartesiennes. \end{DoxyCompactList}\item 
+virtual \hyperlink{classvue_1_1_camera_a173cf3a9d91b30cadd21d72149df4504}{$\sim$\-Camera} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel vide. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_aafd52e5bb78da96244421525058eef2f}{assigner\-Position} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position})
+\begin{DoxyCompactList}\small\item\em Assigner la position de la camera. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_a69846a87e30c5d8edb7929452836769b}{assigner\-Point\-Vise} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point\-Vise)
+\begin{DoxyCompactList}\small\item\em Assigner le point vise de la camera. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_a3b184e5951bb0a4acab80af4e2c50039}{assigner\-Direction\-Haut} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&direction\-Haut)
+\begin{DoxyCompactList}\small\item\em Assigner la direction du haut de la camera. \end{DoxyCompactList}\item 
+const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \& \hyperlink{classvue_1_1_camera_a9e5aa2c77549dd8db47c2f249983d0ad}{obtenir\-Position} () const 
+\begin{DoxyCompactList}\small\item\em Obtenir la position de la camera. \end{DoxyCompactList}\item 
+const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \& \hyperlink{classvue_1_1_camera_a4c2e0079ea5ab132e2cca625a7854a09}{obtenir\-Point\-Vise} () const 
+\begin{DoxyCompactList}\small\item\em Obtenir le point vise de la camera. \end{DoxyCompactList}\item 
+const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \& \hyperlink{classvue_1_1_camera_adecce98a16454753431306e7b6ca4c75}{obtenir\-Direction\-Haut} () const 
+\begin{DoxyCompactList}\small\item\em Obtenir la direction du haut de la camera. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_aa08801e436ddf90400e632e402183618}{deplacer\-X\-Y} (double deplacement\-X, double deplacement\-Y)
+\begin{DoxyCompactList}\small\item\em Deplacement dans le plan perpendiculaire a la direction visee. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_a7e8dfbbf743a74bb0387e140fee09474}{deplacer\-Z} (double deplacement, bool bouge\-Point\-Vise)
+\begin{DoxyCompactList}\small\item\em Deplacement dans l'axe de la direction visee. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_a07795ebc629c68f8694b9ae08a53457f}{tourner\-X\-Y} (double rotation\-X, double rotation\-Y, bool empeche\-Inversion=true)
+\begin{DoxyCompactList}\small\item\em Rotation de la camera autour de sa position. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_a5e88216d5d5b31e0e65be9674e5904ef}{orbiter\-X\-Y} (double rotation\-X, double rotation\-Y, bool empeche\-Inversion=true)
+\begin{DoxyCompactList}\small\item\em Rotation de la position de la camera autour de son point de vise. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_camera_a201db90bcebf204990f1dbb6db03b563}{positionner} () const 
+\begin{DoxyCompactList}\small\item\em Positionner la camera (appel a glu\-Look\-At). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe representant une camera dans le monde en 3\-D. 
+
+Cette camera encapsule les differentes operations qu'il est possible de faire pour deplacer le point de vue de l'observateur a l'interieur de la scene en 3\-D.
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/12-\/15 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvue_1_1_camera_ab509d5c06a626fb3b1f6c588a5c85ce1}{\index{vue\-::\-Camera@{vue\-::\-Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}vue\-::\-Camera\-::\-Camera (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{position, }
+\item[{const {\bf Vecteur3} \&}]{point\-Vise, }
+\item[{const {\bf Vecteur3} \&}]{direction\-Haut\-Camera, }
+\item[{const {\bf Vecteur3} \&}]{direction\-Haut\-Monde}
+\end{DoxyParamCaption}
+)}}\label{classvue_1_1_camera_ab509d5c06a626fb3b1f6c588a5c85ce1}
+
+
+Constructeur a partir des coordonnees cartesiennes. 
+
+Constructeur de la camera a partir des coordonnees cartesiennes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & \-: position de la camera. \\
+\hline
+\mbox{\tt in}  & {\em point\-Vise} & \-: point vise. \\
+\hline
+\mbox{\tt in}  & {\em direction\-Haut\-Camera} & \-: direction du haut de la camera. \\
+\hline
+\mbox{\tt in}  & {\em direction\-Haut\-Monde} & \-: direction du haut du monde de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a173cf3a9d91b30cadd21d72149df4504}{\index{vue\-::\-Camera@{vue\-::\-Camera}!$\sim$\-Camera@{$\sim$\-Camera}}
+\index{$\sim$\-Camera@{$\sim$\-Camera}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{$\sim$\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}virtual vue\-::\-Camera\-::$\sim$\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classvue_1_1_camera_a173cf3a9d91b30cadd21d72149df4504}
+
+
+Destructeur virtuel vide. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvue_1_1_camera_a3b184e5951bb0a4acab80af4e2c50039}{\index{vue\-::\-Camera@{vue\-::\-Camera}!assigner\-Direction\-Haut@{assigner\-Direction\-Haut}}
+\index{assigner\-Direction\-Haut@{assigner\-Direction\-Haut}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{assigner\-Direction\-Haut}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::assigner\-Direction\-Haut (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{direction\-Haut}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_camera_a3b184e5951bb0a4acab80af4e2c50039}
+
+
+Assigner la direction du haut de la camera. 
+
+Cette fonction permet d'assigner la direction du haut de la camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em direction\-Haut} & \-: La nouvelle direction du haut de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a69846a87e30c5d8edb7929452836769b}{\index{vue\-::\-Camera@{vue\-::\-Camera}!assigner\-Point\-Vise@{assigner\-Point\-Vise}}
+\index{assigner\-Point\-Vise@{assigner\-Point\-Vise}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{assigner\-Point\-Vise}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::assigner\-Point\-Vise (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{point\-Vise}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_camera_a69846a87e30c5d8edb7929452836769b}
+
+
+Assigner le point vise de la camera. 
+
+Cette fonction permet d'assigner le point de vise de la camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point\-Vise} & \-: Le nouveau point de vise de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_aafd52e5bb78da96244421525058eef2f}{\index{vue\-::\-Camera@{vue\-::\-Camera}!assigner\-Position@{assigner\-Position}}
+\index{assigner\-Position@{assigner\-Position}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{assigner\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::assigner\-Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_camera_aafd52e5bb78da96244421525058eef2f}
+
+
+Assigner la position de la camera. 
+
+Cette fonction permet d'assigner la position de la camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & \-: La nouvelle position de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_aa08801e436ddf90400e632e402183618}{\index{vue\-::\-Camera@{vue\-::\-Camera}!deplacer\-X\-Y@{deplacer\-X\-Y}}
+\index{deplacer\-X\-Y@{deplacer\-X\-Y}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{deplacer\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::deplacer\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{deplacement\-X, }
+\item[{double}]{deplacement\-Y}
+\end{DoxyParamCaption}
+)}}\label{classvue_1_1_camera_aa08801e436ddf90400e632e402183618}
+
+
+Deplacement dans le plan perpendiculaire a la direction visee. 
+
+Deplace la camera dans le plan perpendiculaire a la direction visee
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em deplacement\-X} & \-: Deplacement sur l'axe horizontal du plan de la camera. \\
+\hline
+\mbox{\tt in}  & {\em deplacement\-Y} & \-: Deplacement sur l'axe vertical du plan de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a7e8dfbbf743a74bb0387e140fee09474}{\index{vue\-::\-Camera@{vue\-::\-Camera}!deplacer\-Z@{deplacer\-Z}}
+\index{deplacer\-Z@{deplacer\-Z}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{deplacer\-Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::deplacer\-Z (
+\begin{DoxyParamCaption}
+\item[{double}]{deplacement, }
+\item[{bool}]{bouge\-Point\-Vise}
+\end{DoxyParamCaption}
+)}}\label{classvue_1_1_camera_a7e8dfbbf743a74bb0387e140fee09474}
+
+
+Deplacement dans l'axe de la direction visee. 
+
+Deplace la camera dans l'axe de la direction visee.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em deplacement} & \-: Deplacement sur l'axe de la direction visee \\
+\hline
+\mbox{\tt in}  & {\em bouge\-Point\-Vise} & \-: Si vrai, le point de vise est egalement deplace.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_adecce98a16454753431306e7b6ca4c75}{\index{vue\-::\-Camera@{vue\-::\-Camera}!obtenir\-Direction\-Haut@{obtenir\-Direction\-Haut}}
+\index{obtenir\-Direction\-Haut@{obtenir\-Direction\-Haut}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{obtenir\-Direction\-Haut}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vecteur3} \& vue\-::\-Camera\-::obtenir\-Direction\-Haut (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_camera_adecce98a16454753431306e7b6ca4c75}
+
+
+Obtenir la direction du haut de la camera. 
+
+Cette fonction permet d'obtenir la direction du haut de la camera.
+
+\begin{DoxyReturn}{Returns}
+La direction du haut de la camera. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a4c2e0079ea5ab132e2cca625a7854a09}{\index{vue\-::\-Camera@{vue\-::\-Camera}!obtenir\-Point\-Vise@{obtenir\-Point\-Vise}}
+\index{obtenir\-Point\-Vise@{obtenir\-Point\-Vise}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{obtenir\-Point\-Vise}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vecteur3} \& vue\-::\-Camera\-::obtenir\-Point\-Vise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_camera_a4c2e0079ea5ab132e2cca625a7854a09}
+
+
+Obtenir le point vise de la camera. 
+
+Cette fonction permet d'obtenir le point de vise de la camera.
+
+\begin{DoxyReturn}{Returns}
+Le point de vise de la camera. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a9e5aa2c77549dd8db47c2f249983d0ad}{\index{vue\-::\-Camera@{vue\-::\-Camera}!obtenir\-Position@{obtenir\-Position}}
+\index{obtenir\-Position@{obtenir\-Position}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{obtenir\-Position}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vecteur3} \& vue\-::\-Camera\-::obtenir\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_camera_a9e5aa2c77549dd8db47c2f249983d0ad}
+
+
+Obtenir la position de la camera. 
+
+Cette fonction permet d'obtenir la position de la camera.
+
+\begin{DoxyReturn}{Returns}
+La position de la camera. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a5e88216d5d5b31e0e65be9674e5904ef}{\index{vue\-::\-Camera@{vue\-::\-Camera}!orbiter\-X\-Y@{orbiter\-X\-Y}}
+\index{orbiter\-X\-Y@{orbiter\-X\-Y}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{orbiter\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::orbiter\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{rotation\-X, }
+\item[{double}]{rotation\-Y, }
+\item[{bool}]{empeche\-Inversion = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classvue_1_1_camera_a5e88216d5d5b31e0e65be9674e5904ef}
+
+
+Rotation de la position de la camera autour de son point de vise. 
+
+Rotation de la camera autour de son point de vise (et donc deplacement de la position en gardant le point de vise fixe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\-X} & \-: Modification de l'angle de rotation de la position par rapport au point de vise. \\
+\hline
+\mbox{\tt in}  & {\em rotation\-Y} & \-: Modification de l'angle d'elevation de la position par rapport au point de vise. \\
+\hline
+\mbox{\tt in}  & {\em empeche\-Inversion} & \-: Si vrai, la rotation n'est pas effectue si elle amenerait une inversion de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a201db90bcebf204990f1dbb6db03b563}{\index{vue\-::\-Camera@{vue\-::\-Camera}!positionner@{positionner}}
+\index{positionner@{positionner}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{positionner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::positionner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classvue_1_1_camera_a201db90bcebf204990f1dbb6db03b563}
+
+
+Positionner la camera (appel a glu\-Look\-At). 
+
+Positionne la camera dans la scene a l'aide de glu\-Look\-At().
+
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_camera_a07795ebc629c68f8694b9ae08a53457f}{\index{vue\-::\-Camera@{vue\-::\-Camera}!tourner\-X\-Y@{tourner\-X\-Y}}
+\index{tourner\-X\-Y@{tourner\-X\-Y}!vue::Camera@{vue\-::\-Camera}}
+\subsubsection[{tourner\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Camera\-::tourner\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{rotation\-X, }
+\item[{double}]{rotation\-Y, }
+\item[{bool}]{empeche\-Inversion = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classvue_1_1_camera_a07795ebc629c68f8694b9ae08a53457f}
+
+
+Rotation de la camera autour de sa position. 
+
+Rotation de la camera autour de sa position (et donc deplacement du point vise en gardant la position fixe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\-X} & \-: Modification de l'angle de rotation du point vise par rapport a la position. \\
+\hline
+\mbox{\tt in}  & {\em rotation\-Y} & \-: Modification de l'angle d'elevation du point vise par rapport a la position. \\
+\hline
+\mbox{\tt in}  & {\em empeche\-Inversion} & \-: Si vrai, la rotation n'est pas effectuee si elle amenerait une inversion de la camera.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/\hyperlink{_camera_8h}{Camera.\-h}\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/\hyperlink{_camera_8cpp}{Camera.\-cpp}\end{DoxyCompactItemize}

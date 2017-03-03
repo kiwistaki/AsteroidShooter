@@ -1,0 +1,70 @@
+\hypertarget{class_test_plug_in_default_impl}{\section{Test\-Plug\-In\-Default\-Impl Class Reference}
+\label{class_test_plug_in_default_impl}\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}}
+}
+
+
+Default implementation of test plug-\/in interface.
+
+Override get\-Suite\-Name() to specify the suite name. Default is \char`\"{}\-All Tests\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Plug\-In\-Default\-Impl.\-h$>$}
+
+Inheritance diagram for Test\-Plug\-In\-Default\-Impl\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_test_plug_in_default_impl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_plug_in_default_impl_a37c0b83c0a94ef97113b35ae70316883}{void {\bfseries initialize} (\hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} $\ast$registry, const \hyperlink{class_plug_in_parameters}{Plug\-In\-Parameters} \&parameters)}\label{class_test_plug_in_default_impl_a37c0b83c0a94ef97113b35ae70316883}
+
+\item 
+\hypertarget{class_test_plug_in_default_impl_a0180a801dd78be5741a200e866684b20}{void {\bfseries add\-Listener} (\hyperlink{class_test_result}{Test\-Result} $\ast$event\-Manager)}\label{class_test_plug_in_default_impl_a0180a801dd78be5741a200e866684b20}
+
+\item 
+\hypertarget{class_test_plug_in_default_impl_a26364a3a81e48ff9adcef1a5cd3e40df}{void {\bfseries remove\-Listener} (\hyperlink{class_test_result}{Test\-Result} $\ast$event\-Manager)}\label{class_test_plug_in_default_impl_a26364a3a81e48ff9adcef1a5cd3e40df}
+
+\item 
+\hypertarget{class_test_plug_in_default_impl_aed4c5b89adaa0bb0b4f11cc4aca782a2}{void {\bfseries add\-Xml\-Outputter\-Hooks} (\hyperlink{class_xml_outputter}{Xml\-Outputter} $\ast$outputter)}\label{class_test_plug_in_default_impl_aed4c5b89adaa0bb0b4f11cc4aca782a2}
+
+\item 
+void \hyperlink{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}{remove\-Xml\-Outputter\-Hooks} ()
+\begin{DoxyCompactList}\small\item\em Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. \end{DoxyCompactList}\item 
+\hypertarget{class_test_plug_in_default_impl_aab567f339bbda38e759b7bd631ad8b8c}{void {\bfseries uninitialize} (\hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} $\ast$registry)}\label{class_test_plug_in_default_impl_aab567f339bbda38e759b7bd631ad8b8c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Default implementation of test plug-\/in interface.
+
+Override get\-Suite\-Name() to specify the suite name. Default is \char`\"{}\-All Tests\char`\"{}. 
+
+Cpp\-Unit\-Test\-Plug\-In\-::get\-Test\-Suite() returns a suite that contains all the test registered to the default test factory registry ( \hyperlink{class_test_factory_registry_a1331b28bb1a8bc3db6b8e5ec994ef4ab}{Test\-Factory\-Registry\-::get\-Registry()} ). 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}}
+\index{remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{remove\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}void Test\-Plug\-In\-Default\-Impl\-::remove\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}
+
+
+Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. 
+
+Can be used to free some resources allocated by add\-Xml\-Outputter\-Hooks(). 
+
+Implements \hyperlink{struct_cpp_unit_test_plug_in_a045727ad9658525838b0b9157065fbcd}{Cpp\-Unit\-Test\-Plug\-In}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/Test\-Plug\-In\-Default\-Impl.\-h\end{DoxyCompactItemize}

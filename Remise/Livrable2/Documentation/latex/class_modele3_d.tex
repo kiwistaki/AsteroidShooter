@@ -1,0 +1,78 @@
+\hypertarget{class_modele3_d}{\section{Modele3\-D Class Reference}
+\label{class_modele3_d}\index{Modele3\-D@{Modele3\-D}}
+}
+
+
+Classe qui encapsule un modele 3d de la librairie 'assimp'. Cette classe permet de charger un modele 3d d'un fichier exporte par un outil (en utilisant ladite librairie) et de l'afficher.  
+
+
+
+
+{\ttfamily \#include $<$Modele3\-D.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga61424b36eaf9f88c825890aa57192bfd}{Modele3\-D} ()
+\begin{DoxyCompactList}\small\item\em Creation du modele 3d. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga28d3f261304927aa825e902c61555307}{$\sim$\-Modele3\-D} ()
+\begin{DoxyCompactList}\small\item\em Destruction du modele 3d. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga2d4fe693acad70384447b9db282e3912}{set\-Display\-List} (\hyperlink{glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} list)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gae9a28411f50e679373dd41c62ffc9698}{charger} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} \&nom\-Fichier)
+\begin{DoxyCompactList}\small\item\em Charger le modele 3d a partir d'un fichier. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga024588f2e5354c3753dd73278e7755e4}{dessiner} () const 
+\begin{DoxyCompactList}\small\item\em Effectuer le rendu. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_ga2f6cf63dd757e87478e5bf109431a1f5}{calculer\-Sphere\-Englobante} () const 
+\begin{DoxyCompactList}\small\item\em Calcule la sphere englobante. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga64446e685fdef334ae85392340735fbc}{calculer\-Cylindre\-Englobant} (double \&rayon, double \&bas, double \&haut) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gac3a33e3e2675268653ae5846be055c21}{calculer\-Boite\-Englobante} (\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&coin\-Min, \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&coin\-Max) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gae1ac7bcdbc6bbb75ae9b26edb3e06e4d}{assigner\-Facteur\-Agrandissement} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} facteur\-Agrandissement)
+\item 
+const \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{group__inf2990_gac6181a36077d672f673879a7ddea628a}{obtenir\-Facteur\-Agrandissement} ()
+\begin{DoxyCompactList}\small\item\em Obtenir le facteur d'agrandissement. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_modele3_d_aa7178546dff87e72d7c30300b9c4d2b9}{set\-Selectionne} (bool selectionne)
+\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{class_modele3_d_ad00cb228449b856507c55ca20a6b5b48}{get\-Rayon\-Sphere\-Englobante} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui encapsule un modele 3d de la librairie 'assimp'. Cette classe permet de charger un modele 3d d'un fichier exporte par un outil (en utilisant ladite librairie) et de l'afficher. 
+
+\begin{DoxyAuthor}{Author}
+Julien Gascon-\/\-Samson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2011-\/07-\/21 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_modele3_d_ad00cb228449b856507c55ca20a6b5b48}{\index{Modele3\-D@{Modele3\-D}!get\-Rayon\-Sphere\-Englobante@{get\-Rayon\-Sphere\-Englobante}}
+\index{get\-Rayon\-Sphere\-Englobante@{get\-Rayon\-Sphere\-Englobante}!Modele3D@{Modele3\-D}}
+\subsubsection[{get\-Rayon\-Sphere\-Englobante}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} Modele3\-D\-::get\-Rayon\-Sphere\-Englobante (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_modele3_d_ad00cb228449b856507c55ca20a6b5b48}
+\hypertarget{class_modele3_d_aa7178546dff87e72d7c30300b9c4d2b9}{\index{Modele3\-D@{Modele3\-D}!set\-Selectionne@{set\-Selectionne}}
+\index{set\-Selectionne@{set\-Selectionne}!Modele3D@{Modele3\-D}}
+\subsubsection[{set\-Selectionne}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Modele3\-D\-::set\-Selectionne (
+\begin{DoxyParamCaption}
+\item[{bool}]{selectionne}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_modele3_d_aa7178546dff87e72d7c30300b9c4d2b9}
+Permet de definir si un modele est selectionne ou non 
+\begin{DoxyParams}{Parameters}
+{\em selectionne} & L'etat de selection \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Modeles/\hyperlink{_modele3_d_8h}{Modele3\-D.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Modeles/\hyperlink{_modele3_d_8cpp}{Modele3\-D.\-cpp}\end{DoxyCompactItemize}

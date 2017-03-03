@@ -1,0 +1,201 @@
+\hypertarget{class_vaisseau}{\section{Vaisseau Class Reference}
+\label{class_vaisseau}\index{Vaisseau@{Vaisseau}}
+}
+
+
+La classe \hyperlink{class_vaisseau}{Vaisseau} permet la creation d'un objet \hyperlink{class_vaisseau}{Vaisseau}.  
+
+
+
+
+{\ttfamily \#include $<$Vaisseau.\-h$>$}
+
+Inheritance diagram for Vaisseau\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_vaisseau}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gad05f4fe5507720bdba51470d4cb1f17c}{Vaisseau} (bool joueur1)
+\item 
+\hyperlink{group__inf2990_gafa681ed5e546e2e44d87604a4cc340ab}{Vaisseau} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position\-Depart, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, float poids, bool joueur1)
+\item 
+\hyperlink{group__inf2990_ga2c5ceed868e99fecbe51957be7f70f27}{Vaisseau} (const \hyperlink{class_vaisseau}{Vaisseau} \&vaisseau)
+\item 
+virtual \hyperlink{group__inf2990_gae40b8e0143d6b736065207281bde2e8a}{$\sim$\-Vaisseau} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual Type \hyperlink{group__inf2990_gae4eafd2a7ad3e45343ed32a2eab6e238}{get\-Type} ()=0
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga4819f9262b730dabdbb6217998a0ac60}{update} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga01ec8901e406933337c6c0a7f8e2fd68}{collision\-Zone\-Jeu} (char axe)
+\item 
+\hypertarget{group__inf2990_ga1ce08ff9a1d4e3691fae9acc3e8d5c26}{void \hyperlink{group__inf2990_ga1ce08ff9a1d4e3691fae9acc3e8d5c26}{attaquer} (\hyperlink{structai_vector3_d}{ai\-Vector3\-D} direction, \hyperlink{structai_vector3_d}{ai\-Vector3\-D} position, float delta\-T)}\label{group__inf2990_ga1ce08ff9a1d4e3691fae9acc3e8d5c26}
+
+\begin{DoxyCompactList}\small\item\em Methode qui permet de creer des projectiles. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga3ec87318ad7c2c19524b3351c39e1ea2}{set\-Temps\-Pour\-Un\-Tir} (float freq)
+\begin{DoxyCompactList}\small\item\em Methode pour setter la frequence de tir d'un vaisseau. \end{DoxyCompactList}\item 
+\hypertarget{class_vaisseau_acb3a9188c88c85d30bc501c3b109f14d}{virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{class_vaisseau_acb3a9188c88c85d30bc501c3b109f14d}{clone} () const =0}\label{class_vaisseau_acb3a9188c88c85d30bc501c3b109f14d}
+
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gab21f596868437924a752cdd6ade76c27}{se\-Deplacer} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Permet au vaisseau de ce deplacer. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gabf48e540e1dfd789ea4934a8625a2f18}{decelerer} (float delta\-T)
+\item 
+\hypertarget{group__inf2990_ga6a08998a7c589f1d6c141a3acce2cffe}{void \hyperlink{group__inf2990_ga6a08998a7c589f1d6c141a3acce2cffe}{virage} (float delta\-T, int sens)}\label{group__inf2990_ga6a08998a7c589f1d6c141a3acce2cffe}
+
+\begin{DoxyCompactList}\small\item\em Permet au vaisseau deffectuer une rotation. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga0f6e02bb9c4214cd2ab83a3f6e7224b7}{void {\bfseries virage} (float delta\-T, int sens, float vitesse\-Rotation)}\label{group__inf2990_ga0f6e02bb9c4214cd2ab83a3f6e7224b7}
+
+\item 
+void \hyperlink{group__inf2990_ga0b4af5491a11aa02ff192bdc5fec2c69}{manoeuvre} ()
+\begin{DoxyCompactList}\small\item\em Permet au vaisseau deffectuer sa manoeuvre. \end{DoxyCompactList}\item 
+\hypertarget{class_vaisseau_ac71c7a203a762239f82cce069434fb4a}{void {\bfseries manoeuvre} (float angle)}\label{class_vaisseau_ac71c7a203a762239f82cce069434fb4a}
+
+\item 
+\hypertarget{group__inf2990_gae5082067507855c064c463bb2bf07f2c}{bool \hyperlink{group__inf2990_gae5082067507855c064c463bb2bf07f2c}{intersection\-Tir\-Vaisseau} (\hyperlink{structai_vector3_d}{ai\-Vector3\-D} pos\-Joueur\-Virtuel, \hyperlink{structai_vector3_d}{ai\-Vector3\-D} trajectoire\-Tir)}\label{group__inf2990_gae5082067507855c064c463bb2bf07f2c}
+
+\begin{DoxyCompactList}\small\item\em Permet au vaisseau virtuel d'éviter de tirer sur le joueur1. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_ga285120798eb1d95fa87326e187cce450}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Permet de verifier la collision entre les types d'objets concernés et de les traiter. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga252a29d32d1f35e945d5c83eebbb449a}{virtual bool \hyperlink{group__inf2990_ga252a29d32d1f35e945d5c83eebbb449a}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{group__inf2990_ga252a29d32d1f35e945d5c83eebbb449a}
+
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga428ba0625c86df79699e57c05ff39e25}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{group__inf2990_ga428ba0625c86df79699e57c05ff39e25}
+
+\item 
+\hypertarget{group__inf2990_ga4177b5a24a6a0c2e00f438d84ce63e1b}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{group__inf2990_ga4177b5a24a6a0c2e00f438d84ce63e1b}
+
+\item 
+\hypertarget{group__inf2990_ga226b9b474279923bda08791630d2796c}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{group__inf2990_ga226b9b474279923bda08791630d2796c}
+
+\item 
+\hypertarget{group__inf2990_ga58e9ac0bccf1ae9b2f6807616852d989}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{group__inf2990_ga58e9ac0bccf1ae9b2f6807616852d989}
+
+\item 
+\hypertarget{group__inf2990_ga1b966e9a5a572287b10d95fd3207d771}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{group__inf2990_ga1b966e9a5a572287b10d95fd3207d771}
+
+\item 
+\hypertarget{group__inf2990_gae45c8530f0a530f98a1c16d277707450}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_gae45c8530f0a530f98a1c16d277707450}
+
+\item 
+virtual void \hyperlink{group__inf2990_ga7fc481826a20365eed3e69ef519b12b4}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+\hypertarget{group__inf2990_gadca1094a4718639fdc0eac6ad86e9270}{virtual void \hyperlink{group__inf2990_gadca1094a4718639fdc0eac6ad86e9270}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{group__inf2990_gadca1094a4718639fdc0eac6ad86e9270}
+
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gad671016dd352b7b1de285f05d718b3ba}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{group__inf2990_gad671016dd352b7b1de285f05d718b3ba}
+
+\item 
+\hypertarget{group__inf2990_ga874c952241d2fd4d3d857bd845eebd46}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{group__inf2990_ga874c952241d2fd4d3d857bd845eebd46}
+
+\item 
+\hypertarget{group__inf2990_ga6ec837df80589f4f99e5cee11e35d361}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{group__inf2990_ga6ec837df80589f4f99e5cee11e35d361}
+
+\item 
+\hypertarget{group__inf2990_ga8dee5c7cbb49878bebb2d1b93b364e93}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{group__inf2990_ga8dee5c7cbb49878bebb2d1b93b364e93}
+
+\item 
+\hypertarget{group__inf2990_gaa838735df20030c2882982bdd1b5281b}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{group__inf2990_gaa838735df20030c2882982bdd1b5281b}
+
+\item 
+virtual void \hyperlink{group__inf2990_ga228bca501d2014d7820c4afdb1b2f73f}{traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\item 
+\hypertarget{class_vaisseau_a0b517a3964cc188f1afc40a27b663b44}{bool {\bfseries can\-Be\-Attracted} ()}\label{class_vaisseau_a0b517a3964cc188f1afc40a27b663b44}
+
+\item 
+void \hyperlink{group__inf2990_gaf1d46c06653f8db04e8afb5da40c0bc2}{set\-Can\-Be\-Attracted} (bool can\-Be\-Attracted)
+\item 
+\hypertarget{class_vaisseau_a6234df2317e6809b4b55b0c0f7568d75}{\hyperlink{structai_vector3_d}{ai\-Vector3\-D} {\bfseries get\-Vitesse} ()}\label{class_vaisseau_a6234df2317e6809b4b55b0c0f7568d75}
+
+\item 
+\hypertarget{class_vaisseau_a7c6fd5d4fc6779453a740be85d20db9b}{void {\bfseries set\-Vitesse} (\hyperlink{structai_vector3_d}{ai\-Vector3\-D} v)}\label{class_vaisseau_a7c6fd5d4fc6779453a740be85d20db9b}
+
+\item 
+\hypertarget{class_vaisseau_a0517053f9ac6a4afbf300ae7e8cb0113}{bool {\bfseries is\-Controlable} ()}\label{class_vaisseau_a0517053f9ac6a4afbf300ae7e8cb0113}
+
+\item 
+void \hyperlink{group__inf2990_ga2282c17402a157b09baef5e99946e027}{set\-Controlable} (bool is\-Controlable)
+\item 
+\hypertarget{class_vaisseau_ac8a8c334c9df679d8bcedfd8d7189b2d}{void {\bfseries set\-Temps\-Avant\-Controlable} (double t)}\label{class_vaisseau_ac8a8c334c9df679d8bcedfd8d7189b2d}
+
+\item 
+\hypertarget{group__inf2990_gaf9e10509c0386c6677296cc1ab51a1ab}{void {\bfseries set\-Acceleration\-Portail} (\hyperlink{structai_vector3_d}{ai\-Vector3\-D} acceleration\-Portail)}\label{group__inf2990_gaf9e10509c0386c6677296cc1ab51a1ab}
+
+\item 
+\hypertarget{class_vaisseau_ad01cd9d44718f3504e8d1a4eb60b6b39}{void {\bfseries set\-Temps\-Acceleration} (double t)}\label{class_vaisseau_ad01cd9d44718f3504e8d1a4eb60b6b39}
+
+\item 
+\hypertarget{class_vaisseau_a15564ea66cc1687520be6e3a36d9a8e2}{double {\bfseries get\-Temps\-Acceleration} ()}\label{class_vaisseau_a15564ea66cc1687520be6e3a36d9a8e2}
+
+\item 
+\hypertarget{class_vaisseau_a4980ff1ba5fe32aadc765b834dcf910f}{void {\bfseries set\-Est\-Accelere} (bool b)}\label{class_vaisseau_a4980ff1ba5fe32aadc765b834dcf910f}
+
+\item 
+\hypertarget{class_vaisseau_aa5632411487b784815a3c087c3981222}{bool {\bfseries get\-Est\-Accelere} ()}\label{class_vaisseau_aa5632411487b784815a3c087c3981222}
+
+\item 
+\hypertarget{class_vaisseau_ab8bef5f1ae1cde302b9eaa1092ec861b}{void {\bfseries set\-Facteur\-Acceleration} (int facteur\-A)}\label{class_vaisseau_ab8bef5f1ae1cde302b9eaa1092ec861b}
+
+\item 
+\hypertarget{class_vaisseau_adff7e44923d1869c3fd39ccfd8263928}{int {\bfseries get\-Facteur\-Acceleration} ()}\label{class_vaisseau_adff7e44923d1869c3fd39ccfd8263928}
+
+\item 
+\hypertarget{class_vaisseau_ade1c8025103572660e48db3b663a769d}{bool {\bfseries is\-Blocked} ()}\label{class_vaisseau_ade1c8025103572660e48db3b663a769d}
+
+\item 
+\hypertarget{class_vaisseau_ab0213297c65c92758e0bde98b2f1af65}{void {\bfseries set\-Blocked} (bool b)}\label{class_vaisseau_ab0213297c65c92758e0bde98b2f1af65}
+
+\item 
+\hypertarget{class_vaisseau_a6d5216832a0a0500695574d3058f1420}{virtual \hyperlink{class_asteroide}{Asteroide} $\ast$ {\bfseries get\-Ast\-Cible} ()}\label{class_vaisseau_a6d5216832a0a0500695574d3058f1420}
+
+\item 
+\hypertarget{class_vaisseau_aca21bfc8eb2064321a861b9597f95143}{virtual void {\bfseries set\-Ast\-Cible\-Null} ()}\label{class_vaisseau_aca21bfc8eb2064321a861b9597f95143}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__inf2990_ga6580c30b1842511ac92bb6d9361c4e59}{static const float {\bfseries V\-I\-T\-E\-S\-S\-E\-\_\-\-M\-A\-X} = 400.\-0f}\label{group__inf2990_ga6580c30b1842511ac92bb6d9361c4e59}
+
+\item 
+\hypertarget{group__inf2990_gacccd6549152b69816845235260178108}{static const float {\bfseries T\-E\-M\-P\-S\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-H\-A\-Q\-U\-E\-\_\-\-T\-I\-R} = 1.\-0f/\-F\-R\-E\-Q\-U\-E\-N\-C\-E\-T\-I\-R}\label{group__inf2990_gacccd6549152b69816845235260178108}
+
+\item 
+\hypertarget{group__inf2990_ga09b4c688134e8f6e7cc48caa358caef9}{static const float {\bfseries V\-I\-T\-E\-S\-S\-E\-\_\-\-R\-O\-T\-A\-T\-I\-O\-N} = 350.\-0f}\label{group__inf2990_ga09b4c688134e8f6e7cc48caa358caef9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vaisseau_ac79a6b16fa13f28906766b7ab1c2f6fe}{\hyperlink{class_noeud_vaisseau}{Noeud\-Vaisseau} $\ast$ {\bfseries noeud\-\_\-}}\label{class_vaisseau_ac79a6b16fa13f28906766b7ab1c2f6fe}
+
+\item 
+\hypertarget{class_vaisseau_a9f3a22775a7b6e0f54dc2801eef003ea}{double {\bfseries temps\-Acceleration\-Extra\-\_\-}}\label{class_vaisseau_a9f3a22775a7b6e0f54dc2801eef003ea}
+
+\item 
+\hypertarget{class_vaisseau_a6d2f1c59369501053cb93c7205625788}{\hyperlink{structai_vector3_d}{ai\-Vector3\-D} {\bfseries direction\-\_\-}}\label{class_vaisseau_a6d2f1c59369501053cb93c7205625788}
+
+\item 
+\hypertarget{class_vaisseau_abb0ceb7513356c9d1acce2cd5052b038}{\hyperlink{structai_vector3_d}{ai\-Vector3\-D} {\bfseries vitesse\-\_\-}}\label{class_vaisseau_abb0ceb7513356c9d1acce2cd5052b038}
+
+\item 
+\hypertarget{class_vaisseau_a74e4e7adf7dff0921efb5055d9dc5468}{bool {\bfseries is\-Controlable\-\_\-}}\label{class_vaisseau_a74e4e7adf7dff0921efb5055d9dc5468}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_vaisseau}{Vaisseau} permet la creation d'un objet \hyperlink{class_vaisseau}{Vaisseau}. 
+
+Cette classe contiendra un noeud de type \hyperlink{class_noeud_vaisseau}{Noeud\-Vaisseau} qui gerera la texture et la modelisation de l'objet \hyperlink{class_vaisseau}{Vaisseau}. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_vaisseau_8h}{Vaisseau.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_vaisseau_8cpp}{Vaisseau.\-cpp}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/Vaisseau\-Joueur.\-cpp\end{DoxyCompactItemize}

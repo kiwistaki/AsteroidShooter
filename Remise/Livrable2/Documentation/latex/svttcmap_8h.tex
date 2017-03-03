@@ -1,0 +1,67 @@
+\hypertarget{svttcmap_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svttcmap.h File Reference}
+\label{svttcmap_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svttcmap.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svttcmap.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_t___c_map_info__}{T\-T\-\_\-\-C\-Map\-Info\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svttcmap_8h_ab338019855a7a6242574a31f568edf29}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P}~\char`\"{}tt-\/cmaps\char`\"{}
+\item 
+\#define \hyperlink{svttcmap_8h_ab4b57bcbd7dae5ad52bf1c8646208251}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C}(class\-\_\-, get\-\_\-cmap\-\_\-info\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_t_t___c_map_info__}{T\-T\-\_\-\-C\-Map\-Info\-\_\-} \hyperlink{svttcmap_8h_ab2b1563e7fd8171aca82dab4841d083a}{T\-T\-\_\-\-C\-Map\-Info}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svttcmap_8h_adda7d70e6199d5e0e80d105fb7d9d66f}{T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func} )(\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\-T\-\_\-\-Char\-Map} charmap, \hyperlink{svttcmap_8h_ab2b1563e7fd8171aca82dab4841d083a}{T\-T\-\_\-\-C\-Map\-Info} $\ast$cmap\-\_\-info)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{svttcmap_8h_af800a6496267078aa7d1421e97acb51d}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E} (T\-T\-C\-Maps)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svttcmap_8h_ab4b57bcbd7dae5ad52bf1c8646208251}{\index{svttcmap.\-h@{svttcmap.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C}!svttcmap.h@{svttcmap.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-C\-M\-A\-P\-S\-R\-E\-C(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{get\-\_\-cmap\-\_\-info\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{svttcmap_8h_ab4b57bcbd7dae5ad52bf1c8646208251}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_TTCMapsRec class\_ =                 \(\backslash\)
+  \{                                                           \(\backslash\)
+    get\_cmap\_info\_                                            \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{svttcmap_8h_ab338019855a7a6242574a31f568edf29}{\index{svttcmap.\-h@{svttcmap.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P}!svttcmap.h@{svttcmap.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P~\char`\"{}tt-\/cmaps\char`\"{}}}\label{svttcmap_8h_ab338019855a7a6242574a31f568edf29}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svttcmap_8h_adda7d70e6199d5e0e80d105fb7d9d66f}{\index{svttcmap.\-h@{svttcmap.\-h}!T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func@{T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func}}
+\index{T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func@{T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func}!svttcmap.h@{svttcmap.\-h}}
+\subsubsection[{T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ T\-T\-\_\-\-C\-Map\-\_\-\-Info\-\_\-\-Get\-Func)({\bf F\-T\-\_\-\-Char\-Map} charmap, {\bf T\-T\-\_\-\-C\-Map\-Info} $\ast$cmap\-\_\-info)}}\label{svttcmap_8h_adda7d70e6199d5e0e80d105fb7d9d66f}
+\hypertarget{svttcmap_8h_ab2b1563e7fd8171aca82dab4841d083a}{\index{svttcmap.\-h@{svttcmap.\-h}!T\-T\-\_\-\-C\-Map\-Info@{T\-T\-\_\-\-C\-Map\-Info}}
+\index{T\-T\-\_\-\-C\-Map\-Info@{T\-T\-\_\-\-C\-Map\-Info}!svttcmap.h@{svttcmap.\-h}}
+\subsubsection[{T\-T\-\_\-\-C\-Map\-Info}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-C\-Map\-Info\-\_\-}  {\bf T\-T\-\_\-\-C\-Map\-Info}}}\label{svttcmap_8h_ab2b1563e7fd8171aca82dab4841d083a}
+
+
+\subsection{Function Documentation}
+\hypertarget{svttcmap_8h_af800a6496267078aa7d1421e97acb51d}{\index{svttcmap.\-h@{svttcmap.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!svttcmap.h@{svttcmap.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E (
+\begin{DoxyParamCaption}
+\item[{T\-T\-C\-Maps}]{}
+\end{DoxyParamCaption}
+)}}\label{svttcmap_8h_af800a6496267078aa7d1421e97acb51d}

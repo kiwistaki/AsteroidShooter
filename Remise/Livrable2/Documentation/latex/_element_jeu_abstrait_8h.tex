@@ -1,0 +1,45 @@
+\hypertarget{_element_jeu_abstrait_8h}{\section{Cadriciel/\-Sources/\-C++/\-Element\-Objet/\-Element\-Jeu\-Abstrait.h File Reference}
+\label{_element_jeu_abstrait_8h}\index{Cadriciel/\-Sources/\-C++/\-Element\-Objet/\-Element\-Jeu\-Abstrait.\-h@{Cadriciel/\-Sources/\-C++/\-Element\-Objet/\-Element\-Jeu\-Abstrait.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}assimp.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ai\-Matrix4x4.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ai\-Vector3\-D.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../../\-Commun/\-Utilitaire/\-Vecteur.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../\-Application/\-Visitor/\-Visitor.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../../\-Commun/\-Utilitaire/\-Boite\-Englobante\-Orientee.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../../\-Commun/\-Utilitaire/\-Aide\-Collision.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait}
+\begin{DoxyCompactList}\small\item\em Cette classe abstraite servira de modele pour les objets du jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___i_n_f2990-04_ga1d1cfd8ffb84e947f82999c682b666a7}{Type} \{ \\*
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7ad73f17b1aa5cd7285a1cdb594f68d59d}{A\-C\-C\-E\-L\-E\-R\-A\-T\-E\-U\-R} = 0, 
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7a765b4beedd062b711f2032888adf8e98}{A\-S\-T\-E\-R\-O\-I\-D\-E}, 
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7ab3e2158b2759e7e20adeb1f66bf3eeaa}{B\-A\-R\-R\-I\-E\-R\-E}, 
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7af67d667409cf70aa767dc17e21f6f24d}{P\-O\-R\-T\-A\-I\-L}, 
+\\*
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7a8801cf11e9d369feeb5db84413660623}{P\-R\-O\-J\-E\-C\-T\-I\-L\-E}, 
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7abe1ce018b886341a69d81ead8cffc786}{S\-T\-A\-T\-I\-O\-N}, 
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7a25460e5e6da4129ee78425bcb07d3728}{V\-A\-I\-S\-S\-E\-A\-U}, 
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7a2f952a15c8e35280108b9602c28bc5c2}{P\-O\-S\-I\-T\-I\-O\-N\-D\-E\-P\-A\-R\-T}, 
+\\*
+\hyperlink{group___i_n_f2990-04_gga1d1cfd8ffb84e947f82999c682b666a7a444cb64e6c072bd4f7962984bf490566}{V\-A\-I\-S\-S\-E\-A\-U\-V\-I\-R\-T\-U\-E\-L}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}

@@ -1,0 +1,201 @@
+\hypertarget{class_exception}{\section{Exception Class Reference}
+\label{class_exception}\index{Exception@{Exception}}
+}
+
+
+Exceptions thrown by failed assertions.
+
+\hyperlink{class_exception}{Exception} is an exception that serves descriptive strings through its \hyperlink{class_exception_a45642915395d3b813fedc2593fbcb8bb}{what()} method.  
+
+
+
+
+{\ttfamily \#include $<$Exception.\-h$>$}
+
+Inheritance diagram for Exception\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_exception_aac5e9386080a8eac2edebf02c8169ecc}{Exception} (const \hyperlink{class_message}{Message} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}=\hyperlink{class_message}{Message}(), const \hyperlink{class_source_line}{Source\-Line} \&\hyperlink{class_exception_a67f40ff3ea7f1c07e46222c38dcbaf43}{source\-Line}=\hyperlink{class_source_line}{Source\-Line}())
+\begin{DoxyCompactList}\small\item\em Constructs the exception with the specified message and source location. \end{DoxyCompactList}\item 
+\hyperlink{class_exception_ae0fd52e62283ee92c085d767d0aab736}{Exception} (const \hyperlink{class_exception}{Exception} \&other)
+\begin{DoxyCompactList}\small\item\em Constructs a copy of an exception. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_exception_ad1ba411de295ef2eeb02ba26284a829a}{$\sim$\-Exception} ()  throw ()
+\begin{DoxyCompactList}\small\item\em Destructs the exception. \end{DoxyCompactList}\item 
+\hyperlink{class_exception}{Exception} \& \hyperlink{class_exception_a71c844ee3ac32b7656c24386e9ab60a0}{operator=} (const \hyperlink{class_exception}{Exception} \&other)
+\begin{DoxyCompactList}\small\item\em Performs an assignment. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_exception_a45642915395d3b813fedc2593fbcb8bb}{what} () const   throw ()
+\begin{DoxyCompactList}\small\item\em Returns descriptive message. \end{DoxyCompactList}\item 
+\hyperlink{class_source_line}{Source\-Line} \hyperlink{class_exception_a67f40ff3ea7f1c07e46222c38dcbaf43}{source\-Line} () const 
+\begin{DoxyCompactList}\small\item\em Location where the error occured. \end{DoxyCompactList}\item 
+\hyperlink{class_message}{Message} \hyperlink{class_exception_aab5c1504a18016fdfe7574eb81f59ac6}{message} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_message}{Message} related to the exception. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_exception_ad508783fa44767e8fedb6472a4180234}{set\-Message} (const \hyperlink{class_message}{Message} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Set the message. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_exception}{Exception} $\ast$ \hyperlink{class_exception_ad05463060510ad131ccaaafa6b63b2d7}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Clones the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::exception \hyperlink{class_exception_a5086086062a7ec2cfe4e609026adfbd9}{Super\-Class}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_message}{Message} \hyperlink{class_exception_ad77e1fcf64ced674e60e1d9195c634df}{m\-\_\-message}
+\item 
+\hyperlink{class_source_line}{Source\-Line} \hyperlink{class_exception_ae6685340e219cdcef0d72d45b58c5efb}{m\-\_\-source\-Line}
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_exception_a51b947da686ab2dd290f799b2a05d492}{m\-\_\-what\-Message}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exceptions thrown by failed assertions.
+
+\hyperlink{class_exception}{Exception} is an exception that serves descriptive strings through its \hyperlink{class_exception_a45642915395d3b813fedc2593fbcb8bb}{what()} method. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_exception_a5086086062a7ec2cfe4e609026adfbd9}{\index{Exception@{Exception}!Super\-Class@{Super\-Class}}
+\index{Super\-Class@{Super\-Class}!Exception@{Exception}}
+\subsubsection[{Super\-Class}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::exception {\bf Exception\-::\-Super\-Class}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_exception_a5086086062a7ec2cfe4e609026adfbd9}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_exception_aac5e9386080a8eac2edebf02c8169ecc}{\index{Exception@{Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!Exception@{Exception}}
+\subsubsection[{Exception}]{\setlength{\rightskip}{0pt plus 5cm}Exception\-::\-Exception (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{message = {\ttfamily {\bf Message}()}, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line = {\ttfamily {\bf Source\-Line}()}}
+\end{DoxyParamCaption}
+)}}\label{class_exception_aac5e9386080a8eac2edebf02c8169ecc}
+
+
+Constructs the exception with the specified message and source location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} associated to the exception. \\
+\hline
+{\em source\-Line} & Source location related to the exception. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_exception_ae0fd52e62283ee92c085d767d0aab736}{\index{Exception@{Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!Exception@{Exception}}
+\subsubsection[{Exception}]{\setlength{\rightskip}{0pt plus 5cm}Exception\-::\-Exception (
+\begin{DoxyParamCaption}
+\item[{const {\bf Exception} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_exception_ae0fd52e62283ee92c085d767d0aab736}
+
+
+Constructs a copy of an exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \hyperlink{class_exception}{Exception} to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_exception_ad1ba411de295ef2eeb02ba26284a829a}{\index{Exception@{Exception}!$\sim$\-Exception@{$\sim$\-Exception}}
+\index{$\sim$\-Exception@{$\sim$\-Exception}!Exception@{Exception}}
+\subsubsection[{$\sim$\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}virtual Exception\-::$\sim$\-Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_exception_ad1ba411de295ef2eeb02ba26284a829a}
+
+
+Destructs the exception. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_exception_ad05463060510ad131ccaaafa6b63b2d7}{\index{Exception@{Exception}!clone@{clone}}
+\index{clone@{clone}!Exception@{Exception}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Exception}$\ast$ Exception\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_exception_ad05463060510ad131ccaaafa6b63b2d7}
+
+
+Clones the exception. 
+
+\hypertarget{class_exception_aab5c1504a18016fdfe7574eb81f59ac6}{\index{Exception@{Exception}!message@{message}}
+\index{message@{message}!Exception@{Exception}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message} Exception\-::message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_exception_aab5c1504a18016fdfe7574eb81f59ac6}
+
+
+\hyperlink{class_message}{Message} related to the exception. 
+
+\hypertarget{class_exception_a71c844ee3ac32b7656c24386e9ab60a0}{\index{Exception@{Exception}!operator=@{operator=}}
+\index{operator=@{operator=}!Exception@{Exception}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Exception}\& Exception\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Exception} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_exception_a71c844ee3ac32b7656c24386e9ab60a0}
+
+
+Performs an assignment. 
+
+\hypertarget{class_exception_ad508783fa44767e8fedb6472a4180234}{\index{Exception@{Exception}!set\-Message@{set\-Message}}
+\index{set\-Message@{set\-Message}!Exception@{Exception}}
+\subsubsection[{set\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Exception\-::set\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_exception_ad508783fa44767e8fedb6472a4180234}
+
+
+Set the message. 
+
+\hypertarget{class_exception_a67f40ff3ea7f1c07e46222c38dcbaf43}{\index{Exception@{Exception}!source\-Line@{source\-Line}}
+\index{source\-Line@{source\-Line}!Exception@{Exception}}
+\subsubsection[{source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Source\-Line} Exception\-::source\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_exception_a67f40ff3ea7f1c07e46222c38dcbaf43}
+
+
+Location where the error occured. 
+
+\hypertarget{class_exception_a45642915395d3b813fedc2593fbcb8bb}{\index{Exception@{Exception}!what@{what}}
+\index{what@{what}!Exception@{Exception}}
+\subsubsection[{what}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Exception\-::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }}\label{class_exception_a45642915395d3b813fedc2593fbcb8bb}
+
+
+Returns descriptive message. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_exception_ad77e1fcf64ced674e60e1d9195c634df}{\index{Exception@{Exception}!m\-\_\-message@{m\-\_\-message}}
+\index{m\-\_\-message@{m\-\_\-message}!Exception@{Exception}}
+\subsubsection[{m\-\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message} Exception\-::m\-\_\-message\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_exception_ad77e1fcf64ced674e60e1d9195c634df}
+\hypertarget{class_exception_ae6685340e219cdcef0d72d45b58c5efb}{\index{Exception@{Exception}!m\-\_\-source\-Line@{m\-\_\-source\-Line}}
+\index{m\-\_\-source\-Line@{m\-\_\-source\-Line}!Exception@{Exception}}
+\subsubsection[{m\-\_\-source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Source\-Line} Exception\-::m\-\_\-source\-Line\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_exception_ae6685340e219cdcef0d72d45b58c5efb}
+\hypertarget{class_exception_a51b947da686ab2dd290f799b2a05d492}{\index{Exception@{Exception}!m\-\_\-what\-Message@{m\-\_\-what\-Message}}
+\index{m\-\_\-what\-Message@{m\-\_\-what\-Message}!Exception@{Exception}}
+\subsubsection[{m\-\_\-what\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Exception\-::m\-\_\-what\-Message\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_exception_a51b947da686ab2dd290f799b2a05d492}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_exception_8h}{Exception.\-h}\end{DoxyCompactItemize}

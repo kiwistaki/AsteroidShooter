@@ -1,0 +1,179 @@
+\hypertarget{class_test_suite_builder_context_base}{\section{Test\-Suite\-Builder\-Context\-Base Class Reference}
+\label{class_test_suite_builder_context_base}\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}}
+}
+
+
+Context used when creating test suite in Helper\-Macros.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Suite\-Builder\-Context.\-h$>$}
+
+Inheritance diagram for Test\-Suite\-Builder\-Context\-Base\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_test_suite_builder_context_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_suite_builder_context_base_a434b04354f7e326c7f88d015921d5e6d}{Test\-Suite\-Builder\-Context\-Base} (\hyperlink{class_test_suite}{Test\-Suite} \&suite, const \hyperlink{class_test_namer}{Test\-Namer} \&namer, \hyperlink{class_test_fixture_factory}{Test\-Fixture\-Factory} \&factory)
+\begin{DoxyCompactList}\small\item\em Constructs a new context. \end{DoxyCompactList}\item 
+void \hyperlink{class_test_suite_builder_context_base_a8b42185139e3efe07a0fe69b9549e928}{add\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Adds a test to the fixture suite. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_test_suite_builder_context_base_abba530361ccd63ddf23fcbdc4f33727f}{get\-Fixture\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the fixture name. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_test_suite_builder_context_base_a137a255602edbdc2e1dc575fb53fee9e}{get\-Test\-Name\-For} (const std\-::string \&test\-Method\-Name) const 
+\begin{DoxyCompactList}\small\item\em Returns the name of the test for the specified method. \end{DoxyCompactList}\item 
+void \hyperlink{class_test_suite_builder_context_base_a358c75376f4d3df2ef570003cbe2e06a}{add\-Property} (const std\-::string \&key, const std\-::string \&value)
+\begin{DoxyCompactList}\small\item\em Adds property pair. \end{DoxyCompactList}\item 
+const std\-::string \hyperlink{class_test_suite_builder_context_base_a9955d3fda5115963ee0310d09a3b15d9}{get\-String\-Property} (const std\-::string \&key) const 
+\begin{DoxyCompactList}\small\item\em Returns property value assigned to param key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_suite_builder_context_base_a1e2319a53ecd7a718c87f4ea5c42d4c6}{typedef std\-::pair$<$ std\-::string, \\*
+std\-::string $>$ {\bfseries Property}}\label{class_test_suite_builder_context_base_a1e2319a53ecd7a718c87f4ea5c42d4c6}
+
+\item 
+\hypertarget{class_test_suite_builder_context_base_a95565394a60a8b8d843a5a64d2572a86}{typedef Cpp\-Unit\-Vector$<$ Property $>$ {\bfseries Properties}}\label{class_test_suite_builder_context_base_a95565394a60a8b8d843a5a64d2572a86}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_suite_builder_context_base_a5474060095c1ab76f16a133af0fb3b52}{\hyperlink{class_test_fixture}{Test\-Fixture} $\ast$ {\bfseries make\-Test\-Fixture} () const }\label{class_test_suite_builder_context_base_a5474060095c1ab76f16a133af0fb3b52}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_suite_builder_context_base_a16ea2e4d82cd9f94b843839dc8ed2931}{\hyperlink{class_test_suite}{Test\-Suite} \& {\bfseries m\-\_\-suite}}\label{class_test_suite_builder_context_base_a16ea2e4d82cd9f94b843839dc8ed2931}
+
+\item 
+\hypertarget{class_test_suite_builder_context_base_abdbbb982c6c41ae8ecc5abe954c56e70}{const \hyperlink{class_test_namer}{Test\-Namer} \& {\bfseries m\-\_\-namer}}\label{class_test_suite_builder_context_base_abdbbb982c6c41ae8ecc5abe954c56e70}
+
+\item 
+\hypertarget{class_test_suite_builder_context_base_ad814ae6df45822300bf99dfcee0277f7}{\hyperlink{class_test_fixture_factory}{Test\-Fixture\-Factory} \& {\bfseries m\-\_\-factory}}\label{class_test_suite_builder_context_base_ad814ae6df45822300bf99dfcee0277f7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Context used when creating test suite in Helper\-Macros. 
+
+Base class for all context used when creating test suite. The actual context type during test suite creation is \hyperlink{class_test_suite_builder_context}{Test\-Suite\-Builder\-Context}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}, \hyperlink{group___writing_test_fixture_gaace55a4a3a4f3e0cd219d38e98d4f48f}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T}, \hyperlink{group___writing_test_fixture_ga516fec19cd7a7acb6fbf194bd98c4c09}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_suite_builder_context_base_a434b04354f7e326c7f88d015921d5e6d}{\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}}
+\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!TestSuiteBuilderContextBase@{Test\-Suite\-Builder\-Context\-Base}}
+\subsubsection[{Test\-Suite\-Builder\-Context\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Suite\-Builder\-Context\-Base\-::\-Test\-Suite\-Builder\-Context\-Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Suite} \&}]{suite, }
+\item[{const {\bf Test\-Namer} \&}]{namer, }
+\item[{{\bf Test\-Fixture\-Factory} \&}]{factory}
+\end{DoxyParamCaption}
+)}}\label{class_test_suite_builder_context_base_a434b04354f7e326c7f88d015921d5e6d}
+
+
+Constructs a new context. 
+
+You should not use this. The context is created in \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E()}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_suite_builder_context_base_a358c75376f4d3df2ef570003cbe2e06a}{\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!add\-Property@{add\-Property}}
+\index{add\-Property@{add\-Property}!TestSuiteBuilderContextBase@{Test\-Suite\-Builder\-Context\-Base}}
+\subsubsection[{add\-Property}]{\setlength{\rightskip}{0pt plus 5cm}void Test\-Suite\-Builder\-Context\-Base\-::add\-Property (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{key, }
+\item[{const std\-::string \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_test_suite_builder_context_base_a358c75376f4d3df2ef570003cbe2e06a}
+
+
+Adds property pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Property\-Key string to add. \\
+\hline
+{\em value} & Property\-Value string to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_suite_builder_context_base_a8b42185139e3efe07a0fe69b9549e928}{\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!add\-Test@{add\-Test}}
+\index{add\-Test@{add\-Test}!TestSuiteBuilderContextBase@{Test\-Suite\-Builder\-Context\-Base}}
+\subsubsection[{add\-Test}]{\setlength{\rightskip}{0pt plus 5cm}void Test\-Suite\-Builder\-Context\-Base\-::add\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)}}\label{class_test_suite_builder_context_base_a8b42185139e3efe07a0fe69b9549e928}
+
+
+Adds a test to the fixture suite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \hyperlink{class_test}{Test} to add to the fixture suite. Must not be {\ttfamily N\-U\-L\-L}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_suite_builder_context_base_abba530361ccd63ddf23fcbdc4f33727f}{\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!get\-Fixture\-Name@{get\-Fixture\-Name}}
+\index{get\-Fixture\-Name@{get\-Fixture\-Name}!TestSuiteBuilderContextBase@{Test\-Suite\-Builder\-Context\-Base}}
+\subsubsection[{get\-Fixture\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Test\-Suite\-Builder\-Context\-Base\-::get\-Fixture\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_test_suite_builder_context_base_abba530361ccd63ddf23fcbdc4f33727f}
+
+
+Returns the fixture name. 
+
+\begin{DoxyReturn}{Returns}
+Fixture name. It is the name used to name the fixture suite. 
+\end{DoxyReturn}
+\hypertarget{class_test_suite_builder_context_base_a9955d3fda5115963ee0310d09a3b15d9}{\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!get\-String\-Property@{get\-String\-Property}}
+\index{get\-String\-Property@{get\-String\-Property}!TestSuiteBuilderContextBase@{Test\-Suite\-Builder\-Context\-Base}}
+\subsubsection[{get\-String\-Property}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string Test\-Suite\-Builder\-Context\-Base\-::get\-String\-Property (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{key}
+\end{DoxyParamCaption}
+) const}}\label{class_test_suite_builder_context_base_a9955d3fda5115963ee0310d09a3b15d9}
+
+
+Returns property value assigned to param key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Property\-Key string. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_suite_builder_context_base_a137a255602edbdc2e1dc575fb53fee9e}{\index{Test\-Suite\-Builder\-Context\-Base@{Test\-Suite\-Builder\-Context\-Base}!get\-Test\-Name\-For@{get\-Test\-Name\-For}}
+\index{get\-Test\-Name\-For@{get\-Test\-Name\-For}!TestSuiteBuilderContextBase@{Test\-Suite\-Builder\-Context\-Base}}
+\subsubsection[{get\-Test\-Name\-For}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Test\-Suite\-Builder\-Context\-Base\-::get\-Test\-Name\-For (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{test\-Method\-Name}
+\end{DoxyParamCaption}
+) const}}\label{class_test_suite_builder_context_base_a137a255602edbdc2e1dc575fb53fee9e}
+
+
+Returns the name of the test for the specified method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Method\-Name} & Name of the method that implements a test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string that is the concatenation of the test fixture name (returned by \hyperlink{class_test_suite_builder_context_base_abba530361ccd63ddf23fcbdc4f33727f}{get\-Fixture\-Name()}) and{\itshape test\-Method\-Name}, separated using '\-:\-:'. This provides a fairly unique name for a given test. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/Test\-Suite\-Builder\-Context.\-h\end{DoxyCompactItemize}

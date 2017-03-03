@@ -1,0 +1,29 @@
+<?xml version="1,0" ?>
+<Root>
+    <NiveauDiff diff="2" />
+    <FrequenceAsteroide frequenceAsteroide="1.239" />
+    <NbMinDeStation nbMinDeStation="2" />
+    <BonusAcceleration bonusAcceleration="10" />
+    <ConteneurElement>
+        <Element type="7" id="1" posX="-50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="7" id="2" posX="50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="2" id="13" posX="-1219.74" posY="-527.114" posZ="0" angle="90.9195" axeX="0" axeY="0" axeZ="1" tailleX="7.15359" tailleY="1" tailleZ="1" />
+        <Element type="2" id="14" posX="1155.16" posY="521.369" posZ="-0" angle="-93.7323" axeX="0" axeY="0" axeZ="1" tailleX="8.37691" tailleY="1" tailleZ="1" />
+        <Element type="2" id="15" posX="383.141" posY="-716.703" posZ="-0" angle="24.1826" axeX="0" axeY="0" axeZ="1" tailleX="5.8202" tailleY="1" tailleZ="1" />
+        <Element type="5" id="16" posX="-619.913" posY="-654.943" posZ="0" angle="585.017" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="17" posX="565.384" posY="-333.217" posZ="-0" angle="581.017" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="18" posX="-473.545" posY="666.433" posZ="-0" angle="575.217" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="3" id="19" posX="-1604.31" posY="764.1" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="20" />
+        <Element type="3" id="20" posX="1515.34" posY="-873.258" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="19" />
+        <Element type="3" id="21" posX="528.074" posY="787.081" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="22" />
+        <Element type="3" id="22" posX="-1618.66" posY="-810.061" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="21" />
+        <Element type="3" id="23" posX="-154.978" posY="-907.728" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="24" />
+        <Element type="3" id="24" posX="1592.83" posY="876.13" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="23" />
+        <Element type="0" id="25" posX="-1363.24" posY="-821.552" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="0" id="26" posX="906.91" posY="-942.199" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="0" id="27" posX="312.827" posY="-904.856" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="0" id="28" posX="987.269" posY="896.238" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="0" id="29" posX="-1110.68" posY="899.111" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="0" id="30" posX="2.86997" posY="209.697" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+    </ConteneurElement>
+</Root>

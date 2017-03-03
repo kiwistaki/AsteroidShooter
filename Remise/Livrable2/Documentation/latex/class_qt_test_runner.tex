@@ -1,0 +1,86 @@
+\hypertarget{class_qt_test_runner}{\section{Qt\-Test\-Runner Class Reference}
+\label{class_qt_test_runner}\index{Qt\-Test\-Runner@{Qt\-Test\-Runner}}
+}
+
+
+Q\-T test runner.
+
+Here is an example of usage\-:  
+
+
+
+
+{\ttfamily \#include $<$Qt\-Test\-Runner.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_qt_test_runner_a6343dbe4e69b8bdd238a4f080619f929}{Qt\-Test\-Runner} ()
+\item 
+virtual \hyperlink{class_qt_test_runner_a71264fc7621f31989fc510f35b0fd668}{$\sim$\-Qt\-Test\-Runner} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_qt_test_runner_ac3b0f28df1611fd01f83a7b0bcae72e3}{run} (bool auto\-Run=false)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_qt_test_runner_a31e4c6548007d2c94e277341e7168802}{add\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Q\-T test runner.
+
+Here is an example of usage\-: 
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{_test_factory_registry_8h}{cppunit/extensions/TestFactoryRegistry.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{ui_2qt_2_test_runner_8h}{cppunit/ui/qt/TestRunner.h}>}
+
+[...]
+
+\textcolor{keywordtype}{void} 
+QDepWindow::runTests()
+\{
+  CppUnit::QtUi::TestRunner runner;
+  runner.addTest( CppUnit::TestFactoryRegistry::getRegistry().makeTest() );
+  runner.run( \textcolor{keyword}{true} );
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_qt_test_runner_a6343dbe4e69b8bdd238a4f080619f929}{\index{Qt\-Test\-Runner@{Qt\-Test\-Runner}!Qt\-Test\-Runner@{Qt\-Test\-Runner}}
+\index{Qt\-Test\-Runner@{Qt\-Test\-Runner}!QtTestRunner@{Qt\-Test\-Runner}}
+\subsubsection[{Qt\-Test\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}Qt\-Test\-Runner\-::\-Qt\-Test\-Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_qt_test_runner_a6343dbe4e69b8bdd238a4f080619f929}
+Constructs a \hyperlink{class_test_runner}{Test\-Runner} object. \hypertarget{class_qt_test_runner_a71264fc7621f31989fc510f35b0fd668}{\index{Qt\-Test\-Runner@{Qt\-Test\-Runner}!$\sim$\-Qt\-Test\-Runner@{$\sim$\-Qt\-Test\-Runner}}
+\index{$\sim$\-Qt\-Test\-Runner@{$\sim$\-Qt\-Test\-Runner}!QtTestRunner@{Qt\-Test\-Runner}}
+\subsubsection[{$\sim$\-Qt\-Test\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}virtual Qt\-Test\-Runner\-::$\sim$\-Qt\-Test\-Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qt_test_runner_a71264fc7621f31989fc510f35b0fd668}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_qt_test_runner_a31e4c6548007d2c94e277341e7168802}{\index{Qt\-Test\-Runner@{Qt\-Test\-Runner}!add\-Test@{add\-Test}}
+\index{add\-Test@{add\-Test}!QtTestRunner@{Qt\-Test\-Runner}}
+\subsubsection[{add\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Qt\-Test\-Runner\-::add\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)}}\label{class_qt_test_runner_a31e4c6548007d2c94e277341e7168802}
+\hypertarget{class_qt_test_runner_ac3b0f28df1611fd01f83a7b0bcae72e3}{\index{Qt\-Test\-Runner@{Qt\-Test\-Runner}!run@{run}}
+\index{run@{run}!QtTestRunner@{Qt\-Test\-Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Qt\-Test\-Runner\-::run (
+\begin{DoxyParamCaption}
+\item[{bool}]{auto\-Run = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_qt_test_runner_ac3b0f28df1611fd01f83a7b0bcae72e3}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/ui/qt/\hyperlink{_qt_test_runner_8h}{Qt\-Test\-Runner.\-h}\end{DoxyCompactItemize}

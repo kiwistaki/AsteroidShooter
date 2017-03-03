@@ -1,0 +1,94 @@
+\hypertarget{class_test_leaf}{\section{Test\-Leaf Class Reference}
+\label{class_test_leaf}\index{Test\-Leaf@{Test\-Leaf}}
+}
+
+
+A single test object.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Leaf.\-h$>$}
+
+Inheritance diagram for Test\-Leaf\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.962963cm]{class_test_leaf}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_test_leaf_aecf22f6d00f9a35d89c00c4b83e34aff}{count\-Test\-Cases} () const 
+\item 
+int \hyperlink{class_test_leaf_a74463f8aa3dae0f727f26a184233749a}{get\-Child\-Test\-Count} () const 
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_leaf_ac6c850de11b23821255839205fb319d5}{do\-Get\-Child\-Test\-At} (int index) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single test object. 
+
+Base class for single test case\-: a test that doesn't have any children. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_leaf_aecf22f6d00f9a35d89c00c4b83e34aff}{\index{Test\-Leaf@{Test\-Leaf}!count\-Test\-Cases@{count\-Test\-Cases}}
+\index{count\-Test\-Cases@{count\-Test\-Cases}!TestLeaf@{Test\-Leaf}}
+\subsubsection[{count\-Test\-Cases}]{\setlength{\rightskip}{0pt plus 5cm}int Test\-Leaf\-::count\-Test\-Cases (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_leaf_aecf22f6d00f9a35d89c00c4b83e34aff}
+Returns 1 as the default number of test cases invoked by \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{run()}.
+
+You may override this method when many test cases are invoked (\hyperlink{class_repeated_test}{Repeated\-Test} for example).
+
+\begin{DoxyReturn}{Returns}
+1. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{Test\-::count\-Test\-Cases()}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{Test}.
+
+\hypertarget{class_test_leaf_ac6c850de11b23821255839205fb319d5}{\index{Test\-Leaf@{Test\-Leaf}!do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}}
+\index{do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}!TestLeaf@{Test\-Leaf}}
+\subsubsection[{do\-Get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Leaf\-::do\-Get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_leaf_ac6c850de11b23821255839205fb319d5}
+Always throws std\-::out\-\_\-of\-\_\-range. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{Test\-::do\-Get\-Child\-Test\-At()}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{Test}.
+
+\hypertarget{class_test_leaf_a74463f8aa3dae0f727f26a184233749a}{\index{Test\-Leaf@{Test\-Leaf}!get\-Child\-Test\-Count@{get\-Child\-Test\-Count}}
+\index{get\-Child\-Test\-Count@{get\-Child\-Test\-Count}!TestLeaf@{Test\-Leaf}}
+\subsubsection[{get\-Child\-Test\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Test\-Leaf\-::get\-Child\-Test\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_leaf_a74463f8aa3dae0f727f26a184233749a}
+Returns the number of child of this test case\-: 0.
+
+You should never override this method\-: a \hyperlink{class_test_leaf}{Test\-Leaf} as no children by definition.
+
+\begin{DoxyReturn}{Returns}
+0. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_test_a7aaab95037b7222573471074c56df85b}{Test}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Leaf.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\hypertarget{tttables_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/tttables.h File Reference}
+\label{tttables_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/tttables.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/tttables.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_t___header__}{T\-T\-\_\-\-Header\-\_\-}
+\item 
+struct \hyperlink{struct_t_t___hori_header__}{T\-T\-\_\-\-Hori\-Header\-\_\-}
+\item 
+struct \hyperlink{struct_t_t___vert_header__}{T\-T\-\_\-\-Vert\-Header\-\_\-}
+\item 
+struct \hyperlink{struct_t_t___o_s2__}{T\-T\-\_\-\-O\-S2\-\_\-}
+\item 
+struct \hyperlink{struct_t_t___postscript__}{T\-T\-\_\-\-Postscript\-\_\-}
+\item 
+struct \hyperlink{struct_t_t___p_c_l_t__}{T\-T\-\_\-\-P\-C\-L\-T\-\_\-}
+\item 
+struct \hyperlink{struct_t_t___max_profile__}{T\-T\-\_\-\-Max\-Profile\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{ftheader_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} struct \\*
+\hyperlink{struct_t_t___header__}{T\-T\-\_\-\-Header\-\_\-} \hyperlink{tttables_8h_a13a96fabf0c90560cf7ce96ff81b5a78}{T\-T\-\_\-\-Header}
+\item 
+typedef struct \hyperlink{struct_t_t___hori_header__}{T\-T\-\_\-\-Hori\-Header\-\_\-} \hyperlink{tttables_8h_ae362296906740a6c8e790e63679601b2}{T\-T\-\_\-\-Hori\-Header}
+\item 
+typedef struct \hyperlink{struct_t_t___vert_header__}{T\-T\-\_\-\-Vert\-Header\-\_\-} \hyperlink{tttables_8h_a445e9be66f7f6b3980dc3be3049570ad}{T\-T\-\_\-\-Vert\-Header}
+\item 
+typedef struct \hyperlink{struct_t_t___o_s2__}{T\-T\-\_\-\-O\-S2\-\_\-} \hyperlink{tttables_8h_ab30cdb03683090c8336247bb86647fd6}{T\-T\-\_\-\-O\-S2}
+\item 
+typedef struct \hyperlink{struct_t_t___postscript__}{T\-T\-\_\-\-Postscript\-\_\-} \hyperlink{tttables_8h_aaeb91f004d8bedf03569aadac888c6ea}{T\-T\-\_\-\-Postscript}
+\item 
+typedef struct \hyperlink{struct_t_t___p_c_l_t__}{T\-T\-\_\-\-P\-C\-L\-T\-\_\-} \hyperlink{tttables_8h_a92bfe9d86f9f80a56fb01ad199adc587}{T\-T\-\_\-\-P\-C\-L\-T}
+\item 
+typedef struct \hyperlink{struct_t_t___max_profile__}{T\-T\-\_\-\-Max\-Profile\-\_\-} \hyperlink{tttables_8h_a45befad229720f58d1126a0e78d6ae05}{T\-T\-\_\-\-Max\-Profile}
+\item 
+typedef enum \hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684}{F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-} \hyperlink{tttables_8h_aa47825a845cef1422b1715723c11d6b5}{F\-T\-\_\-\-Sfnt\-\_\-\-Tag}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684}{F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-} \{ \\*
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684afa7cacf78267844d979b64314c50a798}{ft\-\_\-sfnt\-\_\-head} = 0, 
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684ae298be446a3a6afb1d31815af4999504}{ft\-\_\-sfnt\-\_\-maxp} = 1, 
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684ac8cfe419dbbba89f9cf4d5cf33d53e99}{ft\-\_\-sfnt\-\_\-os2} = 2, 
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a6e7ce03c6708bda1586908453a242be4}{ft\-\_\-sfnt\-\_\-hhea} = 3, 
+\\*
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a349ced30c52c3b30119bdf8169562bd9}{ft\-\_\-sfnt\-\_\-vhea} = 4, 
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a003a673a86f3fac7e954cb9a3369ab3b}{ft\-\_\-sfnt\-\_\-post} = 5, 
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a77aa874bbb2bfa2a4030d70601061d05}{ft\-\_\-sfnt\-\_\-pclt} = 6, 
+\hyperlink{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a7cc722de6c2caeb66a3aa1604f86a56b}{sfnt\-\_\-max}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tttables_8h_a05db257798829b76cf62cf22239e7058}{F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table} (\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{tttables_8h_aa47825a845cef1422b1715723c11d6b5}{F\-T\-\_\-\-Sfnt\-\_\-\-Tag} tag)
+\item 
+\hyperlink{tttables_8h_a515e9f17645055a3aaf9a603b073d404}{F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table} (\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} tag, \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long} \hyperlink{fmod__output_8h_ac915cd848f42b26af51745f204a3b9af}{offset}, \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte} $\ast$\hyperlink{fmod_8h_a6c0f527f003707dfaca177b40f406ed9}{buffer}, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} $\ast$\hyperlink{fmod__codec_8h_a921fa83f7755f0139c84ba1831417a2e}{length})
+\item 
+\hyperlink{tttables_8h_ae40ea2033079514f0198444910ad1e46}{F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info} (\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} table\-\_\-index, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} $\ast$tag, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} $\ast$\hyperlink{fmod__codec_8h_a921fa83f7755f0139c84ba1831417a2e}{length})
+\item 
+\hyperlink{tttables_8h_a2ed9235237891d15d80de38e0f249717}{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D} (\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\-T\-\_\-\-Char\-Map} charmap)
+\item 
+\hyperlink{tttables_8h_a9a4db80b4f71d00e28474cbfcf968614}{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format} (\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\-T\-\_\-\-Char\-Map} charmap)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tttables_8h_aa47825a845cef1422b1715723c11d6b5}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Sfnt\-\_\-\-Tag@{F\-T\-\_\-\-Sfnt\-\_\-\-Tag}}
+\index{F\-T\-\_\-\-Sfnt\-\_\-\-Tag@{F\-T\-\_\-\-Sfnt\-\_\-\-Tag}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Sfnt\-\_\-\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-}  {\bf F\-T\-\_\-\-Sfnt\-\_\-\-Tag}}}\label{tttables_8h_aa47825a845cef1422b1715723c11d6b5}
+\hypertarget{tttables_8h_a13a96fabf0c90560cf7ce96ff81b5a78}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-Header@{T\-T\-\_\-\-Header}}
+\index{T\-T\-\_\-\-Header@{T\-T\-\_\-\-Header}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-Header}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} struct {\bf T\-T\-\_\-\-Header\-\_\-}  {\bf T\-T\-\_\-\-Header}}}\label{tttables_8h_a13a96fabf0c90560cf7ce96ff81b5a78}
+\hypertarget{tttables_8h_ae362296906740a6c8e790e63679601b2}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-Hori\-Header@{T\-T\-\_\-\-Hori\-Header}}
+\index{T\-T\-\_\-\-Hori\-Header@{T\-T\-\_\-\-Hori\-Header}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-Hori\-Header}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-Hori\-Header\-\_\-}  {\bf T\-T\-\_\-\-Hori\-Header}}}\label{tttables_8h_ae362296906740a6c8e790e63679601b2}
+\hypertarget{tttables_8h_a45befad229720f58d1126a0e78d6ae05}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-Max\-Profile@{T\-T\-\_\-\-Max\-Profile}}
+\index{T\-T\-\_\-\-Max\-Profile@{T\-T\-\_\-\-Max\-Profile}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-Max\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-Max\-Profile\-\_\-}  {\bf T\-T\-\_\-\-Max\-Profile}}}\label{tttables_8h_a45befad229720f58d1126a0e78d6ae05}
+\hypertarget{tttables_8h_ab30cdb03683090c8336247bb86647fd6}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-O\-S2@{T\-T\-\_\-\-O\-S2}}
+\index{T\-T\-\_\-\-O\-S2@{T\-T\-\_\-\-O\-S2}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-O\-S2}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-O\-S2\-\_\-}  {\bf T\-T\-\_\-\-O\-S2}}}\label{tttables_8h_ab30cdb03683090c8336247bb86647fd6}
+\hypertarget{tttables_8h_a92bfe9d86f9f80a56fb01ad199adc587}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-P\-C\-L\-T@{T\-T\-\_\-\-P\-C\-L\-T}}
+\index{T\-T\-\_\-\-P\-C\-L\-T@{T\-T\-\_\-\-P\-C\-L\-T}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-P\-C\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-P\-C\-L\-T\-\_\-}  {\bf T\-T\-\_\-\-P\-C\-L\-T}}}\label{tttables_8h_a92bfe9d86f9f80a56fb01ad199adc587}
+\hypertarget{tttables_8h_aaeb91f004d8bedf03569aadac888c6ea}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-Postscript@{T\-T\-\_\-\-Postscript}}
+\index{T\-T\-\_\-\-Postscript@{T\-T\-\_\-\-Postscript}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-Postscript}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-Postscript\-\_\-}  {\bf T\-T\-\_\-\-Postscript}}}\label{tttables_8h_aaeb91f004d8bedf03569aadac888c6ea}
+\hypertarget{tttables_8h_a445e9be66f7f6b3980dc3be3049570ad}{\index{tttables.\-h@{tttables.\-h}!T\-T\-\_\-\-Vert\-Header@{T\-T\-\_\-\-Vert\-Header}}
+\index{T\-T\-\_\-\-Vert\-Header@{T\-T\-\_\-\-Vert\-Header}!tttables.h@{tttables.\-h}}
+\subsubsection[{T\-T\-\_\-\-Vert\-Header}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf T\-T\-\_\-\-Vert\-Header\-\_\-}  {\bf T\-T\-\_\-\-Vert\-Header}}}\label{tttables_8h_a445e9be66f7f6b3980dc3be3049570ad}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-@{F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-}}
+\index{F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-@{F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-T\-\_\-\-Sfnt\-\_\-\-Tag\-\_\-}}}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{ft\-\_\-sfnt\-\_\-head@{ft\-\_\-sfnt\-\_\-head}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-head@{ft\-\_\-sfnt\-\_\-head}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684afa7cacf78267844d979b64314c50a798}{ft\-\_\-sfnt\-\_\-head}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684afa7cacf78267844d979b64314c50a798}
+}]\index{ft\-\_\-sfnt\-\_\-maxp@{ft\-\_\-sfnt\-\_\-maxp}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-maxp@{ft\-\_\-sfnt\-\_\-maxp}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684ae298be446a3a6afb1d31815af4999504}{ft\-\_\-sfnt\-\_\-maxp}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684ae298be446a3a6afb1d31815af4999504}
+}]\index{ft\-\_\-sfnt\-\_\-os2@{ft\-\_\-sfnt\-\_\-os2}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-os2@{ft\-\_\-sfnt\-\_\-os2}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684ac8cfe419dbbba89f9cf4d5cf33d53e99}{ft\-\_\-sfnt\-\_\-os2}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684ac8cfe419dbbba89f9cf4d5cf33d53e99}
+}]\index{ft\-\_\-sfnt\-\_\-hhea@{ft\-\_\-sfnt\-\_\-hhea}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-hhea@{ft\-\_\-sfnt\-\_\-hhea}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a6e7ce03c6708bda1586908453a242be4}{ft\-\_\-sfnt\-\_\-hhea}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a6e7ce03c6708bda1586908453a242be4}
+}]\index{ft\-\_\-sfnt\-\_\-vhea@{ft\-\_\-sfnt\-\_\-vhea}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-vhea@{ft\-\_\-sfnt\-\_\-vhea}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a349ced30c52c3b30119bdf8169562bd9}{ft\-\_\-sfnt\-\_\-vhea}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a349ced30c52c3b30119bdf8169562bd9}
+}]\index{ft\-\_\-sfnt\-\_\-post@{ft\-\_\-sfnt\-\_\-post}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-post@{ft\-\_\-sfnt\-\_\-post}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a003a673a86f3fac7e954cb9a3369ab3b}{ft\-\_\-sfnt\-\_\-post}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a003a673a86f3fac7e954cb9a3369ab3b}
+}]\index{ft\-\_\-sfnt\-\_\-pclt@{ft\-\_\-sfnt\-\_\-pclt}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!ft\-\_\-sfnt\-\_\-pclt@{ft\-\_\-sfnt\-\_\-pclt}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a77aa874bbb2bfa2a4030d70601061d05}{ft\-\_\-sfnt\-\_\-pclt}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a77aa874bbb2bfa2a4030d70601061d05}
+}]\index{sfnt\-\_\-max@{sfnt\-\_\-max}!tttables.\-h@{tttables.\-h}}\index{tttables.\-h@{tttables.\-h}!sfnt\-\_\-max@{sfnt\-\_\-max}}\item[{\em 
+\hypertarget{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a7cc722de6c2caeb66a3aa1604f86a56b}{sfnt\-\_\-max}\label{tttables_8h_ac0bc4c4ab4a217cb7412b6ddc08f0684a7cc722de6c2caeb66a3aa1604f86a56b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{tttables_8h_a9a4db80b4f71d00e28474cbfcf968614}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format@{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format}}
+\index{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format@{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Format (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Char\-Map}}]{charmap}
+\end{DoxyParamCaption}
+)}}\label{tttables_8h_a9a4db80b4f71d00e28474cbfcf968614}
+\hypertarget{tttables_8h_a2ed9235237891d15d80de38e0f249717}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D@{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D}}
+\index{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D@{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Get\-\_\-\-C\-Map\-\_\-\-Language\-\_\-\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Char\-Map}}]{charmap}
+\end{DoxyParamCaption}
+)}}\label{tttables_8h_a2ed9235237891d15d80de38e0f249717}
+\hypertarget{tttables_8h_a05db257798829b76cf62cf22239e7058}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table@{F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table}}
+\index{F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table@{F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Get\-\_\-\-Sfnt\-\_\-\-Table (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Face}}]{face, }
+\item[{{\bf F\-T\-\_\-\-Sfnt\-\_\-\-Tag}}]{tag}
+\end{DoxyParamCaption}
+)}}\label{tttables_8h_a05db257798829b76cf62cf22239e7058}
+\hypertarget{tttables_8h_a515e9f17645055a3aaf9a603b073d404}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table@{F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table}}
+\index{F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table@{F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Load\-\_\-\-Sfnt\-\_\-\-Table (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Face}}]{face, }
+\item[{{\bf F\-T\-\_\-\-U\-Long}}]{tag, }
+\item[{{\bf F\-T\-\_\-\-Long}}]{offset, }
+\item[{{\bf F\-T\-\_\-\-Byte} $\ast$}]{buffer, }
+\item[{{\bf F\-T\-\_\-\-U\-Long} $\ast$}]{length}
+\end{DoxyParamCaption}
+)}}\label{tttables_8h_a515e9f17645055a3aaf9a603b073d404}
+\hypertarget{tttables_8h_ae40ea2033079514f0198444910ad1e46}{\index{tttables.\-h@{tttables.\-h}!F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info@{F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info}}
+\index{F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info@{F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info}!tttables.h@{tttables.\-h}}
+\subsubsection[{F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Sfnt\-\_\-\-Table\-\_\-\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Face}}]{face, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{table\-\_\-index, }
+\item[{{\bf F\-T\-\_\-\-U\-Long} $\ast$}]{tag, }
+\item[{{\bf F\-T\-\_\-\-U\-Long} $\ast$}]{length}
+\end{DoxyParamCaption}
+)}}\label{tttables_8h_ae40ea2033079514f0198444910ad1e46}

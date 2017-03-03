@@ -1,0 +1,30 @@
+<?xml version="1,0" ?>
+<Root>
+    <NiveauDiff diff="1" />
+    <FrequenceAsteroide frequenceAsteroide="1.602" />
+    <NbMinDeStation nbMinDeStation="4" />
+    <BonusAcceleration bonusAcceleration="10" />
+    <ConteneurElement>
+        <Element type="7" id="1" posX="-517.906" posY="28.064" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="7" id="2" posX="-417.906" posY="28.064" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="3" id="3" posX="-1558.97" posY="825.729" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1.90668" tailleY="1.90668" tailleZ="1.90668" idFrere="4" />
+        <Element type="3" id="4" posX="-748.219" posY="301.148" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="0.503485" tailleY="0.503485" tailleZ="0.503485" idFrere="3" />
+        <Element type="3" id="5" posX="1606.41" posY="838.682" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1.90668" tailleY="1.90668" tailleZ="1.90668" idFrere="6" />
+        <Element type="3" id="6" posX="713.719" posY="311.942" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="0.503485" tailleY="0.503485" tailleZ="0.503485" idFrere="5" />
+        <Element type="3" id="7" posX="1571.91" posY="-836.523" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1.90668" tailleY="1.90668" tailleZ="1.90668" idFrere="8" />
+        <Element type="3" id="8" posX="679.219" posY="-229.909" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="0.503485" tailleY="0.503485" tailleZ="0.503485" idFrere="7" />
+        <Element type="3" id="9" posX="-1608.56" posY="-849.476" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1.90668" tailleY="1.90668" tailleZ="1.90668" idFrere="10" />
+        <Element type="3" id="10" posX="-726.656" posY="-270.926" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="0.503485" tailleY="0.503485" tailleZ="0.503485" idFrere="9" />
+        <Element type="3" id="11" posX="-4.3125" posY="907.762" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="12" />
+        <Element type="3" id="12" posX="-25.875" posY="398.293" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="11" />
+        <Element type="3" id="13" posX="-2.15625" posY="-858.111" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="14" />
+        <Element type="3" id="14" posX="-10.7813" posY="-368.07" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="13" />
+        <Element type="5" id="15" posX="-450.656" posY="368.07" posZ="-0" angle="1129.62" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="16" posX="-953.062" posY="22.6671" posZ="-0" angle="1109.02" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="17" posX="-409.687" posY="-335.689" posZ="0" angle="1093.63" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="18" posX="338.531" posY="-329.212" posZ="-0" angle="1080.43" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="19" posX="860.344" posY="74.4775" posZ="-0" angle="1063.23" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="20" posX="405.375" posY="441.468" posZ="-0" angle="1050.04" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="21" posX="-36.6563" posY="50.7311" posZ="-0" angle="873.035" axeX="0" axeY="0" axeZ="1" tailleX="1.79874" tailleY="1.79874" tailleZ="1.79874" />
+    </ConteneurElement>
+</Root>

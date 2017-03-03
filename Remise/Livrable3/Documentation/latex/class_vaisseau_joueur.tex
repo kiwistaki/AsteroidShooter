@@ -1,0 +1,173 @@
+\hypertarget{class_vaisseau_joueur}{\section{Vaisseau\-Joueur Class Reference}
+\label{class_vaisseau_joueur}\index{Vaisseau\-Joueur@{Vaisseau\-Joueur}}
+}
+
+
+La classe \hyperlink{class_vaisseau}{Vaisseau} permet la creation d'un objet \hyperlink{class_vaisseau}{Vaisseau}.  
+
+
+
+
+{\ttfamily \#include $<$Vaisseau\-Joueur.\-h$>$}
+
+Inheritance diagram for Vaisseau\-Joueur\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_vaisseau_joueur}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga4bf4f70d7f2ae793179f80a0984a6242}{Vaisseau\-Joueur} (bool joueur1=true)
+\item 
+\hyperlink{group__inf2990_gabe0f8e0b6dda98f66dbc3c07599f8d33}{Vaisseau\-Joueur} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position\-Depart, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, float poids, bool joueur1=true)
+\item 
+\hypertarget{group__inf2990_ga30e8a920d01dfcc960e81961d8f33c59}{{\bfseries Vaisseau\-Joueur} (const \hyperlink{class_vaisseau_joueur}{Vaisseau\-Joueur} \&vaisseau)}\label{group__inf2990_ga30e8a920d01dfcc960e81961d8f33c59}
+
+\item 
+\hypertarget{group__inf2990_gad32502fb5d734ff9bc4ce76e57cdd34f}{virtual \hyperlink{group__inf2990_gad32502fb5d734ff9bc4ce76e57cdd34f}{$\sim$\-Vaisseau\-Joueur} ()}\label{group__inf2990_gad32502fb5d734ff9bc4ce76e57cdd34f}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga150da7e6cef37786545f24c4e3d47f80}{virtual Type \hyperlink{group__inf2990_ga150da7e6cef37786545f24c4e3d47f80}{get\-Type} ()}\label{group__inf2990_ga150da7e6cef37786545f24c4e3d47f80}
+
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gae557bd5efc3254a607284a0c8c169875}{virtual void \hyperlink{group__inf2990_gae557bd5efc3254a607284a0c8c169875}{update} (float delta\-T)}\label{group__inf2990_gae557bd5efc3254a607284a0c8c169875}
+
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga79e69507b35314f3840ccaef125e3fa1}{virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group__inf2990_ga79e69507b35314f3840ccaef125e3fa1}{clone} () const }\label{group__inf2990_ga79e69507b35314f3840ccaef125e3fa1}
+
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_vaisseau_joueur_a317a045db37cac7b5bfe0e0b83d861e4}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Permet de verifier la collision entre les types d'objets concernés et de les traiter. \end{DoxyCompactList}\item 
+\hypertarget{class_vaisseau_joueur_ac2fd1963fcb75ea64b956567a4740405}{virtual bool \hyperlink{class_vaisseau_joueur_ac2fd1963fcb75ea64b956567a4740405}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_vaisseau_joueur_ac2fd1963fcb75ea64b956567a4740405}
+
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+\hypertarget{class_vaisseau_joueur_a4a93274b00cc25f8948acf16d096b7a6}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{class_vaisseau_joueur_a4a93274b00cc25f8948acf16d096b7a6}
+
+\item 
+\hypertarget{class_vaisseau_joueur_a5cf0d8fc6d4c59269385bcaaebf822cd}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{class_vaisseau_joueur_a5cf0d8fc6d4c59269385bcaaebf822cd}
+
+\item 
+\hypertarget{class_vaisseau_joueur_ad581750f5b186ba187649e5bb07ce3c8}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{class_vaisseau_joueur_ad581750f5b186ba187649e5bb07ce3c8}
+
+\item 
+\hypertarget{class_vaisseau_joueur_ae6abc2c6f8709913af73ec216f861858}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{class_vaisseau_joueur_ae6abc2c6f8709913af73ec216f861858}
+
+\item 
+\hypertarget{class_vaisseau_joueur_a2e22e1a762bc1907449dde43279ad4c4}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{class_vaisseau_joueur_a2e22e1a762bc1907449dde43279ad4c4}
+
+\item 
+\hypertarget{class_vaisseau_joueur_a1acc2b5322116aeb68e08f359511980c}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{class_vaisseau_joueur_a1acc2b5322116aeb68e08f359511980c}
+
+\item 
+virtual void \hyperlink{class_vaisseau_joueur_a0c8d485a8e53163eadf753c1ab098e18}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+\hypertarget{class_vaisseau_joueur_abc745b173d463d40616ca4443c9666d3}{virtual void \hyperlink{class_vaisseau_joueur_abc745b173d463d40616ca4443c9666d3}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_vaisseau_joueur_abc745b173d463d40616ca4443c9666d3}
+
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+\hypertarget{class_vaisseau_joueur_ab2e2b255a71826b74240022633659473}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{class_vaisseau_joueur_ab2e2b255a71826b74240022633659473}
+
+\item 
+\hypertarget{class_vaisseau_joueur_acb70ba24e6546fb1380d879c17409499}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{class_vaisseau_joueur_acb70ba24e6546fb1380d879c17409499}
+
+\item 
+\hypertarget{class_vaisseau_joueur_aa26b7a32626da3023ff9f19cf21d278e}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{class_vaisseau_joueur_aa26b7a32626da3023ff9f19cf21d278e}
+
+\item 
+\hypertarget{class_vaisseau_joueur_aa6a66e975bca2ba04154f721121fe0cd}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{class_vaisseau_joueur_aa6a66e975bca2ba04154f721121fe0cd}
+
+\item 
+\hypertarget{class_vaisseau_joueur_a1db67842849580c8f2296d4d03d1ef90}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{class_vaisseau_joueur_a1db67842849580c8f2296d4d03d1ef90}
+
+\item 
+virtual void \hyperlink{class_vaisseau_joueur_a1d5b7875b1d9ac385354c774571b0ef3}{traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\item 
+\hypertarget{class_vaisseau_joueur_a3857a9f45b1aa8f35e6a997d152e0d65}{virtual \hyperlink{class_asteroide}{Asteroide} $\ast$ {\bfseries get\-Ast\-Cible} ()}\label{class_vaisseau_joueur_a3857a9f45b1aa8f35e6a997d152e0d65}
+
+\item 
+\hypertarget{class_vaisseau_joueur_affb487b8834adc287599ffbaff59ec11}{virtual void {\bfseries set\-Ast\-Cible\-Null} ()}\label{class_vaisseau_joueur_affb487b8834adc287599ffbaff59ec11}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_vaisseau}{Vaisseau} permet la creation d'un objet \hyperlink{class_vaisseau}{Vaisseau}. 
+
+Cette classe contiendra un noeud de type \hyperlink{class_noeud_vaisseau}{Noeud\-Vaisseau} qui gerera la texture et la modelisation de l'objet \hyperlink{class_vaisseau}{Vaisseau}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vaisseau_joueur_a317a045db37cac7b5bfe0e0b83d861e4}{\index{Vaisseau\-Joueur@{Vaisseau\-Joueur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!VaisseauJoueur@{Vaisseau\-Joueur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Vaisseau\-Joueur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Element\-Jeu\-Abstrait} $\ast$}]{element\-Jeu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_vaisseau_joueur_a317a045db37cac7b5bfe0e0b83d861e4}
+
+
+Permet de verifier la collision entre les types d'objets concernés et de les traiter. 
+
+Methode qui permet de verifier s'il y a une collision de l'objet avec un autre objet.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em element\-Jeu} & \-: l'autre objet avec lequel il faut verifier la collision\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \-: Est-\/ce qu'il y a eu une collision 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{group__inf2990_ga285120798eb1d95fa87326e187cce450}{Vaisseau}.
+
+\hypertarget{class_vaisseau_joueur_a0c8d485a8e53163eadf753c1ab098e18}{\index{Vaisseau\-Joueur@{Vaisseau\-Joueur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!VaisseauJoueur@{Vaisseau\-Joueur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Vaisseau\-Joueur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Element\-Jeu\-Abstrait} $\ast$}]{element\-Jeu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_vaisseau_joueur_a0c8d485a8e53163eadf753c1ab098e18}
+Methode qui permet d$<$effectuer le traitement de la collision avec le type d'objet La plupart du temps rien ne se passe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em element\-Jeu} & \-: l'autre objet avec lequel il faut verifier la collision\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{group__inf2990_ga7fc481826a20365eed3e69ef519b12b4}{Vaisseau}.
+
+\hypertarget{class_vaisseau_joueur_a1d5b7875b1d9ac385354c774571b0ef3}{\index{Vaisseau\-Joueur@{Vaisseau\-Joueur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!VaisseauJoueur@{Vaisseau\-Joueur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Vaisseau\-Joueur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Vaisseau} $\ast$}]{element\-Jeu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_vaisseau_joueur_a1d5b7875b1d9ac385354c774571b0ef3}
+Methode qui permet d$<$effectuer le traitement de la collision avec le type d'objet La plupart du temps rien ne se passe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em element\-Jeu} & \-: l'autre objet avec lequel il faut verifier la collision\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{group__inf2990_ga228bca501d2014d7820c4afdb1b2f73f}{Vaisseau}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_vaisseau_joueur_8h}{Vaisseau\-Joueur.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/Vaisseau\-Joueur.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{class_commande_ajout_portail}{\section{Commande\-Ajout\-Portail Class Reference}
+\label{class_commande_ajout_portail}\index{Commande\-Ajout\-Portail@{Commande\-Ajout\-Portail}}
+}
+
+
+La classe Commande\-Ajout permet d'ajouter un portail sur la carte.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Ajout\-Portail.\-h$>$}
+
+Inheritance diagram for Commande\-Ajout\-Portail\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_ajout_portail}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_ajout_portail_a9bb23c57a5e651761ef1f2942c8beb34}{Commande\-Ajout\-Portail} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte)
+\item 
+virtual \hyperlink{class_commande_ajout_portail_aa146f3ca92f445cba4770a586a29c163}{$\sim$\-Commande\-Ajout\-Portail} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_commande_ajout_portail_a1b5ac4fd38f34e785aa61a3ce6fd5702}{executer} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-X, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-Y, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} boutton, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe Commande\-Ajout permet d'ajouter un portail sur la carte. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_ajout_portail_a9bb23c57a5e651761ef1f2942c8beb34}{\index{Commande\-Ajout\-Portail@{Commande\-Ajout\-Portail}!Commande\-Ajout\-Portail@{Commande\-Ajout\-Portail}}
+\index{Commande\-Ajout\-Portail@{Commande\-Ajout\-Portail}!CommandeAjoutPortail@{Commande\-Ajout\-Portail}}
+\subsubsection[{Commande\-Ajout\-Portail}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Ajout\-Portail\-::\-Commande\-Ajout\-Portail (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte}
+\end{DoxyParamCaption}
+)}}\label{class_commande_ajout_portail_a9bb23c57a5e651761ef1f2942c8beb34}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_ajout_portail_aa146f3ca92f445cba4770a586a29c163}{\index{Commande\-Ajout\-Portail@{Commande\-Ajout\-Portail}!$\sim$\-Commande\-Ajout\-Portail@{$\sim$\-Commande\-Ajout\-Portail}}
+\index{$\sim$\-Commande\-Ajout\-Portail@{$\sim$\-Commande\-Ajout\-Portail}!CommandeAjoutPortail@{Commande\-Ajout\-Portail}}
+\subsubsection[{$\sim$\-Commande\-Ajout\-Portail}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Ajout\-Portail\-::$\sim$\-Commande\-Ajout\-Portail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_ajout_portail_aa146f3ca92f445cba4770a586a29c163}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_ajout_portail_a1b5ac4fd38f34e785aa61a3ce6fd5702}{\index{Commande\-Ajout\-Portail@{Commande\-Ajout\-Portail}!executer@{executer}}
+\index{executer@{executer}!CommandeAjoutPortail@{Commande\-Ajout\-Portail}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Commande\-Ajout\-Portail\-::executer (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{mouse\-X, }
+\item[{{\bf int}}]{mouse\-Y, }
+\item[{{\bf int}}]{boutton, }
+\item[{{\bf int}}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_ajout_portail_a1b5ac4fd38f34e785aa61a3ce6fd5702}
+Execute la commande. Ajoute un nouvel objet a la position souhaite sur la carte. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_ajout_portail_8h}{Commande\-Ajout\-Portail.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_ajout_portail_8cpp}{Commande\-Ajout\-Portail.\-cpp}\end{DoxyCompactItemize}

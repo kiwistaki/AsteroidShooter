@@ -1,0 +1,444 @@
+\hypertarget{namespaceutilitaire}{\section{utilitaire Namespace Reference}
+\label{namespaceutilitaire}\index{utilitaire@{utilitaire}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classutilitaire_1_1_boite_environnement}{Boite\-Environnement}
+\begin{DoxyCompactList}\small\item\em Classe representant une boîte d'environnement (\char`\"{}skybox\char`\"{}). \end{DoxyCompactList}\item 
+class \hyperlink{classutilitaire_1_1_compteur_affichage}{Compteur\-Affichage}
+\begin{DoxyCompactList}\small\item\em Classe qui gere le compte des affichages par secondes (\char`\"{}\-F\-P\-S\char`\"{}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{namespaceutilitaire_a11fcb29a3c49257f5902078e675e11b5}{uint}
+\begin{DoxyCompactList}\small\item\em Definition d'un type d'entier non signe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceutilitaire_ac61bdab36cf1cbaa0d06fa8b1f35ab64}{afficher\-Erreur} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Fonction globale pour l'affichage d'erreur. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceutilitaire_af329335d827c839be09c8f2d568ceb45}{afficher\-Informations} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Fonction globale pour l'affichage d'informations. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a382f9680f8726afe04a0938230ebbcc1}{E\-G\-A\-L\-\_\-\-Z\-E\-R\-O} (double Nombre)
+\begin{DoxyCompactList}\small\item\em Fonction pour savoir si un double est egal a zero. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceutilitaire_ac0b9abffd6b11555c19cfe983b009da1}{R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G} (double Angle\-Rad)
+\begin{DoxyCompactList}\small\item\em Pour convertir les angles de radians en degres. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceutilitaire_a1f30dfa98d6f9e8ac19954cc826da43c}{D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D} (double Angle\-Deg)
+\begin{DoxyCompactList}\small\item\em Pour convertir les angles de degres en radians. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_aa674381e39a6c11af2be2c56b2066f31}{K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} kmh)
+\begin{DoxyCompactList}\small\item\em Pour convertir les km/h en m/s. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_a1e2e4af028a761832c3fd1e8d6fdd962}{M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} ms)
+\begin{DoxyCompactList}\small\item\em Pour convertir les m/s en km/h. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_a9cf01523c94548e10a05fd18f24d5fb4}{S\-I\-G\-N} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} nombre)
+\begin{DoxyCompactList}\small\item\em Fonction pour connaître le signe d'un nombre. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_ab8add93ddd8e5e0ef5cde3aae89f9b56}{A\-B\-S} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} nombre)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne la valeur absolue d'un nombre. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a460d2fa5ea7de4383f64efde66456212}{D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E} (double Valeur, double Borne\-Min, double Borne\-Max)
+\begin{DoxyCompactList}\small\item\em Pour savoir si un nombre est dans l'intervalle\-: \mbox{[}Borne\-Min, Borne\-Max\mbox{]}. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a1087261a532fc52d3e97a4d12948f130}{D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y} (double \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, double x\-Min, double x\-Max, double \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, double y\-Min, double y\-Max)
+\begin{DoxyCompactList}\small\item\em Fonction pour verifier si un Point 2d est dans un carre. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceutilitaire_aea936080e582625da9629157ddcd578a}{ecrasement} (double \hyperlink{glew_8h_a307708feff65d5bcfe44f8a767030677}{a}, double \hyperlink{glew_8h_a7b01aaccb6b1691185992154f99088cb}{b})
+\begin{DoxyCompactList}\small\item\em Calcule le rapport d'ecrasement. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a38e618f6c8fa5c888afdcb23ac7e38b4}{fichier\-Existe} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&nom\-Du\-Fichier)
+\begin{DoxyCompactList}\small\item\em Verification de l'existance d'un fichier. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceutilitaire_ac6e0c2393fb3a5013a5dacb5ac88ab2f}{appliquer\-Matrice} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point, const double mat\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Applique une matrice de transformation a un point. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceutilitaire_a75d7826c17db94a4a656d658236ca68c}{borne\-Superieure} (T \&valeur, const T \&borne)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceutilitaire_a9a2a15d12a23cce11a14d59be338326c}{borne\-Inferieure} (T \&valeur, const T \&borne)
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{namespaceutilitaire_a5ef9b04b1b06547a478ecfaa8bb5ad17}{obtenir\-Chaine\-I\-S\-O} (J\-N\-I\-Env $\ast$env, jstring chaine)
+\begin{DoxyCompactList}\small\item\em Effectue une conversion entre une chaîne Java et une chaîne C++. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespaceutilitaire_a11fcb29a3c49257f5902078e675e11b5}{\index{utilitaire@{utilitaire}!uint@{uint}}
+\index{uint@{uint}!utilitaire@{utilitaire}}
+\subsubsection[{uint}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} {\bf int} {\bf utilitaire\-::uint}}}\label{namespaceutilitaire_a11fcb29a3c49257f5902078e675e11b5}
+
+
+Definition d'un type d'entier non signe. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceutilitaire_ab8add93ddd8e5e0ef5cde3aae89f9b56}{\index{utilitaire@{utilitaire}!A\-B\-S@{A\-B\-S}}
+\index{A\-B\-S@{A\-B\-S}!utilitaire@{utilitaire}}
+\subsubsection[{A\-B\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} utilitaire\-::\-A\-B\-S (
+\begin{DoxyParamCaption}
+\item[{{\bf float}}]{nombre}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_ab8add93ddd8e5e0ef5cde3aae89f9b56}
+
+
+Fonction qui retourne la valeur absolue d'un nombre. 
+
+Fonction qui retourne la valeur absolue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nombre} & \-: Valeur dont on veut trouver la valeur absolue.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float =$>$ la valeur absolue du nombre. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_ac61bdab36cf1cbaa0d06fa8b1f35ab64}{\index{utilitaire@{utilitaire}!afficher\-Erreur@{afficher\-Erreur}}
+\index{afficher\-Erreur@{afficher\-Erreur}!utilitaire@{utilitaire}}
+\subsubsection[{afficher\-Erreur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} utilitaire\-::afficher\-Erreur (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_ac61bdab36cf1cbaa0d06fa8b1f35ab64}
+
+
+Fonction globale pour l'affichage d'erreur. 
+
+Cette fonction affiche une message d'erreur.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em message} & \-: La chaîne decrivant l'erreur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_af329335d827c839be09c8f2d568ceb45}{\index{utilitaire@{utilitaire}!afficher\-Informations@{afficher\-Informations}}
+\index{afficher\-Informations@{afficher\-Informations}!utilitaire@{utilitaire}}
+\subsubsection[{afficher\-Informations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} utilitaire\-::afficher\-Informations (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_af329335d827c839be09c8f2d568ceb45}
+
+
+Fonction globale pour l'affichage d'informations. 
+
+\hypertarget{namespaceutilitaire_ac6e0c2393fb3a5013a5dacb5ac88ab2f}{\index{utilitaire@{utilitaire}!appliquer\-Matrice@{appliquer\-Matrice}}
+\index{appliquer\-Matrice@{appliquer\-Matrice}!utilitaire@{utilitaire}}
+\subsubsection[{appliquer\-Matrice}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur3} utilitaire\-::appliquer\-Matrice (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{point, }
+\item[{const double}]{mat\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_ac6e0c2393fb3a5013a5dacb5ac88ab2f}
+
+
+Applique une matrice de transformation a un point. 
+
+Cette fonction multiplie le point par une matrice de transformation donnee et retourne le resultat.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point} & \-: Le point a transformer. \\
+\hline
+\mbox{\tt in}  & {\em mat} & \-: La matrice de transformation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le point transforme. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a9a2a15d12a23cce11a14d59be338326c}{\index{utilitaire@{utilitaire}!borne\-Inferieure@{borne\-Inferieure}}
+\index{borne\-Inferieure@{borne\-Inferieure}!utilitaire@{utilitaire}}
+\subsubsection[{borne\-Inferieure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf void} utilitaire\-::borne\-Inferieure (
+\begin{DoxyParamCaption}
+\item[{T \&}]{valeur, }
+\item[{const T \&}]{borne}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a9a2a15d12a23cce11a14d59be338326c}
+Cette fonction s'assure que la valeur depasse la borne.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em valeur} & \-: La valeur de l'expression a borner. \\
+\hline
+\mbox{\tt in}  & {\em borne} & \-: La borne inferieure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a75d7826c17db94a4a656d658236ca68c}{\index{utilitaire@{utilitaire}!borne\-Superieure@{borne\-Superieure}}
+\index{borne\-Superieure@{borne\-Superieure}!utilitaire@{utilitaire}}
+\subsubsection[{borne\-Superieure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf void} utilitaire\-::borne\-Superieure (
+\begin{DoxyParamCaption}
+\item[{T \&}]{valeur, }
+\item[{const T \&}]{borne}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a75d7826c17db94a4a656d658236ca68c}
+Cette fonction s'assure que la valeur ne depasse pas la borne.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em valeur} & \-: La valeur de l'expression a borner. \\
+\hline
+\mbox{\tt in}  & {\em borne} & \-: La borne superieure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a460d2fa5ea7de4383f64efde66456212}{\index{utilitaire@{utilitaire}!D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E@{D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E}}
+\index{D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E@{D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E}!utilitaire@{utilitaire}}
+\subsubsection[{D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}bool utilitaire\-::\-D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E (
+\begin{DoxyParamCaption}
+\item[{double}]{valeur, }
+\item[{double}]{borne\-Min, }
+\item[{double}]{borne\-Max}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a460d2fa5ea7de4383f64efde66456212}
+
+
+Pour savoir si un nombre est dans l'intervalle\-: \mbox{[}Borne\-Min, Borne\-Max\mbox{]}. 
+
+Cette fonction verifie si une valeur est dans un intervalle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em valeur} & \-: La valeur a verifier. \\
+\hline
+\mbox{\tt in}  & {\em borne\-Min} & \-: La borne inferieure de l'intervalle. \\
+\hline
+\mbox{\tt in}  & {\em borne\-Max} & \-: La borne superieure de l'intervalle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la valeur est dans l'intervalle, faux autrement. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a1087261a532fc52d3e97a4d12948f130}{\index{utilitaire@{utilitaire}!D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y@{D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y}}
+\index{D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y@{D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y}!utilitaire@{utilitaire}}
+\subsubsection[{D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}bool utilitaire\-::\-D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{x\-Min, }
+\item[{double}]{x\-Max, }
+\item[{double}]{y, }
+\item[{double}]{y\-Min, }
+\item[{double}]{y\-Max}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a1087261a532fc52d3e97a4d12948f130}
+
+
+Fonction pour verifier si un Point 2d est dans un carre. 
+
+Cette fonction verifie si un point 2d est dans un carre.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & \-: Coordonnee x du point. \\
+\hline
+\mbox{\tt in}  & {\em x\-Min} & \-: La borne inferieure en x. \\
+\hline
+\mbox{\tt in}  & {\em x\-Max} & \-: La borne superieure en x. \\
+\hline
+\mbox{\tt in}  & {\em y} & \-: Coordonnee y du point. \\
+\hline
+\mbox{\tt in}  & {\em y\-Min} & \-: La borne inferieure en y. \\
+\hline
+\mbox{\tt in}  & {\em y\-Max} & \-: La borne superieure en y.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si le point (x,y) est dans le carre, faux autrement. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a1f30dfa98d6f9e8ac19954cc826da43c}{\index{utilitaire@{utilitaire}!D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D@{D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D}}
+\index{D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D@{D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D}!utilitaire@{utilitaire}}
+\subsubsection[{D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D}]{\setlength{\rightskip}{0pt plus 5cm}double utilitaire\-::\-D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D (
+\begin{DoxyParamCaption}
+\item[{double}]{angle\-Deg}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a1f30dfa98d6f9e8ac19954cc826da43c}
+
+
+Pour convertir les angles de degres en radians. 
+
+Cette fonction convertit les angles de degres en radians.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle\-Deg} & \-: L'angle en degres a convertir.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'angle converti en radians. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_aea936080e582625da9629157ddcd578a}{\index{utilitaire@{utilitaire}!ecrasement@{ecrasement}}
+\index{ecrasement@{ecrasement}!utilitaire@{utilitaire}}
+\subsubsection[{ecrasement}]{\setlength{\rightskip}{0pt plus 5cm}double utilitaire\-::ecrasement (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_aea936080e582625da9629157ddcd578a}
+
+
+Calcule le rapport d'ecrasement. 
+
+Cette fonction calcule le rapport d'ecrasement pour un rectangle de longueur {\itshape a} et largeur {\itshape b}.
+\begin{DoxyItemize}
+\item si a = b, le rapport est 1
+\item le rapport est toujours positif et plus grand que 1.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & \-: Valeur a rapprocher. \\
+\hline
+\mbox{\tt in}  & {\em b} & \-: Point limite du rapprochement.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le rapport {\itshape r} de {\itshape a} / {\itshape b} 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a382f9680f8726afe04a0938230ebbcc1}{\index{utilitaire@{utilitaire}!E\-G\-A\-L\-\_\-\-Z\-E\-R\-O@{E\-G\-A\-L\-\_\-\-Z\-E\-R\-O}}
+\index{E\-G\-A\-L\-\_\-\-Z\-E\-R\-O@{E\-G\-A\-L\-\_\-\-Z\-E\-R\-O}!utilitaire@{utilitaire}}
+\subsubsection[{E\-G\-A\-L\-\_\-\-Z\-E\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}bool utilitaire\-::\-E\-G\-A\-L\-\_\-\-Z\-E\-R\-O (
+\begin{DoxyParamCaption}
+\item[{double}]{nombre}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a382f9680f8726afe04a0938230ebbcc1}
+
+
+Fonction pour savoir si un double est egal a zero. 
+
+Fonction pour savoir si un double est egal a zero.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nombre} & \-: Valeur a verifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si nombre est egal a 0, false autrement. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a38e618f6c8fa5c888afdcb23ac7e38b4}{\index{utilitaire@{utilitaire}!fichier\-Existe@{fichier\-Existe}}
+\index{fichier\-Existe@{fichier\-Existe}!utilitaire@{utilitaire}}
+\subsubsection[{fichier\-Existe}]{\setlength{\rightskip}{0pt plus 5cm}bool utilitaire\-::fichier\-Existe (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{nom\-Du\-Fichier}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a38e618f6c8fa5c888afdcb23ac7e38b4}
+
+
+Verification de l'existance d'un fichier. 
+
+Cette fonction verifie si un fichier d'un certain nom donne existe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\-Du\-Fichier} & \-: Le nom du fichier dont on veut verifier l'existence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si le fichier existe, faux autrement. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_aa674381e39a6c11af2be2c56b2066f31}{\index{utilitaire@{utilitaire}!K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S@{K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S}}
+\index{K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S@{K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S}!utilitaire@{utilitaire}}
+\subsubsection[{K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} utilitaire\-::\-K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S (
+\begin{DoxyParamCaption}
+\item[{{\bf float}}]{kmh}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_aa674381e39a6c11af2be2c56b2066f31}
+
+
+Pour convertir les km/h en m/s. 
+
+Fonction de conversion des km/h en m/s.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em kmh} & \-: Valeur en kilometres / heure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float =$>$ vitesse en metres par seconde. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a1e2e4af028a761832c3fd1e8d6fdd962}{\index{utilitaire@{utilitaire}!M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H@{M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H}}
+\index{M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H@{M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H}!utilitaire@{utilitaire}}
+\subsubsection[{M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} utilitaire\-::\-M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H (
+\begin{DoxyParamCaption}
+\item[{{\bf float}}]{ms}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a1e2e4af028a761832c3fd1e8d6fdd962}
+
+
+Pour convertir les m/s en km/h. 
+
+Fonction de conversion des m/s en km/h.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ms} & \-: Valeur en metres / seconde.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float =$>$ vitesse en kilometres / heure. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a5ef9b04b1b06547a478ecfaa8bb5ad17}{\index{utilitaire@{utilitaire}!obtenir\-Chaine\-I\-S\-O@{obtenir\-Chaine\-I\-S\-O}}
+\index{obtenir\-Chaine\-I\-S\-O@{obtenir\-Chaine\-I\-S\-O}!utilitaire@{utilitaire}}
+\subsubsection[{obtenir\-Chaine\-I\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} utilitaire\-::obtenir\-Chaine\-I\-S\-O (
+\begin{DoxyParamCaption}
+\item[{J\-N\-I\-Env $\ast$}]{env, }
+\item[{jstring}]{chaine}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a5ef9b04b1b06547a478ecfaa8bb5ad17}
+
+
+Effectue une conversion entre une chaîne Java et une chaîne C++. 
+
+Cette fonction permet d'obtenir la valeur d'une chaîne Java (String java ou jstring) sous la forme d'une chaîne C++ (string S\-T\-L) encode I\-S\-O-\/8859-\/1.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em env} & \-: L'environnement Java. \\
+\hline
+\mbox{\tt in}  & {\em chaine} & \-: La chaîne a convertir.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La chaîne C++. 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_ac0b9abffd6b11555c19cfe983b009da1}{\index{utilitaire@{utilitaire}!R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G@{R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G}}
+\index{R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G@{R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G}!utilitaire@{utilitaire}}
+\subsubsection[{R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G}]{\setlength{\rightskip}{0pt plus 5cm}double utilitaire\-::\-R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G (
+\begin{DoxyParamCaption}
+\item[{double}]{angle\-Rad}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_ac0b9abffd6b11555c19cfe983b009da1}
+
+
+Pour convertir les angles de radians en degres. 
+
+Cette fonction convertit les angles de radians en degres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle\-Rad} & \-: L'angle en radians a convertir.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'angle converti en degres 
+\end{DoxyReturn}
+\hypertarget{namespaceutilitaire_a9cf01523c94548e10a05fd18f24d5fb4}{\index{utilitaire@{utilitaire}!S\-I\-G\-N@{S\-I\-G\-N}}
+\index{S\-I\-G\-N@{S\-I\-G\-N}!utilitaire@{utilitaire}}
+\subsubsection[{S\-I\-G\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf float} utilitaire\-::\-S\-I\-G\-N (
+\begin{DoxyParamCaption}
+\item[{{\bf float}}]{nombre}
+\end{DoxyParamCaption}
+)}}\label{namespaceutilitaire_a9cf01523c94548e10a05fd18f24d5fb4}
+
+
+Fonction pour connaître le signe d'un nombre. 
+
+Fonction pour connaître le signe d'un nombre.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nombre} & \-: Valeur dont on veut trouver le signe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int =$>$ 1 si positif, -\/1 si negatif, 0 si = 0. 
+\end{DoxyReturn}

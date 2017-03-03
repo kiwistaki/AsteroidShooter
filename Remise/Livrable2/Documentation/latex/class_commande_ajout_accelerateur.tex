@@ -1,0 +1,90 @@
+\hypertarget{class_commande_ajout_accelerateur}{\section{Commande\-Ajout\-Accelerateur Class Reference}
+\label{class_commande_ajout_accelerateur}\index{Commande\-Ajout\-Accelerateur@{Commande\-Ajout\-Accelerateur}}
+}
+
+
+La classe \hyperlink{class_commande_ajout_accelerateur}{Commande\-Ajout\-Accelerateur} permet d'ajouter un objet sur la carte.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Ajout\-Accelerateur.\-h$>$}
+
+Inheritance diagram for Commande\-Ajout\-Accelerateur\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_ajout_accelerateur}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_ajout_accelerateur_a5deaad7144cbe48061677b59a8fca95c}{Commande\-Ajout\-Accelerateur} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte)
+\item 
+virtual \hyperlink{class_commande_ajout_accelerateur_ae5ecf61850b7ef9e3a482fc9baaaf3b1}{$\sim$\-Commande\-Ajout\-Accelerateur} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_commande_ajout_accelerateur_a1537ffad37fa05fa20cdbd414890adb3}{executer} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-X, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-Y, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} boutton, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_commande_ajout_accelerateur}{Commande\-Ajout\-Accelerateur} permet d'ajouter un objet sur la carte. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_ajout_accelerateur_a5deaad7144cbe48061677b59a8fca95c}{\index{Commande\-Ajout\-Accelerateur@{Commande\-Ajout\-Accelerateur}!Commande\-Ajout\-Accelerateur@{Commande\-Ajout\-Accelerateur}}
+\index{Commande\-Ajout\-Accelerateur@{Commande\-Ajout\-Accelerateur}!CommandeAjoutAccelerateur@{Commande\-Ajout\-Accelerateur}}
+\subsubsection[{Commande\-Ajout\-Accelerateur}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Ajout\-Accelerateur\-::\-Commande\-Ajout\-Accelerateur (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte}
+\end{DoxyParamCaption}
+)}}\label{class_commande_ajout_accelerateur_a5deaad7144cbe48061677b59a8fca95c}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_ajout_accelerateur_ae5ecf61850b7ef9e3a482fc9baaaf3b1}{\index{Commande\-Ajout\-Accelerateur@{Commande\-Ajout\-Accelerateur}!$\sim$\-Commande\-Ajout\-Accelerateur@{$\sim$\-Commande\-Ajout\-Accelerateur}}
+\index{$\sim$\-Commande\-Ajout\-Accelerateur@{$\sim$\-Commande\-Ajout\-Accelerateur}!CommandeAjoutAccelerateur@{Commande\-Ajout\-Accelerateur}}
+\subsubsection[{$\sim$\-Commande\-Ajout\-Accelerateur}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Ajout\-Accelerateur\-::$\sim$\-Commande\-Ajout\-Accelerateur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_ajout_accelerateur_ae5ecf61850b7ef9e3a482fc9baaaf3b1}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_ajout_accelerateur_a1537ffad37fa05fa20cdbd414890adb3}{\index{Commande\-Ajout\-Accelerateur@{Commande\-Ajout\-Accelerateur}!executer@{executer}}
+\index{executer@{executer}!CommandeAjoutAccelerateur@{Commande\-Ajout\-Accelerateur}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Commande\-Ajout\-Accelerateur\-::executer (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{mouse\-X, }
+\item[{{\bf int}}]{mouse\-Y, }
+\item[{{\bf int}}]{boutton, }
+\item[{{\bf int}}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_ajout_accelerateur_a1537ffad37fa05fa20cdbd414890adb3}
+Execute la commande. Ajoute un nouvel objet a la position souhaite sur la carte. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_ajout_accelerateur_8h}{Commande\-Ajout\-Accelerateur.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_ajout_accelerateur_8cpp}{Commande\-Ajout\-Accelerateur.\-cpp}\end{DoxyCompactItemize}

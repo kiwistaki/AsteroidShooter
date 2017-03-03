@@ -1,0 +1,93 @@
+\hypertarget{class_commande_suppression}{\section{Commande\-Suppression Class Reference}
+\label{class_commande_suppression}\index{Commande\-Suppression@{Commande\-Suppression}}
+}
+
+
+La classe \hyperlink{class_commande_suppression}{Commande\-Suppression} permet d'enlever un objet sur la carte.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Suppression.\-h$>$}
+
+Inheritance diagram for Commande\-Suppression\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_suppression}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_suppression_a6438eb61f3a3971c3e23f8d4e2d7628f}{Commande\-Suppression} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte, vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \&objets\-Selectionnes)
+\item 
+virtual \hyperlink{class_commande_suppression_a8a8c9487c2f267bf008ef98dec1d808e}{$\sim$\-Commande\-Suppression} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_commande_suppression_a8e3947cc0dcdcb85348e5c873f6def44}{executer} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-X, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-Y, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} boutton, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_commande_suppression}{Commande\-Suppression} permet d'enlever un objet sur la carte. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_suppression_a6438eb61f3a3971c3e23f8d4e2d7628f}{\index{Commande\-Suppression@{Commande\-Suppression}!Commande\-Suppression@{Commande\-Suppression}}
+\index{Commande\-Suppression@{Commande\-Suppression}!CommandeSuppression@{Commande\-Suppression}}
+\subsubsection[{Commande\-Suppression}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Suppression\-::\-Commande\-Suppression (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte, }
+\item[{vector$<$ {\bf Element\-Jeu\-Abstrait} $\ast$ $>$ \&}]{objets\-Selectionnes}
+\end{DoxyParamCaption}
+)}}\label{class_commande_suppression_a6438eb61f3a3971c3e23f8d4e2d7628f}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+{\em objets\-Selectionnes} & Une reference vers un vecteur qui contiendra les objets selectionnes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_suppression_a8a8c9487c2f267bf008ef98dec1d808e}{\index{Commande\-Suppression@{Commande\-Suppression}!$\sim$\-Commande\-Suppression@{$\sim$\-Commande\-Suppression}}
+\index{$\sim$\-Commande\-Suppression@{$\sim$\-Commande\-Suppression}!CommandeSuppression@{Commande\-Suppression}}
+\subsubsection[{$\sim$\-Commande\-Suppression}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Suppression\-::$\sim$\-Commande\-Suppression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_suppression_a8a8c9487c2f267bf008ef98dec1d808e}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_suppression_a8e3947cc0dcdcb85348e5c873f6def44}{\index{Commande\-Suppression@{Commande\-Suppression}!executer@{executer}}
+\index{executer@{executer}!CommandeSuppression@{Commande\-Suppression}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Commande\-Suppression\-::executer (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{mouse\-X, }
+\item[{{\bf int}}]{mouse\-Y, }
+\item[{{\bf int}}]{boutton, }
+\item[{{\bf int}}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_suppression_a8e3947cc0dcdcb85348e5c873f6def44}
+Execute la commande. Supprime un ou plusieurs objets de la carte courante. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_suppression_8h}{Commande\-Suppression.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_suppression_8cpp}{Commande\-Suppression.\-cpp}\end{DoxyCompactItemize}

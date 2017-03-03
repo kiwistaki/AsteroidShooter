@@ -1,0 +1,47 @@
+\hypertarget{_test_namer_8h}{\section{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\-Test\-Namer.h File Reference}
+\label{_test_namer_8h}\index{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\-Test\-Namer.\-h@{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\-Test\-Namer.\-h}}
+}
+{\ttfamily \#include $<$cppunit/\-Portability.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_test_namer}{Test\-Namer}
+\begin{DoxyCompactList}\small\item\em Names a test or a fixture suite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_test_namer_8h_a34ecf6f08dc46e7c3615355be4330414}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L}(variable\-Name, Fixture\-Type)~C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Namer variable\-Name( \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string}(\#Fixture\-Type) )
+\begin{DoxyCompactList}\small\item\em Declares a \hyperlink{class_test_namer}{Test\-Namer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_test_namer_8h_a34ecf6f08dc46e7c3615355be4330414}{\index{Test\-Namer.\-h@{Test\-Namer.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L}!TestNamer.h@{Test\-Namer.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L(
+\begin{DoxyParamCaption}
+\item[{}]{variable\-Name, }
+\item[{}]{Fixture\-Type}
+\end{DoxyParamCaption}
+)~C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Namer variable\-Name( {\bf std\-::string}(\#Fixture\-Type) )}}\label{_test_namer_8h_a34ecf6f08dc46e7c3615355be4330414}
+
+
+Declares a \hyperlink{class_test_namer}{Test\-Namer}. 
+
+Declares a \hyperlink{class_test_namer}{Test\-Namer} for the specified type, using R\-T\-T\-I if enabled, otherwise using macro string expansion.
+
+R\-T\-T\-I is used if C\-P\-P\-U\-N\-I\-T\-\_\-\-U\-S\-E\-\_\-\-T\-Y\-P\-E\-I\-N\-F\-O\-\_\-\-N\-A\-M\-E is defined and not null.
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} someMethod() 
+\{
+  \hyperlink{_test_namer_8h_a34ecf6f08dc46e7c3615355be4330414}{CPPUNIT\_TESTNAMER\_DECL}( namer, AFixtureType );
+  \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string} fixtureName = namer.getFixtureName();
+  ...
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_namer}{Test\-Namer} 
+\end{DoxySeeAlso}

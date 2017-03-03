@@ -1,0 +1,295 @@
+\hypertarget{ftstroke_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftstroke.h File Reference}
+\label{ftstroke_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftstroke.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftstroke.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R \\*
+struct F\-T\-\_\-\-Stroker\-Rec\-\_\- $\ast$ \hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker}
+\item 
+typedef enum \hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-} \hyperlink{ftstroke_8h_a8a0734e8c1e7bddc89282083853f6331}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join}
+\item 
+typedef enum \hyperlink{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-} \hyperlink{ftstroke_8h_a856d9624e643352a1f6e305027de0736}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap}
+\item 
+typedef enum \hyperlink{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6}{F\-T\-\_\-\-Stroker\-Border\-\_\-} \hyperlink{ftstroke_8h_a8fe279798d596d9fedb6ad3b6f1e5896}{F\-T\-\_\-\-Stroker\-Border}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-} \{ \\*
+\hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6ad13e974cada297192e460f14d9f0ba6b}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-R\-O\-U\-N\-D} = 0, 
+\hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6aa875a789dd55495ef7d9214eacc0bdc2}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-B\-E\-V\-E\-L} = 1, 
+\hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6acb76f61066e44a130d206d2066add1e4}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E} = 2, 
+\hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6a38d166d5cf959f5f433e4259d0fe7f88}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R} = F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E, 
+\\*
+\hyperlink{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6a75d091d7418b2669c9cfaa4027ff7e82}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-F\-I\-X\-E\-D} = 3
+ \}
+\item 
+enum \hyperlink{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-} \{ \hyperlink{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a4fcfe731e3c1efe39d4dcf19edd7e1ce}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-B\-U\-T\-T} = 0, 
+\hyperlink{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a0417f93b0d7fea22cd20124a40479c1f}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-R\-O\-U\-N\-D}, 
+\hyperlink{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a7cd7d3e711ed2072567c0f51fecb4a86}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-S\-Q\-U\-A\-R\-E}
+ \}
+\item 
+enum \hyperlink{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6}{F\-T\-\_\-\-Stroker\-Border\-\_\-} \{ \hyperlink{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6ab5a331ec4a5a9da353de29c578fb2d6d}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T} = 0, 
+\hyperlink{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6a60213f0f00e84979c5e4fc4e0857f994}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftstroke_8h_a140debddc87985f3fd2e610eda00cb4a}{F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border} (\hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline)
+\item 
+\hyperlink{ftstroke_8h_a6a2dd261ba2617bdac0cc3ec28ecf137}{F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border} (\hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline)
+\item 
+\hyperlink{ftstroke_8h_a81bf87929ccbc0d2604fb0e48277a7c8}{F\-T\-\_\-\-Stroker\-\_\-\-New} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} $\ast$astroker)
+\item 
+\hyperlink{ftstroke_8h_af0be981947c3636d7bb1ddcf432c613f}{F\-T\-\_\-\-Stroker\-\_\-\-Set} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} radius, \hyperlink{ftstroke_8h_a856d9624e643352a1f6e305027de0736}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap} line\-\_\-cap, \hyperlink{ftstroke_8h_a8a0734e8c1e7bddc89282083853f6331}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join} line\-\_\-join, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} miter\-\_\-limit)
+\item 
+\hyperlink{ftstroke_8h_a10f92fc5c5c968c4f720825bb2940bfb}{F\-T\-\_\-\-Stroker\-\_\-\-Rewind} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker)
+\item 
+\hyperlink{ftstroke_8h_aac413eee959667991ec337765215c501}{F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline, \hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool} opened)
+\item 
+\hyperlink{ftstroke_8h_a843508f735e0f169b6d00d91510ac000}{F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$to, \hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool} open)
+\item 
+\hyperlink{ftstroke_8h_a954981a224366dcb418122e9ac1ef314}{F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker)
+\item 
+\hyperlink{ftstroke_8h_a09c014bb4f39ab1d8aa04d3f652b5ab2}{F\-T\-\_\-\-Stroker\-\_\-\-Line\-To} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$to)
+\item 
+\hyperlink{ftstroke_8h_a907808cc2cee0c659100dbc10560e8db}{F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$control, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$to)
+\item 
+\hyperlink{ftstroke_8h_a6463e08d4f40c63cb109dfcd04afb60f}{F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$control1, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$control2, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$to)
+\item 
+\hyperlink{ftstroke_8h_a21503fee2c6c57376d98885ac3e54910}{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftstroke_8h_a8fe279798d596d9fedb6ad3b6f1e5896}{F\-T\-\_\-\-Stroker\-Border} \hyperlink{glew_8h_a6180492a53d6843c599d9934a5facf65}{border}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} $\ast$anum\-\_\-points, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} $\ast$anum\-\_\-contours)
+\item 
+\hyperlink{ftstroke_8h_af4b54d6a127efb98084b11394077539a}{F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftstroke_8h_a8fe279798d596d9fedb6ad3b6f1e5896}{F\-T\-\_\-\-Stroker\-Border} \hyperlink{glew_8h_a6180492a53d6843c599d9934a5facf65}{border}, \hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline)
+\item 
+\hyperlink{ftstroke_8h_a2ec913491a0b5226367d3a6dbaaf1c18}{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} $\ast$anum\-\_\-points, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} $\ast$anum\-\_\-contours)
+\item 
+\hyperlink{ftstroke_8h_a025959ebc066c402fbfa8450a66e6aa8}{F\-T\-\_\-\-Stroker\-\_\-\-Export} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{ftimage_8h_a79cb182373b5aa3041955b19ce32afca}{F\-T\-\_\-\-Outline} $\ast$outline)
+\item 
+\hyperlink{ftstroke_8h_a42e650e0dd4bbccfc1c32118c6ee524b}{F\-T\-\_\-\-Stroker\-\_\-\-Done} (\hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker)
+\item 
+\hyperlink{ftstroke_8h_a976fc8903ea898e41e377a1de447743c}{F\-T\-\_\-\-Glyph\-\_\-\-Stroke} (\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} $\ast$pglyph, \hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool} destroy)
+\item 
+\hyperlink{ftstroke_8h_abd8c1ca959e22145072cd14a12c08479}{F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border} (\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} $\ast$pglyph, \hyperlink{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{F\-T\-\_\-\-Stroker} stroker, \hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool} inside, \hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool} destroy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker@{F\-T\-\_\-\-Stroker}}
+\index{F\-T\-\_\-\-Stroker@{F\-T\-\_\-\-Stroker}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker}]{\setlength{\rightskip}{0pt plus 5cm}typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R struct F\-T\-\_\-\-Stroker\-Rec\-\_\-$\ast$ {\bf F\-T\-\_\-\-Stroker}}}\label{ftstroke_8h_ac10d5f2301e83538779af9f59d630827}
+\hypertarget{ftstroke_8h_a856d9624e643352a1f6e305027de0736}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-}  {\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap}}}\label{ftstroke_8h_a856d9624e643352a1f6e305027de0736}
+\hypertarget{ftstroke_8h_a8a0734e8c1e7bddc89282083853f6331}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-}  {\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join}}}\label{ftstroke_8h_a8a0734e8c1e7bddc89282083853f6331}
+\hypertarget{ftstroke_8h_a8fe279798d596d9fedb6ad3b6f1e5896}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-Border@{F\-T\-\_\-\-Stroker\-Border}}
+\index{F\-T\-\_\-\-Stroker\-Border@{F\-T\-\_\-\-Stroker\-Border}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-Border}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf F\-T\-\_\-\-Stroker\-Border\-\_\-}  {\bf F\-T\-\_\-\-Stroker\-Border}}}\label{ftstroke_8h_a8fe279798d596d9fedb6ad3b6f1e5896}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap\-\_\-}}}\label{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-B\-U\-T\-T@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-B\-U\-T\-T}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-B\-U\-T\-T@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-B\-U\-T\-T}}\item[{\em 
+\hypertarget{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a4fcfe731e3c1efe39d4dcf19edd7e1ce}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-B\-U\-T\-T}\label{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a4fcfe731e3c1efe39d4dcf19edd7e1ce}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-R\-O\-U\-N\-D@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-R\-O\-U\-N\-D}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-R\-O\-U\-N\-D@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-R\-O\-U\-N\-D}}\item[{\em 
+\hypertarget{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a0417f93b0d7fea22cd20124a40479c1f}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-R\-O\-U\-N\-D}\label{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a0417f93b0d7fea22cd20124a40479c1f}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-S\-Q\-U\-A\-R\-E@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-S\-Q\-U\-A\-R\-E}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-S\-Q\-U\-A\-R\-E@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-S\-Q\-U\-A\-R\-E}}\item[{\em 
+\hypertarget{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a7cd7d3e711ed2072567c0f51fecb4a86}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-C\-A\-P\-\_\-\-S\-Q\-U\-A\-R\-E}\label{ftstroke_8h_a08e4f487ed8345fb0bbeeb953729d8d1a7cd7d3e711ed2072567c0f51fecb4a86}
+}]\end{description}
+\end{Desc}
+\hypertarget{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join\-\_\-}}}\label{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-R\-O\-U\-N\-D@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-R\-O\-U\-N\-D}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-R\-O\-U\-N\-D@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-R\-O\-U\-N\-D}}\item[{\em 
+\hypertarget{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6ad13e974cada297192e460f14d9f0ba6b}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-R\-O\-U\-N\-D}\label{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6ad13e974cada297192e460f14d9f0ba6b}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-B\-E\-V\-E\-L@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-B\-E\-V\-E\-L}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-B\-E\-V\-E\-L@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-B\-E\-V\-E\-L}}\item[{\em 
+\hypertarget{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6aa875a789dd55495ef7d9214eacc0bdc2}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-B\-E\-V\-E\-L}\label{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6aa875a789dd55495ef7d9214eacc0bdc2}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6acb76f61066e44a130d206d2066add1e4}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-V\-A\-R\-I\-A\-B\-L\-E}\label{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6acb76f61066e44a130d206d2066add1e4}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R}}\item[{\em 
+\hypertarget{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6a38d166d5cf959f5f433e4259d0fe7f88}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R}\label{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6a38d166d5cf959f5f433e4259d0fe7f88}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-F\-I\-X\-E\-D@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-F\-I\-X\-E\-D}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-F\-I\-X\-E\-D@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-F\-I\-X\-E\-D}}\item[{\em 
+\hypertarget{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6a75d091d7418b2669c9cfaa4027ff7e82}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-L\-I\-N\-E\-J\-O\-I\-N\-\_\-\-M\-I\-T\-E\-R\-\_\-\-F\-I\-X\-E\-D}\label{ftstroke_8h_a4f7903e8a82442fcf9e9bc22a45598d6a75d091d7418b2669c9cfaa4027ff7e82}
+}]\end{description}
+\end{Desc}
+\hypertarget{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-Border\-\_\-@{F\-T\-\_\-\-Stroker\-Border\-\_\-}}
+\index{F\-T\-\_\-\-Stroker\-Border\-\_\-@{F\-T\-\_\-\-Stroker\-Border\-\_\-}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-Border\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-T\-\_\-\-Stroker\-Border\-\_\-}}}\label{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T}}\item[{\em 
+\hypertarget{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6ab5a331ec4a5a9da353de29c578fb2d6d}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T}\label{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6ab5a331ec4a5a9da353de29c578fb2d6d}
+}]\index{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}!ftstroke.\-h@{ftstroke.\-h}}\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T@{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}}\item[{\em 
+\hypertarget{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6a60213f0f00e84979c5e4fc4e0857f994}{F\-T\-\_\-\-S\-T\-R\-O\-K\-E\-R\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}\label{ftstroke_8h_a361e8f43ea3b0861e52e603c7d0a83b6a60213f0f00e84979c5e4fc4e0857f994}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ftstroke_8h_a976fc8903ea898e41e377a1de447743c}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Stroke@{F\-T\-\_\-\-Glyph\-\_\-\-Stroke}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Stroke@{F\-T\-\_\-\-Glyph\-\_\-\-Stroke}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Stroke}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Glyph\-\_\-\-Stroke (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Glyph} $\ast$}]{pglyph, }
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Bool}}]{destroy}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a976fc8903ea898e41e377a1de447743c}
+\hypertarget{ftstroke_8h_abd8c1ca959e22145072cd14a12c08479}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border@{F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border@{F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Glyph\-\_\-\-Stroke\-Border (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Glyph} $\ast$}]{pglyph, }
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Bool}}]{inside, }
+\item[{{\bf F\-T\-\_\-\-Bool}}]{destroy}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_abd8c1ca959e22145072cd14a12c08479}
+\hypertarget{ftstroke_8h_a140debddc87985f3fd2e610eda00cb4a}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border@{F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border}}
+\index{F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border@{F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Outline\-\_\-\-Get\-Inside\-Border (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Outline} $\ast$}]{outline}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a140debddc87985f3fd2e610eda00cb4a}
+\hypertarget{ftstroke_8h_a6a2dd261ba2617bdac0cc3ec28ecf137}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border@{F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border}}
+\index{F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border@{F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Outline\-\_\-\-Get\-Outside\-Border (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Outline} $\ast$}]{outline}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a6a2dd261ba2617bdac0cc3ec28ecf137}
+\hypertarget{ftstroke_8h_a843508f735e0f169b6d00d91510ac000}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path@{F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path@{F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Begin\-Sub\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{to, }
+\item[{{\bf F\-T\-\_\-\-Bool}}]{open}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a843508f735e0f169b6d00d91510ac000}
+\hypertarget{ftstroke_8h_a907808cc2cee0c659100dbc10560e8db}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To@{F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To@{F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Conic\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{control, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{to}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a907808cc2cee0c659100dbc10560e8db}
+\hypertarget{ftstroke_8h_a6463e08d4f40c63cb109dfcd04afb60f}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To@{F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To@{F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Cubic\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{control1, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{control2, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{to}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a6463e08d4f40c63cb109dfcd04afb60f}
+\hypertarget{ftstroke_8h_a42e650e0dd4bbccfc1c32118c6ee524b}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Done@{F\-T\-\_\-\-Stroker\-\_\-\-Done}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Done@{F\-T\-\_\-\-Stroker\-\_\-\-Done}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Done}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Done (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a42e650e0dd4bbccfc1c32118c6ee524b}
+\hypertarget{ftstroke_8h_a954981a224366dcb418122e9ac1ef314}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path@{F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path@{F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-End\-Sub\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a954981a224366dcb418122e9ac1ef314}
+\hypertarget{ftstroke_8h_a025959ebc066c402fbfa8450a66e6aa8}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Export@{F\-T\-\_\-\-Stroker\-\_\-\-Export}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Export@{F\-T\-\_\-\-Stroker\-\_\-\-Export}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Export}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Outline} $\ast$}]{outline}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a025959ebc066c402fbfa8450a66e6aa8}
+\hypertarget{ftstroke_8h_af4b54d6a127efb98084b11394077539a}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border@{F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border@{F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Export\-Border (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Stroker\-Border}}]{border, }
+\item[{{\bf F\-T\-\_\-\-Outline} $\ast$}]{outline}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_af4b54d6a127efb98084b11394077539a}
+\hypertarget{ftstroke_8h_a21503fee2c6c57376d98885ac3e54910}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts@{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts@{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Get\-Border\-Counts (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Stroker\-Border}}]{border, }
+\item[{{\bf F\-T\-\_\-\-U\-Int} $\ast$}]{anum\-\_\-points, }
+\item[{{\bf F\-T\-\_\-\-U\-Int} $\ast$}]{anum\-\_\-contours}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a21503fee2c6c57376d98885ac3e54910}
+\hypertarget{ftstroke_8h_a2ec913491a0b5226367d3a6dbaaf1c18}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts@{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts@{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Get\-Counts (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-U\-Int} $\ast$}]{anum\-\_\-points, }
+\item[{{\bf F\-T\-\_\-\-U\-Int} $\ast$}]{anum\-\_\-contours}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a2ec913491a0b5226367d3a6dbaaf1c18}
+\hypertarget{ftstroke_8h_a09c014bb4f39ab1d8aa04d3f652b5ab2}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Line\-To@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-To}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Line\-To@{F\-T\-\_\-\-Stroker\-\_\-\-Line\-To}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Line\-To}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Line\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Vector} $\ast$}]{to}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a09c014bb4f39ab1d8aa04d3f652b5ab2}
+\hypertarget{ftstroke_8h_a81bf87929ccbc0d2604fb0e48277a7c8}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-New@{F\-T\-\_\-\-Stroker\-\_\-\-New}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-New@{F\-T\-\_\-\-Stroker\-\_\-\-New}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-New}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{{\bf F\-T\-\_\-\-Stroker} $\ast$}]{astroker}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a81bf87929ccbc0d2604fb0e48277a7c8}
+\hypertarget{ftstroke_8h_aac413eee959667991ec337765215c501}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline@{F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline@{F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Parse\-Outline (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Outline} $\ast$}]{outline, }
+\item[{{\bf F\-T\-\_\-\-Bool}}]{opened}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_aac413eee959667991ec337765215c501}
+\hypertarget{ftstroke_8h_a10f92fc5c5c968c4f720825bb2940bfb}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Rewind@{F\-T\-\_\-\-Stroker\-\_\-\-Rewind}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Rewind@{F\-T\-\_\-\-Stroker\-\_\-\-Rewind}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Rewind}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Rewind (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_a10f92fc5c5c968c4f720825bb2940bfb}
+\hypertarget{ftstroke_8h_af0be981947c3636d7bb1ddcf432c613f}{\index{ftstroke.\-h@{ftstroke.\-h}!F\-T\-\_\-\-Stroker\-\_\-\-Set@{F\-T\-\_\-\-Stroker\-\_\-\-Set}}
+\index{F\-T\-\_\-\-Stroker\-\_\-\-Set@{F\-T\-\_\-\-Stroker\-\_\-\-Set}!ftstroke.h@{ftstroke.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stroker\-\_\-\-Set}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Stroker\-\_\-\-Set (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Stroker}}]{stroker, }
+\item[{{\bf F\-T\-\_\-\-Fixed}}]{radius, }
+\item[{{\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Cap}}]{line\-\_\-cap, }
+\item[{{\bf F\-T\-\_\-\-Stroker\-\_\-\-Line\-Join}}]{line\-\_\-join, }
+\item[{{\bf F\-T\-\_\-\-Fixed}}]{miter\-\_\-limit}
+\end{DoxyParamCaption}
+)}}\label{ftstroke_8h_af0be981947c3636d7bb1ddcf432c613f}

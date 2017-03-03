@@ -1,0 +1,254 @@
+\hypertarget{class_xml_outputter}{\section{Xml\-Outputter Class Reference}
+\label{class_xml_outputter}\index{Xml\-Outputter@{Xml\-Outputter}}
+}
+
+
+Outputs a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} in X\-M\-L format.
+
+Save the test result as a X\-M\-L stream.  
+
+
+
+
+{\ttfamily \#include $<$Xml\-Outputter.\-h$>$}
+
+Inheritance diagram for Xml\-Outputter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_xml_outputter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_xml_outputter_a987608d04ba56dcc13461c9522f3da7e}{typedef Cpp\-Unit\-Map$<$ \hyperlink{class_test}{Test} \\*
+$\ast$, \hyperlink{class_test_failure}{Test\-Failure} $\ast$, std\-::less\\*
+$<$ \hyperlink{class_test}{Test} $\ast$ $>$ $>$ {\bfseries Failed\-Tests}}\label{class_xml_outputter_a987608d04ba56dcc13461c9522f3da7e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_xml_outputter_af98780d86b93b9eb2aa440c752d5ed6f}{Xml\-Outputter} (\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$result, O\-Stream \&stream, std\-::string encoding=std\-::string(\char`\"{}I\-S\-O-\/8859-\/1\char`\"{}))
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_xml_outputter}{Xml\-Outputter} object. \end{DoxyCompactList}\item 
+\hypertarget{class_xml_outputter_a159ce827427e235d8f2db9719acbba94}{virtual \hyperlink{class_xml_outputter_a159ce827427e235d8f2db9719acbba94}{$\sim$\-Xml\-Outputter} ()}\label{class_xml_outputter_a159ce827427e235d8f2db9719acbba94}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_xml_outputter_a5ecb9d974d3fbfe46324637462edb408}{add\-Hook} (\hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook} $\ast$hook)
+\begin{DoxyCompactList}\small\item\em Adds the specified hook to the outputter. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_xml_outputter_ac4659712ab6b0f168119a22fbdb70255}{remove\-Hook} (\hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook} $\ast$hook)
+\begin{DoxyCompactList}\small\item\em Removes the specified hook from the outputter. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_xml_outputter_a816f0010b840d445616c67152ac98d57}{write} ()
+\begin{DoxyCompactList}\small\item\em Writes the specified result as an X\-M\-L document to the stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_xml_outputter_af6e681ba18061b5b8dd6f37614ab556e}{set\-Style\-Sheet} (const std\-::string \&style\-Sheet)
+\begin{DoxyCompactList}\small\item\em Sets the X\-S\-L style sheet used. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_xml_outputter_aee5fd34688999cef1d04e48b4e9b695e}{set\-Standalone} (bool standalone)
+\begin{DoxyCompactList}\small\item\em set the output document as standalone or not. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_xml_outputter_a902bd7f9c9968ea311e4da3437a37b3e}{set\-Root\-Node} ()
+\begin{DoxyCompactList}\small\item\em Sets the root element and adds its children. \end{DoxyCompactList}\item 
+\hypertarget{class_xml_outputter_a8675cbea5b79eea10f41d0ab05379421}{virtual void {\bfseries add\-Failed\-Tests} (Failed\-Tests \&failed\-Tests, \hyperlink{class_xml_element}{Xml\-Element} $\ast$root\-Node)}\label{class_xml_outputter_a8675cbea5b79eea10f41d0ab05379421}
+
+\item 
+\hypertarget{class_xml_outputter_a57805372b9f3ceeafd43a1e637f8b888}{virtual void {\bfseries add\-Successful\-Tests} (Failed\-Tests \&failed\-Tests, \hyperlink{class_xml_element}{Xml\-Element} $\ast$root\-Node)}\label{class_xml_outputter_a57805372b9f3ceeafd43a1e637f8b888}
+
+\item 
+virtual void \hyperlink{class_xml_outputter_a8ba291b109ac04b9f652c027c3318f14}{add\-Statistics} (\hyperlink{class_xml_element}{Xml\-Element} $\ast$root\-Node)
+\begin{DoxyCompactList}\small\item\em Adds the statics element to the root node. \end{DoxyCompactList}\item 
+\hypertarget{class_xml_outputter_abbe12c670f490cbe29b8be6d9ff174e6}{virtual void \hyperlink{class_xml_outputter_abbe12c670f490cbe29b8be6d9ff174e6}{add\-Failed\-Test} (\hyperlink{class_test}{Test} $\ast$test, \hyperlink{class_test_failure}{Test\-Failure} $\ast$failure, int test\-Number, \hyperlink{class_xml_element}{Xml\-Element} $\ast$tests\-Node)}\label{class_xml_outputter_abbe12c670f490cbe29b8be6d9ff174e6}
+
+\begin{DoxyCompactList}\small\item\em Adds a failed test to the failed tests node. Creates a new element containing datas about the failed test, and adds it to the failed tests element. Then, for all hooks, call fail\-Test\-Added(). \end{DoxyCompactList}\item 
+\hypertarget{class_xml_outputter_a1afa9344722155ae8ea3d7d67493ade3}{virtual void {\bfseries add\-Failure\-Location} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure, \hyperlink{class_xml_element}{Xml\-Element} $\ast$test\-Element)}\label{class_xml_outputter_a1afa9344722155ae8ea3d7d67493ade3}
+
+\item 
+\hypertarget{class_xml_outputter_a025e0e041db1ec557e9af2887a24dd9e}{virtual void \hyperlink{class_xml_outputter_a025e0e041db1ec557e9af2887a24dd9e}{add\-Successful\-Test} (\hyperlink{class_test}{Test} $\ast$test, int test\-Number, \hyperlink{class_xml_element}{Xml\-Element} $\ast$tests\-Node)}\label{class_xml_outputter_a025e0e041db1ec557e9af2887a24dd9e}
+
+\begin{DoxyCompactList}\small\item\em Adds a successful test to the successful tests node. Creates a new element containing datas about the successful test, and adds it to the successful tests element. Then, for all hooks, call successful\-Test\-Added(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_xml_outputter_a721fa60bda8d779457ae8e429be21d74}{typedef Cpp\-Unit\-Deque\\*
+$<$ \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook} $\ast$ $>$ {\bfseries Hooks}}\label{class_xml_outputter_a721fa60bda8d779457ae8e429be21d74}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_xml_outputter_a063afe5aaec2936d53ba58c45b5bdb54}{virtual void {\bfseries fill\-Failed\-Tests\-Map} (Failed\-Tests \&failed\-Tests)}\label{class_xml_outputter_a063afe5aaec2936d53ba58c45b5bdb54}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_xml_outputter_a982002691814b46b0fe8ca79a74d8895}{\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$ {\bfseries m\-\_\-result}}\label{class_xml_outputter_a982002691814b46b0fe8ca79a74d8895}
+
+\item 
+\hypertarget{class_xml_outputter_a6f7eb773760301d381ba7f3ca5729bca}{O\-Stream \& {\bfseries m\-\_\-stream}}\label{class_xml_outputter_a6f7eb773760301d381ba7f3ca5729bca}
+
+\item 
+\hypertarget{class_xml_outputter_a193e314a66971eec760045fc20e5a2d1}{std\-::string {\bfseries m\-\_\-encoding}}\label{class_xml_outputter_a193e314a66971eec760045fc20e5a2d1}
+
+\item 
+\hypertarget{class_xml_outputter_a83e00800a42c2a62127e335f28b58230}{std\-::string {\bfseries m\-\_\-style\-Sheet}}\label{class_xml_outputter_a83e00800a42c2a62127e335f28b58230}
+
+\item 
+\hypertarget{class_xml_outputter_a7c789c60c2031edc2527e75e736612cb}{\hyperlink{class_xml_document}{Xml\-Document} $\ast$ {\bfseries m\-\_\-xml}}\label{class_xml_outputter_a7c789c60c2031edc2527e75e736612cb}
+
+\item 
+\hypertarget{class_xml_outputter_a54643e72aed488db22338cb878be2c81}{Hooks {\bfseries m\-\_\-hooks}}\label{class_xml_outputter_a54643e72aed488db22338cb878be2c81}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Outputs a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} in X\-M\-L format.
+
+Save the test result as a X\-M\-L stream. 
+
+Additional datas can be added to the X\-M\-L document using \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook}. Hook are not owned by the \hyperlink{class_xml_outputter}{Xml\-Outputter}. They should be valid until destruction of the \hyperlink{class_xml_outputter}{Xml\-Outputter}. They can be removed with \hyperlink{class_xml_outputter_ac4659712ab6b0f168119a22fbdb70255}{remove\-Hook()}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_xml_document}{Xml\-Document}, \hyperlink{class_xml_element}{Xml\-Element}, \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_xml_outputter_af98780d86b93b9eb2aa440c752d5ed6f}{\index{Xml\-Outputter@{Xml\-Outputter}!Xml\-Outputter@{Xml\-Outputter}}
+\index{Xml\-Outputter@{Xml\-Outputter}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{Xml\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}Xml\-Outputter\-::\-Xml\-Outputter (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result\-Collector} $\ast$}]{result, }
+\item[{O\-Stream \&}]{stream, }
+\item[{std\-::string}]{encoding = {\ttfamily std\-:\-:string(\char`\"{}ISO-\/8859-\/1\char`\"{})}}
+\end{DoxyParamCaption}
+)}}\label{class_xml_outputter_af98780d86b93b9eb2aa440c752d5ed6f}
+
+
+Constructs a \hyperlink{class_xml_outputter}{Xml\-Outputter} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of the test run. \\
+\hline
+{\em stream} & Stream used to output the X\-M\-L output. \\
+\hline
+{\em encoding} & Encoding used in the X\-M\-L file (default is Latin-\/1). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_xml_outputter_a5ecb9d974d3fbfe46324637462edb408}{\index{Xml\-Outputter@{Xml\-Outputter}!add\-Hook@{add\-Hook}}
+\index{add\-Hook@{add\-Hook}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{add\-Hook}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::add\-Hook (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Outputter\-Hook} $\ast$}]{hook}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_a5ecb9d974d3fbfe46324637462edb408}
+
+
+Adds the specified hook to the outputter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hook} & Hook to add. Must not be {\ttfamily N\-U\-L\-L}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_a8ba291b109ac04b9f652c027c3318f14}{\index{Xml\-Outputter@{Xml\-Outputter}!add\-Statistics@{add\-Statistics}}
+\index{add\-Statistics@{add\-Statistics}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{add\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::add\-Statistics (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Element} $\ast$}]{root\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_a8ba291b109ac04b9f652c027c3318f14}
+
+
+Adds the statics element to the root node. 
+
+Creates a new element containing statistics data and adds it to the root element. Then, for all hooks, call statistics\-Added(). 
+\begin{DoxyParams}{Parameters}
+{\em root\-Node} & Root element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_ac4659712ab6b0f168119a22fbdb70255}{\index{Xml\-Outputter@{Xml\-Outputter}!remove\-Hook@{remove\-Hook}}
+\index{remove\-Hook@{remove\-Hook}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{remove\-Hook}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::remove\-Hook (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Outputter\-Hook} $\ast$}]{hook}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_ac4659712ab6b0f168119a22fbdb70255}
+
+
+Removes the specified hook from the outputter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hook} & Hook to remove. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_a902bd7f9c9968ea311e4da3437a37b3e}{\index{Xml\-Outputter@{Xml\-Outputter}!set\-Root\-Node@{set\-Root\-Node}}
+\index{set\-Root\-Node@{set\-Root\-Node}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{set\-Root\-Node}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::set\-Root\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_a902bd7f9c9968ea311e4da3437a37b3e}
+
+
+Sets the root element and adds its children. 
+
+Set the root element of the X\-M\-L Document and add its child elements.
+
+For all hooks, call begin\-Document() just after creating the root element (it is empty at this time), and end\-Document() once all the datas have been added to the root element. \hypertarget{class_xml_outputter_aee5fd34688999cef1d04e48b4e9b695e}{\index{Xml\-Outputter@{Xml\-Outputter}!set\-Standalone@{set\-Standalone}}
+\index{set\-Standalone@{set\-Standalone}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{set\-Standalone}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::set\-Standalone (
+\begin{DoxyParamCaption}
+\item[{bool}]{standalone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_aee5fd34688999cef1d04e48b4e9b695e}
+
+
+set the output document as standalone or not. 
+
+For the output document, specify wether it's a standalone X\-M\-L document, or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em standalone} & if true, the output will be specified as standalone. if false, it will be not. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_af6e681ba18061b5b8dd6f37614ab556e}{\index{Xml\-Outputter@{Xml\-Outputter}!set\-Style\-Sheet@{set\-Style\-Sheet}}
+\index{set\-Style\-Sheet@{set\-Style\-Sheet}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{set\-Style\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::set\-Style\-Sheet (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{style\-Sheet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_af6e681ba18061b5b8dd6f37614ab556e}
+
+
+Sets the X\-S\-L style sheet used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em style\-Sheet} & Name of the style sheet used. If empty, then no style sheet is used (default). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_outputter_a816f0010b840d445616c67152ac98d57}{\index{Xml\-Outputter@{Xml\-Outputter}!write@{write}}
+\index{write@{write}!XmlOutputter@{Xml\-Outputter}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Xml\-Outputter\-::write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_outputter_a816f0010b840d445616c67152ac98d57}
+
+
+Writes the specified result as an X\-M\-L document to the stream. 
+
+Refer to examples/cppunittest/\-Xml\-Outputter\-Test.\-cpp for example of use and X\-M\-L document structure. 
+
+Implements \hyperlink{class_outputter}{Outputter}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Xml\-Outputter.\-h\end{DoxyCompactItemize}

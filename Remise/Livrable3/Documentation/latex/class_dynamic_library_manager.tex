@@ -1,0 +1,94 @@
+\hypertarget{class_dynamic_library_manager}{\section{Dynamic\-Library\-Manager Class Reference}
+\label{class_dynamic_library_manager}\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}}
+}
+
+
+Manages dynamic libraries.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\-Library\-Manager.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_dynamic_library_manager_abb1022f448f94bf40c890d38ea41c52b}{typedef void $\ast$ {\bfseries Symbol}}\label{class_dynamic_library_manager_abb1022f448f94bf40c890d38ea41c52b}
+
+\item 
+\hypertarget{class_dynamic_library_manager_aa47563bb349a44ec41af6464300e0688}{typedef void $\ast$ {\bfseries Library\-Handle}}\label{class_dynamic_library_manager_aa47563bb349a44ec41af6464300e0688}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dynamic_library_manager_a26d6592077763d9eb31d66d02d17b8d4}{Dynamic\-Library\-Manager} (const std\-::string \&library\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Loads the specified library. \end{DoxyCompactList}\item 
+\hypertarget{class_dynamic_library_manager_a1c6a30a61161a8ddb96279bfb44c44c7}{\hyperlink{class_dynamic_library_manager_a1c6a30a61161a8ddb96279bfb44c44c7}{$\sim$\-Dynamic\-Library\-Manager} ()}\label{class_dynamic_library_manager_a1c6a30a61161a8ddb96279bfb44c44c7}
+
+\begin{DoxyCompactList}\small\item\em Releases the loaded library.. \end{DoxyCompactList}\item 
+Symbol \hyperlink{class_dynamic_library_manager_a2bd337473432b0f470f5bb987da77239}{find\-Symbol} (const std\-::string \&symbol)
+\begin{DoxyCompactList}\small\item\em Returns a pointer on the specified symbol exported by the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages dynamic libraries. 
+
+The Dynamic Library Manager provides a platform independent way to work with dynamic library. It load a specific dynamic library, and can returns specific symbol exported by the dynamic library.
+
+If an error occurs, a \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception} is thrown. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dynamic_library_manager_a26d6592077763d9eb31d66d02d17b8d4}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}}
+\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{Dynamic\-Library\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Dynamic\-Library\-Manager\-::\-Dynamic\-Library\-Manager (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{library\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_dynamic_library_manager_a26d6592077763d9eb31d66d02d17b8d4}
+
+
+Loads the specified library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em library\-File\-Name} & Name of the library to load. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception}} & if a failure occurs while loading the library (fail to found or load the library). \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dynamic_library_manager_a2bd337473432b0f470f5bb987da77239}{\index{Dynamic\-Library\-Manager@{Dynamic\-Library\-Manager}!find\-Symbol@{find\-Symbol}}
+\index{find\-Symbol@{find\-Symbol}!DynamicLibraryManager@{Dynamic\-Library\-Manager}}
+\subsubsection[{find\-Symbol}]{\setlength{\rightskip}{0pt plus 5cm}Symbol Dynamic\-Library\-Manager\-::find\-Symbol (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{symbol}
+\end{DoxyParamCaption}
+)}}\label{class_dynamic_library_manager_a2bd337473432b0f470f5bb987da77239}
+
+
+Returns a pointer on the specified symbol exported by the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & Name of the symbol exported by the library. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the symbol. Should be casted to the actual type. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception}} & if the symbol is not found. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/Dynamic\-Library\-Manager.\-h\end{DoxyCompactItemize}

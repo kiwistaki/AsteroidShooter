@@ -1,0 +1,55 @@
+\hypertarget{class_gestionnaire_collision}{\section{Gestionnaire\-Collision Class Reference}
+\label{class_gestionnaire_collision}\index{Gestionnaire\-Collision@{Gestionnaire\-Collision}}
+}
+
+
+Classe qui se charge de verifier les collisions et d'appeler leur traitement.  
+
+
+
+
+{\ttfamily \#include $<$Gestionnaire\-Collision.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga9df084bfa2dc4442d976654973ee5372}{Gestionnaire\-Collision} (vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \&vecteur\-Elements\-Jeu, vector$<$ \hyperlink{class_asteroide}{Asteroide} $\ast$ $>$ \&vecteur\-Asteroides, vector$<$ \hyperlink{class_projectile}{Projectile} $\ast$ $>$ \&vecteur\-Projectiles)
+\item 
+\hyperlink{group__inf2990_ga32cdb2d1f023ff9698249fcbaa5f7dc8}{$\sim$\-Gestionnaire\-Collision} ()
+\item 
+void \hyperlink{group__inf2990_ga2243af30a36d7db008ec99ce8e8f74b6}{initialiser\-Quad\-Tree} (const \hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \&coin\-Haut\-Gauche, const \hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \&coin\-Bas\-Gauche)
+\item 
+vector$<$ \hyperlink{class_asteroide}{Asteroide} $\ast$ $>$ \& \hyperlink{group__inf2990_ga572a2a95fc9137f44e0a5ce8c6ab0648}{get\-Conteneur\-Asteroides} ()
+\item 
+vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \& \hyperlink{group__inf2990_gacc26b8c32b6c1bdeb1ded2e69e427ffc}{get\-Conteneur\-Elements\-Jeu} ()
+\item 
+void \hyperlink{group__inf2990_ga3de2ac60f6d74d60c8015f7fba0c6194}{set\-Conteneur\-Asteroides} (vector$<$ \hyperlink{class_asteroide}{Asteroide} $\ast$ $>$ \&asteroides)
+\item 
+void \hyperlink{group__inf2990_ga883cc7e90d1ec884d4f983a302c9ed90}{set\-Conteneur\-Element\-Jeu} (vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \&elements\-Jeu)
+\item 
+void \hyperlink{group__inf2990_ga6b1e1b31aa559c75d0cb6314620aef7b}{add\-Joueur} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\item 
+void \hyperlink{group__inf2990_ga34d26483935d731acb183b073f0641e4}{check\-Collisions} ()
+\item 
+void \hyperlink{group__inf2990_gab1e397ffc039f85112a7a177fb0219f3}{traiter\-Collisions} ()
+\item 
+\hypertarget{group__inf2990_ga9d33a33cd08ac039ff71c43976397d38}{void {\bfseries detruire\-Quad\-Tree} ()}\label{group__inf2990_ga9d33a33cd08ac039ff71c43976397d38}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui se charge de verifier les collisions et d'appeler leur traitement. 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_gestionnaire_collision_8h}{Gestionnaire\-Collision.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_gestionnaire_collision_8cpp}{Gestionnaire\-Collision.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{class_protector}{\section{Protector Class Reference}
+\label{class_protector}\index{Protector@{Protector}}
+}
+
+
+Protects one or more test case run.  
+
+
+
+
+{\ttfamily \#include $<$Protector.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_protector_ac8382db0ff9d79c53499b1ad362e94fa}{$\sim$\-Protector} ()
+\item 
+virtual bool \hyperlink{class_protector_a8e005ff581ca40431526fb873a03415a}{protect} (const \hyperlink{class_functor}{Functor} \&functor, const Protector\-Context \&context)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_protector_a94c08e57ebcf59ed093916c16384c99a}{report\-Error} (const Protector\-Context \&context, const \hyperlink{class_exception}{Exception} \&error) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_protector_ab1fda7a5e61e2033e2a7b848aa04690a}{report\-Error} (const Protector\-Context \&context, const \hyperlink{class_message}{Message} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line}()) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_protector_ac52d8e2909a5621d2692ec3ce5d4dbc7}{report\-Failure} (const Protector\-Context \&context, const \hyperlink{class_exception}{Exception} \&failure) const 
+\item 
+\hyperlink{class_message}{Message} \hyperlink{class_protector_a259356bbf5f03e07f75ac797c9e34737}{actual\-Message} (const \hyperlink{class_message}{Message} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, const Protector\-Context \&context) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protects one or more test case run. 
+
+\hyperlink{class_protector}{Protector} are used to globably 'decorate' a test case. The most common usage of \hyperlink{class_protector}{Protector} is to catch exception that do not subclass std\-::exception, such as M\-F\-C C\-Exception class or Rogue Wave R\-W\-X\-Msg class, and capture the message associated to the exception. In fact, Cpp\-Unit capture message from \hyperlink{class_exception}{Exception} and std\-::exception using a \hyperlink{class_protector}{Protector}.
+
+\hyperlink{class_protector}{Protector} are chained. When you add a \hyperlink{class_protector}{Protector} using \hyperlink{class_test_result_a1a4fbbca38cb73e8e00905193b7593dc}{Test\-Result\-::push\-Protector()}, your protector is in fact passed as a \hyperlink{class_functor}{Functor} to the first protector of the chain.
+
+\hyperlink{class_test_case}{Test\-Case} protects call to set\-Up(), run\-Test() and tear\-Down() by calling \hyperlink{class_test_result_a243b3097a3d9468abc61e7910bbaa8b7}{Test\-Result\-::protect()}.
+
+Because the protector chain is handled by \hyperlink{class_test_result}{Test\-Result}, a protector can be active for a single test, or a complete test run.
+
+Here are some possible usages\-:
+\begin{DoxyItemize}
+\item run all test case in a separate thread and assumes the test failed if it did not finish in a given time (infinite loop work around)
+\item performance tracing \-: time only the run\-Test() time. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_result}{Test\-Result}, \hyperlink{class_test_case}{Test\-Case}, \hyperlink{class_test_listener}{Test\-Listener}. 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_protector_ac8382db0ff9d79c53499b1ad362e94fa}{\index{Protector@{Protector}!$\sim$\-Protector@{$\sim$\-Protector}}
+\index{$\sim$\-Protector@{$\sim$\-Protector}!Protector@{Protector}}
+\subsubsection[{$\sim$\-Protector}]{\setlength{\rightskip}{0pt plus 5cm}virtual Protector\-::$\sim$\-Protector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_protector_ac8382db0ff9d79c53499b1ad362e94fa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_protector_a259356bbf5f03e07f75ac797c9e34737}{\index{Protector@{Protector}!actual\-Message@{actual\-Message}}
+\index{actual\-Message@{actual\-Message}!Protector@{Protector}}
+\subsubsection[{actual\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message} Protector\-::actual\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{message, }
+\item[{const Protector\-Context \&}]{context}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_protector_a259356bbf5f03e07f75ac797c9e34737}
+\hypertarget{class_protector_a8e005ff581ca40431526fb873a03415a}{\index{Protector@{Protector}!protect@{protect}}
+\index{protect@{protect}!Protector@{Protector}}
+\subsubsection[{protect}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Protector\-::protect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Functor} \&}]{functor, }
+\item[{const Protector\-Context \&}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_protector_a8e005ff581ca40431526fb873a03415a}
+\hypertarget{class_protector_a94c08e57ebcf59ed093916c16384c99a}{\index{Protector@{Protector}!report\-Error@{report\-Error}}
+\index{report\-Error@{report\-Error}!Protector@{Protector}}
+\subsubsection[{report\-Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Protector\-::report\-Error (
+\begin{DoxyParamCaption}
+\item[{const Protector\-Context \&}]{context, }
+\item[{const {\bf Exception} \&}]{error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_protector_a94c08e57ebcf59ed093916c16384c99a}
+\hypertarget{class_protector_ab1fda7a5e61e2033e2a7b848aa04690a}{\index{Protector@{Protector}!report\-Error@{report\-Error}}
+\index{report\-Error@{report\-Error}!Protector@{Protector}}
+\subsubsection[{report\-Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Protector\-::report\-Error (
+\begin{DoxyParamCaption}
+\item[{const Protector\-Context \&}]{context, }
+\item[{const {\bf Message} \&}]{message, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line = {\ttfamily {\bf Source\-Line}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_protector_ab1fda7a5e61e2033e2a7b848aa04690a}
+\hypertarget{class_protector_ac52d8e2909a5621d2692ec3ce5d4dbc7}{\index{Protector@{Protector}!report\-Failure@{report\-Failure}}
+\index{report\-Failure@{report\-Failure}!Protector@{Protector}}
+\subsubsection[{report\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Protector\-::report\-Failure (
+\begin{DoxyParamCaption}
+\item[{const Protector\-Context \&}]{context, }
+\item[{const {\bf Exception} \&}]{failure}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_protector_ac52d8e2909a5621d2692ec3ce5d4dbc7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_protector_8h}{Protector.\-h}\end{DoxyCompactItemize}

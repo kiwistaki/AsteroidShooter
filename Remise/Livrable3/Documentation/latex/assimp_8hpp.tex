@@ -1,0 +1,70 @@
+\hypertarget{assimp_8hpp}{\section{Cadriciel/\-Commun/\-Externe/assimp/include/assimp.hpp File Reference}
+\label{assimp_8hpp}\index{Cadriciel/\-Commun/\-Externe/assimp/include/assimp.\-hpp@{Cadriciel/\-Commun/\-Externe/assimp/include/assimp.\-hpp}}
+}
+
+
+Defines the C++-\/\-A\-P\-I to the Open Asset Import Library.  
+
+
+{\ttfamily \#include \char`\"{}ai\-Types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ai\-Config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ai\-Assert.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_importer}{Assimp\-::\-Importer}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{assimp_8hpp_adb9160ea5bf307fd2ee2b1fb945a4468}{\#define \hyperlink{assimp_8hpp_adb9160ea5bf307fd2ee2b1fb945a4468}{A\-I\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y\-\_\-\-W\-A\-S\-\_\-\-N\-O\-T\-\_\-\-E\-X\-I\-S\-T\-I\-N\-G}~0xffffffff}\label{assimp_8hpp_adb9160ea5bf307fd2ee2b1fb945a4468}
+
+\begin{DoxyCompactList}\small\item\em namespace \hyperlink{namespace_assimp}{Assimp} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{assimp_8hpp_a590ab8b19137bc0fe4af1f404334beeb}{A\-S\-S\-I\-M\-P\-\_\-\-A\-P\-I const ai\-Scene $\ast$ {\bfseries ai\-Import\-File\-Ex} (const char $\ast$, unsigned int, \hyperlink{structai_file_i_o}{ai\-File\-I\-O} $\ast$)}\label{assimp_8hpp_a590ab8b19137bc0fe4af1f404334beeb}
+
+\item 
+A\-S\-S\-I\-M\-P\-\_\-\-A\-P\-I const ai\-Scene $\ast$ \hyperlink{assimp_8hpp_a606c1b173463d78f2ae4bd114673fa95}{ai\-Import\-File\-From\-Memory} (const char $\ast$, unsigned int, unsigned int, const char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the C++-\/\-A\-P\-I to the Open Asset Import Library. 
+
+\subsection{Function Documentation}
+\hypertarget{assimp_8hpp_a606c1b173463d78f2ae4bd114673fa95}{\index{assimp.\-hpp@{assimp.\-hpp}!ai\-Import\-File\-From\-Memory@{ai\-Import\-File\-From\-Memory}}
+\index{ai\-Import\-File\-From\-Memory@{ai\-Import\-File\-From\-Memory}!assimp.hpp@{assimp.\-hpp}}
+\subsubsection[{ai\-Import\-File\-From\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}A\-S\-S\-I\-M\-P\-\_\-\-A\-P\-I const ai\-Scene$\ast$ ai\-Import\-File\-From\-Memory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{, }
+\item[{unsigned}]{int, }
+\item[{unsigned}]{int, }
+\item[{const char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{assimp_8hpp_a606c1b173463d78f2ae4bd114673fa95}
+Reads the given file from a given memory buffer,
+
+If the call succeeds, the contents of the file are returned as a pointer to an ai\-Scene object. The returned data is intended to be read-\/only, the importer keeps ownership of the data and will destroy it upon destruction. If the import fails, N\-U\-L\-L is returned. A human-\/readable error description can be retrieved by calling \hyperlink{assimp_8h_abe72551b74cc4bc3c49349ce3014bc9b}{ai\-Get\-Error\-String()}. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Buffer} & Pointer to the file data \\
+\hline
+{\em p\-Length} & Length of p\-Buffer, in bytes \\
+\hline
+{\em p\-Flags} & Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the \hyperlink{ai_post_process_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\-Post\-Process\-Steps} flags. If you wish to inspect the imported scene first in order to fine-\/tune your post-\/processing setup, consider to use \hyperlink{assimp_8h_af399cb7002e348f6b9228cff3f836c6c}{ai\-Apply\-Post\-Processing()}. \\
+\hline
+{\em p\-Hint} & An additional hint to the library. If this is a non empty string, the library looks for a loader to support the file extension specified by p\-Hint and passes the file to the first matching loader. If this loader is unable to completely the request, the library continues and tries to determine the file format on its own, a task that may or may not be successful. Check the return value, and you'll know ... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the imported data, N\-U\-L\-L if the import failed.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is a straightforward way to decode models from memory buffers, but it doesn't handle model formats spreading their data across multiple files or even directories. Examples include O\-B\-J or M\-D3, which outsource parts of their material stuff into external scripts. If you need the full functionality, provide a custom I\-O\-System to make \hyperlink{namespace_assimp}{Assimp} find these files. 
+\end{DoxyNote}

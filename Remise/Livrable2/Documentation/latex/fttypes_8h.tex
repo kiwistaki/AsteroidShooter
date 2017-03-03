@@ -1,0 +1,245 @@
+\hypertarget{fttypes_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/fttypes.h File Reference}
+\label{fttypes_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/fttypes.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/fttypes.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+{\ttfamily \#include $<$stddef.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___unit_vector__}{F\-T\-\_\-\-Unit\-Vector\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___matrix__}{F\-T\-\_\-\-Matrix\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___data__}{F\-T\-\_\-\-Data\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___generic__}{F\-T\-\_\-\-Generic\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___list_node_rec__}{F\-T\-\_\-\-List\-Node\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___list_rec__}{F\-T\-\_\-\-List\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G}(\-\_\-x1, \-\_\-x2, \-\_\-x3, \-\_\-x4)
+\item 
+\#define \hyperlink{fttypes_8h_a9764414c233608bcb9eadec7b0176b81}{F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y}(list)~( (list).head == 0 )
+\item 
+\#define \hyperlink{fttypes_8h_afff9449b4bfddb61e84999323e0a63cb}{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E}(\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x})~( (\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}) \& 0x\-F\-F )
+\item 
+\#define \hyperlink{fttypes_8h_abbc7eeaf0bd79560c628796882db0979}{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E}(\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x})~( (\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}) \& 0x\-F\-F00\-U )
+\item 
+\#define \hyperlink{fttypes_8h_adf712510036d534403cbddf4f18c2083}{F\-T\-\_\-\-B\-O\-O\-L}(\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x})~( (\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool})( \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x} ) )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef signed short \hyperlink{fttypes_8h_a9d5217c79dbe2bd92c67d16b0d990871}{F\-T\-\_\-\-F\-Word}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} short \hyperlink{fttypes_8h_a9bef318099bda61f71a06401600eaf99}{F\-T\-\_\-\-U\-F\-Word}
+\item 
+typedef signed char \hyperlink{fttypes_8h_a0f851552b050883885f0a0855771f39d}{F\-T\-\_\-\-Char}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} char \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte}
+\item 
+typedef const \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte} $\ast$ \hyperlink{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}{F\-T\-\_\-\-Bytes}
+\item 
+typedef F\-T\-\_\-\-U\-Int32 \hyperlink{fttypes_8h_a2f5309d952d5dd1322fde413fc1c6b33}{F\-T\-\_\-\-Tag}
+\item 
+typedef char \hyperlink{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{F\-T\-\_\-\-String}
+\item 
+typedef signed short \hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\-T\-\_\-\-Short}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} short \hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\-T\-\_\-\-U\-Short}
+\item 
+typedef signed \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\-T\-\_\-\-Int}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int}
+\item 
+typedef signed \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long}
+\item 
+typedef signed short \hyperlink{fttypes_8h_a430d070e946e531a607ae350e822ffca}{F\-T\-\_\-\-F2\-Dot14}
+\item 
+typedef signed \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{fttypes_8h_a382164b17e99c3184911d941b2586853}{F\-T\-\_\-\-F26\-Dot6}
+\item 
+typedef signed \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed}
+\item 
+typedef \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$ \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer}
+\item 
+typedef size\-\_\-t \hyperlink{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}{F\-T\-\_\-\-Offset}
+\item 
+typedef \hyperlink{ftstdlib_8h_a63186b10caa756b947299d85c1d20155}{ft\-\_\-ptrdiff\-\_\-t} \hyperlink{fttypes_8h_a2469cb02129d36e468be22f7a8bf5b33}{F\-T\-\_\-\-Ptr\-Dist}
+\item 
+typedef struct \hyperlink{struct_f_t___unit_vector__}{F\-T\-\_\-\-Unit\-Vector\-\_\-} \hyperlink{fttypes_8h_a90959f545e83c2f58596c7b3a9d333ad}{F\-T\-\_\-\-Unit\-Vector}
+\item 
+typedef struct \hyperlink{struct_f_t___matrix__}{F\-T\-\_\-\-Matrix\-\_\-} \hyperlink{fttypes_8h_afeacbc4365cf2ad77162b6292f3e3e23}{F\-T\-\_\-\-Matrix}
+\item 
+typedef struct \hyperlink{struct_f_t___data__}{F\-T\-\_\-\-Data\-\_\-} \hyperlink{fttypes_8h_ace332b44e638cab5430903256dd11ee1}{F\-T\-\_\-\-Data}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{fttypes_8h_a8ca4797cb3ccca807d7ecfcb49f0c491}{F\-T\-\_\-\-Generic\-\_\-\-Finalizer} )(\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$object)
+\item 
+typedef struct \hyperlink{struct_f_t___generic__}{F\-T\-\_\-\-Generic\-\_\-} \hyperlink{fttypes_8h_ae15e8550dd7d863328686aadaead5c77}{F\-T\-\_\-\-Generic}
+\item 
+typedef struct \hyperlink{struct_f_t___list_node_rec__}{F\-T\-\_\-\-List\-Node\-Rec\-\_\-} $\ast$ \hyperlink{fttypes_8h_a155e4980a42c16fbc221ad40b2b59695}{F\-T\-\_\-\-List\-Node}
+\item 
+typedef struct \hyperlink{struct_f_t___list_rec__}{F\-T\-\_\-\-List\-Rec\-\_\-} $\ast$ \hyperlink{fttypes_8h_a9443166f293e01a3cb6346f3d499b755}{F\-T\-\_\-\-List}
+\item 
+typedef struct \hyperlink{struct_f_t___list_node_rec__}{F\-T\-\_\-\-List\-Node\-Rec\-\_\-} \hyperlink{fttypes_8h_a3c855ef140c27779a1e2149d5c94e938}{F\-T\-\_\-\-List\-Node\-Rec}
+\item 
+typedef struct \hyperlink{struct_f_t___list_rec__}{F\-T\-\_\-\-List\-Rec\-\_\-} \hyperlink{fttypes_8h_ac01ed10278dab3cb3f046dba687b50ed}{F\-T\-\_\-\-List\-Rec}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftheader_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef \\*
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} char \hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\-T\-\_\-\-Bool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{fttypes_8h_adf712510036d534403cbddf4f18c2083}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-B\-O\-O\-L@{F\-T\-\_\-\-B\-O\-O\-L}}
+\index{F\-T\-\_\-\-B\-O\-O\-L@{F\-T\-\_\-\-B\-O\-O\-L}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-B\-O\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-B\-O\-O\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~( ({\bf F\-T\-\_\-\-Bool})( {\bf x} ) )}}\label{fttypes_8h_adf712510036d534403cbddf4f18c2083}
+\hypertarget{fttypes_8h_afff9449b4bfddb61e84999323e0a63cb}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E@{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E}}
+\index{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E@{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-B\-A\-S\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~( ({\bf x}) \& 0x\-F\-F )}}\label{fttypes_8h_afff9449b4bfddb61e84999323e0a63cb}
+\hypertarget{fttypes_8h_abbc7eeaf0bd79560c628796882db0979}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E@{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E}}
+\index{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E@{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-O\-D\-U\-L\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~( ({\bf x}) \& 0x\-F\-F00\-U )}}\label{fttypes_8h_abbc7eeaf0bd79560c628796882db0979}
+\hypertarget{fttypes_8h_a9764414c233608bcb9eadec7b0176b81}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y@{F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y}}
+\index{F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y@{F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-S\-\_\-\-E\-M\-P\-T\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{list}
+\end{DoxyParamCaption}
+)~( (list).head == 0 )}}\label{fttypes_8h_a9764414c233608bcb9eadec7b0176b81}
+\hypertarget{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G@{F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G}}
+\index{F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G@{F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-A\-K\-E\-\_\-\-T\-A\-G(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-x1, }
+\item[{}]{\-\_\-x2, }
+\item[{}]{\-\_\-x3, }
+\item[{}]{\-\_\-x4}
+\end{DoxyParamCaption}
+)}}\label{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+(\hyperlink{fttypes_8h_a2f5309d952d5dd1322fde413fc1c6b33}{FT\_Tag})                        \(\backslash\)
+          ( ( (\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{FT\_ULong})\_x1 << 24 ) |     \(\backslash\)
+            ( (\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{FT\_ULong})\_x2 << 16 ) |     \(\backslash\)
+            ( (\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{FT\_ULong})\_x3 <<  8 ) |     \(\backslash\)
+              (\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{FT\_ULong})\_x4         )
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Byte@{F\-T\-\_\-\-Byte}}
+\index{F\-T\-\_\-\-Byte@{F\-T\-\_\-\-Byte}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} char {\bf F\-T\-\_\-\-Byte}}}\label{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}
+\hypertarget{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Bytes@{F\-T\-\_\-\-Bytes}}
+\index{F\-T\-\_\-\-Bytes@{F\-T\-\_\-\-Bytes}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}typedef const {\bf F\-T\-\_\-\-Byte}$\ast$ {\bf F\-T\-\_\-\-Bytes}}}\label{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}
+\hypertarget{fttypes_8h_a0f851552b050883885f0a0855771f39d}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Char@{F\-T\-\_\-\-Char}}
+\index{F\-T\-\_\-\-Char@{F\-T\-\_\-\-Char}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Char}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed char {\bf F\-T\-\_\-\-Char}}}\label{fttypes_8h_a0f851552b050883885f0a0855771f39d}
+\hypertarget{fttypes_8h_ace332b44e638cab5430903256dd11ee1}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Data@{F\-T\-\_\-\-Data}}
+\index{F\-T\-\_\-\-Data@{F\-T\-\_\-\-Data}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Data\-\_\-}  {\bf F\-T\-\_\-\-Data}}}\label{fttypes_8h_ace332b44e638cab5430903256dd11ee1}
+\hypertarget{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Error@{F\-T\-\_\-\-Error}}
+\index{F\-T\-\_\-\-Error@{F\-T\-\_\-\-Error}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Error}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf int} {\bf F\-T\-\_\-\-Error}}}\label{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}
+\hypertarget{fttypes_8h_a382164b17e99c3184911d941b2586853}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-F26\-Dot6@{F\-T\-\_\-\-F26\-Dot6}}
+\index{F\-T\-\_\-\-F26\-Dot6@{F\-T\-\_\-\-F26\-Dot6}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-F26\-Dot6}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed {\bf long} {\bf F\-T\-\_\-\-F26\-Dot6}}}\label{fttypes_8h_a382164b17e99c3184911d941b2586853}
+\hypertarget{fttypes_8h_a430d070e946e531a607ae350e822ffca}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-F2\-Dot14@{F\-T\-\_\-\-F2\-Dot14}}
+\index{F\-T\-\_\-\-F2\-Dot14@{F\-T\-\_\-\-F2\-Dot14}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-F2\-Dot14}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed short {\bf F\-T\-\_\-\-F2\-Dot14}}}\label{fttypes_8h_a430d070e946e531a607ae350e822ffca}
+\hypertarget{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Fixed@{F\-T\-\_\-\-Fixed}}
+\index{F\-T\-\_\-\-Fixed@{F\-T\-\_\-\-Fixed}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Fixed}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed {\bf long} {\bf F\-T\-\_\-\-Fixed}}}\label{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}
+\hypertarget{fttypes_8h_a9d5217c79dbe2bd92c67d16b0d990871}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-F\-Word@{F\-T\-\_\-\-F\-Word}}
+\index{F\-T\-\_\-\-F\-Word@{F\-T\-\_\-\-F\-Word}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-F\-Word}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed short {\bf F\-T\-\_\-\-F\-Word}}}\label{fttypes_8h_a9d5217c79dbe2bd92c67d16b0d990871}
+\hypertarget{fttypes_8h_ae15e8550dd7d863328686aadaead5c77}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Generic@{F\-T\-\_\-\-Generic}}
+\index{F\-T\-\_\-\-Generic@{F\-T\-\_\-\-Generic}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Generic}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Generic\-\_\-}  {\bf F\-T\-\_\-\-Generic}}}\label{fttypes_8h_ae15e8550dd7d863328686aadaead5c77}
+\hypertarget{fttypes_8h_a8ca4797cb3ccca807d7ecfcb49f0c491}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Generic\-\_\-\-Finalizer@{F\-T\-\_\-\-Generic\-\_\-\-Finalizer}}
+\index{F\-T\-\_\-\-Generic\-\_\-\-Finalizer@{F\-T\-\_\-\-Generic\-\_\-\-Finalizer}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Generic\-\_\-\-Finalizer}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Generic\-\_\-\-Finalizer)({\bf void} $\ast$object)}}\label{fttypes_8h_a8ca4797cb3ccca807d7ecfcb49f0c491}
+\hypertarget{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Int@{F\-T\-\_\-\-Int}}
+\index{F\-T\-\_\-\-Int@{F\-T\-\_\-\-Int}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Int}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed {\bf int} {\bf F\-T\-\_\-\-Int}}}\label{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}
+\hypertarget{fttypes_8h_a9443166f293e01a3cb6346f3d499b755}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-List@{F\-T\-\_\-\-List}}
+\index{F\-T\-\_\-\-List@{F\-T\-\_\-\-List}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-List}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-List\-Rec\-\_\-}$\ast$ {\bf F\-T\-\_\-\-List}}}\label{fttypes_8h_a9443166f293e01a3cb6346f3d499b755}
+\hypertarget{fttypes_8h_a155e4980a42c16fbc221ad40b2b59695}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-List\-Node@{F\-T\-\_\-\-List\-Node}}
+\index{F\-T\-\_\-\-List\-Node@{F\-T\-\_\-\-List\-Node}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-List\-Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-List\-Node\-Rec\-\_\-}$\ast$ {\bf F\-T\-\_\-\-List\-Node}}}\label{fttypes_8h_a155e4980a42c16fbc221ad40b2b59695}
+\hypertarget{fttypes_8h_a3c855ef140c27779a1e2149d5c94e938}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-List\-Node\-Rec@{F\-T\-\_\-\-List\-Node\-Rec}}
+\index{F\-T\-\_\-\-List\-Node\-Rec@{F\-T\-\_\-\-List\-Node\-Rec}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-List\-Node\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-List\-Node\-Rec\-\_\-}  {\bf F\-T\-\_\-\-List\-Node\-Rec}}}\label{fttypes_8h_a3c855ef140c27779a1e2149d5c94e938}
+\hypertarget{fttypes_8h_ac01ed10278dab3cb3f046dba687b50ed}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-List\-Rec@{F\-T\-\_\-\-List\-Rec}}
+\index{F\-T\-\_\-\-List\-Rec@{F\-T\-\_\-\-List\-Rec}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-List\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-List\-Rec\-\_\-}  {\bf F\-T\-\_\-\-List\-Rec}}}\label{fttypes_8h_ac01ed10278dab3cb3f046dba687b50ed}
+\hypertarget{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Long@{F\-T\-\_\-\-Long}}
+\index{F\-T\-\_\-\-Long@{F\-T\-\_\-\-Long}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Long}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed {\bf long} {\bf F\-T\-\_\-\-Long}}}\label{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}
+\hypertarget{fttypes_8h_afeacbc4365cf2ad77162b6292f3e3e23}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Matrix@{F\-T\-\_\-\-Matrix}}
+\index{F\-T\-\_\-\-Matrix@{F\-T\-\_\-\-Matrix}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Matrix\-\_\-}  {\bf F\-T\-\_\-\-Matrix}}}\label{fttypes_8h_afeacbc4365cf2ad77162b6292f3e3e23}
+\hypertarget{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Offset@{F\-T\-\_\-\-Offset}}
+\index{F\-T\-\_\-\-Offset@{F\-T\-\_\-\-Offset}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf F\-T\-\_\-\-Offset}}}\label{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}
+\hypertarget{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Pointer@{F\-T\-\_\-\-Pointer}}
+\index{F\-T\-\_\-\-Pointer@{F\-T\-\_\-\-Pointer}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$ {\bf F\-T\-\_\-\-Pointer}}}\label{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}
+\hypertarget{fttypes_8h_a2469cb02129d36e468be22f7a8bf5b33}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Ptr\-Dist@{F\-T\-\_\-\-Ptr\-Dist}}
+\index{F\-T\-\_\-\-Ptr\-Dist@{F\-T\-\_\-\-Ptr\-Dist}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Ptr\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ft\-\_\-ptrdiff\-\_\-t} {\bf F\-T\-\_\-\-Ptr\-Dist}}}\label{fttypes_8h_a2469cb02129d36e468be22f7a8bf5b33}
+\hypertarget{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Short@{F\-T\-\_\-\-Short}}
+\index{F\-T\-\_\-\-Short@{F\-T\-\_\-\-Short}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Short}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed short {\bf F\-T\-\_\-\-Short}}}\label{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}
+\hypertarget{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-String@{F\-T\-\_\-\-String}}
+\index{F\-T\-\_\-\-String@{F\-T\-\_\-\-String}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-String}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf F\-T\-\_\-\-String}}}\label{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}
+\hypertarget{fttypes_8h_a2f5309d952d5dd1322fde413fc1c6b33}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Tag@{F\-T\-\_\-\-Tag}}
+\index{F\-T\-\_\-\-Tag@{F\-T\-\_\-\-Tag}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}typedef F\-T\-\_\-\-U\-Int32 {\bf F\-T\-\_\-\-Tag}}}\label{fttypes_8h_a2f5309d952d5dd1322fde413fc1c6b33}
+\hypertarget{fttypes_8h_a9bef318099bda61f71a06401600eaf99}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-U\-F\-Word@{F\-T\-\_\-\-U\-F\-Word}}
+\index{F\-T\-\_\-\-U\-F\-Word@{F\-T\-\_\-\-U\-F\-Word}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-U\-F\-Word}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} short {\bf F\-T\-\_\-\-U\-F\-Word}}}\label{fttypes_8h_a9bef318099bda61f71a06401600eaf99}
+\hypertarget{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-U\-Int@{F\-T\-\_\-\-U\-Int}}
+\index{F\-T\-\_\-\-U\-Int@{F\-T\-\_\-\-U\-Int}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-U\-Int}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} {\bf int} {\bf F\-T\-\_\-\-U\-Int}}}\label{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}
+\hypertarget{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-U\-Long@{F\-T\-\_\-\-U\-Long}}
+\index{F\-T\-\_\-\-U\-Long@{F\-T\-\_\-\-U\-Long}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-U\-Long}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} {\bf long} {\bf F\-T\-\_\-\-U\-Long}}}\label{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}
+\hypertarget{fttypes_8h_a90959f545e83c2f58596c7b3a9d333ad}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Unit\-Vector@{F\-T\-\_\-\-Unit\-Vector}}
+\index{F\-T\-\_\-\-Unit\-Vector@{F\-T\-\_\-\-Unit\-Vector}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Unit\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Unit\-Vector\-\_\-}  {\bf F\-T\-\_\-\-Unit\-Vector}}}\label{fttypes_8h_a90959f545e83c2f58596c7b3a9d333ad}
+\hypertarget{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-U\-Short@{F\-T\-\_\-\-U\-Short}}
+\index{F\-T\-\_\-\-U\-Short@{F\-T\-\_\-\-U\-Short}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-U\-Short}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} short {\bf F\-T\-\_\-\-U\-Short}}}\label{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}
+
+
+\subsection{Variable Documentation}
+\hypertarget{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{\index{fttypes.\-h@{fttypes.\-h}!F\-T\-\_\-\-Bool@{F\-T\-\_\-\-Bool}}
+\index{F\-T\-\_\-\-Bool@{F\-T\-\_\-\-Bool}!fttypes.h@{fttypes.\-h}}
+\subsubsection[{F\-T\-\_\-\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef {\bf unsigned} char F\-T\-\_\-\-Bool}}\label{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}

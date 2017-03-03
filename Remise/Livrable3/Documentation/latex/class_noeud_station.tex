@@ -1,0 +1,93 @@
+\hypertarget{class_noeud_station}{\section{Noeud\-Station Class Reference}
+\label{class_noeud_station}\index{Noeud\-Station@{Noeud\-Station}}
+}
+
+
+Cette classe permet d'afficher une \hyperlink{class_station}{Station} grace a l'arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\-Station.\-h$>$}
+
+Inheritance diagram for Noeud\-Station\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_station}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_noeud_station_aa5d82a821e4662d843f5d6a4575fa55c}{Noeud\-Station} (const std\-::string \&type)
+\item 
+\hyperlink{class_noeud_station_a2b47ef290b117b0ec9b585b61bfc9bbe}{Noeud\-Station} (const \hyperlink{class_noeud_station}{Noeud\-Station} \&src)
+\item 
+\hyperlink{class_noeud_station_a8d3b3efc21e863912a2e336835e4abec}{$\sim$\-Noeud\-Station} ()
+\item 
+virtual void \hyperlink{class_noeud_station_a91d4bb1205eccd2f1757fb2812542ad0}{animer} (float dt)
+\item 
+\hypertarget{class_noeud_station_aa196ba98d1d45483745e2ffe2659f92d}{virtual void \hyperlink{class_noeud_station_aa196ba98d1d45483745e2ffe2659f92d}{afficher\-Concret} () const }\label{class_noeud_station_aa196ba98d1d45483745e2ffe2659f92d}
+
+\begin{DoxyCompactList}\small\item\em Le dessin concret du noeud (pour le moment c'est temporaire. \end{DoxyCompactList}\item 
+\hypertarget{class_noeud_station_a0fb5f01c5e8e6081a72e754f1b86f977}{void \hyperlink{class_noeud_station_a0fb5f01c5e8e6081a72e754f1b86f977}{afficher\-Vie} (const int \&nb\-Vie) const }\label{class_noeud_station_a0fb5f01c5e8e6081a72e754f1b86f977}
+
+\begin{DoxyCompactList}\small\item\em Methode pour afficher le nombre de vies de la station. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe permet d'afficher une \hyperlink{class_station}{Station} grace a l'arbre de rendu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_noeud_station_aa5d82a821e4662d843f5d6a4575fa55c}{\index{Noeud\-Station@{Noeud\-Station}!Noeud\-Station@{Noeud\-Station}}
+\index{Noeud\-Station@{Noeud\-Station}!NoeudStation@{Noeud\-Station}}
+\subsubsection[{Noeud\-Station}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Station\-::\-Noeud\-Station (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_station_aa5d82a821e4662d843f5d6a4575fa55c}
+Constructeur. Creer la liste d'affichage pour la station 
+\begin{DoxyParams}{Parameters}
+{\em type} & Le type du noeud \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_station_a2b47ef290b117b0ec9b585b61bfc9bbe}{\index{Noeud\-Station@{Noeud\-Station}!Noeud\-Station@{Noeud\-Station}}
+\index{Noeud\-Station@{Noeud\-Station}!NoeudStation@{Noeud\-Station}}
+\subsubsection[{Noeud\-Station}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Station\-::\-Noeud\-Station (
+\begin{DoxyParamCaption}
+\item[{const {\bf Noeud\-Station} \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_station_a2b47ef290b117b0ec9b585b61bfc9bbe}
+Constructeur par copie 
+\begin{DoxyParams}{Parameters}
+{\em src} & L'objet que l'on veut copier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_station_a8d3b3efc21e863912a2e336835e4abec}{\index{Noeud\-Station@{Noeud\-Station}!$\sim$\-Noeud\-Station@{$\sim$\-Noeud\-Station}}
+\index{$\sim$\-Noeud\-Station@{$\sim$\-Noeud\-Station}!NoeudStation@{Noeud\-Station}}
+\subsubsection[{$\sim$\-Noeud\-Station}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Station\-::$\sim$\-Noeud\-Station (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_station_a8d3b3efc21e863912a2e336835e4abec}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_noeud_station_a91d4bb1205eccd2f1757fb2812542ad0}{\index{Noeud\-Station@{Noeud\-Station}!animer@{animer}}
+\index{animer@{animer}!NoeudStation@{Noeud\-Station}}
+\subsubsection[{animer}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\-Station\-::animer (
+\begin{DoxyParamCaption}
+\item[{float}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_noeud_station_a91d4bb1205eccd2f1757fb2812542ad0}
+Animation du noeud 
+
+Reimplemented from \hyperlink{group__inf2990_gadc6ebe69894dbb682fdd0ecb1b6c11e9}{Noeud\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/\hyperlink{_noeud_station_8h}{Noeud\-Station.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/Noeud\-Station.\-cpp\end{DoxyCompactItemize}

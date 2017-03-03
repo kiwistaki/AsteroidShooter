@@ -1,0 +1,13 @@
+<?xml version="1,0" ?>
+<Root>
+    <NiveauDiff diff="2" />
+    <FrequenceAsteroide frequenceAsteroide="2.005" />
+    <NbMinDeStation nbMinDeStation="1" />
+    <BonusAcceleration bonusAcceleration="10" />
+    <ConteneurElement>
+        <Element type="7" id="1" posX="-50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="7" id="2" posX="50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="9" posX="-48" posY="640" posZ="-0" angle="218.798" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="10" posX="4" posY="-452" posZ="-0" angle="205.398" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+    </ConteneurElement>
+</Root>

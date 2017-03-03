@@ -1,0 +1,38 @@
+﻿Build started 2014-04-14 3:43:22 PM.
+     1>Project "C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Commun\Utilitaire\Utilitaire.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\Externe\FreeImage\include /I. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt Vue\Camera.cpp Vue\ProjectionOrtho.cpp Vue\ProjectionPerspect.cpp Vue\Vue.cpp Vue\VueOrtho.cpp Vue\VuePerspect.cpp
+         VuePerspect.cpp
+         Generating Code...
+         Compiling...
+         VueOrtho.cpp
+         Vue.cpp
+         ProjectionPerspect.cpp
+         ProjectionOrtho.cpp
+         Camera.cpp
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\x64\Debug\Utilitaire.lib" FreeImage.lib /LIBPATH:..\Externe\FreeImage\lib /NOLOGO x64\Debug\AideCollision.obj
+         x64\Debug\AideGL.obj
+         x64\Debug\BoiteEnglobanteOrientee.obj
+         x64\Debug\BoiteEnvironnement.obj
+         x64\Debug\CEcritureFichierBinaire.obj
+         x64\Debug\CLectureFichierBinaire.obj
+         x64\Debug\CompteurAffichage.obj
+         x64\Debug\Droite3D.obj
+         x64\Debug\EtatOpenGL.obj
+         x64\Debug\Plan3D.obj
+         x64\Debug\Utilitaire.obj
+         x64\Debug\Camera.obj
+         x64\Debug\Projection.obj
+         x64\Debug\ProjectionOrtho.obj
+         x64\Debug\ProjectionPerspect.obj
+         x64\Debug\Vue.obj
+         x64\Debug\VueOrtho.obj
+         x64\Debug\VuePerspect.obj
+         Utilitaire.vcxproj -> C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\x64\Debug\Utilitaire.lib
+     1>Done Building Project "C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Commun\Utilitaire\Utilitaire.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.16

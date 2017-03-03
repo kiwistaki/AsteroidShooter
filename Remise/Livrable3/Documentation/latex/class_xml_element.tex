@@ -1,0 +1,302 @@
+\hypertarget{class_xml_element}{\section{Xml\-Element Class Reference}
+\label{class_xml_element}\index{Xml\-Element@{Xml\-Element}}
+}
+
+
+A X\-M\-L Element.  
+
+
+
+
+{\ttfamily \#include $<$Xml\-Element.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_xml_element_a94d6c15e996994d62316b198f369d675}{Xml\-Element} (std\-::string element\-Name, std\-::string \hyperlink{class_xml_element_a3fea4e46ca4e63ceb905a96a8f304381}{content}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs an element with the specified name and string content. \end{DoxyCompactList}\item 
+\hyperlink{class_xml_element_a879b90d96dc87b6f7ebb9c67ba92cb73}{Xml\-Element} (std\-::string element\-Name, int numeric\-Content)
+\begin{DoxyCompactList}\small\item\em Constructs an element with the specified name and numeric content. \end{DoxyCompactList}\item 
+\hypertarget{class_xml_element_ac862c3db543830858fba97c6196afd6b}{virtual \hyperlink{class_xml_element_ac862c3db543830858fba97c6196afd6b}{$\sim$\-Xml\-Element} ()}\label{class_xml_element_ac862c3db543830858fba97c6196afd6b}
+
+\begin{DoxyCompactList}\small\item\em Destructs the element and its child elements. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_xml_element_a924c45bc90419123174ac9d11089cb6d}{name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the name of the element. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_xml_element_a3fea4e46ca4e63ceb905a96a8f304381}{content} () const 
+\begin{DoxyCompactList}\small\item\em Returns the content of the element. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_element_a0ed6ad08fd972865cca13ae2594fedda}{set\-Name} (const std\-::string \&\hyperlink{class_xml_element_a924c45bc90419123174ac9d11089cb6d}{name})
+\begin{DoxyCompactList}\small\item\em Sets the name of the element. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_element_aaf32abf7cdaf31b8896f52a7859d9826}{set\-Content} (const std\-::string \&\hyperlink{class_xml_element_a3fea4e46ca4e63ceb905a96a8f304381}{content})
+\begin{DoxyCompactList}\small\item\em Sets the content of the element. \end{DoxyCompactList}\item 
+\hypertarget{class_xml_element_ae8d473f1d193157158ae36e12929d387}{void {\bfseries set\-Content} (int numeric\-Content)}\label{class_xml_element_ae8d473f1d193157158ae36e12929d387}
+
+\item 
+void \hyperlink{class_xml_element_a14387be9ca6d014a38e95a7aa98f86c5}{add\-Attribute} (std\-::string attribute\-Name, std\-::string value)
+\begin{DoxyCompactList}\small\item\em Adds an attribute with the specified string value. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_element_aec69fb49cf9e563cff9858ddc818f055}{add\-Attribute} (std\-::string attribute\-Name, int numeric\-Value)
+\begin{DoxyCompactList}\small\item\em Adds an attribute with the specified numeric value. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_element_a444321a1de2a7f52994c53f9e6e0d942}{add\-Element} (\hyperlink{class_xml_element}{Xml\-Element} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Adds a child element to the element. \end{DoxyCompactList}\item 
+int \hyperlink{class_xml_element_a2aad0dda599cb46f85ff6b4b897045b9}{element\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of child elements. \end{DoxyCompactList}\item 
+\hyperlink{class_xml_element}{Xml\-Element} $\ast$ \hyperlink{class_xml_element_ac9ba93d91eaeff1467b1901f0f1cce07}{element\-At} (int index) const 
+\begin{DoxyCompactList}\small\item\em Returns the child element at the specified index. \end{DoxyCompactList}\item 
+\hyperlink{class_xml_element}{Xml\-Element} $\ast$ \hyperlink{class_xml_element_aca7f7e9cc621ee96805e8c69710006e8}{element\-For} (const std\-::string \&\hyperlink{class_xml_element_a924c45bc90419123174ac9d11089cb6d}{name}) const 
+\begin{DoxyCompactList}\small\item\em Returns the first child element with the specified name. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_xml_element_a2e783a5fed6b5b31b2d11117e6c83d40}{to\-String} (const std\-::string \&indent=\char`\"{}\char`\"{}) const 
+\begin{DoxyCompactList}\small\item\em Returns a X\-M\-L string that represents the element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A X\-M\-L Element. 
+
+A X\-M\-L element has\-:
+\begin{DoxyItemize}
+\item a name, specified on construction,
+\item a content, specified on construction (may be empty),
+\item zero or more attributes, added with \hyperlink{class_xml_element_a14387be9ca6d014a38e95a7aa98f86c5}{add\-Attribute()},
+\item zero or more child elements, added with \hyperlink{class_xml_element_a444321a1de2a7f52994c53f9e6e0d942}{add\-Element()}. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_xml_element_a94d6c15e996994d62316b198f369d675}{\index{Xml\-Element@{Xml\-Element}!Xml\-Element@{Xml\-Element}}
+\index{Xml\-Element@{Xml\-Element}!XmlElement@{Xml\-Element}}
+\subsubsection[{Xml\-Element}]{\setlength{\rightskip}{0pt plus 5cm}Xml\-Element\-::\-Xml\-Element (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{element\-Name, }
+\item[{std\-::string}]{content = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_a94d6c15e996994d62316b198f369d675}
+
+
+Constructs an element with the specified name and string content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element\-Name} & Name of the element. Must not be empty. \\
+\hline
+{\em content} & Content of the element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_element_a879b90d96dc87b6f7ebb9c67ba92cb73}{\index{Xml\-Element@{Xml\-Element}!Xml\-Element@{Xml\-Element}}
+\index{Xml\-Element@{Xml\-Element}!XmlElement@{Xml\-Element}}
+\subsubsection[{Xml\-Element}]{\setlength{\rightskip}{0pt plus 5cm}Xml\-Element\-::\-Xml\-Element (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{element\-Name, }
+\item[{int}]{numeric\-Content}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_a879b90d96dc87b6f7ebb9c67ba92cb73}
+
+
+Constructs an element with the specified name and numeric content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element\-Name} & Name of the element. Must not be empty. \\
+\hline
+{\em numeric\-Content} & Content of the element. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_xml_element_a14387be9ca6d014a38e95a7aa98f86c5}{\index{Xml\-Element@{Xml\-Element}!add\-Attribute@{add\-Attribute}}
+\index{add\-Attribute@{add\-Attribute}!XmlElement@{Xml\-Element}}
+\subsubsection[{add\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\-Element\-::add\-Attribute (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{attribute\-Name, }
+\item[{std\-::string}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_a14387be9ca6d014a38e95a7aa98f86c5}
+
+
+Adds an attribute with the specified string value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attribute\-Name} & Name of the attribute. Must not be an empty. \\
+\hline
+{\em value} & Value of the attribute. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_element_aec69fb49cf9e563cff9858ddc818f055}{\index{Xml\-Element@{Xml\-Element}!add\-Attribute@{add\-Attribute}}
+\index{add\-Attribute@{add\-Attribute}!XmlElement@{Xml\-Element}}
+\subsubsection[{add\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\-Element\-::add\-Attribute (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{attribute\-Name, }
+\item[{int}]{numeric\-Value}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_aec69fb49cf9e563cff9858ddc818f055}
+
+
+Adds an attribute with the specified numeric value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attribute\-Name} & Name of the attribute. Must not be empty. \\
+\hline
+{\em numeric\-Value} & Numeric value of the attribute. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_element_a444321a1de2a7f52994c53f9e6e0d942}{\index{Xml\-Element@{Xml\-Element}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!XmlElement@{Xml\-Element}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\-Element\-::add\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Element} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_a444321a1de2a7f52994c53f9e6e0d942}
+
+
+Adds a child element to the element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & Child element to add. Must not be {\ttfamily N\-U\-L\-L}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_element_a3fea4e46ca4e63ceb905a96a8f304381}{\index{Xml\-Element@{Xml\-Element}!content@{content}}
+\index{content@{content}!XmlElement@{Xml\-Element}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Xml\-Element\-::content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_element_a3fea4e46ca4e63ceb905a96a8f304381}
+
+
+Returns the content of the element. 
+
+\begin{DoxyReturn}{Returns}
+Content of the element. 
+\end{DoxyReturn}
+\hypertarget{class_xml_element_ac9ba93d91eaeff1467b1901f0f1cce07}{\index{Xml\-Element@{Xml\-Element}!element\-At@{element\-At}}
+\index{element\-At@{element\-At}!XmlElement@{Xml\-Element}}
+\subsubsection[{element\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Xml\-Element}$\ast$ Xml\-Element\-::element\-At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_element_ac9ba93d91eaeff1467b1901f0f1cce07}
+
+
+Returns the child element at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based index of the element to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Element at the specified index. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if {\itshape index} $<$ 0 or index $>$= \hyperlink{class_xml_element_a2aad0dda599cb46f85ff6b4b897045b9}{element\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_xml_element_a2aad0dda599cb46f85ff6b4b897045b9}{\index{Xml\-Element@{Xml\-Element}!element\-Count@{element\-Count}}
+\index{element\-Count@{element\-Count}!XmlElement@{Xml\-Element}}
+\subsubsection[{element\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\-Element\-::element\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_element_a2aad0dda599cb46f85ff6b4b897045b9}
+
+
+Returns the number of child elements. 
+
+\begin{DoxyReturn}{Returns}
+Number of child elements (element added with \hyperlink{class_xml_element_a444321a1de2a7f52994c53f9e6e0d942}{add\-Element()}). 
+\end{DoxyReturn}
+\hypertarget{class_xml_element_aca7f7e9cc621ee96805e8c69710006e8}{\index{Xml\-Element@{Xml\-Element}!element\-For@{element\-For}}
+\index{element\-For@{element\-For}!XmlElement@{Xml\-Element}}
+\subsubsection[{element\-For}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Xml\-Element}$\ast$ Xml\-Element\-::element\-For (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_element_aca7f7e9cc621ee96805e8c69710006e8}
+
+
+Returns the first child element with the specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the child element to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+First child element found which is named {\itshape name}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if there is no child element with the specified name. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_xml_element_a924c45bc90419123174ac9d11089cb6d}{\index{Xml\-Element@{Xml\-Element}!name@{name}}
+\index{name@{name}!XmlElement@{Xml\-Element}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Xml\-Element\-::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_element_a924c45bc90419123174ac9d11089cb6d}
+
+
+Returns the name of the element. 
+
+\begin{DoxyReturn}{Returns}
+Name of the element. 
+\end{DoxyReturn}
+\hypertarget{class_xml_element_aaf32abf7cdaf31b8896f52a7859d9826}{\index{Xml\-Element@{Xml\-Element}!set\-Content@{set\-Content}}
+\index{set\-Content@{set\-Content}!XmlElement@{Xml\-Element}}
+\subsubsection[{set\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\-Element\-::set\-Content (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{content}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_aaf32abf7cdaf31b8896f52a7859d9826}
+
+
+Sets the content of the element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & New content for the element.\\
+\hline
+\end{DoxyParams}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.\hypertarget{class_xml_element_a0ed6ad08fd972865cca13ae2594fedda}{\index{Xml\-Element@{Xml\-Element}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!XmlElement@{Xml\-Element}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\-Element\-::set\-Name (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_xml_element_a0ed6ad08fd972865cca13ae2594fedda}
+
+
+Sets the name of the element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & New name for the element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_element_a2e783a5fed6b5b31b2d11117e6c83d40}{\index{Xml\-Element@{Xml\-Element}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!XmlElement@{Xml\-Element}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Xml\-Element\-::to\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{indent = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_element_a2e783a5fed6b5b31b2d11117e6c83d40}
+
+
+Returns a X\-M\-L string that represents the element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indent} & String of spaces representing the amount of 'indent'. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-M\-L string that represents the element, its attributes and its child elements. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/tools/Xml\-Element.\-h\end{DoxyCompactItemize}

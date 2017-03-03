@@ -1,0 +1,19 @@
+<?xml version="1,0" ?>
+<Root>
+    <NiveauDiff diff="1" />
+    <FrequenceAsteroide frequenceAsteroide="3" />
+    <NbMinDeStation nbMinDeStation="1" />
+    <BonusAcceleration bonusAcceleration="10" />
+    <ConteneurElement>
+        <Element type="7" id="1" posX="-50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="7" id="2" posX="50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="3" posX="-32" posY="256" posZ="0" angle="1184.2" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="4" posX="312" posY="36" posZ="0" angle="1174.41" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="5" posX="-368" posY="28" posZ="0" angle="1167.41" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="6" posX="-4" posY="-288" posZ="0" angle="1158.21" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="2" id="33" posX="-111.263" posY="665.763" posZ="-0" angle="0.85133" axeX="0" axeY="0" axeZ="1" tailleX="13.9482" tailleY="1" tailleZ="1" />
+        <Element type="2" id="34" posX="-871.987" posY="-50.5151" posZ="0" angle="-89.203" axeX="0" axeY="0" axeZ="1" tailleX="9.30086" tailleY="1" tailleZ="1" />
+        <Element type="2" id="35" posX="733.556" posY="-90.6681" posZ="-0" angle="-84.5811" axeX="0" axeY="0" axeZ="1" tailleX="9.31569" tailleY="1" tailleZ="1" />
+        <Element type="2" id="36" posX="-34.9313" posY="-733.116" posZ="0" angle="3.75971" axeX="0" axeY="0" axeZ="1" tailleX="13.4322" tailleY="1" tailleZ="1" />
+    </ConteneurElement>
+</Root>

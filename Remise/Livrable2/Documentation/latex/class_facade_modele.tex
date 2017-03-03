@@ -1,0 +1,205 @@
+\hypertarget{class_facade_modele}{\section{Facade\-Modele Class Reference}
+\label{class_facade_modele}\index{Facade\-Modele@{Facade\-Modele}}
+}
+
+
+Classe qui constitue une interface (une facade) sur l'ensemble du modele et des classes qui le composent.  
+
+
+
+
+{\ttfamily \#include $<$Facade\-Modele.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gabf12ccafbabf1049cb8327cf78699a1b}{initialiser\-Open\-G\-L} (H\-W\-N\-D h\-Wnd)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gaddb877ab50988fa2508dc3b84838a88d}{charger\-Configuration} (\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nom\-Fichier)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gac6f2eb4311410473faeab6ce4906be3b}{enregistrer\-Configuration} (\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nom\-Fichier) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gac7b831ce13626514e9637c4533d7c15d}{liberer\-Open\-G\-L} ()
+\begin{DoxyCompactList}\small\item\em Libere le contexte Open\-G\-L. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gac014b43b148f4ef4bb2cf035a329af85}{afficher} (bool en\-Pause) const 
+\begin{DoxyCompactList}\small\item\em Affiche le contenu du modele. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga23bed5e3b226e446cfee30084150f7f7}{afficher\-Base} () const 
+\begin{DoxyCompactList}\small\item\em Affiche la base du contenu du modele. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga249167a1dcfc9593e6a3009fe4b1488d}{recevoir\-Input} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-X, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-Y, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} boutton, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} scroll)
+\item 
+\hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$ \hyperlink{group__inf2990_gaa56cf96b7e381e0f14e2c9a55be913bf}{obtenir\-Vue} ()
+\begin{DoxyCompactList}\small\item\em Retourne la vue courante. \end{DoxyCompactList}\item 
+const \hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\-Rendu\-I\-N\-F2990} $\ast$ \hyperlink{group__inf2990_gaf578161d03b2157cdaa3182900ff61cc}{obtenir\-Arbre\-Rendu\-I\-N\-F2990} () const 
+\begin{DoxyCompactList}\small\item\em Retourne l'arbre de rendu. \end{DoxyCompactList}\item 
+\hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\-Rendu\-I\-N\-F2990} $\ast$ \hyperlink{group__inf2990_ga12d5594db6a9507b24c7e1ffcd6751af}{obtenir\-Arbre\-Rendu\-I\-N\-F2990} ()
+\begin{DoxyCompactList}\small\item\em Retourne l'arbre de rendu. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga17ff9b1c855fc92e4599e90dd955494c}{initialiser} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga6bece5354242a7fe65730f9fd19ff9d2}{initialiser\-Mode\-Edition} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga6ceb0a801047a98e2262537e00face8e}{initialiser\-Partie\-Rapide} (\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nom\-Carte, bool mode\-Coop, bool joueur2\-Virtuel)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga58c1592e43adfcbfe018e2999ec54cc1}{initialiser\-Mode\-Campagne} (bool mode\-Coop, bool joueur2\-Virtuel, vector$<$ \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} $>$ cartes)
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} \hyperlink{group__inf2990_gabc87c923450bc5fcc6e6c613c8865cab}{obtenir\-Informations} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga339a0bfdab7f4dd0bd275ce1543e9256}{prochaine\-Partie} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga6398bf1dc8c02d73af9998ac4e808727}{initialiser\-Mode\-Test} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga24dcb4e32cf104797158b398bafbfbb7}{animer} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} temps)
+\begin{DoxyCompactList}\small\item\em Anime la scene. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga4866a15c25c30931bbcf98b4e9125b1e}{set\-Commande} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} numero\-Outil)
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'appeler une commande. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} \hyperlink{group__inf2990_ga484d69b2f9c6a4ac4c7587d877f8bb84}{get\-Nom\-Carte\-Actuelle} ()
+\begin{DoxyCompactList}\small\item\em Methode qui permet de recuperer le nom de la carte. \end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{group__inf2990_ga19898acea4e21bbe0bebed9011564af5}{get\-Carte} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_facade_modele_a0d405f6bece9e0e409d70c38b68e65e9}{set\-Carte} (\hyperlink{class_carte}{Carte} $\ast$carte)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gaf9c0417629871508d0d7ebed21108126}{set\-Position\-Angle\-Scale\-Objet\-Selectionne} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} pos\-X, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} pos\-Y, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} pos\-Z, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{glew_8h_a6d7a98b0d979b9411a4344a98a7a6122}{angle}, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} scale\-X, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} scale\-Y, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} scale\-Z)
+\item 
+bool \hyperlink{group__inf2990_ga8112f8d4623f5696ac46a1b501fe6a8b}{get\-Position\-Angle\-Scale\-Type\-Objet\-Selectionne} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} floats\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga5ea9f06fe4eaa7e7c6571d3d7c4956d8}{get\-Touches\-Duree\-Jeu\-Point\-De\-Vie} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} floats\mbox{[}$\,$\mbox{]})
+\item 
+size\-\_\-t \hyperlink{group__inf2990_ga39f0aad80adc1f4cedf86cf538904e8e}{get\-Nombre\-Objets\-Selectionnes} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gafae55091b248c33936c27127f0f45143}{map\-Commande} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} commande, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche)
+\begin{DoxyCompactList}\small\item\em Methode qui permet de map la commande a une touche spécifique pour le mode Jeu. \end{DoxyCompactList}\item 
+map$<$ \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} $>$ $\ast$ \hyperlink{class_facade_modele_a5df881c88ba9425c5217834a5ab89013}{get\-Map\-Commandes} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gad73b58407c4f900294e585912d917f3b}{recevoir\-Multiple\-Input} (const vector$<$ \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} $>$ \&touches)
+\item 
+const vector$<$ \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} $>$ \& \hyperlink{class_facade_modele_a8533b2ced3306018bb25ed68ec3bd944}{get\-Touches\-Appuyees} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_facade_modele_ab1824da8a9019558983b7ca5d36e4d20}{set\-Duree\-Jeu} (double duree)
+\begin{DoxyCompactList}\small\item\em Permet de recuperer le temps de jeu. \end{DoxyCompactList}\item 
+double \hyperlink{class_facade_modele_a27a077831c8d0b13cf28410dc16fc432}{get\-Duree\-Jeu} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_facade_modele_a8fab5568d4fdbe20593238bf51b20920}{set\-Pts\-Vie\-Station} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} pts\-Vie)
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir les points de vies des stations. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_facade_modele_af1d34ad2b4f42cec6b18159cf5eb5bd6}{get\-Pts\-De\-Vie\-Station} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_facade_modele_ad967921ed4603493f18df218a9c6ca96}{set\-Temps\-Jeu} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} temps)
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_facade_modele_a9d0b28f4f0a3866411fd0ba7b5c69e4a}{get\-Temps\-Jeu} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_facade_modele_ad7341a892b7674d2c7920e33ecc223e0}{set\-Statut\-Jeu} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} statut)
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_facade_modele_a83bc0b2bfe74b4021902f52cab516122}{get\-Statut\-Jeu} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga7ffb8a9cdcfe5e2d8d67983280916891}{set\-Canvas\-Size\-Max} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} largeur\-Max\-Canvas, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} hauteur\-Max\-Canvas)
+\begin{DoxyCompactList}\small\item\em Setter les plus gros grandeur du canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_facade_modele}{Facade\-Modele} $\ast$ \hyperlink{group__inf2990_gaf52e6d65d1a911d3e1699fc30af97d38}{obtenir\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Obtient l'instance unique de la classe. \end{DoxyCompactList}\item 
+static \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gacbf0495fda26f5be37089470dc5f4372}{liberer\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Libere l'instance unique de la classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui constitue une interface (une facade) sur l'ensemble du modele et des classes qui le composent. 
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/02-\/20 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_facade_modele_a27a077831c8d0b13cf28410dc16fc432}{\index{Facade\-Modele@{Facade\-Modele}!get\-Duree\-Jeu@{get\-Duree\-Jeu}}
+\index{get\-Duree\-Jeu@{get\-Duree\-Jeu}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{get\-Duree\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}double Facade\-Modele\-::get\-Duree\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a27a077831c8d0b13cf28410dc16fc432}
+\hypertarget{class_facade_modele_a5df881c88ba9425c5217834a5ab89013}{\index{Facade\-Modele@{Facade\-Modele}!get\-Map\-Commandes@{get\-Map\-Commandes}}
+\index{get\-Map\-Commandes@{get\-Map\-Commandes}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{get\-Map\-Commandes}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf int},{\bf int}$>$$\ast$ Facade\-Modele\-::get\-Map\-Commandes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a5df881c88ba9425c5217834a5ab89013}
+\hypertarget{class_facade_modele_af1d34ad2b4f42cec6b18159cf5eb5bd6}{\index{Facade\-Modele@{Facade\-Modele}!get\-Pts\-De\-Vie\-Station@{get\-Pts\-De\-Vie\-Station}}
+\index{get\-Pts\-De\-Vie\-Station@{get\-Pts\-De\-Vie\-Station}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{get\-Pts\-De\-Vie\-Station}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Facade\-Modele\-::get\-Pts\-De\-Vie\-Station (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_af1d34ad2b4f42cec6b18159cf5eb5bd6}
+\hypertarget{class_facade_modele_a83bc0b2bfe74b4021902f52cab516122}{\index{Facade\-Modele@{Facade\-Modele}!get\-Statut\-Jeu@{get\-Statut\-Jeu}}
+\index{get\-Statut\-Jeu@{get\-Statut\-Jeu}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{get\-Statut\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Facade\-Modele\-::get\-Statut\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a83bc0b2bfe74b4021902f52cab516122}
+\hypertarget{class_facade_modele_a9d0b28f4f0a3866411fd0ba7b5c69e4a}{\index{Facade\-Modele@{Facade\-Modele}!get\-Temps\-Jeu@{get\-Temps\-Jeu}}
+\index{get\-Temps\-Jeu@{get\-Temps\-Jeu}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{get\-Temps\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Facade\-Modele\-::get\-Temps\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a9d0b28f4f0a3866411fd0ba7b5c69e4a}
+\hypertarget{class_facade_modele_a8533b2ced3306018bb25ed68ec3bd944}{\index{Facade\-Modele@{Facade\-Modele}!get\-Touches\-Appuyees@{get\-Touches\-Appuyees}}
+\index{get\-Touches\-Appuyees@{get\-Touches\-Appuyees}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{get\-Touches\-Appuyees}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<${\bf int}$>$\& Facade\-Modele\-::get\-Touches\-Appuyees (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a8533b2ced3306018bb25ed68ec3bd944}
+\hypertarget{class_facade_modele_a0d405f6bece9e0e409d70c38b68e65e9}{\index{Facade\-Modele@{Facade\-Modele}!set\-Carte@{set\-Carte}}
+\index{set\-Carte@{set\-Carte}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{set\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Facade\-Modele\-::set\-Carte (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{carte}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a0d405f6bece9e0e409d70c38b68e65e9}
+\hypertarget{class_facade_modele_ab1824da8a9019558983b7ca5d36e4d20}{\index{Facade\-Modele@{Facade\-Modele}!set\-Duree\-Jeu@{set\-Duree\-Jeu}}
+\index{set\-Duree\-Jeu@{set\-Duree\-Jeu}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{set\-Duree\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Facade\-Modele\-::set\-Duree\-Jeu (
+\begin{DoxyParamCaption}
+\item[{double}]{duree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_ab1824da8a9019558983b7ca5d36e4d20}
+
+
+Permet de recuperer le temps de jeu. 
+
+\hypertarget{class_facade_modele_a8fab5568d4fdbe20593238bf51b20920}{\index{Facade\-Modele@{Facade\-Modele}!set\-Pts\-Vie\-Station@{set\-Pts\-Vie\-Station}}
+\index{set\-Pts\-Vie\-Station@{set\-Pts\-Vie\-Station}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{set\-Pts\-Vie\-Station}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Facade\-Modele\-::set\-Pts\-Vie\-Station (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{pts\-Vie}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_a8fab5568d4fdbe20593238bf51b20920}
+
+
+Permet d'obtenir les points de vies des stations. 
+
+\hypertarget{class_facade_modele_ad7341a892b7674d2c7920e33ecc223e0}{\index{Facade\-Modele@{Facade\-Modele}!set\-Statut\-Jeu@{set\-Statut\-Jeu}}
+\index{set\-Statut\-Jeu@{set\-Statut\-Jeu}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{set\-Statut\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Facade\-Modele\-::set\-Statut\-Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{statut}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_ad7341a892b7674d2c7920e33ecc223e0}
+\hypertarget{class_facade_modele_ad967921ed4603493f18df218a9c6ca96}{\index{Facade\-Modele@{Facade\-Modele}!set\-Temps\-Jeu@{set\-Temps\-Jeu}}
+\index{set\-Temps\-Jeu@{set\-Temps\-Jeu}!FacadeModele@{Facade\-Modele}}
+\subsubsection[{set\-Temps\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Facade\-Modele\-::set\-Temps\-Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{temps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_facade_modele_ad967921ed4603493f18df218a9c6ca96}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_facade_modele_8h}{Facade\-Modele.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_facade_modele_8cpp}{Facade\-Modele.\-cpp}\end{DoxyCompactItemize}

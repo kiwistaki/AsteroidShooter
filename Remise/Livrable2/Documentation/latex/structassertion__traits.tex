@@ -1,0 +1,72 @@
+\hypertarget{structassertion__traits}{\section{assertion\-\_\-traits$<$ T $>$ Struct Template Reference}
+\label{structassertion__traits}\index{assertion\-\_\-traits$<$ T $>$@{assertion\-\_\-traits$<$ T $>$}}
+}
+
+
+Traits used by \hyperlink{_test_assert_8h_a71162f05be07ef6817d156e77c68b1a3}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L()}.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Assert.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{structassertion__traits_a287c07a4e171256a0128201c7e4c4228}{equal} (const T \&\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, const T \&\hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+static \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{structassertion__traits_a1c96296fb44902b4f22d99b9c3cc7749}{to\-String} (const T \&\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$struct assertion\-\_\-traits$<$ T $>$}
+
+Traits used by \hyperlink{_test_assert_8h_a71162f05be07ef6817d156e77c68b1a3}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L()}. 
+
+Here is an example of specialising these traits\-:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{template}<>
+\textcolor{keyword}{struct }\hyperlink{structassertion__traits}{assertion\_traits}<\hyperlink{_portability_8h_aafb7a81554b1c813a000b5dea7cf76d8}{std}::\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}>   \textcolor{comment}{// specialization for the std::string type}
+\{
+  \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \hyperlink{structassertion__traits_a287c07a4e171256a0128201c7e4c4228}{equal}( \textcolor{keyword}{const} \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}& \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \textcolor{keyword}{const} \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}& 
+      \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y} )
+  \{
+    \textcolor{keywordflow}{return} x == \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y};
+  \}
+
+  \textcolor{keyword}{static} \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string} \hyperlink{structassertion__traits_a1c96296fb44902b4f22d99b9c3cc7749}{toString}( \textcolor{keyword}{const} \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}& 
+      \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x} )
+  \{
+    \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string} text = \textcolor{charliteral}{'"'} + x + \textcolor{charliteral}{'"'};    \textcolor{comment}{// adds quote around the string to see whitespace}
+    OStringStream ost;
+    ost << text;
+    \textcolor{keywordflow}{return} ost.str();
+  \}
+\};
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{structassertion__traits_a287c07a4e171256a0128201c7e4c4228}{\index{assertion\-\_\-traits@{assertion\-\_\-traits}!equal@{equal}}
+\index{equal@{equal}!assertion_traits@{assertion\-\_\-traits}}
+\subsubsection[{equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static bool {\bf assertion\-\_\-traits}$<$ T $>$\-::equal (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structassertion__traits_a287c07a4e171256a0128201c7e4c4228}
+\hypertarget{structassertion__traits_a1c96296fb44902b4f22d99b9c3cc7749}{\index{assertion\-\_\-traits@{assertion\-\_\-traits}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!assertion_traits@{assertion\-\_\-traits}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf std\-::string} {\bf assertion\-\_\-traits}$<$ T $>$\-::to\-String (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structassertion__traits_a1c96296fb44902b4f22d99b9c3cc7749}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_assert_8h}{Test\-Assert.\-h}\end{DoxyCompactItemize}

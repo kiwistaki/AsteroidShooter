@@ -1,0 +1,93 @@
+\hypertarget{class_commande_selection}{\section{Commande\-Selection Class Reference}
+\label{class_commande_selection}\index{Commande\-Selection@{Commande\-Selection}}
+}
+
+
+La classe \hyperlink{class_commande_selection}{Commande\-Selection} permet de selectionner dans la carte des objets de deux manieres differentes\-: de facon ponctuelle (un seul objet est selectionne en cliquant dessus) ou avec une selection elastique (plusieurs objets sont selectionnes).  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Selection.\-h$>$}
+
+Inheritance diagram for Commande\-Selection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_selection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_selection_a144fe79ec6aefd6f1e684f71c2eb7dc8}{Commande\-Selection} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte, vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \&objets\-Selectionnes)
+\item 
+virtual \hyperlink{class_commande_selection_a3c35456e80063269a01c2057fd96e82f}{$\sim$\-Commande\-Selection} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_commande_selection_a1fdf079ab482bbcceb87a7d2eb72c7be}{executer} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-X, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-Y, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} boutton, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_commande_selection}{Commande\-Selection} permet de selectionner dans la carte des objets de deux manieres differentes\-: de facon ponctuelle (un seul objet est selectionne en cliquant dessus) ou avec une selection elastique (plusieurs objets sont selectionnes). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_selection_a144fe79ec6aefd6f1e684f71c2eb7dc8}{\index{Commande\-Selection@{Commande\-Selection}!Commande\-Selection@{Commande\-Selection}}
+\index{Commande\-Selection@{Commande\-Selection}!CommandeSelection@{Commande\-Selection}}
+\subsubsection[{Commande\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Selection\-::\-Commande\-Selection (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte, }
+\item[{vector$<$ {\bf Element\-Jeu\-Abstrait} $\ast$ $>$ \&}]{objets\-Selectionnes}
+\end{DoxyParamCaption}
+)}}\label{class_commande_selection_a144fe79ec6aefd6f1e684f71c2eb7dc8}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+{\em objets\-Selectionnes} & Une reference vers un vecteur qui contiendra les objets selectionnes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_selection_a3c35456e80063269a01c2057fd96e82f}{\index{Commande\-Selection@{Commande\-Selection}!$\sim$\-Commande\-Selection@{$\sim$\-Commande\-Selection}}
+\index{$\sim$\-Commande\-Selection@{$\sim$\-Commande\-Selection}!CommandeSelection@{Commande\-Selection}}
+\subsubsection[{$\sim$\-Commande\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Selection\-::$\sim$\-Commande\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_selection_a3c35456e80063269a01c2057fd96e82f}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_selection_a1fdf079ab482bbcceb87a7d2eb72c7be}{\index{Commande\-Selection@{Commande\-Selection}!executer@{executer}}
+\index{executer@{executer}!CommandeSelection@{Commande\-Selection}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Commande\-Selection\-::executer (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{mouse\-X, }
+\item[{{\bf int}}]{mouse\-Y, }
+\item[{{\bf int}}]{boutton, }
+\item[{{\bf int}}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_selection_a1fdf079ab482bbcceb87a7d2eb72c7be}
+Execute la commande. Permet de selectionner des objets de 2 manieres\-: soit de facon ponctuelle (1 objet) ou avec un rectangle de selection, pour avoir plusieurs objets. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_selection_8h}{Commande\-Selection.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_selection_8cpp}{Commande\-Selection.\-cpp}\end{DoxyCompactItemize}

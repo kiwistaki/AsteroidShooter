@@ -1,0 +1,115 @@
+\hypertarget{class_test_fixture}{\section{Test\-Fixture Class Reference}
+\label{class_test_fixture}\index{Test\-Fixture@{Test\-Fixture}}
+}
+
+
+Wraps a test case with set\-Up and tear\-Down methods.
+
+A \hyperlink{class_test_fixture}{Test\-Fixture} is used to provide a common environment for a set of test cases.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Fixture.\-h$>$}
+
+Inheritance diagram for Test\-Fixture\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.370370cm]{class_test_fixture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_fixture_a0e77590b14a3ec7f93fe02e5b89a242f}{virtual void \hyperlink{class_test_fixture_a0e77590b14a3ec7f93fe02e5b89a242f}{set\-Up} ()}\label{class_test_fixture_a0e77590b14a3ec7f93fe02e5b89a242f}
+
+\begin{DoxyCompactList}\small\item\em Set up context before running a test. \end{DoxyCompactList}\item 
+\hypertarget{class_test_fixture_a707dd4d7d0910af916343d79c0feffc9}{virtual void \hyperlink{class_test_fixture_a707dd4d7d0910af916343d79c0feffc9}{tear\-Down} ()}\label{class_test_fixture_a707dd4d7d0910af916343d79c0feffc9}
+
+\begin{DoxyCompactList}\small\item\em Clean up after the test run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wraps a test case with set\-Up and tear\-Down methods.
+
+A \hyperlink{class_test_fixture}{Test\-Fixture} is used to provide a common environment for a set of test cases. 
+
+To define a test fixture, do the following\-:
+\begin{DoxyItemize}
+\item implement a subclass of \hyperlink{class_test_case}{Test\-Case}
+\item the fixture is defined by instance variables
+\item initialize the fixture state by overriding set\-Up (i.\-e. construct the instance variables of the fixture)
+\item clean-\/up after a test by overriding tear\-Down.
+\end{DoxyItemize}
+
+Each test runs in its own fixture so there can be no side effects among test runs. Here is an example\-:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }MathTest : \textcolor{keyword}{public} CppUnit::TestFixture \{
+\textcolor{keyword}{protected}:
+  \textcolor{keywordtype}{int} m\_value1, m\_value2;
+
+\textcolor{keyword}{public}:
+  MathTest() \{\}
+
+  \textcolor{keywordtype}{void} \hyperlink{class_test_fixture_a0e77590b14a3ec7f93fe02e5b89a242f}{setUp} () \{
+    m\_value1 = 2;
+    m\_value2 = 3;
+  \}
+\}
+\end{DoxyCode}
+
+
+For each test implement a method which interacts with the fixture. Verify the expected results with assertions specified by calling C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T on the expression you want to test\-:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{public}: 
+  \textcolor{keywordtype}{void} testAdd () \{
+    \textcolor{keywordtype}{int} result = m\_value1 + m\_value2;
+    CPPUNIT\_ASSERT( result == 5 );
+  \}
+\end{DoxyCode}
+
+
+Once the methods are defined you can run them. To do this, use a \hyperlink{class_test_caller}{Test\-Caller}.
+
+
+\begin{DoxyCode}
+CppUnit::Test *test = \textcolor{keyword}{new} CppUnit::TestCaller<MathTest>( \textcolor{stringliteral}{"testAdd"}, 
+                                                         &MathTest::testAdd );
+test->run();
+\end{DoxyCode}
+
+
+The tests to be run can be collected into a \hyperlink{class_test_suite}{Test\-Suite}.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{public}: 
+  \textcolor{keyword}{static} CppUnit::TestSuite *MathTest::suite () \{
+     CppUnit::TestSuite *suiteOfTests = \textcolor{keyword}{new} CppUnit::TestSuite;
+     suiteOfTests->addTest(\textcolor{keyword}{new} CppUnit::TestCaller<MathTest>(
+                             \textcolor{stringliteral}{"testAdd"}, &MathTest::testAdd));
+     suiteOfTests->addTest(\textcolor{keyword}{new} CppUnit::TestCaller<MathTest>(
+                             \textcolor{stringliteral}{"testDivideByZero"}, &MathTest::testDivideByZero));
+     \textcolor{keywordflow}{return} suiteOfTests;
+ \}
+\end{DoxyCode}
+
+
+A set of macros have been created for convenience. They are located in \hyperlink{_helper_macros_8h}{Helper\-Macros.\-h}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_result}{Test\-Result}, \hyperlink{class_test_suite}{Test\-Suite}, \hyperlink{class_test_caller}{Test\-Caller}, 
+
+\hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}, \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T}, \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D}, 
+
+\hyperlink{_helper_macros_8h_a2f4071eec88d1e306665ada0f2dd80e4}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-A\-T\-I\-O\-N}, \hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}, \hyperlink{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Fixture.\-h\end{DoxyCompactItemize}

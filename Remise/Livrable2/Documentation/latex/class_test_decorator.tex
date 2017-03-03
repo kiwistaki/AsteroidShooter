@@ -1,0 +1,168 @@
+\hypertarget{class_test_decorator}{\section{Test\-Decorator Class Reference}
+\label{class_test_decorator}\index{Test\-Decorator@{Test\-Decorator}}
+}
+
+
+Decorator for Tests.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Decorator.\-h$>$}
+
+Inheritance diagram for Test\-Decorator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_test_decorator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_decorator_a227e67c84146b23a37b44c24877b45d9}{Test\-Decorator} (\hyperlink{class_test}{Test} $\ast$test)
+\item 
+\hyperlink{class_test_decorator_a91a5d50dce7e822430154c2193dcaf7e}{$\sim$\-Test\-Decorator} ()
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_decorator_add3b489dfb3331eba0aee7e06b03548b}{count\-Test\-Cases} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of test cases invoked by \hyperlink{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}{run()}. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_decorator_acdcf679bba926032d2e4535fca1e9cf0}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result})
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_decorator_aa2fbf0467c6bd599f912415a097e087c}{get\-Child\-Test\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of direct child of the test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_decorator_a029da80376365525d52387a88e6837f4}{do\-Get\-Child\-Test\-At} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\begin{DoxyCompactList}\small\item\em Returns the child test of the specified valid index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_decorator_a621516914e5489ff3f874230f40b7d0d}{m\-\_\-test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Decorator for Tests. 
+
+\hyperlink{class_test_decorator}{Test\-Decorator} provides an alternate means to extend functionality of a test class without subclassing the test. Instead, one can subclass the decorater and use it to wrap the test class.
+
+Does not assume ownership of the test it decorates 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_decorator_a227e67c84146b23a37b44c24877b45d9}{\index{Test\-Decorator@{Test\-Decorator}!Test\-Decorator@{Test\-Decorator}}
+\index{Test\-Decorator@{Test\-Decorator}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{Test\-Decorator}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Decorator\-::\-Test\-Decorator (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)}}\label{class_test_decorator_a227e67c84146b23a37b44c24877b45d9}
+\hypertarget{class_test_decorator_a91a5d50dce7e822430154c2193dcaf7e}{\index{Test\-Decorator@{Test\-Decorator}!$\sim$\-Test\-Decorator@{$\sim$\-Test\-Decorator}}
+\index{$\sim$\-Test\-Decorator@{$\sim$\-Test\-Decorator}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{$\sim$\-Test\-Decorator}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Decorator\-::$\sim$\-Test\-Decorator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_test_decorator_a91a5d50dce7e822430154c2193dcaf7e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_decorator_add3b489dfb3331eba0aee7e06b03548b}{\index{Test\-Decorator@{Test\-Decorator}!count\-Test\-Cases@{count\-Test\-Cases}}
+\index{count\-Test\-Cases@{count\-Test\-Cases}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{count\-Test\-Cases}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Test\-Decorator\-::count\-Test\-Cases (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_decorator_add3b489dfb3331eba0aee7e06b03548b}
+
+
+Return the number of test cases invoked by \hyperlink{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}{run()}. 
+
+The base unit of testing is the class \hyperlink{class_test_case}{Test\-Case}. This method returns the number of \hyperlink{class_test_case}{Test\-Case} objects invoked by the \hyperlink{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}{run()} method. 
+
+Implements \hyperlink{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{Test}.
+
+\hypertarget{class_test_decorator_a029da80376365525d52387a88e6837f4}{\index{Test\-Decorator@{Test\-Decorator}!do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}}
+\index{do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{do\-Get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Decorator\-::do\-Get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_test_decorator_a029da80376365525d52387a88e6837f4}
+
+
+Returns the child test of the specified valid index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based valid index of the child test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{Test}.
+
+\hypertarget{class_test_decorator_aa2fbf0467c6bd599f912415a097e087c}{\index{Test\-Decorator@{Test\-Decorator}!get\-Child\-Test\-Count@{get\-Child\-Test\-Count}}
+\index{get\-Child\-Test\-Count@{get\-Child\-Test\-Count}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{get\-Child\-Test\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Test\-Decorator\-::get\-Child\-Test\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_decorator_aa2fbf0467c6bd599f912415a097e087c}
+
+
+Returns the number of direct child of the test. 
+
+
+
+Implements \hyperlink{class_test_a7aaab95037b7222573471074c56df85b}{Test}.
+
+\hypertarget{class_test_decorator_acdcf679bba926032d2e4535fca1e9cf0}{\index{Test\-Decorator@{Test\-Decorator}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Test\-Decorator\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_decorator_acdcf679bba926032d2e4535fca1e9cf0}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Implements \hyperlink{class_test_a5e024da199f811a33264e432c21dcc94}{Test}.
+
+\hypertarget{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}{\index{Test\-Decorator@{Test\-Decorator}!run@{run}}
+\index{run@{run}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Decorator\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}
+
+
+Run the test, collecting results. 
+
+
+
+Implements \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{Test}.
+
+
+
+Reimplemented in \hyperlink{class_test_set_up_aa3f79125254c288d6effee6df8e7d5fb}{Test\-Set\-Up}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_decorator_a621516914e5489ff3f874230f40b7d0d}{\index{Test\-Decorator@{Test\-Decorator}!m\-\_\-test@{m\-\_\-test}}
+\index{m\-\_\-test@{m\-\_\-test}!TestDecorator@{Test\-Decorator}}
+\subsubsection[{m\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Decorator\-::m\-\_\-test\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_decorator_a621516914e5489ff3f874230f40b7d0d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\hyperlink{_test_decorator_8h}{Test\-Decorator.\-h}\end{DoxyCompactItemize}

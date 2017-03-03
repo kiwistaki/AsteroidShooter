@@ -1,0 +1,136 @@
+\hypertarget{class_mfc_test_runner}{\section{Mfc\-Test\-Runner Class Reference}
+\label{class_mfc_test_runner}\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}}
+}
+
+
+M\-F\-C test runner.
+
+Use this to launch the M\-F\-C \hyperlink{class_test_runner}{Test\-Runner}. Usually called from you C\-Win\-App subclass\-:  
+
+
+
+
+{\ttfamily \#include $<$Mfc\-Test\-Runner.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mfc_test_runner_a604ac682ac85e92ee2753f724e6c8f41}{Mfc\-Test\-Runner} ()
+\item 
+virtual \hyperlink{class_mfc_test_runner_ae6411992b85b9b761efe6d5a9f1dbbeb}{$\sim$\-Mfc\-Test\-Runner} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_mfc_test_runner_aea503f886c3a992b557d4dfc223bb0b2}{run} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_mfc_test_runner_aedb029517afb5863e483bf9ff0d7d1ed}{add\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_mfc_test_runner_a99c469dd7f65c820a378e217ca886fd9}{add\-Tests} (const \hyperlink{_cpp_unit_vector_8h_ab1af16468212807e5cc231dc1ef32323}{Cpp\-Unit\-Vector}$<$ \hyperlink{class_test}{Test} $\ast$ $>$ \&tests)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_cpp_unit_vector_8h_ab1af16468212807e5cc231dc1ef32323}{Cpp\-Unit\-Vector}$<$ \hyperlink{class_test}{Test} $\ast$ $>$ \hyperlink{class_mfc_test_runner_a6911063cb903f782927897e33df1692f}{Tests}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_mfc_test_runner_ad810643faf74943741660ca94b9811ee}{get\-Root\-Test} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_suite}{Test\-Suite} $\ast$ \hyperlink{class_mfc_test_runner_a7700f0b285e70f42f3e84b56be890658}{m\-\_\-suite}
+\item 
+\hyperlink{class_mfc_test_runner_a6911063cb903f782927897e33df1692f}{Tests} \hyperlink{class_mfc_test_runner_a041d453efb2f9e262676f1d68f1c22af}{m\-\_\-tests}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+M\-F\-C test runner.
+
+Use this to launch the M\-F\-C \hyperlink{class_test_runner}{Test\-Runner}. Usually called from you C\-Win\-App subclass\-: 
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{_mfc_test_runner_8h}{cppunit/ui/mfc/MfcTestRunner.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{_test_factory_registry_8h}{cppunit/extensions/TestFactoryRegistry.h}>}
+
+\textcolor{keywordtype}{void} 
+CHostAppApp::RunUnitTests()
+\{
+  CppUnit::MfcTestRunner runner;
+  runner.addTest( CppUnit::TestFactoryRegistry::getRegistry().makeTest() );
+
+  runner.run();    
+\}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See Also}
+Cpp\-Unit\-::\-Text\-Test\-Runner, Cpp\-Unit\-::\-Test\-Factory\-Registry. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_mfc_test_runner_a6911063cb903f782927897e33df1692f}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!Tests@{Tests}}
+\index{Tests@{Tests}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{Tests}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cpp\-Unit\-Vector}$<${\bf Test} $\ast$$>$ {\bf Mfc\-Test\-Runner\-::\-Tests}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mfc_test_runner_a6911063cb903f782927897e33df1692f}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mfc_test_runner_a604ac682ac85e92ee2753f724e6c8f41}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!Mfc\-Test\-Runner@{Mfc\-Test\-Runner}}
+\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{Mfc\-Test\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}Mfc\-Test\-Runner\-::\-Mfc\-Test\-Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mfc_test_runner_a604ac682ac85e92ee2753f724e6c8f41}
+\hypertarget{class_mfc_test_runner_ae6411992b85b9b761efe6d5a9f1dbbeb}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!$\sim$\-Mfc\-Test\-Runner@{$\sim$\-Mfc\-Test\-Runner}}
+\index{$\sim$\-Mfc\-Test\-Runner@{$\sim$\-Mfc\-Test\-Runner}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{$\sim$\-Mfc\-Test\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mfc\-Test\-Runner\-::$\sim$\-Mfc\-Test\-Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mfc_test_runner_ae6411992b85b9b761efe6d5a9f1dbbeb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mfc_test_runner_aedb029517afb5863e483bf9ff0d7d1ed}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!add\-Test@{add\-Test}}
+\index{add\-Test@{add\-Test}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{add\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Mfc\-Test\-Runner\-::add\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)}}\label{class_mfc_test_runner_aedb029517afb5863e483bf9ff0d7d1ed}
+\hypertarget{class_mfc_test_runner_a99c469dd7f65c820a378e217ca886fd9}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!add\-Tests@{add\-Tests}}
+\index{add\-Tests@{add\-Tests}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{add\-Tests}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Mfc\-Test\-Runner\-::add\-Tests (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cpp\-Unit\-Vector}$<$ {\bf Test} $\ast$ $>$ \&}]{tests}
+\end{DoxyParamCaption}
+)}}\label{class_mfc_test_runner_a99c469dd7f65c820a378e217ca886fd9}
+\hypertarget{class_mfc_test_runner_ad810643faf74943741660ca94b9811ee}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!get\-Root\-Test@{get\-Root\-Test}}
+\index{get\-Root\-Test@{get\-Root\-Test}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{get\-Root\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Mfc\-Test\-Runner\-::get\-Root\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mfc_test_runner_ad810643faf74943741660ca94b9811ee}
+\hypertarget{class_mfc_test_runner_aea503f886c3a992b557d4dfc223bb0b2}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!run@{run}}
+\index{run@{run}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Mfc\-Test\-Runner\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mfc_test_runner_aea503f886c3a992b557d4dfc223bb0b2}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_mfc_test_runner_a7700f0b285e70f42f3e84b56be890658}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!m\-\_\-suite@{m\-\_\-suite}}
+\index{m\-\_\-suite@{m\-\_\-suite}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{m\-\_\-suite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Suite}$\ast$ Mfc\-Test\-Runner\-::m\-\_\-suite\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mfc_test_runner_a7700f0b285e70f42f3e84b56be890658}
+\hypertarget{class_mfc_test_runner_a041d453efb2f9e262676f1d68f1c22af}{\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}!m\-\_\-tests@{m\-\_\-tests}}
+\index{m\-\_\-tests@{m\-\_\-tests}!MfcTestRunner@{Mfc\-Test\-Runner}}
+\subsubsection[{m\-\_\-tests}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tests} Mfc\-Test\-Runner\-::m\-\_\-tests\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mfc_test_runner_a041d453efb2f9e262676f1d68f1c22af}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/ui/mfc/\hyperlink{_mfc_test_runner_8h}{Mfc\-Test\-Runner.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classmath_1_1_plan3_d}{\section{math\-:\-:Plan3\-D Class Reference}
+\label{classmath_1_1_plan3_d}\index{math\-::\-Plan3\-D@{math\-::\-Plan3\-D}}
+}
+
+
+Definition de la classe qui cree un plan en 3 dimensions.  
+
+
+
+
+{\ttfamily \#include $<$Plan3\-D.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmath_1_1_plan3_d_a34a220734a4dc35f5477ea57aab7b9ca}{Plan3\-D} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&normale, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point\-Du\-Plan)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \& \hyperlink{classmath_1_1_plan3_d_a24f91fdee54327138face83c9cb9711f}{lire\-Normale} () const 
+\begin{DoxyCompactList}\small\item\em Lire la normale du plan. \end{DoxyCompactList}\item 
+void \hyperlink{classmath_1_1_plan3_d_a0246c57422ec6bcd5cffe0935e734819}{lire\-Param} (double \&a, double \&b, double \&c, double \&d) const 
+\begin{DoxyCompactList}\small\item\em Lire les 4 parametres qui definissent un plan en 3\-D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition de la classe qui cree un plan en 3 dimensions. 
+
+Classe qui permet d'avoir un plan en 3\-D.\par
+Un plan est defini par $ Ax + By + Cz + D = 0 $ où $ A, B $ et $ C $ sont les composantes en $ x, y $ et $ z $ d'un vecteur normal au plan.
+
+\begin{DoxyAuthor}{Author}
+D\-G\-I-\/2990 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2005-\/09-\/27 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmath_1_1_plan3_d_a34a220734a4dc35f5477ea57aab7b9ca}{\index{math\-::\-Plan3\-D@{math\-::\-Plan3\-D}!Plan3\-D@{Plan3\-D}}
+\index{Plan3\-D@{Plan3\-D}!math::Plan3D@{math\-::\-Plan3\-D}}
+\subsubsection[{Plan3\-D}]{\setlength{\rightskip}{0pt plus 5cm}math\-::\-Plan3\-D\-::\-Plan3\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{normale, }
+\item[{const {\bf Vecteur3} \&}]{point\-Du\-Plan}
+\end{DoxyParamCaption}
+)}}\label{classmath_1_1_plan3_d_a34a220734a4dc35f5477ea57aab7b9ca}
+
+
+Constructeur. 
+
+Permet de construire un plan a partir d'une normale au plan et d'un point sur le plan. La normale doit etre non nulle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em normale} & \-: normale au plan \\
+\hline
+\mbox{\tt in}  & {\em point\-Du\-Plan} & \-: un point sur le plan\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmath_1_1_plan3_d_a24f91fdee54327138face83c9cb9711f}{\index{math\-::\-Plan3\-D@{math\-::\-Plan3\-D}!lire\-Normale@{lire\-Normale}}
+\index{lire\-Normale@{lire\-Normale}!math::Plan3D@{math\-::\-Plan3\-D}}
+\subsubsection[{lire\-Normale}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vecteur3} \& math\-::\-Plan3\-D\-::lire\-Normale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmath_1_1_plan3_d_a24f91fdee54327138face83c9cb9711f}
+
+
+Lire la normale du plan. 
+
+Cette fonction retourne le vecteur normal au plan.
+
+\begin{DoxyReturn}{Returns}
+Le vecteur normal au plan. 
+\end{DoxyReturn}
+\hypertarget{classmath_1_1_plan3_d_a0246c57422ec6bcd5cffe0935e734819}{\index{math\-::\-Plan3\-D@{math\-::\-Plan3\-D}!lire\-Param@{lire\-Param}}
+\index{lire\-Param@{lire\-Param}!math::Plan3D@{math\-::\-Plan3\-D}}
+\subsubsection[{lire\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void math\-::\-Plan3\-D\-::lire\-Param (
+\begin{DoxyParamCaption}
+\item[{double \&}]{a, }
+\item[{double \&}]{b, }
+\item[{double \&}]{c, }
+\item[{double \&}]{d}
+\end{DoxyParamCaption}
+) const}}\label{classmath_1_1_plan3_d_a0246c57422ec6bcd5cffe0935e734819}
+
+
+Lire les 4 parametres qui definissent un plan en 3\-D. 
+
+Lire les 4 coefficients qui definissent un plan en 3\-D. $ Ax + By + Cz + D = 0 $
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em a} & \-: coefficient {\itshape A} \\
+\hline
+\mbox{\tt out}  & {\em b} & \-: coefficient {\itshape B} \\
+\hline
+\mbox{\tt out}  & {\em c} & \-: coefficient {\itshape C} \\
+\hline
+\mbox{\tt out}  & {\em d} & \-: coefficient {\itshape D} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_plan3_d_8h}{Plan3\-D.\-h}\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_plan3_d_8cpp}{Plan3\-D.\-cpp}\end{DoxyCompactItemize}

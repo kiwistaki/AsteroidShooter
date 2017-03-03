@@ -1,0 +1,156 @@
+\hypertarget{class_mode_recherche}{\section{Mode\-Recherche Class Reference}
+\label{class_mode_recherche}\index{Mode\-Recherche@{Mode\-Recherche}}
+}
+
+
+La classe \hyperlink{class_mode_recherche}{Mode\-Recherche} permet d'implementer le mode de recherche du vaisseau virtuel.  
+
+
+
+
+{\ttfamily \#include $<$Mode\-Recherche.\-h$>$}
+
+Inheritance diagram for Mode\-Recherche\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mode_recherche}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_mode_recherche_a64e1b4296bbbb1396cb1663f0ff8b6ae}{$\sim$\-Mode\-Recherche} ()
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mode_recherche_ab6584100f6bfa32e492d4c0c65fc061e}{Mode\-Recherche} ()
+\item 
+virtual void \hyperlink{class_mode_recherche_a5735b27160acd8f644caf1863c9ab954}{update} (\hyperlink{class_vaisseau_virtuel}{Vaisseau\-Virtuel} \&vaisseau\-Virtuel, float delta\-T)
+\item 
+virtual const Mode \hyperlink{class_mode_recherche_a841e966fd005f3fe0097ad1fcf77d1fc}{get\-Etat} () const 
+\item 
+virtual \hyperlink{class_asteroide}{Asteroide} $\ast$ \hyperlink{class_mode_recherche_a1eb4a92d4379f6c700a338c4fce95169}{get\-Asteroide\-Cible} () const 
+\item 
+bool \hyperlink{class_mode_recherche_a97e0bdb3a0a4fa7ab42bd950d49cedbe}{trouver\-Asteroide\-Cible} ()
+\item 
+\hypertarget{class_mode_recherche_a840bd1fe29cb4e969fab78325f445ba8}{virtual void {\bfseries set\-Ast\-Null} ()}\label{class_mode_recherche_a840bd1fe29cb4e969fab78325f445ba8}
+
+\end{DoxyCompactItemize}
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_mode_recherche}{Mode\-Recherche} permet d'implementer le mode de recherche du vaisseau virtuel. 
+
+Cette classe contiendra des méthodes qui le changement d'etats, un vecteur des elements de jeu qui seront des obstacles et l'asteroide cible. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mode_recherche_ab6584100f6bfa32e492d4c0c65fc061e}{\index{Mode\-Recherche@{Mode\-Recherche}!Mode\-Recherche@{Mode\-Recherche}}
+\index{Mode\-Recherche@{Mode\-Recherche}!ModeRecherche@{Mode\-Recherche}}
+\subsubsection[{Mode\-Recherche}]{\setlength{\rightskip}{0pt plus 5cm}Mode\-Recherche\-::\-Mode\-Recherche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mode_recherche_ab6584100f6bfa32e492d4c0c65fc061e}
+Constructeur par parametre
+
+Constructeur
+
+\begin{DoxyReturn}{Returns}
+Aucun (Constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_mode_recherche_a64e1b4296bbbb1396cb1663f0ff8b6ae}{\index{Mode\-Recherche@{Mode\-Recherche}!$\sim$\-Mode\-Recherche@{$\sim$\-Mode\-Recherche}}
+\index{$\sim$\-Mode\-Recherche@{$\sim$\-Mode\-Recherche}!ModeRecherche@{Mode\-Recherche}}
+\subsubsection[{$\sim$\-Mode\-Recherche}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mode\-Recherche\-::$\sim$\-Mode\-Recherche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_mode_recherche_a64e1b4296bbbb1396cb1663f0ff8b6ae}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mode_recherche_a1eb4a92d4379f6c700a338c4fce95169}{\index{Mode\-Recherche@{Mode\-Recherche}!get\-Asteroide\-Cible@{get\-Asteroide\-Cible}}
+\index{get\-Asteroide\-Cible@{get\-Asteroide\-Cible}!ModeRecherche@{Mode\-Recherche}}
+\subsubsection[{get\-Asteroide\-Cible}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Asteroide} $\ast$ Mode\-Recherche\-::get\-Asteroide\-Cible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mode_recherche_a1eb4a92d4379f6c700a338c4fce95169}
+Getter de l'asteroide vise par le joueur virtuel \begin{DoxyReturn}{Returns}
+\-: l'asteroide
+\end{DoxyReturn}
+Methode qui permet de retourner l'asteroide cible
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers l'asteroide 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_etat_joueur_virtuel_a9fc759c914d9145f24210fdb2c9c0adc}{Etat\-Joueur\-Virtuel}.
+
+\hypertarget{class_mode_recherche_a841e966fd005f3fe0097ad1fcf77d1fc}{\index{Mode\-Recherche@{Mode\-Recherche}!get\-Etat@{get\-Etat}}
+\index{get\-Etat@{get\-Etat}!ModeRecherche@{Mode\-Recherche}}
+\subsubsection[{get\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}const Mode Mode\-Recherche\-::get\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mode_recherche_a841e966fd005f3fe0097ad1fcf77d1fc}
+Getter du mode d'etat \begin{DoxyReturn}{Returns}
+\-: le mode
+\end{DoxyReturn}
+Methode qui permet de determiner l'état actuel du vaisseau virtuel
+
+\begin{DoxyReturn}{Returns}
+Etat \-: enum de l'état du vaisseau 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_etat_joueur_virtuel_a3b18b9c7cd0181438090b040f6ecff57}{Etat\-Joueur\-Virtuel}.
+
+\hypertarget{class_mode_recherche_a97e0bdb3a0a4fa7ab42bd950d49cedbe}{\index{Mode\-Recherche@{Mode\-Recherche}!trouver\-Asteroide\-Cible@{trouver\-Asteroide\-Cible}}
+\index{trouver\-Asteroide\-Cible@{trouver\-Asteroide\-Cible}!ModeRecherche@{Mode\-Recherche}}
+\subsubsection[{trouver\-Asteroide\-Cible}]{\setlength{\rightskip}{0pt plus 5cm}bool Mode\-Recherche\-::trouver\-Asteroide\-Cible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mode_recherche_a97e0bdb3a0a4fa7ab42bd950d49cedbe}
+Méthode qui permet de trouver un asteroide a detruire \begin{DoxyReturn}{Returns}
+\-: bool 
+\end{DoxyReturn}
+\hypertarget{class_mode_recherche_a5735b27160acd8f644caf1863c9ab954}{\index{Mode\-Recherche@{Mode\-Recherche}!update@{update}}
+\index{update@{update}!ModeRecherche@{Mode\-Recherche}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Mode\-Recherche\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Vaisseau\-Virtuel} \&}]{vaisseau\-Virtuel, }
+\item[{float}]{delta\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mode_recherche_a5735b27160acd8f644caf1863c9ab954}
+Update 
+\begin{DoxyParams}{Parameters}
+{\em } & le vaisseau virtuel, \\
+\hline
+{\em } & delta\-T\\
+\hline
+\end{DoxyParams}
+Methode de logique de l'état du joueur\-Virtuel en mode recherche
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_vaisseau_virtuel}{Vaisseau\-Virtuel}} & \&vaisseau\-Virtuel \-: le vaisseau du joueur virtuel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucun 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_etat_joueur_virtuel_a21b40c0d4306e6073ee0e4ac7ff36a96}{Etat\-Joueur\-Virtuel}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Environnement/\hyperlink{_mode_recherche_8h}{Mode\-Recherche.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Environnement/\hyperlink{_mode_recherche_8cpp}{Mode\-Recherche.\-cpp}\end{DoxyCompactItemize}

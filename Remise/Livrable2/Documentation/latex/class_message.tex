@@ -1,0 +1,358 @@
+\hypertarget{class_message}{\section{Message Class Reference}
+\label{class_message}\index{Message@{Message}}
+}
+
+
+\hyperlink{class_message}{Message} associated to an \hyperlink{class_exception}{Exception}.
+
+A message is composed of two items\-:  
+
+
+
+
+{\ttfamily \#include $<$Message.\-h$>$}
+
+Inheritance diagram for Message\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_message}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_message_a4fc4f717b634e66070366cb7722d7761}{Message} ()
+\item 
+\hyperlink{class_message_ad253b20930e70257e2523bb9fc7d299c}{Message} (const \hyperlink{class_message}{Message} \&other)
+\item 
+\hyperlink{class_message_aad17a05b7c2d5f1ef207f7150691a03a}{Message} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_message_aa22497c35079e8619c516f693d1fd97f}{short\-Description})
+\item 
+\hyperlink{class_message_ab77d28861db855dadef024529aab07d8}{Message} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_message_aa22497c35079e8619c516f693d1fd97f}{short\-Description}, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail1)
+\item 
+\hyperlink{class_message_ae8c66f7de0811d86765369a4c430bb6c}{Message} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_message_aa22497c35079e8619c516f693d1fd97f}{short\-Description}, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail1, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail2)
+\item 
+\hyperlink{class_message_a65fcd0b70c65cf7b9b9de390386cef79}{Message} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_message_aa22497c35079e8619c516f693d1fd97f}{short\-Description}, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail1, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail2, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail3)
+\item 
+\hyperlink{class_message}{Message} \& \hyperlink{class_message_a8003315e3355d1b0a5e3b7dcd5a0514c}{operator=} (const \hyperlink{class_message}{Message} \&other)
+\item 
+const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \& \hyperlink{class_message_aa22497c35079e8619c516f693d1fd97f}{short\-Description} () const 
+\begin{DoxyCompactList}\small\item\em Returns the short description. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_message_a312fc09ce16cb1414a0efd2458defc21}{detail\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of detail string. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_message_ad2fea61f003bfbe810ce8149f2faf6a2}{detail\-At} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\begin{DoxyCompactList}\small\item\em Returns the detail at the specified index. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_message_aacec5052940b4e18a35bb3f363f05cc4}{details} () const 
+\begin{DoxyCompactList}\small\item\em Returns a string that represents a list of the detail strings. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_message_af5a1d2f3def9208bb603587f79c5d711}{clear\-Details} ()
+\begin{DoxyCompactList}\small\item\em Removes all detail strings. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_message_a7cc56c24bc9d7516247cd865c472ab2f}{add\-Detail} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail)
+\begin{DoxyCompactList}\small\item\em Adds a single detail string. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_message_a2c67e0d82c3b4e3f3d21cec40537d6de}{add\-Detail} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail1, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail2)
+\begin{DoxyCompactList}\small\item\em Adds two detail strings. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_message_a9d83e2c5fd0d817291331e65830b824a}{add\-Detail} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail1, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail2, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&detail3)
+\begin{DoxyCompactList}\small\item\em Adds three detail strings. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_message_a576d9d2c563c11ff0a000d22bb235d1c}{add\-Detail} (const \hyperlink{class_message}{Message} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Adds the detail strings of the specified message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_message_a3f2362cf70c38b79a188dd8545d24d03}{set\-Short\-Description} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_message_aa22497c35079e8619c516f693d1fd97f}{short\-Description})
+\begin{DoxyCompactList}\small\item\em Sets the short description. \end{DoxyCompactList}\item 
+bool \hyperlink{class_message_a30387c914e7f0125a38f2819b9f43e04}{operator==} (const \hyperlink{class_message}{Message} \&other) const 
+\begin{DoxyCompactList}\small\item\em Tests if a message is identical to another one. \end{DoxyCompactList}\item 
+bool \hyperlink{class_message_a5abc9c637b0c4ec2b7966ea06bd1401b}{operator!=} (const \hyperlink{class_message}{Message} \&other) const 
+\begin{DoxyCompactList}\small\item\em Tests if a message is different from another one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_message}{Message} associated to an \hyperlink{class_exception}{Exception}.
+
+A message is composed of two items\-: 
+
+
+\begin{DoxyItemize}
+\item a short description ($\sim$20/30 characters)
+\item a list of detail strings
+\end{DoxyItemize}
+
+The short description is used to indicate how the detail strings should be interpreted. It usually indicates the failure types, such as \char`\"{}assertion failed\char`\"{}, \char`\"{}forced failure\char`\"{}, \char`\"{}unexpected exception caught\char`\"{}, \char`\"{}equality assertion failed\char`\"{}... It should not contains new line character (\par
+).
+
+Detail strings are used to provide more information about the failure. It can contains the asserted expression, the expected and actual values in an equality assertion, some addional messages... Detail strings can contains new line characters (\par
+). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_message_a4fc4f717b634e66070366cb7722d7761}{\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message\-::\-Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_message_a4fc4f717b634e66070366cb7722d7761}
+\hypertarget{class_message_ad253b20930e70257e2523bb9fc7d299c}{\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message\-::\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_message_ad253b20930e70257e2523bb9fc7d299c}
+\hypertarget{class_message_aad17a05b7c2d5f1ef207f7150691a03a}{\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message\-::\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{short\-Description}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_message_aad17a05b7c2d5f1ef207f7150691a03a}
+\hypertarget{class_message_ab77d28861db855dadef024529aab07d8}{\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message\-::\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{short\-Description, }
+\item[{const {\bf std\-::string} \&}]{detail1}
+\end{DoxyParamCaption}
+)}}\label{class_message_ab77d28861db855dadef024529aab07d8}
+\hypertarget{class_message_ae8c66f7de0811d86765369a4c430bb6c}{\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message\-::\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{short\-Description, }
+\item[{const {\bf std\-::string} \&}]{detail1, }
+\item[{const {\bf std\-::string} \&}]{detail2}
+\end{DoxyParamCaption}
+)}}\label{class_message_ae8c66f7de0811d86765369a4c430bb6c}
+\hypertarget{class_message_a65fcd0b70c65cf7b9b9de390386cef79}{\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message\-::\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{short\-Description, }
+\item[{const {\bf std\-::string} \&}]{detail1, }
+\item[{const {\bf std\-::string} \&}]{detail2, }
+\item[{const {\bf std\-::string} \&}]{detail3}
+\end{DoxyParamCaption}
+)}}\label{class_message_a65fcd0b70c65cf7b9b9de390386cef79}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_message_a7cc56c24bc9d7516247cd865c472ab2f}{\index{Message@{Message}!add\-Detail@{add\-Detail}}
+\index{add\-Detail@{add\-Detail}!Message@{Message}}
+\subsubsection[{add\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Message\-::add\-Detail (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{detail}
+\end{DoxyParamCaption}
+)}}\label{class_message_a7cc56c24bc9d7516247cd865c472ab2f}
+
+
+Adds a single detail string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em detail} & Detail string to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_message_a2c67e0d82c3b4e3f3d21cec40537d6de}{\index{Message@{Message}!add\-Detail@{add\-Detail}}
+\index{add\-Detail@{add\-Detail}!Message@{Message}}
+\subsubsection[{add\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Message\-::add\-Detail (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{detail1, }
+\item[{const {\bf std\-::string} \&}]{detail2}
+\end{DoxyParamCaption}
+)}}\label{class_message_a2c67e0d82c3b4e3f3d21cec40537d6de}
+
+
+Adds two detail strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em detail1} & Detail string to add. \\
+\hline
+{\em detail2} & Detail string to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_message_a9d83e2c5fd0d817291331e65830b824a}{\index{Message@{Message}!add\-Detail@{add\-Detail}}
+\index{add\-Detail@{add\-Detail}!Message@{Message}}
+\subsubsection[{add\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Message\-::add\-Detail (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{detail1, }
+\item[{const {\bf std\-::string} \&}]{detail2, }
+\item[{const {\bf std\-::string} \&}]{detail3}
+\end{DoxyParamCaption}
+)}}\label{class_message_a9d83e2c5fd0d817291331e65830b824a}
+
+
+Adds three detail strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em detail1} & Detail string to add. \\
+\hline
+{\em detail2} & Detail string to add. \\
+\hline
+{\em detail3} & Detail string to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_message_a576d9d2c563c11ff0a000d22bb235d1c}{\index{Message@{Message}!add\-Detail@{add\-Detail}}
+\index{add\-Detail@{add\-Detail}!Message@{Message}}
+\subsubsection[{add\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Message\-::add\-Detail (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_message_a576d9d2c563c11ff0a000d22bb235d1c}
+
+
+Adds the detail strings of the specified message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & All the detail strings of this message are added to this one. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_message_af5a1d2f3def9208bb603587f79c5d711}{\index{Message@{Message}!clear\-Details@{clear\-Details}}
+\index{clear\-Details@{clear\-Details}!Message@{Message}}
+\subsubsection[{clear\-Details}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Message\-::clear\-Details (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_message_af5a1d2f3def9208bb603587f79c5d711}
+
+
+Removes all detail strings. 
+
+\hypertarget{class_message_ad2fea61f003bfbe810ce8149f2faf6a2}{\index{Message@{Message}!detail\-At@{detail\-At}}
+\index{detail\-At@{detail\-At}!Message@{Message}}
+\subsubsection[{detail\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Message\-::detail\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const}}\label{class_message_ad2fea61f003bfbe810ce8149f2faf6a2}
+
+
+Returns the detail at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based index of the detail string to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Detail string at the specified index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if {\itshape index} $<$ 0 or index $>$= \hyperlink{class_message_a312fc09ce16cb1414a0efd2458defc21}{detail\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_message_a312fc09ce16cb1414a0efd2458defc21}{\index{Message@{Message}!detail\-Count@{detail\-Count}}
+\index{detail\-Count@{detail\-Count}!Message@{Message}}
+\subsubsection[{detail\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Message\-::detail\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_message_a312fc09ce16cb1414a0efd2458defc21}
+
+
+Returns the number of detail string. 
+
+\begin{DoxyReturn}{Returns}
+Number of detail string. 
+\end{DoxyReturn}
+\hypertarget{class_message_aacec5052940b4e18a35bb3f363f05cc4}{\index{Message@{Message}!details@{details}}
+\index{details@{details}!Message@{Message}}
+\subsubsection[{details}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Message\-::details (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_message_aacec5052940b4e18a35bb3f363f05cc4}
+
+
+Returns a string that represents a list of the detail strings. 
+
+Example\-: 
+\begin{DoxyCode}
+\hyperlink{class_message}{Message} \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}( \textcolor{stringliteral}{"not equal"}, \textcolor{stringliteral}{"Expected: 3"}, \textcolor{stringliteral}{"Actual: 7"} );
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string} details = \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}.details();
+\textcolor{comment}{// details contains:}
+\textcolor{comment}{// "- Expected: 3\(\backslash\)n- Actual: 7\(\backslash\)n"  }
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+A string that is a concatenation of all the detail strings. Each detail string is prefixed with '-\/ ' and suffixed with '\par
+' before being concatenated to the other. 
+\end{DoxyReturn}
+\hypertarget{class_message_a5abc9c637b0c4ec2b7966ea06bd1401b}{\index{Message@{Message}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Message@{Message}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Message\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_message_a5abc9c637b0c4ec2b7966ea06bd1401b}
+
+
+Tests if a message is different from another one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \hyperlink{class_message}{Message} this message is compared to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the two message are not identical, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_message_a8003315e3355d1b0a5e3b7dcd5a0514c}{\index{Message@{Message}!operator=@{operator=}}
+\index{operator=@{operator=}!Message@{Message}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}\& Message\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_message_a8003315e3355d1b0a5e3b7dcd5a0514c}
+\hypertarget{class_message_a30387c914e7f0125a38f2819b9f43e04}{\index{Message@{Message}!operator==@{operator==}}
+\index{operator==@{operator==}!Message@{Message}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Message\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_message_a30387c914e7f0125a38f2819b9f43e04}
+
+
+Tests if a message is identical to another one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \hyperlink{class_message}{Message} this message is compared to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the two message are identical, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_message_a3f2362cf70c38b79a188dd8545d24d03}{\index{Message@{Message}!set\-Short\-Description@{set\-Short\-Description}}
+\index{set\-Short\-Description@{set\-Short\-Description}!Message@{Message}}
+\subsubsection[{set\-Short\-Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Message\-::set\-Short\-Description (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{short\-Description}
+\end{DoxyParamCaption}
+)}}\label{class_message_a3f2362cf70c38b79a188dd8545d24d03}
+
+
+Sets the short description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em short\-Description} & New short description. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_message_aa22497c35079e8619c516f693d1fd97f}{\index{Message@{Message}!short\-Description@{short\-Description}}
+\index{short\-Description@{short\-Description}!Message@{Message}}
+\subsubsection[{short\-Description}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf std\-::string}\& Message\-::short\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_message_aa22497c35079e8619c516f693d1fd97f}
+
+
+Returns the short description. 
+
+\begin{DoxyReturn}{Returns}
+Short description. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_message_8h}{Message.\-h}\end{DoxyCompactItemize}

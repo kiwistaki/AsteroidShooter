@@ -1,0 +1,53 @@
+\hypertarget{_aide_g_l_8h}{\section{Cadriciel/\-Commun/\-Utilitaire/\-Aide\-G\-L.h File Reference}
+\label{_aide_g_l_8h}\index{Cadriciel/\-Commun/\-Utilitaire/\-Aide\-G\-L.\-h@{Cadriciel/\-Commun/\-Utilitaire/\-Aide\-G\-L.\-h}}
+}
+
+
+Ce fichier contient la declaration de l'espace de nom aidegl.  
+
+
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/gl.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}Vecteur.\-h\char`\"{}}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceaidegl}{aidegl}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceaidegl_a465185be937173fdd623eb88949b212c}{aidegl\-::creer\-Contexte\-G\-L} (H\-W\-N\-D \hyperlink{fmod__dsp_8h_aa587cb0701854912afb4f12f5936ef54}{hwnd}, \hyperlink{wglew_8h_a7b84f5391331438359747d138a86ffe3}{H\-D\-C} \&\hyperlink{wglew_8h_a3ad0eade1f425b718bd6461c1ef31af8}{h\-D\-C}, \hyperlink{wglew_8h_a79abb55a8f5ce093fad0358132a376e4}{H\-G\-L\-R\-C} \&h\-R\-C)
+\begin{DoxyCompactList}\small\item\em Cree un contexte Open\-G\-L dans la fenetre donnee. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceaidegl_a0cb31f11533480a059574970f5fcff6b}{aidegl\-::detruire\-Contexte\-G\-L} (H\-W\-N\-D \hyperlink{fmod__dsp_8h_aa587cb0701854912afb4f12f5936ef54}{hwnd}, \hyperlink{wglew_8h_a7b84f5391331438359747d138a86ffe3}{H\-D\-C} \hyperlink{wglew_8h_a3ad0eade1f425b718bd6461c1ef31af8}{h\-D\-C}, \hyperlink{wglew_8h_a79abb55a8f5ce093fad0358132a376e4}{H\-G\-L\-R\-C} h\-R\-C)
+\begin{DoxyCompactList}\small\item\em Detruit un contexte Open\-G\-L. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_afcd84614cbab5903653b7514a35176bc}{aidegl\-::initialiser\-Rectangle\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} short patron=0x3333, int facteur=1)
+\begin{DoxyCompactList}\small\item\em Initialise le mode de rendu du rectangle elastique. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a67cd6beb7f534f810d11bff186d88d2e}{aidegl\-::mettre\-A\-Jour\-Rectangle\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Ancrage, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Avant, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Apres)
+\begin{DoxyCompactList}\small\item\em Met a jour le rectangle elastique (suite a un deplacement). \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a9b2cef8d6b5ef4ddc692919a2bc9ec43}{aidegl\-::terminer\-Rectangle\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Ancrage, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Final)
+\begin{DoxyCompactList}\small\item\em Termine le mode de rendu du rectangle elastique. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a3798d7992633e836a5004e913cf3eeda}{aidegl\-::afficher\-Rectangle} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point3, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point4, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} division\-S, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} division\-T)
+\begin{DoxyCompactList}\small\item\em Affiche un rectangle subdivise par un nombre de subdivision. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_afb2f362a0e0e490920f62d0aecd1a5dd}{aidegl\-::afficher\-Rectangle\-Intervalle} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point3, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point4, double delta\-S, double delta\-T)
+\begin{DoxyCompactList}\small\item\em Affiche un rectangle subdivise d'un intervalle. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{namespaceaidegl_a19ef7b4b71b7a1568393cfc78be46a91}{aidegl\-::obtenir\-Message\-Erreur} (\hyperlink{glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} code\-Erreur, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} drapeau=A\-F\-F\-I\-C\-H\-E\-\_\-\-E\-R\-R\-E\-U\-R\-\_\-\-T\-O\-U\-T)
+\begin{DoxyCompactList}\small\item\em Retourne une chaîne correspondant au code d'erreur Open\-G\-L. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a923ac6c4f17f9d93b072c786e0f86d41}{aidegl\-::verifier\-Erreur\-Open\-G\-L} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} drapeau=A\-F\-F\-I\-C\-H\-E\-\_\-\-E\-R\-R\-E\-U\-R\-\_\-\-T\-O\-U\-T)
+\begin{DoxyCompactList}\small\item\em Verifie s'il y a une erreur Open\-G\-L. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceaidegl_a6bba7d34e4998b9c94fe5971ecf535c0}{aidegl\-::gl\-Load\-Texture} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&nom\-Fichier, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&id\-Texture, bool generer\-Texture=true)
+\begin{DoxyCompactList}\small\item\em Charge une texture Open\-G\-L a partir d'un fichier image. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_af6f5a219dd414d647d8e4d92b6c30fd5}{aidegl\-::gl\-Create\-Texture} (\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} char $\ast$\hyperlink{fmod__codec_8h_a42c2b1d86fa71a425e73a882cb0a72c8}{data}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} bpp, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} pitch, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&I\-D, bool generer\-Texture=true)
+\begin{DoxyCompactList}\small\item\em Cree une texture a partir des pixels en memoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ce fichier contient la declaration de l'espace de nom aidegl. Il contient les declarations de fonctions utiles pour effectuer certaines taches Open\-G\-L qui reviennent d'un projet a l'autre.
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/01-\/20 
+\end{DoxyDate}

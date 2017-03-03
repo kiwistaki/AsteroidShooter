@@ -1,0 +1,82 @@
+\hypertarget{class_repeated_test}{\section{Repeated\-Test Class Reference}
+\label{class_repeated_test}\index{Repeated\-Test@{Repeated\-Test}}
+}
+
+
+Decorator that runs a test repeatedly.  
+
+
+
+
+{\ttfamily \#include $<$Repeated\-Test.\-h$>$}
+
+Inheritance diagram for Repeated\-Test\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_repeated_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_repeated_test_a73cf84a81085a1e93f21f2f4d2a14bc6}{Repeated\-Test} (\hyperlink{class_test}{Test} $\ast$test, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} times\-Repeat)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result})
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_repeated_test_a2bacf360b91cc6a0c52ec9e75ceae5a6}{count\-Test\-Cases} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of test cases invoked by \hyperlink{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}{run()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Decorator that runs a test repeatedly. 
+
+Does not assume ownership of the test it decorates 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_repeated_test_a73cf84a81085a1e93f21f2f4d2a14bc6}{\index{Repeated\-Test@{Repeated\-Test}!Repeated\-Test@{Repeated\-Test}}
+\index{Repeated\-Test@{Repeated\-Test}!RepeatedTest@{Repeated\-Test}}
+\subsubsection[{Repeated\-Test}]{\setlength{\rightskip}{0pt plus 5cm}Repeated\-Test\-::\-Repeated\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test, }
+\item[{{\bf int}}]{times\-Repeat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_repeated_test_a73cf84a81085a1e93f21f2f4d2a14bc6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_repeated_test_a2bacf360b91cc6a0c52ec9e75ceae5a6}{\index{Repeated\-Test@{Repeated\-Test}!count\-Test\-Cases@{count\-Test\-Cases}}
+\index{count\-Test\-Cases@{count\-Test\-Cases}!RepeatedTest@{Repeated\-Test}}
+\subsubsection[{count\-Test\-Cases}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Repeated\-Test\-::count\-Test\-Cases (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_repeated_test_a2bacf360b91cc6a0c52ec9e75ceae5a6}
+
+
+Return the number of test cases invoked by \hyperlink{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}{run()}. 
+
+The base unit of testing is the class \hyperlink{class_test_case}{Test\-Case}. This method returns the number of \hyperlink{class_test_case}{Test\-Case} objects invoked by the \hyperlink{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}{run()} method. 
+
+Implements \hyperlink{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{Test}.
+
+\hypertarget{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}{\index{Repeated\-Test@{Repeated\-Test}!run@{run}}
+\index{run@{run}!RepeatedTest@{Repeated\-Test}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Repeated\-Test\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}
+
+
+Run the test, collecting results. 
+
+
+
+Implements \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{Test}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\hyperlink{_repeated_test_8h}{Repeated\-Test.\-h}\end{DoxyCompactItemize}

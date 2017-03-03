@@ -1,0 +1,95 @@
+\hypertarget{_test_plug_in_8h}{\section{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\-Test\-Plug\-In.h File Reference}
+\label{_test_plug_in_8h}\index{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\-Test\-Plug\-In.\-h@{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\-Test\-Plug\-In.\-h}}
+}
+{\ttfamily \#include $<$cppunit/\-Portability.\-h$>$}\\*
+{\ttfamily \#include $<$cppunit/plugin/\-Plug\-In\-Parameters.\-h$>$}\\*
+{\ttfamily \#include $<$cppunit/plugin/\-Test\-Plug\-In\-Default\-Impl.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_cpp_unit_test_plug_in}{Cpp\-Unit\-Test\-Plug\-In}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} plug-\/in interface.
+
+This class define the interface implemented by test plug-\/in. A pointer to that interface is returned by the function exported by the test plug-\/in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_test_plug_in_8h_ae7a1d474c7762e1bed3972b3d8fc11d6}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E}~cppunit\-Test\-Plug\-In
+\begin{DoxyCompactList}\small\item\em Name of the function exported by a test plug-\/in.
+
+The signature of the exported function is\-: \end{DoxyCompactList}\item 
+\#define \hyperlink{_test_plug_in_8h_a81bfba0323e2c7ca7dfd6767db813a5b}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L}(Test\-Plug\-In\-Interface\-Type)
+\begin{DoxyCompactList}\small\item\em Implements the function exported by the test plug-\/in. \end{DoxyCompactList}\item 
+\#define \hyperlink{_test_plug_in_8h_a705897c323d9381ac1b99a45e953e4ff}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T}()
+\begin{DoxyCompactList}\small\item\em Implements and exports the test plug-\/in interface.
+
+This macro exports the test plug-\/in function using the subclass, and implements the 'main' function for the plug-\/in using C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-A\-I\-N(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_test_plug_in_8h_ac6d885a430c48cf8b0a4534e8806c657}{typedef \hyperlink{struct_cpp_unit_test_plug_in}{Cpp\-Unit\-Test\-Plug\-In} $\ast$($\ast$ \hyperlink{_test_plug_in_8h_ac6d885a430c48cf8b0a4534e8806c657}{Test\-Plug\-In\-Signature} )()}\label{_test_plug_in_8h_ac6d885a430c48cf8b0a4534e8806c657}
+
+\begin{DoxyCompactList}\small\item\em Type of the function exported by a plug-\/in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_test_plug_in_8h_a81bfba0323e2c7ca7dfd6767db813a5b}{\index{Test\-Plug\-In.\-h@{Test\-Plug\-In.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L}!TestPlugIn.h@{Test\-Plug\-In.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L(
+\begin{DoxyParamCaption}
+\item[{}]{Test\-Plug\-In\-Interface\-Type}
+\end{DoxyParamCaption}
+)}}\label{_test_plug_in_8h_a81bfba0323e2c7ca7dfd6767db813a5b}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{_select_dll_loader_8h_a477408f06c41af1d46b8f17f21b3b5d6}{CPPUNIT\_PLUGIN\_EXPORT} \hyperlink{struct_cpp_unit_test_plug_in}{CppUnitTestPlugIn} *
+      \hyperlink{_test_plug_in_8h_ae7a1d474c7762e1bed3972b3d8fc11d6}{CPPUNIT\_PLUGIN\_EXPORTED\_NAME}(\textcolor{keywordtype}{void})  \(\backslash\)
+  \{                                                                            \(\backslash\)
+    static TestPlugInInterfaceType plugIn;                                     \(\backslash\)
+    return &plugIn;                                                            \(\backslash\)
+  \}                                                                            \(\backslash\)
+  typedef \textcolor{keywordtype}{char} \_\_CppUnitPlugInExportFunctionDummyTypeDef
+\end{DoxyCode}
+
+
+Implements the function exported by the test plug-\/in. 
+
+\hypertarget{_test_plug_in_8h_ae7a1d474c7762e1bed3972b3d8fc11d6}{\index{Test\-Plug\-In.\-h@{Test\-Plug\-In.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E}!TestPlugIn.h@{Test\-Plug\-In.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-N\-A\-M\-E~cppunit\-Test\-Plug\-In}}\label{_test_plug_in_8h_ae7a1d474c7762e1bed3972b3d8fc11d6}
+
+
+Name of the function exported by a test plug-\/in.
+
+The signature of the exported function is\-: 
+
+
+\begin{DoxyCode}
+\hyperlink{struct_cpp_unit_test_plug_in}{CppUnitTestPlugIn} *\hyperlink{_test_plug_in_8h_ae7a1d474c7762e1bed3972b3d8fc11d6}{CPPUNIT\_PLUGIN\_EXPORTED\_NAME}(\textcolor{keywordtype}{void});
+\end{DoxyCode}
+ \hypertarget{_test_plug_in_8h_a705897c323d9381ac1b99a45e953e4ff}{\index{Test\-Plug\-In.\-h@{Test\-Plug\-In.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T}!TestPlugIn.h@{Test\-Plug\-In.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_test_plug_in_8h_a705897c323d9381ac1b99a45e953e4ff}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{_test_plug_in_8h_a81bfba0323e2c7ca7dfd6767db813a5b}{CPPUNIT\_PLUGIN\_EXPORTED\_FUNCTION\_IMPL}( 
+      CPPUNIT\_NS::TestPlugInDefaultImpl );  \(\backslash\)
+  CPPUNIT\_PLUGIN\_IMPLEMENT\_MAIN()
+\end{DoxyCode}
+
+
+Implements and exports the test plug-\/in interface.
+
+This macro exports the test plug-\/in function using the subclass, and implements the 'main' function for the plug-\/in using C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-A\-I\-N(). 
+
+When using this macro, Cpp\-Unit must be linked as a D\-L\-L (shared library). Otherwise, tests registered to the \hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} in the D\-L\-L will not be visible to the Dll\-Plug\-In\-Tester.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_cpp_unit_test_plug_in}{Cpp\-Unit\-Test\-Plug\-In} 
+
+\hyperlink{_test_plug_in_8h_a81bfba0323e2c7ca7dfd6767db813a5b}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L()}, C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-A\-I\-N(). 
+\end{DoxySeeAlso}

@@ -1,0 +1,160 @@
+\hypertarget{class_gestionnaire_ressources}{\section{Gestionnaire\-Ressources Class Reference}
+\label{class_gestionnaire_ressources}\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}}
+}
+
+
+Cette class est un singleton. Elle permet de centraliser le chargement des ressources et permet de re-\/utiliser ce qui a deja ete charge, comme les modeles 3\-D ou les textures.  
+
+
+
+
+{\ttfamily \#include $<$Gestionnaire\-Ressources.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gestionnaire_ressources_adefa41ed304fd2242410cf8ad912e6e2}{$\sim$\-Gestionnaire\-Ressources} ()
+\item 
+const ai\-Scene $\ast$ \hyperlink{class_gestionnaire_ressources_a6f0f993e3edeb435cb65cc0b400e2958}{charger\-Modele3\-D} (const string \&nom\-Fichier, map$<$ string, G\-Luint $>$ \&textures)
+\item 
+G\-Luint \hyperlink{class_gestionnaire_ressources_a8b6bbee12ec9c00bdb3637bc6072bfc2}{creer\-Call\-List} (const ai\-Scene $\ast$scene)
+\item 
+bool \hyperlink{class_gestionnaire_ressources_a48e20c30acdaff204c77a3977ab2a7b0}{charger\-Texture} (const string \&nom\-Fichier, G\-Luint \&texture)
+\item 
+bool \hyperlink{class_gestionnaire_ressources_a8109eec59d2e8f711643853b788babeb}{calculer\-Points\-Extremes} (const string \&nom\-Fichier, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&x\-Min, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&y\-Min, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&z\-Min, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&x\-Max, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&y\-Max, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&z\-Max)
+\item 
+float \hyperlink{class_gestionnaire_ressources_a6fb3dc8d4945fbe2dc34054f9fe842c2}{calculer\-Rayon\-Sphere\-Englobante} (const string \&nom\-Fichier)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_gestionnaire_ressources}{Gestionnaire\-Ressources} $\ast$ \hyperlink{class_gestionnaire_ressources_af6c8a2217d3269073d0b4b1246aeedac}{get\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cette class est un singleton. Elle permet de centraliser le chargement des ressources et permet de re-\/utiliser ce qui a deja ete charge, comme les modeles 3\-D ou les textures. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_gestionnaire_ressources_adefa41ed304fd2242410cf8ad912e6e2}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!$\sim$\-Gestionnaire\-Ressources@{$\sim$\-Gestionnaire\-Ressources}}
+\index{$\sim$\-Gestionnaire\-Ressources@{$\sim$\-Gestionnaire\-Ressources}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{$\sim$\-Gestionnaire\-Ressources}]{\setlength{\rightskip}{0pt plus 5cm}Gestionnaire\-Ressources\-::$\sim$\-Gestionnaire\-Ressources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_ressources_adefa41ed304fd2242410cf8ad912e6e2}
+Destructeur. Libere toutes les ressources. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_gestionnaire_ressources_a8109eec59d2e8f711643853b788babeb}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!calculer\-Points\-Extremes@{calculer\-Points\-Extremes}}
+\index{calculer\-Points\-Extremes@{calculer\-Points\-Extremes}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{calculer\-Points\-Extremes}]{\setlength{\rightskip}{0pt plus 5cm}bool Gestionnaire\-Ressources\-::calculer\-Points\-Extremes (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nom\-Fichier, }
+\item[{{\bf Vecteur3f} \&}]{x\-Min, }
+\item[{{\bf Vecteur3f} \&}]{y\-Min, }
+\item[{{\bf Vecteur3f} \&}]{z\-Min, }
+\item[{{\bf Vecteur3f} \&}]{x\-Max, }
+\item[{{\bf Vecteur3f} \&}]{y\-Max, }
+\item[{{\bf Vecteur3f} \&}]{z\-Max}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_ressources_a8109eec59d2e8f711643853b788babeb}
+Calcule les points extremes d'un modele deja charge. S'il n'est pas deja charge, alors la fonction ne calculera rien. 
+\begin{DoxyParams}{Parameters}
+{\em nom\-Fichier} & Le nom du modele pour lequel on veut calculer les points extremes. \\
+\hline
+{\em x\-Min} & Points extremes minimaux en x \\
+\hline
+{\em y\-Min} & Points extremes minimaux en y \\
+\hline
+{\em z\-Min} & Points extremes minimaux en z \\
+\hline
+{\em x\-Max} & Points extremes maximaux en x \\
+\hline
+{\em y\-Max} & Points extremes maximaux en y \\
+\hline
+{\em z\-Max} & Points extremes maximaux en z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le modele est deja charge, false sinon. 
+\end{DoxyReturn}
+\hypertarget{class_gestionnaire_ressources_a6fb3dc8d4945fbe2dc34054f9fe842c2}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!calculer\-Rayon\-Sphere\-Englobante@{calculer\-Rayon\-Sphere\-Englobante}}
+\index{calculer\-Rayon\-Sphere\-Englobante@{calculer\-Rayon\-Sphere\-Englobante}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{calculer\-Rayon\-Sphere\-Englobante}]{\setlength{\rightskip}{0pt plus 5cm}float Gestionnaire\-Ressources\-::calculer\-Rayon\-Sphere\-Englobante (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nom\-Fichier}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_ressources_a6fb3dc8d4945fbe2dc34054f9fe842c2}
+Calcule le rayon de la sphère englobante 
+\begin{DoxyParams}{Parameters}
+{\em nom\-Fichier} & Le nom du fichier du modèle pour lequel on veut calculer le rayon de la sphère englobante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le rayon de la sphère englobante 
+\end{DoxyReturn}
+\hypertarget{class_gestionnaire_ressources_a6f0f993e3edeb435cb65cc0b400e2958}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!charger\-Modele3\-D@{charger\-Modele3\-D}}
+\index{charger\-Modele3\-D@{charger\-Modele3\-D}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{charger\-Modele3\-D}]{\setlength{\rightskip}{0pt plus 5cm}const ai\-Scene $\ast$ Gestionnaire\-Ressources\-::charger\-Modele3\-D (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nom\-Fichier, }
+\item[{map$<$ string, G\-Luint $>$ \&}]{textures}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_ressources_a6f0f993e3edeb435cb65cc0b400e2958}
+Charge un modele 3\-D 
+\begin{DoxyParams}{Parameters}
+{\em nom\-Fichier} & Le nom du fichier du modele a charger \\
+\hline
+{\em textures} & Une map de textures pour l'objet. La cle est le nom de la texture et la valeur est l'identifiant de la texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La scene assimp representant l'objet si l'objet a ete bien charge. N\-U\-L\-L sinon 
+\end{DoxyReturn}
+\hypertarget{class_gestionnaire_ressources_a48e20c30acdaff204c77a3977ab2a7b0}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!charger\-Texture@{charger\-Texture}}
+\index{charger\-Texture@{charger\-Texture}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{charger\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}bool Gestionnaire\-Ressources\-::charger\-Texture (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nom\-Fichier, }
+\item[{G\-Luint \&}]{texture}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_ressources_a48e20c30acdaff204c77a3977ab2a7b0}
+Charge une texture 
+\begin{DoxyParams}{Parameters}
+{\em nom\-Fichier} & Le nom du fichier de la texture a charger \\
+\hline
+{\em texture} & L'identificateur de la texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si la texture a ete charge correctement, false sinon 
+\end{DoxyReturn}
+\hypertarget{class_gestionnaire_ressources_a8b6bbee12ec9c00bdb3637bc6072bfc2}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!creer\-Call\-List@{creer\-Call\-List}}
+\index{creer\-Call\-List@{creer\-Call\-List}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{creer\-Call\-List}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Gestionnaire\-Ressources\-::creer\-Call\-List (
+\begin{DoxyParamCaption}
+\item[{const ai\-Scene $\ast$}]{scene}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_ressources_a8b6bbee12ec9c00bdb3637bc6072bfc2}
+Creer une liste d'affichage pour un modele specifie 
+\begin{DoxyParams}{Parameters}
+{\em scene} & Une scene \hyperlink{namespace_assimp}{Assimp} permettant d'acceder aux donnees du modele pour l'afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'identifiant de la liste d'affichage creee ou G\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-V\-A\-L\-U\-E 
+\end{DoxyReturn}
+\hypertarget{class_gestionnaire_ressources_af6c8a2217d3269073d0b4b1246aeedac}{\index{Gestionnaire\-Ressources@{Gestionnaire\-Ressources}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!GestionnaireRessources@{Gestionnaire\-Ressources}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gestionnaire\-Ressources} $\ast$ Gestionnaire\-Ressources\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_gestionnaire_ressources_af6c8a2217d3269073d0b4b1246aeedac}
+Retourne l'instance du singleton. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Modeles/\hyperlink{_gestionnaire_ressources_8h}{Gestionnaire\-Ressources.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Modeles/Gestionnaire\-Ressources.\-cpp\end{DoxyCompactItemize}

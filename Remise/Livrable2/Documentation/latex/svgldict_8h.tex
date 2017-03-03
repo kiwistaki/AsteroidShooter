@@ -1,0 +1,63 @@
+\hypertarget{svgldict_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svgldict.h File Reference}
+\label{svgldict_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svgldict.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svgldict.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svgldict_8h_a0ca3e12e89c0d143b9f39c0ccdf670f0}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T}~\char`\"{}glyph-\/dict\char`\"{}
+\item 
+\#define \hyperlink{svgldict_8h_ad7edc365baa374585a59bab0702af9f4}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C}(class\-\_\-, get\-\_\-name\-\_\-, name\-\_\-index\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svgldict_8h_a0fcac1be0e1e2974f44abc78407009e4}{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} glyph\-\_\-index, \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} \hyperlink{fmod_8h_a6c0f527f003707dfaca177b40f406ed9}{buffer}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} buffer\-\_\-max)
+\item 
+typedef \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int}($\ast$ \hyperlink{svgldict_8h_a2fddbce85554d1e78e9d1f64eed27657}{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{F\-T\-\_\-\-String} $\ast$glyph\-\_\-name)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{svgldict_8h_a722f5cca1d36054a1dda0debcc20eb16}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E} (Glyph\-Dict)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svgldict_8h_ad7edc365baa374585a59bab0702af9f4}{\index{svgldict.\-h@{svgldict.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C}!svgldict.h@{svgldict.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-D\-I\-C\-T\-R\-E\-C(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{get\-\_\-name\-\_\-, }
+\item[{}]{name\-\_\-index\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{svgldict_8h_ad7edc365baa374585a59bab0702af9f4}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_GlyphDictRec class\_ =                        \(\backslash\)
+  \{                                                                    \(\backslash\)
+    get\_name\_, name\_index\_                                             \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{svgldict_8h_a0ca3e12e89c0d143b9f39c0ccdf670f0}{\index{svgldict.\-h@{svgldict.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T}!svgldict.h@{svgldict.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T~\char`\"{}glyph-\/dict\char`\"{}}}\label{svgldict_8h_a0ca3e12e89c0d143b9f39c0ccdf670f0}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svgldict_8h_a0fcac1be0e1e2974f44abc78407009e4}{\index{svgldict.\-h@{svgldict.\-h}!F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func@{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func}}
+\index{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func@{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func}!svgldict.h@{svgldict.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Get\-Name\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-U\-Int} glyph\-\_\-index, {\bf F\-T\-\_\-\-Pointer} {\bf buffer}, {\bf F\-T\-\_\-\-U\-Int} buffer\-\_\-max)}}\label{svgldict_8h_a0fcac1be0e1e2974f44abc78407009e4}
+\hypertarget{svgldict_8h_a2fddbce85554d1e78e9d1f64eed27657}{\index{svgldict.\-h@{svgldict.\-h}!F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func@{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func}}
+\index{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func@{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func}!svgldict.h@{svgldict.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-U\-Int}($\ast$ F\-T\-\_\-\-Glyph\-Dict\-\_\-\-Name\-Index\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-String} $\ast$glyph\-\_\-name)}}\label{svgldict_8h_a2fddbce85554d1e78e9d1f64eed27657}
+
+
+\subsection{Function Documentation}
+\hypertarget{svgldict_8h_a722f5cca1d36054a1dda0debcc20eb16}{\index{svgldict.\-h@{svgldict.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!svgldict.h@{svgldict.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E (
+\begin{DoxyParamCaption}
+\item[{Glyph\-Dict}]{}
+\end{DoxyParamCaption}
+)}}\label{svgldict_8h_a722f5cca1d36054a1dda0debcc20eb16}

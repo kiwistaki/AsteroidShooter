@@ -1,0 +1,178 @@
+\hypertarget{class_text_outputter}{\section{Text\-Outputter Class Reference}
+\label{class_text_outputter}\index{Text\-Outputter@{Text\-Outputter}}
+}
+
+
+Prints a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} to a text stream.  
+
+
+
+
+{\ttfamily \#include $<$Text\-Outputter.\-h$>$}
+
+Inheritance diagram for Text\-Outputter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_outputter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_text_outputter_aa513788ccc271901964847902fe3fe8e}{Text\-Outputter} (\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result}, \hyperlink{_stream_8h_a80291a4e32881b445c8d4f839a9dd979}{O\-Stream} \&\hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream})
+\item 
+virtual \hyperlink{class_text_outputter_a4198a0eaa07f3ff43fcbcab74d080b6b}{$\sim$\-Text\-Outputter} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a6b52425e9d17a04f04fc42a88b564176}{write} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a4c1413e4ce39317c18e3eed577dd208b}{print\-Failures} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a3d80efeb41c0401372536b362358dc45}{print\-Header} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_af2f2271d5795c6be4f7a47e255554a69}{print\-Failure} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} failure\-Number)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a029d1e203df4e3f426eb9685062683bc}{print\-Failure\-List\-Mark} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} failure\-Number)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a200849dff27b10844d117029576b17ac}{print\-Failure\-Test\-Name} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a95c601c6a903700450d95e13db502247}{print\-Failure\-Type} (\hyperlink{class_test_failure}{Test\-Failure} $\ast$failure)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a5ba7ad1968b180ce9593373718632af9}{print\-Failure\-Location} (\hyperlink{class_source_line}{Source\-Line} source\-Line)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_ae1a2ad2deebf4b12f803c59d867980f7}{print\-Failure\-Detail} (\hyperlink{class_exception}{Exception} $\ast$thrown\-Exception)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_a254f58361b8f5c59b60df1c007d9a438}{print\-Failure\-Warning} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_outputter_aeabfe5420c137b0a935c5b0acb45a6d8}{print\-Statistics} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$ \hyperlink{class_text_outputter_a465e8c580e6f2db9ed021e1c44b95eb2}{m\-\_\-result}
+\item 
+\hyperlink{_stream_8h_a80291a4e32881b445c8d4f839a9dd979}{O\-Stream} \& \hyperlink{class_text_outputter_a947e16694e57297974e0f651d6298b80}{m\-\_\-stream}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Prints a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} to a text stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_text_outputter_aa513788ccc271901964847902fe3fe8e}{\index{Text\-Outputter@{Text\-Outputter}!Text\-Outputter@{Text\-Outputter}}
+\index{Text\-Outputter@{Text\-Outputter}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{Text\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}Text\-Outputter\-::\-Text\-Outputter (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result\-Collector} $\ast$}]{result, }
+\item[{{\bf O\-Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{class_text_outputter_aa513788ccc271901964847902fe3fe8e}
+\hypertarget{class_text_outputter_a4198a0eaa07f3ff43fcbcab74d080b6b}{\index{Text\-Outputter@{Text\-Outputter}!$\sim$\-Text\-Outputter@{$\sim$\-Text\-Outputter}}
+\index{$\sim$\-Text\-Outputter@{$\sim$\-Text\-Outputter}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{$\sim$\-Text\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}virtual Text\-Outputter\-::$\sim$\-Text\-Outputter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a4198a0eaa07f3ff43fcbcab74d080b6b}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_text_outputter_af2f2271d5795c6be4f7a47e255554a69}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure@{print\-Failure}}
+\index{print\-Failure@{print\-Failure}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure, }
+\item[{{\bf int}}]{failure\-Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_af2f2271d5795c6be4f7a47e255554a69}
+\hypertarget{class_text_outputter_ae1a2ad2deebf4b12f803c59d867980f7}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure\-Detail@{print\-Failure\-Detail}}
+\index{print\-Failure\-Detail@{print\-Failure\-Detail}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure\-Detail (
+\begin{DoxyParamCaption}
+\item[{{\bf Exception} $\ast$}]{thrown\-Exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_ae1a2ad2deebf4b12f803c59d867980f7}
+\hypertarget{class_text_outputter_a029d1e203df4e3f426eb9685062683bc}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure\-List\-Mark@{print\-Failure\-List\-Mark}}
+\index{print\-Failure\-List\-Mark@{print\-Failure\-List\-Mark}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure\-List\-Mark}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure\-List\-Mark (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{failure\-Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a029d1e203df4e3f426eb9685062683bc}
+\hypertarget{class_text_outputter_a5ba7ad1968b180ce9593373718632af9}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure\-Location@{print\-Failure\-Location}}
+\index{print\-Failure\-Location@{print\-Failure\-Location}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure\-Location}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure\-Location (
+\begin{DoxyParamCaption}
+\item[{{\bf Source\-Line}}]{source\-Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a5ba7ad1968b180ce9593373718632af9}
+\hypertarget{class_text_outputter_a4c1413e4ce39317c18e3eed577dd208b}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failures@{print\-Failures}}
+\index{print\-Failures@{print\-Failures}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failures}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a4c1413e4ce39317c18e3eed577dd208b}
+\hypertarget{class_text_outputter_a200849dff27b10844d117029576b17ac}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure\-Test\-Name@{print\-Failure\-Test\-Name}}
+\index{print\-Failure\-Test\-Name@{print\-Failure\-Test\-Name}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure\-Test\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure\-Test\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a200849dff27b10844d117029576b17ac}
+\hypertarget{class_text_outputter_a95c601c6a903700450d95e13db502247}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure\-Type@{print\-Failure\-Type}}
+\index{print\-Failure\-Type@{print\-Failure\-Type}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Failure} $\ast$}]{failure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a95c601c6a903700450d95e13db502247}
+\hypertarget{class_text_outputter_a254f58361b8f5c59b60df1c007d9a438}{\index{Text\-Outputter@{Text\-Outputter}!print\-Failure\-Warning@{print\-Failure\-Warning}}
+\index{print\-Failure\-Warning@{print\-Failure\-Warning}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Failure\-Warning}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Failure\-Warning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a254f58361b8f5c59b60df1c007d9a438}
+\hypertarget{class_text_outputter_a3d80efeb41c0401372536b362358dc45}{\index{Text\-Outputter@{Text\-Outputter}!print\-Header@{print\-Header}}
+\index{print\-Header@{print\-Header}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a3d80efeb41c0401372536b362358dc45}
+\hypertarget{class_text_outputter_aeabfe5420c137b0a935c5b0acb45a6d8}{\index{Text\-Outputter@{Text\-Outputter}!print\-Statistics@{print\-Statistics}}
+\index{print\-Statistics@{print\-Statistics}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{print\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Outputter\-::print\-Statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_aeabfe5420c137b0a935c5b0acb45a6d8}
+\hypertarget{class_text_outputter_a6b52425e9d17a04f04fc42a88b564176}{\index{Text\-Outputter@{Text\-Outputter}!write@{write}}
+\index{write@{write}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Text\-Outputter\-::write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_outputter_a6b52425e9d17a04f04fc42a88b564176}
+
+
+Implements \hyperlink{class_outputter_a0a5f32693d53ed33ceb8385041cb4b68}{Outputter}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_text_outputter_a465e8c580e6f2db9ed021e1c44b95eb2}{\index{Text\-Outputter@{Text\-Outputter}!m\-\_\-result@{m\-\_\-result}}
+\index{m\-\_\-result@{m\-\_\-result}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{m\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Result\-Collector}$\ast$ Text\-Outputter\-::m\-\_\-result\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_text_outputter_a465e8c580e6f2db9ed021e1c44b95eb2}
+\hypertarget{class_text_outputter_a947e16694e57297974e0f651d6298b80}{\index{Text\-Outputter@{Text\-Outputter}!m\-\_\-stream@{m\-\_\-stream}}
+\index{m\-\_\-stream@{m\-\_\-stream}!TextOutputter@{Text\-Outputter}}
+\subsubsection[{m\-\_\-stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-Stream}\& Text\-Outputter\-::m\-\_\-stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_text_outputter_a947e16694e57297974e0f651d6298b80}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_text_outputter_8h}{Text\-Outputter.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{class_test_case_decorator}{\section{Test\-Case\-Decorator Class Reference}
+\label{class_test_case_decorator}\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}}
+}
+
+
+Decorator for \hyperlink{class_test}{Test} cases.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Case\-Decorator.\-h$>$}
+
+Inheritance diagram for Test\-Case\-Decorator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.444445cm]{class_test_case_decorator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_case_decorator_ad324bf1dd0d660bae3eb5be8056e49e2}{Test\-Case\-Decorator} (\hyperlink{class_test_case}{Test\-Case} $\ast$test)
+\item 
+\hyperlink{class_test_case_decorator_a7a3e7d013ec9cdb28433e01b274924aa}{$\sim$\-Test\-Case\-Decorator} ()
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_case_decorator_a5214bb812414958d39f084e09c8af207}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_case_decorator_ae379c8f3e6d411d8a5da57094c08a623}{set\-Up} ()
+\begin{DoxyCompactList}\small\item\em Set up context before running a test. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_case_decorator_adc3ee82fb758f39b5781624090af449d}{tear\-Down} ()
+\begin{DoxyCompactList}\small\item\em Clean up after the test run. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_case_decorator_ad083ca55ff2e7f1f3f442364aa1dde66}{run\-Test} ()
+\begin{DoxyCompactList}\small\item\em F\-I\-X\-M\-E\-: this should probably be pure virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_case}{Test\-Case} $\ast$ \hyperlink{class_test_case_decorator_aac24fdb42563070ccad5575863e2a65e}{m\-\_\-test}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Decorator for \hyperlink{class_test}{Test} cases. 
+
+\hyperlink{class_test_case_decorator}{Test\-Case\-Decorator} provides an alternate means to extend functionality of a test class without subclassing the test. Instead, one can subclass the decorater and use it to wrap the test class.
+
+Does not assume ownership of the test it decorates 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_case_decorator_ad324bf1dd0d660bae3eb5be8056e49e2}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!Test\-Case\-Decorator@{Test\-Case\-Decorator}}
+\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{Test\-Case\-Decorator}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Case\-Decorator\-::\-Test\-Case\-Decorator (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Case} $\ast$}]{test}
+\end{DoxyParamCaption}
+)}}\label{class_test_case_decorator_ad324bf1dd0d660bae3eb5be8056e49e2}
+\hypertarget{class_test_case_decorator_a7a3e7d013ec9cdb28433e01b274924aa}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!$\sim$\-Test\-Case\-Decorator@{$\sim$\-Test\-Case\-Decorator}}
+\index{$\sim$\-Test\-Case\-Decorator@{$\sim$\-Test\-Case\-Decorator}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{$\sim$\-Test\-Case\-Decorator}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Case\-Decorator\-::$\sim$\-Test\-Case\-Decorator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_test_case_decorator_a7a3e7d013ec9cdb28433e01b274924aa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_case_decorator_a5214bb812414958d39f084e09c8af207}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Test\-Case\-Decorator\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_case_decorator_a5214bb812414958d39f084e09c8af207}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Implements \hyperlink{class_test_a5e024da199f811a33264e432c21dcc94}{Test}.
+
+\hypertarget{class_test_case_decorator_ad083ca55ff2e7f1f3f442364aa1dde66}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!run\-Test@{run\-Test}}
+\index{run\-Test@{run\-Test}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{run\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Case\-Decorator\-::run\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_case_decorator_ad083ca55ff2e7f1f3f442364aa1dde66}
+
+
+F\-I\-X\-M\-E\-: this should probably be pure virtual. 
+
+
+
+Reimplemented from \hyperlink{class_test_case_a6b55957ac1dfef01e5d9fa2475676f34}{Test\-Case}.
+
+\hypertarget{class_test_case_decorator_ae379c8f3e6d411d8a5da57094c08a623}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!set\-Up@{set\-Up}}
+\index{set\-Up@{set\-Up}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{set\-Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Case\-Decorator\-::set\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_case_decorator_ae379c8f3e6d411d8a5da57094c08a623}
+
+
+Set up context before running a test. 
+
+
+
+Reimplemented from \hyperlink{class_test_fixture_a0e77590b14a3ec7f93fe02e5b89a242f}{Test\-Fixture}.
+
+\hypertarget{class_test_case_decorator_adc3ee82fb758f39b5781624090af449d}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!tear\-Down@{tear\-Down}}
+\index{tear\-Down@{tear\-Down}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{tear\-Down}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Case\-Decorator\-::tear\-Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_case_decorator_adc3ee82fb758f39b5781624090af449d}
+
+
+Clean up after the test run. 
+
+
+
+Reimplemented from \hyperlink{class_test_fixture_a707dd4d7d0910af916343d79c0feffc9}{Test\-Fixture}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_case_decorator_aac24fdb42563070ccad5575863e2a65e}{\index{Test\-Case\-Decorator@{Test\-Case\-Decorator}!m\-\_\-test@{m\-\_\-test}}
+\index{m\-\_\-test@{m\-\_\-test}!TestCaseDecorator@{Test\-Case\-Decorator}}
+\subsubsection[{m\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Case}$\ast$ Test\-Case\-Decorator\-::m\-\_\-test\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_case_decorator_aac24fdb42563070ccad5575863e2a65e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\hyperlink{_test_case_decorator_8h}{Test\-Case\-Decorator.\-h}\end{DoxyCompactItemize}

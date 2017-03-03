@@ -1,0 +1,136 @@
+\hypertarget{class_test_caller}{\section{Test\-Caller$<$ Fixture $>$ Class Template Reference}
+\label{class_test_caller}\index{Test\-Caller$<$ Fixture $>$@{Test\-Caller$<$ Fixture $>$}}
+}
+
+
+Generate a test case from a fixture method.
+
+A test caller provides access to a test case method on a test fixture class. \hyperlink{class_test}{Test} callers are useful when you want to run an individual test or add it to a suite. \hyperlink{class_test}{Test} Callers invoke only one \hyperlink{class_test}{Test} (i.\-e. test method) on one Fixture of a \hyperlink{class_test_fixture}{Test\-Fixture}.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Caller.\-h$>$}
+
+Inheritance diagram for Test\-Caller$<$ Fixture $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_caller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_caller_a84cb35144455c4245c45d755b84c6093}{Test\-Caller} (std\-::string name, Test\-Method test)
+\item 
+\hyperlink{class_test_caller_a21479de59b7c38a6d8bed9e66025ebb0}{Test\-Caller} (std\-::string name, Test\-Method test, Fixture \&fixture)
+\item 
+\hyperlink{class_test_caller_a5977f4de9736929451f30b039a42487d}{Test\-Caller} (std\-::string name, Test\-Method test, Fixture $\ast$fixture)
+\item 
+\hypertarget{class_test_caller_aad0c877a47b75d056a4f8f323d3169ab}{void \hyperlink{class_test_caller_aad0c877a47b75d056a4f8f323d3169ab}{run\-Test} ()}\label{class_test_caller_aad0c877a47b75d056a4f8f323d3169ab}
+
+\begin{DoxyCompactList}\small\item\em F\-I\-X\-M\-E\-: this should probably be pure virtual. \end{DoxyCompactList}\item 
+\hypertarget{class_test_caller_ae6880afc711d24ae0b8846759064ceea}{void \hyperlink{class_test_caller_ae6880afc711d24ae0b8846759064ceea}{set\-Up} ()}\label{class_test_caller_ae6880afc711d24ae0b8846759064ceea}
+
+\begin{DoxyCompactList}\small\item\em Set up context before running a test. \end{DoxyCompactList}\item 
+\hypertarget{class_test_caller_a0e463b88bf0ceacbd8875e0450ed2649}{void \hyperlink{class_test_caller_a0e463b88bf0ceacbd8875e0450ed2649}{tear\-Down} ()}\label{class_test_caller_a0e463b88bf0ceacbd8875e0450ed2649}
+
+\begin{DoxyCompactList}\small\item\em Clean up after the test run. \end{DoxyCompactList}\item 
+\hypertarget{class_test_caller_a55f4f93fc657acb8c1dd500923a4bd1f}{std\-::string {\bfseries to\-String} () const }\label{class_test_caller_a55f4f93fc657acb8c1dd500923a4bd1f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Fixture$>$class Test\-Caller$<$ Fixture $>$}
+
+Generate a test case from a fixture method.
+
+A test caller provides access to a test case method on a test fixture class. \hyperlink{class_test}{Test} callers are useful when you want to run an individual test or add it to a suite. \hyperlink{class_test}{Test} Callers invoke only one \hyperlink{class_test}{Test} (i.\-e. test method) on one Fixture of a \hyperlink{class_test_fixture}{Test\-Fixture}. 
+
+Here is an example\-: 
+\begin{DoxyCode}
+\textcolor{keyword}{class }MathTest : \textcolor{keyword}{public} CppUnit::TestFixture \{
+        ...
+    \textcolor{keyword}{public}:
+        \textcolor{keywordtype}{void}         \hyperlink{class_test_caller_ae6880afc711d24ae0b8846759064ceea}{setUp}();
+        \textcolor{keywordtype}{void}         \hyperlink{class_test_caller_a0e463b88bf0ceacbd8875e0450ed2649}{tearDown}();
+
+        \textcolor{keywordtype}{void}         testAdd();
+        \textcolor{keywordtype}{void}         testSubtract();
+\};
+
+CppUnit::Test *MathTest::suite() \{
+    CppUnit::TestSuite *suite = \textcolor{keyword}{new} CppUnit::TestSuite;
+
+    suite->addTest( \textcolor{keyword}{new} CppUnit::TestCaller<MathTest>( \textcolor{stringliteral}{"testAdd"}, testAdd ) );
+    \textcolor{keywordflow}{return} suite;
+\}
+\end{DoxyCode}
+
+
+You can use a \hyperlink{class_test_caller}{Test\-Caller} to bind any test method on a \hyperlink{class_test_fixture}{Test\-Fixture} class, as long as it accepts void and returns void.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_case}{Test\-Case} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_caller_a84cb35144455c4245c45d755b84c6093}{\index{Test\-Caller@{Test\-Caller}!Test\-Caller@{Test\-Caller}}
+\index{Test\-Caller@{Test\-Caller}!TestCaller@{Test\-Caller}}
+\subsubsection[{Test\-Caller}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fixture $>$ {\bf Test\-Caller}$<$ Fixture $>$\-::{\bf Test\-Caller} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{Test\-Method}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_test_caller_a84cb35144455c4245c45d755b84c6093}
+Constructor for \hyperlink{class_test_caller}{Test\-Caller}. This constructor builds a new Fixture instance owned by the \hyperlink{class_test_caller}{Test\-Caller}. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of this \hyperlink{class_test_caller}{Test\-Caller} \\
+\hline
+{\em test} & the method this \hyperlink{class_test_caller}{Test\-Caller} calls in \hyperlink{class_test_caller_aad0c877a47b75d056a4f8f323d3169ab}{run\-Test()} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_caller_a21479de59b7c38a6d8bed9e66025ebb0}{\index{Test\-Caller@{Test\-Caller}!Test\-Caller@{Test\-Caller}}
+\index{Test\-Caller@{Test\-Caller}!TestCaller@{Test\-Caller}}
+\subsubsection[{Test\-Caller}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fixture $>$ {\bf Test\-Caller}$<$ Fixture $>$\-::{\bf Test\-Caller} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{Test\-Method}]{test, }
+\item[{Fixture \&}]{fixture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_test_caller_a21479de59b7c38a6d8bed9e66025ebb0}
+Constructor for \hyperlink{class_test_caller}{Test\-Caller}. This constructor does not create a new Fixture instance but accepts an existing one as parameter. The \hyperlink{class_test_caller}{Test\-Caller} will not own the Fixture object. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of this \hyperlink{class_test_caller}{Test\-Caller} \\
+\hline
+{\em test} & the method this \hyperlink{class_test_caller}{Test\-Caller} calls in \hyperlink{class_test_caller_aad0c877a47b75d056a4f8f323d3169ab}{run\-Test()} \\
+\hline
+{\em fixture} & the Fixture to invoke the test method on. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_caller_a5977f4de9736929451f30b039a42487d}{\index{Test\-Caller@{Test\-Caller}!Test\-Caller@{Test\-Caller}}
+\index{Test\-Caller@{Test\-Caller}!TestCaller@{Test\-Caller}}
+\subsubsection[{Test\-Caller}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fixture $>$ {\bf Test\-Caller}$<$ Fixture $>$\-::{\bf Test\-Caller} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{Test\-Method}]{test, }
+\item[{Fixture $\ast$}]{fixture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_test_caller_a5977f4de9736929451f30b039a42487d}
+Constructor for \hyperlink{class_test_caller}{Test\-Caller}. This constructor does not create a new Fixture instance but accepts an existing one as parameter. The \hyperlink{class_test_caller}{Test\-Caller} will own the Fixture object and delete it in its destructor. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of this \hyperlink{class_test_caller}{Test\-Caller} \\
+\hline
+{\em test} & the method this \hyperlink{class_test_caller}{Test\-Caller} calls in \hyperlink{class_test_caller_aad0c877a47b75d056a4f8f323d3169ab}{run\-Test()} \\
+\hline
+{\em fixture} & the Fixture to invoke the test method on. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Caller.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{class_etat_joueur_virtuel}{\section{Etat\-Joueur\-Virtuel Class Reference}
+\label{class_etat_joueur_virtuel}\index{Etat\-Joueur\-Virtuel@{Etat\-Joueur\-Virtuel}}
+}
+
+
+La classe \hyperlink{class_etat_joueur_virtuel}{Etat\-Joueur\-Virtuel} permet d'implementer les differents mode du vaisseau virtuel.  
+
+
+
+
+{\ttfamily \#include $<$Etat\-Joueur\-Virtuel.\-h$>$}
+
+Inheritance diagram for Etat\-Joueur\-Virtuel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_etat_joueur_virtuel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga01e7e1a2286c56d6a1402fda8e26515c}{Etat\-Joueur\-Virtuel} ()
+\item 
+virtual \hyperlink{class_etat_joueur_virtuel_a208323774b6c0aa5446a22849e9a0090}{$\sim$\-Etat\-Joueur\-Virtuel} ()
+\item 
+virtual void \hyperlink{class_etat_joueur_virtuel_a21b40c0d4306e6073ee0e4ac7ff36a96}{update} (\hyperlink{class_vaisseau_virtuel}{Vaisseau\-Virtuel} \&vaisseau\-Virtuel, float delta\-T)=0
+\item 
+virtual const Mode \hyperlink{class_etat_joueur_virtuel_a3b18b9c7cd0181438090b040f6ecff57}{get\-Etat} () const =0
+\item 
+virtual \hyperlink{class_asteroide}{Asteroide} $\ast$ \hyperlink{class_etat_joueur_virtuel_a9fc759c914d9145f24210fdb2c9c0adc}{get\-Asteroide\-Cible} () const =0
+\item 
+\hypertarget{class_etat_joueur_virtuel_a52e15346e3bf2c1a276f534f7ba826ef}{virtual void {\bfseries set\-Ast\-Null} ()=0}\label{class_etat_joueur_virtuel_a52e15346e3bf2c1a276f534f7ba826ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_etat_joueur_virtuel_a49eff340df0c44ebe67873eb07778ab8}{\hyperlink{class_carte}{Carte} $\ast$ {\bfseries carte\-\_\-}}\label{class_etat_joueur_virtuel_a49eff340df0c44ebe67873eb07778ab8}
+
+\item 
+\hypertarget{class_etat_joueur_virtuel_a0d7d4783215bd6da4f061bae69106204}{double {\bfseries min\-X\-\_\-}}\label{class_etat_joueur_virtuel_a0d7d4783215bd6da4f061bae69106204}
+
+\item 
+\hypertarget{class_etat_joueur_virtuel_a0ab020dc8de0e3ae0056870f18f00452}{double {\bfseries min\-Y\-\_\-}}\label{class_etat_joueur_virtuel_a0ab020dc8de0e3ae0056870f18f00452}
+
+\item 
+\hypertarget{class_etat_joueur_virtuel_abe1f0055a14c3de8488e0a75183becd7}{double {\bfseries max\-X\-\_\-}}\label{class_etat_joueur_virtuel_abe1f0055a14c3de8488e0a75183becd7}
+
+\item 
+\hypertarget{class_etat_joueur_virtuel_a35f846f2c2f1b6bd5921185a5e47b063}{double {\bfseries max\-Y\-\_\-}}\label{class_etat_joueur_virtuel_a35f846f2c2f1b6bd5921185a5e47b063}
+
+\item 
+\hypertarget{class_etat_joueur_virtuel_a1106628b3215c4f875c3c746158472dd}{double {\bfseries distance\-Passer\-Mode\-Attaque\-\_\-}}\label{class_etat_joueur_virtuel_a1106628b3215c4f875c3c746158472dd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_etat_joueur_virtuel}{Etat\-Joueur\-Virtuel} permet d'implementer les differents mode du vaisseau virtuel. 
+
+Cette classe contiendra des méthodes qui le changement d'etats. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_etat_joueur_virtuel_a208323774b6c0aa5446a22849e9a0090}{\index{Etat\-Joueur\-Virtuel@{Etat\-Joueur\-Virtuel}!$\sim$\-Etat\-Joueur\-Virtuel@{$\sim$\-Etat\-Joueur\-Virtuel}}
+\index{$\sim$\-Etat\-Joueur\-Virtuel@{$\sim$\-Etat\-Joueur\-Virtuel}!EtatJoueurVirtuel@{Etat\-Joueur\-Virtuel}}
+\subsubsection[{$\sim$\-Etat\-Joueur\-Virtuel}]{\setlength{\rightskip}{0pt plus 5cm}virtual Etat\-Joueur\-Virtuel\-::$\sim$\-Etat\-Joueur\-Virtuel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_etat_joueur_virtuel_a208323774b6c0aa5446a22849e9a0090}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_etat_joueur_virtuel_a9fc759c914d9145f24210fdb2c9c0adc}{\index{Etat\-Joueur\-Virtuel@{Etat\-Joueur\-Virtuel}!get\-Asteroide\-Cible@{get\-Asteroide\-Cible}}
+\index{get\-Asteroide\-Cible@{get\-Asteroide\-Cible}!EtatJoueurVirtuel@{Etat\-Joueur\-Virtuel}}
+\subsubsection[{get\-Asteroide\-Cible}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Asteroide}$\ast$ Etat\-Joueur\-Virtuel\-::get\-Asteroide\-Cible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_joueur_virtuel_a9fc759c914d9145f24210fdb2c9c0adc}
+Getter de l'asteroide vise par le joueur virtuel \begin{DoxyReturn}{Returns}
+\-: l'asteroide 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_mode_recherche_a1eb4a92d4379f6c700a338c4fce95169}{Mode\-Recherche}, \hyperlink{class_mode_approche_ae744afaeb91afa4b65beb3a5a85c5c86}{Mode\-Approche}, and \hyperlink{class_mode_attaque_acade17b554ddd3ab4c1f467530674763}{Mode\-Attaque}.
+
+\hypertarget{class_etat_joueur_virtuel_a3b18b9c7cd0181438090b040f6ecff57}{\index{Etat\-Joueur\-Virtuel@{Etat\-Joueur\-Virtuel}!get\-Etat@{get\-Etat}}
+\index{get\-Etat@{get\-Etat}!EtatJoueurVirtuel@{Etat\-Joueur\-Virtuel}}
+\subsubsection[{get\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mode Etat\-Joueur\-Virtuel\-::get\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_joueur_virtuel_a3b18b9c7cd0181438090b040f6ecff57}
+Getter du mode d'etat \begin{DoxyReturn}{Returns}
+\-: le mode 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_mode_recherche_a841e966fd005f3fe0097ad1fcf77d1fc}{Mode\-Recherche}, \hyperlink{class_mode_approche_a2931e82044b815a9ad8c32af36d101c1}{Mode\-Approche}, and \hyperlink{class_mode_attaque_a99026389b3870c7e33fc51cf2d2c0701}{Mode\-Attaque}.
+
+\hypertarget{class_etat_joueur_virtuel_a21b40c0d4306e6073ee0e4ac7ff36a96}{\index{Etat\-Joueur\-Virtuel@{Etat\-Joueur\-Virtuel}!update@{update}}
+\index{update@{update}!EtatJoueurVirtuel@{Etat\-Joueur\-Virtuel}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-Joueur\-Virtuel\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Vaisseau\-Virtuel} \&}]{vaisseau\-Virtuel, }
+\item[{float}]{delta\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_joueur_virtuel_a21b40c0d4306e6073ee0e4ac7ff36a96}
+Update, méthode virtuelle 
+\begin{DoxyParams}{Parameters}
+{\em } & le vaisseau virtuel, \\
+\hline
+{\em } & delta\-T \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_mode_recherche_a5735b27160acd8f644caf1863c9ab954}{Mode\-Recherche}, \hyperlink{class_mode_approche_abfe4098ee8d3a873e6721140520e49fd}{Mode\-Approche}, and \hyperlink{class_mode_attaque_a3049ed25a9a5a4d447536ab631bd9031}{Mode\-Attaque}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_etat_joueur_virtuel_8h}{Etat\-Joueur\-Virtuel.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Environnement/\hyperlink{_etat_joueur_virtuel_8cpp}{Etat\-Joueur\-Virtuel.\-cpp}\end{DoxyCompactItemize}

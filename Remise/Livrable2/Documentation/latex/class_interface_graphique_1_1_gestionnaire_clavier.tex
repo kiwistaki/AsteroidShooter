@@ -1,0 +1,75 @@
+\hypertarget{class_interface_graphique_1_1_gestionnaire_clavier}{\section{Interface\-Graphique.\-Gestionnaire\-Clavier Class Reference}
+\label{class_interface_graphique_1_1_gestionnaire_clavier}\index{Interface\-Graphique.\-Gestionnaire\-Clavier@{Interface\-Graphique.\-Gestionnaire\-Clavier}}
+}
+Inheritance diagram for Interface\-Graphique.\-Gestionnaire\-Clavier\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_interface_graphique_1_1_gestionnaire_clavier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interface_graphique_1_1_gestionnaire_clavier_a222ffc76d02866188df4f477e2ce28e8}{Gestionnaire\-Clavier} (Object gestionnaire)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_interface_graphique_1_1_gestionnaire_clavier_ab0e60ec8e5fedd3be53614423def95f3}{key\-Pressed} (Key\-Event evenement)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_interface_graphique_1_1_gestionnaire_clavier_ad804df8af48e0326a6f30630d0bcd21c}{key\-Released} (Key\-Event evenement)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe permettant de gérer les actions du clavier (par réflexion) permettant ainsi de délocaliser les méthodes appelées, et de les mettre dans la classe \hyperlink{class_interface_graphique_1_1_input_manager}{Input\-Manager}. Aussi, de cette manière, on a besoin que d'un seul Key\-Event qui gère tous les évènements du clavier 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_interface_graphique_1_1_gestionnaire_clavier_a222ffc76d02866188df4f477e2ce28e8}{\index{Interface\-Graphique\-::\-Gestionnaire\-Clavier@{Interface\-Graphique\-::\-Gestionnaire\-Clavier}!Gestionnaire\-Clavier@{Gestionnaire\-Clavier}}
+\index{Gestionnaire\-Clavier@{Gestionnaire\-Clavier}!InterfaceGraphique::GestionnaireClavier@{Interface\-Graphique\-::\-Gestionnaire\-Clavier}}
+\subsubsection[{Gestionnaire\-Clavier}]{\setlength{\rightskip}{0pt plus 5cm}Interface\-Graphique.\-Gestionnaire\-Clavier.\-Gestionnaire\-Clavier (
+\begin{DoxyParamCaption}
+\item[{Object}]{gestionnaire}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_gestionnaire_clavier_a222ffc76d02866188df4f477e2ce28e8}
+Constructeur qui ne fait qu'assigner le gestionnaire des actions reçues par cet écouteur.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gestionnaire} & Le gestionnaire des actions reçues par cet écouteur. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_interface_graphique_1_1_gestionnaire_clavier_ab0e60ec8e5fedd3be53614423def95f3}{\index{Interface\-Graphique\-::\-Gestionnaire\-Clavier@{Interface\-Graphique\-::\-Gestionnaire\-Clavier}!key\-Pressed@{key\-Pressed}}
+\index{key\-Pressed@{key\-Pressed}!InterfaceGraphique::GestionnaireClavier@{Interface\-Graphique\-::\-Gestionnaire\-Clavier}}
+\subsubsection[{key\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Interface\-Graphique.\-Gestionnaire\-Clavier.\-key\-Pressed (
+\begin{DoxyParamCaption}
+\item[{Key\-Event}]{evenement}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_gestionnaire_clavier_ab0e60ec8e5fedd3be53614423def95f3}
+Implantation de l'interface Key\-Listener qui gère les événements d'une touche enfoncée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em evenement} & L'événement correspondant à l'action. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_interface_graphique_1_1_gestionnaire_clavier_ad804df8af48e0326a6f30630d0bcd21c}{\index{Interface\-Graphique\-::\-Gestionnaire\-Clavier@{Interface\-Graphique\-::\-Gestionnaire\-Clavier}!key\-Released@{key\-Released}}
+\index{key\-Released@{key\-Released}!InterfaceGraphique::GestionnaireClavier@{Interface\-Graphique\-::\-Gestionnaire\-Clavier}}
+\subsubsection[{key\-Released}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Interface\-Graphique.\-Gestionnaire\-Clavier.\-key\-Released (
+\begin{DoxyParamCaption}
+\item[{Key\-Event}]{evenement}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_gestionnaire_clavier_ad804df8af48e0326a6f30630d0bcd21c}
+Méthode appelée lorsqu'une touche de clavier est relaché 
+\begin{DoxyParams}{Parameters}
+{\em evenement} & Evenement lié a l'action du relachement de clic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-Java/\-Interface\-Graphique/src/\-Interface\-Graphique/\hyperlink{_gestionnaire_clavier_8java}{Gestionnaire\-Clavier.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{svpscmap_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svpscmap.h File Reference}
+\label{svpscmap_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svpscmap.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svpscmap.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_s___uni_map__}{P\-S\-\_\-\-Uni\-Map\-\_\-}
+\item 
+struct \hyperlink{struct_p_s___unicodes_rec__}{P\-S\-\_\-\-Unicodes\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svpscmap_8h_a807c6aabfd460455bcc1500666871110}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S}~\char`\"{}postscript-\/cmaps\char`\"{}
+\item 
+\#define \hyperlink{svpscmap_8h_acea6416a668e05e35bfe9827c31433e0}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C}(class\-\_\-, unicode\-\_\-value\-\_\-, unicodes\-\_\-init\-\_\-, unicodes\-\_\-char\-\_\-index\-\_\-, unicodes\-\_\-char\-\_\-next\-\_\-, macintosh\-\_\-name\-\_\-,adobe\-\_\-std\-\_\-strings\-\_\-, adobe\-\_\-std\-\_\-encoding\-\_\-, adobe\-\_\-expert\-\_\-encoding\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef F\-T\-\_\-\-U\-Int32($\ast$ \hyperlink{svpscmap_8h_a97ae96551a4ddaeb0c201f4fb65aeaa2}{P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func} )(const char $\ast$glyph\-\_\-name)
+\item 
+typedef const char $\ast$($\ast$ \hyperlink{svpscmap_8h_aeb71217c76593f9738eef379c3acc5b8}{P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func} )(\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} name\-\_\-index)
+\item 
+typedef const char $\ast$($\ast$ \hyperlink{svpscmap_8h_a52d60faf8655637bf788e193641abaee}{P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func} )(\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} string\-\_\-index)
+\item 
+typedef struct \hyperlink{struct_p_s___uni_map__}{P\-S\-\_\-\-Uni\-Map\-\_\-} \hyperlink{svpscmap_8h_a1756f07ad047fe50bbee9c2520b9a8e5}{P\-S\-\_\-\-Uni\-Map}
+\item 
+typedef struct \hyperlink{struct_p_s___unicodes_rec__}{P\-S\-\_\-\-Unicodes\-Rec\-\_\-} $\ast$ \hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\-S\-\_\-\-Unicodes}
+\item 
+typedef struct \hyperlink{struct_p_s___unicodes_rec__}{P\-S\-\_\-\-Unicodes\-Rec\-\_\-} \hyperlink{svpscmap_8h_a417dbf0cbd3221a23c766410a526ef8d}{P\-S\-\_\-\-Unicodes\-Rec}
+\item 
+typedef const char $\ast$($\ast$ \hyperlink{svpscmap_8h_a859e1ce839c1dd3abb1ccce1a06ed6b7}{P\-S\-\_\-\-Get\-Glyph\-Name\-Func} )(\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} \hyperlink{fmod__codec_8h_a42c2b1d86fa71a425e73a882cb0a72c8}{data}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} string\-\_\-index)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{svpscmap_8h_a384aa002117a9a02eb8f0f2a77adba0d}{P\-S\-\_\-\-Free\-Glyph\-Name\-Func} )(\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} \hyperlink{fmod__codec_8h_a42c2b1d86fa71a425e73a882cb0a72c8}{data}, const char $\ast$\hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svpscmap_8h_a51a389ab1ce0f4b83eef4a935afad78e}{P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func} )(\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory} memory, \hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\-S\-\_\-\-Unicodes} unicodes, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} num\-\_\-glyphs, \hyperlink{svpscmap_8h_a859e1ce839c1dd3abb1ccce1a06ed6b7}{P\-S\-\_\-\-Get\-Glyph\-Name\-Func} get\-\_\-glyph\-\_\-name, \hyperlink{svpscmap_8h_a384aa002117a9a02eb8f0f2a77adba0d}{P\-S\-\_\-\-Free\-Glyph\-Name\-Func} free\-\_\-glyph\-\_\-name, \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} glyph\-\_\-data)
+\item 
+typedef \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int}($\ast$ \hyperlink{svpscmap_8h_ab93fcea0aa39cbfaa62defe0ce04e26f}{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func} )(\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\-S\-\_\-\-Unicodes} unicodes, F\-T\-\_\-\-U\-Int32 \hyperlink{fmod_8h_a8f9d420355f06ab263a6ab9bdac02d05}{unicode})
+\item 
+typedef F\-T\-\_\-\-U\-Int32($\ast$ \hyperlink{svpscmap_8h_a6332d0e1668fa421b375a98c5f0dd493}{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func} )(\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\-S\-\_\-\-Unicodes} unicodes, F\-T\-\_\-\-U\-Int32 $\ast$\hyperlink{fmod_8h_a8f9d420355f06ab263a6ab9bdac02d05}{unicode})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{svpscmap_8h_a4883d38c4df552a364920771e3d8f59d}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E} (Ps\-C\-Maps)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svpscmap_8h_acea6416a668e05e35bfe9827c31433e0}{\index{svpscmap.\-h@{svpscmap.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-C\-M\-A\-P\-S\-R\-E\-C(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{unicode\-\_\-value\-\_\-, }
+\item[{}]{unicodes\-\_\-init\-\_\-, }
+\item[{}]{unicodes\-\_\-char\-\_\-index\-\_\-, }
+\item[{}]{unicodes\-\_\-char\-\_\-next\-\_\-, }
+\item[{}]{macintosh\-\_\-name\-\_\-, }
+\item[{}]{adobe\-\_\-std\-\_\-strings\-\_\-, }
+\item[{}]{adobe\-\_\-std\-\_\-encoding\-\_\-, }
+\item[{}]{adobe\-\_\-expert\-\_\-encoding\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{svpscmap_8h_acea6416a668e05e35bfe9827c31433e0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_PsCMapsRec class\_ =                                \(\backslash\)
+  \{                                                                          \(\backslash\)
+    unicode\_value\_, unicodes\_init\_,                                          \(\backslash\)
+    unicodes\_char\_index\_, unicodes\_char\_next\_, macintosh\_name\_,              \(\backslash\)
+    adobe\_std\_strings\_, adobe\_std\_encoding\_, adobe\_expert\_encoding\_          \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{svpscmap_8h_a807c6aabfd460455bcc1500666871110}{\index{svpscmap.\-h@{svpscmap.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S~\char`\"{}postscript-\/cmaps\char`\"{}}}\label{svpscmap_8h_a807c6aabfd460455bcc1500666871110}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svpscmap_8h_a52d60faf8655637bf788e193641abaee}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func@{P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func}}
+\index{P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func@{P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$($\ast$ P\-S\-\_\-\-Adobe\-\_\-\-Std\-\_\-\-Strings\-Func)({\bf F\-T\-\_\-\-U\-Int} string\-\_\-index)}}\label{svpscmap_8h_a52d60faf8655637bf788e193641abaee}
+\hypertarget{svpscmap_8h_a384aa002117a9a02eb8f0f2a77adba0d}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Free\-Glyph\-Name\-Func@{P\-S\-\_\-\-Free\-Glyph\-Name\-Func}}
+\index{P\-S\-\_\-\-Free\-Glyph\-Name\-Func@{P\-S\-\_\-\-Free\-Glyph\-Name\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Free\-Glyph\-Name\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ P\-S\-\_\-\-Free\-Glyph\-Name\-Func)({\bf F\-T\-\_\-\-Pointer} {\bf data}, const char $\ast${\bf name})}}\label{svpscmap_8h_a384aa002117a9a02eb8f0f2a77adba0d}
+\hypertarget{svpscmap_8h_a859e1ce839c1dd3abb1ccce1a06ed6b7}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Get\-Glyph\-Name\-Func@{P\-S\-\_\-\-Get\-Glyph\-Name\-Func}}
+\index{P\-S\-\_\-\-Get\-Glyph\-Name\-Func@{P\-S\-\_\-\-Get\-Glyph\-Name\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Get\-Glyph\-Name\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$($\ast$ P\-S\-\_\-\-Get\-Glyph\-Name\-Func)({\bf F\-T\-\_\-\-Pointer} {\bf data}, {\bf F\-T\-\_\-\-U\-Int} string\-\_\-index)}}\label{svpscmap_8h_a859e1ce839c1dd3abb1ccce1a06ed6b7}
+\hypertarget{svpscmap_8h_aeb71217c76593f9738eef379c3acc5b8}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func@{P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func}}
+\index{P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func@{P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$($\ast$ P\-S\-\_\-\-Macintosh\-\_\-\-Name\-Func)({\bf F\-T\-\_\-\-U\-Int} name\-\_\-index)}}\label{svpscmap_8h_aeb71217c76593f9738eef379c3acc5b8}
+\hypertarget{svpscmap_8h_a97ae96551a4ddaeb0c201f4fb65aeaa2}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func@{P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func}}
+\index{P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func@{P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef F\-T\-\_\-\-U\-Int32($\ast$ P\-S\-\_\-\-Unicode\-\_\-\-Value\-Func)(const char $\ast$glyph\-\_\-name)}}\label{svpscmap_8h_a97ae96551a4ddaeb0c201f4fb65aeaa2}
+\hypertarget{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Unicodes@{P\-S\-\_\-\-Unicodes}}
+\index{P\-S\-\_\-\-Unicodes@{P\-S\-\_\-\-Unicodes}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Unicodes}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-S\-\_\-\-Unicodes\-Rec\-\_\-}$\ast$ {\bf P\-S\-\_\-\-Unicodes}}}\label{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}
+\hypertarget{svpscmap_8h_ab93fcea0aa39cbfaa62defe0ce04e26f}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func@{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func}}
+\index{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func@{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-U\-Int}($\ast$ P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Index\-Func)({\bf P\-S\-\_\-\-Unicodes} unicodes, F\-T\-\_\-\-U\-Int32 {\bf unicode})}}\label{svpscmap_8h_ab93fcea0aa39cbfaa62defe0ce04e26f}
+\hypertarget{svpscmap_8h_a6332d0e1668fa421b375a98c5f0dd493}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func@{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func}}
+\index{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func@{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef F\-T\-\_\-\-U\-Int32($\ast$ P\-S\-\_\-\-Unicodes\-\_\-\-Char\-Next\-Func)({\bf P\-S\-\_\-\-Unicodes} unicodes, F\-T\-\_\-\-U\-Int32 $\ast${\bf unicode})}}\label{svpscmap_8h_a6332d0e1668fa421b375a98c5f0dd493}
+\hypertarget{svpscmap_8h_a51a389ab1ce0f4b83eef4a935afad78e}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func@{P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func}}
+\index{P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func@{P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ P\-S\-\_\-\-Unicodes\-\_\-\-Init\-Func)({\bf F\-T\-\_\-\-Memory} memory, {\bf P\-S\-\_\-\-Unicodes} unicodes, {\bf F\-T\-\_\-\-U\-Int} num\-\_\-glyphs, {\bf P\-S\-\_\-\-Get\-Glyph\-Name\-Func} get\-\_\-glyph\-\_\-name, {\bf P\-S\-\_\-\-Free\-Glyph\-Name\-Func} free\-\_\-glyph\-\_\-name, {\bf F\-T\-\_\-\-Pointer} glyph\-\_\-data)}}\label{svpscmap_8h_a51a389ab1ce0f4b83eef4a935afad78e}
+\hypertarget{svpscmap_8h_a417dbf0cbd3221a23c766410a526ef8d}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Unicodes\-Rec@{P\-S\-\_\-\-Unicodes\-Rec}}
+\index{P\-S\-\_\-\-Unicodes\-Rec@{P\-S\-\_\-\-Unicodes\-Rec}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Unicodes\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-S\-\_\-\-Unicodes\-Rec\-\_\-}  {\bf P\-S\-\_\-\-Unicodes\-Rec}}}\label{svpscmap_8h_a417dbf0cbd3221a23c766410a526ef8d}
+\hypertarget{svpscmap_8h_a1756f07ad047fe50bbee9c2520b9a8e5}{\index{svpscmap.\-h@{svpscmap.\-h}!P\-S\-\_\-\-Uni\-Map@{P\-S\-\_\-\-Uni\-Map}}
+\index{P\-S\-\_\-\-Uni\-Map@{P\-S\-\_\-\-Uni\-Map}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{P\-S\-\_\-\-Uni\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-S\-\_\-\-Uni\-Map\-\_\-}  {\bf P\-S\-\_\-\-Uni\-Map}}}\label{svpscmap_8h_a1756f07ad047fe50bbee9c2520b9a8e5}
+
+
+\subsection{Function Documentation}
+\hypertarget{svpscmap_8h_a4883d38c4df552a364920771e3d8f59d}{\index{svpscmap.\-h@{svpscmap.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!svpscmap.h@{svpscmap.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E (
+\begin{DoxyParamCaption}
+\item[{Ps\-C\-Maps}]{}
+\end{DoxyParamCaption}
+)}}\label{svpscmap_8h_a4883d38c4df552a364920771e3d8f59d}

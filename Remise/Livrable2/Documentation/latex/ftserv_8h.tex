@@ -1,0 +1,403 @@
+\hypertarget{ftserv_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftserv.h File Reference}
+\label{ftserv_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftserv.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftserv.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___service_desc_rec__}{F\-T\-\_\-\-Service\-Desc\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___service_cache_rec__}{F\-T\-\_\-\-Service\-Cache\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}(\hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, ptr, \hyperlink{glew_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+\#define \hyperlink{ftserv_8h_aa973049b6fb899357e6f4561af8223f0}{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E}(\hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, ptr, \hyperlink{glew_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+\#define \hyperlink{ftserv_8h_aee1b3a8132a98877e62645661cb78734}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1}(class\-\_\-, serv\-\_\-id\-\_\-1, serv\-\_\-data\-\_\-1)
+\item 
+\#define \hyperlink{ftserv_8h_a7661520166abb6bedaf1b7900d91b627}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2}(class\-\_\-, serv\-\_\-id\-\_\-1, serv\-\_\-data\-\_\-1,serv\-\_\-id\-\_\-2, serv\-\_\-data\-\_\-2)
+\item 
+\#define \hyperlink{ftserv_8h_aec22360d5a2f96f9874679a1c09ac88b}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3}(class\-\_\-, serv\-\_\-id\-\_\-1, serv\-\_\-data\-\_\-1,serv\-\_\-id\-\_\-2, serv\-\_\-data\-\_\-2, serv\-\_\-id\-\_\-3, serv\-\_\-data\-\_\-3)
+\item 
+\#define \hyperlink{ftserv_8h_ac0e4795dcd2ea5f6f138986ba51f3de1}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4}(class\-\_\-, serv\-\_\-id\-\_\-1, serv\-\_\-data\-\_\-1,serv\-\_\-id\-\_\-2, serv\-\_\-data\-\_\-2, serv\-\_\-id\-\_\-3, serv\-\_\-data\-\_\-3,serv\-\_\-id\-\_\-4, serv\-\_\-data\-\_\-4)
+\item 
+\#define \hyperlink{ftserv_8h_a4289c36e9ce4b997b071c5b71753550f}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5}(class\-\_\-, serv\-\_\-id\-\_\-1, serv\-\_\-data\-\_\-1,serv\-\_\-id\-\_\-2, serv\-\_\-data\-\_\-2, serv\-\_\-id\-\_\-3, serv\-\_\-data\-\_\-3,serv\-\_\-id\-\_\-4, serv\-\_\-data\-\_\-4, serv\-\_\-id\-\_\-5, serv\-\_\-data\-\_\-5)
+\item 
+\#define \hyperlink{ftserv_8h_a101de9de4da0ab48b89522677e6ac766}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6}(class\-\_\-, serv\-\_\-id\-\_\-1, serv\-\_\-data\-\_\-1,serv\-\_\-id\-\_\-2, serv\-\_\-data\-\_\-2, serv\-\_\-id\-\_\-3, serv\-\_\-data\-\_\-3,serv\-\_\-id\-\_\-4, serv\-\_\-data\-\_\-4, serv\-\_\-id\-\_\-5, serv\-\_\-data\-\_\-5,serv\-\_\-id\-\_\-6, serv\-\_\-data\-\_\-6)
+\item 
+\#define \hyperlink{ftserv_8h_af952892475f447a16744d7d5bc085756}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E}~((\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer})-\/2)  /$\ast$ magic number $\ast$/
+\item 
+\#define \hyperlink{ftserv_8h_a39b85562363751f35afcc821fcb320fc}{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E}(\hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, ptr, \hyperlink{glew_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+\#define \hyperlink{ftserv_8h_a8b5632fff44151a55025c8505d553cd0}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}(\hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name})
+\item 
+\#define \hyperlink{ftserv_8h_a4d7dec3e2cf35a40f4d7fb47d93a911c}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svbdf.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_aa84a6551148c281e13869fe28ede46ca}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svcid.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a4893b50cf840825cfadd8ed84520d0e8}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svgldict.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a7960e89a19ddbdea4d299ba4446797cc}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svgxval.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_ae9aacbac02f862c608683e749105373d}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svkern.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_ae70186713e4539a5e755b3de7a89ed3f}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svmm.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a025e9668145f6fd847cc5a8d0390f9c3}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svotval.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_ad6d1cbbb9aefd3dc965bac1c2b46f3b5}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svpfr.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_aa77f8c3d5f893e94a090f33ea97e0628}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svpscmap.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a80618e016973f8c622a61adcd8f45776}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svpsinfo.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_ac08129d668f53abd2d62b461715ec309}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svpostnm.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a4e56b7cf8d1f7705f937836e7581c96d}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svsfnt.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a79216b0845904c5ac972986c01d311ef}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svtteng.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a421e3f2d961139aad48d26c723aaf31e}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svttcmap.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_ac46289f054ef61993a3129ce9be5ddc6}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svwinfnt.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_ab865bf6a8f32423a5628e1ac5737e656}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svxf86nm.\-h}$>$
+\item 
+\#define \hyperlink{ftserv_8h_a4b7772e98a1110905123772c16a19deb}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H}~$<$freetype/internal/services/\hyperlink{glew_8h_afa0fb1b5e976920c0abeff2dca3ed774}{svttglyf.\-h}$>$
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_f_t___service_desc_rec__}{F\-T\-\_\-\-Service\-Desc\-Rec\-\_\-} \hyperlink{ftserv_8h_a3b6f9ac4ee611b5aa543f8af3c91da03}{F\-T\-\_\-\-Service\-Desc\-Rec}
+\item 
+typedef const \hyperlink{ftserv_8h_a3b6f9ac4ee611b5aa543f8af3c91da03}{F\-T\-\_\-\-Service\-Desc\-Rec} $\ast$ \hyperlink{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{F\-T\-\_\-\-Service\-Desc}
+\item 
+typedef struct \hyperlink{struct_f_t___service_cache_rec__}{F\-T\-\_\-\-Service\-Cache\-Rec\-\_\-} \hyperlink{ftserv_8h_a17b5dbf7cdd804df38826e4f0536fbfb}{F\-T\-\_\-\-Service\-Cache\-Rec}
+\item 
+typedef struct \\*
+\hyperlink{struct_f_t___service_cache_rec__}{F\-T\-\_\-\-Service\-Cache\-Rec\-\_\-} $\ast$ \hyperlink{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}{F\-T\-\_\-\-Service\-Cache}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftserv_8h_aec9a5aefeef799ff91ad8adf228242ab}{ft\-\_\-service\-\_\-list\-\_\-lookup} (\hyperlink{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{F\-T\-\_\-\-Service\-Desc} service\-\_\-descriptors, const char $\ast$service\-\_\-id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ftserv_8h_a8b5632fff44151a55025c8505d553cd0}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf name}}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_a8b5632fff44151a55025c8505d553cd0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{typedef} \textcolor{keyword}{struct }FT\_Service\_ ## \hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name} ## Rec\_ \(\backslash\)
+    FT\_Service\_ ## \hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name} ## Rec ;             \(\backslash\)
+  typedef \textcolor{keyword}{struct }FT\_Service\_ ## \hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name} ## Rec\_ \(\backslash\)
+    const * FT\_Service\_ ## \hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name} ;            \(\backslash\)
+  struct FT\_Service\_ ## \hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name} ## Rec\_
+\end{DoxyCode}
+\hypertarget{ftserv_8h_aee1b3a8132a98877e62645661cb78734}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C1(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{serv\-\_\-id\-\_\-1, }
+\item[{}]{serv\-\_\-data\-\_\-1}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_aee1b3a8132a98877e62645661cb78734}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec} class\_[] =                                  \(\backslash\)
+  \{                                                                          \(\backslash\)
+  \{serv\_id\_1, serv\_data\_1\},                                                  \(\backslash\)
+  \{\hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}, \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}\}                                                               \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftserv_8h_a7661520166abb6bedaf1b7900d91b627}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C2(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{serv\-\_\-id\-\_\-1, }
+\item[{}]{serv\-\_\-data\-\_\-1, }
+\item[{}]{serv\-\_\-id\-\_\-2, }
+\item[{}]{serv\-\_\-data\-\_\-2}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_a7661520166abb6bedaf1b7900d91b627}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec} class\_[] =                                  \(\backslash\)
+  \{                                                                          \(\backslash\)
+  \{serv\_id\_1, serv\_data\_1\},                                                  \(\backslash\)
+  \{serv\_id\_2, serv\_data\_2\},                                                  \(\backslash\)
+  \{\hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}, \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}\}                                                               \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftserv_8h_aec22360d5a2f96f9874679a1c09ac88b}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C3(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{serv\-\_\-id\-\_\-1, }
+\item[{}]{serv\-\_\-data\-\_\-1, }
+\item[{}]{serv\-\_\-id\-\_\-2, }
+\item[{}]{serv\-\_\-data\-\_\-2, }
+\item[{}]{serv\-\_\-id\-\_\-3, }
+\item[{}]{serv\-\_\-data\-\_\-3}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_aec22360d5a2f96f9874679a1c09ac88b}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec} class\_[] =                                  \(\backslash\)
+  \{                                                                          \(\backslash\)
+  \{serv\_id\_1, serv\_data\_1\},                                                  \(\backslash\)
+  \{serv\_id\_2, serv\_data\_2\},                                                  \(\backslash\)
+  \{serv\_id\_3, serv\_data\_3\},                                                  \(\backslash\)
+  \{\hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}, \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}\}                                                               \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftserv_8h_ac0e4795dcd2ea5f6f138986ba51f3de1}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C4(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{serv\-\_\-id\-\_\-1, }
+\item[{}]{serv\-\_\-data\-\_\-1, }
+\item[{}]{serv\-\_\-id\-\_\-2, }
+\item[{}]{serv\-\_\-data\-\_\-2, }
+\item[{}]{serv\-\_\-id\-\_\-3, }
+\item[{}]{serv\-\_\-data\-\_\-3, }
+\item[{}]{serv\-\_\-id\-\_\-4, }
+\item[{}]{serv\-\_\-data\-\_\-4}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_ac0e4795dcd2ea5f6f138986ba51f3de1}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec} class\_[] =                                  \(\backslash\)
+  \{                                                                          \(\backslash\)
+  \{serv\_id\_1, serv\_data\_1\},                                                  \(\backslash\)
+  \{serv\_id\_2, serv\_data\_2\},                                                  \(\backslash\)
+  \{serv\_id\_3, serv\_data\_3\},                                                  \(\backslash\)
+  \{serv\_id\_4, serv\_data\_4\},                                                  \(\backslash\)
+  \{\hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}, \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}\}                                                               \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftserv_8h_a4289c36e9ce4b997b071c5b71753550f}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C5(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{serv\-\_\-id\-\_\-1, }
+\item[{}]{serv\-\_\-data\-\_\-1, }
+\item[{}]{serv\-\_\-id\-\_\-2, }
+\item[{}]{serv\-\_\-data\-\_\-2, }
+\item[{}]{serv\-\_\-id\-\_\-3, }
+\item[{}]{serv\-\_\-data\-\_\-3, }
+\item[{}]{serv\-\_\-id\-\_\-4, }
+\item[{}]{serv\-\_\-data\-\_\-4, }
+\item[{}]{serv\-\_\-id\-\_\-5, }
+\item[{}]{serv\-\_\-data\-\_\-5}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_a4289c36e9ce4b997b071c5b71753550f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec} class\_[] =                                  \(\backslash\)
+  \{                                                                          \(\backslash\)
+  \{serv\_id\_1, serv\_data\_1\},                                                  \(\backslash\)
+  \{serv\_id\_2, serv\_data\_2\},                                                  \(\backslash\)
+  \{serv\_id\_3, serv\_data\_3\},                                                  \(\backslash\)
+  \{serv\_id\_4, serv\_data\_4\},                                                  \(\backslash\)
+  \{serv\_id\_5, serv\_data\_5\},                                                  \(\backslash\)
+  \{\hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}, \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}\}                                                               \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftserv_8h_a101de9de4da0ab48b89522677e6ac766}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-D\-E\-S\-C\-R\-E\-C6(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{serv\-\_\-id\-\_\-1, }
+\item[{}]{serv\-\_\-data\-\_\-1, }
+\item[{}]{serv\-\_\-id\-\_\-2, }
+\item[{}]{serv\-\_\-data\-\_\-2, }
+\item[{}]{serv\-\_\-id\-\_\-3, }
+\item[{}]{serv\-\_\-data\-\_\-3, }
+\item[{}]{serv\-\_\-id\-\_\-4, }
+\item[{}]{serv\-\_\-data\-\_\-4, }
+\item[{}]{serv\-\_\-id\-\_\-5, }
+\item[{}]{serv\-\_\-data\-\_\-5, }
+\item[{}]{serv\-\_\-id\-\_\-6, }
+\item[{}]{serv\-\_\-data\-\_\-6}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_a101de9de4da0ab48b89522677e6ac766}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec} class\_[] =                                  \(\backslash\)
+  \{                                                                          \(\backslash\)
+  \{serv\_id\_1, serv\_data\_1\},                                                  \(\backslash\)
+  \{serv\_id\_2, serv\_data\_2\},                                                  \(\backslash\)
+  \{serv\_id\_3, serv\_data\_3\},                                                  \(\backslash\)
+  \{serv\_id\_4, serv\_data\_4\},                                                  \(\backslash\)
+  \{serv\_id\_5, serv\_data\_5\},                                                  \(\backslash\)
+  \{serv\_id\_6, serv\_data\_6\},                                                  \(\backslash\)
+  \{\hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}, \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}\}                                                               \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftserv_8h_aa973049b6fb899357e6f4561af8223f0}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-G\-L\-O\-B\-A\-L\-\_\-\-S\-E\-R\-V\-I\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf face}, }
+\item[{}]{ptr, }
+\item[{}]{{\bf id}}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_aa973049b6fb899357e6f4561af8223f0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{FT\_BEGIN\_STMNT                                                   \(\backslash\)}
+\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{    FT\_Module}   module = \hyperlink{ftobjs_8h_ad1095b4efedd489940fc21f655e9256b}{FT\_MODULE}( \hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{FT\_FACE}( \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face} )->driver );     
+      \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{\(\backslash\)}
+\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{    FT\_Pointer}  \_tmp\_;                                             \(\backslash\)
+                                                                   \(\backslash\)
+                                                                   \(\backslash\)
+    \_tmp\_ = \hyperlink{ftobjs_8h_ad9bcbadc579ddd55dbb1b290af1bb45a}{ft\_module\_get\_service}( module, FT\_SERVICE\_ID\_ ## \textcolor{keywordtype}{id} ); \(\backslash\)
+    ptr   = \_tmp\_;                                                 \hyperlink{ftconfig_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{\(\backslash\)}
+\hyperlink{ftconfig_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{  FT\_END\_STMNT}
+\end{DoxyCode}
+\hypertarget{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-F\-I\-N\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf face}, }
+\item[{}]{ptr, }
+\item[{}]{{\bf id}}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{FT\_BEGIN\_STMNT                                                            \(\backslash\)}
+\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{    FT\_Module}   module = \hyperlink{ftobjs_8h_ad1095b4efedd489940fc21f655e9256b}{FT\_MODULE}( \hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{FT\_FACE}( \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face} )->driver );            
+        \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{\(\backslash\)}
+\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{    FT\_Pointer}  \_tmp\_  = \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL};                                              \(\backslash\)
+                                                                            \(\backslash\)
+    if ( module->clazz->get\_interface )                                     \(\backslash\)
+      \_tmp\_ = module->clazz->get\_interface( module, FT\_SERVICE\_ID\_ ## \textcolor{keywordtype}{id} ); \(\backslash\)
+    ptr = \_tmp\_;                                                            \hyperlink{ftconfig_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{\(\backslash\)}
+\hyperlink{ftconfig_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{  FT\_END\_STMNT}
+\end{DoxyCode}
+\hypertarget{ftserv_8h_a39b85562363751f35afcc821fcb320fc}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-F\-A\-C\-E\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-S\-E\-R\-V\-I\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf face}, }
+\item[{}]{ptr, }
+\item[{}]{{\bf id}}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_a39b85562363751f35afcc821fcb320fc}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{FT\_BEGIN\_STMNT                                               \(\backslash\)}
+\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{    FT\_Pointer}  svc;                                           \(\backslash\)
+                                                               \(\backslash\)
+                                                               \(\backslash\)
+    svc = \hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{FT\_FACE}( \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face} )->internal->services. service\_ ## \hyperlink{glew_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}; \(\backslash\)
+    if ( svc == \hyperlink{ftserv_8h_af952892475f447a16744d7d5bc085756}{FT\_SERVICE\_UNAVAILABLE} )                       \(\backslash\)
+      svc = \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL};                                              \(\backslash\)
+    else \textcolor{keywordflow}{if} ( svc == \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL} )                                    \(\backslash\)
+    \{                                                          \hyperlink{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}{\(\backslash\)}
+\hyperlink{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}{      FT\_FACE\_FIND\_SERVICE}( \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, svc, \textcolor{keywordtype}{id} );                   
+      \hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{\(\backslash\)}
+\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{                                                               \(\backslash\)}
+\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{      FT\_FACE}( \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face} )->internal->services. service\_ ## \textcolor{keywordtype}{id} =    \(\backslash\)
+        (\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{FT\_Pointer})( svc != \hyperlink{_free_image_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL} ? svc                        \(\backslash\)
+                                  : \hyperlink{ftserv_8h_af952892475f447a16744d7d5bc085756}{FT\_SERVICE\_UNAVAILABLE} );  \(\backslash\)
+    \}                                                          \(\backslash\)
+    ptr = svc;                                                 \hyperlink{ftconfig_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{\(\backslash\)}
+\hyperlink{ftconfig_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{  FT\_END\_STMNT}
+\end{DoxyCode}
+\hypertarget{ftserv_8h_a4d7dec3e2cf35a40f4d7fb47d93a911c}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-B\-D\-F\-\_\-\-H~$<$freetype/internal/services/{\bf svbdf.\-h}$>$}}\label{ftserv_8h_a4d7dec3e2cf35a40f4d7fb47d93a911c}
+\hypertarget{ftserv_8h_aa84a6551148c281e13869fe28ede46ca}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-C\-I\-D\-\_\-\-H~$<$freetype/internal/services/{\bf svcid.\-h}$>$}}\label{ftserv_8h_aa84a6551148c281e13869fe28ede46ca}
+\hypertarget{ftserv_8h_a4893b50cf840825cfadd8ed84520d0e8}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-D\-I\-C\-T\-\_\-\-H~$<$freetype/internal/services/{\bf svgldict.\-h}$>$}}\label{ftserv_8h_a4893b50cf840825cfadd8ed84520d0e8}
+\hypertarget{ftserv_8h_a7960e89a19ddbdea4d299ba4446797cc}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-G\-X\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H~$<$freetype/internal/services/{\bf svgxval.\-h}$>$}}\label{ftserv_8h_a7960e89a19ddbdea4d299ba4446797cc}
+\hypertarget{ftserv_8h_ae9aacbac02f862c608683e749105373d}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-K\-E\-R\-N\-I\-N\-G\-\_\-\-H~$<$freetype/internal/services/{\bf svkern.\-h}$>$}}\label{ftserv_8h_ae9aacbac02f862c608683e749105373d}
+\hypertarget{ftserv_8h_ae70186713e4539a5e755b3de7a89ed3f}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-M\-A\-S\-T\-E\-R\-S\-\_\-\-H~$<$freetype/internal/services/{\bf svmm.\-h}$>$}}\label{ftserv_8h_ae70186713e4539a5e755b3de7a89ed3f}
+\hypertarget{ftserv_8h_a025e9668145f6fd847cc5a8d0390f9c3}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-O\-P\-E\-N\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-H~$<$freetype/internal/services/{\bf svotval.\-h}$>$}}\label{ftserv_8h_a025e9668145f6fd847cc5a8d0390f9c3}
+\hypertarget{ftserv_8h_ad6d1cbbb9aefd3dc965bac1c2b46f3b5}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-F\-R\-\_\-\-H~$<$freetype/internal/services/{\bf svpfr.\-h}$>$}}\label{ftserv_8h_ad6d1cbbb9aefd3dc965bac1c2b46f3b5}
+\hypertarget{ftserv_8h_aa77f8c3d5f893e94a090f33ea97e0628}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-C\-M\-A\-P\-S\-\_\-\-H~$<$freetype/internal/services/{\bf svpscmap.\-h}$>$}}\label{ftserv_8h_aa77f8c3d5f893e94a090f33ea97e0628}
+\hypertarget{ftserv_8h_a80618e016973f8c622a61adcd8f45776}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-I\-N\-F\-O\-\_\-\-H~$<$freetype/internal/services/{\bf svpsinfo.\-h}$>$}}\label{ftserv_8h_a80618e016973f8c622a61adcd8f45776}
+\hypertarget{ftserv_8h_ac08129d668f53abd2d62b461715ec309}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-N\-A\-M\-E\-\_\-\-H~$<$freetype/internal/services/{\bf svpostnm.\-h}$>$}}\label{ftserv_8h_ac08129d668f53abd2d62b461715ec309}
+\hypertarget{ftserv_8h_a4e56b7cf8d1f7705f937836e7581c96d}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-F\-N\-T\-\_\-\-H~$<$freetype/internal/services/{\bf svsfnt.\-h}$>$}}\label{ftserv_8h_a4e56b7cf8d1f7705f937836e7581c96d}
+\hypertarget{ftserv_8h_a79216b0845904c5ac972986c01d311ef}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-H~$<$freetype/internal/services/{\bf svtteng.\-h}$>$}}\label{ftserv_8h_a79216b0845904c5ac972986c01d311ef}
+\hypertarget{ftserv_8h_a4b7772e98a1110905123772c16a19deb}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-G\-L\-Y\-F\-\_\-\-H~$<$freetype/internal/services/{\bf svttglyf.\-h}$>$}}\label{ftserv_8h_a4b7772e98a1110905123772c16a19deb}
+\hypertarget{ftserv_8h_a421e3f2d961139aad48d26c723aaf31e}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-T\-T\-\_\-\-C\-M\-A\-P\-\_\-\-H~$<$freetype/internal/services/{\bf svttcmap.\-h}$>$}}\label{ftserv_8h_a421e3f2d961139aad48d26c723aaf31e}
+\hypertarget{ftserv_8h_af952892475f447a16744d7d5bc085756}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E~(({\bf F\-T\-\_\-\-Pointer})-\/2)  /$\ast$ magic number $\ast$/}}\label{ftserv_8h_af952892475f447a16744d7d5bc085756}
+\hypertarget{ftserv_8h_ac46289f054ef61993a3129ce9be5ddc6}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-W\-I\-N\-F\-N\-T\-\_\-\-H~$<$freetype/internal/services/{\bf svwinfnt.\-h}$>$}}\label{ftserv_8h_ac46289f054ef61993a3129ce9be5ddc6}
+\hypertarget{ftserv_8h_ab865bf6a8f32423a5628e1ac5737e656}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-X\-F\-R\-E\-E86\-\_\-\-N\-A\-M\-E\-\_\-\-H~$<$freetype/internal/services/{\bf svxf86nm.\-h}$>$}}\label{ftserv_8h_ab865bf6a8f32423a5628e1ac5737e656}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-Service\-Cache@{F\-T\-\_\-\-Service\-Cache}}
+\index{F\-T\-\_\-\-Service\-Cache@{F\-T\-\_\-\-Service\-Cache}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-Service\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Service\-Cache\-Rec\-\_\-} $\ast$ {\bf F\-T\-\_\-\-Service\-Cache}}}\label{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}
+\hypertarget{ftserv_8h_a17b5dbf7cdd804df38826e4f0536fbfb}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-Service\-Cache\-Rec@{F\-T\-\_\-\-Service\-Cache\-Rec}}
+\index{F\-T\-\_\-\-Service\-Cache\-Rec@{F\-T\-\_\-\-Service\-Cache\-Rec}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-Service\-Cache\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Service\-Cache\-Rec\-\_\-}  {\bf F\-T\-\_\-\-Service\-Cache\-Rec}}}\label{ftserv_8h_a17b5dbf7cdd804df38826e4f0536fbfb}
+\hypertarget{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-Service\-Desc@{F\-T\-\_\-\-Service\-Desc}}
+\index{F\-T\-\_\-\-Service\-Desc@{F\-T\-\_\-\-Service\-Desc}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-Service\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}typedef const {\bf F\-T\-\_\-\-Service\-Desc\-Rec}$\ast$ {\bf F\-T\-\_\-\-Service\-Desc}}}\label{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}
+\hypertarget{ftserv_8h_a3b6f9ac4ee611b5aa543f8af3c91da03}{\index{ftserv.\-h@{ftserv.\-h}!F\-T\-\_\-\-Service\-Desc\-Rec@{F\-T\-\_\-\-Service\-Desc\-Rec}}
+\index{F\-T\-\_\-\-Service\-Desc\-Rec@{F\-T\-\_\-\-Service\-Desc\-Rec}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{F\-T\-\_\-\-Service\-Desc\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Service\-Desc\-Rec\-\_\-}  {\bf F\-T\-\_\-\-Service\-Desc\-Rec}}}\label{ftserv_8h_a3b6f9ac4ee611b5aa543f8af3c91da03}
+
+
+\subsection{Function Documentation}
+\hypertarget{ftserv_8h_aec9a5aefeef799ff91ad8adf228242ab}{\index{ftserv.\-h@{ftserv.\-h}!ft\-\_\-service\-\_\-list\-\_\-lookup@{ft\-\_\-service\-\_\-list\-\_\-lookup}}
+\index{ft\-\_\-service\-\_\-list\-\_\-lookup@{ft\-\_\-service\-\_\-list\-\_\-lookup}!ftserv.h@{ftserv.\-h}}
+\subsubsection[{ft\-\_\-service\-\_\-list\-\_\-lookup}]{\setlength{\rightskip}{0pt plus 5cm}ft\-\_\-service\-\_\-list\-\_\-lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Service\-Desc}}]{service\-\_\-descriptors, }
+\item[{const char $\ast$}]{service\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{ftserv_8h_aec9a5aefeef799ff91ad8adf228242ab}

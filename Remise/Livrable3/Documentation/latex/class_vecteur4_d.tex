@@ -1,0 +1,134 @@
+\hypertarget{class_vecteur4_d}{\section{Vecteur4\-D$<$ T $>$ Class Template Reference}
+\label{class_vecteur4_d}\index{Vecteur4\-D$<$ T $>$@{Vecteur4\-D$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Vecteur.\-h$>$}
+
+Inheritance diagram for Vecteur4\-D$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vecteur4_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T2 $>$ }\\\hyperlink{class_vecteur4_d_abe5de951c603a937935d74741f2ff1c7}{Vecteur4\-D} (const \hyperlink{class_vecteur4_d}{Vecteur4\-D}$<$ T2 $>$ \&u)
+\item 
+\hyperlink{class_vecteur4_d_a4618d6ca7db2d1948857229a23d2d591}{Vecteur4\-D} (const T x=0, const T y=0, const T z=0, const T w=0)
+\item 
+\hyperlink{class_vecteur4_d_ac5eef134308076ea67b501925b55b925}{Vecteur4\-D} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 4 $>$ \&v)
+\item 
+const \hyperlink{class_vecteur4_d}{Vecteur4\-D} \& \hyperlink{class_vecteur4_d_a8dc6b5c3450bf06ab168e37fbd910477}{operator=} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 4 $>$ \&v)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Vecteur4\-D$<$ T $>$}
+
+Classe generique pour implanter des vecteurs en 4\-D.
+
+Cette classe generique est definie pour les vecteurs de dimension 4. Les operations necessaires sont definies, soient\-:
+\begin{DoxyItemize}
+\item les constucteurs
+\item operateur d'egalite
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Alex Duru 
+
+Ionut Alexandrescu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/02-\/23 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vecteur4_d_abe5de951c603a937935d74741f2ff1c7}{\index{Vecteur4\-D@{Vecteur4\-D}!Vecteur4\-D@{Vecteur4\-D}}
+\index{Vecteur4\-D@{Vecteur4\-D}!Vecteur4D@{Vecteur4\-D}}
+\subsubsection[{Vecteur4\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class T2 $>$ {\bf Vecteur4\-D}$<$ T $>$\-::{\bf Vecteur4\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur4\-D}$<$ T2 $>$ \&}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur4_d_abe5de951c603a937935d74741f2ff1c7}
+Constructeur avec conversion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em u} & \-: Le vecteur a copier dans le nouveau vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur4_d_a4618d6ca7db2d1948857229a23d2d591}{\index{Vecteur4\-D@{Vecteur4\-D}!Vecteur4\-D@{Vecteur4\-D}}
+\index{Vecteur4\-D@{Vecteur4\-D}!Vecteur4D@{Vecteur4\-D}}
+\subsubsection[{Vecteur4\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur4\-D}$<$ T $>$\-::{\bf Vecteur4\-D} (
+\begin{DoxyParamCaption}
+\item[{const T}]{x = {\ttfamily 0}, }
+\item[{const T}]{y = {\ttfamily 0}, }
+\item[{const T}]{z = {\ttfamily 0}, }
+\item[{const T}]{w = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur4_d_a4618d6ca7db2d1948857229a23d2d591}
+Constructeur par parametres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & \-: La coordonnee en {\itshape x}. \\
+\hline
+\mbox{\tt in}  & {\em y} & \-: La coordonnee en {\itshape y}. \\
+\hline
+\mbox{\tt in}  & {\em z} & \-: La coordonnee en {\itshape z}. \\
+\hline
+\mbox{\tt in}  & {\em w} & \-: La coordonnee en {\itshape w}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur4_d_ac5eef134308076ea67b501925b55b925}{\index{Vecteur4\-D@{Vecteur4\-D}!Vecteur4\-D@{Vecteur4\-D}}
+\index{Vecteur4\-D@{Vecteur4\-D}!Vecteur4D@{Vecteur4\-D}}
+\subsubsection[{Vecteur4\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur4\-D}$<$ T $>$\-::{\bf Vecteur4\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 4 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur4_d_ac5eef134308076ea67b501925b55b925}
+Constructeur copie.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & \-: Le vecteur a copier dans le nouveau vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vecteur4_d_a8dc6b5c3450bf06ab168e37fbd910477}{\index{Vecteur4\-D@{Vecteur4\-D}!operator=@{operator=}}
+\index{operator=@{operator=}!Vecteur4D@{Vecteur4\-D}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const {\bf Vecteur4\-D} \& {\bf Vecteur4\-D}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 4 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur4_d_a8dc6b5c3450bf06ab168e37fbd910477}
+Surcharge de l'operateur d'assignation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & \-: Le vecteur a copier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La reference vers l'objet assigne afin de respecter la semantique de l'operateur d'assignation C++. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_vecteur_8h}{Vecteur.\-h}\end{DoxyCompactItemize}

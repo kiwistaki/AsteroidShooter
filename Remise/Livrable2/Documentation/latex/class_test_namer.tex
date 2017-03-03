@@ -1,0 +1,106 @@
+\hypertarget{class_test_namer}{\section{Test\-Namer Class Reference}
+\label{class_test_namer}\index{Test\-Namer@{Test\-Namer}}
+}
+
+
+Names a test or a fixture suite.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Namer.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_namer_ae2c7e349fae02b71dae8e898946bca9e}{Test\-Namer} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&fixture\-Name)
+\begin{DoxyCompactList}\small\item\em Constructs a namer using the specified fixture name. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test_namer_a01312820b0a5d2451940e74aacb09bb1}{$\sim$\-Test\-Namer} ()
+\item 
+virtual \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_namer_a743cc0b154ff4e32d81feccd97917b62}{get\-Fixture\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the name of the fixture. \end{DoxyCompactList}\item 
+virtual \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_namer_aa56007426b92b4c34bb2e98548419893}{get\-Test\-Name\-For} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&test\-Method\-Name) const 
+\begin{DoxyCompactList}\small\item\em Returns the name of the test for the specified method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_namer_a02f9b6344602d27ef8095a54846e9307}{m\-\_\-fixture\-Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Names a test or a fixture suite. 
+
+\hyperlink{class_test_namer}{Test\-Namer} is usually instantiated using C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-N\-A\-M\-E\-R\-\_\-\-D\-E\-C\-L. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_namer_ae2c7e349fae02b71dae8e898946bca9e}{\index{Test\-Namer@{Test\-Namer}!Test\-Namer@{Test\-Namer}}
+\index{Test\-Namer@{Test\-Namer}!TestNamer@{Test\-Namer}}
+\subsubsection[{Test\-Namer}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Namer\-::\-Test\-Namer (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{fixture\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_test_namer_ae2c7e349fae02b71dae8e898946bca9e}
+
+
+Constructs a namer using the specified fixture name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fixture\-Name} & Name of the fixture suite. Usually extracted using a macro. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_namer_a01312820b0a5d2451940e74aacb09bb1}{\index{Test\-Namer@{Test\-Namer}!$\sim$\-Test\-Namer@{$\sim$\-Test\-Namer}}
+\index{$\sim$\-Test\-Namer@{$\sim$\-Test\-Namer}!TestNamer@{Test\-Namer}}
+\subsubsection[{$\sim$\-Test\-Namer}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-Namer\-::$\sim$\-Test\-Namer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_namer_a01312820b0a5d2451940e74aacb09bb1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_namer_a743cc0b154ff4e32d81feccd97917b62}{\index{Test\-Namer@{Test\-Namer}!get\-Fixture\-Name@{get\-Fixture\-Name}}
+\index{get\-Fixture\-Name@{get\-Fixture\-Name}!TestNamer@{Test\-Namer}}
+\subsubsection[{get\-Fixture\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf std\-::string} Test\-Namer\-::get\-Fixture\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_namer_a743cc0b154ff4e32d81feccd97917b62}
+
+
+Returns the name of the fixture. 
+
+\begin{DoxyReturn}{Returns}
+Name of the fixture. 
+\end{DoxyReturn}
+\hypertarget{class_test_namer_aa56007426b92b4c34bb2e98548419893}{\index{Test\-Namer@{Test\-Namer}!get\-Test\-Name\-For@{get\-Test\-Name\-For}}
+\index{get\-Test\-Name\-For@{get\-Test\-Name\-For}!TestNamer@{Test\-Namer}}
+\subsubsection[{get\-Test\-Name\-For}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf std\-::string} Test\-Namer\-::get\-Test\-Name\-For (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{test\-Method\-Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_namer_aa56007426b92b4c34bb2e98548419893}
+
+
+Returns the name of the test for the specified method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Method\-Name} & Name of the method that implements a test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string that is the concatenation of the test fixture name (returned by \hyperlink{class_test_namer_a743cc0b154ff4e32d81feccd97917b62}{get\-Fixture\-Name()}) and{\itshape test\-Method\-Name}, separated using '\-:\-:'. This provides a fairly unique name for a given test. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_namer_a02f9b6344602d27ef8095a54846e9307}{\index{Test\-Namer@{Test\-Namer}!m\-\_\-fixture\-Name@{m\-\_\-fixture\-Name}}
+\index{m\-\_\-fixture\-Name@{m\-\_\-fixture\-Name}!TestNamer@{Test\-Namer}}
+\subsubsection[{m\-\_\-fixture\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Test\-Namer\-::m\-\_\-fixture\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_namer_a02f9b6344602d27ef8095a54846e9307}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/extensions/\hyperlink{_test_namer_8h}{Test\-Namer.\-h}\end{DoxyCompactItemize}

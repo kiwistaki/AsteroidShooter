@@ -1,0 +1,60 @@
+\hypertarget{_aide_collision_8cpp}{\section{Cadriciel/\-Commun/\-Utilitaire/\-Aide\-Collision.cpp File Reference}
+\label{_aide_collision_8cpp}\index{Cadriciel/\-Commun/\-Utilitaire/\-Aide\-Collision.\-cpp@{Cadriciel/\-Commun/\-Utilitaire/\-Aide\-Collision.\-cpp}}
+}
+
+
+Ce fichier contient l'implantation de l'espace de nom aidecollision.  
+
+
+{\ttfamily \#include \char`\"{}Aide\-Collision.\-h\char`\"{}}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceaidecollision}{aidecollision}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Details\-Collision \hyperlink{namespaceaidecollision_a76a6a46bdde378dd6781ae23c1bfa313}{aidecollision\-::calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point1, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point2, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position}, double rayon, bool collision\-Avec\-Points=true)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet circulaire avec un segment de droite. \end{DoxyCompactList}\item 
+Details\-Collision \hyperlink{namespaceaidecollision_aa891c68d5b7e4fa059cfa0cca600cc52}{aidecollision\-::calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position}, double rayon, bool collision\-Avec\-Points=true)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet spherique avec un segment de droite. \end{DoxyCompactList}\item 
+Details\-Collision \hyperlink{namespaceaidecollision_aa7ef6624305b37a13f5c583bbbc41882}{aidecollision\-::calculer\-Collision\-Cercle} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&centre\-Cercle, double rayon\-Cercle, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position\-Objet, double rayon\-Objet)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet circulaire avec un cercle. \end{DoxyCompactList}\item 
+Details\-Collision \hyperlink{namespaceaidecollision_abd98f8eab0ec2b1370fecaf55b9dcf55}{aidecollision\-::calculer\-Collision\-Arc} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&centre\-Cercle, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point\-Arc1, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point\-Arc2, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position\-Objet, double rayon\-Objet)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet circulaire avec un arc de cercle. \end{DoxyCompactList}\item 
+Details\-Collision \hyperlink{namespaceaidecollision_ab4172fb76b2ff4925328f52459a134ab}{aidecollision\-::calculer\-Collision\-Sphere} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&centre\-Sphere, double rayon\-Sphere, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&position\-Objet, double rayon\-Objet)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet spherique avec une sphere. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_adfb0d490d1e7e1eb0b7d34a7ecba982f}{aidecollision\-::calculer\-Force\-Rebondissement2\-D} (const Details\-Collision \&details, double constante\-Rebondissement)
+\begin{DoxyCompactList}\small\item\em Calcule la force en deux dimensions a partir d'une collision. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_aeb5fa0c355658723c12093e3c65dfca3}{aidecollision\-::calculer\-Force\-Rebondissement3\-D} (const Details\-Collision \&details, double constante\-Rebondissement)
+\begin{DoxyCompactList}\small\item\em Calcule la force en trois dimensions a partir d'une collision. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_ab12dd816a00b79e23993bc1e27fd7859}{aidecollision\-::calculer\-Force\-Amortissement2\-D} (const Details\-Collision \&details, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&vitesse, double constante\-Amortissement)
+\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_a2d14adb05414527ee23e93d54f656277}{aidecollision\-::calculer\-Force\-Amortissement3\-D} (const Details\-Collision \&details, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&vitesse, double constante\-Amortissement)
+\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_a85a0be1f19e12cd25413002996b24bb1}{aidecollision\-::calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point1, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point2, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position}, double rayon, bool collision\-Avec\-Points, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&vitesse, Details\-Collision $\ast$retour\-Details)
+\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_a7b4ab7ec2265e5a0c9d85f80b0243cb9}{aidecollision\-::calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&\hyperlink{fmod__codec_8h_a7d71cf36b6a2fc185ecbc89f93fa58a3}{position}, double rayon, bool collision\-Avec\-Points, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&vitesse, Details\-Collision $\ast$retour\-Details)
+\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_ac7a15fb1d1661183de87524a1a7084fb}{aidecollision\-::calculer\-Collision\-Cercle} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&centre\-Cercle, double rayon\-Cercle, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position\-Objet, double rayon\-Objet, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&vitesse, Details\-Collision $\ast$retour\-Details)
+\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_a32afc8d28fb424bc014af013be76c9fa}{aidecollision\-::calculer\-Collision\-Sphere} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&centre\-Sphere, double rayon\-Sphere, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&position\-Objet, double rayon\-Objet, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&vitesse, Details\-Collision $\ast$retour\-Details)
+\item 
+double \hyperlink{namespaceaidecollision_a6237077a29518539015295311e39e2cc}{aidecollision\-::calculer\-Combinaison\-Rebondissement} (double constante1, double constante2)
+\begin{DoxyCompactList}\small\item\em Calcule la combinaison de deux constantes de rebondissement. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceaidecollision_a617db5046c54f02f5bfa501aadc368d8}{aidecollision\-::calculer\-Combinaison\-Amortissement} (double constante1, double constante2)
+\begin{DoxyCompactList}\small\item\em Calcule la combinaison de deux constantes d'amortissement. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceaidecollision_a680fa1bfbc3e0d711f5934ec4602e228}{aidecollision\-::calculer\-Intersection\-Point\-Triangle} (const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&point, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&p1, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&p2, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&p3)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ce fichier contient l'implantation de l'espace de nom aidecollision. Il contient les implantations de fonctions utiles pour le calcul des forces causees par les collisions.
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/01-\/10 
+\end{DoxyDate}

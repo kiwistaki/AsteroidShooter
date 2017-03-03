@@ -1,0 +1,6 @@
+<?xml version="1,0" ?>
+<Root>
+    <Touches j1Prop="87" j1Gauche="65" j1Droite="68" j1Man="83" j1Tir="32" j2Prop="104" j2Gauche="100" j2Droite="102" j2Man="101" j2Tir="32" />
+    <PointsDeVie PointsDeVieStation="1" />
+    <DureeDeJeu DureeJeu="30" />
+</Root>

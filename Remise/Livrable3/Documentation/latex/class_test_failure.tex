@@ -1,0 +1,62 @@
+\hypertarget{class_test_failure}{\section{Test\-Failure Class Reference}
+\label{class_test_failure}\index{Test\-Failure@{Test\-Failure}}
+}
+
+
+Record of a failed \hyperlink{class_test}{Test} execution.
+
+A \hyperlink{class_test_failure}{Test\-Failure} collects a failed test together with the caught exception.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Failure.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_failure_a0ecf7ad4ab673974d30d10ffb2b01790}{{\bfseries Test\-Failure} (\hyperlink{class_test}{Test} $\ast$failed\-Test, \hyperlink{class_exception}{Exception} $\ast$thrown\-Exception, bool is\-Error)}\label{class_test_failure_a0ecf7ad4ab673974d30d10ffb2b01790}
+
+\item 
+\hypertarget{class_test_failure_a35aa1b953feff8635c832a53d3c6946d}{virtual \hyperlink{class_test}{Test} $\ast$ {\bfseries failed\-Test} () const }\label{class_test_failure_a35aa1b953feff8635c832a53d3c6946d}
+
+\item 
+\hypertarget{class_test_failure_a8e60e0c1ea068bef6c546d20d8260400}{virtual \hyperlink{class_exception}{Exception} $\ast$ {\bfseries thrown\-Exception} () const }\label{class_test_failure_a8e60e0c1ea068bef6c546d20d8260400}
+
+\item 
+\hypertarget{class_test_failure_aa3c6a076dca224d7e440212cfd127305}{virtual \hyperlink{class_source_line}{Source\-Line} {\bfseries source\-Line} () const }\label{class_test_failure_aa3c6a076dca224d7e440212cfd127305}
+
+\item 
+\hypertarget{class_test_failure_a23b25cf3452b3ab7dc84c70664f13ff0}{virtual bool {\bfseries is\-Error} () const }\label{class_test_failure_a23b25cf3452b3ab7dc84c70664f13ff0}
+
+\item 
+\hypertarget{class_test_failure_aca471a29c01d3c5e4d439aadbb1825bf}{virtual std\-::string {\bfseries failed\-Test\-Name} () const }\label{class_test_failure_aca471a29c01d3c5e4d439aadbb1825bf}
+
+\item 
+\hypertarget{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}{virtual \hyperlink{class_test_failure}{Test\-Failure} $\ast$ {\bfseries clone} () const }\label{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_failure_a2ba79089909967b45aedc4992b51553a}{\hyperlink{class_test}{Test} $\ast$ {\bfseries m\-\_\-failed\-Test}}\label{class_test_failure_a2ba79089909967b45aedc4992b51553a}
+
+\item 
+\hypertarget{class_test_failure_a96bfae3c1f32d0c1729501d68016f431}{\hyperlink{class_exception}{Exception} $\ast$ {\bfseries m\-\_\-thrown\-Exception}}\label{class_test_failure_a96bfae3c1f32d0c1729501d68016f431}
+
+\item 
+\hypertarget{class_test_failure_abf258e5bec289b51fb13147a62b8b75d}{bool {\bfseries m\-\_\-is\-Error}}\label{class_test_failure_abf258e5bec289b51fb13147a62b8b75d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Record of a failed \hyperlink{class_test}{Test} execution.
+
+A \hyperlink{class_test_failure}{Test\-Failure} collects a failed test together with the caught exception. 
+
+\hyperlink{class_test_failure}{Test\-Failure} assumes lifetime control for any exception passed to it. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Failure.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{class_gestionnaire_asteroide}{\section{Gestionnaire\-Asteroide Class Reference}
+\label{class_gestionnaire_asteroide}\index{Gestionnaire\-Asteroide@{Gestionnaire\-Asteroide}}
+}
+
+
+Classe qui s'occuppe de créer les astéroïdes.  
+
+
+
+
+{\ttfamily \#include $<$Gestionnaire\-Asteroide.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_gestionnaire_asteroide_aee360275bb0a4680100d0b9f9cd5fb10}{generer\-Asteroides} (int num\-Asteroides, int num\-Cell\-X, int num\-Cell\-Y, int num\-Cell\-Z, float rayon\-Sphere, float ellipse\-X\-Min, float ellipse\-X\-Max, float ellipse\-Y\-Min, float ellips\-Y\-Max, float ellipse\-Z\-Min, float ellipse\-Z\-Max, float variation\-Sin\-Min, float variation\-Sin\-Max, float variation\-Texel\-Min, float variation\-Texel\-Max)
+\item 
+void \hyperlink{class_gestionnaire_asteroide_acf3db95e9fb7bd7bbe17672304069f53}{detruire\-Asteroides} ()
+\item 
+void \hyperlink{class_gestionnaire_asteroide_a6215e1f98aa8026f0902a2f57d072ead}{get\-Modele\-Asteroide} (unsigned int \&liste, float \&rayon) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_gestionnaire_asteroide_a215542f09ef997313bb6d59e6b66ee6d}{static \hyperlink{class_gestionnaire_asteroide}{Gestionnaire\-Asteroide} $\ast$ {\bfseries get\-Instance} ()}\label{class_gestionnaire_asteroide_a215542f09ef997313bb6d59e6b66ee6d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui s'occuppe de créer les astéroïdes. 
+
+Cette classe génère différent modèles d'astéroïde, créer des call lists et permet d'en prendre un au hasard lorsqu'on veut créer un \hyperlink{class_noeud_asteroide}{Noeud\-Asteroide}.
+
+Cette classe est un singleton.
+
+L'algorithme de génération des astéroïdes est celui du marching cube (\href{http://en.wikipedia.org/wiki/Marching_cubes}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Marching\-\_\-cubes}). Cet algorithme utilise une fonction implicite 3\-D, par exemple, celle d'une sphère\-: f(x, y, z) = x² + y² + z² -\/ R² = 0 où R est le rayon de la sphère, pour générer une surface.
+
+L'algorithme part d'un cube qu'il subdivise en plusieurs petits cubes. Chacun des sommets de ces cubes se voient attribuer une valeur à partir de la fonction implicite. On parcours ensuite chacun des cubes et on vérifie si les sommets ont une valeur négative ou positive.
+
+Dans le premier cas, le sommet est à l'extérieur de la surface. Dans le second cas, le sommet est à l'intérieur. On prend note de tous les sommets dont la valeur est négative et on créer des sommets qui définissent une surface qui exclue ces sommets négatifs.
+
+On répète le processus processus pour toutes les subdivisions du cube original et la liste finale de sommets représente la surface implicite.
+
+Dans ce cas particulier, on veut des astéroïdes qui ont des formes relativement sphérique et ellipsoïde. On part donc d'une sphère ou d'une forme ellipsoïde et on perturbe sa surface en introduisant du bruit à l'aide d'une texture procédurale (\href{http://en.wikipedia.org/wiki/Procedural_texture}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Procedural\-\_\-texture}). Plusieurs types de textures procédurales existent et celle utilise est de type Worley (\href{http://en.wikipedia.org/wiki/Worley_noise}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Worley\-\_\-noise}).
+
+La fonction implicite utilisé pour généré les astéroïdes est\-: f(x, y, z) = (x² / a + y² / b + z² / c + sin(texel) $\ast$ var\-Sin + texel $\ast$ var\-Texel) -\/ R²
+
+Où a, b et c sont les rayons de l'ellipsoïde, texel est la valeur de la texture au point (x, y, z) et var\-Sin et var\-Texel sont des coefficients pour contrôler comment la surface sera modifié. R est le rayon de la sphère initiale que l'on vient perturber.
+
+Il est a noter que les rayons a, b et c ne sont pas utilisés dans des divisions mais bien dans des multiplications dans l'implémentation.
+
+Pour plus de détails sur l'implémentation des textures Worley \-: \href{http://aftbit.com/cell-noise-2/}{\tt http\-://aftbit.\-com/cell-\/noise-\/2/} Pour plus de détails sur l'implémentation de l'algorithm de Marching Cube \-: \href{http://paulbourke.net/geometry/polygonise/}{\tt http\-://paulbourke.\-net/geometry/polygonise/} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_gestionnaire_asteroide_acf3db95e9fb7bd7bbe17672304069f53}{\index{Gestionnaire\-Asteroide@{Gestionnaire\-Asteroide}!detruire\-Asteroides@{detruire\-Asteroides}}
+\index{detruire\-Asteroides@{detruire\-Asteroides}!GestionnaireAsteroide@{Gestionnaire\-Asteroide}}
+\subsubsection[{detruire\-Asteroides}]{\setlength{\rightskip}{0pt plus 5cm}void Gestionnaire\-Asteroide\-::detruire\-Asteroides (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_asteroide_acf3db95e9fb7bd7bbe17672304069f53}
+Détruit tous les astéroïdes \hypertarget{class_gestionnaire_asteroide_aee360275bb0a4680100d0b9f9cd5fb10}{\index{Gestionnaire\-Asteroide@{Gestionnaire\-Asteroide}!generer\-Asteroides@{generer\-Asteroides}}
+\index{generer\-Asteroides@{generer\-Asteroides}!GestionnaireAsteroide@{Gestionnaire\-Asteroide}}
+\subsubsection[{generer\-Asteroides}]{\setlength{\rightskip}{0pt plus 5cm}void Gestionnaire\-Asteroide\-::generer\-Asteroides (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Asteroides, }
+\item[{int}]{num\-Cell\-X, }
+\item[{int}]{num\-Cell\-Y, }
+\item[{int}]{num\-Cell\-Z, }
+\item[{float}]{rayon\-Sphere, }
+\item[{float}]{ellipse\-X\-Min, }
+\item[{float}]{ellipse\-X\-Max, }
+\item[{float}]{ellipse\-Y\-Min, }
+\item[{float}]{ellips\-Y\-Max, }
+\item[{float}]{ellipse\-Z\-Min, }
+\item[{float}]{ellipse\-Z\-Max, }
+\item[{float}]{variation\-Sin\-Min, }
+\item[{float}]{variation\-Sin\-Max, }
+\item[{float}]{variation\-Texel\-Min, }
+\item[{float}]{variation\-Texel\-Max}
+\end{DoxyParamCaption}
+)}}\label{class_gestionnaire_asteroide_aee360275bb0a4680100d0b9f9cd5fb10}
+Génère un certain nombre d'astéroïdes en faisant varier les paramètres de création. Cette fonction ne fait que compiler des display list d'Open\-G\-L et génère des sphères englobantes pour les astéroïdes 
+\begin{DoxyParams}{Parameters}
+{\em num\-Asteroides} & Le nombre de variation d'astéroïdes à générer \\
+\hline
+{\em num\-Cell\-X} & Le nombre de subdivision sur l'axe des x \\
+\hline
+{\em num\-Cell\-Y} & Le nombre de subdivision sur l'axe des y \\
+\hline
+{\em num\-Cell\-Z} & Le nombre de subdivision sur l'axe des z \\
+\hline
+{\em rayon\-Sphere} & Le rayon de la sphère que l'on vient perturber \\
+\hline
+{\em ellipse\-X\-Min} & La valeur minimale que peut prendre le rayon elliptique sur l'axe des x \\
+\hline
+{\em ellipse\-X\-Max} & La valeur maximale que peut prendre le rayon elliptique sur l'axe des x \\
+\hline
+{\em ellipse\-Y\-Min} & La valeur minimale que peut prendre le rayon elliptique sur l'axe des y \\
+\hline
+{\em ellipse\-Y\-Max} & La valeur maximale que peut prendre le rayon elliptique sur l'axe des y \\
+\hline
+{\em ellipse\-Z\-Min} & La valeur minimale que peut prendre le rayon elliptique sur l'axe des z \\
+\hline
+{\em ellipse\-Z\-Max} & La valeur maximale que peut prendre le rayon elliptique sur l'axe des z \\
+\hline
+{\em variation\-Sin\-Min} & La valeur minimale que peut prendre la variation du sinus \\
+\hline
+{\em variation\-Sin\-Max} & La valeur maximale que peut prendre la variation du sinus \\
+\hline
+{\em variation\-Texel\-Min} & La valeur minimale que peut prendre le gain du texel \\
+\hline
+{\em variation\-Texel\-Max} & La valeur maximale que peut prendre le gain du texel \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_gestionnaire_asteroide_a6215e1f98aa8026f0902a2f57d072ead}{\index{Gestionnaire\-Asteroide@{Gestionnaire\-Asteroide}!get\-Modele\-Asteroide@{get\-Modele\-Asteroide}}
+\index{get\-Modele\-Asteroide@{get\-Modele\-Asteroide}!GestionnaireAsteroide@{Gestionnaire\-Asteroide}}
+\subsubsection[{get\-Modele\-Asteroide}]{\setlength{\rightskip}{0pt plus 5cm}void Gestionnaire\-Asteroide\-::get\-Modele\-Asteroide (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{liste, }
+\item[{float \&}]{rayon}
+\end{DoxyParamCaption}
+) const}}\label{class_gestionnaire_asteroide_a6215e1f98aa8026f0902a2f57d072ead}
+Retourne un modèle d'astéroïde pris au hasard parmis le bassin d'objets. 
+\begin{DoxyParams}{Parameters}
+{\em liste} & La liste d'affichage Open\-G\-L représentant le modèle d'astéroïde. \\
+\hline
+{\em rayon} & Le rayon de l'astéroïde \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Modeles/Gestionnaire\-Asteroide.\-h\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Modeles/Gestionnaire\-Asteroide.\-cpp\end{DoxyCompactItemize}

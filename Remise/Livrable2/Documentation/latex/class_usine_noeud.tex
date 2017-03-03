@@ -1,0 +1,91 @@
+\hypertarget{class_usine_noeud}{\section{Usine\-Noeud Class Reference}
+\label{class_usine_noeud}\index{Usine\-Noeud@{Usine\-Noeud}}
+}
+
+
+Classe de base abstraite des usines qui seront utilisees pour creer les differents noeuds de l'arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Usine\-Noeud.\-h$>$}
+
+Inheritance diagram for Usine\-Noeud\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_usine_noeud}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_usine_noeud_a1599bf38e75c61c68af55fc4d1e1059c}{$\sim$\-Usine\-Noeud} ()
+\begin{DoxyCompactList}\small\item\em Destructeur vide declare virtuel pour les classes derivees. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_noeud_abstrait}{Noeud\-Abstrait} $\ast$ \hyperlink{class_usine_noeud_a47c1970af3739268f5e4a35cb451d528}{creer\-Noeud} () const =0
+\begin{DoxyCompactList}\small\item\em Fonction a surcharger pour la creation d'un noeud. \end{DoxyCompactList}\item 
+const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \& \hyperlink{group__inf2990_ga78cfb214df5805c43d4ca4b71411d060}{obtenir\-Nom} () const 
+\begin{DoxyCompactList}\small\item\em Retourne le nom associe a l'usine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_usine_noeud_ad596eb4296099f9e9afa55988577606e}{Usine\-Noeud} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&nom)
+\begin{DoxyCompactList}\small\item\em Constructeur qui prend le nom associe a l'usine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe de base abstraite des usines qui seront utilisees pour creer les differents noeuds de l'arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/01-\/28 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_usine_noeud_a1599bf38e75c61c68af55fc4d1e1059c}{\index{Usine\-Noeud@{Usine\-Noeud}!$\sim$\-Usine\-Noeud@{$\sim$\-Usine\-Noeud}}
+\index{$\sim$\-Usine\-Noeud@{$\sim$\-Usine\-Noeud}!UsineNoeud@{Usine\-Noeud}}
+\subsubsection[{$\sim$\-Usine\-Noeud}]{\setlength{\rightskip}{0pt plus 5cm}virtual Usine\-Noeud\-::$\sim$\-Usine\-Noeud (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_usine_noeud_a1599bf38e75c61c68af55fc4d1e1059c}
+
+
+Destructeur vide declare virtuel pour les classes derivees. 
+
+\hypertarget{class_usine_noeud_ad596eb4296099f9e9afa55988577606e}{\index{Usine\-Noeud@{Usine\-Noeud}!Usine\-Noeud@{Usine\-Noeud}}
+\index{Usine\-Noeud@{Usine\-Noeud}!UsineNoeud@{Usine\-Noeud}}
+\subsubsection[{Usine\-Noeud}]{\setlength{\rightskip}{0pt plus 5cm}Usine\-Noeud\-::\-Usine\-Noeud (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_usine_noeud_ad596eb4296099f9e9afa55988577606e}
+
+
+Constructeur qui prend le nom associe a l'usine. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_usine_noeud_a47c1970af3739268f5e4a35cb451d528}{\index{Usine\-Noeud@{Usine\-Noeud}!creer\-Noeud@{creer\-Noeud}}
+\index{creer\-Noeud@{creer\-Noeud}!UsineNoeud@{Usine\-Noeud}}
+\subsubsection[{creer\-Noeud}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Noeud\-Abstrait}$\ast$ Usine\-Noeud\-::creer\-Noeud (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_usine_noeud_a47c1970af3739268f5e4a35cb451d528}
+
+
+Fonction a surcharger pour la creation d'un noeud. 
+
+
+
+Implemented in \hyperlink{group__inf2990_gac930b86cf1f3e8861f6b8af11df2c8cb}{Usine\-Noeud\-Accelerateur}, \hyperlink{group__inf2990_gab6be7e595c0cfed194ec12d49aca928a}{Usine\-Noeud\-Asteroide}, \hyperlink{group__inf2990_ga4ff463b2444d5e81b54c6c3200c74136}{Usine\-Noeud\-Barriere}, \hyperlink{group__inf2990_gaf6eec2bb7996beba8c59cb9720567d55}{Usine\-Noeud\-Portail}, \hyperlink{group__inf2990_ga7406e1b6360fc291108fe2f4e6f9182c}{Usine\-Noeud\-Position\-Depart}, \hyperlink{group__inf2990_ga1e14780d2df909be0a7cf5c6b64897bd}{Usine\-Noeud\-Projectile}, \hyperlink{group__inf2990_gabc547440a5120276ecaf2a334186a602}{Usine\-Noeud\-Station}, and \hyperlink{group__inf2990_ga90b6c05544585681ba62e468ad958dae}{Usine\-Noeud\-Vaisseau}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Usines/\hyperlink{_usine_noeud_8h}{Usine\-Noeud.\-h}\end{DoxyCompactItemize}

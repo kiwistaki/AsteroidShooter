@@ -1,0 +1,150 @@
+\hypertarget{class_interface_graphique_1_1_interface_edition}{\section{Interface\-Graphique.\-Interface\-Edition Class Reference}
+\label{class_interface_graphique_1_1_interface_edition}\index{Interface\-Graphique.\-Interface\-Edition@{Interface\-Graphique.\-Interface\-Edition}}
+}
+Inheritance diagram for Interface\-Graphique.\-Interface\-Edition\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_interface_graphique_1_1_interface_edition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interface_graphique_1_1_interface_edition_a5a03953960026b370b4148f4649816d3}{Interface\-Edition} (\hyperlink{class_interface_graphique_1_1_fenetre_commune}{Fenetre\-Commune} fenetre)
+\item 
+\hyperlink{class_interface_graphique_1_1_barre_outils}{Barre\-Outils} \hyperlink{class_interface_graphique_1_1_interface_edition_a8183d606672ccb9c5a8ca553bd175aed}{get\-Barre\-Outils} ()
+\item 
+\hyperlink{class_interface_graphique_1_1_panel_proprietes}{Panel\-Proprietes} \hyperlink{class_interface_graphique_1_1_interface_edition_a30636101ae9f12d757d66acd4c77cc30}{get\-Panel\-Proprietes} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_interface_edition_ada6d0aa21fe6c66e4bb6d5a7c20db8b7}{show\-Panel\-Proprietes} (boolean etat)
+\item 
+\hypertarget{class_interface_graphique_1_1_interface_edition_a7119e4d8b18bc0dff8082dfb084e3c04}{boolean {\bfseries is\-Panel\-Proprietes\-Shown} ()}\label{class_interface_graphique_1_1_interface_edition_a7119e4d8b18bc0dff8082dfb084e3c04}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_interface_edition_af6b47f8802ad783e99538249993d84b3}{void {\bfseries montrer\-Configuration\-Zone\-Jeu} (boolean val)}\label{class_interface_graphique_1_1_interface_edition_af6b47f8802ad783e99538249993d84b3}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_interface_edition_a1577e39e13498abea17b1763f333cea9}{void {\bfseries run} (float temps)}\label{class_interface_graphique_1_1_interface_edition_a1577e39e13498abea17b1763f333cea9}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_interface_edition_a04b0cbb3bce17fbda7de4d5f2dd48e37}{void {\bfseries set\-Bouton\-Ortho} (boolean est\-Ortho)}\label{class_interface_graphique_1_1_interface_edition_a04b0cbb3bce17fbda7de4d5f2dd48e37}
+
+\item 
+\hypertarget{class_interface_graphique_1_1_interface_edition_aade97359b9153537300e8c238d82e0e3}{void {\bfseries reset\-Buttons} ()}\label{class_interface_graphique_1_1_interface_edition_aade97359b9153537300e8c238d82e0e3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interface_graphique_1_1_interface_edition_a1c5ce720a7692bdf19ae567fdfbb9388}{definir\-Canvas} ()
+\item 
+void \hyperlink{class_interface_graphique_1_1_interface_edition_a5c6d247fc4daf5bb1676aa9674cade19}{redimensionner\-Canvas} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Sacha L-\/\-Roussel
+\end{DoxyAuthor}
+Classe qui définit l'interface d'édition du programme; Celle-\/ci permet de créer et d'éditer des cartes de jeux composée de \hyperlink{class_station}{Station} Spatiale, de vaisseaux, d'astéroïde, de barrière et de bonus. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_interface_graphique_1_1_interface_edition_a5a03953960026b370b4148f4649816d3}{\index{Interface\-Graphique\-::\-Interface\-Edition@{Interface\-Graphique\-::\-Interface\-Edition}!Interface\-Edition@{Interface\-Edition}}
+\index{Interface\-Edition@{Interface\-Edition}!InterfaceGraphique::InterfaceEdition@{Interface\-Graphique\-::\-Interface\-Edition}}
+\subsubsection[{Interface\-Edition}]{\setlength{\rightskip}{0pt plus 5cm}Interface\-Graphique.\-Interface\-Edition.\-Interface\-Edition (
+\begin{DoxyParamCaption}
+\item[{{\bf Fenetre\-Commune}}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_interface_edition_a5a03953960026b370b4148f4649816d3}
+Constructeur par défaut de la classe \hyperlink{class_interface_graphique_1_1_interface_edition}{Interface\-Edition}. On y créer les composantes graphiques de l'interface. 
+\begin{DoxyParams}{Parameters}
+{\em fenetre\-Demarrage} & La fenêtre de démarrage à passer pour la fenêtre de configuration de la zone de jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rien 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_interface_graphique_1_1_interface_edition_a1c5ce720a7692bdf19ae567fdfbb9388}{\index{Interface\-Graphique\-::\-Interface\-Edition@{Interface\-Graphique\-::\-Interface\-Edition}!definir\-Canvas@{definir\-Canvas}}
+\index{definir\-Canvas@{definir\-Canvas}!InterfaceGraphique::InterfaceEdition@{Interface\-Graphique\-::\-Interface\-Edition}}
+\subsubsection[{definir\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Interface\-Edition.\-definir\-Canvas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_interface_graphique_1_1_interface_edition_a1c5ce720a7692bdf19ae567fdfbb9388}
+Méthode qui définit l'état de base du canvas de dessin 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_interface_edition_a8183d606672ccb9c5a8ca553bd175aed}{\index{Interface\-Graphique\-::\-Interface\-Edition@{Interface\-Graphique\-::\-Interface\-Edition}!get\-Barre\-Outils@{get\-Barre\-Outils}}
+\index{get\-Barre\-Outils@{get\-Barre\-Outils}!InterfaceGraphique::InterfaceEdition@{Interface\-Graphique\-::\-Interface\-Edition}}
+\subsubsection[{get\-Barre\-Outils}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Barre\-Outils} Interface\-Graphique.\-Interface\-Edition.\-get\-Barre\-Outils (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_interface_edition_a8183d606672ccb9c5a8ca553bd175aed}
+Retourne l'instance de la barre d'outils contenue dans l'interface d'edition 
+\begin{DoxyParams}{Parameters}
+{\em Aucuns} & paramètres \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+barre\-Outils Objet de type \hyperlink{class_interface_graphique_1_1_barre_outils}{Barre\-Outils}. 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_interface_edition_a30636101ae9f12d757d66acd4c77cc30}{\index{Interface\-Graphique\-::\-Interface\-Edition@{Interface\-Graphique\-::\-Interface\-Edition}!get\-Panel\-Proprietes@{get\-Panel\-Proprietes}}
+\index{get\-Panel\-Proprietes@{get\-Panel\-Proprietes}!InterfaceGraphique::InterfaceEdition@{Interface\-Graphique\-::\-Interface\-Edition}}
+\subsubsection[{get\-Panel\-Proprietes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Panel\-Proprietes} Interface\-Graphique.\-Interface\-Edition.\-get\-Panel\-Proprietes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_interface_edition_a30636101ae9f12d757d66acd4c77cc30}
+Retourne l'instance du panel de modification des paramètres des propriétés des éléments 
+\begin{DoxyParams}{Parameters}
+{\em Aucuns} & paramètres \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+panel\-Proprietes Objet de type \hyperlink{class_interface_graphique_1_1_panel_proprietes}{Panel\-Proprietes} 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_interface_edition_a5c6d247fc4daf5bb1676aa9674cade19}{\index{Interface\-Graphique\-::\-Interface\-Edition@{Interface\-Graphique\-::\-Interface\-Edition}!redimensionner\-Canvas@{redimensionner\-Canvas}}
+\index{redimensionner\-Canvas@{redimensionner\-Canvas}!InterfaceGraphique::InterfaceEdition@{Interface\-Graphique\-::\-Interface\-Edition}}
+\subsubsection[{redimensionner\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Interface\-Edition.\-redimensionner\-Canvas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_interface_graphique_1_1_interface_edition_a5c6d247fc4daf5bb1676aa9674cade19}
+Méthode qui calcule les nouvelles dimensions 
+\begin{DoxyParams}{Parameters}
+{\em Aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_interface_graphique_1_1_interface_edition_ada6d0aa21fe6c66e4bb6d5a7c20db8b7}{\index{Interface\-Graphique\-::\-Interface\-Edition@{Interface\-Graphique\-::\-Interface\-Edition}!show\-Panel\-Proprietes@{show\-Panel\-Proprietes}}
+\index{show\-Panel\-Proprietes@{show\-Panel\-Proprietes}!InterfaceGraphique::InterfaceEdition@{Interface\-Graphique\-::\-Interface\-Edition}}
+\subsubsection[{show\-Panel\-Proprietes}]{\setlength{\rightskip}{0pt plus 5cm}void Interface\-Graphique.\-Interface\-Edition.\-show\-Panel\-Proprietes (
+\begin{DoxyParamCaption}
+\item[{boolean}]{etat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_interface_graphique_1_1_interface_edition_ada6d0aa21fe6c66e4bb6d5a7c20db8b7}
+Permet de changer l'état du panel des propriétés -\/ Cette méthode le cache si il est visible et inversement 
+\begin{DoxyParams}{Parameters}
+{\em Aucuns} & paramètres \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-Java/\-Interface\-Graphique/src/\-Interface\-Graphique/Interface\-Edition.\-java\end{DoxyCompactItemize}

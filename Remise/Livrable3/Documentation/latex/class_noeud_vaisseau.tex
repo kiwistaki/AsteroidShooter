@@ -1,0 +1,110 @@
+\hypertarget{class_noeud_vaisseau}{\section{Noeud\-Vaisseau Class Reference}
+\label{class_noeud_vaisseau}\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}}
+}
+
+
+Cette classe permet d'afficher un vaisseau grace a l'arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\-Vaisseau.\-h$>$}
+
+Inheritance diagram for Noeud\-Vaisseau\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_vaisseau}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_noeud_vaisseau_a5b772aa4f6424fa19e072c2522192b59}{Noeud\-Vaisseau} (const std\-::string \&type)
+\item 
+\hyperlink{class_noeud_vaisseau_aa45a235d6467858a9b59df04dc4aaf22}{Noeud\-Vaisseau} (const \hyperlink{class_noeud_vaisseau}{Noeud\-Vaisseau} \&src)
+\item 
+\hyperlink{class_noeud_vaisseau_a3d40bc09ebbc6a9639903cbd39df6cb3}{$\sim$\-Noeud\-Vaisseau} ()
+\item 
+virtual void \hyperlink{class_noeud_vaisseau_ad5421fd22f086186ec172cc0ec82ae3a}{animer} (float dt)
+\item 
+virtual void \hyperlink{class_noeud_vaisseau_a74af850f9d984cd99b86b46664eb3d74}{afficher\-Concret} () const 
+\begin{DoxyCompactList}\small\item\em Le dessin concret du noeud (pour le moment c'est temporaire. \end{DoxyCompactList}\item 
+\hypertarget{class_noeud_vaisseau_ab842bcf24f9553cdc7deea03ebb4eac5}{void {\bfseries set\-Joueur1} (bool val)}\label{class_noeud_vaisseau_ab842bcf24f9553cdc7deea03ebb4eac5}
+
+\item 
+\hypertarget{class_noeud_vaisseau_a95995ec949f7cb34cef018f967cff09b}{bool {\bfseries get\-Joueur1} () const }\label{class_noeud_vaisseau_a95995ec949f7cb34cef018f967cff09b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe permet d'afficher un vaisseau grace a l'arbre de rendu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_noeud_vaisseau_a5b772aa4f6424fa19e072c2522192b59}{\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!Noeud\-Vaisseau@{Noeud\-Vaisseau}}
+\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!NoeudVaisseau@{Noeud\-Vaisseau}}
+\subsubsection[{Noeud\-Vaisseau}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Vaisseau\-::\-Noeud\-Vaisseau (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_vaisseau_a5b772aa4f6424fa19e072c2522192b59}
+Constructeur. Creer la liste d'affichage pour le vaisseau 
+\begin{DoxyParams}{Parameters}
+{\em type} & Le type du noeud \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_vaisseau_aa45a235d6467858a9b59df04dc4aaf22}{\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!Noeud\-Vaisseau@{Noeud\-Vaisseau}}
+\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!NoeudVaisseau@{Noeud\-Vaisseau}}
+\subsubsection[{Noeud\-Vaisseau}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Vaisseau\-::\-Noeud\-Vaisseau (
+\begin{DoxyParamCaption}
+\item[{const {\bf Noeud\-Vaisseau} \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_vaisseau_aa45a235d6467858a9b59df04dc4aaf22}
+Constructeur par copie 
+\begin{DoxyParams}{Parameters}
+{\em src} & L'objet que l'on veut copier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_vaisseau_a3d40bc09ebbc6a9639903cbd39df6cb3}{\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!$\sim$\-Noeud\-Vaisseau@{$\sim$\-Noeud\-Vaisseau}}
+\index{$\sim$\-Noeud\-Vaisseau@{$\sim$\-Noeud\-Vaisseau}!NoeudVaisseau@{Noeud\-Vaisseau}}
+\subsubsection[{$\sim$\-Noeud\-Vaisseau}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Vaisseau\-::$\sim$\-Noeud\-Vaisseau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_vaisseau_a3d40bc09ebbc6a9639903cbd39df6cb3}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_noeud_vaisseau_a74af850f9d984cd99b86b46664eb3d74}{\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!afficher\-Concret@{afficher\-Concret}}
+\index{afficher\-Concret@{afficher\-Concret}!NoeudVaisseau@{Noeud\-Vaisseau}}
+\subsubsection[{afficher\-Concret}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\-Vaisseau\-::afficher\-Concret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_noeud_vaisseau_a74af850f9d984cd99b86b46664eb3d74}
+
+
+Le dessin concret du noeud (pour le moment c'est temporaire. 
+
+Transformation par rapport a l'objet lui-\/meme 
+
+Reimplemented from \hyperlink{group__inf2990_ga330df455c8b08440d3c8e64d0a480391}{Noeud\-Abstrait}.
+
+\hypertarget{class_noeud_vaisseau_ad5421fd22f086186ec172cc0ec82ae3a}{\index{Noeud\-Vaisseau@{Noeud\-Vaisseau}!animer@{animer}}
+\index{animer@{animer}!NoeudVaisseau@{Noeud\-Vaisseau}}
+\subsubsection[{animer}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\-Vaisseau\-::animer (
+\begin{DoxyParamCaption}
+\item[{float}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_noeud_vaisseau_ad5421fd22f086186ec172cc0ec82ae3a}
+Animation du noeud 
+
+Reimplemented from \hyperlink{group__inf2990_gadc6ebe69894dbb682fdd0ecb1b6c11e9}{Noeud\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/\hyperlink{_noeud_vaisseau_8h}{Noeud\-Vaisseau.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/Noeud\-Vaisseau.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{class_test_composite}{\section{Test\-Composite Class Reference}
+\label{class_test_composite}\index{Test\-Composite@{Test\-Composite}}
+}
+
+
+A Composite of Tests.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Composite.\-h$>$}
+
+Inheritance diagram for Test\-Composite\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_composite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_composite_aa82b05d6ca806b023beba504ec9b1d41}{{\bfseries Test\-Composite} (const std\-::string \&name=\char`\"{}\char`\"{})}\label{class_test_composite_aa82b05d6ca806b023beba504ec9b1d41}
+
+\item 
+\hypertarget{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{void \hyperlink{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$result)}\label{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}
+
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\item 
+int \hyperlink{class_test_composite_aab3a79f9629eb6f026467e9c27b08788}{count\-Test\-Cases} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of test cases invoked by \hyperlink{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{run()}. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_test_composite_addf2aec7ab7233e433cb5bdf98defb61}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Composite of Tests. 
+
+Base class for all test composites. Subclass this class if you need to implement a custom \hyperlink{class_test_suite}{Test\-Suite}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test}{Test}, \hyperlink{class_test_suite}{Test\-Suite}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_composite_aab3a79f9629eb6f026467e9c27b08788}{\index{Test\-Composite@{Test\-Composite}!count\-Test\-Cases@{count\-Test\-Cases}}
+\index{count\-Test\-Cases@{count\-Test\-Cases}!TestComposite@{Test\-Composite}}
+\subsubsection[{count\-Test\-Cases}]{\setlength{\rightskip}{0pt plus 5cm}int Test\-Composite\-::count\-Test\-Cases (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_composite_aab3a79f9629eb6f026467e9c27b08788}
+
+
+Return the number of test cases invoked by \hyperlink{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{run()}. 
+
+The base unit of testing is the class \hyperlink{class_test_case}{Test\-Case}. This method returns the number of \hyperlink{class_test_case}{Test\-Case} objects invoked by the \hyperlink{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{run()} method. 
+
+Implements \hyperlink{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{Test}.
+
+\hypertarget{class_test_composite_addf2aec7ab7233e433cb5bdf98defb61}{\index{Test\-Composite@{Test\-Composite}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!TestComposite@{Test\-Composite}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Test\-Composite\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_composite_addf2aec7ab7233e433cb5bdf98defb61}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Implements \hyperlink{class_test_a5e024da199f811a33264e432c21dcc94}{Test}.
+
+
+
+Reimplemented in \hyperlink{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}{Test\-Runner\-::\-Wrapping\-Suite}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Composite.\-h\end{DoxyCompactItemize}

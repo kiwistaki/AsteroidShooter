@@ -1,0 +1,90 @@
+\hypertarget{class_commande_ajout_barriere}{\section{Commande\-Ajout\-Barriere Class Reference}
+\label{class_commande_ajout_barriere}\index{Commande\-Ajout\-Barriere@{Commande\-Ajout\-Barriere}}
+}
+
+
+La classe Commande\-Ajout permet d'ajouter une barriere sur la carte.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Ajout\-Barriere.\-h$>$}
+
+Inheritance diagram for Commande\-Ajout\-Barriere\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_ajout_barriere}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_ajout_barriere_a97062e0aa94ec0c70d6e66050d835988}{Commande\-Ajout\-Barriere} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte)
+\item 
+virtual \hyperlink{class_commande_ajout_barriere_acd8fbb39e8062e5cc4959493c7ea3717}{$\sim$\-Commande\-Ajout\-Barriere} ()
+\item 
+virtual void \hyperlink{class_commande_ajout_barriere_a23c6176e97b56fed95b2e02b37515290}{executer} (int mouse\-X, int mouse\-Y, int boutton, int touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe Commande\-Ajout permet d'ajouter une barriere sur la carte. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_ajout_barriere_a97062e0aa94ec0c70d6e66050d835988}{\index{Commande\-Ajout\-Barriere@{Commande\-Ajout\-Barriere}!Commande\-Ajout\-Barriere@{Commande\-Ajout\-Barriere}}
+\index{Commande\-Ajout\-Barriere@{Commande\-Ajout\-Barriere}!CommandeAjoutBarriere@{Commande\-Ajout\-Barriere}}
+\subsubsection[{Commande\-Ajout\-Barriere}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Ajout\-Barriere\-::\-Commande\-Ajout\-Barriere (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte}
+\end{DoxyParamCaption}
+)}}\label{class_commande_ajout_barriere_a97062e0aa94ec0c70d6e66050d835988}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_ajout_barriere_acd8fbb39e8062e5cc4959493c7ea3717}{\index{Commande\-Ajout\-Barriere@{Commande\-Ajout\-Barriere}!$\sim$\-Commande\-Ajout\-Barriere@{$\sim$\-Commande\-Ajout\-Barriere}}
+\index{$\sim$\-Commande\-Ajout\-Barriere@{$\sim$\-Commande\-Ajout\-Barriere}!CommandeAjoutBarriere@{Commande\-Ajout\-Barriere}}
+\subsubsection[{$\sim$\-Commande\-Ajout\-Barriere}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Ajout\-Barriere\-::$\sim$\-Commande\-Ajout\-Barriere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_ajout_barriere_acd8fbb39e8062e5cc4959493c7ea3717}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_ajout_barriere_a23c6176e97b56fed95b2e02b37515290}{\index{Commande\-Ajout\-Barriere@{Commande\-Ajout\-Barriere}!executer@{executer}}
+\index{executer@{executer}!CommandeAjoutBarriere@{Commande\-Ajout\-Barriere}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}void Commande\-Ajout\-Barriere\-::executer (
+\begin{DoxyParamCaption}
+\item[{int}]{mouse\-X, }
+\item[{int}]{mouse\-Y, }
+\item[{int}]{boutton, }
+\item[{int}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_ajout_barriere_a23c6176e97b56fed95b2e02b37515290}
+Execute la commande. Ajoute un nouvel objet a la position souhaite sur la carte. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_ajout_barriere_8h}{Commande\-Ajout\-Barriere.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/Commande\-Ajout\-Barriere.\-cpp\end{DoxyCompactItemize}

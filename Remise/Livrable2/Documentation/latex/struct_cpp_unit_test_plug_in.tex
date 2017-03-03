@@ -1,0 +1,148 @@
+\hypertarget{struct_cpp_unit_test_plug_in}{\section{Cpp\-Unit\-Test\-Plug\-In Struct Reference}
+\label{struct_cpp_unit_test_plug_in}\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}}
+}
+
+
+\hyperlink{class_test}{Test} plug-\/in interface.
+
+This class define the interface implemented by test plug-\/in. A pointer to that interface is returned by the function exported by the test plug-\/in.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Plug\-In.\-h$>$}
+
+Inheritance diagram for Cpp\-Unit\-Test\-Plug\-In\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_cpp_unit_test_plug_in}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{struct_cpp_unit_test_plug_in_aec670330e7fced26c2a66b1dcd56edc0}{initialize} (C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Factory\-Registry $\ast$registry, const C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Plug\-In\-Parameters \&parameters)=0
+\begin{DoxyCompactList}\small\item\em Called just after loading the dynamic library. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{struct_cpp_unit_test_plug_in_aad8038dc72d0f9798379937fe5692c97}{add\-Listener} (C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Result $\ast$event\-Manager)=0
+\begin{DoxyCompactList}\small\item\em Gives a chance to the plug-\/in to register \hyperlink{class_test_listener}{Test\-Listener}. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{struct_cpp_unit_test_plug_in_a8f36157014b515d38efbc8ab67923d85}{remove\-Listener} (C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Result $\ast$event\-Manager)=0
+\begin{DoxyCompactList}\small\item\em Gives a chance to the plug-\/in to remove its registered \hyperlink{class_test_listener}{Test\-Listener}. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{struct_cpp_unit_test_plug_in_a547cfddd0513dc9182721f723e27d9e3}{add\-Xml\-Outputter\-Hooks} (C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Xml\-Outputter $\ast$outputter)=0
+\begin{DoxyCompactList}\small\item\em Provides a way for the plug-\/in to register some \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook}. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{struct_cpp_unit_test_plug_in_a045727ad9658525838b0b9157065fbcd}{remove\-Xml\-Outputter\-Hooks} ()=0
+\begin{DoxyCompactList}\small\item\em Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{struct_cpp_unit_test_plug_in_a8628d2026e76c58f715e17af88f77458}{uninitialize} (C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Factory\-Registry $\ast$registry)=0
+\begin{DoxyCompactList}\small\item\em Called just before unloading the dynamic library. \end{DoxyCompactList}\item 
+virtual \hyperlink{struct_cpp_unit_test_plug_in_a62e68f9d54b9791f1f3556fb8df2af6a}{$\sim$\-Cpp\-Unit\-Test\-Plug\-In} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_test}{Test} plug-\/in interface.
+
+This class define the interface implemented by test plug-\/in. A pointer to that interface is returned by the function exported by the test plug-\/in. 
+
+Plug-\/in are loaded/unloaded by \hyperlink{class_plug_in_manager}{Plug\-In\-Manager}. When a plug-\/in is loaded, \hyperlink{struct_cpp_unit_test_plug_in_aec670330e7fced26c2a66b1dcd56edc0}{initialize()} is called. Before unloading the plug-\/in, the \hyperlink{class_plug_in_manager}{Plug\-In\-Manager} call \hyperlink{struct_cpp_unit_test_plug_in_a8628d2026e76c58f715e17af88f77458}{uninitialize()}.
+
+\hyperlink{struct_cpp_unit_test_plug_in_aad8038dc72d0f9798379937fe5692c97}{add\-Listener()} and \hyperlink{struct_cpp_unit_test_plug_in_a8f36157014b515d38efbc8ab67923d85}{remove\-Listener()} are called respectively before and after the test run.
+
+\hyperlink{struct_cpp_unit_test_plug_in_a547cfddd0513dc9182721f723e27d9e3}{add\-Xml\-Outputter\-Hooks()} and \hyperlink{struct_cpp_unit_test_plug_in_a045727ad9658525838b0b9157065fbcd}{remove\-Xml\-Outputter\-Hooks()} are called respectively before and after writing the X\-M\-L output using a \hyperlink{class_xml_outputter}{Xml\-Outputter}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_test_plug_in_8h_a705897c323d9381ac1b99a45e953e4ff}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T}, \hyperlink{_test_plug_in_8h_a81bfba0323e2c7ca7dfd6767db813a5b}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-I\-M\-P\-L} 
+
+Cpp\-Unit\-::\-Test\-Plug\-In\-Default\-Impl, Cpp\-Unit\-::\-Xml\-Outputter. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_cpp_unit_test_plug_in_a62e68f9d54b9791f1f3556fb8df2af6a}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!$\sim$\-Cpp\-Unit\-Test\-Plug\-In@{$\sim$\-Cpp\-Unit\-Test\-Plug\-In}}
+\index{$\sim$\-Cpp\-Unit\-Test\-Plug\-In@{$\sim$\-Cpp\-Unit\-Test\-Plug\-In}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{$\sim$\-Cpp\-Unit\-Test\-Plug\-In}]{\setlength{\rightskip}{0pt plus 5cm}virtual Cpp\-Unit\-Test\-Plug\-In\-::$\sim$\-Cpp\-Unit\-Test\-Plug\-In (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{struct_cpp_unit_test_plug_in_a62e68f9d54b9791f1f3556fb8df2af6a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_cpp_unit_test_plug_in_aad8038dc72d0f9798379937fe5692c97}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!add\-Listener@{add\-Listener}}
+\index{add\-Listener@{add\-Listener}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{add\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cpp\-Unit\-Test\-Plug\-In\-::add\-Listener (
+\begin{DoxyParamCaption}
+\item[{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Result $\ast$}]{event\-Manager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{struct_cpp_unit_test_plug_in_aad8038dc72d0f9798379937fe5692c97}
+
+
+Gives a chance to the plug-\/in to register \hyperlink{class_test_listener}{Test\-Listener}. 
+
+Override this method to add a \hyperlink{class_test_listener}{Test\-Listener} for the test run. This is useful if you are writing a custom \hyperlink{class_test_listener}{Test\-Listener}, but also if you need to set\-Up some global resource\-: listen to \hyperlink{class_test_listener_a263428abdf29b2a7123af4096771925e}{Test\-Listener\-::start\-Test\-Run()}, and \hyperlink{class_test_listener_a0411708032f688f6ec234bcc5e089289}{Test\-Listener\-::end\-Test\-Run()}. \hypertarget{struct_cpp_unit_test_plug_in_a547cfddd0513dc9182721f723e27d9e3}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!add\-Xml\-Outputter\-Hooks@{add\-Xml\-Outputter\-Hooks}}
+\index{add\-Xml\-Outputter\-Hooks@{add\-Xml\-Outputter\-Hooks}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{add\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cpp\-Unit\-Test\-Plug\-In\-::add\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+\item[{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Xml\-Outputter $\ast$}]{outputter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{struct_cpp_unit_test_plug_in_a547cfddd0513dc9182721f723e27d9e3}
+
+
+Provides a way for the plug-\/in to register some \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook}. 
+
+\hypertarget{struct_cpp_unit_test_plug_in_aec670330e7fced26c2a66b1dcd56edc0}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!initialize@{initialize}}
+\index{initialize@{initialize}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cpp\-Unit\-Test\-Plug\-In\-::initialize (
+\begin{DoxyParamCaption}
+\item[{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Factory\-Registry $\ast$}]{registry, }
+\item[{const C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Plug\-In\-Parameters \&}]{parameters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{struct_cpp_unit_test_plug_in_aec670330e7fced26c2a66b1dcd56edc0}
+
+
+Called just after loading the dynamic library. 
+
+Override this method to add additional suite to the registry, though this is preferably done using the macros (C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-A\-T\-I\-O\-N...). If you are creating a custom listener to extends the plug-\/in runner, you can use this to configure the listener using the {\itshape parameters}.
+
+You could also use the parameters to specify some global parameter, such as test datas location, database name...
+
+N.\-B.\-: Parameters interface is not define yet, and the plug-\/in runner does not yet support plug-\/in parameter. \hypertarget{struct_cpp_unit_test_plug_in_a8f36157014b515d38efbc8ab67923d85}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!remove\-Listener@{remove\-Listener}}
+\index{remove\-Listener@{remove\-Listener}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{remove\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cpp\-Unit\-Test\-Plug\-In\-::remove\-Listener (
+\begin{DoxyParamCaption}
+\item[{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Result $\ast$}]{event\-Manager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{struct_cpp_unit_test_plug_in_a8f36157014b515d38efbc8ab67923d85}
+
+
+Gives a chance to the plug-\/in to remove its registered \hyperlink{class_test_listener}{Test\-Listener}. 
+
+Override this method to remove a \hyperlink{class_test_listener}{Test\-Listener} that has been added. \hypertarget{struct_cpp_unit_test_plug_in_a045727ad9658525838b0b9157065fbcd}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}}
+\index{remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{remove\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cpp\-Unit\-Test\-Plug\-In\-::remove\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{struct_cpp_unit_test_plug_in_a045727ad9658525838b0b9157065fbcd}
+
+
+Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. 
+
+Can be used to free some resources allocated by \hyperlink{struct_cpp_unit_test_plug_in_a547cfddd0513dc9182721f723e27d9e3}{add\-Xml\-Outputter\-Hooks()}. 
+
+Implemented in \hyperlink{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}{Test\-Plug\-In\-Default\-Impl}.
+
+\hypertarget{struct_cpp_unit_test_plug_in_a8628d2026e76c58f715e17af88f77458}{\index{Cpp\-Unit\-Test\-Plug\-In@{Cpp\-Unit\-Test\-Plug\-In}!uninitialize@{uninitialize}}
+\index{uninitialize@{uninitialize}!CppUnitTestPlugIn@{Cpp\-Unit\-Test\-Plug\-In}}
+\subsubsection[{uninitialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cpp\-Unit\-Test\-Plug\-In\-::uninitialize (
+\begin{DoxyParamCaption}
+\item[{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Test\-Factory\-Registry $\ast$}]{registry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{struct_cpp_unit_test_plug_in_a8628d2026e76c58f715e17af88f77458}
+
+
+Called just before unloading the dynamic library. 
+
+Override this method to unregister test factory added in \hyperlink{struct_cpp_unit_test_plug_in_aec670330e7fced26c2a66b1dcd56edc0}{initialize()}. This is necessary to keep the \hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} 'clean'. When the plug-\/in is unloaded from memory, the \hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} will hold reference on test that are no longer available if they are not unregistered. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\hyperlink{_test_plug_in_8h}{Test\-Plug\-In.\-h}\end{DoxyCompactItemize}

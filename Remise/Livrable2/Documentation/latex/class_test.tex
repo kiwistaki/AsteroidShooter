@@ -1,0 +1,305 @@
+\hypertarget{class_test}{\section{Test Class Reference}
+\label{class_test}\index{Test@{Test}}
+}
+
+
+Base class for all test objects.
+
+All test objects should be a subclass of \hyperlink{class_test}{Test}. Some test objects, \hyperlink{class_test_case}{Test\-Case} for example, represent one individual test. Other test objects, such as \hyperlink{class_test_suite}{Test\-Suite}, are comprised of several tests.  
+
+
+
+
+{\ttfamily \#include $<$Test.\-h$>$}
+
+Inheritance diagram for Test\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.777778cm]{class_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_test_ac9dcc51f46141d9ed1e8206ca0011b8c}{$\sim$\-Test} ()
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result})=0
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{count\-Test\-Cases} () const =0
+\begin{DoxyCompactList}\small\item\em Return the number of test cases invoked by \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{run()}. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_a7aaab95037b7222573471074c56df85b}{get\-Child\-Test\-Count} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the number of direct child of the test. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_aad295af3b440fdec4bd95ddd422466b8}{get\-Child\-Test\-At} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\begin{DoxyCompactList}\small\item\em Returns the child test of the specified index. \end{DoxyCompactList}\item 
+virtual \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_a5e024da199f811a33264e432c21dcc94}{get\-Name} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_test_a609b4d93fde2f4fa5b4177c1e1a002ff}{find\-Test\-Path} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&test\-Name, \hyperlink{class_test_path}{Test\-Path} \&test\-Path) const 
+\begin{DoxyCompactList}\small\item\em Finds the test with the specified name and its parents test. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_test_a9f0c1e40c1378f596bd5effd3a034652}{find\-Test\-Path} (const \hyperlink{class_test}{Test} $\ast$test, \hyperlink{class_test_path}{Test\-Path} \&test\-Path) const 
+\begin{DoxyCompactList}\small\item\em Finds the specified test and its parents test. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_a4182e55e98622e6daf5460e5c948dc82}{find\-Test} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&test\-Name) const 
+\begin{DoxyCompactList}\small\item\em Finds the test with the specified name in the hierarchy. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test_path}{Test\-Path} \hyperlink{class_test_aaa1f5a8b47a9ad4feed4603c7e56758c}{resolve\-Test\-Path} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&test\-Path) const 
+\begin{DoxyCompactList}\small\item\em Resolved the specified test path with this test acting as 'root'. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_a417a24c245c6273c7886680ab3e30849}{check\-Is\-Valid\-Index} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\item 
+virtual \hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{do\-Get\-Child\-Test\-At} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const =0
+\begin{DoxyCompactList}\small\item\em Returns the child test of the specified valid index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all test objects.
+
+All test objects should be a subclass of \hyperlink{class_test}{Test}. Some test objects, \hyperlink{class_test_case}{Test\-Case} for example, represent one individual test. Other test objects, such as \hyperlink{class_test_suite}{Test\-Suite}, are comprised of several tests. 
+
+When a \hyperlink{class_test}{Test} is run, the result is collected by a \hyperlink{class_test_result}{Test\-Result} object.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_case}{Test\-Case} 
+
+\hyperlink{class_test_suite}{Test\-Suite} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_ac9dcc51f46141d9ed1e8206ca0011b8c}{\index{Test@{Test}!$\sim$\-Test@{$\sim$\-Test}}
+\index{$\sim$\-Test@{$\sim$\-Test}!Test@{Test}}
+\subsubsection[{$\sim$\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-::$\sim$\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_test_ac9dcc51f46141d9ed1e8206ca0011b8c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_a417a24c245c6273c7886680ab3e30849}{\index{Test@{Test}!check\-Is\-Valid\-Index@{check\-Is\-Valid\-Index}}
+\index{check\-Is\-Valid\-Index@{check\-Is\-Valid\-Index}!Test@{Test}}
+\subsubsection[{check\-Is\-Valid\-Index}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-::check\-Is\-Valid\-Index (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_test_a417a24c245c6273c7886680ab3e30849}
+Throws an exception if the specified index is invalid. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero base index of a child test. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} is $<$ 0 or $>$= \hyperlink{class_test_a7aaab95037b7222573471074c56df85b}{get\-Child\-Test\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}{\index{Test@{Test}!count\-Test\-Cases@{count\-Test\-Cases}}
+\index{count\-Test\-Cases@{count\-Test\-Cases}!Test@{Test}}
+\subsubsection[{count\-Test\-Cases}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-::count\-Test\-Cases (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_test_aad2b7244c7cec3f3aa9f81d12b15c8cf}
+
+
+Return the number of test cases invoked by \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{run()}. 
+
+The base unit of testing is the class \hyperlink{class_test_case}{Test\-Case}. This method returns the number of \hyperlink{class_test_case}{Test\-Case} objects invoked by the \hyperlink{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{run()} method. 
+
+Implemented in \hyperlink{class_repeated_test_a2bacf360b91cc6a0c52ec9e75ceae5a6}{Repeated\-Test}, \hyperlink{class_test_decorator_add3b489dfb3331eba0aee7e06b03548b}{Test\-Decorator}, \hyperlink{class_test_composite_aab3a79f9629eb6f026467e9c27b08788}{Test\-Composite}, and \hyperlink{class_test_leaf_aecf22f6d00f9a35d89c00c4b83e34aff}{Test\-Leaf}.
+
+\hypertarget{class_test_a5c2ca854987799dca293ba78689bf64d}{\index{Test@{Test}!do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}}
+\index{do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}!Test@{Test}}
+\subsubsection[{do\-Get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test}$\ast$ Test\-::do\-Get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_test_a5c2ca854987799dca293ba78689bf64d}
+
+
+Returns the child test of the specified valid index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based valid index of the child test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}{Test\-Runner\-::\-Wrapping\-Suite}, \hyperlink{class_test_suite_aab4d1f64d7b32a24489cc2a3f3e412ee}{Test\-Suite}, \hyperlink{class_test_leaf_ac6c850de11b23821255839205fb319d5}{Test\-Leaf}, and \hyperlink{class_test_decorator_a029da80376365525d52387a88e6837f4}{Test\-Decorator}.
+
+\hypertarget{class_test_a4182e55e98622e6daf5460e5c948dc82}{\index{Test@{Test}!find\-Test@{find\-Test}}
+\index{find\-Test@{find\-Test}!Test@{Test}}
+\subsubsection[{find\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test}$\ast$ Test\-::find\-Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{test\-Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_a4182e55e98622e6daf5460e5c948dc82}
+
+
+Finds the test with the specified name in the hierarchy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Name} & Name of the test to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the first test found that is named {\itshape test\-Name}. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if no test named {\itshape test\-Name} is found. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_a609b4d93fde2f4fa5b4177c1e1a002ff}{\index{Test@{Test}!find\-Test\-Path@{find\-Test\-Path}}
+\index{find\-Test\-Path@{find\-Test\-Path}!Test@{Test}}
+\subsubsection[{find\-Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Test\-::find\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{test\-Name, }
+\item[{{\bf Test\-Path} \&}]{test\-Path}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_a609b4d93fde2f4fa5b4177c1e1a002ff}
+
+
+Finds the test with the specified name and its parents test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Name} & Name of the test to find. \\
+\hline
+{\em test\-Path} & If the test is found, then all the tests traversed to access {\itshape test} are added to {\itshape test\-Path}, including {\ttfamily this} and {\itshape test}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if a test with the specified name is found, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_test_a9f0c1e40c1378f596bd5effd3a034652}{\index{Test@{Test}!find\-Test\-Path@{find\-Test\-Path}}
+\index{find\-Test\-Path@{find\-Test\-Path}!Test@{Test}}
+\subsubsection[{find\-Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Test\-::find\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test} $\ast$}]{test, }
+\item[{{\bf Test\-Path} \&}]{test\-Path}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_a9f0c1e40c1378f596bd5effd3a034652}
+
+
+Finds the specified test and its parents test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \hyperlink{class_test}{Test} to find. \\
+\hline
+{\em test\-Path} & If the test is found, then all the tests traversed to access {\itshape test} are added to {\itshape test\-Path}, including {\ttfamily this} and {\itshape test}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the specified test is found, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_test_aad295af3b440fdec4bd95ddd422466b8}{\index{Test@{Test}!get\-Child\-Test\-At@{get\-Child\-Test\-At}}
+\index{get\-Child\-Test\-At@{get\-Child\-Test\-At}!Test@{Test}}
+\subsubsection[{get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test}$\ast$ Test\-::get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_aad295af3b440fdec4bd95ddd422466b8}
+
+
+Returns the child test of the specified index. 
+
+This method test if the index is valid, then call \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{do\-Get\-Child\-Test\-At()} if the index is valid. Otherwise std\-::out\-\_\-of\-\_\-range exception is thrown.
+
+You should override \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{do\-Get\-Child\-Test\-At()} method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based index of the child test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} is $<$ 0 or $>$= \hyperlink{class_test_a7aaab95037b7222573471074c56df85b}{get\-Child\-Test\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_a7aaab95037b7222573471074c56df85b}{\index{Test@{Test}!get\-Child\-Test\-Count@{get\-Child\-Test\-Count}}
+\index{get\-Child\-Test\-Count@{get\-Child\-Test\-Count}!Test@{Test}}
+\subsubsection[{get\-Child\-Test\-Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-::get\-Child\-Test\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_test_a7aaab95037b7222573471074c56df85b}
+
+
+Returns the number of direct child of the test. 
+
+
+
+Implemented in \hyperlink{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}{Test\-Runner\-::\-Wrapping\-Suite}, \hyperlink{class_test_suite_aeaabfd3afef12412cd390b90128a7d87}{Test\-Suite}, \hyperlink{class_test_leaf_a74463f8aa3dae0f727f26a184233749a}{Test\-Leaf}, and \hyperlink{class_test_decorator_aa2fbf0467c6bd599f912415a097e087c}{Test\-Decorator}.
+
+\hypertarget{class_test_a5e024da199f811a33264e432c21dcc94}{\index{Test@{Test}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!Test@{Test}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf std\-::string} Test\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_test_a5e024da199f811a33264e432c21dcc94}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Implemented in \hyperlink{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}{Test\-Runner\-::\-Wrapping\-Suite}, \hyperlink{class_test_case_a833448555e5ce90d826f2b411f47ec3d}{Test\-Case}, \hyperlink{class_test_decorator_acdcf679bba926032d2e4535fca1e9cf0}{Test\-Decorator}, \hyperlink{class_test_composite_addf2aec7ab7233e433cb5bdf98defb61}{Test\-Composite}, and \hyperlink{class_test_case_decorator_a5214bb812414958d39f084e09c8af207}{Test\-Case\-Decorator}.
+
+\hypertarget{class_test_aaa1f5a8b47a9ad4feed4603c7e56758c}{\index{Test@{Test}!resolve\-Test\-Path@{resolve\-Test\-Path}}
+\index{resolve\-Test\-Path@{resolve\-Test\-Path}!Test@{Test}}
+\subsubsection[{resolve\-Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test\-Path} Test\-::resolve\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{test\-Path}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_aaa1f5a8b47a9ad4feed4603c7e56758c}
+
+
+Resolved the specified test path with this test acting as 'root'. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Path} & \hyperlink{class_test}{Test} path string to resolve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resolved \hyperlink{class_test_path}{Test\-Path}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if {\itshape test\-Path} could not be resolved. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_path}{Test\-Path}. 
+\end{DoxySeeAlso}
+\hypertarget{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}{\index{Test@{Test}!run@{run}}
+\index{run@{run}!Test@{Test}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_test_a7beeb95dc0d058bd3bfea1a75463cb03}
+
+
+Run the test, collecting results. 
+
+
+
+Implemented in \hyperlink{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}{Test\-Runner\-::\-Wrapping\-Suite}, \hyperlink{class_test_case_a6bc50d62de5b2d0addf9b0167e34b134}{Test\-Case}, \hyperlink{class_test_decorator_a64dd70aae76f31f2e2f7b5ac84a8e829}{Test\-Decorator}, \hyperlink{class_repeated_test_a6faffcd29b619305a75dd4c1995beaad}{Repeated\-Test}, \hyperlink{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{Test\-Composite}, and \hyperlink{class_test_set_up_aa3f79125254c288d6effee6df8e7d5fb}{Test\-Set\-Up}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_8h}{Test.\-h}\end{DoxyCompactItemize}

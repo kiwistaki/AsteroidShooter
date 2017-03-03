@@ -1,0 +1,58 @@
+\hypertarget{class_protector}{\section{Protector Class Reference}
+\label{class_protector}\index{Protector@{Protector}}
+}
+
+
+Protects one or more test case run.  
+
+
+
+
+{\ttfamily \#include $<$Protector.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_protector_a8e005ff581ca40431526fb873a03415a}{virtual bool {\bfseries protect} (const \hyperlink{class_functor}{Functor} \&functor, const Protector\-Context \&context)=0}\label{class_protector_a8e005ff581ca40431526fb873a03415a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_protector_a94c08e57ebcf59ed093916c16384c99a}{void {\bfseries report\-Error} (const Protector\-Context \&context, const \hyperlink{class_exception}{Exception} \&error) const }\label{class_protector_a94c08e57ebcf59ed093916c16384c99a}
+
+\item 
+\hypertarget{class_protector_ab1fda7a5e61e2033e2a7b848aa04690a}{void {\bfseries report\-Error} (const Protector\-Context \&context, const \hyperlink{class_message}{Message} \&message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line}()) const }\label{class_protector_ab1fda7a5e61e2033e2a7b848aa04690a}
+
+\item 
+\hypertarget{class_protector_ac52d8e2909a5621d2692ec3ce5d4dbc7}{void {\bfseries report\-Failure} (const Protector\-Context \&context, const \hyperlink{class_exception}{Exception} \&failure) const }\label{class_protector_ac52d8e2909a5621d2692ec3ce5d4dbc7}
+
+\item 
+\hypertarget{class_protector_a259356bbf5f03e07f75ac797c9e34737}{\hyperlink{class_message}{Message} {\bfseries actual\-Message} (const \hyperlink{class_message}{Message} \&message, const Protector\-Context \&context) const }\label{class_protector_a259356bbf5f03e07f75ac797c9e34737}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protects one or more test case run. 
+
+\hyperlink{class_protector}{Protector} are used to globably 'decorate' a test case. The most common usage of \hyperlink{class_protector}{Protector} is to catch exception that do not subclass std\-::exception, such as M\-F\-C C\-Exception class or Rogue Wave R\-W\-X\-Msg class, and capture the message associated to the exception. In fact, Cpp\-Unit capture message from \hyperlink{class_exception}{Exception} and std\-::exception using a \hyperlink{class_protector}{Protector}.
+
+\hyperlink{class_protector}{Protector} are chained. When you add a \hyperlink{class_protector}{Protector} using \hyperlink{class_test_result_a1a4fbbca38cb73e8e00905193b7593dc}{Test\-Result\-::push\-Protector()}, your protector is in fact passed as a \hyperlink{class_functor}{Functor} to the first protector of the chain.
+
+\hyperlink{class_test_case}{Test\-Case} protects call to set\-Up(), run\-Test() and tear\-Down() by calling \hyperlink{class_test_result_a243b3097a3d9468abc61e7910bbaa8b7}{Test\-Result\-::protect()}.
+
+Because the protector chain is handled by \hyperlink{class_test_result}{Test\-Result}, a protector can be active for a single test, or a complete test run.
+
+Here are some possible usages\-:
+\begin{DoxyItemize}
+\item run all test case in a separate thread and assumes the test failed if it did not finish in a given time (infinite loop work around)
+\item performance tracing \-: time only the run\-Test() time. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_result}{Test\-Result}, \hyperlink{class_test_case}{Test\-Case}, \hyperlink{class_test_listener}{Test\-Listener}. 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Protector.\-h\end{DoxyCompactItemize}

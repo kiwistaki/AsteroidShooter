@@ -1,0 +1,467 @@
+\hypertarget{_test_assert_8h}{\section{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\-Test\-Assert.h File Reference}
+\label{_test_assert_8h}\index{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\-Test\-Assert.\-h@{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\-Test\-Assert.\-h}}
+}
+{\ttfamily \#include $<$cppunit/\-Portability.\-h$>$}\\*
+{\ttfamily \#include $<$cppunit/\-Exception.\-h$>$}\\*
+{\ttfamily \#include $<$cppunit/\-Asserter.\-h$>$}\\*
+{\ttfamily \#include $<$cppunit/portability/\-Stream.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structassertion__traits}{assertion\-\_\-traits$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Traits used by \hyperlink{_test_assert_8h_a71162f05be07ef6817d156e77c68b1a3}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L()}. \end{DoxyCompactList}\item 
+struct \hyperlink{structassertion__traits_3_01double_01_4}{assertion\-\_\-traits$<$ double $>$}
+\begin{DoxyCompactList}\small\item\em Traits used by \hyperlink{_test_assert_8h_a9d88b1e379e4a9ba2a5e9e79763389ea}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T}(\hyperlink{glew_8h_a3fd7759b3d6e5284475eee14a613b9f9}{condition})
+\item 
+\#define \hyperlink{_test_assert_8h_adb3d7be52fb36db9b627ded165cfa335}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, \hyperlink{glew_8h_a3fd7759b3d6e5284475eee14a613b9f9}{condition})
+\item 
+\#define \hyperlink{_test_assert_8h_a26aaaa22505b7a7b4978f0401a86f12a}{C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\item 
+\#define \hyperlink{_test_assert_8h_a71162f05be07ef6817d156e77c68b1a3}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L}(expected, actual)
+\item 
+\#define \hyperlink{_test_assert_8h_afad9998a5abcf0bc12e88f24dbfb67be}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, expected, actual)
+\item 
+\#define \hyperlink{_test_assert_8h_a9d88b1e379e4a9ba2a5e9e79763389ea}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L}(expected, actual, delta)
+\begin{DoxyCompactList}\small\item\em Macro for primitive double value comparisons.
+
+The assertion pass if both expected and actual are finite and {\ttfamily fabs}( {\ttfamily expected} -\/ {\ttfamily actual} ) $<$= {\ttfamily delta}. If either {\ttfamily expected} or actual are infinite (+/-\/ inf), the assertion pass if {\ttfamily expected} == {\ttfamily actual}. If either {\ttfamily expected} or {\ttfamily actual} is a Na\-N (not a number), then the assertion fails. \end{DoxyCompactList}\item 
+\#define \hyperlink{_test_assert_8h_aabb14685ed44e0e49e1974b460dfad1f}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, expected, actual, delta)
+\begin{DoxyCompactList}\small\item\em Macro for primitive double value comparisons, setting a user-\/supplied message in case of failure. \end{DoxyCompactList}\item 
+\#define \hyperlink{_test_assert_8h_a943774e85c218214d3a4986c32039af0}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W}(expression, Exception\-Type)
+\item 
+\#define \hyperlink{_test_assert_8h_a25e839e8a6e2850d6274128b3020247e}{C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-}(exception, no\-\_\-rtti\-\_\-message)~\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string}( no\-\_\-rtti\-\_\-message )
+\item 
+\#define \hyperlink{_test_assert_8h_a3156306fe2c651a998b6a913161a4a2a}{C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G}(parameter)~\#parameter
+\item 
+\#define \hyperlink{_test_assert_8h_aae97b9355f43bb72ffa4489bd66dafb3}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, expression, Exception\-Type)
+\item 
+\#define \hyperlink{_test_assert_8h_a13e42eed1f56d77d9a76242185ebdcbe}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W}(expression)
+\item 
+\#define \hyperlink{_test_assert_8h_aae2428381cbd7355b354473ebe2dc5ac}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, expression)
+\item 
+\#define \hyperlink{_test_assert_8h_afcf8b80f3af1607e52f41045ff0efbcb}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L}(assertion)~\hyperlink{_test_assert_8h_a943774e85c218214d3a4986c32039af0}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W}( assertion, C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Exception )
+\item 
+\#define \hyperlink{_test_assert_8h_a84c9c36cf203112a2b4a87cbb4b58f55}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, assertion)~\hyperlink{_test_assert_8h_aae97b9355f43bb72ffa4489bd66dafb3}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}( \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, assertion, C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Exception )
+\item 
+\#define \hyperlink{_test_assert_8h_a82c2f57f5c04ce2cb211f6bd65876737}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S}(assertion)~\hyperlink{_test_assert_8h_a13e42eed1f56d77d9a76242185ebdcbe}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W}( assertion )
+\item 
+\#define \hyperlink{_test_assert_8h_a9dccc1cd410edc877ac42243d711fc3b}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E}(\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, assertion)~\hyperlink{_test_assert_8h_aae2428381cbd7355b354473ebe2dc5ac}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}( \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}, assertion )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{_test_assert_8h_aade9181ad8d3f4d486979ed12a2908e2}{assert\-Equals} (const T \&expected, const T \&actual, \hyperlink{class_source_line}{Source\-Line} source\-Line, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em (Implementation) Asserts that two objects of the same type are equals. Use C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L instead of this function. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{_cpp_unit_api_8h_a0a4ad180f07bc3823bae0e453718ef6a}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I} \hyperlink{_test_assert_8h_a2e3fd162c50c8f49b221e5a2a8828d8d}{assert\-Double\-Equals} (double expected, double actual, double delta, \hyperlink{class_source_line}{Source\-Line} source\-Line, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em (Implementation) Asserts that two double are equals given a tolerance. Use C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L instead of this function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf condition}}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::failIf( !(\hyperlink{glew_8h_a3fd7759b3d6e5284475eee14a613b9f9}{condition}),                              \(\backslash\)
+                                  CPPUNIT\_NS::Message( \textcolor{stringliteral}{"assertion failed"} ), \(\backslash\)
+                                  \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+\hypertarget{_test_assert_8h_afcf8b80f3af1607e52f41045ff0efbcb}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L(
+\begin{DoxyParamCaption}
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W}( assertion, C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Exception )}}\label{_test_assert_8h_afcf8b80f3af1607e52f41045ff0efbcb}
+Asserts that an assertion fail.
+
+Use to test assertions. Example of usage\-: 
+\begin{DoxyCode}
+\hyperlink{_test_assert_8h_afcf8b80f3af1607e52f41045ff0efbcb}{CPPUNIT\_ASSERT\_ASSERTION\_FAIL}( \hyperlink{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}{CPPUNIT\_ASSERT}( 1 == 2 ) );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_a84c9c36cf203112a2b4a87cbb4b58f55}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}( {\bf message}, assertion, C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Exception )}}\label{_test_assert_8h_a84c9c36cf203112a2b4a87cbb4b58f55}
+Asserts that an assertion fail, with a user-\/supplied message in case of error.
+
+Use to test assertions. Example of usage\-: 
+\begin{DoxyCode}
+\hyperlink{_test_assert_8h_a84c9c36cf203112a2b4a87cbb4b58f55}{CPPUNIT\_ASSERT\_ASSERTION\_FAIL\_MESSAGE}( \textcolor{stringliteral}{"1 == 2"}, 
+      \hyperlink{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}{CPPUNIT\_ASSERT}( 1 == 2 ) );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_a82c2f57f5c04ce2cb211f6bd65876737}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S(
+\begin{DoxyParamCaption}
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W}( assertion )}}\label{_test_assert_8h_a82c2f57f5c04ce2cb211f6bd65876737}
+Asserts that an assertion pass.
+
+Use to test assertions. Example of usage\-: 
+\begin{DoxyCode}
+\hyperlink{_test_assert_8h_a82c2f57f5c04ce2cb211f6bd65876737}{CPPUNIT\_ASSERT\_ASSERTION\_PASS}( \hyperlink{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}{CPPUNIT\_ASSERT}( 1 == 1 ) );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_a9dccc1cd410edc877ac42243d711fc3b}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-P\-A\-S\-S\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}( {\bf message}, assertion )}}\label{_test_assert_8h_a9dccc1cd410edc877ac42243d711fc3b}
+Asserts that an assertion pass, with a user-\/supplied message in case of failure.
+
+Use to test assertions. Example of usage\-: 
+\begin{DoxyCode}
+\hyperlink{_test_assert_8h_a9dccc1cd410edc877ac42243d711fc3b}{CPPUNIT\_ASSERT\_ASSERTION\_PASS\_MESSAGE}( \textcolor{stringliteral}{"1 != 1"}, 
+      \hyperlink{_test_assert_8h_a5dc2efccfc9ec227747e3fc356e93904}{CPPUNIT\_ASSERT}( 1 == 1 ) );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_a9d88b1e379e4a9ba2a5e9e79763389ea}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{expected, }
+\item[{}]{actual, }
+\item[{}]{delta}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a9d88b1e379e4a9ba2a5e9e79763389ea}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( \hyperlink{_test_assert_8h_a2e3fd162c50c8f49b221e5a2a8828d8d}{CPPUNIT\_NS::assertDoubleEquals}( (expected),            \(\backslash\)
+                                    (actual),              \(\backslash\)
+                                    (delta),               \(\backslash\)
+                                    \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),  \(\backslash\)
+                                    \textcolor{stringliteral}{""} ) )
+\end{DoxyCode}
+
+
+Macro for primitive double value comparisons.
+
+The assertion pass if both expected and actual are finite and {\ttfamily fabs}( {\ttfamily expected} -\/ {\ttfamily actual} ) $<$= {\ttfamily delta}. If either {\ttfamily expected} or actual are infinite (+/-\/ inf), the assertion pass if {\ttfamily expected} == {\ttfamily actual}. If either {\ttfamily expected} or {\ttfamily actual} is a Na\-N (not a number), then the assertion fails. 
+
+\hypertarget{_test_assert_8h_aabb14685ed44e0e49e1974b460dfad1f}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{expected, }
+\item[{}]{actual, }
+\item[{}]{delta}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_aabb14685ed44e0e49e1974b460dfad1f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( \hyperlink{_test_assert_8h_a2e3fd162c50c8f49b221e5a2a8828d8d}{CPPUNIT\_NS::assertDoubleEquals}( (expected),            \(\backslash\)
+                                    (actual),              \(\backslash\)
+                                    (delta),               \(\backslash\)
+                                    \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),  \(\backslash\)
+                                    (\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}) ) )
+\end{DoxyCode}
+
+
+Macro for primitive double value comparisons, setting a user-\/supplied message in case of failure. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_test_assert_8h_a9d88b1e379e4a9ba2a5e9e79763389ea}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L} for detailed semantic of the assertion. 
+\end{DoxySeeAlso}
+\hypertarget{_test_assert_8h_a71162f05be07ef6817d156e77c68b1a3}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{expected, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a71162f05be07ef6817d156e77c68b1a3}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( \hyperlink{_test_assert_8h_aade9181ad8d3f4d486979ed12a2908e2}{CPPUNIT\_NS::assertEquals}( (expected),              \(\backslash\)
+                              (actual),                \(\backslash\)
+                              \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),    \(\backslash\)
+                              \textcolor{stringliteral}{""} ) )
+\end{DoxyCode}
+Asserts that two values are equals.
+
+Equality and string representation can be defined with an appropriate Cpp\-Unit\-::assertion\-\_\-traits class.
+
+A diagnostic is printed if actual and expected values disagree.
+
+Requirement for {\itshape expected} and {\itshape actual} parameters\-:
+\begin{DoxyItemize}
+\item They are exactly of the same type
+\item They are serializable into a std\-::strstream using operator $<$$<$.
+\item They can be compared using operator ==.
+\end{DoxyItemize}
+
+The last two requirements (serialization and comparison) can be removed by specializing the Cpp\-Unit\-::assertion\-\_\-traits. \hypertarget{_test_assert_8h_afad9998a5abcf0bc12e88f24dbfb67be}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{expected, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_afad9998a5abcf0bc12e88f24dbfb67be}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( \hyperlink{_test_assert_8h_aade9181ad8d3f4d486979ed12a2908e2}{CPPUNIT\_NS::assertEquals}( (expected),              \(\backslash\)
+                              (actual),                \(\backslash\)
+                              \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),    \(\backslash\)
+                              (\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message}) ) )
+\end{DoxyCode}
+Asserts that two values are equals, provides additional message on failure.
+
+Equality and string representation can be defined with an appropriate \hyperlink{structassertion__traits}{assertion\-\_\-traits} class.
+
+A diagnostic is printed if actual and expected values disagree. The message is printed in addition to the expected and actual value to provide additional information.
+
+Requirement for {\itshape expected} and {\itshape actual} parameters\-:
+\begin{DoxyItemize}
+\item They are exactly of the same type
+\item They are serializable into a std\-::strstream using operator $<$$<$.
+\item They can be compared using operator ==.
+\end{DoxyItemize}
+
+The last two requirements (serialization and comparison) can be removed by specializing the Cpp\-Unit\-::assertion\-\_\-traits. \hypertarget{_test_assert_8h_adb3d7be52fb36db9b627ded165cfa335}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{{\bf condition}}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_adb3d7be52fb36db9b627ded165cfa335}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::failIf( !(\hyperlink{glew_8h_a3fd7759b3d6e5284475eee14a613b9f9}{condition}),                            \(\backslash\)
+                                  CPPUNIT\_NS::Message( \textcolor{stringliteral}{"assertion failed"}, \(\backslash\)
+                                                       \textcolor{stringliteral}{"Expression: "}      \(\backslash\)
+                                                       #\hyperlink{glew_8h_a3fd7759b3d6e5284475eee14a613b9f9}{condition},         \(\backslash\)
+                                                       \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message} ),          \(\backslash\)
+                                  \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+Assertion with a user specified message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} reported in diagnostic if {\itshape condition} evaluates to {\ttfamily false}. \\
+\hline
+{\em condition} & If this condition evaluates to {\ttfamily false} then the test failed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_test_assert_8h_a13e42eed1f56d77d9a76242185ebdcbe}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W(
+\begin{DoxyParamCaption}
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a13e42eed1f56d77d9a76242185ebdcbe}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{_test_assert_8h_aae2428381cbd7355b354473ebe2dc5ac}{CPPUNIT\_ASSERT\_NO\_THROW\_MESSAGE}( CPPUNIT\_NS::AdditionalMessage(),       \(\backslash\)
+                                    expression )
+\end{DoxyCode}
+Asserts that the given expression does not throw any exceptions.
+
+Example of usage\-: 
+\begin{DoxyCode}
+ std::vector<int> \hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v};
+ v.push\_back( 10 );
+\hyperlink{_test_assert_8h_a13e42eed1f56d77d9a76242185ebdcbe}{CPPUNIT\_ASSERT\_NO\_THROW}( v.at( 0 ) );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_aae2428381cbd7355b354473ebe2dc5ac}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-O\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_aae2428381cbd7355b354473ebe2dc5ac}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                       \(\backslash\)
+      CPPUNIT\_NS::Message cpputMsg\_( \textcolor{stringliteral}{"unexpected exception caught"} );         \(\backslash\)
+      cpputMsg\_.addDetail( \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message} );                                         \(\backslash\)
+                                                                              \(\backslash\)
+      try \{                                                                   \(\backslash\)
+         expression;                                                          \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} std::exception &e ) \{                                   \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Caught: "} +                                    \(\backslash\)
+                              \hyperlink{_test_assert_8h_a25e839e8a6e2850d6274128b3020247e}{CPPUNIT\_EXTRACT\_EXCEPTION\_TYPE\_}( e,           
+        \(\backslash\)
+                                          \textcolor{stringliteral}{"std::exception or derived"} ) );    \(\backslash\)
+         cpputMsg\_.addDetail( \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}(\textcolor{stringliteral}{"What(): "}) + e.what() );           \(\backslash\)
+         CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                               \(\backslash\)
+                                     \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                  \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( ... ) \{                                                       \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Caught: unknown."} );                           \(\backslash\)
+         CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                               \(\backslash\)
+                                     \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                  \(\backslash\)
+      \}                                                                       \(\backslash\)
+   \} \textcolor{keywordflow}{while} ( \textcolor{keyword}{false} )
+\end{DoxyCode}
+Asserts that the given expression does not throw any exceptions, setting a user supplied message in case of failure.
+
+Example of usage\-: 
+\begin{DoxyCode}
+ std::vector<int> \hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v};
+ v.push\_back( 10 );
+\hyperlink{_test_assert_8h_a13e42eed1f56d77d9a76242185ebdcbe}{CPPUNIT\_ASSERT\_NO\_THROW}( \textcolor{stringliteral}{"std::vector<int> v;"}, v.at( 0 ) );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_a943774e85c218214d3a4986c32039af0}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W(
+\begin{DoxyParamCaption}
+\item[{}]{expression, }
+\item[{}]{Exception\-Type}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a943774e85c218214d3a4986c32039af0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{_test_assert_8h_aae97b9355f43bb72ffa4489bd66dafb3}{CPPUNIT\_ASSERT\_THROW\_MESSAGE}( CPPUNIT\_NS::AdditionalMessage(),       \(\backslash\)
+                                 expression,                            \(\backslash\)
+                                 ExceptionType )
+\end{DoxyCode}
+Asserts that the given expression throws an exception of the specified type.
+
+Example of usage\-: 
+\begin{DoxyCode}
+ std::vector<int> \hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v};
+\hyperlink{_test_assert_8h_a943774e85c218214d3a4986c32039af0}{CPPUNIT\_ASSERT\_THROW}( v.at( 50 ), std::out\_of\_range );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_aae97b9355f43bb72ffa4489bd66dafb3}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W\-\_\-\-M\-E\-S\-S\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}, }
+\item[{}]{expression, }
+\item[{}]{Exception\-Type}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_aae97b9355f43bb72ffa4489bd66dafb3}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                       \(\backslash\)
+      bool cpputCorrectExceptionThrown\_ = \textcolor{keyword}{false};                              \(\backslash\)
+      CPPUNIT\_NS::Message cpputMsg\_( \textcolor{stringliteral}{"expected exception not thrown"} );       \(\backslash\)
+      cpputMsg\_.addDetail( \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message} );                                         \(\backslash\)
+      cpputMsg\_.addDetail( \textcolor{stringliteral}{"Expected: "}                                       \(\backslash\)
+                           \hyperlink{_test_assert_8h_a3156306fe2c651a998b6a913161a4a2a}{CPPUNIT\_GET\_PARAMETER\_STRING}( ExceptionType ) );   \(\backslash\)
+                                                                              \(\backslash\)
+      try \{                                                                   \(\backslash\)
+         expression;                                                          \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} ExceptionType & ) \{                                     \(\backslash\)
+         cpputCorrectExceptionThrown\_ = \textcolor{keyword}{true};                                 \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} std::exception &e) \{                                    \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Actual  : "} +                                  \(\backslash\)
+                              \hyperlink{_test_assert_8h_a25e839e8a6e2850d6274128b3020247e}{CPPUNIT\_EXTRACT\_EXCEPTION\_TYPE\_}( e,           
+        \(\backslash\)
+                                          \textcolor{stringliteral}{"std::exception or derived"}) );     \(\backslash\)
+         cpputMsg\_.addDetail( \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}(\textcolor{stringliteral}{"What()  : "}) + e.what() );         \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( ... ) \{                                                       \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Actual  : unknown."});                          \(\backslash\)
+      \}                                                                       \(\backslash\)
+                                                                              \(\backslash\)
+      if ( cpputCorrectExceptionThrown\_ )                                     \(\backslash\)
+         break;                                                               \(\backslash\)
+                                                                              \(\backslash\)
+      CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                                  \(\backslash\)
+                                  \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                     \(\backslash\)
+   \} \textcolor{keywordflow}{while} ( \textcolor{keyword}{false} )
+\end{DoxyCode}
+Asserts that the given expression throws an exception of the specified type, setting a user supplied message in case of failure.
+
+Example of usage\-: 
+\begin{DoxyCode}
+ std::vector<int> \hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v};
+\hyperlink{_test_assert_8h_aae97b9355f43bb72ffa4489bd66dafb3}{CPPUNIT\_ASSERT\_THROW\_MESSAGE}( \textcolor{stringliteral}{"- std::vector<int> v;"}, v.at( 50 ), 
+      std::out\_of\_range );
+\end{DoxyCode}
+ \hypertarget{_test_assert_8h_a25e839e8a6e2850d6274128b3020247e}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-@{C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-@{C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-E\-X\-T\-R\-A\-C\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E\-\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{exception, }
+\item[{}]{no\-\_\-rtti\-\_\-message}
+\end{DoxyParamCaption}
+)~{\bf std\-::string}( no\-\_\-rtti\-\_\-message )}}\label{_test_assert_8h_a25e839e8a6e2850d6274128b3020247e}
+\hypertarget{_test_assert_8h_a26aaaa22505b7a7b4978f0401a86f12a}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-F\-A\-I\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf message}}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a26aaaa22505b7a7b4978f0401a86f12a}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::fail( CPPUNIT\_NS::Message( \textcolor{stringliteral}{"forced failure"},  \(\backslash\)
+                                                     \hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message} ),         \(\backslash\)
+                                \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+Fails with the specified message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} reported in diagnostic. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_test_assert_8h_a3156306fe2c651a998b6a913161a4a2a}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G@{C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G@{C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-G\-E\-T\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-T\-R\-I\-N\-G(
+\begin{DoxyParamCaption}
+\item[{}]{parameter}
+\end{DoxyParamCaption}
+)~\#parameter}}\label{_test_assert_8h_a3156306fe2c651a998b6a913161a4a2a}
+
+
+\subsection{Function Documentation}
+\hypertarget{_test_assert_8h_a2e3fd162c50c8f49b221e5a2a8828d8d}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!assert\-Double\-Equals@{assert\-Double\-Equals}}
+\index{assert\-Double\-Equals@{assert\-Double\-Equals}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{assert\-Double\-Equals}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I} assert\-Double\-Equals (
+\begin{DoxyParamCaption}
+\item[{double}]{expected, }
+\item[{double}]{actual, }
+\item[{double}]{delta, }
+\item[{{\bf Source\-Line}}]{source\-Line, }
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_a2e3fd162c50c8f49b221e5a2a8828d8d}
+
+
+(Implementation) Asserts that two double are equals given a tolerance. Use C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L instead of this function. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_asserter_ac6234767e7d986bace97dc44f8d80d6c}{Asserter\-::fail\-Not\-Equal()}. 
+
+\hyperlink{_test_assert_8h_a9d88b1e379e4a9ba2a5e9e79763389ea}{C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-S\-\_\-\-E\-Q\-U\-A\-L} for detailed semantic of the assertion. 
+\end{DoxySeeAlso}
+\hypertarget{_test_assert_8h_aade9181ad8d3f4d486979ed12a2908e2}{\index{Test\-Assert.\-h@{Test\-Assert.\-h}!assert\-Equals@{assert\-Equals}}
+\index{assert\-Equals@{assert\-Equals}!TestAssert.h@{Test\-Assert.\-h}}
+\subsubsection[{assert\-Equals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf void} assert\-Equals (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{expected, }
+\item[{const T \&}]{actual, }
+\item[{{\bf Source\-Line}}]{source\-Line, }
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{_test_assert_8h_aade9181ad8d3f4d486979ed12a2908e2}
+
+
+(Implementation) Asserts that two objects of the same type are equals. Use C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q\-U\-A\-L instead of this function. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structassertion__traits}{assertion\-\_\-traits}, \hyperlink{struct_asserter_ac6234767e7d986bace97dc44f8d80d6c}{Asserter\-::fail\-Not\-Equal()}. 
+\end{DoxySeeAlso}

@@ -1,0 +1,334 @@
+\hypertarget{namespaceaidegl}{\section{aidegl Namespace Reference}
+\label{namespaceaidegl}\index{aidegl@{aidegl}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classaidegl_1_1_ligne_pointillee}{Ligne\-Pointillee}
+\begin{DoxyCompactList}\small\item\em Classe qui gere l'affichage de lignes pointillees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceaidegl_a465185be937173fdd623eb88949b212c}{creer\-Contexte\-G\-L} (H\-W\-N\-D \hyperlink{fmod__dsp_8h_aa587cb0701854912afb4f12f5936ef54}{hwnd}, \hyperlink{wglew_8h_a7b84f5391331438359747d138a86ffe3}{H\-D\-C} \&\hyperlink{wglew_8h_a3ad0eade1f425b718bd6461c1ef31af8}{h\-D\-C}, \hyperlink{wglew_8h_a79abb55a8f5ce093fad0358132a376e4}{H\-G\-L\-R\-C} \&h\-R\-C)
+\begin{DoxyCompactList}\small\item\em Cree un contexte Open\-G\-L dans la fenetre donnee. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceaidegl_a0cb31f11533480a059574970f5fcff6b}{detruire\-Contexte\-G\-L} (H\-W\-N\-D \hyperlink{fmod__dsp_8h_aa587cb0701854912afb4f12f5936ef54}{hwnd}, \hyperlink{wglew_8h_a7b84f5391331438359747d138a86ffe3}{H\-D\-C} \hyperlink{wglew_8h_a3ad0eade1f425b718bd6461c1ef31af8}{h\-D\-C}, \hyperlink{wglew_8h_a79abb55a8f5ce093fad0358132a376e4}{H\-G\-L\-R\-C} h\-R\-C)
+\begin{DoxyCompactList}\small\item\em Detruit un contexte Open\-G\-L. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_afcd84614cbab5903653b7514a35176bc}{initialiser\-Rectangle\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} short patron=0x3333, int facteur=1)
+\begin{DoxyCompactList}\small\item\em Initialise le mode de rendu du rectangle elastique. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a67cd6beb7f534f810d11bff186d88d2e}{mettre\-A\-Jour\-Rectangle\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Ancrage, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Avant, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Apres)
+\begin{DoxyCompactList}\small\item\em Met a jour le rectangle elastique (suite a un deplacement). \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a9b2cef8d6b5ef4ddc692919a2bc9ec43}{terminer\-Rectangle\-Elastique} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Ancrage, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&point\-Final)
+\begin{DoxyCompactList}\small\item\em Termine le mode de rendu du rectangle elastique. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a3798d7992633e836a5004e913cf3eeda}{afficher\-Rectangle} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point3, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point4, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} division\-S, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} division\-T)
+\begin{DoxyCompactList}\small\item\em Affiche un rectangle subdivise par un nombre de subdivision. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_afb2f362a0e0e490920f62d0aecd1a5dd}{afficher\-Rectangle\-Intervalle} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point3, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point4, double delta\-S, double delta\-T)
+\begin{DoxyCompactList}\small\item\em Affiche un rectangle subdivise d'un intervalle. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{namespaceaidegl_a19ef7b4b71b7a1568393cfc78be46a91}{obtenir\-Message\-Erreur} (\hyperlink{glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} code\-Erreur, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} drapeau=A\-F\-F\-I\-C\-H\-E\-\_\-\-E\-R\-R\-E\-U\-R\-\_\-\-T\-O\-U\-T)
+\begin{DoxyCompactList}\small\item\em Retourne une chaîne correspondant au code d'erreur Open\-G\-L. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_a923ac6c4f17f9d93b072c786e0f86d41}{verifier\-Erreur\-Open\-G\-L} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} drapeau=A\-F\-F\-I\-C\-H\-E\-\_\-\-E\-R\-R\-E\-U\-R\-\_\-\-T\-O\-U\-T)
+\begin{DoxyCompactList}\small\item\em Verifie s'il y a une erreur Open\-G\-L. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceaidegl_a6bba7d34e4998b9c94fe5971ecf535c0}{gl\-Load\-Texture} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&nom\-Fichier, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&id\-Texture, bool generer\-Texture=true)
+\begin{DoxyCompactList}\small\item\em Charge une texture Open\-G\-L a partir d'un fichier image. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceaidegl_af6f5a219dd414d647d8e4d92b6c30fd5}{gl\-Create\-Texture} (\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} char $\ast$\hyperlink{fmod__codec_8h_a42c2b1d86fa71a425e73a882cb0a72c8}{data}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} bpp, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} pitch, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&I\-D, bool generer\-Texture=true)
+\begin{DoxyCompactList}\small\item\em Cree une texture a partir des pixels en memoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Espace de nom contenant des fonctions utiles pour effectuer certaines taches Open\-G\-L qui reviennent d'un projet a l'autre. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceaidegl_a3798d7992633e836a5004e913cf3eeda}{\index{aidegl@{aidegl}!afficher\-Rectangle@{afficher\-Rectangle}}
+\index{afficher\-Rectangle@{afficher\-Rectangle}!aidegl@{aidegl}}
+\subsubsection[{afficher\-Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::afficher\-Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{point1, }
+\item[{const {\bf Vecteur3} \&}]{point2, }
+\item[{const {\bf Vecteur3} \&}]{point3, }
+\item[{const {\bf Vecteur3} \&}]{point4, }
+\item[{{\bf int}}]{division\-S, }
+\item[{{\bf int}}]{division\-T}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a3798d7992633e836a5004e913cf3eeda}
+
+
+Affiche un rectangle subdivise par un nombre de subdivision. 
+
+Cette fonction affiche un rectangle subdivise en grille d'un certain nombre de points.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point1} & \-: Premier point du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em point2} & \-: Second point du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em point3} & \-: Troisieme point du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em point4} & \-: Quatrieme point du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em division\-S} & \-: Nombre de divisions dans une dimension. \\
+\hline
+\mbox{\tt in}  & {\em division\-T} & \-: Nombre de divisions dans l'autre dimension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_afb2f362a0e0e490920f62d0aecd1a5dd}{\index{aidegl@{aidegl}!afficher\-Rectangle\-Intervalle@{afficher\-Rectangle\-Intervalle}}
+\index{afficher\-Rectangle\-Intervalle@{afficher\-Rectangle\-Intervalle}!aidegl@{aidegl}}
+\subsubsection[{afficher\-Rectangle\-Intervalle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::afficher\-Rectangle\-Intervalle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{point1, }
+\item[{const {\bf Vecteur3} \&}]{point2, }
+\item[{const {\bf Vecteur3} \&}]{point3, }
+\item[{const {\bf Vecteur3} \&}]{point4, }
+\item[{double}]{delta\-S, }
+\item[{double}]{delta\-T}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_afb2f362a0e0e490920f62d0aecd1a5dd}
+
+
+Affiche un rectangle subdivise d'un intervalle. 
+
+\hypertarget{namespaceaidegl_a465185be937173fdd623eb88949b212c}{\index{aidegl@{aidegl}!creer\-Contexte\-G\-L@{creer\-Contexte\-G\-L}}
+\index{creer\-Contexte\-G\-L@{creer\-Contexte\-G\-L}!aidegl@{aidegl}}
+\subsubsection[{creer\-Contexte\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}bool aidegl\-::creer\-Contexte\-G\-L (
+\begin{DoxyParamCaption}
+\item[{H\-W\-N\-D}]{h\-Wnd, }
+\item[{{\bf H\-D\-C} \&}]{h\-D\-C, }
+\item[{{\bf H\-G\-L\-R\-C} \&}]{h\-R\-C}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a465185be937173fdd623eb88949b212c}
+
+
+Cree un contexte Open\-G\-L dans la fenetre donnee. 
+
+Cette fonction cree un contexte Open\-G\-L pour la fenetre donnee.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-Wnd} & \-: Poignee (\char`\"{}handle\char`\"{}) vers la fenetre dans laquelle on veut creer un contexte. \\
+\hline
+\mbox{\tt out}  & {\em h\-D\-C} & \-: Poignee (\char`\"{}handle\char`\"{}) vers le \char`\"{}\-Device context\char`\"{} de la fenetre. \\
+\hline
+\mbox{\tt out}  & {\em h\-R\-C} & \-: Poignee (\char`\"{}handle\char`\"{}) vers le contexte Open\-G\-L cree.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai en cas de succes. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_a0cb31f11533480a059574970f5fcff6b}{\index{aidegl@{aidegl}!detruire\-Contexte\-G\-L@{detruire\-Contexte\-G\-L}}
+\index{detruire\-Contexte\-G\-L@{detruire\-Contexte\-G\-L}!aidegl@{aidegl}}
+\subsubsection[{detruire\-Contexte\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}bool aidegl\-::detruire\-Contexte\-G\-L (
+\begin{DoxyParamCaption}
+\item[{H\-W\-N\-D}]{h\-Wnd, }
+\item[{{\bf H\-D\-C}}]{h\-D\-C, }
+\item[{{\bf H\-G\-L\-R\-C}}]{h\-R\-C}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a0cb31f11533480a059574970f5fcff6b}
+
+
+Detruit un contexte Open\-G\-L. 
+
+Cette fonction detruit proprement un contexte Open\-G\-L.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-Wnd} & \-: Poignee (\char`\"{}handle\char`\"{}) vers la fenetre du contexte a detruire. \\
+\hline
+\mbox{\tt in}  & {\em h\-D\-C} & \-: Poignee (\char`\"{}handle\char`\"{}) vers le \char`\"{}\-Device context\char`\"{} de la fenetre. \\
+\hline
+\mbox{\tt in}  & {\em h\-R\-C} & \-: Poignee (\char`\"{}handle\char`\"{}) vers le contexte Open\-G\-L a detruire.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai en cas de succes. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_af6f5a219dd414d647d8e4d92b6c30fd5}{\index{aidegl@{aidegl}!gl\-Create\-Texture@{gl\-Create\-Texture}}
+\index{gl\-Create\-Texture@{gl\-Create\-Texture}!aidegl@{aidegl}}
+\subsubsection[{gl\-Create\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::gl\-Create\-Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf unsigned} char $\ast$}]{data, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y, }
+\item[{{\bf int}}]{bpp, }
+\item[{{\bf int}}]{pitch, }
+\item[{{\bf unsigned} {\bf int} \&}]{I\-D, }
+\item[{bool}]{generer\-Texture}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_af6f5a219dd414d647d8e4d92b6c30fd5}
+
+
+Cree une texture a partir des pixels en memoire. 
+
+unsigned int\& I\-D, bool generer\-Texture) Cette fonction cree une texture a partir des pixels en memoire.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & \-: Le tableau des valeurs des pixels. \\
+\hline
+\mbox{\tt in}  & {\em x} & \-: La largeur de l'image. \\
+\hline
+\mbox{\tt in}  & {\em y} & \-: La hauteur de l'image. \\
+\hline
+\mbox{\tt in}  & {\em bpp} & \-: Le nombre de bits par pixels. \\
+\hline
+\mbox{\tt in}  & {\em pitch} & \-: La largeur en memoire d'une rangee de l'image. \\
+\hline
+\mbox{\tt out}  & {\em I\-D} & \-: L'identificateur de la texture creee. \\
+\hline
+\mbox{\tt in}  & {\em generer\-Texture} & \-: Doit-\/on demander a Open\-G\-L de generer un numero de texture au prealable? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_a6bba7d34e4998b9c94fe5971ecf535c0}{\index{aidegl@{aidegl}!gl\-Load\-Texture@{gl\-Load\-Texture}}
+\index{gl\-Load\-Texture@{gl\-Load\-Texture}!aidegl@{aidegl}}
+\subsubsection[{gl\-Load\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}bool aidegl\-::gl\-Load\-Texture (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{nom\-Fichier, }
+\item[{{\bf unsigned} {\bf int} \&}]{id\-Texture, }
+\item[{bool}]{generer\-Texture}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a6bba7d34e4998b9c94fe5971ecf535c0}
+
+
+Charge une texture Open\-G\-L a partir d'un fichier image. 
+
+bool generer\-Texture) Cette fonction cree une texture Open\-G\-L a partir d'une image contenu dans un fichier. Free\-Image est utilisee pour lire l'image, donc tous les formats reconnues par cette librairie devraient etre supportes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\-Fichier} & \-: Le nom du fichier image a charger. \\
+\hline
+\mbox{\tt out}  & {\em id\-Texture} & \-: L'identificateur de la texture creee. \\
+\hline
+\mbox{\tt in}  & {\em generer\-Texture} & \-: Doit-\/on demander a Open\-G\-L de generer un numero de texture au prealable? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si le chargement a reussi, faux autrement. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_afcd84614cbab5903653b7514a35176bc}{\index{aidegl@{aidegl}!initialiser\-Rectangle\-Elastique@{initialiser\-Rectangle\-Elastique}}
+\index{initialiser\-Rectangle\-Elastique@{initialiser\-Rectangle\-Elastique}!aidegl@{aidegl}}
+\subsubsection[{initialiser\-Rectangle\-Elastique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::initialiser\-Rectangle\-Elastique (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2i} \&}]{point, }
+\item[{{\bf unsigned} short}]{patron, }
+\item[{{\bf int}}]{facteur}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_afcd84614cbab5903653b7514a35176bc}
+
+
+Initialise le mode de rendu du rectangle elastique. 
+
+Cette fonction initialise le mode de rendu du rectangle elastique en mode X\-O\-R en sauvegardant l'etat de la machine Open\-G\-L et en la modifiant pour que le rendu soit correct.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point} & \-: Point initial de localisation du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em patron} & \-: Patron de pointille pour les lignes du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em facteur} & \-: Facteur du pointille pour les lignes du rectangle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_a67cd6beb7f534f810d11bff186d88d2e}{\index{aidegl@{aidegl}!mettre\-A\-Jour\-Rectangle\-Elastique@{mettre\-A\-Jour\-Rectangle\-Elastique}}
+\index{mettre\-A\-Jour\-Rectangle\-Elastique@{mettre\-A\-Jour\-Rectangle\-Elastique}!aidegl@{aidegl}}
+\subsubsection[{mettre\-A\-Jour\-Rectangle\-Elastique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::mettre\-A\-Jour\-Rectangle\-Elastique (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2i} \&}]{point\-Ancrage, }
+\item[{const {\bf Vecteur2i} \&}]{point\-Avant, }
+\item[{const {\bf Vecteur2i} \&}]{point\-Apres}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a67cd6beb7f534f810d11bff186d88d2e}
+
+
+Met a jour le rectangle elastique (suite a un deplacement). 
+
+Cette fonction met a jour la position du rectangle elastique en effacant le rectangle precedent pour le remplacer par un nouveau.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point\-Ancrage} & \-: Point initial de localisation du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em point\-Avant} & \-: Autre coin du rectangle avant la mise a jour. \\
+\hline
+\mbox{\tt in}  & {\em point\-Apres} & \-: Autre coin du rectangle apres la mise a jour.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_a19ef7b4b71b7a1568393cfc78be46a91}{\index{aidegl@{aidegl}!obtenir\-Message\-Erreur@{obtenir\-Message\-Erreur}}
+\index{obtenir\-Message\-Erreur@{obtenir\-Message\-Erreur}!aidegl@{aidegl}}
+\subsubsection[{obtenir\-Message\-Erreur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} aidegl\-::obtenir\-Message\-Erreur (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lenum}}]{code\-Erreur, }
+\item[{{\bf int}}]{drapeau}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a19ef7b4b71b7a1568393cfc78be46a91}
+
+
+Retourne une chaîne correspondant au code d'erreur Open\-G\-L. 
+
+Cette fonction retourne une chaîne detaillant l'erreur identifiee par le code d'erreur passe en parametre. La chaîne retournee contient d'abord le nom de la constante identifiant le code d'erreur, suivi du message de la fonction glu\-Error\-String(), et une explication provenant du \char`\"{}man page\char`\"{} de \hyperlink{glew_8h_a96d12fe2ba9949b71f7834676df8ee10}{gl\-Get\-Error()}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em code\-Erreur} & \-: Code d'erreur. \\
+\hline
+\mbox{\tt in}  & {\em drapeau} & \-: Information desiree dans le message d'erreur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Chaîne contenant le message d'erreur. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_a9b2cef8d6b5ef4ddc692919a2bc9ec43}{\index{aidegl@{aidegl}!terminer\-Rectangle\-Elastique@{terminer\-Rectangle\-Elastique}}
+\index{terminer\-Rectangle\-Elastique@{terminer\-Rectangle\-Elastique}!aidegl@{aidegl}}
+\subsubsection[{terminer\-Rectangle\-Elastique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::terminer\-Rectangle\-Elastique (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2i} \&}]{point\-Ancrage, }
+\item[{const {\bf Vecteur2i} \&}]{point\-Final}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a9b2cef8d6b5ef4ddc692919a2bc9ec43}
+
+
+Termine le mode de rendu du rectangle elastique. 
+
+Cette fonction termine le mode de rendu du rectangle elastique en restaurant l'etat de la machine Open\-G\-L a ce qu'il etait.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point\-Ancrage} & \-: Point initial de localisation du rectangle. \\
+\hline
+\mbox{\tt in}  & {\em point\-Final} & \-: Point final de localisation du rectangle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidegl_a923ac6c4f17f9d93b072c786e0f86d41}{\index{aidegl@{aidegl}!verifier\-Erreur\-Open\-G\-L@{verifier\-Erreur\-Open\-G\-L}}
+\index{verifier\-Erreur\-Open\-G\-L@{verifier\-Erreur\-Open\-G\-L}!aidegl@{aidegl}}
+\subsubsection[{verifier\-Erreur\-Open\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} aidegl\-::verifier\-Erreur\-Open\-G\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{drapeau}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidegl_a923ac6c4f17f9d93b072c786e0f86d41}
+
+
+Verifie s'il y a une erreur Open\-G\-L. 
+
+Cette fonction verifie s'il y a une erreur Open\-G\-L, et si c'est le cas affiche un message d'erreur correspondant a l'erreur.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em drapeau} & \-: Information desiree dans le message d'erreur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}

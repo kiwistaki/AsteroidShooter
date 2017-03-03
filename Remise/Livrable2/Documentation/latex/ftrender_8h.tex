@@ -1,0 +1,162 @@
+\hypertarget{ftrender_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftrender.h File Reference}
+\label{ftrender_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftrender.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftrender.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___glyph___class__}{F\-T\-\_\-\-Glyph\-\_\-\-Class\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___renderer___class__}{F\-T\-\_\-\-Renderer\-\_\-\-Class\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ftrender_8h_a4c1f684bcfc3b7c2f076f2f04fb2faea}{F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func}~\hyperlink{ftrender_8h_a82f06475acaf83c888c239936e63017a}{F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_a7a147b2b9f67b03bcfcdcbc49a28df93}{F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func}~\hyperlink{ftrender_8h_a9396e4d7c1305b4945c3f43c95323559}{F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_aaab781ac5f0f5b58075214868ed66dd3}{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func}~\hyperlink{ftrender_8h_a75edca5f9e9c964e364fbb7fe848d08f}{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_a27e46c8ea500f17925df28ebe91d9db6}{F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func}~\hyperlink{ftrender_8h_a1b233ffd28134752d5da1aa1d2cd56fd}{F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_a834bc2d9ead15816ec141993bfd2d679}{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func}~\hyperlink{ftrender_8h_a1e954343fedd1a8e322328ccaeb6af17}{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_aaf10a58e79ad3bdd45a6f8b3376c334f}{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func}~\hyperlink{ftrender_8h_a3236bd42d7865521fe10137732c1d21b}{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_ac847b9201cb6f8981104ff09ff6cee55}{F\-T\-Renderer\-\_\-render}~\hyperlink{ftrender_8h_ada485fdd7f97be351db11403a9b82d9f}{F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_a8351e0fbd6f9344d9296ab8298c22890}{F\-T\-Renderer\-\_\-transform}~\hyperlink{ftrender_8h_a4487d28615fbdd3a10a590601f67c7f7}{F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_ae02261f4559f540de4888e0373f4d66b}{F\-T\-Renderer\-\_\-get\-C\-Box}~\hyperlink{ftrender_8h_a5ad6bf32ce31c620fff9472219af76ed}{F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func}
+\item 
+\#define \hyperlink{ftrender_8h_a7c849f443a452de8224d7b613bd19056}{F\-T\-Renderer\-\_\-set\-Mode}~\hyperlink{ftrender_8h_a2ba073fe01c937ca487c5dc03f0c63bb}{F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftrender_8h_a9396e4d7c1305b4945c3f43c95323559}{F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func} )(\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} glyph)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftrender_8h_a75edca5f9e9c964e364fbb7fe848d08f}{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func} )(\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} glyph, const \hyperlink{fttypes_8h_afeacbc4365cf2ad77162b6292f3e3e23}{F\-T\-\_\-\-Matrix} $\ast$\hyperlink{glew_8h_a7b24a3f2f56eb1244ae69dacb4fecb6f}{matrix}, const \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$delta)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftrender_8h_a1b233ffd28134752d5da1aa1d2cd56fd}{F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func} )(\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} glyph, \hyperlink{ftimage_8h_ae341c4eb5a7199947a13b2a1dcaf7af7}{F\-T\-\_\-\-B\-Box} $\ast$abbox)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftrender_8h_a1e954343fedd1a8e322328ccaeb6af17}{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func} )(\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} \hyperlink{glew_8h_afdd0f0e67e302eefcb4f6b23732e7ea3}{source}, \hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} \hyperlink{glew_8h_aa43eab0fe80422366a4602998d53b133}{target})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftrender_8h_a3236bd42d7865521fe10137732c1d21b}{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func} )(\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} glyph, \hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftrender_8h_ada485fdd7f97be351db11403a9b82d9f}{F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func} )(\hyperlink{freetype_8h_a0c70692baaab06a7dad20faee7a86439}{F\-T\-\_\-\-Renderer} renderer, \hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} \hyperlink{glew_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode}, const \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$\hyperlink{_free_image_8h_a6fad52e4e9965422ef7c071010d1e850}{origin})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftrender_8h_a4487d28615fbdd3a10a590601f67c7f7}{F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func} )(\hyperlink{freetype_8h_a0c70692baaab06a7dad20faee7a86439}{F\-T\-\_\-\-Renderer} renderer, \hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot, const \hyperlink{fttypes_8h_afeacbc4365cf2ad77162b6292f3e3e23}{F\-T\-\_\-\-Matrix} $\ast$\hyperlink{glew_8h_a7b24a3f2f56eb1244ae69dacb4fecb6f}{matrix}, const \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$delta)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftrender_8h_a5ad6bf32ce31c620fff9472219af76ed}{F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func} )(\hyperlink{freetype_8h_a0c70692baaab06a7dad20faee7a86439}{F\-T\-\_\-\-Renderer} renderer, \hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot, \hyperlink{ftimage_8h_ae341c4eb5a7199947a13b2a1dcaf7af7}{F\-T\-\_\-\-B\-Box} $\ast$cbox)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftrender_8h_a2ba073fe01c937ca487c5dc03f0c63bb}{F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func} )(\hyperlink{freetype_8h_a0c70692baaab06a7dad20faee7a86439}{F\-T\-\_\-\-Renderer} renderer, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} mode\-\_\-tag, \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} mode\-\_\-ptr)
+\item 
+typedef struct \hyperlink{struct_f_t___renderer___class__}{F\-T\-\_\-\-Renderer\-\_\-\-Class\-\_\-} \hyperlink{ftrender_8h_a45a715d897a340ee66d1e848bf89d0d4}{F\-T\-\_\-\-Renderer\-\_\-\-Class}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftrender_8h_a8b85f16751ce80fd73908fff04276d15}{F\-T\-\_\-\-Get\-\_\-\-Renderer} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{ftimage_8h_aeca0d10a27aedecbf96515e0628aff1f}{F\-T\-\_\-\-Glyph\-\_\-\-Format} \hyperlink{glew_8h_a1e3b09934060e9d373139c3557730d37}{format})
+\item 
+\hyperlink{ftrender_8h_a2a6d8dbbb7e55d023c9dacfee1dbdb0d}{F\-T\-\_\-\-Set\-\_\-\-Renderer} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{freetype_8h_a0c70692baaab06a7dad20faee7a86439}{F\-T\-\_\-\-Renderer} renderer, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} num\-\_\-params, \hyperlink{freetype_8h_a0b96ed5cf9b897c90409981c43633d55}{F\-T\-\_\-\-Parameter} $\ast$parameters)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftheader_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftrender_8h_a82f06475acaf83c888c239936e63017a}{F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func} )(\hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} glyph, \hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ftrender_8h_a27e46c8ea500f17925df28ebe91d9db6}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-Glyph\-\_\-\-B\-Box\-\_\-\-Func~{\bf F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func}}}\label{ftrender_8h_a27e46c8ea500f17925df28ebe91d9db6}
+\hypertarget{ftrender_8h_a834bc2d9ead15816ec141993bfd2d679}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-Glyph\-\_\-\-Copy\-\_\-\-Func~{\bf F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func}}}\label{ftrender_8h_a834bc2d9ead15816ec141993bfd2d679}
+\hypertarget{ftrender_8h_a7a147b2b9f67b03bcfcdcbc49a28df93}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-Glyph\-\_\-\-Done\-\_\-\-Func~{\bf F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func}}}\label{ftrender_8h_a7a147b2b9f67b03bcfcdcbc49a28df93}
+\hypertarget{ftrender_8h_a4c1f684bcfc3b7c2f076f2f04fb2faea}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-Glyph\-\_\-\-Init\-\_\-\-Func~{\bf F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func}}}\label{ftrender_8h_a4c1f684bcfc3b7c2f076f2f04fb2faea}
+\hypertarget{ftrender_8h_aaf10a58e79ad3bdd45a6f8b3376c334f}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-\_\-\-Func~{\bf F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func}}}\label{ftrender_8h_aaf10a58e79ad3bdd45a6f8b3376c334f}
+\hypertarget{ftrender_8h_aaab781ac5f0f5b58075214868ed66dd3}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-Glyph\-\_\-\-Transform\-\_\-\-Func~{\bf F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func}}}\label{ftrender_8h_aaab781ac5f0f5b58075214868ed66dd3}
+\hypertarget{ftrender_8h_ae02261f4559f540de4888e0373f4d66b}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-Renderer\-\_\-get\-C\-Box@{F\-T\-Renderer\-\_\-get\-C\-Box}}
+\index{F\-T\-Renderer\-\_\-get\-C\-Box@{F\-T\-Renderer\-\_\-get\-C\-Box}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-Renderer\-\_\-get\-C\-Box}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-Renderer\-\_\-get\-C\-Box~{\bf F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func}}}\label{ftrender_8h_ae02261f4559f540de4888e0373f4d66b}
+\hypertarget{ftrender_8h_ac847b9201cb6f8981104ff09ff6cee55}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-Renderer\-\_\-render@{F\-T\-Renderer\-\_\-render}}
+\index{F\-T\-Renderer\-\_\-render@{F\-T\-Renderer\-\_\-render}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-Renderer\-\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-Renderer\-\_\-render~{\bf F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func}}}\label{ftrender_8h_ac847b9201cb6f8981104ff09ff6cee55}
+\hypertarget{ftrender_8h_a7c849f443a452de8224d7b613bd19056}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-Renderer\-\_\-set\-Mode@{F\-T\-Renderer\-\_\-set\-Mode}}
+\index{F\-T\-Renderer\-\_\-set\-Mode@{F\-T\-Renderer\-\_\-set\-Mode}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-Renderer\-\_\-set\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-Renderer\-\_\-set\-Mode~{\bf F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func}}}\label{ftrender_8h_a7c849f443a452de8224d7b613bd19056}
+\hypertarget{ftrender_8h_a8351e0fbd6f9344d9296ab8298c22890}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-Renderer\-\_\-transform@{F\-T\-Renderer\-\_\-transform}}
+\index{F\-T\-Renderer\-\_\-transform@{F\-T\-Renderer\-\_\-transform}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-Renderer\-\_\-transform}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-Renderer\-\_\-transform~{\bf F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func}}}\label{ftrender_8h_a8351e0fbd6f9344d9296ab8298c22890}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftrender_8h_a1e954343fedd1a8e322328ccaeb6af17}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Glyph\-\_\-\-Copy\-Func)({\bf F\-T\-\_\-\-Glyph} {\bf source}, {\bf F\-T\-\_\-\-Glyph} {\bf target})}}\label{ftrender_8h_a1e954343fedd1a8e322328ccaeb6af17}
+\hypertarget{ftrender_8h_a9396e4d7c1305b4945c3f43c95323559}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Glyph\-\_\-\-Done\-Func)({\bf F\-T\-\_\-\-Glyph} glyph)}}\label{ftrender_8h_a9396e4d7c1305b4945c3f43c95323559}
+\hypertarget{ftrender_8h_a1b233ffd28134752d5da1aa1d2cd56fd}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Glyph\-\_\-\-Get\-B\-Box\-Func)({\bf F\-T\-\_\-\-Glyph} glyph, {\bf F\-T\-\_\-\-B\-Box} $\ast$abbox)}}\label{ftrender_8h_a1b233ffd28134752d5da1aa1d2cd56fd}
+\hypertarget{ftrender_8h_a3236bd42d7865521fe10137732c1d21b}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Glyph\-\_\-\-Prepare\-Func)({\bf F\-T\-\_\-\-Glyph} glyph, {\bf F\-T\-\_\-\-Glyph\-Slot} slot)}}\label{ftrender_8h_a3236bd42d7865521fe10137732c1d21b}
+\hypertarget{ftrender_8h_a75edca5f9e9c964e364fbb7fe848d08f}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Glyph\-\_\-\-Transform\-Func)({\bf F\-T\-\_\-\-Glyph} glyph, const {\bf F\-T\-\_\-\-Matrix} $\ast${\bf matrix}, const {\bf F\-T\-\_\-\-Vector} $\ast$delta)}}\label{ftrender_8h_a75edca5f9e9c964e364fbb7fe848d08f}
+\hypertarget{ftrender_8h_a45a715d897a340ee66d1e848bf89d0d4}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Renderer\-\_\-\-Class@{F\-T\-\_\-\-Renderer\-\_\-\-Class}}
+\index{F\-T\-\_\-\-Renderer\-\_\-\-Class@{F\-T\-\_\-\-Renderer\-\_\-\-Class}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Renderer\-\_\-\-Class}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Renderer\-\_\-\-Class\-\_\-}  {\bf F\-T\-\_\-\-Renderer\-\_\-\-Class}}}\label{ftrender_8h_a45a715d897a340ee66d1e848bf89d0d4}
+\hypertarget{ftrender_8h_a5ad6bf32ce31c620fff9472219af76ed}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func}}
+\index{F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Renderer\-\_\-\-Get\-C\-Box\-Func)({\bf F\-T\-\_\-\-Renderer} renderer, {\bf F\-T\-\_\-\-Glyph\-Slot} slot, {\bf F\-T\-\_\-\-B\-Box} $\ast$cbox)}}\label{ftrender_8h_a5ad6bf32ce31c620fff9472219af76ed}
+\hypertarget{ftrender_8h_ada485fdd7f97be351db11403a9b82d9f}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func}}
+\index{F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Renderer\-\_\-\-Render\-Func)({\bf F\-T\-\_\-\-Renderer} renderer, {\bf F\-T\-\_\-\-Glyph\-Slot} slot, {\bf F\-T\-\_\-\-U\-Int} {\bf mode}, const {\bf F\-T\-\_\-\-Vector} $\ast${\bf origin})}}\label{ftrender_8h_ada485fdd7f97be351db11403a9b82d9f}
+\hypertarget{ftrender_8h_a2ba073fe01c937ca487c5dc03f0c63bb}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func}}
+\index{F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Renderer\-\_\-\-Set\-Mode\-Func)({\bf F\-T\-\_\-\-Renderer} renderer, {\bf F\-T\-\_\-\-U\-Long} mode\-\_\-tag, {\bf F\-T\-\_\-\-Pointer} mode\-\_\-ptr)}}\label{ftrender_8h_a2ba073fe01c937ca487c5dc03f0c63bb}
+\hypertarget{ftrender_8h_a4487d28615fbdd3a10a590601f67c7f7}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func}}
+\index{F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func@{F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Renderer\-\_\-\-Transform\-Func)({\bf F\-T\-\_\-\-Renderer} renderer, {\bf F\-T\-\_\-\-Glyph\-Slot} slot, const {\bf F\-T\-\_\-\-Matrix} $\ast${\bf matrix}, const {\bf F\-T\-\_\-\-Vector} $\ast$delta)}}\label{ftrender_8h_a4487d28615fbdd3a10a590601f67c7f7}
+
+
+\subsection{Function Documentation}
+\hypertarget{ftrender_8h_a8b85f16751ce80fd73908fff04276d15}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Get\-\_\-\-Renderer@{F\-T\-\_\-\-Get\-\_\-\-Renderer}}
+\index{F\-T\-\_\-\-Get\-\_\-\-Renderer@{F\-T\-\_\-\-Get\-\_\-\-Renderer}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Get\-\_\-\-Renderer (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{{\bf F\-T\-\_\-\-Glyph\-\_\-\-Format}}]{format}
+\end{DoxyParamCaption}
+)}}\label{ftrender_8h_a8b85f16751ce80fd73908fff04276d15}
+\hypertarget{ftrender_8h_a2a6d8dbbb7e55d023c9dacfee1dbdb0d}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Set\-\_\-\-Renderer@{F\-T\-\_\-\-Set\-\_\-\-Renderer}}
+\index{F\-T\-\_\-\-Set\-\_\-\-Renderer@{F\-T\-\_\-\-Set\-\_\-\-Renderer}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Set\-\_\-\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Set\-\_\-\-Renderer (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{{\bf F\-T\-\_\-\-Renderer}}]{renderer, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{num\-\_\-params, }
+\item[{{\bf F\-T\-\_\-\-Parameter} $\ast$}]{parameters}
+\end{DoxyParamCaption}
+)}}\label{ftrender_8h_a2a6d8dbbb7e55d023c9dacfee1dbdb0d}
+
+
+\subsection{Variable Documentation}
+\hypertarget{ftrender_8h_a82f06475acaf83c888c239936e63017a}{\index{ftrender.\-h@{ftrender.\-h}!F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func}}
+\index{F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func@{F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func}!ftrender.h@{ftrender.\-h}}
+\subsubsection[{F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Glyph\-\_\-\-Init\-Func)({\bf F\-T\-\_\-\-Glyph} glyph, {\bf F\-T\-\_\-\-Glyph\-Slot} slot)}}\label{ftrender_8h_a82f06475acaf83c888c239936e63017a}

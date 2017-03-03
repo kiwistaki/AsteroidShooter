@@ -1,0 +1,231 @@
+\hypertarget{class_test_result_collector}{\section{Test\-Result\-Collector Class Reference}
+\label{class_test_result_collector}\index{Test\-Result\-Collector@{Test\-Result\-Collector}}
+}
+
+
+Collects test result.
+
+A \hyperlink{class_test_result_collector}{Test\-Result\-Collector} is a \hyperlink{class_test_listener}{Test\-Listener} which collects the results of executing a test case. It is an instance of the Collecting Parameter pattern.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Result\-Collector.\-h$>$}
+
+Inheritance diagram for Test\-Result\-Collector\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_result_collector}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_cpp_unit_deque_8h_a3425728ebb9dff4afd4dcb7e6f270905}{Cpp\-Unit\-Deque}\\*
+$<$ \hyperlink{class_test_failure}{Test\-Failure} $\ast$ $>$ \hyperlink{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}{Test\-Failures}
+\item 
+typedef \hyperlink{_cpp_unit_deque_8h_a3425728ebb9dff4afd4dcb7e6f270905}{Cpp\-Unit\-Deque}$<$ \hyperlink{class_test}{Test} $\ast$ $>$ \hyperlink{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}{Tests}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_collector_a8bc475c91000fca9f0ed34e105577767}{Test\-Result\-Collector} (\hyperlink{class_synchronized_object_1_1_synchronization_object}{Synchronization\-Object} $\ast$sync\-Object=0)
+\item 
+virtual \hyperlink{class_test_result_collector_a2e905ace0bcb819bbe190faf16ea1aed}{$\sim$\-Test\-Result\-Collector} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_collector_a647d3e05ffc8fcf7023fea2f7c9f95cb}{start\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Called when just before a \hyperlink{class_test_case}{Test\-Case} is run. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}{add\-Failure} (const \hyperlink{class_test_failure}{Test\-Failure} \&failure)
+\begin{DoxyCompactList}\small\item\em Called when a failure occurs while running a test. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_collector_a1e20981cc1e127942154a643639d4740}{reset} ()
+\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_result_collector_ac832652158423deae9c2815ba616e836}{run\-Tests} () const 
+\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_result_collector_a0dc4aa03e6b22907cd44cf30a9ea0af3}{test\-Errors} () const 
+\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_result_collector_a583a62791337a71725a719f57dc654e2}{test\-Failures} () const 
+\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_result_collector_a73417ff24fff145f3575c3860d8e9340}{test\-Failures\-Total} () const 
+\item 
+virtual const \hyperlink{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}{Test\-Failures} \& \hyperlink{class_test_result_collector_a9c04c7276b1b19879cc3d51e9e9f33ff}{failures} () const 
+\item 
+virtual const \hyperlink{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}{Tests} \& \hyperlink{class_test_result_collector_a25890515b8eba397855a64582d3e7a9b}{tests} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_result_collector_ae3ca204ba9e242a368843e91acf94766}{free\-Failures} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}{Tests} \hyperlink{class_test_result_collector_a63950609cce95633b56850da67d4bfe0}{m\-\_\-tests}
+\item 
+\hyperlink{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}{Test\-Failures} \hyperlink{class_test_result_collector_ae2958ff17d1fd73092bf8ec4fc5db08f}{m\-\_\-failures}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_result_collector_a42fdacb6076281e8abb6eba08063fb4e}{m\-\_\-test\-Errors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collects test result.
+
+A \hyperlink{class_test_result_collector}{Test\-Result\-Collector} is a \hyperlink{class_test_listener}{Test\-Listener} which collects the results of executing a test case. It is an instance of the Collecting Parameter pattern. 
+
+The test framework distinguishes between failures and errors. A failure is anticipated and checked for with assertions. Errors are unanticipated problems signified by exceptions that are not generated by the framework. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_listener}{Test\-Listener}, \hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!Test\-Failures@{Test\-Failures}}
+\index{Test\-Failures@{Test\-Failures}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{Test\-Failures}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cpp\-Unit\-Deque}$<${\bf Test\-Failure} $\ast$$>$ {\bf Test\-Result\-Collector\-::\-Test\-Failures}}}\label{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}
+\hypertarget{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!Tests@{Tests}}
+\index{Tests@{Tests}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{Tests}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cpp\-Unit\-Deque}$<${\bf Test} $\ast$$>$ {\bf Test\-Result\-Collector\-::\-Tests}}}\label{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_result_collector_a8bc475c91000fca9f0ed34e105577767}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!Test\-Result\-Collector@{Test\-Result\-Collector}}
+\index{Test\-Result\-Collector@{Test\-Result\-Collector}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{Test\-Result\-Collector}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Result\-Collector\-::\-Test\-Result\-Collector (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronization\-Object} $\ast$}]{sync\-Object = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_test_result_collector_a8bc475c91000fca9f0ed34e105577767}
+Constructs a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} object. \hypertarget{class_test_result_collector_a2e905ace0bcb819bbe190faf16ea1aed}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!$\sim$\-Test\-Result\-Collector@{$\sim$\-Test\-Result\-Collector}}
+\index{$\sim$\-Test\-Result\-Collector@{$\sim$\-Test\-Result\-Collector}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{$\sim$\-Test\-Result\-Collector}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-Result\-Collector\-::$\sim$\-Test\-Result\-Collector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a2e905ace0bcb819bbe190faf16ea1aed}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Result\-Collector\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Failure} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}
+
+
+Called when a failure occurs while running a test. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+{\itshape failure} is a temporary object that is destroyed after the method call. Use \hyperlink{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}{Test\-Failure\-::clone()} to create a duplicate. 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{class_test_listener_a103216a5814c907f7b752b969477e765}{Test\-Listener}.
+
+
+
+Reimplemented in \hyperlink{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}{Text\-Test\-Result}.
+
+\hypertarget{class_test_result_collector_a9c04c7276b1b19879cc3d51e9e9f33ff}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!failures@{failures}}
+\index{failures@{failures}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{failures}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Test\-Failures}\& Test\-Result\-Collector\-::failures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a9c04c7276b1b19879cc3d51e9e9f33ff}
+\hypertarget{class_test_result_collector_ae3ca204ba9e242a368843e91acf94766}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!free\-Failures@{free\-Failures}}
+\index{free\-Failures@{free\-Failures}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{free\-Failures}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Result\-Collector\-::free\-Failures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_collector_ae3ca204ba9e242a368843e91acf94766}
+\hypertarget{class_test_result_collector_a1e20981cc1e127942154a643639d4740}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!reset@{reset}}
+\index{reset@{reset}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Result\-Collector\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a1e20981cc1e127942154a643639d4740}
+
+
+Reimplemented from \hyperlink{class_test_success_listener_aa6172d9c318a9a0fdb789b7668550290}{Test\-Success\-Listener}.
+
+\hypertarget{class_test_result_collector_ac832652158423deae9c2815ba616e836}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!run\-Tests@{run\-Tests}}
+\index{run\-Tests@{run\-Tests}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{run\-Tests}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-Result\-Collector\-::run\-Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_ac832652158423deae9c2815ba616e836}
+\hypertarget{class_test_result_collector_a647d3e05ffc8fcf7023fea2f7c9f95cb}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!start\-Test@{start\-Test}}
+\index{start\-Test@{start\-Test}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{start\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Result\-Collector\-::start\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a647d3e05ffc8fcf7023fea2f7c9f95cb}
+
+
+Called when just before a \hyperlink{class_test_case}{Test\-Case} is run. 
+
+
+
+Reimplemented from \hyperlink{class_test_listener_a5546d4420e7412234915113b1ea5ad77}{Test\-Listener}.
+
+
+
+Reimplemented in \hyperlink{class_text_test_result_a2191f5e916fca83151fb657b31dcd30d}{Text\-Test\-Result}.
+
+\hypertarget{class_test_result_collector_a0dc4aa03e6b22907cd44cf30a9ea0af3}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!test\-Errors@{test\-Errors}}
+\index{test\-Errors@{test\-Errors}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{test\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-Result\-Collector\-::test\-Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a0dc4aa03e6b22907cd44cf30a9ea0af3}
+\hypertarget{class_test_result_collector_a583a62791337a71725a719f57dc654e2}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!test\-Failures@{test\-Failures}}
+\index{test\-Failures@{test\-Failures}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{test\-Failures}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-Result\-Collector\-::test\-Failures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a583a62791337a71725a719f57dc654e2}
+\hypertarget{class_test_result_collector_a73417ff24fff145f3575c3860d8e9340}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!test\-Failures\-Total@{test\-Failures\-Total}}
+\index{test\-Failures\-Total@{test\-Failures\-Total}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{test\-Failures\-Total}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-Result\-Collector\-::test\-Failures\-Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a73417ff24fff145f3575c3860d8e9340}
+\hypertarget{class_test_result_collector_a25890515b8eba397855a64582d3e7a9b}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!tests@{tests}}
+\index{tests@{tests}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{tests}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Tests}\& Test\-Result\-Collector\-::tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_a25890515b8eba397855a64582d3e7a9b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_result_collector_ae2958ff17d1fd73092bf8ec4fc5db08f}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!m\-\_\-failures@{m\-\_\-failures}}
+\index{m\-\_\-failures@{m\-\_\-failures}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{m\-\_\-failures}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Failures} Test\-Result\-Collector\-::m\-\_\-failures\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_collector_ae2958ff17d1fd73092bf8ec4fc5db08f}
+\hypertarget{class_test_result_collector_a42fdacb6076281e8abb6eba08063fb4e}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!m\-\_\-test\-Errors@{m\-\_\-test\-Errors}}
+\index{m\-\_\-test\-Errors@{m\-\_\-test\-Errors}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{m\-\_\-test\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Test\-Result\-Collector\-::m\-\_\-test\-Errors\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_collector_a42fdacb6076281e8abb6eba08063fb4e}
+\hypertarget{class_test_result_collector_a63950609cce95633b56850da67d4bfe0}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!m\-\_\-tests@{m\-\_\-tests}}
+\index{m\-\_\-tests@{m\-\_\-tests}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{m\-\_\-tests}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tests} Test\-Result\-Collector\-::m\-\_\-tests\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_result_collector_a63950609cce95633b56850da67d4bfe0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_result_collector_8h}{Test\-Result\-Collector.\-h}\end{DoxyCompactItemize}

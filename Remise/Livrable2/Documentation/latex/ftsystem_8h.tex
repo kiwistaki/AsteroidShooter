@@ -1,0 +1,65 @@
+\hypertarget{ftsystem_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftsystem.h File Reference}
+\label{ftsystem_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftsystem.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftsystem.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___memory_rec__}{F\-T\-\_\-\-Memory\-Rec\-\_\-}
+\item 
+union \hyperlink{union_f_t___stream_desc__}{F\-T\-\_\-\-Stream\-Desc\-\_\-}
+\item 
+struct \hyperlink{struct_f_t___stream_rec__}{F\-T\-\_\-\-Stream\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R \\*
+struct \hyperlink{struct_f_t___memory_rec__}{F\-T\-\_\-\-Memory\-Rec\-\_\-} $\ast$ \hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$($\ast$ \hyperlink{ftsystem_8h_a039b55a7c519225d979f180ce609c552}{F\-T\-\_\-\-Alloc\-\_\-\-Func} )(\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory} memory, \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{_free_image_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size})
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftsystem_8h_ab963fd1f3ae6c1b251191360c769ad17}{F\-T\-\_\-\-Free\-\_\-\-Func} )(\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory} memory, \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$block)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$($\ast$ \hyperlink{ftsystem_8h_abbec55b4fe338ca28fc673b5048840a2}{F\-T\-\_\-\-Realloc\-\_\-\-Func} )(\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory} memory, \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} cur\-\_\-size, \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} new\-\_\-size, \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$block)
+\item 
+typedef struct \hyperlink{struct_f_t___stream_rec__}{F\-T\-\_\-\-Stream\-Rec\-\_\-} $\ast$ \hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\-T\-\_\-\-Stream}
+\item 
+typedef union \hyperlink{union_f_t___stream_desc__}{F\-T\-\_\-\-Stream\-Desc\-\_\-} \hyperlink{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}{F\-T\-\_\-\-Stream\-Desc}
+\item 
+typedef \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long}($\ast$ \hyperlink{ftsystem_8h_ac519e286320678727c62e40e09474bca}{F\-T\-\_\-\-Stream\-\_\-\-Io\-Func} )(\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\-T\-\_\-\-Stream} \hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{fmod__output_8h_ac915cd848f42b26af51745f204a3b9af}{offset}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} char $\ast$\hyperlink{fmod_8h_a6c0f527f003707dfaca177b40f406ed9}{buffer}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{_free_image_8h_a7701bb16365a51acda9234120673781d}{long} \hyperlink{_free_image_8h_a10b284d589000663becfbc6867a3a9f7}{count})
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftsystem_8h_a24013c9d02cdde7d9de6b80c958d8795}{F\-T\-\_\-\-Stream\-\_\-\-Close\-Func} )(\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\-T\-\_\-\-Stream} \hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream})
+\item 
+typedef struct \hyperlink{struct_f_t___stream_rec__}{F\-T\-\_\-\-Stream\-Rec\-\_\-} \hyperlink{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}{F\-T\-\_\-\-Stream\-Rec}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftsystem_8h_a039b55a7c519225d979f180ce609c552}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Alloc\-\_\-\-Func@{F\-T\-\_\-\-Alloc\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Alloc\-\_\-\-Func@{F\-T\-\_\-\-Alloc\-\_\-\-Func}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Alloc\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$($\ast$ F\-T\-\_\-\-Alloc\-\_\-\-Func)({\bf F\-T\-\_\-\-Memory} memory, {\bf long} {\bf size})}}\label{ftsystem_8h_a039b55a7c519225d979f180ce609c552}
+\hypertarget{ftsystem_8h_ab963fd1f3ae6c1b251191360c769ad17}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Free\-\_\-\-Func@{F\-T\-\_\-\-Free\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Free\-\_\-\-Func@{F\-T\-\_\-\-Free\-\_\-\-Func}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Free\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Free\-\_\-\-Func)({\bf F\-T\-\_\-\-Memory} memory, {\bf void} $\ast$block)}}\label{ftsystem_8h_ab963fd1f3ae6c1b251191360c769ad17}
+\hypertarget{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Memory@{F\-T\-\_\-\-Memory}}
+\index{F\-T\-\_\-\-Memory@{F\-T\-\_\-\-Memory}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R struct {\bf F\-T\-\_\-\-Memory\-Rec\-\_\-}$\ast$ {\bf F\-T\-\_\-\-Memory}}}\label{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}
+\hypertarget{ftsystem_8h_abbec55b4fe338ca28fc673b5048840a2}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Realloc\-\_\-\-Func@{F\-T\-\_\-\-Realloc\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Realloc\-\_\-\-Func@{F\-T\-\_\-\-Realloc\-\_\-\-Func}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Realloc\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$($\ast$ F\-T\-\_\-\-Realloc\-\_\-\-Func)({\bf F\-T\-\_\-\-Memory} memory, {\bf long} cur\-\_\-size, {\bf long} new\-\_\-size, {\bf void} $\ast$block)}}\label{ftsystem_8h_abbec55b4fe338ca28fc673b5048840a2}
+\hypertarget{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Stream@{F\-T\-\_\-\-Stream}}
+\index{F\-T\-\_\-\-Stream@{F\-T\-\_\-\-Stream}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Stream\-Rec\-\_\-}$\ast$ {\bf F\-T\-\_\-\-Stream}}}\label{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}
+\hypertarget{ftsystem_8h_a24013c9d02cdde7d9de6b80c958d8795}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Stream\-\_\-\-Close\-Func@{F\-T\-\_\-\-Stream\-\_\-\-Close\-Func}}
+\index{F\-T\-\_\-\-Stream\-\_\-\-Close\-Func@{F\-T\-\_\-\-Stream\-\_\-\-Close\-Func}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stream\-\_\-\-Close\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Stream\-\_\-\-Close\-Func)({\bf F\-T\-\_\-\-Stream} {\bf stream})}}\label{ftsystem_8h_a24013c9d02cdde7d9de6b80c958d8795}
+\hypertarget{ftsystem_8h_ac519e286320678727c62e40e09474bca}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Stream\-\_\-\-Io\-Func@{F\-T\-\_\-\-Stream\-\_\-\-Io\-Func}}
+\index{F\-T\-\_\-\-Stream\-\_\-\-Io\-Func@{F\-T\-\_\-\-Stream\-\_\-\-Io\-Func}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stream\-\_\-\-Io\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf unsigned} {\bf long}($\ast$ F\-T\-\_\-\-Stream\-\_\-\-Io\-Func)({\bf F\-T\-\_\-\-Stream} {\bf stream}, {\bf unsigned} {\bf long} {\bf offset}, {\bf unsigned} char $\ast${\bf buffer}, {\bf unsigned} {\bf long} {\bf count})}}\label{ftsystem_8h_ac519e286320678727c62e40e09474bca}
+\hypertarget{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Stream\-Desc@{F\-T\-\_\-\-Stream\-Desc}}
+\index{F\-T\-\_\-\-Stream\-Desc@{F\-T\-\_\-\-Stream\-Desc}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stream\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}typedef union {\bf F\-T\-\_\-\-Stream\-Desc\-\_\-}  {\bf F\-T\-\_\-\-Stream\-Desc}}}\label{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}
+\hypertarget{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}{\index{ftsystem.\-h@{ftsystem.\-h}!F\-T\-\_\-\-Stream\-Rec@{F\-T\-\_\-\-Stream\-Rec}}
+\index{F\-T\-\_\-\-Stream\-Rec@{F\-T\-\_\-\-Stream\-Rec}!ftsystem.h@{ftsystem.\-h}}
+\subsubsection[{F\-T\-\_\-\-Stream\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Stream\-Rec\-\_\-}  {\bf F\-T\-\_\-\-Stream\-Rec}}}\label{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}

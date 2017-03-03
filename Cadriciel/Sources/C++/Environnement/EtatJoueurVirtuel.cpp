@@ -1,0 +1,36 @@
+///////////////////////////////////////////////////////////////////////////////
+/// @file EtatJoueurVirtuel.cpp
+/// @author FloopyDisketeers
+/// @date 2014-01-27
+/// @version 1.0
+///
+/// @addtogroup inf2990 INF2990
+/// @{
+///////////////////////////////////////////////////////////////////////////////
+
+#include "EtatJoueurVirtuel.h"
+
+///////////////////////////////////////////////////////////////////
+///
+/// @fn EtatJoueurVirtuel::EtatJoueurVirtuel()
+///
+/// Constructeur
+///
+/// @return Aucun (Constructeur).
+///
+///////////////////////////////////////////////////////////////////
+EtatJoueurVirtuel::EtatJoueurVirtuel()
+{
+	carte_ = FacadeModele::obtenirInstance()->getCarte();
+	distancePasserModeAttaque_ = carte_->getLargeur()/2;
+
+	carte_ = FacadeModele::obtenirInstance()->getCarte();
+	minX_ = carte_->getZoneJeuX()[0] - 5;
+	minY_ = carte_->getZoneJeuY()[0] - 5;
+	maxX_ = carte_->getZoneJeuX()[1] + 5;
+	maxY_ = carte_->getZoneJeuY()[1] + 5;
+}
+
+///////////////////////////////////////////////////////////////////
+/// @}
+///////////////////////////////////////////////////////////////////

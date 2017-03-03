@@ -1,0 +1,13 @@
+<?xml version="1,0" ?>
+<Root>
+    <Touches j1Prop="87" j1Gauche="65" j1Droite="68" j1Man="83" j1Tir="32" j2Prop="38" j2Gauche="37" j2Droite="39" j2Man="40" j2Tir="77" />
+    <AttractionDePort AttractionPort="1" />
+    <ZoneDePassage ZonePassage="0" />
+    <CadreDeDepart CadreDepart="0" />
+    <CibleDeJoueur CibleJoueur="0" />
+    <EclairageDe Eclairage="1" />
+    <ChangementDeMode ChangementMode="1" />
+    <ApparitionDeAsteroide ApparitionAsteroide="1" />
+    <PointsDeVie PointsVieStation="5" />
+    <DureeDeJeu DureeJeu="80" />
+</Root>

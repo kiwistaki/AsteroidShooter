@@ -1,0 +1,92 @@
+\hypertarget{class_test_runner_1_1_wrapping_suite}{\section{Test\-Runner\-:\-:Wrapping\-Suite Class Reference}
+\label{class_test_runner_1_1_wrapping_suite}\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}}
+}
+
+
+(I\-N\-T\-E\-R\-N\-A\-L) Mutating test suite.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Runner.\-h$>$}
+
+Inheritance diagram for Test\-Runner\-:\-:Wrapping\-Suite\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_runner_1_1_wrapping_suite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_runner_1_1_wrapping_suite_a3edce0cce0e3fdc996994d3dfe8f35fb}{{\bfseries Wrapping\-Suite} (const std\-::string \&name=\char`\"{}All Tests\char`\"{})}\label{class_test_runner_1_1_wrapping_suite_a3edce0cce0e3fdc996994d3dfe8f35fb}
+
+\item 
+\hypertarget{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}{int \hyperlink{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}{get\-Child\-Test\-Count} () const }\label{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of direct child of the test. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\item 
+\hypertarget{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}{void \hyperlink{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$result)}\label{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}
+
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}{do\-Get\-Child\-Test\-At} (int index) const 
+\begin{DoxyCompactList}\small\item\em Returns the child test of the specified valid index. \end{DoxyCompactList}\item 
+\hypertarget{class_test_runner_1_1_wrapping_suite_af38cfc83ff00ccc6231e479874931d04}{bool {\bfseries has\-Only\-One\-Test} () const }\label{class_test_runner_1_1_wrapping_suite_af38cfc83ff00ccc6231e479874931d04}
+
+\item 
+\hypertarget{class_test_runner_1_1_wrapping_suite_a6ca61a2aa4d3832525333fef9ccad961}{\hyperlink{class_test}{Test} $\ast$ {\bfseries get\-Unique\-Child\-Test} () const }\label{class_test_runner_1_1_wrapping_suite_a6ca61a2aa4d3832525333fef9ccad961}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(I\-N\-T\-E\-R\-N\-A\-L) Mutating test suite. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}}
+\index{do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{do\-Get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Runner\-::\-Wrapping\-Suite\-::do\-Get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}
+
+
+Returns the child test of the specified valid index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based valid index of the child test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{Test}.
+
+\hypertarget{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Test\-Runner\-::\-Wrapping\-Suite\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Reimplemented from \hyperlink{class_test_composite_addf2aec7ab7233e433cb5bdf98defb61}{Test\-Composite}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Runner.\-h\end{DoxyCompactItemize}

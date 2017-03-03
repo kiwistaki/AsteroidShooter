@@ -1,0 +1,120 @@
+\hypertarget{class_quad_tree}{\section{Quad\-Tree Class Reference}
+\label{class_quad_tree}\index{Quad\-Tree@{Quad\-Tree}}
+}
+
+
+Cette class implémente la fonctionnalité d'un \hyperlink{class_quad_tree}{Quad\-Tree}.  
+
+
+
+
+{\ttfamily \#include $<$Quad\-Tree.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_quad_tree_aa42167450b06ec519ce23257e2e7ebc4}{Quad\-Tree} (const \hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \&coin\-Haut\-Gauche, const \hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \&coin\-Bas\-Droite, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} niveau=0)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_quad_tree_a0c1976706b3dd28abd50efce4024b087}{clear} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_quad_tree_a0ead74989abce61d221adf859db74515}{inserer} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$objet)
+\item 
+set$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \hyperlink{class_quad_tree_aff37cdf1670a48587497840c379a6544}{retrieve} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$objet) const 
+\item 
+const set$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \hyperlink{class_quad_tree_a03d8f9dff8ae37f229144c3d9bb01486}{get\-Objets} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_quad_tree_a0bb9db1ca4ead8b9c370fa692864ad6f}{afficher} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cette class implémente la fonctionnalité d'un \hyperlink{class_quad_tree}{Quad\-Tree}. 
+
+C'est un arbre dans lequel chaque noeud contient exactement 4 enfants. On ajoute des noeuds supplémentaires en ajoutant des éléments dans l'arbre\-: lorsque le nombre d'objets se trouvant dans un noeud est supérieure à une constante définie par l'utilisateur, on subdivise le noeud courant en 4 sous-\/noeuds.
+
+Cet arbre permet de traiter les collisions seulement avec les autres objets qui se trouvent dans le même noeud, réduisant dramatiquement le nombre de cas à traiter.
+
+L'insertion utilise des boites englobantes non-\/orientées pour déterminer si un objet est dans un noeud. Cette méthode n'est pas la plus précise, mais avec un \hyperlink{class_quad_tree}{Quad\-Tree} on cherche a donner une approximation rapidement pour éviter de plus gros calculs, donc une boite englobante non-\/orientée suffit largement.
+
+L'indexation des sous-\/noeuds est comme suit\-: $\vert$ \subsubsection*{I\-I $\vert$ I }
+
+I\-I\-I $\vert$ I\-V $\vert$
+
+Implémentation tiré de \href{http://gamedevelopment.tutsplus.com/tutorials/quick-tip-use-quadtrees-to-detect-likely-collisions-in-2d-space&ndash;gamedev-374}{\tt http\-://gamedevelopment.\-tutsplus.\-com/tutorials/quick-\/tip-\/use-\/quadtrees-\/to-\/detect-\/likely-\/collisions-\/in-\/2d-\/space\&ndash;gamedev-\/374} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_quad_tree_aa42167450b06ec519ce23257e2e7ebc4}{\index{Quad\-Tree@{Quad\-Tree}!Quad\-Tree@{Quad\-Tree}}
+\index{Quad\-Tree@{Quad\-Tree}!QuadTree@{Quad\-Tree}}
+\subsubsection[{Quad\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}Quad\-Tree\-::\-Quad\-Tree (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2f} \&}]{coin\-Haut\-Gauche, }
+\item[{const {\bf Vecteur2f} \&}]{coin\-Bas\-Droite, }
+\item[{{\bf int}}]{niveau = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_quad_tree_aa42167450b06ec519ce23257e2e7ebc4}
+Constructeur par paramètres 
+\begin{DoxyParams}{Parameters}
+{\em coin\-Haut\-Gauche} & La position du coin en haut à gauche du noeud courant \\
+\hline
+{\em coin\-Bas\-Droite} & La position du coin en bas à droite du noeud courant \\
+\hline
+{\em niveau} & Le niveau du \hyperlink{class_quad_tree}{Quad\-Tree}, 0 étant le premier niveau. 0 par défaut. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_quad_tree_a0bb9db1ca4ead8b9c370fa692864ad6f}{\index{Quad\-Tree@{Quad\-Tree}!afficher@{afficher}}
+\index{afficher@{afficher}!QuadTree@{Quad\-Tree}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Quad\-Tree\-::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_quad_tree_a0bb9db1ca4ead8b9c370fa692864ad6f}
+\hypertarget{class_quad_tree_a0c1976706b3dd28abd50efce4024b087}{\index{Quad\-Tree@{Quad\-Tree}!clear@{clear}}
+\index{clear@{clear}!QuadTree@{Quad\-Tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Quad\-Tree\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_quad_tree_a0c1976706b3dd28abd50efce4024b087}
+Vide le \hyperlink{class_quad_tree}{Quad\-Tree}. Les destructeurs des enfants se chargeront du reste \hypertarget{class_quad_tree_a03d8f9dff8ae37f229144c3d9bb01486}{\index{Quad\-Tree@{Quad\-Tree}!get\-Objets@{get\-Objets}}
+\index{get\-Objets@{get\-Objets}!QuadTree@{Quad\-Tree}}
+\subsubsection[{get\-Objets}]{\setlength{\rightskip}{0pt plus 5cm}const set$<${\bf Element\-Jeu\-Abstrait}$\ast$$>$ Quad\-Tree\-::get\-Objets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quad_tree_a03d8f9dff8ae37f229144c3d9bb01486}
+\hypertarget{class_quad_tree_a0ead74989abce61d221adf859db74515}{\index{Quad\-Tree@{Quad\-Tree}!inserer@{inserer}}
+\index{inserer@{inserer}!QuadTree@{Quad\-Tree}}
+\subsubsection[{inserer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Quad\-Tree\-::inserer (
+\begin{DoxyParamCaption}
+\item[{{\bf Element\-Jeu\-Abstrait} $\ast$}]{objet}
+\end{DoxyParamCaption}
+)}}\label{class_quad_tree_a0ead74989abce61d221adf859db74515}
+Insère un élément dans le \hyperlink{class_quad_tree}{Quad\-Tree}. Si l'ajout du nouvel objet fait exploser la capacité du noeud courant, on le subdivise et on assigne les objets dans les nouveaux noeuds. 
+\begin{DoxyParams}{Parameters}
+{\em objet} & L'objet à ajouter dans le \hyperlink{class_quad_tree}{Quad\-Tree} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_quad_tree_aff37cdf1670a48587497840c379a6544}{\index{Quad\-Tree@{Quad\-Tree}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!QuadTree@{Quad\-Tree}}
+\subsubsection[{retrieve}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ {\bf Element\-Jeu\-Abstrait} $\ast$ $>$ Quad\-Tree\-::retrieve (
+\begin{DoxyParamCaption}
+\item[{{\bf Element\-Jeu\-Abstrait} $\ast$}]{objet}
+\end{DoxyParamCaption}
+) const}}\label{class_quad_tree_aff37cdf1670a48587497840c379a6544}
+Va chercher tous les objets qui pourraient entrer en collision avec l'objet courant. 
+\begin{DoxyParams}{Parameters}
+{\em objet} & L'objet pour lequel on veut une liste des autres objets qui pourraient entrer en collision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un set de pointeurs d'éléments abstraits. Ce sont des objets avec lesquels l'objet courant pourrait entrer en collision. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_quad_tree_8h}{Quad\-Tree.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_quad_tree_8cpp}{Quad\-Tree.\-cpp}\end{DoxyCompactItemize}

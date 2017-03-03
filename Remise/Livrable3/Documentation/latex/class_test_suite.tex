@@ -1,0 +1,131 @@
+\hypertarget{class_test_suite}{\section{Test\-Suite Class Reference}
+\label{class_test_suite}\index{Test\-Suite@{Test\-Suite}}
+}
+
+
+A Composite of Tests.
+
+It runs a collection of test cases. Here is an example.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Suite.\-h$>$}
+
+Inheritance diagram for Test\-Suite\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_suite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_suite_aedef358022b725810f2f145ac078c01b}{Test\-Suite} (std\-::string name=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_test_suite_a8cd9628eee382a9670076765ec25cfa8}{add\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\item 
+const Cpp\-Unit\-Vector$<$ \hyperlink{class_test}{Test} $\ast$ $>$ \& \hyperlink{class_test_suite_ad2bd3e20523bb357b7a4608a7978ea49}{get\-Tests} () const 
+\item 
+virtual void \hyperlink{class_test_suite_ac968917f934d102227abd8b2130e67f9}{delete\-Contents} ()
+\item 
+\hypertarget{class_test_suite_aeaabfd3afef12412cd390b90128a7d87}{int \hyperlink{class_test_suite_aeaabfd3afef12412cd390b90128a7d87}{get\-Child\-Test\-Count} () const }\label{class_test_suite_aeaabfd3afef12412cd390b90128a7d87}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of direct child of the test. \end{DoxyCompactList}\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_suite_aab4d1f64d7b32a24489cc2a3f3e412ee}{do\-Get\-Child\-Test\-At} (int index) const 
+\begin{DoxyCompactList}\small\item\em Returns the child test of the specified valid index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Composite of Tests.
+
+It runs a collection of test cases. Here is an example. 
+
+
+\begin{DoxyCode}
+CppUnit::TestSuite *suite= \textcolor{keyword}{new} CppUnit::TestSuite();
+suite->addTest(\textcolor{keyword}{new} CppUnit::TestCaller<MathTest> (
+                 \textcolor{stringliteral}{"testAdd"}, testAdd));
+suite->addTest(\textcolor{keyword}{new} CppUnit::TestCaller<MathTest> (
+                 \textcolor{stringliteral}{"testDivideByZero"}, testDivideByZero));
+\end{DoxyCode}
+ Note that \hyperlink{class_test_suite}{Test\-Suites } assume lifetime control for any tests added to them.
+
+Test\-Suites do not register themselves in the Test\-Registry. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test}{Test} 
+
+\hyperlink{class_test_caller}{Test\-Caller} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_suite_aedef358022b725810f2f145ac078c01b}{\index{Test\-Suite@{Test\-Suite}!Test\-Suite@{Test\-Suite}}
+\index{Test\-Suite@{Test\-Suite}!TestSuite@{Test\-Suite}}
+\subsubsection[{Test\-Suite}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Suite\-::\-Test\-Suite (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_test_suite_aedef358022b725810f2f145ac078c01b}
+Constructs a test suite with the specified name. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_suite_a8cd9628eee382a9670076765ec25cfa8}{\index{Test\-Suite@{Test\-Suite}!add\-Test@{add\-Test}}
+\index{add\-Test@{add\-Test}!TestSuite@{Test\-Suite}}
+\subsubsection[{add\-Test}]{\setlength{\rightskip}{0pt plus 5cm}void Test\-Suite\-::add\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)}}\label{class_test_suite_a8cd9628eee382a9670076765ec25cfa8}
+Adds the specified test to the suite. 
+\begin{DoxyParams}{Parameters}
+{\em test} & \hyperlink{class_test}{Test} to add. Must not be {\ttfamily N\-U\-L\-L}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_suite_ac968917f934d102227abd8b2130e67f9}{\index{Test\-Suite@{Test\-Suite}!delete\-Contents@{delete\-Contents}}
+\index{delete\-Contents@{delete\-Contents}!TestSuite@{Test\-Suite}}
+\subsubsection[{delete\-Contents}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Test\-Suite\-::delete\-Contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_suite_ac968917f934d102227abd8b2130e67f9}
+Destroys all the tests of the suite. \hypertarget{class_test_suite_aab4d1f64d7b32a24489cc2a3f3e412ee}{\index{Test\-Suite@{Test\-Suite}!do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}}
+\index{do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}!TestSuite@{Test\-Suite}}
+\subsubsection[{do\-Get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Suite\-::do\-Get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_suite_aab4d1f64d7b32a24489cc2a3f3e412ee}
+
+
+Returns the child test of the specified valid index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based valid index of the child test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{Test}.
+
+\hypertarget{class_test_suite_ad2bd3e20523bb357b7a4608a7978ea49}{\index{Test\-Suite@{Test\-Suite}!get\-Tests@{get\-Tests}}
+\index{get\-Tests@{get\-Tests}!TestSuite@{Test\-Suite}}
+\subsubsection[{get\-Tests}]{\setlength{\rightskip}{0pt plus 5cm}const Cpp\-Unit\-Vector$<${\bf Test} $\ast$$>$\& Test\-Suite\-::get\-Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_test_suite_ad2bd3e20523bb357b7a4608a7978ea49}
+Returns the list of the tests (D\-E\-P\-R\-E\-C\-A\-T\-E\-D). \begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000008}{Deprecated}]Use \hyperlink{class_test_suite_aeaabfd3afef12412cd390b90128a7d87}{get\-Child\-Test\-Count()} \& \hyperlink{class_test_aad295af3b440fdec4bd95ddd422466b8}{get\-Child\-Test\-At()} of the \hyperlink{class_test_composite}{Test\-Composite} interface instead. \begin{DoxyReturn}{Returns}
+Reference on a vector that contains the tests of the suite. 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Suite.\-h\end{DoxyCompactItemize}

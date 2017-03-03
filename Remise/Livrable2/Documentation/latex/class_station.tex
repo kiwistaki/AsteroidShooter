@@ -1,0 +1,209 @@
+\hypertarget{class_station}{\section{Station Class Reference}
+\label{class_station}\index{Station@{Station}}
+}
+
+
+Classe permettant la creation d'une station spatiale.  
+
+
+
+
+{\ttfamily \#include $<$Station.\-h$>$}
+
+Inheritance diagram for Station\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_station}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga73d335726aad1d844d81cda6d9fd74e6}{Station} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga09a6495cc8ec9e50d4359a14476bbd4a}{Station} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position\-Depart, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} poids, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} point\-De\-Vie)
+\item 
+\hyperlink{group__inf2990_gae450a1004864297d2446a874bd046f0a}{Station} (const \hyperlink{class_station}{Station} \&station)
+\item 
+virtual \hyperlink{group__inf2990_ga00434e79e8ee7f4ebd6d3b631dde5ac0}{$\sim$\-Station} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_station_a75c5040674bf4e5e637b9c2edd3f372d}{get\-Point\-De\-Vie} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga528ed11c57fa1a0b1504ef1177d07d59}{set\-Point\-De\-Vie} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} point\-De\-Vie)
+\item 
+virtual \hyperlink{group___i_n_f2990-04_ga1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{group__inf2990_ga73bf0677e077445d89c5351671a8c8b2}{get\-Type} ()
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga9c6dd9be516cface183c7a47ff3f730f}{update} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group__inf2990_gad184786ea5f912d24481427b4afb6f50}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_ga28c152266a4b66b7899cc4b2d8b1d11d}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Methode qui permet au joueur virtuel d'éviter les stations spatiales. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_gabb22cf80d57b73a426e1d6b4f719c943}{check\-Collision\-Joueur\-Virtuel} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$joueur\-Virtuel)
+\item 
+virtual bool \hyperlink{class_station_a05adfed60d430ff2f07f5597b1023121}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_gaa45f58a11c8d6390b2e6c9e58458c6ff}{check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)
+\item 
+virtual bool \hyperlink{class_station_a32deb660619d600c4190ddc19f1f4a48}{check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)
+\item 
+virtual bool \hyperlink{class_station_a72818fc3839f16f91f5499d5edba8261}{check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)
+\item 
+virtual bool \hyperlink{group__inf2990_ga928ec17dd5136ef8ac23c36265b395b4}{check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)
+\item 
+virtual bool \hyperlink{class_station_a48179b9d9e35ab1b8039877a097db623}{check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)
+\item 
+virtual bool \hyperlink{group__inf2990_gab692e9266db50b65beab5eda698b0cee}{check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gadb46ad4e454ae8582ca5abf375c3bfa4}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gae5329d02cfab96ed0bb2afd1cb9e0840}{traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_station_a463b6251c8d7b0b8d8c98c79ab4560ca}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gae3372c1874377329d9e533ec02d1bb87}{traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_station_afb8267e8ecba5ef1fb44e0c27b579c6c}{traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_station_a51513d9c5e9e87e715b09ff54e1cadfc}{traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_station_a875f3d66b131cbb23849847b91c357d0}{traiter\-Collision} (\hyperlink{class_position_depart}{Position\-Depart} $\ast$position\-Depart)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_station_acca5c637e7c9c9de3c5539ec71c853f6}{traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga97b835392bf66b643d759049a6572f12}{traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga6c478171445bfb641684ab27b3d247ca}{get\-Nb\-Station} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe permettant la creation d'une station spatiale. 
+
+Cette classe contiendra un pointeur de \hyperlink{class_noeud_station}{Noeud\-Station} qui gerera la texture et la modelisation de cette classe. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_station_a05adfed60d430ff2f07f5597b1023121}{\index{Station@{Station}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Station@{Station}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Station\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerateur} $\ast$}]{accelerateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a05adfed60d430ff2f07f5597b1023121}
+
+
+Methode pour verifier si une collision existe. 
+
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a11071c15797deae04611da1a0642435a}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a32deb660619d600c4190ddc19f1f4a48}{\index{Station@{Station}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Station@{Station}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Station\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Barriere} $\ast$}]{barriere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a32deb660619d600c4190ddc19f1f4a48}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_aebace6178f519dd1e5d845731ddb8063}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a72818fc3839f16f91f5499d5edba8261}{\index{Station@{Station}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Station@{Station}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Station\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Portail} $\ast$}]{portail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a72818fc3839f16f91f5499d5edba8261}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a90210e78428103adf589e8c29c8076b0}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a48179b9d9e35ab1b8039877a097db623}{\index{Station@{Station}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Station@{Station}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Station\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Station} $\ast$}]{station}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a48179b9d9e35ab1b8039877a097db623}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_adf9a2cc6ca52d89b93dbdb44ab932add}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a75c5040674bf4e5e637b9c2edd3f372d}{\index{Station@{Station}!get\-Point\-De\-Vie@{get\-Point\-De\-Vie}}
+\index{get\-Point\-De\-Vie@{get\-Point\-De\-Vie}!Station@{Station}}
+\subsubsection[{get\-Point\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Station\-::get\-Point\-De\-Vie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a75c5040674bf4e5e637b9c2edd3f372d}
+
+
+Reimplemented from \hyperlink{class_element_jeu_abstrait_a2392fe29d105fdd3888140478fed10b5}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a463b6251c8d7b0b8d8c98c79ab4560ca}{\index{Station@{Station}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Station@{Station}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Station\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerateur} $\ast$}]{accelerateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a463b6251c8d7b0b8d8c98c79ab4560ca}
+
+
+Methode pour traiter la collision si elle a lui avec les differents elements. 
+
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a22e8f47285f64372043dc89916c5eac5}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_afb8267e8ecba5ef1fb44e0c27b579c6c}{\index{Station@{Station}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Station@{Station}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Station\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Barriere} $\ast$}]{barriere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_afb8267e8ecba5ef1fb44e0c27b579c6c}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a97210da984bc5f5024f603e6aba2130f}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a51513d9c5e9e87e715b09ff54e1cadfc}{\index{Station@{Station}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Station@{Station}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Station\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Portail} $\ast$}]{portail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a51513d9c5e9e87e715b09ff54e1cadfc}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a2500f6eadb72cb87d1fdc2aa96f4d69b}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_station_a875f3d66b131cbb23849847b91c357d0}{\index{Station@{Station}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Station@{Station}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Station\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Position\-Depart} $\ast$}]{position\-Depart}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_a875f3d66b131cbb23849847b91c357d0}
+\hypertarget{class_station_acca5c637e7c9c9de3c5539ec71c853f6}{\index{Station@{Station}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Station@{Station}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Station\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Station} $\ast$}]{station}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_station_acca5c637e7c9c9de3c5539ec71c853f6}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_aa757ff192c8fb88de966112d58fdc2a9}{Element\-Jeu\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_station_8h}{Station.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_station_8cpp}{Station.\-cpp}\end{DoxyCompactItemize}

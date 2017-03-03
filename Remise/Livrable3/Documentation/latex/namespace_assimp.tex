@@ -1,0 +1,53 @@
+\hypertarget{namespace_assimp}{\section{Assimp Namespace Reference}
+\label{namespace_assimp}\index{Assimp@{Assimp}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_importer}{Importer}
+\item 
+class \hyperlink{class_assimp_1_1_default_logger}{Default\-Logger}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Primary logging facility of \hyperlink{namespace_assimp}{Assimp}. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_i_o_stream}{I\-O\-Stream}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Class to handle file I/\-O for C++. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_i_o_system}{I\-O\-System}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Interface to the file system. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_logger}{Logger}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Abstract interface for logger implementations. \hyperlink{namespace_assimp}{Assimp} provides a default implementation and uses it for almost all logging stuff ('\hyperlink{class_assimp_1_1_default_logger}{Default\-Logger}'). This class defines just basic logging behaviour and is not of interest for you. Instead, take a look at \#\-Default\-Logger. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_log_stream}{Log\-Stream}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Abstract interface for log stream implementations. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_null_logger}{Null\-Logger}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Empty logging implementation. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_progress_handler}{Progress\-Handler}
+\begin{DoxyCompactList}\small\item\em C\-P\-P-\/\-A\-P\-I\-: Abstract interface for custom progress report receivers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+A\-I\-\_\-\-W\-O\-N\-T\-\_\-\-R\-E\-T\-U\-R\-N void \hyperlink{namespace_assimp_a7e030adcc3ee4e04a2ca937ef6fd2dec}{ai\-Assert} (const std\-::string \&message, unsigned int ui\-Line, const std\-::string \&file)
+\begin{DoxyCompactList}\small\item\em A\-S\-S\-I\-M\-P specific assertion test, only works in debug mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespace_assimp}{Assimp}'s C\-P\-P-\/\-A\-P\-I and all internal A\-P\-Is 
+
+\subsection{Function Documentation}
+\hypertarget{namespace_assimp_a7e030adcc3ee4e04a2ca937ef6fd2dec}{\index{Assimp@{Assimp}!ai\-Assert@{ai\-Assert}}
+\index{ai\-Assert@{ai\-Assert}!Assimp@{Assimp}}
+\subsubsection[{ai\-Assert}]{\setlength{\rightskip}{0pt plus 5cm}A\-I\-\_\-\-W\-O\-N\-T\-\_\-\-R\-E\-T\-U\-R\-N void Assimp\-::ai\-Assert (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message, }
+\item[{unsigned int}]{ui\-Line, }
+\item[{const std\-::string \&}]{file}
+\end{DoxyParamCaption}
+)}}\label{namespace_assimp_a7e030adcc3ee4e04a2ca937ef6fd2dec}
+
+
+A\-S\-S\-I\-M\-P specific assertion test, only works in debug mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ui\-Line} & Line in file \\
+\hline
+{\em file} & Source file \\
+\hline
+\end{DoxyParams}

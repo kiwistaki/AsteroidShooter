@@ -1,0 +1,244 @@
+\hypertarget{ftmodapi_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftmodapi.h File Reference}
+\label{ftmodapi_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftmodapi.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftmodapi.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___module___class__}{F\-T\-\_\-\-Module\-\_\-\-Class\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ftmodapi_8h_a2f72fdfc44c042a5f6bd73a83603ef95}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R}~1  /$\ast$ this module is \hyperlink{glew_8h_a307708feff65d5bcfe44f8a767030677}{a} font driver  $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_a8b5aee46686cb328a2016ba7b881e9fa}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R}~2  /$\ast$ this module is \hyperlink{glew_8h_a307708feff65d5bcfe44f8a767030677}{a} renderer     $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_a37c364a3a185e0110d36f9b7fc0f9e76}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R}~4  /$\ast$ this module is \hyperlink{glew_8h_a307708feff65d5bcfe44f8a767030677}{a} glyph hinter $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_a9b8cc10d3fa3a21fe20039b65c678c6f}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R}~8  /$\ast$ this module is \hyperlink{glew_8h_a307708feff65d5bcfe44f8a767030677}{a} styler       $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_aca741c29ece879741a3866d96c6ad6d3}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E}~0x100   /$\ast$ the driver supports      $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_a97ce3a5f546b47d5483f84f4676fe8c2}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S}~0x200   /$\ast$ the driver does not      $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_a585a90d94b4afe5e6495d16f1fd1e714}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R}~0x400   /$\ast$ the driver provides its  $\ast$/
+\item 
+\#define \hyperlink{ftmodapi_8h_ace3990fdd18370d017a5fa95be3c7739}{ft\-\_\-module\-\_\-font\-\_\-driver}~\hyperlink{ftmodapi_8h_a2f72fdfc44c042a5f6bd73a83603ef95}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R}
+\item 
+\#define \hyperlink{ftmodapi_8h_ad8a81193e23ee93d6226214aa5712af8}{ft\-\_\-module\-\_\-renderer}~\hyperlink{ftmodapi_8h_a8b5aee46686cb328a2016ba7b881e9fa}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R}
+\item 
+\#define \hyperlink{ftmodapi_8h_a6d70c9946c6df6280a8388494891816c}{ft\-\_\-module\-\_\-hinter}~\hyperlink{ftmodapi_8h_a37c364a3a185e0110d36f9b7fc0f9e76}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R}
+\item 
+\#define \hyperlink{ftmodapi_8h_ac1ed24c7d23a1c94921a47219ff80edc}{ft\-\_\-module\-\_\-styler}~\hyperlink{ftmodapi_8h_a9b8cc10d3fa3a21fe20039b65c678c6f}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R}
+\item 
+\#define \hyperlink{ftmodapi_8h_a90dd2f14d410f9b3ec2485d57508fddd}{ft\-\_\-module\-\_\-driver\-\_\-scalable}~\hyperlink{ftmodapi_8h_aca741c29ece879741a3866d96c6ad6d3}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E}
+\item 
+\#define \hyperlink{ftmodapi_8h_a72570174481871c9c96669589b49da3d}{ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines}~\hyperlink{ftmodapi_8h_a97ce3a5f546b47d5483f84f4676fe8c2}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S}
+\item 
+\#define \hyperlink{ftmodapi_8h_a76a643f738edc6e899504c0b039b7713}{ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter}~\hyperlink{ftmodapi_8h_a585a90d94b4afe5e6495d16f1fd1e714}{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} \hyperlink{ftmodapi_8h_aa8a2025812ceea3715782c5907f94130}{F\-T\-\_\-\-Module\-\_\-\-Interface}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftmodapi_8h_ad4ef5dba347f945c2da944730c74cc35}{F\-T\-\_\-\-Module\-\_\-\-Constructor} )(\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\-T\-\_\-\-Module} module)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftmodapi_8h_a5ca3f2f7dea62f52c2735ace463c63d3}{F\-T\-\_\-\-Module\-\_\-\-Destructor} )(\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\-T\-\_\-\-Module} module)
+\item 
+typedef \hyperlink{ftmodapi_8h_aa8a2025812ceea3715782c5907f94130}{F\-T\-\_\-\-Module\-\_\-\-Interface}($\ast$ \hyperlink{ftmodapi_8h_a7862753074f0f521aaedd68a26a08a1f}{F\-T\-\_\-\-Module\-\_\-\-Requester} )(\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\-T\-\_\-\-Module} module, const char $\ast$\hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name})
+\item 
+typedef struct \hyperlink{struct_f_t___module___class__}{F\-T\-\_\-\-Module\-\_\-\-Class\-\_\-} \hyperlink{ftmodapi_8h_a1bdc5c23cae8b7c61c05966edc4e8343}{F\-T\-\_\-\-Module\-\_\-\-Class}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftmodapi_8h_a86349fa5682450e64690c7097cfad53a}{F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func} )(\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} $\ast$arg)
+\item 
+typedef enum \hyperlink{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babf}{F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-} \hyperlink{ftmodapi_8h_adf3d040d86c86c990ae0d14b28aa96cb}{F\-T\-\_\-\-True\-Type\-Engine\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babf}{F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-} \{ \hyperlink{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfa3474d985d315fdbc7c3f5af9ea64ece6}{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-N\-E} = 0, 
+\hyperlink{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfae6d62b51028b8c8aeff73fb6bb6cb856}{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-N\-P\-A\-T\-E\-N\-T\-E\-D}, 
+\hyperlink{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfac94f3ac4c6af8ae7750156c80a387744}{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-A\-T\-E\-N\-T\-E\-D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftmodapi_8h_a537c6119249420ea935f0e61cbee5079}{F\-T\-\_\-\-Add\-\_\-\-Module} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, const \hyperlink{ftmodapi_8h_a1bdc5c23cae8b7c61c05966edc4e8343}{F\-T\-\_\-\-Module\-\_\-\-Class} $\ast$clazz)
+\item 
+\hyperlink{ftmodapi_8h_a9aae78d37c4eadf2cd3c702ab138d3d1}{F\-T\-\_\-\-Get\-\_\-\-Module} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, const char $\ast$module\-\_\-name)
+\item 
+\hyperlink{ftmodapi_8h_a036e2fa194e8a02f2626cee7aea1ac53}{F\-T\-\_\-\-Remove\-\_\-\-Module} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\-T\-\_\-\-Module} module)
+\item 
+\hyperlink{ftmodapi_8h_aa8353d304afe1e334e512088d056cee5}{F\-T\-\_\-\-Reference\-\_\-\-Library} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library)
+\item 
+\hyperlink{ftmodapi_8h_a7bee32bd20d4e35dd5a87a169f76fc82}{F\-T\-\_\-\-New\-\_\-\-Library} (\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\-T\-\_\-\-Memory} memory, \hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} $\ast$alibrary)
+\item 
+\hyperlink{ftmodapi_8h_a682ac750d151780f186333dbd85cc2fb}{F\-T\-\_\-\-Done\-\_\-\-Library} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library)
+\item 
+\hyperlink{ftmodapi_8h_a6d63da0d3f569b3e49a2f63bb47da858}{F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} hook\-\_\-index, \hyperlink{ftmodapi_8h_a86349fa5682450e64690c7097cfad53a}{F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func} debug\-\_\-hook)
+\item 
+\hyperlink{ftmodapi_8h_a7f6a6ac2b28809bbf966b2c901fa906c}{F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library)
+\item 
+\hyperlink{ftmodapi_8h_aa25914e847cb08519aa827a119bc2297}{F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ftmodapi_8h_a585a90d94b4afe5e6495d16f1fd1e714}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R~0x400   /$\ast$ the driver provides its  $\ast$/}}\label{ftmodapi_8h_a585a90d94b4afe5e6495d16f1fd1e714}
+\hypertarget{ftmodapi_8h_a76a643f738edc6e899504c0b039b7713}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter@{ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter}}
+\index{ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter@{ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-driver\-\_\-has\-\_\-hinter~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-H\-A\-S\-\_\-\-H\-I\-N\-T\-E\-R}}}\label{ftmodapi_8h_a76a643f738edc6e899504c0b039b7713}
+\hypertarget{ftmodapi_8h_a97ce3a5f546b47d5483f84f4676fe8c2}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S~0x200   /$\ast$ the driver does not      $\ast$/}}\label{ftmodapi_8h_a97ce3a5f546b47d5483f84f4676fe8c2}
+\hypertarget{ftmodapi_8h_a72570174481871c9c96669589b49da3d}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines@{ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines}}
+\index{ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines@{ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-driver\-\_\-no\-\_\-outlines~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-N\-O\-\_\-\-O\-U\-T\-L\-I\-N\-E\-S}}}\label{ftmodapi_8h_a72570174481871c9c96669589b49da3d}
+\hypertarget{ftmodapi_8h_aca741c29ece879741a3866d96c6ad6d3}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E~0x100   /$\ast$ the driver supports      $\ast$/}}\label{ftmodapi_8h_aca741c29ece879741a3866d96c6ad6d3}
+\hypertarget{ftmodapi_8h_a90dd2f14d410f9b3ec2485d57508fddd}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-driver\-\_\-scalable@{ft\-\_\-module\-\_\-driver\-\_\-scalable}}
+\index{ft\-\_\-module\-\_\-driver\-\_\-scalable@{ft\-\_\-module\-\_\-driver\-\_\-scalable}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-driver\-\_\-scalable}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-driver\-\_\-scalable~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-D\-R\-I\-V\-E\-R\-\_\-\-S\-C\-A\-L\-A\-B\-L\-E}}}\label{ftmodapi_8h_a90dd2f14d410f9b3ec2485d57508fddd}
+\hypertarget{ftmodapi_8h_a2f72fdfc44c042a5f6bd73a83603ef95}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R~1  /$\ast$ this module is {\bf a} font driver  $\ast$/}}\label{ftmodapi_8h_a2f72fdfc44c042a5f6bd73a83603ef95}
+\hypertarget{ftmodapi_8h_ace3990fdd18370d017a5fa95be3c7739}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-font\-\_\-driver@{ft\-\_\-module\-\_\-font\-\_\-driver}}
+\index{ft\-\_\-module\-\_\-font\-\_\-driver@{ft\-\_\-module\-\_\-font\-\_\-driver}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-font\-\_\-driver}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-font\-\_\-driver~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-F\-O\-N\-T\-\_\-\-D\-R\-I\-V\-E\-R}}}\label{ftmodapi_8h_ace3990fdd18370d017a5fa95be3c7739}
+\hypertarget{ftmodapi_8h_a37c364a3a185e0110d36f9b7fc0f9e76}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R~4  /$\ast$ this module is {\bf a} glyph hinter $\ast$/}}\label{ftmodapi_8h_a37c364a3a185e0110d36f9b7fc0f9e76}
+\hypertarget{ftmodapi_8h_a6d70c9946c6df6280a8388494891816c}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-hinter@{ft\-\_\-module\-\_\-hinter}}
+\index{ft\-\_\-module\-\_\-hinter@{ft\-\_\-module\-\_\-hinter}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-hinter}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-hinter~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-H\-I\-N\-T\-E\-R}}}\label{ftmodapi_8h_a6d70c9946c6df6280a8388494891816c}
+\hypertarget{ftmodapi_8h_a8b5aee46686cb328a2016ba7b881e9fa}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R~2  /$\ast$ this module is {\bf a} renderer     $\ast$/}}\label{ftmodapi_8h_a8b5aee46686cb328a2016ba7b881e9fa}
+\hypertarget{ftmodapi_8h_ad8a81193e23ee93d6226214aa5712af8}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-renderer@{ft\-\_\-module\-\_\-renderer}}
+\index{ft\-\_\-module\-\_\-renderer@{ft\-\_\-module\-\_\-renderer}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-renderer}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-renderer~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R}}}\label{ftmodapi_8h_ad8a81193e23ee93d6226214aa5712af8}
+\hypertarget{ftmodapi_8h_a9b8cc10d3fa3a21fe20039b65c678c6f}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R}}
+\index{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R@{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R~8  /$\ast$ this module is {\bf a} styler       $\ast$/}}\label{ftmodapi_8h_a9b8cc10d3fa3a21fe20039b65c678c6f}
+\hypertarget{ftmodapi_8h_ac1ed24c7d23a1c94921a47219ff80edc}{\index{ftmodapi.\-h@{ftmodapi.\-h}!ft\-\_\-module\-\_\-styler@{ft\-\_\-module\-\_\-styler}}
+\index{ft\-\_\-module\-\_\-styler@{ft\-\_\-module\-\_\-styler}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{ft\-\_\-module\-\_\-styler}]{\setlength{\rightskip}{0pt plus 5cm}\#define ft\-\_\-module\-\_\-styler~{\bf F\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-S\-T\-Y\-L\-E\-R}}}\label{ftmodapi_8h_ac1ed24c7d23a1c94921a47219ff80edc}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftmodapi_8h_a86349fa5682450e64690c7097cfad53a}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func@{F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func@{F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func)({\bf void} $\ast$arg)}}\label{ftmodapi_8h_a86349fa5682450e64690c7097cfad53a}
+\hypertarget{ftmodapi_8h_a1bdc5c23cae8b7c61c05966edc4e8343}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Module\-\_\-\-Class@{F\-T\-\_\-\-Module\-\_\-\-Class}}
+\index{F\-T\-\_\-\-Module\-\_\-\-Class@{F\-T\-\_\-\-Module\-\_\-\-Class}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Module\-\_\-\-Class}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Module\-\_\-\-Class\-\_\-}  {\bf F\-T\-\_\-\-Module\-\_\-\-Class}}}\label{ftmodapi_8h_a1bdc5c23cae8b7c61c05966edc4e8343}
+\hypertarget{ftmodapi_8h_ad4ef5dba347f945c2da944730c74cc35}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Module\-\_\-\-Constructor@{F\-T\-\_\-\-Module\-\_\-\-Constructor}}
+\index{F\-T\-\_\-\-Module\-\_\-\-Constructor@{F\-T\-\_\-\-Module\-\_\-\-Constructor}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Module\-\_\-\-Constructor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Module\-\_\-\-Constructor)({\bf F\-T\-\_\-\-Module} module)}}\label{ftmodapi_8h_ad4ef5dba347f945c2da944730c74cc35}
+\hypertarget{ftmodapi_8h_a5ca3f2f7dea62f52c2735ace463c63d3}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Module\-\_\-\-Destructor@{F\-T\-\_\-\-Module\-\_\-\-Destructor}}
+\index{F\-T\-\_\-\-Module\-\_\-\-Destructor@{F\-T\-\_\-\-Module\-\_\-\-Destructor}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Module\-\_\-\-Destructor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Module\-\_\-\-Destructor)({\bf F\-T\-\_\-\-Module} module)}}\label{ftmodapi_8h_a5ca3f2f7dea62f52c2735ace463c63d3}
+\hypertarget{ftmodapi_8h_aa8a2025812ceea3715782c5907f94130}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Module\-\_\-\-Interface@{F\-T\-\_\-\-Module\-\_\-\-Interface}}
+\index{F\-T\-\_\-\-Module\-\_\-\-Interface@{F\-T\-\_\-\-Module\-\_\-\-Interface}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Module\-\_\-\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Pointer} {\bf F\-T\-\_\-\-Module\-\_\-\-Interface}}}\label{ftmodapi_8h_aa8a2025812ceea3715782c5907f94130}
+\hypertarget{ftmodapi_8h_a7862753074f0f521aaedd68a26a08a1f}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Module\-\_\-\-Requester@{F\-T\-\_\-\-Module\-\_\-\-Requester}}
+\index{F\-T\-\_\-\-Module\-\_\-\-Requester@{F\-T\-\_\-\-Module\-\_\-\-Requester}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Module\-\_\-\-Requester}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Module\-\_\-\-Interface}($\ast$ F\-T\-\_\-\-Module\-\_\-\-Requester)({\bf F\-T\-\_\-\-Module} module, const char $\ast${\bf name})}}\label{ftmodapi_8h_a7862753074f0f521aaedd68a26a08a1f}
+\hypertarget{ftmodapi_8h_adf3d040d86c86c990ae0d14b28aa96cb}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-True\-Type\-Engine\-Type@{F\-T\-\_\-\-True\-Type\-Engine\-Type}}
+\index{F\-T\-\_\-\-True\-Type\-Engine\-Type@{F\-T\-\_\-\-True\-Type\-Engine\-Type}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-True\-Type\-Engine\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-}  {\bf F\-T\-\_\-\-True\-Type\-Engine\-Type}}}\label{ftmodapi_8h_adf3d040d86c86c990ae0d14b28aa96cb}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babf}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-@{F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-}}
+\index{F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-@{F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-T\-\_\-\-True\-Type\-Engine\-Type\-\_\-}}}\label{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babf}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-N\-E@{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-N\-E}!ftmodapi.\-h@{ftmodapi.\-h}}\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-N\-E@{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfa3474d985d315fdbc7c3f5af9ea64ece6}{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-N\-O\-N\-E}\label{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfa3474d985d315fdbc7c3f5af9ea64ece6}
+}]\index{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-N\-P\-A\-T\-E\-N\-T\-E\-D@{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-N\-P\-A\-T\-E\-N\-T\-E\-D}!ftmodapi.\-h@{ftmodapi.\-h}}\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-N\-P\-A\-T\-E\-N\-T\-E\-D@{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-N\-P\-A\-T\-E\-N\-T\-E\-D}}\item[{\em 
+\hypertarget{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfae6d62b51028b8c8aeff73fb6bb6cb856}{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-N\-P\-A\-T\-E\-N\-T\-E\-D}\label{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfae6d62b51028b8c8aeff73fb6bb6cb856}
+}]\index{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-A\-T\-E\-N\-T\-E\-D@{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-A\-T\-E\-N\-T\-E\-D}!ftmodapi.\-h@{ftmodapi.\-h}}\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-A\-T\-E\-N\-T\-E\-D@{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-A\-T\-E\-N\-T\-E\-D}}\item[{\em 
+\hypertarget{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfac94f3ac4c6af8ae7750156c80a387744}{F\-T\-\_\-\-T\-R\-U\-E\-T\-Y\-P\-E\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-A\-T\-E\-N\-T\-E\-D}\label{ftmodapi_8h_a3f082b7c96ec929b8b1fb3cd1e25babfac94f3ac4c6af8ae7750156c80a387744}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ftmodapi_8h_a7f6a6ac2b28809bbf966b2c901fa906c}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules@{F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules}}
+\index{F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules@{F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Add\-\_\-\-Default\-\_\-\-Modules (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a7f6a6ac2b28809bbf966b2c901fa906c}
+\hypertarget{ftmodapi_8h_a537c6119249420ea935f0e61cbee5079}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Add\-\_\-\-Module@{F\-T\-\_\-\-Add\-\_\-\-Module}}
+\index{F\-T\-\_\-\-Add\-\_\-\-Module@{F\-T\-\_\-\-Add\-\_\-\-Module}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Add\-\_\-\-Module}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Add\-\_\-\-Module (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{const {\bf F\-T\-\_\-\-Module\-\_\-\-Class} $\ast$}]{clazz}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a537c6119249420ea935f0e61cbee5079}
+\hypertarget{ftmodapi_8h_a682ac750d151780f186333dbd85cc2fb}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Done\-\_\-\-Library@{F\-T\-\_\-\-Done\-\_\-\-Library}}
+\index{F\-T\-\_\-\-Done\-\_\-\-Library@{F\-T\-\_\-\-Done\-\_\-\-Library}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Done\-\_\-\-Library}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Done\-\_\-\-Library (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a682ac750d151780f186333dbd85cc2fb}
+\hypertarget{ftmodapi_8h_a9aae78d37c4eadf2cd3c702ab138d3d1}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Get\-\_\-\-Module@{F\-T\-\_\-\-Get\-\_\-\-Module}}
+\index{F\-T\-\_\-\-Get\-\_\-\-Module@{F\-T\-\_\-\-Get\-\_\-\-Module}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-Module}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Get\-\_\-\-Module (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{const char $\ast$}]{module\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a9aae78d37c4eadf2cd3c702ab138d3d1}
+\hypertarget{ftmodapi_8h_aa25914e847cb08519aa827a119bc2297}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type@{F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type}}
+\index{F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type@{F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Get\-\_\-\-True\-Type\-\_\-\-Engine\-\_\-\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_aa25914e847cb08519aa827a119bc2297}
+\hypertarget{ftmodapi_8h_a7bee32bd20d4e35dd5a87a169f76fc82}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-New\-\_\-\-Library@{F\-T\-\_\-\-New\-\_\-\-Library}}
+\index{F\-T\-\_\-\-New\-\_\-\-Library@{F\-T\-\_\-\-New\-\_\-\-Library}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-New\-\_\-\-Library}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-New\-\_\-\-Library (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Memory}}]{memory, }
+\item[{{\bf F\-T\-\_\-\-Library} $\ast$}]{alibrary}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a7bee32bd20d4e35dd5a87a169f76fc82}
+\hypertarget{ftmodapi_8h_aa8353d304afe1e334e512088d056cee5}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Reference\-\_\-\-Library@{F\-T\-\_\-\-Reference\-\_\-\-Library}}
+\index{F\-T\-\_\-\-Reference\-\_\-\-Library@{F\-T\-\_\-\-Reference\-\_\-\-Library}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Reference\-\_\-\-Library}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Reference\-\_\-\-Library (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_aa8353d304afe1e334e512088d056cee5}
+\hypertarget{ftmodapi_8h_a036e2fa194e8a02f2626cee7aea1ac53}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Remove\-\_\-\-Module@{F\-T\-\_\-\-Remove\-\_\-\-Module}}
+\index{F\-T\-\_\-\-Remove\-\_\-\-Module@{F\-T\-\_\-\-Remove\-\_\-\-Module}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Remove\-\_\-\-Module}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Remove\-\_\-\-Module (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{{\bf F\-T\-\_\-\-Module}}]{module}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a036e2fa194e8a02f2626cee7aea1ac53}
+\hypertarget{ftmodapi_8h_a6d63da0d3f569b3e49a2f63bb47da858}{\index{ftmodapi.\-h@{ftmodapi.\-h}!F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook@{F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook}}
+\index{F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook@{F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook}!ftmodapi.h@{ftmodapi.\-h}}
+\subsubsection[{F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-Set\-\_\-\-Debug\-\_\-\-Hook (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{hook\-\_\-index, }
+\item[{{\bf F\-T\-\_\-\-Debug\-Hook\-\_\-\-Func}}]{debug\-\_\-hook}
+\end{DoxyParamCaption}
+)}}\label{ftmodapi_8h_a6d63da0d3f569b3e49a2f63bb47da858}

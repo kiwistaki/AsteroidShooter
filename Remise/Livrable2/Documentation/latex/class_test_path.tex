@@ -1,0 +1,538 @@
+\hypertarget{class_test_path}{\section{Test\-Path Class Reference}
+\label{class_test_path}\index{Test\-Path@{Test\-Path}}
+}
+
+
+A List of \hyperlink{class_test}{Test} representing a path to access a \hyperlink{class_test}{Test}.
+
+The path can be converted to a string and resolved from a string with \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()} and \hyperlink{class_test_path_a5855701e39a328a19f9780a130106cb3}{Test\-Path( Test $\ast$root, const std\-::string \&path\-As\-String )}.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Path.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_path_ab1fd9894ea271a225b95384497bc420e}{Test\-Path} ()
+\begin{DoxyCompactList}\small\item\em Constructs an invalid path. \end{DoxyCompactList}\item 
+\hyperlink{class_test_path_a12d673c5e1e107cdc7746264d01234d8}{Test\-Path} (\hyperlink{class_test}{Test} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Constructs a valid path. \end{DoxyCompactList}\item 
+\hyperlink{class_test_path_a88605df3449265ce0dd0533399cc2b6d}{Test\-Path} (const \hyperlink{class_test_path}{Test\-Path} \&other\-Path, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} index\-First, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_free_image_8h_a10b284d589000663becfbc6867a3a9f7}{count}=-\/1)
+\begin{DoxyCompactList}\small\item\em Constructs a path using a slice of another path. \end{DoxyCompactList}\item 
+\hyperlink{class_test_path_a5855701e39a328a19f9780a130106cb3}{Test\-Path} (\hyperlink{class_test}{Test} $\ast$search\-Root, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&path\-As\-String)
+\begin{DoxyCompactList}\small\item\em Resolves a path from a string returned by \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()}. \end{DoxyCompactList}\item 
+\hyperlink{class_test_path_a616f81a2ed0ddeb1dbb6f83d0b58ee47}{Test\-Path} (const \hyperlink{class_test_path}{Test\-Path} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test_path_aae2b4ad848df0da549059e6ab146eca2}{$\sim$\-Test\-Path} ()
+\item 
+virtual bool \hyperlink{class_test_path_aca6ad4784df09af24573890d2d145435}{is\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em Tests if the path contains at least one test. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_a0a8a6273d18f76da2c7e2dedf61b3f7b}{add} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Adds a test to the path. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_a679447e57ea80c9a767a41f0b723b427}{add} (const \hyperlink{class_test_path}{Test\-Path} \&\hyperlink{glew_8h_ae517c090b864e6b2846c380c4125f4c5}{path})
+\begin{DoxyCompactList}\small\item\em Adds all the tests of the specified path. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_a6591fc81038f8b29e64becbfe1e2f740}{insert} (\hyperlink{class_test}{Test} $\ast$test, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index})
+\begin{DoxyCompactList}\small\item\em Inserts a test at the specified index. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_af107ea8a2ce40414e1d59a05c6deec0c}{insert} (const \hyperlink{class_test_path}{Test\-Path} \&\hyperlink{glew_8h_ae517c090b864e6b2846c380c4125f4c5}{path}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index})
+\begin{DoxyCompactList}\small\item\em Inserts all the tests at the specified path at a given index. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_a98bbd84f8dea8793cfda496ecea1be75}{remove\-Tests} ()
+\begin{DoxyCompactList}\small\item\em Removes all the test from the path. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_afd1769a314ef84b6cbdd01af35009a0e}{remove\-Test} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index})
+\begin{DoxyCompactList}\small\item\em Removes the test at the specified index of the path. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_a396e9d13b59f5e534582e80e3f1a2c42}{up} ()
+\begin{DoxyCompactList}\small\item\em Removes the last test. 
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is the path is invalid. \\
+\hline
+\end{DoxyExceptions}
+\end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_path_aab585e5b6dcc541fd92701173de5628b}{get\-Test\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of tests in the path. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_path_a320c9cb5c72b21b59f98fa4c956d0c0b}{get\-Test\-At} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\begin{DoxyCompactList}\small\item\em Returns the test of the specified index. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_path_abd8fdd67607d785e26e844ee0b90366c}{get\-Child\-Test} () const 
+\begin{DoxyCompactList}\small\item\em Get the last test of the path. \end{DoxyCompactList}\item 
+virtual \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Returns the path as a string. \end{DoxyCompactList}\item 
+\hyperlink{class_test_path}{Test\-Path} \& \hyperlink{class_test_path_aff11ba5cda48eb2a9c657e848650945f}{operator=} (const \hyperlink{class_test_path}{Test\-Path} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_cpp_unit_deque_8h_a3425728ebb9dff4afd4dcb7e6f270905}{Cpp\-Unit\-Deque}$<$ \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} $>$ \hyperlink{class_test_path_a525c33f5b897710bf37cf593160e562a}{Path\-Test\-Names}
+\begin{DoxyCompactList}\small\item\em A list of test names. \end{DoxyCompactList}\item 
+typedef \hyperlink{_cpp_unit_deque_8h_a3425728ebb9dff4afd4dcb7e6f270905}{Cpp\-Unit\-Deque}$<$ \hyperlink{class_test}{Test} $\ast$ $>$ \hyperlink{class_test_path_aa1f2a0a7e01597a16ed041776297fbdf}{Tests}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_path_aebf839170b1a9e8199dd26f307028b6a}{check\-Index\-Valid} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\begin{DoxyCompactList}\small\item\em Checks that the specified test index is within valid range. \end{DoxyCompactList}\item 
+bool \hyperlink{class_test_path_a7b65b26e7287763ca94ff0fadca37652}{split\-Path\-String} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&path\-As\-String, \hyperlink{class_test_path_a525c33f5b897710bf37cf593160e562a}{Path\-Test\-Names} \&test\-Names)
+\begin{DoxyCompactList}\small\item\em Splits a path string into its test name components. \end{DoxyCompactList}\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_path_a4fb2b835af58884dc718a3692f013868}{find\-Actual\-Root} (\hyperlink{class_test}{Test} $\ast$search\-Root, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&path\-As\-String, \hyperlink{class_test_path_a525c33f5b897710bf37cf593160e562a}{Path\-Test\-Names} \&test\-Names)
+\begin{DoxyCompactList}\small\item\em Finds the actual root of a path string and get the path string name components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_path_aa1f2a0a7e01597a16ed041776297fbdf}{Tests} \hyperlink{class_test_path_aeda882fdb18011525ab63a6543648090}{m\-\_\-tests}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A List of \hyperlink{class_test}{Test} representing a path to access a \hyperlink{class_test}{Test}.
+
+The path can be converted to a string and resolved from a string with \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()} and \hyperlink{class_test_path_a5855701e39a328a19f9780a130106cb3}{Test\-Path( Test $\ast$root, const std\-::string \&path\-As\-String )}. 
+
+Pointed tests are not owned by the class.
+
+\begin{DoxySeeAlso}{See Also}
+Test\-::resolved\-Test\-Path() 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_test_path_a525c33f5b897710bf37cf593160e562a}{\index{Test\-Path@{Test\-Path}!Path\-Test\-Names@{Path\-Test\-Names}}
+\index{Path\-Test\-Names@{Path\-Test\-Names}!TestPath@{Test\-Path}}
+\subsubsection[{Path\-Test\-Names}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cpp\-Unit\-Deque}$<${\bf std\-::string}$>$ {\bf Test\-Path\-::\-Path\-Test\-Names}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_path_a525c33f5b897710bf37cf593160e562a}
+
+
+A list of test names. 
+
+\hypertarget{class_test_path_aa1f2a0a7e01597a16ed041776297fbdf}{\index{Test\-Path@{Test\-Path}!Tests@{Tests}}
+\index{Tests@{Tests}!TestPath@{Test\-Path}}
+\subsubsection[{Tests}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cpp\-Unit\-Deque}$<${\bf Test} $\ast$$>$ {\bf Test\-Path\-::\-Tests}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_path_aa1f2a0a7e01597a16ed041776297fbdf}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_path_ab1fd9894ea271a225b95384497bc420e}{\index{Test\-Path@{Test\-Path}!Test\-Path@{Test\-Path}}
+\index{Test\-Path@{Test\-Path}!TestPath@{Test\-Path}}
+\subsubsection[{Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Path\-::\-Test\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_test_path_ab1fd9894ea271a225b95384497bc420e}
+
+
+Constructs an invalid path. 
+
+The path is invalid until a test is added with \hyperlink{class_test_path_a0a8a6273d18f76da2c7e2dedf61b3f7b}{add()}. \hypertarget{class_test_path_a12d673c5e1e107cdc7746264d01234d8}{\index{Test\-Path@{Test\-Path}!Test\-Path@{Test\-Path}}
+\index{Test\-Path@{Test\-Path}!TestPath@{Test\-Path}}
+\subsubsection[{Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Path\-::\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{class_test_path_a12d673c5e1e107cdc7746264d01234d8}
+
+
+Constructs a valid path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \hyperlink{class_test}{Test} to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_path_a88605df3449265ce0dd0533399cc2b6d}{\index{Test\-Path@{Test\-Path}!Test\-Path@{Test\-Path}}
+\index{Test\-Path@{Test\-Path}!TestPath@{Test\-Path}}
+\subsubsection[{Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Path\-::\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Path} \&}]{other\-Path, }
+\item[{{\bf int}}]{index\-First, }
+\item[{{\bf int}}]{count = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{class_test_path_a88605df3449265ce0dd0533399cc2b6d}
+
+
+Constructs a path using a slice of another path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\-Path} & Path the test are copied from. \\
+\hline
+{\em index\-First} & Zero based index of the first test to copy. Adjusted to be in valid range. {\itshape count} is adjusted with {\itshape index\-First}. \\
+\hline
+{\em count} & Number of tests to copy. If $<$ 0 then all test starting from index {\itshape index\-First} are copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_path_a5855701e39a328a19f9780a130106cb3}{\index{Test\-Path@{Test\-Path}!Test\-Path@{Test\-Path}}
+\index{Test\-Path@{Test\-Path}!TestPath@{Test\-Path}}
+\subsubsection[{Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Path\-::\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{search\-Root, }
+\item[{const {\bf std\-::string} \&}]{path\-As\-String}
+\end{DoxyParamCaption}
+)}}\label{class_test_path_a5855701e39a328a19f9780a130106cb3}
+
+
+Resolves a path from a string returned by \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()}. 
+
+If {\itshape path\-As\-String} is an absolute path (begins with '/'), then the first test name of the path must be the name of {\itshape search\-Root}. Otherwise, {\itshape path\-As\-String} is a relative path, and the first test found using \hyperlink{class_test_a4182e55e98622e6daf5460e5c948dc82}{Test\-::find\-Test()} matching the first test name is used as root. An empty string resolve to a path containing {\itshape search\-Root}.
+
+The resolved path is always valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\-Root} & \hyperlink{class_test}{Test} used to resolve the path. \\
+\hline
+{\em path\-As\-String} & String that contains the path as a string created by \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if one of the test names can not be resolved. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()}. 
+\end{DoxySeeAlso}
+\hypertarget{class_test_path_a616f81a2ed0ddeb1dbb6f83d0b58ee47}{\index{Test\-Path@{Test\-Path}!Test\-Path@{Test\-Path}}
+\index{Test\-Path@{Test\-Path}!TestPath@{Test\-Path}}
+\subsubsection[{Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Path\-::\-Test\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Path} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_test_path_a616f81a2ed0ddeb1dbb6f83d0b58ee47}
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Object to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_path_aae2b4ad848df0da549059e6ab146eca2}{\index{Test\-Path@{Test\-Path}!$\sim$\-Test\-Path@{$\sim$\-Test\-Path}}
+\index{$\sim$\-Test\-Path@{$\sim$\-Test\-Path}!TestPath@{Test\-Path}}
+\subsubsection[{$\sim$\-Test\-Path}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-Path\-::$\sim$\-Test\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_aae2b4ad848df0da549059e6ab146eca2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_path_a0a8a6273d18f76da2c7e2dedf61b3f7b}{\index{Test\-Path@{Test\-Path}!add@{add}}
+\index{add@{add}!TestPath@{Test\-Path}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a0a8a6273d18f76da2c7e2dedf61b3f7b}
+
+
+Adds a test to the path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & Pointer on the test to add. Must not be {\ttfamily N\-U\-L\-L}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_path_a679447e57ea80c9a767a41f0b723b427}{\index{Test\-Path@{Test\-Path}!add@{add}}
+\index{add@{add}!TestPath@{Test\-Path}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Path} \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a679447e57ea80c9a767a41f0b723b427}
+
+
+Adds all the tests of the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path that contains the test to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_test_path_aebf839170b1a9e8199dd26f307028b6a}{\index{Test\-Path@{Test\-Path}!check\-Index\-Valid@{check\-Index\-Valid}}
+\index{check\-Index\-Valid@{check\-Index\-Valid}!TestPath@{Test\-Path}}
+\subsubsection[{check\-Index\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Path\-::check\-Index\-Valid (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_path_aebf839170b1a9e8199dd26f307028b6a}
+
+
+Checks that the specified test index is within valid range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based index to check. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} $<$ 0 or {\itshape index} $>$= \hyperlink{class_test_path_aab585e5b6dcc541fd92701173de5628b}{get\-Test\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_a4fb2b835af58884dc718a3692f013868}{\index{Test\-Path@{Test\-Path}!find\-Actual\-Root@{find\-Actual\-Root}}
+\index{find\-Actual\-Root@{find\-Actual\-Root}!TestPath@{Test\-Path}}
+\subsubsection[{find\-Actual\-Root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Path\-::find\-Actual\-Root (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{search\-Root, }
+\item[{const {\bf std\-::string} \&}]{path\-As\-String, }
+\item[{{\bf Path\-Test\-Names} \&}]{test\-Names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_path_a4fb2b835af58884dc718a3692f013868}
+
+
+Finds the actual root of a path string and get the path string name components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\-Root} & \hyperlink{class_test}{Test} used as root if the path string is absolute, or to search the root test if the path string is relative. \\
+\hline
+{\em path\-As\-String} & Path string. May be absolute or relative. \\
+\hline
+{\em test\-Names} & \hyperlink{class_test}{Test} name components are added to that container. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the resolved root test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::invalid\-\_\-argument} & if either the root name can not be resolved or if path\-As\-String contains no name components. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_abd8fdd67607d785e26e844ee0b90366c}{\index{Test\-Path@{Test\-Path}!get\-Child\-Test@{get\-Child\-Test}}
+\index{get\-Child\-Test@{get\-Child\-Test}!TestPath@{Test\-Path}}
+\subsubsection[{get\-Child\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test}$\ast$ Test\-Path\-::get\-Child\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_abd8fdd67607d785e26e844ee0b90366c}
+
+
+Get the last test of the path. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on the last test (test at the bottom of the hierarchy). Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & if the path is not valid ( \hyperlink{class_test_path_aca6ad4784df09af24573890d2d145435}{is\-Valid()} returns {\ttfamily false} ). \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_a320c9cb5c72b21b59f98fa4c956d0c0b}{\index{Test\-Path@{Test\-Path}!get\-Test\-At@{get\-Test\-At}}
+\index{get\-Test\-At@{get\-Test\-At}!TestPath@{Test\-Path}}
+\subsubsection[{get\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Test}$\ast$ Test\-Path\-::get\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a320c9cb5c72b21b59f98fa4c956d0c0b}
+
+
+Returns the test of the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based index of the test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test at index {\itshape index}. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} $<$ 0 or {\itshape index} $>$= \hyperlink{class_test_path_aab585e5b6dcc541fd92701173de5628b}{get\-Test\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_aab585e5b6dcc541fd92701173de5628b}{\index{Test\-Path@{Test\-Path}!get\-Test\-Count@{get\-Test\-Count}}
+\index{get\-Test\-Count@{get\-Test\-Count}!TestPath@{Test\-Path}}
+\subsubsection[{get\-Test\-Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} Test\-Path\-::get\-Test\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_aab585e5b6dcc541fd92701173de5628b}
+
+
+Returns the number of tests in the path. 
+
+\begin{DoxyReturn}{Returns}
+Number of tests in the path. 
+\end{DoxyReturn}
+\hypertarget{class_test_path_a6591fc81038f8b29e64becbfe1e2f740}{\index{Test\-Path@{Test\-Path}!insert@{insert}}
+\index{insert@{insert}!TestPath@{Test\-Path}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{test, }
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a6591fc81038f8b29e64becbfe1e2f740}
+
+
+Inserts a test at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & Pointer on the test to insert. Must not be {\ttfamily N\-U\-L\-L}. \\
+\hline
+{\em index} & Zero based index indicating where the test is inserted. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} $<$ 0 or {\itshape index} $>$ \hyperlink{class_test_path_aab585e5b6dcc541fd92701173de5628b}{get\-Test\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_af107ea8a2ce40414e1d59a05c6deec0c}{\index{Test\-Path@{Test\-Path}!insert@{insert}}
+\index{insert@{insert}!TestPath@{Test\-Path}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::insert (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Path} \&}]{path, }
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_af107ea8a2ce40414e1d59a05c6deec0c}
+
+
+Inserts all the tests at the specified path at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path that contains the test to insert. \\
+\hline
+{\em index} & Zero based index indicating where the tests are inserted. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} $<$ 0 or {\itshape index} $>$ \hyperlink{class_test_path_aab585e5b6dcc541fd92701173de5628b}{get\-Test\-Count()}, and {\itshape path} is valid. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_aca6ad4784df09af24573890d2d145435}{\index{Test\-Path@{Test\-Path}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!TestPath@{Test\-Path}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Test\-Path\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_aca6ad4784df09af24573890d2d145435}
+
+
+Tests if the path contains at least one test. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the path contains at least one test, otherwise returns {\ttfamily false}. 
+\end{DoxyReturn}
+\hypertarget{class_test_path_aff11ba5cda48eb2a9c657e848650945f}{\index{Test\-Path@{Test\-Path}!operator=@{operator=}}
+\index{operator=@{operator=}!TestPath@{Test\-Path}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Path}\& Test\-Path\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Path} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_test_path_aff11ba5cda48eb2a9c657e848650945f}
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Object to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This object. 
+\end{DoxyReturn}
+\hypertarget{class_test_path_afd1769a314ef84b6cbdd01af35009a0e}{\index{Test\-Path@{Test\-Path}!remove\-Test@{remove\-Test}}
+\index{remove\-Test@{remove\-Test}!TestPath@{Test\-Path}}
+\subsubsection[{remove\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::remove\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_afd1769a314ef84b6cbdd01af35009a0e}
+
+
+Removes the test at the specified index of the path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based index of the test to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is {\itshape index} $<$ 0 or {\itshape index} $>$= \hyperlink{class_test_path_aab585e5b6dcc541fd92701173de5628b}{get\-Test\-Count()}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_test_path_a98bbd84f8dea8793cfda496ecea1be75}{\index{Test\-Path@{Test\-Path}!remove\-Tests@{remove\-Tests}}
+\index{remove\-Tests@{remove\-Tests}!TestPath@{Test\-Path}}
+\subsubsection[{remove\-Tests}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::remove\-Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a98bbd84f8dea8793cfda496ecea1be75}
+
+
+Removes all the test from the path. 
+
+The path becomes invalid after this call. \hypertarget{class_test_path_a7b65b26e7287763ca94ff0fadca37652}{\index{Test\-Path@{Test\-Path}!split\-Path\-String@{split\-Path\-String}}
+\index{split\-Path\-String@{split\-Path\-String}!TestPath@{Test\-Path}}
+\subsubsection[{split\-Path\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool Test\-Path\-::split\-Path\-String (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{path\-As\-String, }
+\item[{{\bf Path\-Test\-Names} \&}]{test\-Names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_path_a7b65b26e7287763ca94ff0fadca37652}
+
+
+Splits a path string into its test name components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\-As\-String} & Path string created with \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()}. \\
+\hline
+{\em test\-Names} & \hyperlink{class_test}{Test} name components are added to that container. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the path is relative (does not begin with '/'), {\ttfamily false} if it is absolute (begin with '/'). 
+\end{DoxyReturn}
+\hypertarget{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{\index{Test\-Path@{Test\-Path}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!TestPath@{Test\-Path}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf std\-::string} Test\-Path\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a75ec4a351f0734cefbf449325d7442ee}
+
+
+Returns the path as a string. 
+
+For example, if a path is composed of three tests named \char`\"{}\-All Tests\char`\"{}, \char`\"{}\-Math\char`\"{} and \char`\"{}\-Math\-::test\-Add\char`\"{}, \hyperlink{class_test_path_a75ec4a351f0734cefbf449325d7442ee}{to\-String()} will return\-:
+
+\char`\"{}\-All Tests/\-Math/\-Math\-::test\-Add\char`\"{}.
+
+\begin{DoxyReturn}{Returns}
+A string composed of the test names separated with a '/'. It is a relative path. 
+\end{DoxyReturn}
+\hypertarget{class_test_path_a396e9d13b59f5e534582e80e3f1a2c42}{\index{Test\-Path@{Test\-Path}!up@{up}}
+\index{up@{up}!TestPath@{Test\-Path}}
+\subsubsection[{up}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Test\-Path\-::up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_path_a396e9d13b59f5e534582e80e3f1a2c42}
+
+
+Removes the last test. 
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::out\-\_\-of\-\_\-range} & is the path is invalid. \\
+\hline
+\end{DoxyExceptions}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_path_aca6ad4784df09af24573890d2d145435}{is\-Valid()}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_test_path_aeda882fdb18011525ab63a6543648090}{\index{Test\-Path@{Test\-Path}!m\-\_\-tests@{m\-\_\-tests}}
+\index{m\-\_\-tests@{m\-\_\-tests}!TestPath@{Test\-Path}}
+\subsubsection[{m\-\_\-tests}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tests} Test\-Path\-::m\-\_\-tests\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_path_aeda882fdb18011525ab63a6543648090}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_path_8h}{Test\-Path.\-h}\end{DoxyCompactItemize}

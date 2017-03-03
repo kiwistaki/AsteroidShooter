@@ -1,0 +1,139 @@
+\hypertarget{class_assimp_1_1_null_logger}{\section{Assimp\-:\-:Null\-Logger Class Reference}
+\label{class_assimp_1_1_null_logger}\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}}
+}
+
+
+C\-P\-P-\/\-A\-P\-I\-: Empty logging implementation.  
+
+
+
+
+{\ttfamily \#include $<$Null\-Logger.\-h$>$}
+
+Inheritance diagram for Assimp\-:\-:Null\-Logger\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_assimp_1_1_null_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_null_logger_af354ebbd382b7097a55d364794a45631}{On\-Debug} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Logs a debug message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_null_logger_a12d2b0048d17a819c8c00277ad1394c5}{On\-Info} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Logs an info message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_null_logger_a9a04c2b9e3d4bc9eec8f693ed8115f24}{On\-Warn} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Logs a warning message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_null_logger_a4fbf66103757fafcff891fb04b4ee714}{On\-Error} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Logs an error message. \end{DoxyCompactList}\item 
+bool \hyperlink{class_assimp_1_1_null_logger_a31c05ecaee392b5fd34fd2dfd1cca559}{attach\-Stream} (\hyperlink{class_assimp_1_1_log_stream}{Log\-Stream} $\ast$p\-Stream, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_acc39d4387d4f2d172de77ed0c5208990}{severity})
+\begin{DoxyCompactList}\small\item\em Detach a still attached stream from logger. \end{DoxyCompactList}\item 
+bool \hyperlink{class_assimp_1_1_null_logger_ab49b14a0045aab73b813a448b5aa77b4}{detatch\-Stream} (\hyperlink{class_assimp_1_1_log_stream}{Log\-Stream} $\ast$p\-Stream, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_acc39d4387d4f2d172de77ed0c5208990}{severity})
+\begin{DoxyCompactList}\small\item\em Detach a still attached stream from logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+C\-P\-P-\/\-A\-P\-I\-: Empty logging implementation. 
+
+Does nothing! Used by default if the application hasn't requested a custom logger via \#\-Default\-Logger\-::set() or \#\-Default\-Logger\-::create(); 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_null_logger_a31c05ecaee392b5fd34fd2dfd1cca559}{\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}!attach\-Stream@{attach\-Stream}}
+\index{attach\-Stream@{attach\-Stream}!Assimp::NullLogger@{Assimp\-::\-Null\-Logger}}
+\subsubsection[{attach\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\-::\-Null\-Logger\-::attach\-Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\-Stream} $\ast$}]{p\-Stream, }
+\item[{{\bf unsigned} {\bf int}}]{severity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_null_logger_a31c05ecaee392b5fd34fd2dfd1cca559}
+
+
+Detach a still attached stream from logger. 
+
+
+
+Implements \hyperlink{class_assimp_1_1_logger_a56fbf4f392712f06d3c5bb581c3f3906}{Assimp\-::\-Logger}.
+
+\hypertarget{class_assimp_1_1_null_logger_ab49b14a0045aab73b813a448b5aa77b4}{\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}!detatch\-Stream@{detatch\-Stream}}
+\index{detatch\-Stream@{detatch\-Stream}!Assimp::NullLogger@{Assimp\-::\-Null\-Logger}}
+\subsubsection[{detatch\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\-::\-Null\-Logger\-::detatch\-Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\-Stream} $\ast$}]{p\-Stream, }
+\item[{{\bf unsigned} {\bf int}}]{severity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_null_logger_ab49b14a0045aab73b813a448b5aa77b4}
+
+
+Detach a still attached stream from logger. 
+
+
+
+Implements \hyperlink{class_assimp_1_1_logger_ac89b2edd326dda9046fe9d4e1f4d10fc}{Assimp\-::\-Logger}.
+
+\hypertarget{class_assimp_1_1_null_logger_af354ebbd382b7097a55d364794a45631}{\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}!On\-Debug@{On\-Debug}}
+\index{On\-Debug@{On\-Debug}!Assimp::NullLogger@{Assimp\-::\-Null\-Logger}}
+\subsubsection[{On\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Null\-Logger\-::\-On\-Debug (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_null_logger_af354ebbd382b7097a55d364794a45631}
+
+
+Logs a debug message. 
+
+
+
+Implements \hyperlink{class_assimp_1_1_logger_aded6996d20f14204877097b88bd5eac6}{Assimp\-::\-Logger}.
+
+\hypertarget{class_assimp_1_1_null_logger_a4fbf66103757fafcff891fb04b4ee714}{\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}!On\-Error@{On\-Error}}
+\index{On\-Error@{On\-Error}!Assimp::NullLogger@{Assimp\-::\-Null\-Logger}}
+\subsubsection[{On\-Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Null\-Logger\-::\-On\-Error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_null_logger_a4fbf66103757fafcff891fb04b4ee714}
+
+
+Logs an error message. 
+
+
+
+Implements \hyperlink{class_assimp_1_1_logger_ae2ea0790aba6125b90af0f2768b0759d}{Assimp\-::\-Logger}.
+
+\hypertarget{class_assimp_1_1_null_logger_a12d2b0048d17a819c8c00277ad1394c5}{\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}!On\-Info@{On\-Info}}
+\index{On\-Info@{On\-Info}!Assimp::NullLogger@{Assimp\-::\-Null\-Logger}}
+\subsubsection[{On\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Null\-Logger\-::\-On\-Info (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_null_logger_a12d2b0048d17a819c8c00277ad1394c5}
+
+
+Logs an info message. 
+
+
+
+Implements \hyperlink{class_assimp_1_1_logger_aba81c4562ff8db83f06c6b62f2eb7983}{Assimp\-::\-Logger}.
+
+\hypertarget{class_assimp_1_1_null_logger_a9a04c2b9e3d4bc9eec8f693ed8115f24}{\index{Assimp\-::\-Null\-Logger@{Assimp\-::\-Null\-Logger}!On\-Warn@{On\-Warn}}
+\index{On\-Warn@{On\-Warn}!Assimp::NullLogger@{Assimp\-::\-Null\-Logger}}
+\subsubsection[{On\-Warn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Null\-Logger\-::\-On\-Warn (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_null_logger_a9a04c2b9e3d4bc9eec8f693ed8115f24}
+
+
+Logs a warning message. 
+
+
+
+Implements \hyperlink{class_assimp_1_1_logger_ab8066978dd37992f711d75d49cf4607b}{Assimp\-::\-Logger}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/assimp/include/\hyperlink{_null_logger_8h}{Null\-Logger.\-h}\end{DoxyCompactItemize}

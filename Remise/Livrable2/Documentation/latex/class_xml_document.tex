@@ -1,0 +1,185 @@
+\hypertarget{class_xml_document}{\section{Xml\-Document Class Reference}
+\label{class_xml_document}\index{Xml\-Document@{Xml\-Document}}
+}
+
+
+A X\-M\-L Document.  
+
+
+
+
+{\ttfamily \#include $<$Xml\-Document.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_xml_document_a3bc4c5ea5f22b4ff8776422125b31d42}{Xml\-Document} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_xml_document_a5063b9dc310ed5ed7a38b77f8584a50c}{encoding}=\char`\"{}\char`\"{}, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_xml_document_ae0a7e5e1f28b179c31bee66481b18c03}{style\-Sheet}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_xml_document}{Xml\-Document} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_xml_document_a5c95c959091f1ae826b8698ba0c3416c}{$\sim$\-Xml\-Document} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_xml_document_a5063b9dc310ed5ed7a38b77f8584a50c}{encoding} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_xml_document_afb4401e77f67626533ba7409a011c508}{set\-Encoding} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_xml_document_a5063b9dc310ed5ed7a38b77f8584a50c}{encoding}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_xml_document_ae0a7e5e1f28b179c31bee66481b18c03}{style\-Sheet} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_xml_document_a63cfdd276a9812900cd7739758effd78}{set\-Style\-Sheet} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_xml_document_ae0a7e5e1f28b179c31bee66481b18c03}{style\-Sheet}=\char`\"{}\char`\"{})
+\item 
+bool \hyperlink{class_xml_document_ab3ff5eb5c5df20453b4fc6f5b9bcff6e}{standalone} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_xml_document_a3cc9d3452daba0bda758ee7add075827}{set\-Standalone} (bool \hyperlink{class_xml_document_ab3ff5eb5c5df20453b4fc6f5b9bcff6e}{standalone})
+\begin{DoxyCompactList}\small\item\em set the output document as standalone or not. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_xml_document_a2b419770905e48914ed6dba3990061cd}{set\-Root\-Element} (\hyperlink{class_xml_element}{Xml\-Element} $\ast$\hyperlink{class_xml_document_a87f0ea5104985af47f6a2aea5517aeb9}{root\-Element})
+\item 
+\hyperlink{class_xml_element}{Xml\-Element} \& \hyperlink{class_xml_document_a87f0ea5104985af47f6a2aea5517aeb9}{root\-Element} () const 
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_xml_document_aa75e20c19ee0719af2e5b573db02f5a4}{to\-String} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_xml_document_a3a5338a6b02b176a3d50e6665ce1b41d}{m\-\_\-encoding}
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_xml_document_a8564bf7c7d4856e6aecc2d7b7be6782b}{m\-\_\-style\-Sheet}
+\item 
+\hyperlink{class_xml_element}{Xml\-Element} $\ast$ \hyperlink{class_xml_document_a83e49d668c247017d1681a9989958280}{m\-\_\-root\-Element}
+\item 
+bool \hyperlink{class_xml_document_a0c2dd2a48772ad62209a268156af3baa}{m\-\_\-standalone}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A X\-M\-L Document. 
+
+A \hyperlink{class_xml_document}{Xml\-Document} represents a X\-M\-L file. It holds a pointer on the root \hyperlink{class_xml_element}{Xml\-Element} of the document. It also holds the encoding and style sheet used.
+
+By default, the X\-M\-L document is stand-\/alone and tagged with enconding \char`\"{}\-I\-S\-O-\/8859-\/1\char`\"{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_xml_document_a3bc4c5ea5f22b4ff8776422125b31d42}{\index{Xml\-Document@{Xml\-Document}!Xml\-Document@{Xml\-Document}}
+\index{Xml\-Document@{Xml\-Document}!XmlDocument@{Xml\-Document}}
+\subsubsection[{Xml\-Document}]{\setlength{\rightskip}{0pt plus 5cm}Xml\-Document\-::\-Xml\-Document (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{encoding = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const {\bf std\-::string} \&}]{style\-Sheet = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_xml_document_a3bc4c5ea5f22b4ff8776422125b31d42}
+
+
+Constructs a \hyperlink{class_xml_document}{Xml\-Document} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoding} & Encoding used in the X\-M\-L file (default is Latin-\/1, I\-S\-O-\/8859-\/1 ). \\
+\hline
+{\em style\-Sheet} & Name of the X\-S\-L style sheet file used. If empty then no style sheet will be specified in the output. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_document_a5c95c959091f1ae826b8698ba0c3416c}{\index{Xml\-Document@{Xml\-Document}!$\sim$\-Xml\-Document@{$\sim$\-Xml\-Document}}
+\index{$\sim$\-Xml\-Document@{$\sim$\-Xml\-Document}!XmlDocument@{Xml\-Document}}
+\subsubsection[{$\sim$\-Xml\-Document}]{\setlength{\rightskip}{0pt plus 5cm}virtual Xml\-Document\-::$\sim$\-Xml\-Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_xml_document_a5c95c959091f1ae826b8698ba0c3416c}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_xml_document_a5063b9dc310ed5ed7a38b77f8584a50c}{\index{Xml\-Document@{Xml\-Document}!encoding@{encoding}}
+\index{encoding@{encoding}!XmlDocument@{Xml\-Document}}
+\subsubsection[{encoding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Xml\-Document\-::encoding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_document_a5063b9dc310ed5ed7a38b77f8584a50c}
+\hypertarget{class_xml_document_a87f0ea5104985af47f6a2aea5517aeb9}{\index{Xml\-Document@{Xml\-Document}!root\-Element@{root\-Element}}
+\index{root\-Element@{root\-Element}!XmlDocument@{Xml\-Document}}
+\subsubsection[{root\-Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Xml\-Element}\& Xml\-Document\-::root\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_document_a87f0ea5104985af47f6a2aea5517aeb9}
+\hypertarget{class_xml_document_afb4401e77f67626533ba7409a011c508}{\index{Xml\-Document@{Xml\-Document}!set\-Encoding@{set\-Encoding}}
+\index{set\-Encoding@{set\-Encoding}!XmlDocument@{Xml\-Document}}
+\subsubsection[{set\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Xml\-Document\-::set\-Encoding (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{encoding = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_xml_document_afb4401e77f67626533ba7409a011c508}
+\hypertarget{class_xml_document_a2b419770905e48914ed6dba3990061cd}{\index{Xml\-Document@{Xml\-Document}!set\-Root\-Element@{set\-Root\-Element}}
+\index{set\-Root\-Element@{set\-Root\-Element}!XmlDocument@{Xml\-Document}}
+\subsubsection[{set\-Root\-Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Xml\-Document\-::set\-Root\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Element} $\ast$}]{root\-Element}
+\end{DoxyParamCaption}
+)}}\label{class_xml_document_a2b419770905e48914ed6dba3990061cd}
+\hypertarget{class_xml_document_a3cc9d3452daba0bda758ee7add075827}{\index{Xml\-Document@{Xml\-Document}!set\-Standalone@{set\-Standalone}}
+\index{set\-Standalone@{set\-Standalone}!XmlDocument@{Xml\-Document}}
+\subsubsection[{set\-Standalone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Xml\-Document\-::set\-Standalone (
+\begin{DoxyParamCaption}
+\item[{bool}]{standalone}
+\end{DoxyParamCaption}
+)}}\label{class_xml_document_a3cc9d3452daba0bda758ee7add075827}
+
+
+set the output document as standalone or not. 
+
+For the output document, specify wether it's a standalone X\-M\-L document, or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em standalone} & if true, the output will be specified as standalone. if false, it will be not. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_xml_document_a63cfdd276a9812900cd7739758effd78}{\index{Xml\-Document@{Xml\-Document}!set\-Style\-Sheet@{set\-Style\-Sheet}}
+\index{set\-Style\-Sheet@{set\-Style\-Sheet}!XmlDocument@{Xml\-Document}}
+\subsubsection[{set\-Style\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Xml\-Document\-::set\-Style\-Sheet (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{style\-Sheet = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_xml_document_a63cfdd276a9812900cd7739758effd78}
+\hypertarget{class_xml_document_ab3ff5eb5c5df20453b4fc6f5b9bcff6e}{\index{Xml\-Document@{Xml\-Document}!standalone@{standalone}}
+\index{standalone@{standalone}!XmlDocument@{Xml\-Document}}
+\subsubsection[{standalone}]{\setlength{\rightskip}{0pt plus 5cm}bool Xml\-Document\-::standalone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_document_ab3ff5eb5c5df20453b4fc6f5b9bcff6e}
+\hypertarget{class_xml_document_ae0a7e5e1f28b179c31bee66481b18c03}{\index{Xml\-Document@{Xml\-Document}!style\-Sheet@{style\-Sheet}}
+\index{style\-Sheet@{style\-Sheet}!XmlDocument@{Xml\-Document}}
+\subsubsection[{style\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Xml\-Document\-::style\-Sheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_document_ae0a7e5e1f28b179c31bee66481b18c03}
+\hypertarget{class_xml_document_aa75e20c19ee0719af2e5b573db02f5a4}{\index{Xml\-Document@{Xml\-Document}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!XmlDocument@{Xml\-Document}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Xml\-Document\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_xml_document_aa75e20c19ee0719af2e5b573db02f5a4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_xml_document_a3a5338a6b02b176a3d50e6665ce1b41d}{\index{Xml\-Document@{Xml\-Document}!m\-\_\-encoding@{m\-\_\-encoding}}
+\index{m\-\_\-encoding@{m\-\_\-encoding}!XmlDocument@{Xml\-Document}}
+\subsubsection[{m\-\_\-encoding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Xml\-Document\-::m\-\_\-encoding\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_xml_document_a3a5338a6b02b176a3d50e6665ce1b41d}
+\hypertarget{class_xml_document_a83e49d668c247017d1681a9989958280}{\index{Xml\-Document@{Xml\-Document}!m\-\_\-root\-Element@{m\-\_\-root\-Element}}
+\index{m\-\_\-root\-Element@{m\-\_\-root\-Element}!XmlDocument@{Xml\-Document}}
+\subsubsection[{m\-\_\-root\-Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Xml\-Element}$\ast$ Xml\-Document\-::m\-\_\-root\-Element\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_xml_document_a83e49d668c247017d1681a9989958280}
+\hypertarget{class_xml_document_a0c2dd2a48772ad62209a268156af3baa}{\index{Xml\-Document@{Xml\-Document}!m\-\_\-standalone@{m\-\_\-standalone}}
+\index{m\-\_\-standalone@{m\-\_\-standalone}!XmlDocument@{Xml\-Document}}
+\subsubsection[{m\-\_\-standalone}]{\setlength{\rightskip}{0pt plus 5cm}bool Xml\-Document\-::m\-\_\-standalone\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_xml_document_a0c2dd2a48772ad62209a268156af3baa}
+\hypertarget{class_xml_document_a8564bf7c7d4856e6aecc2d7b7be6782b}{\index{Xml\-Document@{Xml\-Document}!m\-\_\-style\-Sheet@{m\-\_\-style\-Sheet}}
+\index{m\-\_\-style\-Sheet@{m\-\_\-style\-Sheet}!XmlDocument@{Xml\-Document}}
+\subsubsection[{m\-\_\-style\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Xml\-Document\-::m\-\_\-style\-Sheet\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_xml_document_a8564bf7c7d4856e6aecc2d7b7be6782b}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/tools/\hyperlink{_xml_document_8h}{Xml\-Document.\-h}\end{DoxyCompactItemize}

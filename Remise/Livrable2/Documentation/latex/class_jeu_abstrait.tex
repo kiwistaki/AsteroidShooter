@@ -1,0 +1,73 @@
+\hypertarget{class_jeu_abstrait}{\section{Jeu\-Abstrait Class Reference}
+\label{class_jeu_abstrait}\index{Jeu\-Abstrait@{Jeu\-Abstrait}}
+}
+
+
+Classe abstraite representant les fonctionalites de bases des differents modes de jeux.  
+
+
+
+
+{\ttfamily \#include $<$Jeu\-Abstrait.\-h$>$}
+
+Inheritance diagram for Jeu\-Abstrait\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_jeu_abstrait}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga72fbc307321309b7e1ee5c0be44a152b}{Jeu\-Abstrait} (\hyperlink{class_carte}{Carte} \&carte, \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue)
+\item 
+virtual \hyperlink{group__inf2990_gaeaa1ca9db48bba9637245331fa257076}{$\sim$\-Jeu\-Abstrait} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga670cec0b00bf489f54a95f3362cd8584}{set\-Carte} (\hyperlink{class_carte}{Carte} \&carte)
+\item 
+\hyperlink{class_carte}{Carte} \& \hyperlink{group__inf2990_ga473ce72116fb23851e8da0bddfbc71d6}{get\-Carte} () const 
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga0902140acabbdbca07b110b1c78b6eb6}{update} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} delat\-T)=0
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gac60bf135740871b1770283e508d263df}{recevoir\-Inputs} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-X, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} mouse\-Y, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} boutton, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} scroll)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_carte}{Carte} \& \hyperlink{group__inf2990_ga5349be037dec2b73adb0fbcca724eb2c}{carte\-\_\-}
+\begin{DoxyCompactList}\small\item\em La carte qui contient tous les objets. \end{DoxyCompactList}\item 
+\hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \& \hyperlink{group__inf2990_ga82fd620c4ee8342b374bbe848cb78ca2}{vue\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_gaebf64b4f7fa00bda679ed2815c3030cc}{mouse\-X\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga20f528aad2f2937cf34559ec8091cc22}{mouse\-Y\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga5f106517d59dda12c86741443236f981}{last\-Mouse\-X\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga24d07ce8ed9d2e9176deaaefd8937dd2}{last\-Mouse\-Y\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga6aefbc7c04b8d51ef72b4648f5278ba4}{boutton\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga076e503a05fd9f20e5ecc64e91eabf7f}{touche\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga231796955c445be70dc2273b6de8da36}{previous\-Touche\-\_\-}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga388bde29eb1b80839575085a97dd6063}{scroll\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe abstraite representant les fonctionalites de bases des differents modes de jeux. 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\hyperlink{_jeu_abstrait_8h}{Jeu\-Abstrait.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\hyperlink{_jeu_abstrait_8cpp}{Jeu\-Abstrait.\-cpp}\end{DoxyCompactItemize}

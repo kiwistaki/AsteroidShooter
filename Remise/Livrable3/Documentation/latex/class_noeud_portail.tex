@@ -1,0 +1,90 @@
+\hypertarget{class_noeud_portail}{\section{Noeud\-Portail Class Reference}
+\label{class_noeud_portail}\index{Noeud\-Portail@{Noeud\-Portail}}
+}
+
+
+Cette classe permet d'afficher un portail grace a l'arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\-Portail.\-h$>$}
+
+Inheritance diagram for Noeud\-Portail\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_portail}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_noeud_portail_a2b2679b209572bfec9c4fbaba1db7fd6}{Noeud\-Portail} (const std\-::string \&type)
+\item 
+\hyperlink{class_noeud_portail_a9fc4028c467afd1ae588feb679f4ff35}{Noeud\-Portail} (const \hyperlink{class_noeud_portail}{Noeud\-Portail} \&src)
+\item 
+\hyperlink{class_noeud_portail_a539e125201edd719886ae550eab35a28}{$\sim$\-Noeud\-Portail} ()
+\item 
+virtual void \hyperlink{class_noeud_portail_ad172adb0152d25d14892049f4f2b10a5}{animer} (float dt)
+\item 
+\hypertarget{class_noeud_portail_a282c4e5f63044fbc8db47b7c11f9cd04}{virtual void \hyperlink{class_noeud_portail_a282c4e5f63044fbc8db47b7c11f9cd04}{afficher\-Concret} () const }\label{class_noeud_portail_a282c4e5f63044fbc8db47b7c11f9cd04}
+
+\begin{DoxyCompactList}\small\item\em Le dessin concret du noeud (pour le moment c'est temporaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe permet d'afficher un portail grace a l'arbre de rendu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_noeud_portail_a2b2679b209572bfec9c4fbaba1db7fd6}{\index{Noeud\-Portail@{Noeud\-Portail}!Noeud\-Portail@{Noeud\-Portail}}
+\index{Noeud\-Portail@{Noeud\-Portail}!NoeudPortail@{Noeud\-Portail}}
+\subsubsection[{Noeud\-Portail}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Portail\-::\-Noeud\-Portail (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_portail_a2b2679b209572bfec9c4fbaba1db7fd6}
+Constructeur. Creer la liste d'affichage pour le portail 
+\begin{DoxyParams}{Parameters}
+{\em type} & Le type du noeud \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_portail_a9fc4028c467afd1ae588feb679f4ff35}{\index{Noeud\-Portail@{Noeud\-Portail}!Noeud\-Portail@{Noeud\-Portail}}
+\index{Noeud\-Portail@{Noeud\-Portail}!NoeudPortail@{Noeud\-Portail}}
+\subsubsection[{Noeud\-Portail}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Portail\-::\-Noeud\-Portail (
+\begin{DoxyParamCaption}
+\item[{const {\bf Noeud\-Portail} \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_portail_a9fc4028c467afd1ae588feb679f4ff35}
+Constructeur par copie 
+\begin{DoxyParams}{Parameters}
+{\em src} & L'objet que l'on veut copier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_portail_a539e125201edd719886ae550eab35a28}{\index{Noeud\-Portail@{Noeud\-Portail}!$\sim$\-Noeud\-Portail@{$\sim$\-Noeud\-Portail}}
+\index{$\sim$\-Noeud\-Portail@{$\sim$\-Noeud\-Portail}!NoeudPortail@{Noeud\-Portail}}
+\subsubsection[{$\sim$\-Noeud\-Portail}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Portail\-::$\sim$\-Noeud\-Portail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_portail_a539e125201edd719886ae550eab35a28}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_noeud_portail_ad172adb0152d25d14892049f4f2b10a5}{\index{Noeud\-Portail@{Noeud\-Portail}!animer@{animer}}
+\index{animer@{animer}!NoeudPortail@{Noeud\-Portail}}
+\subsubsection[{animer}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\-Portail\-::animer (
+\begin{DoxyParamCaption}
+\item[{float}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_noeud_portail_ad172adb0152d25d14892049f4f2b10a5}
+Animation du noeud 
+
+Reimplemented from \hyperlink{group__inf2990_gadc6ebe69894dbb682fdd0ecb1b6c11e9}{Noeud\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/\hyperlink{_noeud_portail_8h}{Noeud\-Portail.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/Noeud\-Portail.\-cpp\end{DoxyCompactItemize}

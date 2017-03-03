@@ -1,0 +1,13 @@
+package InterfaceGraphique;
+
+public enum TypeElementJeu {
+	ACCELERATEUR,
+	ASTEROIDE,
+	BARRIERE,
+	PORTAIL,
+	PROJECTILE,
+	STATION,
+	VAISSEAU,
+	POSITIONDEPART,
+	AUCUN
+}

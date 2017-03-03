@@ -1,0 +1,378 @@
+\hypertarget{classvue_1_1_projection}{\section{vue\-:\-:Projection Class Reference}
+\label{classvue_1_1_projection}\index{vue\-::\-Projection@{vue\-::\-Projection}}
+}
+
+
+Classe contrôlant la projection du monde a la fenetre.  
+
+
+
+
+{\ttfamily \#include $<$Projection.\-h$>$}
+
+Inheritance diagram for vue\-:\-:Projection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvue_1_1_projection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvue_1_1_projection_a27549dbc8ece7f5fdb3f7cd5d7a66fad}{Projection} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} x\-Min\-Cloture, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} x\-Max\-Cloture, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} y\-Min\-Cloture, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} y\-Max\-Cloture, double z\-Avant, double z\-Arriere, double zoom\-In\-Max, double zoom\-Out\-Max, double increment\-Zoom, bool \hyperlink{classvue_1_1_projection_a3d9b70124ec0b3ed22299158abc4067c}{est\-Perspective})
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual \hyperlink{classvue_1_1_projection_acb6551eb343f0b522c4994022a85b570}{$\sim$\-Projection} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel vide. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_ac3cd77fd93595b6844bd1b3b66867f55}{zoomer\-In} ()=0
+\begin{DoxyCompactList}\small\item\em Zoom in, c'est-\/a-\/dire un agrandissement. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_a2f411375817ca560d31a66f2da5e51eb}{zoomer\-Out} ()=0
+\begin{DoxyCompactList}\small\item\em Zoom out, c'est-\/a-\/dire un rapetissement. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_a83bafbf2b16431bdc8d9bb35f4024f1a}{redimensionner\-Fenetre} (const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin\-Min, const \hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \&coin\-Max)=0
+\begin{DoxyCompactList}\small\item\em Modification de la clôture. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_a88c8ee9ae0a1d08b48b94f6c093ee563}{appliquer} () const =0
+\begin{DoxyCompactList}\small\item\em Application de la projection. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_a0a4499967128947206cd3fc34c2b3b20}{mettre\-A\-Jour\-Cloture} () const 
+\begin{DoxyCompactList}\small\item\em Application de la fenetre de clôture (appel a gl\-Viewport). \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_abe8290f07564c7b63be04af8c5f68acb}{mettre\-A\-Jour\-Projection} () const 
+\begin{DoxyCompactList}\small\item\em Application de la projection. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_gaec90ef57a6e09fb50982434719093ccf}{Vecteur2i} \hyperlink{classvue_1_1_projection_af25e2bf7609c82d78afcd21dcfd6da42}{obtenir\-Dimension\-Cloture} () const 
+\begin{DoxyCompactList}\small\item\em Obtention des dimensions de la fenetre de clotûre. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classvue_1_1_projection_a2e2d21fa9455e872ad27980d0ba80e4b}{obtenir\-Coordonnees\-Cloture} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&x\-Min, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&x\-Max, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&y\-Min, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&y\-Max) const 
+\begin{DoxyCompactList}\small\item\em Obtention des coordonnees de la fenetre de clôture. \end{DoxyCompactList}\item 
+bool \hyperlink{classvue_1_1_projection_a3d9b70124ec0b3ed22299158abc4067c}{est\-Perspective} () const 
+\begin{DoxyCompactList}\small\item\em Verification de si la projection est perspective. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{classvue_1_1_projection_ab72f1930aa81faf98b2a9cb60f54af33}{x\-Min\-Cloture\-\_\-}
+\begin{DoxyCompactList}\small\item\em Coordonnee inferieur de la clôture en X. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{classvue_1_1_projection_abaed989322960f44c619b5a22e51dc22}{x\-Max\-Cloture\-\_\-}
+\begin{DoxyCompactList}\small\item\em Coordonnee superieur de la clôture en X. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{classvue_1_1_projection_a347192bd39c5ba331e97061f797ed3f0}{y\-Min\-Cloture\-\_\-}
+\begin{DoxyCompactList}\small\item\em Coordonnee inferieur de la clôture en Y. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{classvue_1_1_projection_a6f60c6c82b2c79d647fde24fbe67b23c}{y\-Max\-Cloture\-\_\-}
+\begin{DoxyCompactList}\small\item\em Coordonnee superieur de la clôture en Y. \end{DoxyCompactList}\item 
+double \hyperlink{classvue_1_1_projection_a7decea4d1b5a891a9457f4ef00575e27}{z\-Avant\-\_\-}
+\begin{DoxyCompactList}\small\item\em Avant du volume de visualisation. \end{DoxyCompactList}\item 
+double \hyperlink{classvue_1_1_projection_a2f7cb7c480bee25fed5b85c1b0d20b14}{z\-Arriere\-\_\-}
+\begin{DoxyCompactList}\small\item\em Arriere du volume de visualisation. \end{DoxyCompactList}\item 
+const double \hyperlink{classvue_1_1_projection_ada0dd83663ea60af42c1b907dc9eea3b}{zoom\-In\-Max\-\_\-}
+\begin{DoxyCompactList}\small\item\em Facteur maximal de zoom in. \end{DoxyCompactList}\item 
+const double \hyperlink{classvue_1_1_projection_a6c1d3823cb92516327cddfd985587b5c}{zoom\-Out\-Max\-\_\-}
+\begin{DoxyCompactList}\small\item\em Facteur maximal de zoom out. \end{DoxyCompactList}\item 
+const double \hyperlink{classvue_1_1_projection_abf6f52e53ca42685abe66814a6e140df}{increment\-Zoom\-\_\-}
+\begin{DoxyCompactList}\small\item\em Increment des zooms. \end{DoxyCompactList}\item 
+const bool \hyperlink{classvue_1_1_projection_a28720ca4dd92651253292851c740b020}{est\-Perspective\-\_\-}
+\begin{DoxyCompactList}\small\item\em Vrai si la projection est perspective. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe contrôlant la projection du monde a la fenetre. 
+
+Cette classe offre certaines fonctionnalites commune a chacun des types de projection (isometrique, perspective, etc.). Elle definit une interface que doivent implanter les types concrets de projection, c'est-\/a-\/dire permettre de modifier le facteur de zoom par exemple.
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/12-\/15 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvue_1_1_projection_a27549dbc8ece7f5fdb3f7cd5d7a66fad}{\index{vue\-::\-Projection@{vue\-::\-Projection}!Projection@{Projection}}
+\index{Projection@{Projection}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{Projection}]{\setlength{\rightskip}{0pt plus 5cm}vue\-::\-Projection\-::\-Projection (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{x\-Min\-Cloture, }
+\item[{{\bf int}}]{x\-Max\-Cloture, }
+\item[{{\bf int}}]{y\-Min\-Cloture, }
+\item[{{\bf int}}]{y\-Max\-Cloture, }
+\item[{double}]{z\-Avant, }
+\item[{double}]{z\-Arriere, }
+\item[{double}]{zoom\-In\-Max, }
+\item[{double}]{zoom\-Out\-Max, }
+\item[{double}]{increment\-Zoom, }
+\item[{bool}]{est\-Perspective}
+\end{DoxyParamCaption}
+)}}\label{classvue_1_1_projection_a27549dbc8ece7f5fdb3f7cd5d7a66fad}
+
+
+Constructeur. 
+
+Constructeur d'une projection. Ne fait qu'assigner les variables membres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x\-Min\-Cloture} & \-: coordonnee minimale en {\itshape x} de la clôture. \\
+\hline
+\mbox{\tt in}  & {\em x\-Max\-Cloture} & \-: coordonnee maximale en {\itshape x} de la clôture. \\
+\hline
+\mbox{\tt in}  & {\em y\-Min\-Cloture} & \-: coordonnee minimale en {\itshape y} de la clôture. \\
+\hline
+\mbox{\tt in}  & {\em y\-Max\-Cloture} & \-: coordonnee maximale en {\itshape y} de la clôture. \\
+\hline
+\mbox{\tt in}  & {\em z\-Avant} & \-: distance du plan avant (en {\itshape z}). \\
+\hline
+\mbox{\tt in}  & {\em z\-Arriere} & \-: distance du plan arriere (en {\itshape z}). \\
+\hline
+\mbox{\tt in}  & {\em zoom\-In\-Max} & \-: facteur de zoom in maximal. \\
+\hline
+\mbox{\tt in}  & {\em zoom\-Out\-Max} & \-: facteur de zoom out maximal. \\
+\hline
+\mbox{\tt in}  & {\em increment\-Zoom} & \-: distance du plan arriere (en {\itshape z}). \\
+\hline
+\mbox{\tt in}  & {\em est\-Perspective} & \-: vrai si la projection est perspective.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_projection_acb6551eb343f0b522c4994022a85b570}{\index{vue\-::\-Projection@{vue\-::\-Projection}!$\sim$\-Projection@{$\sim$\-Projection}}
+\index{$\sim$\-Projection@{$\sim$\-Projection}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{$\sim$\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}virtual vue\-::\-Projection\-::$\sim$\-Projection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classvue_1_1_projection_acb6551eb343f0b522c4994022a85b570}
+
+
+Destructeur virtuel vide. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvue_1_1_projection_a88c8ee9ae0a1d08b48b94f6c093ee563}{\index{vue\-::\-Projection@{vue\-::\-Projection}!appliquer@{appliquer}}
+\index{appliquer@{appliquer}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{appliquer}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} vue\-::\-Projection\-::appliquer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classvue_1_1_projection_a88c8ee9ae0a1d08b48b94f6c093ee563}
+
+
+Application de la projection. 
+
+
+
+Implemented in \hyperlink{classvue_1_1_projection_ortho_aa2b76e034f890dba75852db6fd0b254c}{vue\-::\-Projection\-Ortho}.
+
+\hypertarget{classvue_1_1_projection_a3d9b70124ec0b3ed22299158abc4067c}{\index{vue\-::\-Projection@{vue\-::\-Projection}!est\-Perspective@{est\-Perspective}}
+\index{est\-Perspective@{est\-Perspective}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{est\-Perspective}]{\setlength{\rightskip}{0pt plus 5cm}bool vue\-::\-Projection\-::est\-Perspective (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_projection_a3d9b70124ec0b3ed22299158abc4067c}
+
+
+Verification de si la projection est perspective. 
+
+Cette fonction retourne vrai si la projection est une projection perspective.
+
+\begin{DoxyReturn}{Returns}
+Vrai si la projection est une projection perspective. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_projection_a0a4499967128947206cd3fc34c2b3b20}{\index{vue\-::\-Projection@{vue\-::\-Projection}!mettre\-A\-Jour\-Cloture@{mettre\-A\-Jour\-Cloture}}
+\index{mettre\-A\-Jour\-Cloture@{mettre\-A\-Jour\-Cloture}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{mettre\-A\-Jour\-Cloture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Projection\-::mettre\-A\-Jour\-Cloture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classvue_1_1_projection_a0a4499967128947206cd3fc34c2b3b20}
+
+
+Application de la fenetre de clôture (appel a gl\-Viewport). 
+
+Specifie la clôture de la fenetre a l'aide de la fonction \hyperlink{glew_8h_a8e93835e91933b7078c88f905dd8599c}{gl\-Viewport()} dans la machine a etats d'Open\-G\-L.
+
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_projection_abe8290f07564c7b63be04af8c5f68acb}{\index{vue\-::\-Projection@{vue\-::\-Projection}!mettre\-A\-Jour\-Projection@{mettre\-A\-Jour\-Projection}}
+\index{mettre\-A\-Jour\-Projection@{mettre\-A\-Jour\-Projection}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{mettre\-A\-Jour\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Projection\-::mettre\-A\-Jour\-Projection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classvue_1_1_projection_abe8290f07564c7b63be04af8c5f68acb}
+
+
+Application de la projection. 
+
+Specifie la matrice de projection dans la machine a etats d'Open\-G\-L.
+
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_projection_a2e2d21fa9455e872ad27980d0ba80e4b}{\index{vue\-::\-Projection@{vue\-::\-Projection}!obtenir\-Coordonnees\-Cloture@{obtenir\-Coordonnees\-Cloture}}
+\index{obtenir\-Coordonnees\-Cloture@{obtenir\-Coordonnees\-Cloture}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{obtenir\-Coordonnees\-Cloture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} vue\-::\-Projection\-::obtenir\-Coordonnees\-Cloture (
+\begin{DoxyParamCaption}
+\item[{{\bf int} \&}]{x\-Min, }
+\item[{{\bf int} \&}]{x\-Max, }
+\item[{{\bf int} \&}]{y\-Min, }
+\item[{{\bf int} \&}]{y\-Max}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_projection_a2e2d21fa9455e872ad27980d0ba80e4b}
+
+
+Obtention des coordonnees de la fenetre de clôture. 
+
+Cette fonction retourne les coordonnees de la fenetre de clôture associee a cette projection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em x\-Min} & \-: La variable qui contiendra l'abcsisse minimale. \\
+\hline
+\mbox{\tt out}  & {\em x\-Max} & \-: La variable qui contiendra l'abcsisse maximale. \\
+\hline
+\mbox{\tt out}  & {\em y\-Min} & \-: La variable qui contiendra l'ordonnee minimale. \\
+\hline
+\mbox{\tt out}  & {\em y\-Max} & \-: La variable qui contiendra l'ordonnee maximale.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Les coordonnees de la fenetre de clôture. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_projection_af25e2bf7609c82d78afcd21dcfd6da42}{\index{vue\-::\-Projection@{vue\-::\-Projection}!obtenir\-Dimension\-Cloture@{obtenir\-Dimension\-Cloture}}
+\index{obtenir\-Dimension\-Cloture@{obtenir\-Dimension\-Cloture}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{obtenir\-Dimension\-Cloture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur2i} vue\-::\-Projection\-::obtenir\-Dimension\-Cloture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvue_1_1_projection_af25e2bf7609c82d78afcd21dcfd6da42}
+
+
+Obtention des dimensions de la fenetre de clotûre. 
+
+Cette fonction retourne les dimensions de la fenetre de clôture associee a cette projection.
+
+\begin{DoxyReturn}{Returns}
+Les dimensions de la fenetre de clôture. 
+\end{DoxyReturn}
+\hypertarget{classvue_1_1_projection_a83bafbf2b16431bdc8d9bb35f4024f1a}{\index{vue\-::\-Projection@{vue\-::\-Projection}!redimensionner\-Fenetre@{redimensionner\-Fenetre}}
+\index{redimensionner\-Fenetre@{redimensionner\-Fenetre}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{redimensionner\-Fenetre}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} vue\-::\-Projection\-::redimensionner\-Fenetre (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2i} \&}]{coin\-Min, }
+\item[{const {\bf Vecteur2i} \&}]{coin\-Max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classvue_1_1_projection_a83bafbf2b16431bdc8d9bb35f4024f1a}
+
+
+Modification de la clôture. 
+
+
+
+Implemented in \hyperlink{classvue_1_1_projection_ortho_a7535c3cd49fa2e8b26b98c7703d44e19}{vue\-::\-Projection\-Ortho}.
+
+\hypertarget{classvue_1_1_projection_ac3cd77fd93595b6844bd1b3b66867f55}{\index{vue\-::\-Projection@{vue\-::\-Projection}!zoomer\-In@{zoomer\-In}}
+\index{zoomer\-In@{zoomer\-In}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{zoomer\-In}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} vue\-::\-Projection\-::zoomer\-In (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classvue_1_1_projection_ac3cd77fd93595b6844bd1b3b66867f55}
+
+
+Zoom in, c'est-\/a-\/dire un agrandissement. 
+
+
+
+Implemented in \hyperlink{classvue_1_1_projection_ortho_a4c0a5d669d4fd937ce3ac1a3fe63dc7b}{vue\-::\-Projection\-Ortho}.
+
+\hypertarget{classvue_1_1_projection_a2f411375817ca560d31a66f2da5e51eb}{\index{vue\-::\-Projection@{vue\-::\-Projection}!zoomer\-Out@{zoomer\-Out}}
+\index{zoomer\-Out@{zoomer\-Out}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{zoomer\-Out}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} vue\-::\-Projection\-::zoomer\-Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classvue_1_1_projection_a2f411375817ca560d31a66f2da5e51eb}
+
+
+Zoom out, c'est-\/a-\/dire un rapetissement. 
+
+
+
+Implemented in \hyperlink{classvue_1_1_projection_ortho_a5dd1f08ff6161ccce6b2dfa8dc5dfe40}{vue\-::\-Projection\-Ortho}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvue_1_1_projection_a28720ca4dd92651253292851c740b020}{\index{vue\-::\-Projection@{vue\-::\-Projection}!est\-Perspective\-\_\-@{est\-Perspective\-\_\-}}
+\index{est\-Perspective\-\_\-@{est\-Perspective\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{est\-Perspective\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const bool vue\-::\-Projection\-::est\-Perspective\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_a28720ca4dd92651253292851c740b020}
+
+
+Vrai si la projection est perspective. 
+
+\hypertarget{classvue_1_1_projection_abf6f52e53ca42685abe66814a6e140df}{\index{vue\-::\-Projection@{vue\-::\-Projection}!increment\-Zoom\-\_\-@{increment\-Zoom\-\_\-}}
+\index{increment\-Zoom\-\_\-@{increment\-Zoom\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{increment\-Zoom\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const double vue\-::\-Projection\-::increment\-Zoom\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_abf6f52e53ca42685abe66814a6e140df}
+
+
+Increment des zooms. 
+
+\hypertarget{classvue_1_1_projection_abaed989322960f44c619b5a22e51dc22}{\index{vue\-::\-Projection@{vue\-::\-Projection}!x\-Max\-Cloture\-\_\-@{x\-Max\-Cloture\-\_\-}}
+\index{x\-Max\-Cloture\-\_\-@{x\-Max\-Cloture\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{x\-Max\-Cloture\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} vue\-::\-Projection\-::x\-Max\-Cloture\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_abaed989322960f44c619b5a22e51dc22}
+
+
+Coordonnee superieur de la clôture en X. 
+
+\hypertarget{classvue_1_1_projection_ab72f1930aa81faf98b2a9cb60f54af33}{\index{vue\-::\-Projection@{vue\-::\-Projection}!x\-Min\-Cloture\-\_\-@{x\-Min\-Cloture\-\_\-}}
+\index{x\-Min\-Cloture\-\_\-@{x\-Min\-Cloture\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{x\-Min\-Cloture\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} vue\-::\-Projection\-::x\-Min\-Cloture\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_ab72f1930aa81faf98b2a9cb60f54af33}
+
+
+Coordonnee inferieur de la clôture en X. 
+
+\hypertarget{classvue_1_1_projection_a6f60c6c82b2c79d647fde24fbe67b23c}{\index{vue\-::\-Projection@{vue\-::\-Projection}!y\-Max\-Cloture\-\_\-@{y\-Max\-Cloture\-\_\-}}
+\index{y\-Max\-Cloture\-\_\-@{y\-Max\-Cloture\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{y\-Max\-Cloture\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} vue\-::\-Projection\-::y\-Max\-Cloture\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_a6f60c6c82b2c79d647fde24fbe67b23c}
+
+
+Coordonnee superieur de la clôture en Y. 
+
+\hypertarget{classvue_1_1_projection_a347192bd39c5ba331e97061f797ed3f0}{\index{vue\-::\-Projection@{vue\-::\-Projection}!y\-Min\-Cloture\-\_\-@{y\-Min\-Cloture\-\_\-}}
+\index{y\-Min\-Cloture\-\_\-@{y\-Min\-Cloture\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{y\-Min\-Cloture\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} vue\-::\-Projection\-::y\-Min\-Cloture\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_a347192bd39c5ba331e97061f797ed3f0}
+
+
+Coordonnee inferieur de la clôture en Y. 
+
+\hypertarget{classvue_1_1_projection_a2f7cb7c480bee25fed5b85c1b0d20b14}{\index{vue\-::\-Projection@{vue\-::\-Projection}!z\-Arriere\-\_\-@{z\-Arriere\-\_\-}}
+\index{z\-Arriere\-\_\-@{z\-Arriere\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{z\-Arriere\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}double vue\-::\-Projection\-::z\-Arriere\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_a2f7cb7c480bee25fed5b85c1b0d20b14}
+
+
+Arriere du volume de visualisation. 
+
+\hypertarget{classvue_1_1_projection_a7decea4d1b5a891a9457f4ef00575e27}{\index{vue\-::\-Projection@{vue\-::\-Projection}!z\-Avant\-\_\-@{z\-Avant\-\_\-}}
+\index{z\-Avant\-\_\-@{z\-Avant\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{z\-Avant\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}double vue\-::\-Projection\-::z\-Avant\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_a7decea4d1b5a891a9457f4ef00575e27}
+
+
+Avant du volume de visualisation. 
+
+\hypertarget{classvue_1_1_projection_ada0dd83663ea60af42c1b907dc9eea3b}{\index{vue\-::\-Projection@{vue\-::\-Projection}!zoom\-In\-Max\-\_\-@{zoom\-In\-Max\-\_\-}}
+\index{zoom\-In\-Max\-\_\-@{zoom\-In\-Max\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{zoom\-In\-Max\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const double vue\-::\-Projection\-::zoom\-In\-Max\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_ada0dd83663ea60af42c1b907dc9eea3b}
+
+
+Facteur maximal de zoom in. 
+
+\hypertarget{classvue_1_1_projection_a6c1d3823cb92516327cddfd985587b5c}{\index{vue\-::\-Projection@{vue\-::\-Projection}!zoom\-Out\-Max\-\_\-@{zoom\-Out\-Max\-\_\-}}
+\index{zoom\-Out\-Max\-\_\-@{zoom\-Out\-Max\-\_\-}!vue::Projection@{vue\-::\-Projection}}
+\subsubsection[{zoom\-Out\-Max\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const double vue\-::\-Projection\-::zoom\-Out\-Max\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classvue_1_1_projection_a6c1d3823cb92516327cddfd985587b5c}
+
+
+Facteur maximal de zoom out. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/\hyperlink{_projection_8h}{Projection.\-h}\item 
+Cadriciel/\-Commun/\-Utilitaire/\-Vue/\hyperlink{_projection_8cpp}{Projection.\-cpp}\end{DoxyCompactItemize}

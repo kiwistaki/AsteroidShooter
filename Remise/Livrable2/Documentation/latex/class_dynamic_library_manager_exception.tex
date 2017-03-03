@@ -1,0 +1,101 @@
+\hypertarget{class_dynamic_library_manager_exception}{\section{Dynamic\-Library\-Manager\-Exception Class Reference}
+\label{class_dynamic_library_manager_exception}\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}}
+}
+
+
+\hyperlink{class_exception}{Exception} thrown by \hyperlink{class_dynamic_library_manager}{Dynamic\-Library\-Manager} when a failure occurs.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\-Library\-Manager\-Exception.\-h$>$}
+
+Inheritance diagram for Dynamic\-Library\-Manager\-Exception\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dynamic_library_manager_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9}{Cause} \{ \hyperlink{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9a778b42fb996bf018bdc26934649cad63}{loading\-Failed} =0, 
+\hyperlink{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9a193fc58bb852e09790da269e2b613045}{symbol\-Not\-Found}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dynamic_library_manager_exception_a15629092a054849f1cb73f8f468f8125}{Dynamic\-Library\-Manager\-Exception} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&library\-Name, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&error\-Detail, \hyperlink{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9}{Cause} cause)
+\begin{DoxyCompactList}\small\item\em Failed to load the dynamic library or Symbol not found in the dynamic library. \end{DoxyCompactList}\item 
+\hyperlink{class_dynamic_library_manager_exception_a874464a12028fa518bed09a11e2446ea}{$\sim$\-Dynamic\-Library\-Manager\-Exception} ()  throw ()
+\item 
+\hyperlink{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9}{Cause} \hyperlink{class_dynamic_library_manager_exception_ab389b721f9a45814b8269ba865a1f25f}{get\-Cause} () const 
+\item 
+const char $\ast$ \hyperlink{class_dynamic_library_manager_exception_a3e6ed8a5e743a8ac80e4cb73a5d87360}{what} () const   throw ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_exception}{Exception} thrown by \hyperlink{class_dynamic_library_manager}{Dynamic\-Library\-Manager} when a failure occurs. 
+
+Use \hyperlink{class_dynamic_library_manager_exception_ab389b721f9a45814b8269ba865a1f25f}{get\-Cause()} to know what function caused the failure. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9}{\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!Cause@{Cause}}
+\index{Cause@{Cause}!DynamicLibraryManagerException@{Dynamic\-Library\-Manager\-Exception}}
+\subsubsection[{Cause}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Dynamic\-Library\-Manager\-Exception\-::\-Cause}}}\label{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{loading\-Failed@{loading\-Failed}!Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}}\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!loading\-Failed@{loading\-Failed}}\item[{\em 
+\hypertarget{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9a778b42fb996bf018bdc26934649cad63}{loading\-Failed}\label{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9a778b42fb996bf018bdc26934649cad63}
+}]Failed to load the dynamic library. \index{symbol\-Not\-Found@{symbol\-Not\-Found}!Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}}\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!symbol\-Not\-Found@{symbol\-Not\-Found}}\item[{\em 
+\hypertarget{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9a193fc58bb852e09790da269e2b613045}{symbol\-Not\-Found}\label{class_dynamic_library_manager_exception_a73b4694c152e0693fbc19fb04987a0b9a193fc58bb852e09790da269e2b613045}
+}]Symbol not found in the dynamic library. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dynamic_library_manager_exception_a15629092a054849f1cb73f8f468f8125}{\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}}
+\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!DynamicLibraryManagerException@{Dynamic\-Library\-Manager\-Exception}}
+\subsubsection[{Dynamic\-Library\-Manager\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}Dynamic\-Library\-Manager\-Exception\-::\-Dynamic\-Library\-Manager\-Exception (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{library\-Name, }
+\item[{const {\bf std\-::string} \&}]{error\-Detail, }
+\item[{{\bf Cause}}]{cause}
+\end{DoxyParamCaption}
+)}}\label{class_dynamic_library_manager_exception_a15629092a054849f1cb73f8f468f8125}
+
+
+Failed to load the dynamic library or Symbol not found in the dynamic library. 
+
+\hypertarget{class_dynamic_library_manager_exception_a874464a12028fa518bed09a11e2446ea}{\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!$\sim$\-Dynamic\-Library\-Manager\-Exception@{$\sim$\-Dynamic\-Library\-Manager\-Exception}}
+\index{$\sim$\-Dynamic\-Library\-Manager\-Exception@{$\sim$\-Dynamic\-Library\-Manager\-Exception}!DynamicLibraryManagerException@{Dynamic\-Library\-Manager\-Exception}}
+\subsubsection[{$\sim$\-Dynamic\-Library\-Manager\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}Dynamic\-Library\-Manager\-Exception\-::$\sim$\-Dynamic\-Library\-Manager\-Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}}\label{class_dynamic_library_manager_exception_a874464a12028fa518bed09a11e2446ea}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dynamic_library_manager_exception_ab389b721f9a45814b8269ba865a1f25f}{\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!get\-Cause@{get\-Cause}}
+\index{get\-Cause@{get\-Cause}!DynamicLibraryManagerException@{Dynamic\-Library\-Manager\-Exception}}
+\subsubsection[{get\-Cause}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cause} Dynamic\-Library\-Manager\-Exception\-::get\-Cause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_dynamic_library_manager_exception_ab389b721f9a45814b8269ba865a1f25f}
+\hypertarget{class_dynamic_library_manager_exception_a3e6ed8a5e743a8ac80e4cb73a5d87360}{\index{Dynamic\-Library\-Manager\-Exception@{Dynamic\-Library\-Manager\-Exception}!what@{what}}
+\index{what@{what}!DynamicLibraryManagerException@{Dynamic\-Library\-Manager\-Exception}}
+\subsubsection[{what}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Dynamic\-Library\-Manager\-Exception\-::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }}\label{class_dynamic_library_manager_exception_a3e6ed8a5e743a8ac80e4cb73a5d87360}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\hyperlink{_dynamic_library_manager_exception_8h}{Dynamic\-Library\-Manager\-Exception.\-h}\end{DoxyCompactItemize}

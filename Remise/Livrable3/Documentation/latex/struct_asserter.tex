@@ -1,0 +1,240 @@
+\hypertarget{struct_asserter}{\section{Asserter Struct Reference}
+\label{struct_asserter}\index{Asserter@{Asserter}}
+}
+
+
+A set of functions to help writing assertion macros.
+
+Here is an example of assertion, a simplified version of the actual assertion implemented in examples/cppunittest/\-Xml\-Uniformiser.\-h\-:  
+
+
+
+
+{\ttfamily \#include $<$Asserter.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_asserter_a5a67b6042625cc87d271a53ac555e437}{static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_a5a67b6042625cc87d271a53ac555e437}{fail} (const \hyperlink{class_message}{Message} \&message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line}())}\label{struct_asserter_a5a67b6042625cc87d271a53ac555e437}
+
+\begin{DoxyCompactList}\small\item\em Throws a \hyperlink{class_exception}{Exception} with the specified message and location. \end{DoxyCompactList}\item 
+static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_a74825fc71909baa1286f9282ba5a2a54}{fail} (std\-::string message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line}())
+\begin{DoxyCompactList}\small\item\em Throws a \hyperlink{class_exception}{Exception} with the specified message and location. \end{DoxyCompactList}\item 
+static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_a425da14df34fad7e23a35456fce0eb2b}{fail\-If} (bool should\-Fail, const \hyperlink{class_message}{Message} \&message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line}())
+\begin{DoxyCompactList}\small\item\em Throws a \hyperlink{class_exception}{Exception} with the specified message and location. \end{DoxyCompactList}\item 
+static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_a71a4667a9d3f5d483f1a82157f715824}{fail\-If} (bool should\-Fail, std\-::string message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line}())
+\begin{DoxyCompactList}\small\item\em Throws a \hyperlink{class_exception}{Exception} with the specified message and location. \end{DoxyCompactList}\item 
+static std\-::string C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_adcbee7c01d58bfaee72cc984627e6432}{make\-Expected} (const std\-::string \&expected\-Value)
+\begin{DoxyCompactList}\small\item\em Returns a expected value string for a message. Typically used to create 'not equal' message, or to check that a message contains the expected content when writing unit tests for your custom assertions. \end{DoxyCompactList}\item 
+static std\-::string C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_ae52920ca7ffd981df61d7a3cfd88793b}{make\-Actual} (const std\-::string \&actual\-Value)
+\begin{DoxyCompactList}\small\item\em Returns an actual value string for a message. Typically used to create 'not equal' message, or to check that a message contains the expected content when writing unit tests for your custom assertions. \end{DoxyCompactList}\item 
+\hypertarget{struct_asserter_adb8ac36c8f0d385430e5a087a66219db}{static \hyperlink{class_message}{Message} C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I {\bfseries make\-Not\-Equal\-Message} (const std\-::string \&expected\-Value, const std\-::string \&actual\-Value, const \hyperlink{class_additional_message}{Additional\-Message} \&additional\-Message=\hyperlink{class_additional_message}{Additional\-Message}(), const std\-::string \&short\-Description=\char`\"{}equality assertion failed\char`\"{})}\label{struct_asserter_adb8ac36c8f0d385430e5a087a66219db}
+
+\item 
+static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_ac6234767e7d986bace97dc44f8d80d6c}{fail\-Not\-Equal} (std\-::string expected, std\-::string actual, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line, const \hyperlink{class_additional_message}{Additional\-Message} \&additional\-Message=\hyperlink{class_additional_message}{Additional\-Message}(), std\-::string short\-Description=\char`\"{}equality assertion failed\char`\"{})
+\begin{DoxyCompactList}\small\item\em Throws an \hyperlink{class_exception}{Exception} with the specified message and location. \end{DoxyCompactList}\item 
+static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I \hyperlink{struct_asserter_a3a805c9f8c641d65353bcff2da80624f}{fail\-Not\-Equal\-If} (bool should\-Fail, std\-::string expected, std\-::string actual, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line, const \hyperlink{class_additional_message}{Additional\-Message} \&additional\-Message=\hyperlink{class_additional_message}{Additional\-Message}(), std\-::string short\-Description=\char`\"{}equality assertion failed\char`\"{})
+\begin{DoxyCompactList}\small\item\em Throws an \hyperlink{class_exception}{Exception} with the specified message and location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of functions to help writing assertion macros.
+
+Here is an example of assertion, a simplified version of the actual assertion implemented in examples/cppunittest/\-Xml\-Uniformiser.\-h\-: 
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <cppunit/SourceLine.h>}
+\textcolor{preprocessor}{#include <cppunit/TestAssert.h>}
+
+\textcolor{keywordtype}{void} 
+checkXmlEqual( std::string expectedXml,
+               std::string actualXml,
+               CppUnit::SourceLine sourceLine )
+\{
+  std::string expected = XmlUniformiser( expectedXml ).stripped();
+  std::string actual = XmlUniformiser( actualXml ).stripped();
+
+  \textcolor{keywordflow}{if} ( expected == actual )
+    \textcolor{keywordflow}{return};
+
+  ::CppUnit::Asserter::failNotEqual( expected,
+                                     actual,
+                                     sourceLine );
+\}
+
+\textcolor{preprocessor}{#define CPPUNITTEST\_ASSERT\_XML\_EQUAL( expected, actual ) \(\backslash\)}
+\textcolor{preprocessor}{    checkXmlEqual( expected, actual,                     \(\backslash\)}
+\textcolor{preprocessor}{                   CPPUNIT\_SOURCELINE() )}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_asserter_a74825fc71909baa1286f9282ba5a2a54}{\index{Asserter@{Asserter}!fail@{fail}}
+\index{fail@{fail}!Asserter@{Asserter}}
+\subsubsection[{fail}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::fail (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{message, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line = {\ttfamily {\bf Source\-Line}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_a74825fc71909baa1286f9282ba5a2a54}
+
+
+Throws a \hyperlink{class_exception}{Exception} with the specified message and location. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]Use fail( Message, Source\-Line ) instead. \end{DoxyRefDesc}
+\hypertarget{struct_asserter_a425da14df34fad7e23a35456fce0eb2b}{\index{Asserter@{Asserter}!fail\-If@{fail\-If}}
+\index{fail\-If@{fail\-If}!Asserter@{Asserter}}
+\subsubsection[{fail\-If}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::fail\-If (
+\begin{DoxyParamCaption}
+\item[{bool}]{should\-Fail, }
+\item[{const {\bf Message} \&}]{message, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line = {\ttfamily {\bf Source\-Line}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_a425da14df34fad7e23a35456fce0eb2b}
+
+
+Throws a \hyperlink{class_exception}{Exception} with the specified message and location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\-Fail} & if {\ttfamily true} then the exception is thrown. Otherwise nothing happen. \\
+\hline
+{\em message} & \hyperlink{class_message}{Message} explaining the assertion failiure. \\
+\hline
+{\em source\-Line} & Location of the assertion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_asserter_a71a4667a9d3f5d483f1a82157f715824}{\index{Asserter@{Asserter}!fail\-If@{fail\-If}}
+\index{fail\-If@{fail\-If}!Asserter@{Asserter}}
+\subsubsection[{fail\-If}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::fail\-If (
+\begin{DoxyParamCaption}
+\item[{bool}]{should\-Fail, }
+\item[{std\-::string}]{message, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line = {\ttfamily {\bf Source\-Line}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_a71a4667a9d3f5d483f1a82157f715824}
+
+
+Throws a \hyperlink{class_exception}{Exception} with the specified message and location. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]Use fail\-If( bool, Message, Source\-Line ) instead. 
+\begin{DoxyParams}{Parameters}
+{\em should\-Fail} & if {\ttfamily true} then the exception is thrown. Otherwise nothing happen. \\
+\hline
+{\em message} & \hyperlink{class_message}{Message} explaining the assertion failiure. \\
+\hline
+{\em source\-Line} & Location of the assertion. \\
+\hline
+\end{DoxyParams}
+\end{DoxyRefDesc}
+\hypertarget{struct_asserter_ac6234767e7d986bace97dc44f8d80d6c}{\index{Asserter@{Asserter}!fail\-Not\-Equal@{fail\-Not\-Equal}}
+\index{fail\-Not\-Equal@{fail\-Not\-Equal}!Asserter@{Asserter}}
+\subsubsection[{fail\-Not\-Equal}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::fail\-Not\-Equal (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{expected, }
+\item[{std\-::string}]{actual, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line, }
+\item[{const {\bf Additional\-Message} \&}]{additional\-Message = {\ttfamily {\bf Additional\-Message}()}, }
+\item[{std\-::string}]{short\-Description = {\ttfamily \char`\"{}equality~assertion~failed\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_ac6234767e7d986bace97dc44f8d80d6c}
+
+
+Throws an \hyperlink{class_exception}{Exception} with the specified message and location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected} & Text describing the expected value. \\
+\hline
+{\em actual} & Text describing the actual value. \\
+\hline
+{\em source\-Line} & Location of the assertion. \\
+\hline
+{\em additional\-Message} & Additional message. Usually used to report what are the differences between the expected and actual value. \\
+\hline
+{\em short\-Description} & Short description for the failure message. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_asserter_a3a805c9f8c641d65353bcff2da80624f}{\index{Asserter@{Asserter}!fail\-Not\-Equal\-If@{fail\-Not\-Equal\-If}}
+\index{fail\-Not\-Equal\-If@{fail\-Not\-Equal\-If}!Asserter@{Asserter}}
+\subsubsection[{fail\-Not\-Equal\-If}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::fail\-Not\-Equal\-If (
+\begin{DoxyParamCaption}
+\item[{bool}]{should\-Fail, }
+\item[{std\-::string}]{expected, }
+\item[{std\-::string}]{actual, }
+\item[{const {\bf Source\-Line} \&}]{source\-Line, }
+\item[{const {\bf Additional\-Message} \&}]{additional\-Message = {\ttfamily {\bf Additional\-Message}()}, }
+\item[{std\-::string}]{short\-Description = {\ttfamily \char`\"{}equality~assertion~failed\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_a3a805c9f8c641d65353bcff2da80624f}
+
+
+Throws an \hyperlink{class_exception}{Exception} with the specified message and location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\-Fail} & if {\ttfamily true} then the exception is thrown. Otherwise nothing happen. \\
+\hline
+{\em expected} & Text describing the expected value. \\
+\hline
+{\em actual} & Text describing the actual value. \\
+\hline
+{\em source\-Line} & Location of the assertion. \\
+\hline
+{\em additional\-Message} & Additional message. Usually used to report where the \char`\"{}difference\char`\"{} is located. \\
+\hline
+{\em short\-Description} & Short description for the failure message. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_asserter_ae52920ca7ffd981df61d7a3cfd88793b}{\index{Asserter@{Asserter}!make\-Actual@{make\-Actual}}
+\index{make\-Actual@{make\-Actual}!Asserter@{Asserter}}
+\subsubsection[{make\-Actual}]{\setlength{\rightskip}{0pt plus 5cm}static std\-::string C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::make\-Actual (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{actual\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_ae52920ca7ffd981df61d7a3cfd88793b}
+
+
+Returns an actual value string for a message. Typically used to create 'not equal' message, or to check that a message contains the expected content when writing unit tests for your custom assertions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actual\-Value} & String that represents the actual value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape actual\-Value} prefixed with \char`\"{}\-Actual  \-: \char`\"{}. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_asserter_adcbee7c01d58bfaee72cc984627e6432}{make\-Expected()}. 
+\end{DoxySeeAlso}
+\hypertarget{struct_asserter_adcbee7c01d58bfaee72cc984627e6432}{\index{Asserter@{Asserter}!make\-Expected@{make\-Expected}}
+\index{make\-Expected@{make\-Expected}!Asserter@{Asserter}}
+\subsubsection[{make\-Expected}]{\setlength{\rightskip}{0pt plus 5cm}static std\-::string C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-P\-I Asserter\-::make\-Expected (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{expected\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_asserter_adcbee7c01d58bfaee72cc984627e6432}
+
+
+Returns a expected value string for a message. Typically used to create 'not equal' message, or to check that a message contains the expected content when writing unit tests for your custom assertions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\-Value} & String that represents the expected value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape expected\-Value} prefixed with \char`\"{}\-Expected\-: \char`\"{}. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_asserter_ae52920ca7ffd981df61d7a3cfd88793b}{make\-Actual()}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Asserter.\-h\end{DoxyCompactItemize}

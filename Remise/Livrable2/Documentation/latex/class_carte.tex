@@ -1,0 +1,194 @@
+\hypertarget{class_carte}{\section{Carte Class Reference}
+\label{class_carte}\index{Carte@{Carte}}
+}
+
+
+Classe qui permet l'ajout et la supression d'élements sur la carte (zone de jeu)  
+
+
+
+
+{\ttfamily \#include $<$Carte.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga80f5e8743e4dcfb4f00cf7b1e8b766f7}{Carte} (\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nom, \hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\-Rendu\-I\-N\-F2990} $\ast$arbre\-Rendu)
+\item 
+\hyperlink{group__inf2990_gad20e893d299d8498f5dfb5ed3021d6b8}{Carte} (\hyperlink{class_carte}{Carte} \&carte)
+\item 
+\hyperlink{group__inf2990_ga63300ff55c58b5d5b1674a3fc8f25910}{$\sim$\-Carte} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga73f5d7b433f6f044f59c4ab7e7f3084e}{effacer\-Element} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gaa4d51c79656dee570202820d99cc4ad8}{effacer\-Elements\-Type} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type})
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gadf54435158eee3a30796da0d0ef2c448}{changer\-Visibilite\-Position\-Depart} (bool visible)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gadcdb90feef6b62d2e292fb5bb6536d7a}{ajouter\-Element} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga65c3a3a67856a16972f2e6cdbc38ff5d}{creer\-Element\-Par\-X\-M\-L} (\hyperlink{class_ti_xml_element}{Ti\-Xml\-Element} \&element)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gaa738c20bc34f5cf4b9250ce27ff4e766}{creer\-Barriere} (\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} position1, \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} position2)
+\item 
+\hyperlink{class_asteroide}{Asteroide} $\ast$ \hyperlink{group__inf2990_ga705576c8363a33505812478249ca45cd}{creer\-Asteroide} ()
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'ajouter un asteroide. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga03d87a33c9289bc17de893dd347b749f}{ajouter\-Projectile} (\hyperlink{class_projectile}{Projectile} $\ast$proj)
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'ajouter un projectile. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga44f1aef3f67011778793184e07be4971}{update} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} delta\-T)
+\begin{DoxyCompactList}\small\item\em Met à jour les éléments de jeu. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga16b8d68534ed55b4fa68ba2b3b138d2a}{dessiner\-Cadre\-Zone\-De\-Jeu} ()
+\begin{DoxyCompactList}\small\item\em Dessine le cadre de la zone de jeu. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga8cbbec72613d4b3402a4151e019f9453}{dessiner\-Cadre\-Depart} ()
+\begin{DoxyCompactList}\small\item\em Dessine le cadre de la zone de depart. \end{DoxyCompactList}\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga469bf27b8cd78a7b89c24408e587bbe7}{get\-Nb\-Station\-Spatial} ()
+\begin{DoxyCompactList}\small\item\em Methode qui retourne le nombre de stations spatiales de la carte. \end{DoxyCompactList}\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga4eba7c69df6cf2824849dcfbd917d635}{get\-Nb\-Min\-Station\-A\-Sauver} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le nombre minimal de station a sauver de la destruction des astéroides. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga6545b233796923dfe70057ad2b43e8b5}{set\-Nb\-Min\-Station\-A\-Sauver} (\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} nb\-Station)
+\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{group__inf2990_gac07b728072e32b663d67de98eaaf9fd6}{get\-Frequence\-Asteroides} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir la frequence d'apparition des astéroides. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga73ef39d308c58aa5fcaac2acfc6d86d3}{set\-Frequence\-Asteroides} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} frequence)
+\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga75c1c7a4a90f348e71940ca29d6c8927}{get\-Acceleration\-Bonus} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir l'acceleration fournie par les bonus accelerateurs. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga3fddcbce9a34438aef12c7666df4b35f}{set\-Acceleration\-Bonus} (\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} acceleration)
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_ga8912c69ed295beed906d80546868e3f1}{get\-Difficulte} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir la difficulte du jeu. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga0991d5455cd93de6361dfd77a2a9e382}{set\-Difficulte} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} difficulte)
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} \hyperlink{group__inf2990_gad63dd9caa09a2df37a4efff59d392863}{get\-Nom} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le nom de la carte. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga05c95b4e5dedf1e1528caf6093afecc9}{set\-Nom} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nouveau\-Nom)
+\item 
+\hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \hyperlink{group__inf2990_ga80405a77cf4f42dea19a84a7be7443e4}{get\-Zone\-Jeu\-X} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir la cloture en X de la zone de jeu. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \hyperlink{group__inf2990_ga9a4d5a38f3b6db48cf2c01636fcbbe16}{get\-Zone\-Jeu\-Y} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir la cloture en Y de la zone de jeu. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga02eb8ad5c4393d1dc47e96df1b42c79e}{set\-Zone\-Jeu} (const \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} largeur\-Zone)
+\item 
+\hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \hyperlink{group__inf2990_gaf6b8d05bf2ffe207a93c7fef39df2791}{get\-Cadre\-Depart\-X} () const 
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le cadre de depart en X. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga606b191c0b0bbb868ae25c13b906f45a}{Vecteur2f} \hyperlink{group__inf2990_gabe65a8eb1aeca0dcffa1de528f2d2d5c}{get\-Cadre\-Depart\-Y} () const 
+\begin{DoxyCompactList}\small\item\em // Permet d'obtenir le cadre de depart en Y \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \& \hyperlink{group__inf2990_ga57fa20350b4cc71c755325d2738f44a6}{get\-Vecteur\-Element} ()
+\begin{DoxyCompactList}\small\item\em Methode qui retourne le conteneur d'element\-Jeu. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_asteroide}{Asteroide} $\ast$ $>$ \& \hyperlink{group__inf2990_ga1c3f79dbc801d5b8f083f5b2374623b5}{get\-Vecteur\-Asteroide} ()
+\begin{DoxyCompactList}\small\item\em Methode qui retourne le conteneur d'asteroides. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_projectile}{Projectile} $\ast$ $>$ \& \hyperlink{group__inf2990_gad5a6f85f49482efadadd9308eaabb8af}{get\-Vecteur\-Projectile} ()
+\begin{DoxyCompactList}\small\item\em Methode qui retourne le conteneur de projectile. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_gad7d047f93755ee02689ec32330192b51}{sauvegarde\-Ok} () const 
+\begin{DoxyCompactList}\small\item\em Methode qui verifie s'il est correct de sauvegarder la carte. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{group__inf2990_ga3fada325b4eb999a26e377b93a9b9c7f}{get\-Largeur} () const 
+\begin{DoxyCompactList}\small\item\em Methode qui retourne la largeur de la zone de jeu. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga17e37b58d3ff0cf46df7aa6797afd1e2}{set\-Joueur1} (\hyperlink{group__inf2990_ga01dafcdb1f8e7d4d6a419914150f437c}{Mode\-Joueur} \hyperlink{glew_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode})
+\begin{DoxyCompactList}\small\item\em Methode qui permet de set le joueur 2 a joueur reel ou joueur virtuel. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga84579071dede9dee0851a9014aa01d07}{set\-Joueur2} (\hyperlink{group__inf2990_ga01dafcdb1f8e7d4d6a419914150f437c}{Mode\-Joueur} \hyperlink{glew_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode})
+\begin{DoxyCompactList}\small\item\em Methode qui permet de set le joueur 2 a joueur reel ou joueur virtuel. \end{DoxyCompactList}\item 
+\hyperlink{class_vaisseau}{Vaisseau} $\ast$ \hyperlink{group__inf2990_ga2b6bca7ef8b3549e8c541e42e24c0285}{get\-Joueur1} ()
+\begin{DoxyCompactList}\small\item\em Methode qui permet de recuperer le joueur 1. \end{DoxyCompactList}\item 
+\hyperlink{class_vaisseau}{Vaisseau} $\ast$ \hyperlink{group__inf2990_gaf68c4f967c4be6ddb587d5f9619d7bc9}{get\-Joueur2} ()
+\begin{DoxyCompactList}\small\item\em Methode qui permet de recuperer le joueur 2. \end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} \& \hyperlink{group__inf2990_gad25706184b2a2cee64e7339de7ef09e2}{operator=} (\hyperlink{class_carte}{Carte} \&carte)
+\item 
+\hyperlink{group__utilitaire_ga6a8205c734fc1c9d1272ea424efb2606}{Vecteur4f} \hyperlink{group__inf2990_ga2c433089e23aef234cb06bd99c15002b}{get\-Coins\-Zone\-Passage} () const 
+\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{group__inf2990_gab93552bec5958c74ec93ab5d5a5e115d}{get\-Largeur\-Zone\-Passage} () const 
+\item 
+\hyperlink{group__utilitaire_ga6a8205c734fc1c9d1272ea424efb2606}{Vecteur4f} \hyperlink{group__inf2990_ga49dd142c29e7f37934c05cf370b5056b}{get\-Coins\-Cadre\-Depart} () const 
+\item 
+\hyperlink{structai_vector3_d}{ai\-Vector3\-D} \hyperlink{group__inf2990_ga9ecac5ee30e5f4c26af313baf8dd3701}{get\-Pos\-Depart\-Joueur} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} joueur) const 
+\begin{DoxyCompactList}\small\item\em Methode qui retourne la position depart du joueur\-X. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_carte_a8016eaa95818e9f83c63486c01832116}{set\-Mode\-Coop} (bool mode\-Coop)
+\begin{DoxyCompactList}\small\item\em Methode qui determine si on est en mode coop ou non. \end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_ab59379dd40ea71483fc2806ebc972a75}{get\-Mode\-Coop} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_carte_a69b1bf8e902d98dd70443d398e904587}{set\-Joueur2\-Virtuelp} (bool joueur\-Virtuel)
+\begin{DoxyCompactList}\small\item\em Methode qui determine si le joueur 2 est virtuel ou non. \end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_aa73c96016b11ffc60551ced5842c6906}{get\-Joueur2\-Virtuel} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga36720767c5328fd763f76856b4aaefc9}{echanger\-Position\-Depart\-Pour\-Vaisseau} ()
+\begin{DoxyCompactList}\small\item\em Methode qui remplace les positions de depart par des vaisseaux. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga799f3d87e00080be4480dc16a66f46c2}{echanger\-Vaisseau\-Pour\-Position\-Depart} ()
+\begin{DoxyCompactList}\small\item\em Methode qui remplace les vaisseaux par des positions de depart. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga019075f1c2a72789d161a96970aa709d}{definir\-Mode\-Joueurs} (bool mode\-Coop, bool joueur2\-Virtuel)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga9c0472cccb0e3ed03d695799603e5e51}{detruire\-Asteroides} ()
+\begin{DoxyCompactList}\small\item\em Methode qui detruit tous les asteroides generes. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga6cda887f28278f09a1400c609f1b5a85}{detruire\-Projectiles} ()
+\begin{DoxyCompactList}\small\item\em Methode qui detruit tous les projectiles. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gabd6ff077da6c27d738d0ed4a6f7a6c46}{detruire\-Objets} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga7434287a77c07ed45aae3bae1c035e5d}{associer\-Freres\-Portails} ()
+\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_carte_a702c898d53eeeaca0a652c138522c196}{get\-Nombre\-Stations} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga852db81da13284b87b3e533f553902d5}{detruire\-Quad\-Tree} ()
+\item 
+bool \hyperlink{group__inf2990_ga0e3a51d3529b2743b660b74bb8fbc04b}{joueur\-Is\-Proche\-Cadre} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui permet l'ajout et la supression d'élements sur la carte (zone de jeu) 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_carte_aa73c96016b11ffc60551ced5842c6906}{\index{Carte@{Carte}!get\-Joueur2\-Virtuel@{get\-Joueur2\-Virtuel}}
+\index{get\-Joueur2\-Virtuel@{get\-Joueur2\-Virtuel}!Carte@{Carte}}
+\subsubsection[{get\-Joueur2\-Virtuel}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte\-::get\-Joueur2\-Virtuel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_aa73c96016b11ffc60551ced5842c6906}
+\hypertarget{class_carte_ab59379dd40ea71483fc2806ebc972a75}{\index{Carte@{Carte}!get\-Mode\-Coop@{get\-Mode\-Coop}}
+\index{get\-Mode\-Coop@{get\-Mode\-Coop}!Carte@{Carte}}
+\subsubsection[{get\-Mode\-Coop}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte\-::get\-Mode\-Coop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ab59379dd40ea71483fc2806ebc972a75}
+\hypertarget{class_carte_a702c898d53eeeaca0a652c138522c196}{\index{Carte@{Carte}!get\-Nombre\-Stations@{get\-Nombre\-Stations}}
+\index{get\-Nombre\-Stations@{get\-Nombre\-Stations}!Carte@{Carte}}
+\subsubsection[{get\-Nombre\-Stations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf unsigned} {\bf int} Carte\-::get\-Nombre\-Stations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a702c898d53eeeaca0a652c138522c196}
+\hypertarget{class_carte_a69b1bf8e902d98dd70443d398e904587}{\index{Carte@{Carte}!set\-Joueur2\-Virtuelp@{set\-Joueur2\-Virtuelp}}
+\index{set\-Joueur2\-Virtuelp@{set\-Joueur2\-Virtuelp}!Carte@{Carte}}
+\subsubsection[{set\-Joueur2\-Virtuelp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Carte\-::set\-Joueur2\-Virtuelp (
+\begin{DoxyParamCaption}
+\item[{bool}]{joueur\-Virtuel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a69b1bf8e902d98dd70443d398e904587}
+
+
+Methode qui determine si le joueur 2 est virtuel ou non. 
+
+\hypertarget{class_carte_a8016eaa95818e9f83c63486c01832116}{\index{Carte@{Carte}!set\-Mode\-Coop@{set\-Mode\-Coop}}
+\index{set\-Mode\-Coop@{set\-Mode\-Coop}!Carte@{Carte}}
+\subsubsection[{set\-Mode\-Coop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Carte\-::set\-Mode\-Coop (
+\begin{DoxyParamCaption}
+\item[{bool}]{mode\-Coop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a8016eaa95818e9f83c63486c01832116}
+
+
+Methode qui determine si on est en mode coop ou non. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_carte_8h}{Carte.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_carte_8cpp}{Carte.\-cpp}\end{DoxyCompactItemize}

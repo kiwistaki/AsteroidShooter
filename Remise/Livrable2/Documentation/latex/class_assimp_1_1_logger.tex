@@ -1,0 +1,395 @@
+\hypertarget{class_assimp_1_1_logger}{\section{Assimp\-:\-:Logger Class Reference}
+\label{class_assimp_1_1_logger}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}}
+}
+
+
+C\-P\-P-\/\-A\-P\-I\-: Abstract interface for logger implementations. \hyperlink{namespace_assimp}{Assimp} provides a default implementation and uses it for almost all logging stuff ('\hyperlink{class_assimp_1_1_default_logger}{Default\-Logger}'). This class defines just basic logging behaviour and is not of interest for you. Instead, take a look at \#\-Default\-Logger.  
+
+
+
+
+{\ttfamily \#include $<$Logger.\-h$>$}
+
+Inheritance diagram for Assimp\-:\-:Logger\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_assimp_1_1_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}{Log\-Severity} \{ \hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda}{N\-O\-R\-M\-A\-L}, 
+\hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6afc9d1d86aa82fdb80e00c99b3c1ce486}{V\-E\-R\-B\-O\-S\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em Log severity to describe the granularity of logging. \end{DoxyCompactList}\item 
+enum \hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6}{Error\-Severity} \{ \hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a1c233dd8bb46dc4386948a03877b8160}{D\-E\-B\-U\-G\-G\-I\-N\-G} = 1, 
+\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a5631a164f078d5f7e8780cf88d1d45d6}{I\-N\-F\-O} = 2, 
+\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6abea27a64e7f7cc758549526f953c26f2}{W\-A\-R\-N} = 4, 
+\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a2dd325191d60507ab0afd01ea3add8d1}{E\-R\-R} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em Description for severity of a log message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_assimp_1_1_logger_a27dd2bd4fd3b9cde0635ed22aad687c3}{$\sim$\-Logger} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_af978b5a592fef74ec3b5634ebdf22a3b}{debug} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Writes a debug message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_a6774f0cc4373195ef899799a40ad9879}{info} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Writes a info message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_afe0f9914014c7a62780a67557b9fc0d3}{warn} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Writes a warning message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_a42b564d43664bb9fdc72613aa3e54770}{error} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Writes an error message. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_a8fb4fa4c2c329a36ac39bc9c743925f1}{set\-Log\-Severity} (\hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}{Log\-Severity} log\-\_\-severity)
+\begin{DoxyCompactList}\small\item\em Set a new log severity. \end{DoxyCompactList}\item 
+\hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}{Log\-Severity} \hyperlink{class_assimp_1_1_logger_a2b4cee0d7f1f8948308ab6a8ee1a3dc7}{get\-Log\-Severity} () const 
+\begin{DoxyCompactList}\small\item\em Get the current log severity. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_assimp_1_1_logger_a56fbf4f392712f06d3c5bb581c3f3906}{attach\-Stream} (\hyperlink{class_assimp_1_1_log_stream}{Log\-Stream} $\ast$p\-Stream, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_acc39d4387d4f2d172de77ed0c5208990}{severity}=\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a1c233dd8bb46dc4386948a03877b8160}{D\-E\-B\-U\-G\-G\-I\-N\-G}$\vert$\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a2dd325191d60507ab0afd01ea3add8d1}{E\-R\-R}$\vert$\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6abea27a64e7f7cc758549526f953c26f2}{W\-A\-R\-N}$\vert$\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a5631a164f078d5f7e8780cf88d1d45d6}{I\-N\-F\-O})=0
+\begin{DoxyCompactList}\small\item\em Attach a new logstream. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_assimp_1_1_logger_ac89b2edd326dda9046fe9d4e1f4d10fc}{detatch\-Stream} (\hyperlink{class_assimp_1_1_log_stream}{Log\-Stream} $\ast$p\-Stream, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_acc39d4387d4f2d172de77ed0c5208990}{severity}=\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a1c233dd8bb46dc4386948a03877b8160}{D\-E\-B\-U\-G\-G\-I\-N\-G}$\vert$\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a2dd325191d60507ab0afd01ea3add8d1}{E\-R\-R}$\vert$\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6abea27a64e7f7cc758549526f953c26f2}{W\-A\-R\-N}$\vert$\hyperlink{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a5631a164f078d5f7e8780cf88d1d45d6}{I\-N\-F\-O})=0
+\begin{DoxyCompactList}\small\item\em Detach a still attached stream from the logger (or modify the filter flags bits) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_logger_a784e6d1a741072b17bab32a6a41055e8}{Logger} ()
+\item 
+\hyperlink{class_assimp_1_1_logger_accc0ffea63ddf0982d8c2ba7e07f0716}{Logger} (\hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}{Log\-Severity} \hyperlink{glew_8h_acc39d4387d4f2d172de77ed0c5208990}{severity})
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_aded6996d20f14204877097b88bd5eac6}{On\-Debug} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})=0
+\begin{DoxyCompactList}\small\item\em Called as a request to write a specific debug message. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_aba81c4562ff8db83f06c6b62f2eb7983}{On\-Info} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})=0
+\begin{DoxyCompactList}\small\item\em Called as a request to write a specific info message. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_ab8066978dd37992f711d75d49cf4607b}{On\-Warn} (const char $\ast$essage)=0
+\begin{DoxyCompactList}\small\item\em Called as a request to write a specific warn message. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_assimp_1_1_logger_ae2ea0790aba6125b90af0f2768b0759d}{On\-Error} (const char $\ast$\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})=0
+\begin{DoxyCompactList}\small\item\em Called as a request to write a specific error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}{Log\-Severity} \hyperlink{class_assimp_1_1_logger_ae1c96711eb927a5b33745a6211e93f56}{m\-\_\-\-Severity}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_logger}{Logger} severity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\-P\-P-\/\-A\-P\-I\-: Abstract interface for logger implementations. \hyperlink{namespace_assimp}{Assimp} provides a default implementation and uses it for almost all logging stuff ('\hyperlink{class_assimp_1_1_default_logger}{Default\-Logger}'). This class defines just basic logging behaviour and is not of interest for you. Instead, take a look at \#\-Default\-Logger. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!Error\-Severity@{Error\-Severity}}
+\index{Error\-Severity@{Error\-Severity}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{Error\-Severity}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Assimp\-::\-Logger\-::\-Error\-Severity}}}\label{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6}
+
+
+Description for severity of a log message. 
+
+Every \hyperlink{class_assimp_1_1_log_stream}{Log\-Stream} has a bitwise combination of these flags. A \hyperlink{class_assimp_1_1_log_stream}{Log\-Stream} doesn't receive any messages of a specific type if it doesn't specify the corresponding Error\-Severity flag. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-B\-U\-G\-G\-I\-N\-G@{D\-E\-B\-U\-G\-G\-I\-N\-G}!Assimp\-::\-Logger@{Assimp\-::\-Logger}}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!D\-E\-B\-U\-G\-G\-I\-N\-G@{D\-E\-B\-U\-G\-G\-I\-N\-G}}\item[{\em 
+\hypertarget{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a1c233dd8bb46dc4386948a03877b8160}{D\-E\-B\-U\-G\-G\-I\-N\-G}\label{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a1c233dd8bb46dc4386948a03877b8160}
+}]Debug log message. \index{I\-N\-F\-O@{I\-N\-F\-O}!Assimp\-::\-Logger@{Assimp\-::\-Logger}}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!I\-N\-F\-O@{I\-N\-F\-O}}\item[{\em 
+\hypertarget{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a5631a164f078d5f7e8780cf88d1d45d6}{I\-N\-F\-O}\label{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a5631a164f078d5f7e8780cf88d1d45d6}
+}]Info log message. \index{W\-A\-R\-N@{W\-A\-R\-N}!Assimp\-::\-Logger@{Assimp\-::\-Logger}}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!W\-A\-R\-N@{W\-A\-R\-N}}\item[{\em 
+\hypertarget{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6abea27a64e7f7cc758549526f953c26f2}{W\-A\-R\-N}\label{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6abea27a64e7f7cc758549526f953c26f2}
+}]Warn log message. \index{E\-R\-R@{E\-R\-R}!Assimp\-::\-Logger@{Assimp\-::\-Logger}}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!E\-R\-R@{E\-R\-R}}\item[{\em 
+\hypertarget{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a2dd325191d60507ab0afd01ea3add8d1}{E\-R\-R}\label{class_assimp_1_1_logger_acd0b52a87d6fc11e957ed2c6e2ad75b6a2dd325191d60507ab0afd01ea3add8d1}
+}]Error log message. \end{description}
+\end{Desc}
+\hypertarget{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!Log\-Severity@{Log\-Severity}}
+\index{Log\-Severity@{Log\-Severity}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{Log\-Severity}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Assimp\-::\-Logger\-::\-Log\-Severity}}}\label{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6}
+
+
+Log severity to describe the granularity of logging. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\-O\-R\-M\-A\-L@{N\-O\-R\-M\-A\-L}!Assimp\-::\-Logger@{Assimp\-::\-Logger}}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!N\-O\-R\-M\-A\-L@{N\-O\-R\-M\-A\-L}}\item[{\em 
+\hypertarget{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda}{N\-O\-R\-M\-A\-L}\label{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda}
+}]Normal granularity of logging. \index{V\-E\-R\-B\-O\-S\-E@{V\-E\-R\-B\-O\-S\-E}!Assimp\-::\-Logger@{Assimp\-::\-Logger}}\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!V\-E\-R\-B\-O\-S\-E@{V\-E\-R\-B\-O\-S\-E}}\item[{\em 
+\hypertarget{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6afc9d1d86aa82fdb80e00c99b3c1ce486}{V\-E\-R\-B\-O\-S\-E}\label{class_assimp_1_1_logger_a8b6248a0fd062431e8572556350d29e6afc9d1d86aa82fdb80e00c99b3c1ce486}
+}]Debug infos will be logged, too. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_logger_a27dd2bd4fd3b9cde0635ed22aad687c3}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!$\sim$\-Logger@{$\sim$\-Logger}}
+\index{$\sim$\-Logger@{$\sim$\-Logger}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{$\sim$\-Logger}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\-::\-Logger\-::$\sim$\-Logger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_logger_a27dd2bd4fd3b9cde0635ed22aad687c3}
+
+
+Virtual destructor. 
+
+\hypertarget{class_assimp_1_1_logger_a784e6d1a741072b17bab32a6a41055e8}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{Logger}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\-::\-Logger\-::\-Logger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_assimp_1_1_logger_a784e6d1a741072b17bab32a6a41055e8}
+Default constructor \hypertarget{class_assimp_1_1_logger_accc0ffea63ddf0982d8c2ba7e07f0716}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{Logger}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\-::\-Logger\-::\-Logger (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\-Severity}}]{severity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_assimp_1_1_logger_accc0ffea63ddf0982d8c2ba7e07f0716}
+Construction with a given log severity 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_logger_a56fbf4f392712f06d3c5bb581c3f3906}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!attach\-Stream@{attach\-Stream}}
+\index{attach\-Stream@{attach\-Stream}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{attach\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Assimp\-::\-Logger\-::attach\-Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\-Stream} $\ast$}]{p\-Stream, }
+\item[{{\bf unsigned} {\bf int}}]{severity = {\ttfamily {\bf D\-E\-B\-U\-G\-G\-I\-N\-G}$\vert${\bf E\-R\-R}$\vert${\bf W\-A\-R\-N}$\vert${\bf I\-N\-F\-O}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_assimp_1_1_logger_a56fbf4f392712f06d3c5bb581c3f3906}
+
+
+Attach a new logstream. 
+
+The logger takes ownership of the stream and is responsible for its destruction (which is done using \-::delete when the logger itself is destroyed). Call detach\-Stream to detach a stream and to gain ownership of it again. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Stream} & Logstream to attach \\
+\hline
+{\em severity} & \hyperlink{class_message}{Message} filter, specified which types of log messages are dispatched to the stream. Provide a bitwise combination of the Error\-Severity flags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the stream has been attached, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_assimp_1_1_default_logger_abc0ca7a337f8c3e38eca0eb45bb1ccf0}{Assimp\-::\-Default\-Logger}, and \hyperlink{class_assimp_1_1_null_logger_a31c05ecaee392b5fd34fd2dfd1cca559}{Assimp\-::\-Null\-Logger}.
+
+\hypertarget{class_assimp_1_1_logger_af978b5a592fef74ec3b5634ebdf22a3b}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!debug@{debug}}
+\index{debug@{debug}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Logger\-::debug (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_logger_af978b5a592fef74ec3b5634ebdf22a3b}
+
+
+Writes a debug message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Debug message \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_logger_ac89b2edd326dda9046fe9d4e1f4d10fc}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!detatch\-Stream@{detatch\-Stream}}
+\index{detatch\-Stream@{detatch\-Stream}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{detatch\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Assimp\-::\-Logger\-::detatch\-Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\-Stream} $\ast$}]{p\-Stream, }
+\item[{{\bf unsigned} {\bf int}}]{severity = {\ttfamily {\bf D\-E\-B\-U\-G\-G\-I\-N\-G}$\vert${\bf E\-R\-R}$\vert${\bf W\-A\-R\-N}$\vert${\bf I\-N\-F\-O}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_assimp_1_1_logger_ac89b2edd326dda9046fe9d4e1f4d10fc}
+
+
+Detach a still attached stream from the logger (or modify the filter flags bits) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Stream} & Logstream instance for detaching \\
+\hline
+{\em severity} & Provide a bitwise combination of the Error\-Severity flags. This value is \&$\sim$ed with the current flags of the stream, if the result is 0 the stream is detached from the \hyperlink{class_assimp_1_1_logger}{Logger} and the caller retakes the possession of the stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the stream has been dettached, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_assimp_1_1_default_logger_a2615f1d1624f1d742d0cf2dd4a5cccc8}{Assimp\-::\-Default\-Logger}, and \hyperlink{class_assimp_1_1_null_logger_ab49b14a0045aab73b813a448b5aa77b4}{Assimp\-::\-Null\-Logger}.
+
+\hypertarget{class_assimp_1_1_logger_a42b564d43664bb9fdc72613aa3e54770}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!error@{error}}
+\index{error@{error}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Logger\-::error (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_logger_a42b564d43664bb9fdc72613aa3e54770}
+
+
+Writes an error message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Error message \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_logger_a2b4cee0d7f1f8948308ab6a8ee1a3dc7}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!get\-Log\-Severity@{get\-Log\-Severity}}
+\index{get\-Log\-Severity@{get\-Log\-Severity}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{get\-Log\-Severity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logger\-::\-Log\-Severity} Assimp\-::\-Logger\-::get\-Log\-Severity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_logger_a2b4cee0d7f1f8948308ab6a8ee1a3dc7}
+
+
+Get the current log severity. 
+
+\hypertarget{class_assimp_1_1_logger_a6774f0cc4373195ef899799a40ad9879}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!info@{info}}
+\index{info@{info}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Logger\-::info (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_logger_a6774f0cc4373195ef899799a40ad9879}
+
+
+Writes a info message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Info message \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_logger_aded6996d20f14204877097b88bd5eac6}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!On\-Debug@{On\-Debug}}
+\index{On\-Debug@{On\-Debug}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{On\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Assimp\-::\-Logger\-::\-On\-Debug (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_assimp_1_1_logger_aded6996d20f14204877097b88bd5eac6}
+
+
+Called as a request to write a specific debug message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Debug message. Never longer than M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-M\-E\-S\-S\-A\-G\-E\-\_\-\-L\-E\-N\-G\-T\-H characters (exluding the '0'). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The message string is only valid until the scope of the function is left. 
+\end{DoxyNote}
+
+
+Implemented in \hyperlink{class_assimp_1_1_null_logger_af354ebbd382b7097a55d364794a45631}{Assimp\-::\-Null\-Logger}.
+
+\hypertarget{class_assimp_1_1_logger_ae2ea0790aba6125b90af0f2768b0759d}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!On\-Error@{On\-Error}}
+\index{On\-Error@{On\-Error}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{On\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Assimp\-::\-Logger\-::\-On\-Error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_assimp_1_1_logger_ae2ea0790aba6125b90af0f2768b0759d}
+
+
+Called as a request to write a specific error message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Error message. Never longer than M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-M\-E\-S\-S\-A\-G\-E\-\_\-\-L\-E\-N\-G\-T\-H characters (exluding the '0'). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The message string is only valid until the scope of the function is left. 
+\end{DoxyNote}
+
+
+Implemented in \hyperlink{class_assimp_1_1_null_logger_a4fbf66103757fafcff891fb04b4ee714}{Assimp\-::\-Null\-Logger}.
+
+\hypertarget{class_assimp_1_1_logger_aba81c4562ff8db83f06c6b62f2eb7983}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!On\-Info@{On\-Info}}
+\index{On\-Info@{On\-Info}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{On\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Assimp\-::\-Logger\-::\-On\-Info (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_assimp_1_1_logger_aba81c4562ff8db83f06c6b62f2eb7983}
+
+
+Called as a request to write a specific info message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Info message. Never longer than M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-M\-E\-S\-S\-A\-G\-E\-\_\-\-L\-E\-N\-G\-T\-H characters (exluding the '0'). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The message string is only valid until the scope of the function is left. 
+\end{DoxyNote}
+
+
+Implemented in \hyperlink{class_assimp_1_1_null_logger_a12d2b0048d17a819c8c00277ad1394c5}{Assimp\-::\-Null\-Logger}.
+
+\hypertarget{class_assimp_1_1_logger_ab8066978dd37992f711d75d49cf4607b}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!On\-Warn@{On\-Warn}}
+\index{On\-Warn@{On\-Warn}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{On\-Warn}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Assimp\-::\-Logger\-::\-On\-Warn (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{essage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_assimp_1_1_logger_ab8066978dd37992f711d75d49cf4607b}
+
+
+Called as a request to write a specific warn message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Warn message. Never longer than M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-M\-E\-S\-S\-A\-G\-E\-\_\-\-L\-E\-N\-G\-T\-H characters (exluding the '0'). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The message string is only valid until the scope of the function is left. 
+\end{DoxyNote}
+
+
+Implemented in \hyperlink{class_assimp_1_1_null_logger_a9a04c2b9e3d4bc9eec8f693ed8115f24}{Assimp\-::\-Null\-Logger}.
+
+\hypertarget{class_assimp_1_1_logger_a8fb4fa4c2c329a36ac39bc9c743925f1}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!set\-Log\-Severity@{set\-Log\-Severity}}
+\index{set\-Log\-Severity@{set\-Log\-Severity}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{set\-Log\-Severity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Logger\-::set\-Log\-Severity (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\-Severity}}]{log\-\_\-severity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_logger_a8fb4fa4c2c329a36ac39bc9c743925f1}
+
+
+Set a new log severity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\-\_\-severity} & New severity for logging \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_logger_afe0f9914014c7a62780a67557b9fc0d3}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!warn@{warn}}
+\index{warn@{warn}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{warn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Assimp\-::\-Logger\-::warn (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_logger_afe0f9914014c7a62780a67557b9fc0d3}
+
+
+Writes a warning message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Warn message \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_logger_ae1c96711eb927a5b33745a6211e93f56}{\index{Assimp\-::\-Logger@{Assimp\-::\-Logger}!m\-\_\-\-Severity@{m\-\_\-\-Severity}}
+\index{m\-\_\-\-Severity@{m\-\_\-\-Severity}!Assimp::Logger@{Assimp\-::\-Logger}}
+\subsubsection[{m\-\_\-\-Severity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log\-Severity} Assimp\-::\-Logger\-::m\-\_\-\-Severity\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_logger_ae1c96711eb927a5b33745a6211e93f56}
+
+
+\hyperlink{class_assimp_1_1_logger}{Logger} severity. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/assimp/include/\hyperlink{_logger_8h}{Logger.\-h}\end{DoxyCompactItemize}

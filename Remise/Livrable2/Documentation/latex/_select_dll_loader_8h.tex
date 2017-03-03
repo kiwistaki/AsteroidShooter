@@ -1,0 +1,46 @@
+\hypertarget{_select_dll_loader_8h}{\section{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/config/\-Select\-Dll\-Loader.h File Reference}
+\label{_select_dll_loader_8h}\index{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/config/\-Select\-Dll\-Loader.\-h@{Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/config/\-Select\-Dll\-Loader.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_select_dll_loader_8h_a55b6e7232bf4c15eca3cd64753c17272}{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N}~1
+\begin{DoxyCompactList}\small\item\em If defined, then plug-\/in related classes and functions will not be compiled. \end{DoxyCompactList}\item 
+\#define \hyperlink{_select_dll_loader_8h_a477408f06c41af1d46b8f17f21b3b5d6}{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T}~extern \char`\"{}C\char`\"{}
+\begin{DoxyCompactList}\small\item\em A macro to export a function from a dynamic library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Selects \hyperlink{class_dynamic_library_manager}{Dynamic\-Library\-Manager} implementation.
+
+Don't include this file directly. Include Portability.\-h instead. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_select_dll_loader_8h_a55b6e7232bf4c15eca3cd64753c17272}{\index{Select\-Dll\-Loader.\-h@{Select\-Dll\-Loader.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N@{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N@{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N}!SelectDllLoader.h@{Select\-Dll\-Loader.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-O\-\_\-\-T\-E\-S\-T\-P\-L\-U\-G\-I\-N~1}}\label{_select_dll_loader_8h_a55b6e7232bf4c15eca3cd64753c17272}
+
+
+If defined, then plug-\/in related classes and functions will not be compiled. 
+
+\hypertarget{_select_dll_loader_8h_a477408f06c41af1d46b8f17f21b3b5d6}{\index{Select\-Dll\-Loader.\-h@{Select\-Dll\-Loader.\-h}!C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T}!SelectDllLoader.h@{Select\-Dll\-Loader.\-h}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-E\-X\-P\-O\-R\-T~extern \char`\"{}C\char`\"{}}}\label{_select_dll_loader_8h_a477408f06c41af1d46b8f17f21b3b5d6}
+
+
+A macro to export a function from a dynamic library. 
+
+This macro export the C function following it from a dynamic library. Exporting the function makes it accessible to the \hyperlink{class_dynamic_library_manager}{Dynamic\-Library\-Manager}.
+
+Example of usage\-: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <cppunit/include/plugin/TestPlugIn.h>}
+
+\hyperlink{_select_dll_loader_8h_a477408f06c41af1d46b8f17f21b3b5d6}{CPPUNIT\_PLUGIN\_EXPORT} \hyperlink{struct_cpp_unit_test_plug_in}{CppUnitTestPlugIn} *
+      \hyperlink{_test_plug_in_8h_ae7a1d474c7762e1bed3972b3d8fc11d6}{CPPUNIT\_PLUGIN\_EXPORTED\_NAME}(\textcolor{keywordtype}{void})
+\{
+  ...
+  \textcolor{keywordflow}{return} &myPlugInInterface;
+\}
+\end{DoxyCode}
+ 

@@ -1,0 +1,76 @@
+\hypertarget{class_mfc_test_runner}{\section{Mfc\-Test\-Runner Class Reference}
+\label{class_mfc_test_runner}\index{Mfc\-Test\-Runner@{Mfc\-Test\-Runner}}
+}
+
+
+M\-F\-C test runner.
+
+Use this to launch the M\-F\-C \hyperlink{class_test_runner}{Test\-Runner}. Usually called from you C\-Win\-App subclass\-:  
+
+
+
+
+{\ttfamily \#include $<$Mfc\-Test\-Runner.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mfc_test_runner_aea503f886c3a992b557d4dfc223bb0b2}{void {\bfseries run} ()}\label{class_mfc_test_runner_aea503f886c3a992b557d4dfc223bb0b2}
+
+\item 
+\hypertarget{class_mfc_test_runner_aedb029517afb5863e483bf9ff0d7d1ed}{void {\bfseries add\-Test} (\hyperlink{class_test}{Test} $\ast$test)}\label{class_mfc_test_runner_aedb029517afb5863e483bf9ff0d7d1ed}
+
+\item 
+\hypertarget{class_mfc_test_runner_a99c469dd7f65c820a378e217ca886fd9}{void {\bfseries add\-Tests} (const Cpp\-Unit\-Vector$<$ \hyperlink{class_test}{Test} $\ast$ $>$ \&tests)}\label{class_mfc_test_runner_a99c469dd7f65c820a378e217ca886fd9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mfc_test_runner_a6911063cb903f782927897e33df1692f}{typedef Cpp\-Unit\-Vector$<$ \hyperlink{class_test}{Test} $\ast$ $>$ {\bfseries Tests}}\label{class_mfc_test_runner_a6911063cb903f782927897e33df1692f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mfc_test_runner_ad810643faf74943741660ca94b9811ee}{\hyperlink{class_test}{Test} $\ast$ {\bfseries get\-Root\-Test} ()}\label{class_mfc_test_runner_ad810643faf74943741660ca94b9811ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mfc_test_runner_a7700f0b285e70f42f3e84b56be890658}{\hyperlink{class_test_suite}{Test\-Suite} $\ast$ {\bfseries m\-\_\-suite}}\label{class_mfc_test_runner_a7700f0b285e70f42f3e84b56be890658}
+
+\item 
+\hypertarget{class_mfc_test_runner_a041d453efb2f9e262676f1d68f1c22af}{Tests {\bfseries m\-\_\-tests}}\label{class_mfc_test_runner_a041d453efb2f9e262676f1d68f1c22af}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+M\-F\-C test runner.
+
+Use this to launch the M\-F\-C \hyperlink{class_test_runner}{Test\-Runner}. Usually called from you C\-Win\-App subclass\-: 
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <cppunit/ui/mfc/MfcTestRunner.h>}
+\textcolor{preprocessor}{#include <cppunit/extensions/TestFactoryRegistry.h>}
+
+\textcolor{keywordtype}{void} 
+CHostAppApp::RunUnitTests()
+\{
+  CppUnit::MfcTestRunner runner;
+  runner.addTest( CppUnit::TestFactoryRegistry::getRegistry().makeTest() );
+
+  runner.run();    
+\}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See Also}
+Cpp\-Unit\-::\-Text\-Test\-Runner, Cpp\-Unit\-::\-Test\-Factory\-Registry. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/ui/mfc/Mfc\-Test\-Runner.\-h\end{DoxyCompactItemize}

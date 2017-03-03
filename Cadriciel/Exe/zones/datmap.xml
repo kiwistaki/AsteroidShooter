@@ -1,0 +1,15 @@
+<?xml version="1,0" ?>
+<Root>
+    <NiveauDiff diff="0" />
+    <FrequenceAsteroide frequenceAsteroide="1" />
+    <NbMinDeStation nbMinDeStation="1" />
+    <BonusAcceleration bonusAcceleration="10" />
+    <ConteneurElement>
+        <Element type="7" id="1" posX="-50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="7" id="2" posX="50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="3" posX="-1047.71" posY="556.706" posZ="-0" angle="168.399" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="4" posX="1094.84" posY="-503.237" posZ="-0" angle="161.399" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="3" id="5" posX="-1022.58" posY="-559.852" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="6" />
+        <Element type="3" id="6" posX="937.759" posY="644.773" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="5" />
+    </ConteneurElement>
+</Root>

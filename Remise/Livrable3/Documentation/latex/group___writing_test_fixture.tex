@@ -1,0 +1,491 @@
+\hypertarget{group___writing_test_fixture}{\section{Writing test fixture}
+\label{group___writing_test_fixture}\index{Writing test fixture@{Writing test fixture}}
+}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{_helper_macros_8h}{Helper\-Macros.\-h}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_test_caller}{Test\-Caller$<$ Fixture $>$}
+\begin{DoxyCompactList}\small\item\em Generate a test case from a fixture method.
+
+A test caller provides access to a test case method on a test fixture class. \hyperlink{class_test}{Test} callers are useful when you want to run an individual test or add it to a suite. \hyperlink{class_test}{Test} Callers invoke only one \hyperlink{class_test}{Test} (i.\-e. test method) on one Fixture of a \hyperlink{class_test_fixture}{Test\-Fixture}. \end{DoxyCompactList}\item 
+class \hyperlink{class_test_fixture}{Test\-Fixture}
+\begin{DoxyCompactList}\small\item\em Wraps a test case with set\-Up and tear\-Down methods.
+
+A \hyperlink{class_test_fixture}{Test\-Fixture} is used to provide a common environment for a set of test cases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}(A\-Test\-Fixture\-Type)
+\begin{DoxyCompactList}\small\item\em Begin test suite. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}(A\-Test\-Fixture\-Type, A\-Super\-Class)
+\begin{DoxyCompactList}\small\item\em Begin test suite (includes parent suite) \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D}()
+\begin{DoxyCompactList}\small\item\em End declaration of the test suite. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_gadcb50ede05c9da831bd8b0140fb59094}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T}()
+\begin{DoxyCompactList}\small\item\em End declaration of an abstract test suite. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_gaace55a4a3a4f3e0cd219d38e98d4f48f}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T}(test)~context.\-add\-Test( test )
+\begin{DoxyCompactList}\small\item\em Add a test to the suite (for custom test macro). \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T}(test\-Method)
+\begin{DoxyCompactList}\small\item\em Add a method to the suite. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}(test\-Method, Exception\-Type)
+\begin{DoxyCompactList}\small\item\em Add a test which fail if the specified exception is not caught. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L}(test\-Method)~\hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}( test\-Method, C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Exception )
+\begin{DoxyCompactList}\small\item\em Adds a test case which is excepted to fail. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_ga516fec19cd7a7acb6fbf194bd98c4c09}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S}(test\-Adder\-Method)~test\-Adder\-Method( context )
+\begin{DoxyCompactList}\small\item\em Adds some custom test cases. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___writing_test_fixture_gac5ac4d8544ac2648a28bf7e4dcb27b9d}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y}(A\-Property\-Key, A\-Property\-Value)
+\begin{DoxyCompactList}\small\item\em Adds a property to the test suite builder context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T(
+\begin{DoxyParamCaption}
+\item[{}]{test\-Method}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{group___writing_test_fixture_gaace55a4a3a4f3e0cd219d38e98d4f48f}{CPPUNIT\_TEST\_SUITE\_ADD\_TEST}(                           \(\backslash\)
+        ( \textcolor{keyword}{new} CPPUNIT\_NS::TestCaller<TestFixtureType>(    \(\backslash\)
+                  context.getTestNameFor( #testMethod),   \(\backslash\)
+                  &TestFixtureType::testMethod,           \(\backslash\)
+                  context.makeFixture() ) ) )
+\end{DoxyCode}
+
+
+Add a method to the suite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Method} & Name of the method of the test case to add to the suite. The signature of the method must be of type\-: void test\-Method(); \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}. 
+\end{DoxySeeAlso}
+\hypertarget{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N(
+\begin{DoxyParamCaption}
+\item[{}]{test\-Method, }
+\item[{}]{Exception\-Type}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{group___writing_test_fixture_gaace55a4a3a4f3e0cd219d38e98d4f48f}{CPPUNIT\_TEST\_SUITE\_ADD\_TEST}(                                        \(\backslash\)
+      (\textcolor{keyword}{new} CPPUNIT\_NS::ExceptionTestCaseDecorator< ExceptionType >(  \(\backslash\)
+          \textcolor{keyword}{new} CPPUNIT\_NS::TestCaller< TestFixtureType >(             \(\backslash\)
+                               context.getTestNameFor( #testMethod ),  \(\backslash\)
+                               &TestFixtureType::testMethod,         \(\backslash\)
+                               context.makeFixture() ) ) ) )
+\end{DoxyCode}
+
+
+Add a test which fail if the specified exception is not caught. 
+
+Example\-: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{_helper_macros_8h}{cppunit/extensions/HelperMacros.h}>}
+\textcolor{preprocessor}{#include <vector>}
+\textcolor{keyword}{class }MyTest : \textcolor{keyword}{public} CppUnit::TestFixture \{
+  \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{CPPUNIT\_TEST\_SUITE}( MyTest );
+  \hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{CPPUNIT\_TEST\_EXCEPTION}( testVectorAtThrow, std::invalid\_argument );
+  \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{CPPUNIT\_TEST\_SUITE\_END}();
+\textcolor{keyword}{public}:
+  \textcolor{keywordtype}{void} testVectorAtThrow()
+  \{
+    std::vector<int> v;
+    v.at( 1 );     \textcolor{comment}{// must throw exception std::invalid\_argument}
+  \}
+\};
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Method} & Name of the method of the test case to add to the suite. \\
+\hline
+{\em Exception\-Type} & Type of the exception that must be thrown by the test method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000005}{Deprecated}]Use the assertion macro C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W instead. \end{DoxyRefDesc}
+\hypertarget{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L(
+\begin{DoxyParamCaption}
+\item[{}]{test\-Method}
+\end{DoxyParamCaption}
+)~{\bf C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}( test\-Method, C\-P\-P\-U\-N\-I\-T\-\_\-\-N\-S\-::\-Exception )}}\label{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}
+
+
+Adds a test case which is excepted to fail. 
+
+The added test case expect an assertion to fail. You usually used that type of test case when testing custom assertion macros.
+
+
+\begin{DoxyCode}
+\hyperlink{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}{CPPUNIT\_TEST\_FAIL}( testAssertFalseFail );
+
+\textcolor{keywordtype}{void} testAssertFalseFail()
+\{
+  CPPUNIT\_ASSERT( \textcolor{keyword}{false} );
+\}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See Also}
+Creating\-New\-Assertions. 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000006}{Deprecated}]Use the assertion macro C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L instead. \end{DoxyRefDesc}
+\hypertarget{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{A\-Test\-Fixture\-Type, }
+\item[{}]{A\-Super\-Class}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                                        \(\backslash\)
+    typedef ASuperClass ParentTestFixtureType;                   \(\backslash\)
+  private:                                                       \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{\(\backslash\)}
+\hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{    CPPUNIT\_TEST\_SUITE}( ATestFixtureType );                      \(\backslash\)
+      ParentTestFixtureType::addTestsToSuite( baseContext )
+\end{DoxyCode}
+
+
+Begin test suite (includes parent suite) 
+
+This macro may only be used in a class whose parent class defines a test suite using \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E()} or \hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E()}.
+
+This macro begins the declaration of a test suite, in the same manner as \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E()}. In addition, the test suite of the parent is automatically inserted in the test suite being defined.
+
+Here is an example\-:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{_helper_macros_8h}{cppunit/extensions/HelperMacros.h}>}
+\textcolor{keyword}{class }MySubTest : \textcolor{keyword}{public} MyTest \{
+  \hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{CPPUNIT\_TEST\_SUB\_SUITE}( MySubTest, MyTest );
+  \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{CPPUNIT\_TEST}( testAdd );
+  \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{CPPUNIT\_TEST}( testSub );
+  \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{CPPUNIT\_TEST\_SUITE\_END}();
+\textcolor{keyword}{public}:
+  \textcolor{keywordtype}{void} testAdd();
+  \textcolor{keywordtype}{void} testSub();
+\};
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\-Test\-Fixture\-Type} & Type of the test case class. This type {\bfseries M\-U\-S\-T} be derived from \hyperlink{class_test_fixture}{Test\-Fixture}. \\
+\hline
+{\em A\-Super\-Class} & Type of the parent class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}. 
+\end{DoxySeeAlso}
+\hypertarget{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{A\-Test\-Fixture\-Type}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                                                   \(\backslash\)
+    typedef ATestFixtureType TestFixtureType;                               \(\backslash\)
+                                                                            \(\backslash\)
+  private:                                                                  \(\backslash\)
+    static \textcolor{keyword}{const} CPPUNIT\_NS::TestNamer &getTestNamer\_\_()                    \(\backslash\)
+    \{                                                                       \(\backslash\)
+      static CPPUNIT\_TESTNAMER\_DECL( testNamer, ATestFixtureType );         \(\backslash\)
+      return testNamer;                                                     \(\backslash\)
+    \}                                                                       \(\backslash\)
+                                                                            \(\backslash\)
+  public:                                                                   \(\backslash\)
+    typedef CPPUNIT\_NS::TestSuiteBuilderContext<TestFixtureType>            \(\backslash\)
+                TestSuiteBuilderContextType;                                \(\backslash\)
+                                                                            \(\backslash\)
+    static void                                                             \(\backslash\)
+    addTestsToSuite( CPPUNIT\_NS::TestSuiteBuilderContextBase &baseContext ) \(\backslash\)
+    \{                                                                       \(\backslash\)
+      TestSuiteBuilderContextType context( baseContext )
+\end{DoxyCode}
+
+
+Begin test suite. 
+
+This macro starts the declaration of a new test suite. Use \hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E()} instead, if you wish to include the test suite of the parent class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\-Test\-Fixture\-Type} & Type of the test case class. This type {\bfseries M\-U\-S\-T} be derived from \hyperlink{class_test_fixture}{Test\-Fixture}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}, \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T}, \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D}, 
+
+\hyperlink{_helper_macros_8h_a2f4071eec88d1e306665ada0f2dd80e4}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-A\-T\-I\-O\-N}, \hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}, \hyperlink{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L}. 
+\end{DoxySeeAlso}
+\hypertarget{group___writing_test_fixture_ga516fec19cd7a7acb6fbf194bd98c4c09}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-C\-U\-S\-T\-O\-M\-\_\-\-T\-E\-S\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{test\-Adder\-Method}
+\end{DoxyParamCaption}
+)~test\-Adder\-Method( context )}}\label{group___writing_test_fixture_ga516fec19cd7a7acb6fbf194bd98c4c09}
+
+
+Adds some custom test cases. 
+
+Use this to add one or more test cases to the fixture suite. The specified method is called with a context parameter that can be used to name, instantiate fixture, and add instantiated test case to the fixture suite. The specified method must have the following signature\-: 
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{void} aMethodName( TestSuiteBuilderContextType &context );
+\end{DoxyCode}
+
+
+{\ttfamily Test\-Suite\-Builder\-Context\-Type} is typedef to Test\-Suite\-Builder\-Context$<$\-Test\-Fixture\-Type$>$ declared by \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E()}.
+
+Here is an example that add two custom tests\-:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{_helper_macros_8h}{cppunit/extensions/HelperMacros.h}>}
+
+\textcolor{keyword}{class }MyTest : \textcolor{keyword}{public} CppUnit::TestFixture \{
+  \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{CPPUNIT\_TEST\_SUITE}( MyTest );
+  \hyperlink{group___writing_test_fixture_ga516fec19cd7a7acb6fbf194bd98c4c09}{CPPUNIT\_TEST\_SUITE\_ADD\_CUSTOM\_TESTS}( addTimeOutTests );
+  \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{CPPUNIT\_TEST\_SUITE\_END}();
+\textcolor{keyword}{public}:
+  \textcolor{keyword}{static} \textcolor{keywordtype}{void} addTimeOutTests( TestSuiteBuilderContextType &context )
+  \{
+    context.addTest( \textcolor{keyword}{new} TimeOutTestCaller( context.getTestNameFor( \textcolor{stringliteral}{"test1"} ) ),
+                                            &MyTest::test1,
+                                            context.makeFixture(),
+                                            5.0 );
+    context.addTest( \textcolor{keyword}{new} TimeOutTestCaller( context.getTestNameFor( \textcolor{stringliteral}{"test2"} ) ),
+                                            &MyTest::test2,
+                                            context.makeFixture(),
+                                            5.0 );
+  \}
+
+  \textcolor{keywordtype}{void} test1()
+  \{
+    \textcolor{comment}{// Do some test that may never end...}
+  \}
+
+  \textcolor{keywordtype}{void} test2()
+  \{
+    \textcolor{comment}{// Do some test that may never end...}
+  \}
+\};
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em test\-Adder\-Method} & Name of the method called to add the test cases. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___writing_test_fixture_gaace55a4a3a4f3e0cd219d38e98d4f48f}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-A\-D\-D\-\_\-\-T\-E\-S\-T(
+\begin{DoxyParamCaption}
+\item[{}]{test}
+\end{DoxyParamCaption}
+)~context.\-add\-Test( test )}}\label{group___writing_test_fixture_gaace55a4a3a4f3e0cd219d38e98d4f48f}
+
+
+Add a test to the suite (for custom test macro). 
+
+The specified test will be added to the test suite being declared. This macro is intended for {\itshape advanced} usage, to extend Cpp\-Unit by creating new macro such as \hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N()}...
+
+Between macro \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E()} and \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D()}, you can assume that the following variables can be used\-: 
+\begin{DoxyCode}
+\textcolor{keyword}{typedef} TestSuiteBuilder<TestFixtureType> TestSuiteBuilderType;
+TestSuiteBuilderType &context;
+\end{DoxyCode}
+
+
+{\ttfamily context} can be used to name test case, create new test fixture instance, or add test case to the test fixture suite.
+
+Below is an example that show how to use this macro to create new macro to add test to the fixture suite. The macro below show how you would add a new type of test case which fails if the execution last more than a given time limit. It relies on an imaginary Time\-Out\-Test\-Caller class which has an interface similar to \hyperlink{class_test_caller}{Test\-Caller}.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define CPPUNITEX\_TEST\_TIMELIMIT( testMethod, timeLimit )            \(\backslash\)}
+\textcolor{preprocessor}{     CPPUNIT\_TEST\_SUITE\_ADD\_TEST( (new TimeOutTestCaller<TestFixtureType>(  \(\backslash\)}
+\textcolor{preprocessor}{                 namer.getTestNameFor( #testMethod ),                \(\backslash\)}
+\textcolor{preprocessor}{                 &TestFixtureType::testMethod,                   \(\backslash\)}
+\textcolor{preprocessor}{                 factory.makeFixture(),                              \(\backslash\)}
+\textcolor{preprocessor}{                 timeLimit ) ) )}
+\textcolor{preprocessor}{}  
+\textcolor{keyword}{class }PerformanceTest : CppUnit::TestFixture
+\{
+\textcolor{keyword}{public}:
+  \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{CPPUNIT\_TEST\_SUITE}( PerformanceTest );
+  CPPUNITEX\_TEST\_TIMELIMIT( testSortReverseOrder, 5.0 );
+  \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{CPPUNIT\_TEST\_SUITE\_END}();
+
+  \textcolor{keywordtype}{void} testSortReverseOrder();
+\};
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \hyperlink{class_test}{Test} to add to the suite. Must be a subclass of \hyperlink{class_test}{Test}. The test name should have been obtained using \hyperlink{class_test_namer_aa56007426b92b4c34bb2e98548419893}{Test\-Namer\-::get\-Test\-Name\-For()}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\}                                                                          \(\backslash\)
+                                                                               \(\backslash\)
+    static CPPUNIT\_NS::TestSuite *suite()                                      \(\backslash\)
+    \{                                                                          \(\backslash\)
+      const CPPUNIT\_NS::TestNamer &namer = getTestNamer\_\_();                   \(\backslash\)
+      std::auto\_ptr<CPPUNIT\_NS::TestSuite> suite(                              \(\backslash\)
+             \textcolor{keyword}{new} CPPUNIT\_NS::TestSuite( namer.getFixtureName() ));             \(\backslash\)
+      CPPUNIT\_NS::ConcretTestFixtureFactory<TestFixtureType> factory;          \(\backslash\)
+      CPPUNIT\_NS::TestSuiteBuilderContextBase context( *suite.get(),           \(\backslash\)
+                                                       namer,                  \(\backslash\)
+                                                       factory );              \(\backslash\)
+      TestFixtureType::addTestsToSuite( context );                             \(\backslash\)
+      return suite.release();                                                  \(\backslash\)
+    \}                                                                          \(\backslash\)
+  private: \textcolor{comment}{/* dummy typedef so that the macro can still end with ';'*/}         \(\backslash\)
+    typedef \textcolor{keywordtype}{int} CppUnitDummyTypedefForSemiColonEnding\_\_
+\end{DoxyCode}
+
+
+End declaration of the test suite. 
+
+After this macro, member access is set to \char`\"{}private\char`\"{}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E}. 
+
+\hyperlink{_helper_macros_8h_a2f4071eec88d1e306665ada0f2dd80e4}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-A\-T\-I\-O\-N}. 
+\end{DoxySeeAlso}
+\hypertarget{group___writing_test_fixture_gadcb50ede05c9da831bd8b0140fb59094}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-E\-N\-D\-\_\-\-A\-B\-S\-T\-R\-A\-C\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_gadcb50ede05c9da831bd8b0140fb59094}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\}                                                                          \(\backslash\)
+  private: \textcolor{comment}{/* dummy typedef so that the macro can still end with ';'*/}         \(\backslash\)
+    typedef \textcolor{keywordtype}{int} CppUnitDummyTypedefForSemiColonEnding\_\_
+\end{DoxyCode}
+
+
+End declaration of an abstract test suite. 
+
+Use this macro to indicate that the Test\-Fixture is abstract. No static suite() method will be declared.
+
+After this macro, member access is set to \char`\"{}private\char`\"{}.
+
+Here is an example of usage\-:
+
+The abstract test fixture\-: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{_helper_macros_8h}{cppunit/extensions/HelperMacros.h}>}
+\textcolor{keyword}{class }AbstractDocument;
+\textcolor{keyword}{class }AbstractDocumentTest : \textcolor{keyword}{public} CppUnit::TestFixture \{
+  \hyperlink{group___writing_test_fixture_gabe1e12200f40d6f25d60c1783c99da81}{CPPUNIT\_TEST\_SUITE}( AbstractDocumentTest );
+  \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{CPPUNIT\_TEST}( testInsertText );
+  \hyperlink{group___writing_test_fixture_gadcb50ede05c9da831bd8b0140fb59094}{CPPUNIT\_TEST\_SUITE\_END\_ABSTRACT}();
+\textcolor{keyword}{public}:
+  \textcolor{keywordtype}{void} testInsertText();
+
+  \textcolor{keywordtype}{void} setUp()
+  \{
+    m\_document = makeDocument();
+  \}
+
+  \textcolor{keywordtype}{void} tearDown()
+  \{
+    \textcolor{keyword}{delete} m\_document;
+  \}
+\textcolor{keyword}{protected}:
+  \textcolor{keyword}{virtual} AbstractDocument *makeDocument() =0;
+
+  AbstractDocument *m\_document;
+\};
+\end{DoxyCode}
+
+
+The concret test fixture\-: 
+\begin{DoxyCode}
+\textcolor{keyword}{class }RichTextDocumentTest : \textcolor{keyword}{public} AbstractDocumentTest \{
+  \hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{CPPUNIT\_TEST\_SUB\_SUITE}( RichTextDocumentTest, AbstractDocumentTest );
+  \hyperlink{group___writing_test_fixture_gaac9b03d898b207e1daf2f93867935a96}{CPPUNIT\_TEST}( testInsertFormatedText );
+  \hyperlink{group___writing_test_fixture_ga601b2e1d525f3947b216e28c625abcb1}{CPPUNIT\_TEST\_SUITE\_END}();
+\textcolor{keyword}{public}:
+  \textcolor{keywordtype}{void} testInsertFormatedText();
+\textcolor{keyword}{protected}:
+  AbstractDocument *makeDocument()
+  \{
+    \textcolor{keywordflow}{return} \textcolor{keyword}{new} RichTextDocument();
+  \}
+\};
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group___writing_test_fixture_gae19f30ade82172cf6c3ff297367a10c2}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-B\-\_\-\-S\-U\-I\-T\-E}. 
+
+\hyperlink{_helper_macros_8h_a2f4071eec88d1e306665ada0f2dd80e4}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-A\-T\-I\-O\-N}. 
+\end{DoxySeeAlso}
+\hypertarget{group___writing_test_fixture_gac5ac4d8544ac2648a28bf7e4dcb27b9d}{\index{Writing test fixture@{Writing test fixture}!C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y}}
+\index{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y@{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y}!Writing test fixture@{Writing test fixture}}
+\subsubsection[{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-S\-U\-I\-T\-E\-\_\-\-P\-R\-O\-P\-E\-R\-T\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{A\-Property\-Key, }
+\item[{}]{A\-Property\-Value}
+\end{DoxyParamCaption}
+)}}\label{group___writing_test_fixture_gac5ac4d8544ac2648a28bf7e4dcb27b9d}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+context.addProperty( std::string(APropertyKey),                 \(\backslash\)
+                         std::string(APropertyValue) )
+\end{DoxyCode}
+
+
+Adds a property to the test suite builder context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\-Property\-Key} & Key of the property to add. \\
+\hline
+{\em A\-Property\-Value} & Value for the added property. Example\-: 
+\begin{DoxyCode}
+\hyperlink{group___writing_test_fixture_gac5ac4d8544ac2648a28bf7e4dcb27b9d}{CPPUNIT\_TEST\_SUITE\_PROPERTY}(\textcolor{stringliteral}{"XmlFileName"}, \textcolor{stringliteral}{"paraTest.xml"}); 
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}

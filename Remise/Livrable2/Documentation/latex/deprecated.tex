@@ -1,0 +1,54 @@
+
+\begin{DoxyRefList}
+\item[\label{deprecated__deprecated000001}%
+\hypertarget{deprecated__deprecated000001}{}%
+Member \hyperlink{ai_post_process_8h_acd2361a766665ce2dbfb3eae201b784d}{ai\-Process\-\_\-\-Convert\-To\-Left\-Handed} ]
+\item[\label{deprecated__deprecated000002}%
+\hypertarget{deprecated__deprecated000002}{}%
+Member \hyperlink{struct_asserter_a74825fc71909baa1286f9282ba5a2a54}{Asserter\-:\-:fail} (std\-::string message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line()})]Use fail( Message, Source\-Line ) instead.  
+\item[\label{deprecated__deprecated000003}%
+\hypertarget{deprecated__deprecated000003}{}%
+Member \hyperlink{struct_asserter_a71a4667a9d3f5d483f1a82157f715824}{Asserter\-:\-:fail\-If} (bool should\-Fail, std\-::string message, const \hyperlink{class_source_line}{Source\-Line} \&source\-Line=\hyperlink{class_source_line}{Source\-Line()})]Use fail\-If( bool, Message, Source\-Line ) instead. 
+\begin{DoxyParams}{Parameters}
+{\em should\-Fail} & if {\ttfamily true} then the exception is thrown. Otherwise nothing happen. \\
+\hline
+{\em message} & \hyperlink{class_message}{Message} explaining the assertion failiure. \\
+\hline
+{\em source\-Line} & Location of the assertion.  \\
+\hline
+\end{DoxyParams}
+
+\item[\label{deprecated__deprecated000004}%
+\hypertarget{deprecated__deprecated000004}{}%
+Member \hyperlink{class_compiler_outputter_aa0f8f9b1fb25fe8873b7454f91dcc929}{Compiler\-Outputter\-:\-:default\-Outputter} (\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$result, O\-Stream \&stream)]This class is specialized through parameterization instead of subclassing... Use \hyperlink{class_compiler_outputter_a8dd6679e24c18b3ca54a4266d9d1b812}{Compiler\-Outputter\-::\-Compiler\-Outputter} instead.  
+\item[\label{deprecated__deprecated000005}%
+\hypertarget{deprecated__deprecated000005}{}%
+Member \hyperlink{group___writing_test_fixture_gaca8eeb6f60714baade6cbfd185868c40}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N} (test\-Method, Exception\-Type)]Use the assertion macro C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-T\-H\-R\-O\-W instead.  
+\item[\label{deprecated__deprecated000006}%
+\hypertarget{deprecated__deprecated000006}{}%
+Member \hyperlink{group___writing_test_fixture_ga5bdaf0444216a8f93ead13d5ae964d7e}{C\-P\-P\-U\-N\-I\-T\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L} (test\-Method)]Use the assertion macro C\-P\-P\-U\-N\-I\-T\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-A\-S\-S\-E\-R\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L instead.  
+\item[\label{deprecated__deprecated000009}%
+\hypertarget{deprecated__deprecated000009}{}%
+Member \hyperlink{_free_image_8h_a9759d241af1b8bb2f5b336181f959510}{Free\-Image\-\_\-\-Rotate\-Classic} (F\-I\-B\-I\-T\-M\-A\-P $\ast$dib, double angle)]see Free\-Image\-\_\-\-Rotate  
+\item[\label{deprecated__deprecated000007}%
+\hypertarget{deprecated__deprecated000007}{}%
+Member \hyperlink{class_test_factory_registry_aff8d8215ec83fbb77d46706264e2f161}{Test\-Factory\-Registry\-:\-:register\-Factory} (const std\-::string \&name, \hyperlink{class_test_factory}{Test\-Factory} $\ast$factory)]Use register\-Factory( Test\-Factory $\ast$) instead.  
+\item[\label{deprecated__deprecated000008}%
+\hypertarget{deprecated__deprecated000008}{}%
+Member \hyperlink{class_test_suite_ad2bd3e20523bb357b7a4608a7978ea49}{Test\-Suite\-:\-:get\-Tests} () const ]Use get\-Child\-Test\-Count() \& get\-Child\-Test\-At() of the \hyperlink{class_test_composite}{Test\-Composite} interface instead. \begin{DoxyReturn}{Returns}
+Reference on a vector that contains the tests of the suite.  
+\end{DoxyReturn}
+
+\item[\label{deprecated__deprecated000011}%
+\hypertarget{deprecated__deprecated000011}{}%
+Member \hyperlink{class_ti_xml_handle_acb5fe8388a526289ea65e817a51e05e7}{Ti\-Xml\-Handle\-:\-:Element} () const ]use To\-Element. Return the handle as a \hyperlink{class_ti_xml_element}{Ti\-Xml\-Element}. This may return null.  
+\item[\label{deprecated__deprecated000010}%
+\hypertarget{deprecated__deprecated000010}{}%
+Member \hyperlink{class_ti_xml_handle_ab44b723a8dc9af72838a303c079d0376}{Ti\-Xml\-Handle\-:\-:Node} () const ]use To\-Node. Return the handle as a \hyperlink{class_ti_xml_node}{Ti\-Xml\-Node}. This may return null.  
+\item[\label{deprecated__deprecated000012}%
+\hypertarget{deprecated__deprecated000012}{}%
+Member \hyperlink{class_ti_xml_handle_a9fc739c8a18d160006f82572fc143d13}{Ti\-Xml\-Handle\-:\-:Text} () const ]use To\-Text() Return the handle as a \hyperlink{class_ti_xml_text}{Ti\-Xml\-Text}. This may return null.  
+\item[\label{deprecated__deprecated000013}%
+\hypertarget{deprecated__deprecated000013}{}%
+Member \hyperlink{class_ti_xml_handle_a49675b74357ba2aae124657a9a1ef465}{Ti\-Xml\-Handle\-:\-:Unknown} () const ]use To\-Unknown() Return the handle as a \hyperlink{class_ti_xml_unknown}{Ti\-Xml\-Unknown}. This may return null. 
+\end{DoxyRefList}

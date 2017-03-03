@@ -1,0 +1,289 @@
+\hypertarget{ftcache_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftcache.h File Reference}
+\label{ftcache_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftcache.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/ftcache.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t_c___scaler_rec__}{F\-T\-C\-\_\-\-Scaler\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_f_t_c___image_type_rec__}{F\-T\-C\-\_\-\-Image\-Type\-Rec\-\_\-}
+\item 
+struct \hyperlink{struct_f_t_c___s_bit_rec__}{F\-T\-C\-\_\-\-S\-Bit\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ftcache_8h_ae2728e07ecd409bcc5cec76653fdac6a}{F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E}(d1, d2)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftcache_8h_a70761da2c63f89c7c3e6c49168542abd}{F\-T\-C\-\_\-\-Face\-\_\-\-Requester} )(\hyperlink{ftcache_8h_a5da66c12c497bf5888638100876c7197}{F\-T\-C\-\_\-\-Face\-I\-D} face\-\_\-id, \hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} request\-\_\-data, \hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} $\ast$aface)
+\item 
+typedef struct F\-T\-C\-\_\-\-Manager\-Rec\-\_\- $\ast$ \hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager}
+\item 
+typedef struct F\-T\-C\-\_\-\-Node\-Rec\-\_\- $\ast$ \hyperlink{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{F\-T\-C\-\_\-\-Node}
+\item 
+typedef struct \hyperlink{struct_f_t_c___scaler_rec__}{F\-T\-C\-\_\-\-Scaler\-Rec\-\_\-} \hyperlink{ftcache_8h_a3df1c79d736787ea1f6efbf93aeca038}{F\-T\-C\-\_\-\-Scaler\-Rec}
+\item 
+typedef struct \hyperlink{struct_f_t_c___scaler_rec__}{F\-T\-C\-\_\-\-Scaler\-Rec\-\_\-} $\ast$ \hyperlink{ftcache_8h_ae0c63f8d6b57a9d54286b36de53c8218}{F\-T\-C\-\_\-\-Scaler}
+\item 
+typedef struct F\-T\-C\-\_\-\-C\-Map\-Cache\-Rec\-\_\- $\ast$ \hyperlink{ftcache_8h_ae064c6e6d62fd5386d61134ffe910197}{F\-T\-C\-\_\-\-C\-Map\-Cache}
+\item 
+typedef struct \hyperlink{struct_f_t_c___image_type_rec__}{F\-T\-C\-\_\-\-Image\-Type\-Rec\-\_\-} \hyperlink{ftcache_8h_ac05e8cdf03fdff9e5ed21400e38116d9}{F\-T\-C\-\_\-\-Image\-Type\-Rec}
+\item 
+typedef struct \hyperlink{struct_f_t_c___image_type_rec__}{F\-T\-C\-\_\-\-Image\-Type\-Rec\-\_\-} $\ast$ \hyperlink{ftcache_8h_a25aba38e94e78467730ce4fbd7237101}{F\-T\-C\-\_\-\-Image\-Type}
+\item 
+typedef struct F\-T\-C\-\_\-\-Image\-Cache\-Rec\-\_\- $\ast$ \hyperlink{ftcache_8h_a2cb5ee7124051e0fdd9e5ba2cf0cf758}{F\-T\-C\-\_\-\-Image\-Cache}
+\item 
+typedef struct \hyperlink{struct_f_t_c___s_bit_rec__}{F\-T\-C\-\_\-\-S\-Bit\-Rec\-\_\-} $\ast$ \hyperlink{ftcache_8h_a372c1db458a96c3b9c46ac0a18a8ea80}{F\-T\-C\-\_\-\-S\-Bit}
+\item 
+typedef struct \hyperlink{struct_f_t_c___s_bit_rec__}{F\-T\-C\-\_\-\-S\-Bit\-Rec\-\_\-} \hyperlink{ftcache_8h_abd9237fdb3eff050e98237df1784250c}{F\-T\-C\-\_\-\-S\-Bit\-Rec}
+\item 
+typedef struct F\-T\-C\-\_\-\-S\-Bit\-Cache\-Rec\-\_\- $\ast$ \hyperlink{ftcache_8h_a3c771d6070fd95b10012d053782f75de}{F\-T\-C\-\_\-\-S\-Bit\-Cache}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftcache_8h_afb6574ad21881284df40d68d142c88a3}{F\-T\-C\-\_\-\-Manager\-\_\-\-New} (\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\-T\-\_\-\-Library} library, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} max\-\_\-faces, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} max\-\_\-sizes, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} max\-\_\-bytes, \hyperlink{ftcache_8h_a70761da2c63f89c7c3e6c49168542abd}{F\-T\-C\-\_\-\-Face\-\_\-\-Requester} requester, \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} req\-\_\-data, \hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} $\ast$amanager)
+\item 
+\hyperlink{ftcache_8h_a9700d2a3d9234dbc713b52d9bf8d87b4}{F\-T\-C\-\_\-\-Manager\-\_\-\-Reset} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager)
+\item 
+\hyperlink{ftcache_8h_a1c782ec086c698655c74624a38e6630f}{F\-T\-C\-\_\-\-Manager\-\_\-\-Done} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager)
+\item 
+\hyperlink{ftcache_8h_a7e098012571e6ab31d0ea3c3bedbc0de}{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager, \hyperlink{ftcache_8h_a5da66c12c497bf5888638100876c7197}{F\-T\-C\-\_\-\-Face\-I\-D} face\-\_\-id, \hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} $\ast$aface)
+\item 
+\hyperlink{ftcache_8h_ace013a1c83fad935312006deeddf6909}{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager, \hyperlink{ftcache_8h_ae0c63f8d6b57a9d54286b36de53c8218}{F\-T\-C\-\_\-\-Scaler} scaler, \hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\-T\-\_\-\-Size} $\ast$asize)
+\item 
+\hyperlink{ftcache_8h_a9653029aaf7994ec492ab46e93b65214}{F\-T\-C\-\_\-\-Node\-\_\-\-Unref} (\hyperlink{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{F\-T\-C\-\_\-\-Node} node, \hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager)
+\item 
+\hyperlink{ftcache_8h_a5904ef0143cdd97411eec4142d97fcb1}{F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager, \hyperlink{ftcache_8h_a5da66c12c497bf5888638100876c7197}{F\-T\-C\-\_\-\-Face\-I\-D} face\-\_\-id)
+\item 
+\hyperlink{ftcache_8h_ab99c23dd20da843e8bb866fc93226fb0}{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager, \hyperlink{ftcache_8h_ae064c6e6d62fd5386d61134ffe910197}{F\-T\-C\-\_\-\-C\-Map\-Cache} $\ast$acache)
+\item 
+\hyperlink{ftcache_8h_a910997e7c015b931f4b796de44bf1f72}{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup} (\hyperlink{ftcache_8h_ae064c6e6d62fd5386d61134ffe910197}{F\-T\-C\-\_\-\-C\-Map\-Cache} cache, \hyperlink{ftcache_8h_a5da66c12c497bf5888638100876c7197}{F\-T\-C\-\_\-\-Face\-I\-D} face\-\_\-id, \hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\-T\-\_\-\-Int} cmap\-\_\-index, F\-T\-\_\-\-U\-Int32 char\-\_\-code)
+\item 
+\hyperlink{ftcache_8h_afb90ade3453225a0e1a5682e301731fd}{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager, \hyperlink{ftcache_8h_a2cb5ee7124051e0fdd9e5ba2cf0cf758}{F\-T\-C\-\_\-\-Image\-Cache} $\ast$acache)
+\item 
+\hyperlink{ftcache_8h_a47f24aa2f98db5e26060dd1d87532a48}{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup} (\hyperlink{ftcache_8h_a2cb5ee7124051e0fdd9e5ba2cf0cf758}{F\-T\-C\-\_\-\-Image\-Cache} cache, \hyperlink{ftcache_8h_a25aba38e94e78467730ce4fbd7237101}{F\-T\-C\-\_\-\-Image\-Type} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} gindex, \hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} $\ast$aglyph, \hyperlink{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{F\-T\-C\-\_\-\-Node} $\ast$anode)
+\item 
+\hyperlink{ftcache_8h_ac7a6484c5a2d2a0fcfb9dd3d439fe2f6}{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler} (\hyperlink{ftcache_8h_a2cb5ee7124051e0fdd9e5ba2cf0cf758}{F\-T\-C\-\_\-\-Image\-Cache} cache, \hyperlink{ftcache_8h_ae0c63f8d6b57a9d54286b36de53c8218}{F\-T\-C\-\_\-\-Scaler} scaler, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} load\-\_\-flags, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} gindex, \hyperlink{ftglyph_8h_aeb217021e2817832b003c325b185e003}{F\-T\-\_\-\-Glyph} $\ast$aglyph, \hyperlink{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{F\-T\-C\-\_\-\-Node} $\ast$anode)
+\item 
+\hyperlink{ftcache_8h_a92c53945322d2b3840bc877853f9ae66}{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New} (\hyperlink{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{F\-T\-C\-\_\-\-Manager} manager, \hyperlink{ftcache_8h_a3c771d6070fd95b10012d053782f75de}{F\-T\-C\-\_\-\-S\-Bit\-Cache} $\ast$acache)
+\item 
+\hyperlink{ftcache_8h_a79ac88707dc21eaa03f03e49d20572ba}{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup} (\hyperlink{ftcache_8h_a3c771d6070fd95b10012d053782f75de}{F\-T\-C\-\_\-\-S\-Bit\-Cache} cache, \hyperlink{ftcache_8h_a25aba38e94e78467730ce4fbd7237101}{F\-T\-C\-\_\-\-Image\-Type} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} gindex, \hyperlink{ftcache_8h_a372c1db458a96c3b9c46ac0a18a8ea80}{F\-T\-C\-\_\-\-S\-Bit} $\ast$sbit, \hyperlink{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{F\-T\-C\-\_\-\-Node} $\ast$anode)
+\item 
+\hyperlink{ftcache_8h_a0747b4281ac0f9777eadf95d1ec023a9}{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler} (\hyperlink{ftcache_8h_a3c771d6070fd95b10012d053782f75de}{F\-T\-C\-\_\-\-S\-Bit\-Cache} cache, \hyperlink{ftcache_8h_ae0c63f8d6b57a9d54286b36de53c8218}{F\-T\-C\-\_\-\-Scaler} scaler, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} load\-\_\-flags, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} gindex, \hyperlink{ftcache_8h_a372c1db458a96c3b9c46ac0a18a8ea80}{F\-T\-C\-\_\-\-S\-Bit} $\ast$sbit, \hyperlink{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{F\-T\-C\-\_\-\-Node} $\ast$anode)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftheader_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef \hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\-T\-\_\-\-Pointer} \hyperlink{ftcache_8h_a5da66c12c497bf5888638100876c7197}{F\-T\-C\-\_\-\-Face\-I\-D}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ftcache_8h_ae2728e07ecd409bcc5cec76653fdac6a}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E@{F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E}}
+\index{F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E@{F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-C\-\_\-\-I\-M\-A\-G\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-O\-M\-P\-A\-R\-E(
+\begin{DoxyParamCaption}
+\item[{}]{d1, }
+\item[{}]{d2}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_ae2728e07ecd409bcc5cec76653fdac6a}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( (d1)->face\_id == (d2)->face\_id && \(\backslash\)
+            (d1)->\hyperlink{glew_8h_aa105b18f96e6bc2485cb7f576a7fb9ba}{width}   == (d2)->width   && \(\backslash\)
+            (d1)->\hyperlink{fmod__output_8h_a8ebee2eff6f539ce9c42ace5e311cfce}{flags}   == (d2)->flags   )
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftcache_8h_ae064c6e6d62fd5386d61134ffe910197}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-C\-Map\-Cache@{F\-T\-C\-\_\-\-C\-Map\-Cache}}
+\index{F\-T\-C\-\_\-\-C\-Map\-Cache@{F\-T\-C\-\_\-\-C\-Map\-Cache}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-C\-Map\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct F\-T\-C\-\_\-\-C\-Map\-Cache\-Rec\-\_\-$\ast$ {\bf F\-T\-C\-\_\-\-C\-Map\-Cache}}}\label{ftcache_8h_ae064c6e6d62fd5386d61134ffe910197}
+\hypertarget{ftcache_8h_a70761da2c63f89c7c3e6c49168542abd}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Face\-\_\-\-Requester@{F\-T\-C\-\_\-\-Face\-\_\-\-Requester}}
+\index{F\-T\-C\-\_\-\-Face\-\_\-\-Requester@{F\-T\-C\-\_\-\-Face\-\_\-\-Requester}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Face\-\_\-\-Requester}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-C\-\_\-\-Face\-\_\-\-Requester)({\bf F\-T\-C\-\_\-\-Face\-I\-D} face\-\_\-id, {\bf F\-T\-\_\-\-Library} library, {\bf F\-T\-\_\-\-Pointer} request\-\_\-data, {\bf F\-T\-\_\-\-Face} $\ast$aface)}}\label{ftcache_8h_a70761da2c63f89c7c3e6c49168542abd}
+\hypertarget{ftcache_8h_a2cb5ee7124051e0fdd9e5ba2cf0cf758}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Image\-Cache@{F\-T\-C\-\_\-\-Image\-Cache}}
+\index{F\-T\-C\-\_\-\-Image\-Cache@{F\-T\-C\-\_\-\-Image\-Cache}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Image\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct F\-T\-C\-\_\-\-Image\-Cache\-Rec\-\_\-$\ast$ {\bf F\-T\-C\-\_\-\-Image\-Cache}}}\label{ftcache_8h_a2cb5ee7124051e0fdd9e5ba2cf0cf758}
+\hypertarget{ftcache_8h_a25aba38e94e78467730ce4fbd7237101}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Image\-Type@{F\-T\-C\-\_\-\-Image\-Type}}
+\index{F\-T\-C\-\_\-\-Image\-Type@{F\-T\-C\-\_\-\-Image\-Type}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Image\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-C\-\_\-\-Image\-Type\-Rec\-\_\-}$\ast$ {\bf F\-T\-C\-\_\-\-Image\-Type}}}\label{ftcache_8h_a25aba38e94e78467730ce4fbd7237101}
+\hypertarget{ftcache_8h_ac05e8cdf03fdff9e5ed21400e38116d9}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Image\-Type\-Rec@{F\-T\-C\-\_\-\-Image\-Type\-Rec}}
+\index{F\-T\-C\-\_\-\-Image\-Type\-Rec@{F\-T\-C\-\_\-\-Image\-Type\-Rec}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Image\-Type\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-C\-\_\-\-Image\-Type\-Rec\-\_\-}  {\bf F\-T\-C\-\_\-\-Image\-Type\-Rec}}}\label{ftcache_8h_ac05e8cdf03fdff9e5ed21400e38116d9}
+\hypertarget{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager@{F\-T\-C\-\_\-\-Manager}}
+\index{F\-T\-C\-\_\-\-Manager@{F\-T\-C\-\_\-\-Manager}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct F\-T\-C\-\_\-\-Manager\-Rec\-\_\-$\ast$ {\bf F\-T\-C\-\_\-\-Manager}}}\label{ftcache_8h_afa42daf62f0c6ee9d6d93e44236e47ac}
+\hypertarget{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Node@{F\-T\-C\-\_\-\-Node}}
+\index{F\-T\-C\-\_\-\-Node@{F\-T\-C\-\_\-\-Node}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct F\-T\-C\-\_\-\-Node\-Rec\-\_\-$\ast$ {\bf F\-T\-C\-\_\-\-Node}}}\label{ftcache_8h_a69e20e3229cfa1fe4677c6626890a2e4}
+\hypertarget{ftcache_8h_a372c1db458a96c3b9c46ac0a18a8ea80}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-S\-Bit@{F\-T\-C\-\_\-\-S\-Bit}}
+\index{F\-T\-C\-\_\-\-S\-Bit@{F\-T\-C\-\_\-\-S\-Bit}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-S\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-C\-\_\-\-S\-Bit\-Rec\-\_\-}$\ast$ {\bf F\-T\-C\-\_\-\-S\-Bit}}}\label{ftcache_8h_a372c1db458a96c3b9c46ac0a18a8ea80}
+\hypertarget{ftcache_8h_a3c771d6070fd95b10012d053782f75de}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-S\-Bit\-Cache@{F\-T\-C\-\_\-\-S\-Bit\-Cache}}
+\index{F\-T\-C\-\_\-\-S\-Bit\-Cache@{F\-T\-C\-\_\-\-S\-Bit\-Cache}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-S\-Bit\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct F\-T\-C\-\_\-\-S\-Bit\-Cache\-Rec\-\_\-$\ast$ {\bf F\-T\-C\-\_\-\-S\-Bit\-Cache}}}\label{ftcache_8h_a3c771d6070fd95b10012d053782f75de}
+\hypertarget{ftcache_8h_abd9237fdb3eff050e98237df1784250c}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-S\-Bit\-Rec@{F\-T\-C\-\_\-\-S\-Bit\-Rec}}
+\index{F\-T\-C\-\_\-\-S\-Bit\-Rec@{F\-T\-C\-\_\-\-S\-Bit\-Rec}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-S\-Bit\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-C\-\_\-\-S\-Bit\-Rec\-\_\-}  {\bf F\-T\-C\-\_\-\-S\-Bit\-Rec}}}\label{ftcache_8h_abd9237fdb3eff050e98237df1784250c}
+\hypertarget{ftcache_8h_ae0c63f8d6b57a9d54286b36de53c8218}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Scaler@{F\-T\-C\-\_\-\-Scaler}}
+\index{F\-T\-C\-\_\-\-Scaler@{F\-T\-C\-\_\-\-Scaler}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Scaler}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-C\-\_\-\-Scaler\-Rec\-\_\-}$\ast$ {\bf F\-T\-C\-\_\-\-Scaler}}}\label{ftcache_8h_ae0c63f8d6b57a9d54286b36de53c8218}
+\hypertarget{ftcache_8h_a3df1c79d736787ea1f6efbf93aeca038}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Scaler\-Rec@{F\-T\-C\-\_\-\-Scaler\-Rec}}
+\index{F\-T\-C\-\_\-\-Scaler\-Rec@{F\-T\-C\-\_\-\-Scaler\-Rec}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Scaler\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-C\-\_\-\-Scaler\-Rec\-\_\-}  {\bf F\-T\-C\-\_\-\-Scaler\-Rec}}}\label{ftcache_8h_a3df1c79d736787ea1f6efbf93aeca038}
+
+
+\subsection{Function Documentation}
+\hypertarget{ftcache_8h_a910997e7c015b931f4b796de44bf1f72}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup@{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup}}
+\index{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup@{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-Lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-C\-Map\-Cache}}]{cache, }
+\item[{{\bf F\-T\-C\-\_\-\-Face\-I\-D}}]{face\-\_\-id, }
+\item[{{\bf F\-T\-\_\-\-Int}}]{cmap\-\_\-index, }
+\item[{F\-T\-\_\-\-U\-Int32}]{char\-\_\-code}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a910997e7c015b931f4b796de44bf1f72}
+\hypertarget{ftcache_8h_ab99c23dd20da843e8bb866fc93226fb0}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New@{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New}}
+\index{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New@{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-C\-Map\-Cache\-\_\-\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager, }
+\item[{{\bf F\-T\-C\-\_\-\-C\-Map\-Cache} $\ast$}]{acache}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_ab99c23dd20da843e8bb866fc93226fb0}
+\hypertarget{ftcache_8h_a47f24aa2f98db5e26060dd1d87532a48}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup@{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup}}
+\index{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup@{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Image\-Cache}}]{cache, }
+\item[{{\bf F\-T\-C\-\_\-\-Image\-Type}}]{type, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{gindex, }
+\item[{{\bf F\-T\-\_\-\-Glyph} $\ast$}]{aglyph, }
+\item[{{\bf F\-T\-C\-\_\-\-Node} $\ast$}]{anode}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a47f24aa2f98db5e26060dd1d87532a48}
+\hypertarget{ftcache_8h_ac7a6484c5a2d2a0fcfb9dd3d439fe2f6}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler@{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler}}
+\index{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler@{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-Lookup\-Scaler (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Image\-Cache}}]{cache, }
+\item[{{\bf F\-T\-C\-\_\-\-Scaler}}]{scaler, }
+\item[{{\bf F\-T\-\_\-\-U\-Long}}]{load\-\_\-flags, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{gindex, }
+\item[{{\bf F\-T\-\_\-\-Glyph} $\ast$}]{aglyph, }
+\item[{{\bf F\-T\-C\-\_\-\-Node} $\ast$}]{anode}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_ac7a6484c5a2d2a0fcfb9dd3d439fe2f6}
+\hypertarget{ftcache_8h_afb90ade3453225a0e1a5682e301731fd}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New@{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New}}
+\index{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New@{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Image\-Cache\-\_\-\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager, }
+\item[{{\bf F\-T\-C\-\_\-\-Image\-Cache} $\ast$}]{acache}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_afb90ade3453225a0e1a5682e301731fd}
+\hypertarget{ftcache_8h_a1c782ec086c698655c74624a38e6630f}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager\-\_\-\-Done@{F\-T\-C\-\_\-\-Manager\-\_\-\-Done}}
+\index{F\-T\-C\-\_\-\-Manager\-\_\-\-Done@{F\-T\-C\-\_\-\-Manager\-\_\-\-Done}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager\-\_\-\-Done}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Manager\-\_\-\-Done (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a1c782ec086c698655c74624a38e6630f}
+\hypertarget{ftcache_8h_a7e098012571e6ab31d0ea3c3bedbc0de}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face@{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face}}
+\index{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face@{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Face (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager, }
+\item[{{\bf F\-T\-C\-\_\-\-Face\-I\-D}}]{face\-\_\-id, }
+\item[{{\bf F\-T\-\_\-\-Face} $\ast$}]{aface}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a7e098012571e6ab31d0ea3c3bedbc0de}
+\hypertarget{ftcache_8h_ace013a1c83fad935312006deeddf6909}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size@{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size}}
+\index{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size@{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Manager\-\_\-\-Lookup\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager, }
+\item[{{\bf F\-T\-C\-\_\-\-Scaler}}]{scaler, }
+\item[{{\bf F\-T\-\_\-\-Size} $\ast$}]{asize}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_ace013a1c83fad935312006deeddf6909}
+\hypertarget{ftcache_8h_afb6574ad21881284df40d68d142c88a3}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager\-\_\-\-New@{F\-T\-C\-\_\-\-Manager\-\_\-\-New}}
+\index{F\-T\-C\-\_\-\-Manager\-\_\-\-New@{F\-T\-C\-\_\-\-Manager\-\_\-\-New}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager\-\_\-\-New}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Manager\-\_\-\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Library}}]{library, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{max\-\_\-faces, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{max\-\_\-sizes, }
+\item[{{\bf F\-T\-\_\-\-U\-Long}}]{max\-\_\-bytes, }
+\item[{{\bf F\-T\-C\-\_\-\-Face\-\_\-\-Requester}}]{requester, }
+\item[{{\bf F\-T\-\_\-\-Pointer}}]{req\-\_\-data, }
+\item[{{\bf F\-T\-C\-\_\-\-Manager} $\ast$}]{amanager}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_afb6574ad21881284df40d68d142c88a3}
+\hypertarget{ftcache_8h_a5904ef0143cdd97411eec4142d97fcb1}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D@{F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D}}
+\index{F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D@{F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Manager\-\_\-\-Remove\-Face\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager, }
+\item[{{\bf F\-T\-C\-\_\-\-Face\-I\-D}}]{face\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a5904ef0143cdd97411eec4142d97fcb1}
+\hypertarget{ftcache_8h_a9700d2a3d9234dbc713b52d9bf8d87b4}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Manager\-\_\-\-Reset@{F\-T\-C\-\_\-\-Manager\-\_\-\-Reset}}
+\index{F\-T\-C\-\_\-\-Manager\-\_\-\-Reset@{F\-T\-C\-\_\-\-Manager\-\_\-\-Reset}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Manager\-\_\-\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Manager\-\_\-\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a9700d2a3d9234dbc713b52d9bf8d87b4}
+\hypertarget{ftcache_8h_a9653029aaf7994ec492ab46e93b65214}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Node\-\_\-\-Unref@{F\-T\-C\-\_\-\-Node\-\_\-\-Unref}}
+\index{F\-T\-C\-\_\-\-Node\-\_\-\-Unref@{F\-T\-C\-\_\-\-Node\-\_\-\-Unref}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Node\-\_\-\-Unref}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-Node\-\_\-\-Unref (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Node}}]{node, }
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a9653029aaf7994ec492ab46e93b65214}
+\hypertarget{ftcache_8h_a79ac88707dc21eaa03f03e49d20572ba}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup@{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup}}
+\index{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup@{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-S\-Bit\-Cache}}]{cache, }
+\item[{{\bf F\-T\-C\-\_\-\-Image\-Type}}]{type, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{gindex, }
+\item[{{\bf F\-T\-C\-\_\-\-S\-Bit} $\ast$}]{sbit, }
+\item[{{\bf F\-T\-C\-\_\-\-Node} $\ast$}]{anode}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a79ac88707dc21eaa03f03e49d20572ba}
+\hypertarget{ftcache_8h_a0747b4281ac0f9777eadf95d1ec023a9}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler@{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler}}
+\index{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler@{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-Lookup\-Scaler (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-S\-Bit\-Cache}}]{cache, }
+\item[{{\bf F\-T\-C\-\_\-\-Scaler}}]{scaler, }
+\item[{{\bf F\-T\-\_\-\-U\-Long}}]{load\-\_\-flags, }
+\item[{{\bf F\-T\-\_\-\-U\-Int}}]{gindex, }
+\item[{{\bf F\-T\-C\-\_\-\-S\-Bit} $\ast$}]{sbit, }
+\item[{{\bf F\-T\-C\-\_\-\-Node} $\ast$}]{anode}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a0747b4281ac0f9777eadf95d1ec023a9}
+\hypertarget{ftcache_8h_a92c53945322d2b3840bc877853f9ae66}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New@{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New}}
+\index{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New@{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-C\-\_\-\-S\-Bit\-Cache\-\_\-\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-C\-\_\-\-Manager}}]{manager, }
+\item[{{\bf F\-T\-C\-\_\-\-S\-Bit\-Cache} $\ast$}]{acache}
+\end{DoxyParamCaption}
+)}}\label{ftcache_8h_a92c53945322d2b3840bc877853f9ae66}
+
+
+\subsection{Variable Documentation}
+\hypertarget{ftcache_8h_a5da66c12c497bf5888638100876c7197}{\index{ftcache.\-h@{ftcache.\-h}!F\-T\-C\-\_\-\-Face\-I\-D@{F\-T\-C\-\_\-\-Face\-I\-D}}
+\index{F\-T\-C\-\_\-\-Face\-I\-D@{F\-T\-C\-\_\-\-Face\-I\-D}!ftcache.h@{ftcache.\-h}}
+\subsubsection[{F\-T\-C\-\_\-\-Face\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef {\bf F\-T\-\_\-\-Pointer} F\-T\-C\-\_\-\-Face\-I\-D}}\label{ftcache_8h_a5da66c12c497bf5888638100876c7197}

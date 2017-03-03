@@ -1,0 +1,154 @@
+\hypertarget{ftvalid_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftvalid.h File Reference}
+\label{ftvalid_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftvalid.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftvalid.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___validator_rec__}{F\-T\-\_\-\-Validator\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ftvalid_8h_a56d5a1e2ae4a667ebe110110fa7aba64}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R}(\hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x})~((\hyperlink{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}{F\-T\-\_\-\-Validator})( \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x} ))
+\item 
+\#define \hyperlink{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}(\-\_\-prefix, \-\_\-error)~\hyperlink{ftvalid_8h_ab418da240615fbb223e0416c8fdc4a95}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-}( \-\_\-prefix, \-\_\-error )
+\item 
+\#define \hyperlink{ftvalid_8h_ab418da240615fbb223e0416c8fdc4a95}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-}(\-\_\-prefix, \-\_\-error)~\hyperlink{ftvalid_8h_a9504bbbfc7751a25a39d1330f92655b3}{ft\-\_\-validator\-\_\-error}( valid, \-\_\-prefix \#\# \-\_\-error )
+\item 
+\#define \hyperlink{ftvalid_8h_a34566b84985b7492dfd7f7db469d80ac}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T}~\hyperlink{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( \hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Table )
+\item 
+\#define \hyperlink{ftvalid_8h_a38c505c642e727b7844a9354982f9af6}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T}~\hyperlink{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( \hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Offset )
+\item 
+\#define \hyperlink{ftvalid_8h_a06c85535de052f8c39ebd0ea1300963b}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T}~\hyperlink{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( \hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Table )
+\item 
+\#define \hyperlink{ftvalid_8h_af3ebe7b7531c78d4956aefb53770fb6a}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D}~\hyperlink{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( \hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Glyph\-\_\-\-Index )
+\item 
+\#define \hyperlink{ftvalid_8h_a7e340a7116b04fc9886b71546eae01ee}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A}~\hyperlink{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( \hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Table )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R \\*
+struct \hyperlink{struct_f_t___validator_rec__}{F\-T\-\_\-\-Validator\-Rec\-\_\-} \\*
+volatile $\ast$ \hyperlink{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}{F\-T\-\_\-\-Validator}
+\item 
+typedef enum \hyperlink{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6}{F\-T\-\_\-\-Validation\-Level\-\_\-} \hyperlink{ftvalid_8h_a43709eb091f99dc7ae5f68f83cf2d670}{F\-T\-\_\-\-Validation\-Level}
+\item 
+typedef struct \hyperlink{struct_f_t___validator_rec__}{F\-T\-\_\-\-Validator\-Rec\-\_\-} \hyperlink{ftvalid_8h_a1026cecce8c691f097afb137195c68ab}{F\-T\-\_\-\-Validator\-Rec}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6}{F\-T\-\_\-\-Validation\-Level\-\_\-} \{ \hyperlink{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6ae01a56fc32ebfb4c1816339bc8868df0}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T} = 0, 
+\hyperlink{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6ae546ccfdb9a36dac676c0402647f507e}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-T\-I\-G\-H\-T}, 
+\hyperlink{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6aeadcdbba0eb4f6466688cfae16973b66}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-P\-A\-R\-A\-N\-O\-I\-D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftvalid_8h_a6042da97a44e287d5d99b459aae11ea0}{ft\-\_\-validator\-\_\-init} (\hyperlink{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}{F\-T\-\_\-\-Validator} valid, const \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte} $\ast$base, const \hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\-T\-\_\-\-Byte} $\ast$\hyperlink{glew_8h_a702e6dc059ad96a3ec3e24fd769fd6ac}{limit}, \hyperlink{ftvalid_8h_a43709eb091f99dc7ae5f68f83cf2d670}{F\-T\-\_\-\-Validation\-Level} \hyperlink{glew_8h_a2b536fca24f51d6a849aed325793e661}{level})
+\item 
+\hyperlink{ftvalid_8h_a40b463141ddaf56437d42b1f9b7894ef}{ft\-\_\-validator\-\_\-run} (\hyperlink{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}{F\-T\-\_\-\-Validator} valid)
+\item 
+\hyperlink{ftvalid_8h_a9504bbbfc7751a25a39d1330f92655b3}{ft\-\_\-validator\-\_\-error} (\hyperlink{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}{F\-T\-\_\-\-Validator} valid, \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error} error)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-prefix, }
+\item[{}]{\-\_\-error}
+\end{DoxyParamCaption}
+)~{\bf F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-}( \-\_\-prefix, \-\_\-error )}}\label{ftvalid_8h_a084f47a6c4ef59beb896f1723e77b87d}
+\hypertarget{ftvalid_8h_ab418da240615fbb223e0416c8fdc4a95}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-prefix, }
+\item[{}]{\-\_\-error}
+\end{DoxyParamCaption}
+)~{\bf ft\-\_\-validator\-\_\-error}( valid, \-\_\-prefix \#\# \-\_\-error )}}\label{ftvalid_8h_ab418da240615fbb223e0416c8fdc4a95}
+\hypertarget{ftvalid_8h_a7e340a7116b04fc9886b71546eae01ee}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-A\-T\-A~{\bf F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( {\bf F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Table )}}\label{ftvalid_8h_a7e340a7116b04fc9886b71546eae01ee}
+\hypertarget{ftvalid_8h_a06c85535de052f8c39ebd0ea1300963b}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-O\-R\-M\-A\-T~{\bf F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( {\bf F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Table )}}\label{ftvalid_8h_a06c85535de052f8c39ebd0ea1300963b}
+\hypertarget{ftvalid_8h_af3ebe7b7531c78d4956aefb53770fb6a}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-L\-Y\-P\-H\-\_\-\-I\-D~{\bf F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( {\bf F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Glyph\-\_\-\-Index )}}\label{ftvalid_8h_af3ebe7b7531c78d4956aefb53770fb6a}
+\hypertarget{ftvalid_8h_a38c505c642e727b7844a9354982f9af6}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-F\-F\-S\-E\-T~{\bf F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( {\bf F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Offset )}}\label{ftvalid_8h_a38c505c642e727b7844a9354982f9af6}
+\hypertarget{ftvalid_8h_a34566b84985b7492dfd7f7db469d80ac}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T}}
+\index{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T@{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T~{\bf F\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D}( {\bf F\-T\-\_\-\-E\-R\-R\-\_\-\-P\-R\-E\-F\-I\-X}, Invalid\-\_\-\-Table )}}\label{ftvalid_8h_a34566b84985b7492dfd7f7db469d80ac}
+\hypertarget{ftvalid_8h_a56d5a1e2ae4a667ebe110110fa7aba64}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R}}
+\index{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~(({\bf F\-T\-\_\-\-Validator})( {\bf x} ))}}\label{ftvalid_8h_a56d5a1e2ae4a667ebe110110fa7aba64}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftvalid_8h_a43709eb091f99dc7ae5f68f83cf2d670}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-Validation\-Level@{F\-T\-\_\-\-Validation\-Level}}
+\index{F\-T\-\_\-\-Validation\-Level@{F\-T\-\_\-\-Validation\-Level}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-Validation\-Level}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf F\-T\-\_\-\-Validation\-Level\-\_\-}  {\bf F\-T\-\_\-\-Validation\-Level}}}\label{ftvalid_8h_a43709eb091f99dc7ae5f68f83cf2d670}
+\hypertarget{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-Validator@{F\-T\-\_\-\-Validator}}
+\index{F\-T\-\_\-\-Validator@{F\-T\-\_\-\-Validator}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-Validator}]{\setlength{\rightskip}{0pt plus 5cm}typedef typedef\-F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R struct {\bf F\-T\-\_\-\-Validator\-Rec\-\_\-} volatile$\ast$ {\bf F\-T\-\_\-\-Validator}}}\label{ftvalid_8h_ab9ceda164f3e9d44345b2199b1d7838a}
+\hypertarget{ftvalid_8h_a1026cecce8c691f097afb137195c68ab}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-Validator\-Rec@{F\-T\-\_\-\-Validator\-Rec}}
+\index{F\-T\-\_\-\-Validator\-Rec@{F\-T\-\_\-\-Validator\-Rec}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-Validator\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Validator\-Rec\-\_\-}  {\bf F\-T\-\_\-\-Validator\-Rec}}}\label{ftvalid_8h_a1026cecce8c691f097afb137195c68ab}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6}{\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-Validation\-Level\-\_\-@{F\-T\-\_\-\-Validation\-Level\-\_\-}}
+\index{F\-T\-\_\-\-Validation\-Level\-\_\-@{F\-T\-\_\-\-Validation\-Level\-\_\-}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{F\-T\-\_\-\-Validation\-Level\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-T\-\_\-\-Validation\-Level\-\_\-}}}\label{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T}!ftvalid.\-h@{ftvalid.\-h}}\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T}}\item[{\em 
+\hypertarget{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6ae01a56fc32ebfb4c1816339bc8868df0}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T}\label{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6ae01a56fc32ebfb4c1816339bc8868df0}
+}]\index{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-T\-I\-G\-H\-T@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-T\-I\-G\-H\-T}!ftvalid.\-h@{ftvalid.\-h}}\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-T\-I\-G\-H\-T@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-T\-I\-G\-H\-T}}\item[{\em 
+\hypertarget{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6ae546ccfdb9a36dac676c0402647f507e}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-T\-I\-G\-H\-T}\label{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6ae546ccfdb9a36dac676c0402647f507e}
+}]\index{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-P\-A\-R\-A\-N\-O\-I\-D@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-P\-A\-R\-A\-N\-O\-I\-D}!ftvalid.\-h@{ftvalid.\-h}}\index{ftvalid.\-h@{ftvalid.\-h}!F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-P\-A\-R\-A\-N\-O\-I\-D@{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-P\-A\-R\-A\-N\-O\-I\-D}}\item[{\em 
+\hypertarget{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6aeadcdbba0eb4f6466688cfae16973b66}{F\-T\-\_\-\-V\-A\-L\-I\-D\-A\-T\-E\-\_\-\-P\-A\-R\-A\-N\-O\-I\-D}\label{ftvalid_8h_a11d28f35cb7beadb9b6aa446fcb21eb6aeadcdbba0eb4f6466688cfae16973b66}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ftvalid_8h_a9504bbbfc7751a25a39d1330f92655b3}{\index{ftvalid.\-h@{ftvalid.\-h}!ft\-\_\-validator\-\_\-error@{ft\-\_\-validator\-\_\-error}}
+\index{ft\-\_\-validator\-\_\-error@{ft\-\_\-validator\-\_\-error}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{ft\-\_\-validator\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}ft\-\_\-validator\-\_\-error (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Validator}}]{valid, }
+\item[{{\bf F\-T\-\_\-\-Error}}]{error}
+\end{DoxyParamCaption}
+)}}\label{ftvalid_8h_a9504bbbfc7751a25a39d1330f92655b3}
+\hypertarget{ftvalid_8h_a6042da97a44e287d5d99b459aae11ea0}{\index{ftvalid.\-h@{ftvalid.\-h}!ft\-\_\-validator\-\_\-init@{ft\-\_\-validator\-\_\-init}}
+\index{ft\-\_\-validator\-\_\-init@{ft\-\_\-validator\-\_\-init}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{ft\-\_\-validator\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}ft\-\_\-validator\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Validator}}]{valid, }
+\item[{const {\bf F\-T\-\_\-\-Byte} $\ast$}]{base, }
+\item[{const {\bf F\-T\-\_\-\-Byte} $\ast$}]{limit, }
+\item[{{\bf F\-T\-\_\-\-Validation\-Level}}]{level}
+\end{DoxyParamCaption}
+)}}\label{ftvalid_8h_a6042da97a44e287d5d99b459aae11ea0}
+\hypertarget{ftvalid_8h_a40b463141ddaf56437d42b1f9b7894ef}{\index{ftvalid.\-h@{ftvalid.\-h}!ft\-\_\-validator\-\_\-run@{ft\-\_\-validator\-\_\-run}}
+\index{ft\-\_\-validator\-\_\-run@{ft\-\_\-validator\-\_\-run}!ftvalid.h@{ftvalid.\-h}}
+\subsubsection[{ft\-\_\-validator\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}ft\-\_\-validator\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-T\-\_\-\-Validator}}]{valid}
+\end{DoxyParamCaption}
+)}}\label{ftvalid_8h_a40b463141ddaf56437d42b1f9b7894ef}

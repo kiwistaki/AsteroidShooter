@@ -1,0 +1,61 @@
+\hypertarget{class_source_line}{\section{Source\-Line Class Reference}
+\label{class_source_line}\index{Source\-Line@{Source\-Line}}
+}
+
+
+Represents a source line location.
+
+Used to capture the failure location in assertion.  
+
+
+
+
+{\ttfamily \#include $<$Source\-Line.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_source_line_a9fb221c8969d14c88b909af568ab91d5}{{\bfseries Source\-Line} (const \hyperlink{class_source_line}{Source\-Line} \&other)}\label{class_source_line_a9fb221c8969d14c88b909af568ab91d5}
+
+\item 
+\hypertarget{class_source_line_a2a6cc3b13b3e76b64475ba2e9aff29d0}{{\bfseries Source\-Line} (const std\-::string \&file\-Name, int line\-Number)}\label{class_source_line_a2a6cc3b13b3e76b64475ba2e9aff29d0}
+
+\item 
+\hypertarget{class_source_line_a25e0e26b31c067a85d008240764ed47e}{\hyperlink{class_source_line}{Source\-Line} \& {\bfseries operator=} (const \hyperlink{class_source_line}{Source\-Line} \&other)}\label{class_source_line_a25e0e26b31c067a85d008240764ed47e}
+
+\item 
+\hypertarget{class_source_line_afe82eb20dbe4291911d7e369b96b04aa}{virtual \hyperlink{class_source_line_afe82eb20dbe4291911d7e369b96b04aa}{$\sim$\-Source\-Line} ()}\label{class_source_line_afe82eb20dbe4291911d7e369b96b04aa}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_source_line_a4ebbbf64f2d1688803298dd83cba6c77}{bool {\bfseries is\-Valid} () const }\label{class_source_line_a4ebbbf64f2d1688803298dd83cba6c77}
+
+\item 
+\hypertarget{class_source_line_ada3cce7f748d6fedffc7f3e9a348bc54}{int {\bfseries line\-Number} () const }\label{class_source_line_ada3cce7f748d6fedffc7f3e9a348bc54}
+
+\item 
+\hypertarget{class_source_line_a1571a51d45ebcea382b86224ef767a2e}{std\-::string {\bfseries file\-Name} () const }\label{class_source_line_a1571a51d45ebcea382b86224ef767a2e}
+
+\item 
+\hypertarget{class_source_line_a6c9eff68161f364725b3a51fc60c3e01}{bool {\bfseries operator==} (const \hyperlink{class_source_line}{Source\-Line} \&other) const }\label{class_source_line_a6c9eff68161f364725b3a51fc60c3e01}
+
+\item 
+\hypertarget{class_source_line_aa4633f46f9c9f470c6b680327d002e86}{bool {\bfseries operator!=} (const \hyperlink{class_source_line}{Source\-Line} \&other) const }\label{class_source_line_aa4633f46f9c9f470c6b680327d002e86}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a source line location.
+
+Used to capture the failure location in assertion. 
+
+Use the C\-P\-P\-U\-N\-I\-T\-\_\-\-S\-O\-U\-R\-C\-E\-L\-I\-N\-E() macro to construct that object. Typically used when writing an assertion macro in association with \hyperlink{struct_asserter}{Asserter}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_asserter}{Asserter}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Source\-Line.\-h\end{DoxyCompactItemize}

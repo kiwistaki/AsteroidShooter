@@ -1,0 +1,190 @@
+\hypertarget{structai_material}{\section{ai\-Material Struct Reference}
+\label{structai_material}\index{ai\-Material@{ai\-Material}}
+}
+
+
+$\ast$/  
+
+
+
+
+{\ttfamily \#include $<$ai\-Material.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structai_material_a3c350f89834a7cd3dbc4b4490a0a09dd}{ai\-Material} ()
+\begin{DoxyCompactList}\small\item\em N\-O\-T\-E\-: no initialization, instance Assimp\-::\-Material\-Helper instead. \end{DoxyCompactList}\item 
+\hyperlink{structai_material_a9c4c1c8fd7580777ffffe96b63d4b3f7}{$\sim$ai\-Material} ()
+\item 
+{\footnotesize template$<$typename Type $>$ }\\ai\-Return \hyperlink{structai_material_ace8dbb50ac9e239eca08292c7c961057}{Get} (const char $\ast$p\-Key, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} idx, \hyperlink{group___i_n_f2990-04_ga1d1cfd8ffb84e947f82999c682b666a7}{Type} $\ast$p\-Out, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$p\-Max) const 
+\begin{DoxyCompactList}\small\item\em Retrieve an array of Type values with a specific key from the material. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\ai\-Return \hyperlink{structai_material_a6813bb11ee8d1de9d1d99a60cdb304d3}{Get} (const char $\ast$p\-Key, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} idx, \hyperlink{group___i_n_f2990-04_ga1d1cfd8ffb84e947f82999c682b666a7}{Type} \&p\-Out) const 
+\begin{DoxyCompactList}\small\item\em Retrieve a Type value with a specific key from the material. \end{DoxyCompactList}\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{structai_material_ad619f2bc4400c19caede1ef68b483ff4}{Get\-Texture\-Count} (\hyperlink{ai_material_8h_a7dd415ff703a2cc53d1c22ddbbd7dde0}{ai\-Texture\-Type} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}) const 
+\item 
+ai\-Return \hyperlink{structai_material_aa2007a8ac452dd7d3fb1fb49298d5ffe}{Get\-Texture} (\hyperlink{ai_material_8h_a7dd415ff703a2cc53d1c22ddbbd7dde0}{ai\-Texture\-Type} \hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}, \hyperlink{ai_defines_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_string}{ai\-String} $\ast$\hyperlink{glew_8h_ae517c090b864e6b2846c380c4125f4c5}{path}, \hyperlink{ai_material_8h_a6186e909f1ae28133ab10f1b4635b0f9}{ai\-Texture\-Mapping} $\ast$\hyperlink{glew_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}=\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}, \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$uvindex=\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} $\ast$blend=\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}, \hyperlink{ai_material_8h_afcd3096d69affba13114cedfc6f9ee6b}{ai\-Texture\-Op} $\ast$op=\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}, \hyperlink{ai_material_8h_a6cbe56056751aa80e8dd714632a49de0}{ai\-Texture\-Map\-Mode} $\ast$mapmode=\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ai_defines_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} ai\-Material\-Property $\ast$$\ast$ \hyperlink{structai_material_af32b125d54bff5bc1fc54a1007487cab}{m\-Properties}
+\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{structai_material_a243b07afdc6507f8878c93a2cafe4963}{m\-Num\-Properties}
+\item 
+\hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{structai_material_a84a0016a263362c52b27a9d8d76dc449}{m\-Num\-Allocated}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$\ast$/ 
+
+Data structure for a material
+
+Material data is stored using a key-\/value structure. A single key-\/value pair is called a 'material property'. C++ users should use the provided member functions of \hyperlink{structai_material}{ai\-Material} to process material properties, C users have to stick with the ai\-Material\-Get\-X\-X\-X family of unbound functions. The library defines a set of standard keys (A\-I\-\_\-\-M\-A\-T\-K\-E\-Y\-\_\-\-X\-X\-X). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structai_material_a3c350f89834a7cd3dbc4b4490a0a09dd}{\index{ai\-Material@{ai\-Material}!ai\-Material@{ai\-Material}}
+\index{ai\-Material@{ai\-Material}!aiMaterial@{ai\-Material}}
+\subsubsection[{ai\-Material}]{\setlength{\rightskip}{0pt plus 5cm}ai\-Material\-::ai\-Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structai_material_a3c350f89834a7cd3dbc4b4490a0a09dd}
+
+
+N\-O\-T\-E\-: no initialization, instance Assimp\-::\-Material\-Helper instead. 
+
+\hypertarget{structai_material_a9c4c1c8fd7580777ffffe96b63d4b3f7}{\index{ai\-Material@{ai\-Material}!$\sim$ai\-Material@{$\sim$ai\-Material}}
+\index{$\sim$ai\-Material@{$\sim$ai\-Material}!aiMaterial@{ai\-Material}}
+\subsubsection[{$\sim$ai\-Material}]{\setlength{\rightskip}{0pt plus 5cm}ai\-Material\-::$\sim$ai\-Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structai_material_a9c4c1c8fd7580777ffffe96b63d4b3f7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structai_material_ace8dbb50ac9e239eca08292c7c961057}{\index{ai\-Material@{ai\-Material}!Get@{Get}}
+\index{Get@{Get}!aiMaterial@{ai\-Material}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ ai\-Return ai\-Material\-::\-Get (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Key, }
+\item[{{\bf unsigned} {\bf int}}]{type, }
+\item[{{\bf unsigned} {\bf int}}]{idx, }
+\item[{{\bf Type} $\ast$}]{p\-Out, }
+\item[{{\bf unsigned} {\bf int} $\ast$}]{p\-Max}
+\end{DoxyParamCaption}
+) const}}\label{structai_material_ace8dbb50ac9e239eca08292c7c961057}
+
+
+Retrieve an array of Type values with a specific key from the material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Key} & Key to search for. One of the A\-I\-\_\-\-M\-A\-T\-K\-E\-Y\-\_\-\-X\-X\-X constants. \\
+\hline
+{\em type} & .. set by A\-I\-\_\-\-M\-A\-T\-K\-E\-Y\-\_\-\-X\-X\-X \\
+\hline
+{\em idx} & .. set by A\-I\-\_\-\-M\-A\-T\-K\-E\-Y\-\_\-\-X\-X\-X \\
+\hline
+{\em p\-Out} & Pointer to a buffer to receive the result. \\
+\hline
+{\em p\-Max} & Specifies the size of the given buffer, in Type's. Receives the number of values (not bytes!) read. N\-U\-L\-L is a valid value for this parameter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structai_material_a6813bb11ee8d1de9d1d99a60cdb304d3}{\index{ai\-Material@{ai\-Material}!Get@{Get}}
+\index{Get@{Get}!aiMaterial@{ai\-Material}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ ai\-Return ai\-Material\-::\-Get (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Key, }
+\item[{{\bf unsigned} {\bf int}}]{type, }
+\item[{{\bf unsigned} {\bf int}}]{idx, }
+\item[{{\bf Type} \&}]{p\-Out}
+\end{DoxyParamCaption}
+) const}}\label{structai_material_a6813bb11ee8d1de9d1d99a60cdb304d3}
+
+
+Retrieve a Type value with a specific key from the material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Key} & Key to search for. One of the A\-I\-\_\-\-M\-A\-T\-K\-E\-Y\-\_\-\-X\-X\-X constants. \\
+\hline
+{\em type} & Specifies the type of the texture to be retrieved ( e.\-g. diffuse, specular, height map ...) \\
+\hline
+{\em idx} & Index of the texture to be retrieved. \\
+\hline
+{\em p\-Out} & Reference to receive the output value \\
+\hline
+\end{DoxyParams}
+\hypertarget{structai_material_aa2007a8ac452dd7d3fb1fb49298d5ffe}{\index{ai\-Material@{ai\-Material}!Get\-Texture@{Get\-Texture}}
+\index{Get\-Texture@{Get\-Texture}!aiMaterial@{ai\-Material}}
+\subsubsection[{Get\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}ai\-Return ai\-Material\-::\-Get\-Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\-Texture\-Type}}]{type, }
+\item[{{\bf unsigned} {\bf int}}]{index, }
+\item[{{\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-String} $\ast$}]{path, }
+\item[{{\bf ai\-Texture\-Mapping} $\ast$}]{mapping = {\ttfamily {\bf N\-U\-L\-L}}, }
+\item[{{\bf unsigned} {\bf int} $\ast$}]{uvindex = {\ttfamily {\bf N\-U\-L\-L}}, }
+\item[{{\bf float} $\ast$}]{blend = {\ttfamily {\bf N\-U\-L\-L}}, }
+\item[{{\bf ai\-Texture\-Op} $\ast$}]{op = {\ttfamily {\bf N\-U\-L\-L}}, }
+\item[{{\bf ai\-Texture\-Map\-Mode} $\ast$}]{mapmode = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+) const}}\label{structai_material_aa2007a8ac452dd7d3fb1fb49298d5ffe}
+Helper function to get all parameters pertaining to a particular texture slot from a material.
+
+This function is provided just for convenience, you could also read the single material properties manually. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Specifies the type of the texture to be retrieved ( e.\-g. diffuse, specular, height map ...) \\
+\hline
+{\em index} & Index of the texture to be retrieved. The function fails if there is no texture of that type with this index. \hyperlink{structai_material_ad619f2bc4400c19caede1ef68b483ff4}{Get\-Texture\-Count()} can be used to determine the number of textures per texture type. \\
+\hline
+{\em path} & Receives the path to the texture. N\-U\-L\-L is a valid value. \\
+\hline
+{\em mapping} & The texture mapping. N\-U\-L\-L is allowed as value. \\
+\hline
+{\em uvindex} & Receives the U\-V index of the texture. N\-U\-L\-L is a valid value. \\
+\hline
+{\em blend} & Receives the blend factor for the texture N\-U\-L\-L is a valid value. \\
+\hline
+{\em op} & Receives the texture operation to be performed between this texture and the previous texture. N\-U\-L\-L is allowed as value. \\
+\hline
+{\em mapmode} & Receives the mapping modes to be used for the texture. The parameter may be N\-U\-L\-L but if it is a valid pointer it M\-U\-S\-T point to an array of 3 ai\-Texture\-Map\-Mode's (one for each axis\-: U\-V\-W order (=X\-Y\-Z)). \\
+\hline
+\end{DoxyParams}
+\hypertarget{structai_material_ad619f2bc4400c19caede1ef68b483ff4}{\index{ai\-Material@{ai\-Material}!Get\-Texture\-Count@{Get\-Texture\-Count}}
+\index{Get\-Texture\-Count@{Get\-Texture\-Count}!aiMaterial@{ai\-Material}}
+\subsubsection[{Get\-Texture\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf unsigned} {\bf int} ai\-Material\-::\-Get\-Texture\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\-Texture\-Type}}]{type}
+\end{DoxyParamCaption}
+) const}}\label{structai_material_ad619f2bc4400c19caede1ef68b483ff4}
+Get the number of textures for a particular texture type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Texture type to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of textures for this type. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+A texture can be easily queried using \hyperlink{structai_material_aa2007a8ac452dd7d3fb1fb49298d5ffe}{Get\-Texture()} 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structai_material_a84a0016a263362c52b27a9d8d76dc449}{\index{ai\-Material@{ai\-Material}!m\-Num\-Allocated@{m\-Num\-Allocated}}
+\index{m\-Num\-Allocated@{m\-Num\-Allocated}!aiMaterial@{ai\-Material}}
+\subsubsection[{m\-Num\-Allocated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf unsigned} {\bf int} ai\-Material\-::m\-Num\-Allocated}}\label{structai_material_a84a0016a263362c52b27a9d8d76dc449}
+Storage allocated \hypertarget{structai_material_a243b07afdc6507f8878c93a2cafe4963}{\index{ai\-Material@{ai\-Material}!m\-Num\-Properties@{m\-Num\-Properties}}
+\index{m\-Num\-Properties@{m\-Num\-Properties}!aiMaterial@{ai\-Material}}
+\subsubsection[{m\-Num\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}{\bf unsigned} {\bf int} ai\-Material\-::m\-Num\-Properties}}\label{structai_material_a243b07afdc6507f8878c93a2cafe4963}
+Number of properties in the data base \hypertarget{structai_material_af32b125d54bff5bc1fc54a1007487cab}{\index{ai\-Material@{ai\-Material}!m\-Properties@{m\-Properties}}
+\index{m\-Properties@{m\-Properties}!aiMaterial@{ai\-Material}}
+\subsubsection[{m\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-\_\-\-S\-T\-R\-U\-C\-T} ai\-Material\-Property$\ast$$\ast$ ai\-Material\-::m\-Properties}}\label{structai_material_af32b125d54bff5bc1fc54a1007487cab}
+List of all material properties loaded. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/assimp/include/\hyperlink{ai_material_8h}{ai\-Material.\-h}\end{DoxyCompactItemize}

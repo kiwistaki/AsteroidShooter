@@ -1,0 +1,54 @@
+\hypertarget{_utilitaire_8cpp}{\section{Cadriciel/\-Commun/\-Utilitaire/\-Utilitaire.cpp File Reference}
+\label{_utilitaire_8cpp}\index{Cadriciel/\-Commun/\-Utilitaire/\-Utilitaire.\-cpp@{Cadriciel/\-Commun/\-Utilitaire/\-Utilitaire.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Utilitaire.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceutilitaire}{utilitaire}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceutilitaire_ac61bdab36cf1cbaa0d06fa8b1f35ab64}{utilitaire\-::afficher\-Erreur} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Fonction globale pour l'affichage d'erreur. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{namespaceutilitaire_af329335d827c839be09c8f2d568ceb45}{utilitaire\-::afficher\-Informations} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{glew_8h_a76333d9470ffdd4811326932394d36da}{message})
+\begin{DoxyCompactList}\small\item\em Fonction globale pour l'affichage d'informations. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a382f9680f8726afe04a0938230ebbcc1}{utilitaire\-::\-E\-G\-A\-L\-\_\-\-Z\-E\-R\-O} (double Nombre)
+\begin{DoxyCompactList}\small\item\em Fonction pour savoir si un double est egal a zero. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceutilitaire_ac0b9abffd6b11555c19cfe983b009da1}{utilitaire\-::\-R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G} (double Angle\-Rad)
+\begin{DoxyCompactList}\small\item\em Pour convertir les angles de radians en degres. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceutilitaire_a1f30dfa98d6f9e8ac19954cc826da43c}{utilitaire\-::\-D\-E\-G\-\_\-\-T\-O\-\_\-\-R\-A\-D} (double Angle\-Deg)
+\begin{DoxyCompactList}\small\item\em Pour convertir les angles de degres en radians. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_aa674381e39a6c11af2be2c56b2066f31}{utilitaire\-::\-K\-M\-H\-\_\-\-T\-O\-\_\-\-M\-S} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} kmh)
+\begin{DoxyCompactList}\small\item\em Pour convertir les km/h en m/s. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_a1e2e4af028a761832c3fd1e8d6fdd962}{utilitaire\-::\-M\-S\-\_\-\-T\-O\-\_\-\-K\-M\-H} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} ms)
+\begin{DoxyCompactList}\small\item\em Pour convertir les m/s en km/h. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_a9cf01523c94548e10a05fd18f24d5fb4}{utilitaire\-::\-S\-I\-G\-N} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} nombre)
+\begin{DoxyCompactList}\small\item\em Fonction pour connaître le signe d'un nombre. \end{DoxyCompactList}\item 
+\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} \hyperlink{namespaceutilitaire_ab8add93ddd8e5e0ef5cde3aae89f9b56}{utilitaire\-::\-A\-B\-S} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} nombre)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne la valeur absolue d'un nombre. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a460d2fa5ea7de4383f64efde66456212}{utilitaire\-::\-D\-A\-N\-S\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-L\-E} (double Valeur, double Borne\-Min, double Borne\-Max)
+\begin{DoxyCompactList}\small\item\em Pour savoir si un nombre est dans l'intervalle\-: \mbox{[}Borne\-Min, Borne\-Max\mbox{]}. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a1087261a532fc52d3e97a4d12948f130}{utilitaire\-::\-D\-A\-N\-S\-\_\-\-L\-I\-M\-I\-T\-E\-S\-X\-Y} (double \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, double x\-Min, double x\-Max, double \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, double y\-Min, double y\-Max)
+\begin{DoxyCompactList}\small\item\em Fonction pour verifier si un Point 2d est dans un carre. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceutilitaire_aea936080e582625da9629157ddcd578a}{utilitaire\-::ecrasement} (double \hyperlink{glew_8h_a307708feff65d5bcfe44f8a767030677}{a}, double \hyperlink{glew_8h_a7b01aaccb6b1691185992154f99088cb}{b})
+\begin{DoxyCompactList}\small\item\em Calcule le rapport d'ecrasement. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceutilitaire_a38e618f6c8fa5c888afdcb23ac7e38b4}{utilitaire\-::fichier\-Existe} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&nom\-Du\-Fichier)
+\begin{DoxyCompactList}\small\item\em Verification de l'existance d'un fichier. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceutilitaire_ac6e0c2393fb3a5013a5dacb5ac88ab2f}{utilitaire\-::appliquer\-Matrice} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point, const double mat\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Applique une matrice de transformation a un point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+D\-G\-I 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2005-\/06-\/15 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}

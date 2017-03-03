@@ -1,0 +1,193 @@
+\hypertarget{class_vecteur2_d}{\section{Vecteur2\-D$<$ T $>$ Class Template Reference}
+\label{class_vecteur2_d}\index{Vecteur2\-D$<$ T $>$@{Vecteur2\-D$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Vecteur.\-h$>$}
+
+Inheritance diagram for Vecteur2\-D$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vecteur2_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T2 $>$ }\\\hyperlink{class_vecteur2_d_aaeed114a03440778eafabd7d97613940}{Vecteur2\-D} (const \hyperlink{class_vecteur2_d}{Vecteur2\-D}$<$ T2 $>$ \&u)
+\item 
+\hyperlink{class_vecteur2_d_a8445fc164933218135a7367d331c9420}{Vecteur2\-D} (const T \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}=0, const T \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}=0)
+\item 
+\hyperlink{class_vecteur2_d_ad8fbdbe8868c6d2c2b4ba595d97d351c}{Vecteur2\-D} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 2 $>$ \&\hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v})
+\item 
+const \hyperlink{class_vecteur2_d}{Vecteur2\-D} \& \hyperlink{class_vecteur2_d_a255ae104ab5cc951f60c4d8fa8f0f815}{operator=} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 2 $>$ \&\hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v})
+\item 
+T \hyperlink{class_vecteur2_d_ae61a247f0e5865c44acfdebe2c2b5576}{angle} () const 
+\item 
+\hyperlink{class_vecteur2_d}{Vecteur2\-D} \hyperlink{class_vecteur2_d_ab08bc3a39110d9af846244981b5e4253}{tourner} (const T \hyperlink{glew_8h_a6d7a98b0d979b9411a4344a98a7a6122}{angle}) const 
+\item 
+\hyperlink{class_vecteur2_d}{Vecteur2\-D} \hyperlink{class_vecteur2_d_aced7fc87df9102a148d926632841aa0d}{tourner\-Pi\-Sur2} () const 
+\item 
+\hyperlink{class_vecteur2_d}{Vecteur2\-D} \hyperlink{class_vecteur2_d_a7c798458503ff4f7ccff9b32ccc77b77}{tourner\-Moins\-Pi\-Sur2} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Vecteur2\-D$<$ T $>$}
+
+Classe generique pour implanter des vecteurs en 2\-D.
+
+Cette classe generique est definie pour les vecteurs de dimension 2. Les operations necessaires sont definies, soient\-:
+\begin{DoxyItemize}
+\item le constructeur de la classe ;
+\item operateur = ;
+\item calcul de l'angle de rotation ;
+\item rotation du vecteur .
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Alex Duru 
+
+Ionut Alexandrescu 
+
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/02-\/23 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vecteur2_d_aaeed114a03440778eafabd7d97613940}{\index{Vecteur2\-D@{Vecteur2\-D}!Vecteur2\-D@{Vecteur2\-D}}
+\index{Vecteur2\-D@{Vecteur2\-D}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{Vecteur2\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class T2 $>$ {\bf Vecteur2\-D}$<$ T $>$\-::{\bf Vecteur2\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2\-D}$<$ T2 $>$ \&}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_aaeed114a03440778eafabd7d97613940}
+Constructeur avec conversion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em u} & \-: Le vecteur a copier dans le nouveau vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur2_d_a8445fc164933218135a7367d331c9420}{\index{Vecteur2\-D@{Vecteur2\-D}!Vecteur2\-D@{Vecteur2\-D}}
+\index{Vecteur2\-D@{Vecteur2\-D}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{Vecteur2\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur2\-D}$<$ T $>$\-::{\bf Vecteur2\-D} (
+\begin{DoxyParamCaption}
+\item[{const T}]{x = {\ttfamily 0}, }
+\item[{const T}]{y = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_a8445fc164933218135a7367d331c9420}
+Constructeur par parametres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & \-: La coordonnee en {\itshape x}. \\
+\hline
+\mbox{\tt in}  & {\em y} & \-: La coordonnee en {\itshape y}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur2_d_ad8fbdbe8868c6d2c2b4ba595d97d351c}{\index{Vecteur2\-D@{Vecteur2\-D}!Vecteur2\-D@{Vecteur2\-D}}
+\index{Vecteur2\-D@{Vecteur2\-D}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{Vecteur2\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur2\-D}$<$ T $>$\-::{\bf Vecteur2\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 2 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_ad8fbdbe8868c6d2c2b4ba595d97d351c}
+Constructeur copie.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & \-: Le vecteur a copier dans le nouveau vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vecteur2_d_ae61a247f0e5865c44acfdebe2c2b5576}{\index{Vecteur2\-D@{Vecteur2\-D}!angle@{angle}}
+\index{angle@{angle}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vecteur2\-D}$<$ T $>$\-::{\bf angle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_ae61a247f0e5865c44acfdebe2c2b5576}
+Cette fonction calcule l'angle du vecteur par rapport a l'axe des X positifs dans le sens anti-\/horaire.
+
+\begin{DoxyReturn}{Returns}
+L'angle du vecteur par rapport a l'axe des X dans le sens anti-\/horaire. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur2_d_a255ae104ab5cc951f60c4d8fa8f0f815}{\index{Vecteur2\-D@{Vecteur2\-D}!operator=@{operator=}}
+\index{operator=@{operator=}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const {\bf Vecteur2\-D} \& {\bf Vecteur2\-D}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 2 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_a255ae104ab5cc951f60c4d8fa8f0f815}
+Surcharge de l'operateur d'assignation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & \-: Le vecteur a copier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La reference vers l'objet assigne afin de respecter la semantique de l'operateur d'assignation C++. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur2_d_ab08bc3a39110d9af846244981b5e4253}{\index{Vecteur2\-D@{Vecteur2\-D}!tourner@{tourner}}
+\index{tourner@{tourner}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{tourner}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur2\-D} {\bf Vecteur2\-D}$<$ T $>$\-::tourner (
+\begin{DoxyParamCaption}
+\item[{const T}]{angle}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_ab08bc3a39110d9af846244981b5e4253}
+Cette fonction retourne un nouveau vecteur ayant effectue une rotation d'un angle donne dans le sens anti-\/horaire.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & \-: L'angle duquel faire tourner le vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le vecteur apres la rotation. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur2_d_a7c798458503ff4f7ccff9b32ccc77b77}{\index{Vecteur2\-D@{Vecteur2\-D}!tourner\-Moins\-Pi\-Sur2@{tourner\-Moins\-Pi\-Sur2}}
+\index{tourner\-Moins\-Pi\-Sur2@{tourner\-Moins\-Pi\-Sur2}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{tourner\-Moins\-Pi\-Sur2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur2\-D} {\bf Vecteur2\-D}$<$ T $>$\-::tourner\-Moins\-Pi\-Sur2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_a7c798458503ff4f7ccff9b32ccc77b77}
+Cette fonction retourne un nouveau vecteur ayant effectue une rotation d'un angle de Pi sur 2 dans le sens horaire.
+
+\begin{DoxyReturn}{Returns}
+Le vecteur apres la rotation. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur2_d_aced7fc87df9102a148d926632841aa0d}{\index{Vecteur2\-D@{Vecteur2\-D}!tourner\-Pi\-Sur2@{tourner\-Pi\-Sur2}}
+\index{tourner\-Pi\-Sur2@{tourner\-Pi\-Sur2}!Vecteur2D@{Vecteur2\-D}}
+\subsubsection[{tourner\-Pi\-Sur2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur2\-D} {\bf Vecteur2\-D}$<$ T $>$\-::tourner\-Pi\-Sur2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur2_d_aced7fc87df9102a148d926632841aa0d}
+Cette fonction retourne un nouveau vecteur ayant effectue une rotation d'un angle de Pi sur 2 dans le sens anti-\/horaire.
+
+\begin{DoxyReturn}{Returns}
+Le vecteur apres la rotation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_vecteur_8h}{Vecteur.\-h}\end{DoxyCompactItemize}

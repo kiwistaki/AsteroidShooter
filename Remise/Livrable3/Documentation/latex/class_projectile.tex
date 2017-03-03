@@ -1,0 +1,109 @@
+\hypertarget{class_projectile}{\section{Projectile Class Reference}
+\label{class_projectile}\index{Projectile@{Projectile}}
+}
+
+
+Cette classe qui permet de creer des Projectiles.  
+
+
+
+
+{\ttfamily \#include $<$Projectile.\-h$>$}
+
+Inheritance diagram for Projectile\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_projectile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gac536ed2aad56af866a2078b9a85aa16d}{Projectile} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga23ee522be0f0614258cbcdf95f529082}{Projectile} (\hyperlink{structai_vector3_d}{ai\-Vector3\-D} position\-Depart, \hyperlink{structai_vector3_d}{ai\-Vector3\-D} taille, \hyperlink{structai_vector3_d}{ai\-Vector3\-D} direction\-Vitesse, float poids)
+\item 
+\hypertarget{group__inf2990_ga7bdfb6d482c18c62594d431c14512148}{{\bfseries Projectile} (const \hyperlink{class_projectile}{Projectile} \&projectile)}\label{group__inf2990_ga7bdfb6d482c18c62594d431c14512148}
+
+\item 
+virtual \hyperlink{group__inf2990_ga94903e021fa2edab60ba3836ca0b937d}{$\sim$\-Projectile} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga9926b779c8956fd351b46d74f1d4ae20}{virtual Type \hyperlink{group__inf2990_ga9926b779c8956fd351b46d74f1d4ae20}{get\-Type} ()}\label{group__inf2990_ga9926b779c8956fd351b46d74f1d4ae20}
+
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga9db90ff08a3f616d995c994bb36f3684}{update} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gaa4fb67578d2a062cc24579da06b6fd13}{virtual bool \hyperlink{group__inf2990_gaa4fb67578d2a062cc24579da06b6fd13}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)}\label{group__inf2990_gaa4fb67578d2a062cc24579da06b6fd13}
+
+\begin{DoxyCompactList}\small\item\em Permet de verifier la collision entre les types d'objets concernés et de les traiter. \end{DoxyCompactList}\item 
+\hypertarget{class_projectile_a6f5a3269fbd8fd9c7c37cb819fd8cea0}{virtual bool \hyperlink{class_projectile_a6f5a3269fbd8fd9c7c37cb819fd8cea0}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_projectile_a6f5a3269fbd8fd9c7c37cb819fd8cea0}
+
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_ga55b3fc56c72db065758acc1a2871a290}{check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)
+\item 
+\hypertarget{group__inf2990_ga75f06b6b77eab4de09cb4d2aeaedcc92}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{group__inf2990_ga75f06b6b77eab4de09cb4d2aeaedcc92}
+
+\item 
+\hypertarget{group__inf2990_ga15decc467c88ebcfe699ae2f833e3e3b}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{group__inf2990_ga15decc467c88ebcfe699ae2f833e3e3b}
+
+\item 
+\hypertarget{class_projectile_aade54dcd79fa47f8e8b37f1b52b3ffa9}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{class_projectile_aade54dcd79fa47f8e8b37f1b52b3ffa9}
+
+\item 
+\hypertarget{group__inf2990_ga33beed290d2a1d5dca66257e75561023}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{group__inf2990_ga33beed290d2a1d5dca66257e75561023}
+
+\item 
+\hypertarget{group__inf2990_gab52b39ffad9621713a12ca2666a48b68}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_gab52b39ffad9621713a12ca2666a48b68}
+
+\item 
+virtual void \hyperlink{group__inf2990_gaacf842d1fe20c915f6d089bd744cf20f}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element\-Abstrait)
+\item 
+\hypertarget{group__inf2990_ga5e16995936d38490d9aa85b13bd2c26e}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{group__inf2990_ga5e16995936d38490d9aa85b13bd2c26e}
+
+\item 
+\hypertarget{group__inf2990_ga90524a724a8fff4d4fb6d0f9fb905448}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{group__inf2990_ga90524a724a8fff4d4fb6d0f9fb905448}
+
+\item 
+\hypertarget{group__inf2990_gad18b94288d5ccb5319b2a7012280fdf2}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{group__inf2990_gad18b94288d5ccb5319b2a7012280fdf2}
+
+\item 
+\hypertarget{class_projectile_ab95375501de551f27859fc23f09c8277}{virtual void \hyperlink{class_projectile_ab95375501de551f27859fc23f09c8277}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_projectile_ab95375501de551f27859fc23f09c8277}
+
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga67aeced5338544204d5cf9d687ae39db}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{group__inf2990_ga67aeced5338544204d5cf9d687ae39db}
+
+\item 
+\hypertarget{class_projectile_ad9c0b1c00ad09ccaa6d7fd5bd902766e}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_position_depart}{Position\-Depart} $\ast$position\-Depart)}\label{class_projectile_ad9c0b1c00ad09ccaa6d7fd5bd902766e}
+
+\item 
+\hypertarget{class_projectile_aee995ed5ed457987f77d8f7cdce018f8}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{class_projectile_aee995ed5ed457987f77d8f7cdce018f8}
+
+\item 
+\hypertarget{group__inf2990_gab5a64c2ee13a8514b04d59fa1ac50ef4}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_gab5a64c2ee13a8514b04d59fa1ac50ef4}
+
+\item 
+\hypertarget{class_projectile_ac39e4b852960c40b381e45fcf0571bee}{bool {\bfseries get\-Death\-Sentence} ()}\label{class_projectile_ac39e4b852960c40b381e45fcf0571bee}
+
+\item 
+void \hyperlink{group__inf2990_gaa53c5e928852f48a23e8aa3e9af418a5}{must\-Die} ()
+\item 
+\hypertarget{group__inf2990_ga15cab79251a8713cf4669ac6008b7940}{virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group__inf2990_ga15cab79251a8713cf4669ac6008b7940}{clone} () const }\label{group__inf2990_ga15cab79251a8713cf4669ac6008b7940}
+
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+\hypertarget{class_projectile_a2a82c959229cd2873659465fa014f549}{bool {\bfseries can\-Be\-Attracted} ()}\label{class_projectile_a2a82c959229cd2873659465fa014f549}
+
+\item 
+void \hyperlink{group__inf2990_ga909ff48dd289a7f9212f1a9443c9aad6}{set\-Can\-Be\-Attracted} (bool can\-Be\-Attracted)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe qui permet de creer des Projectiles. 
+
+La classe \hyperlink{class_projectile}{Projectile} contiendra un pointeur vers un noeud\-Projectile afin que celle-\/ci s'occupe de la texture de la \hyperlink{class_projectile}{Projectile}. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_projectile_8h}{Projectile.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_projectile_8cpp}{Projectile.\-cpp}\end{DoxyCompactItemize}

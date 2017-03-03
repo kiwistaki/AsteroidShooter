@@ -1,0 +1,61 @@
+\hypertarget{class_gestionnaire_x_m_l}{\section{Gestionnaire\-X\-M\-L Class Reference}
+\label{class_gestionnaire_x_m_l}\index{Gestionnaire\-X\-M\-L@{Gestionnaire\-X\-M\-L}}
+}
+
+
+Classe qui s'occupe de la gestion des cartes et des fichiers X\-M\-L C'est une classe singleton.  
+
+
+
+
+{\ttfamily \#include $<$Gestionnaire\-X\-M\-L.\-h$>$}
+
+Inheritance diagram for Gestionnaire\-X\-M\-L\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gestionnaire_x_m_l}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga267eebe0e3bb95b5d5f973a4319fe1da}{Gestionnaire\-X\-M\-L} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_gad8207e0a0791170d9c30e81be160ec73}{$\sim$\-Gestionnaire\-X\-M\-L} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga84f9d09636d2edbbeb398da22274741d}{sauvegarder\-Carte} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nom, \hyperlink{class_carte}{Carte} \&carte) const 
+\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{group__inf2990_gaed7d668fdea387603e69c90f14766f97}{charger\-Carte} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} nom)
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} \hyperlink{group__inf2990_ga43004d2d9e045bae88d16024594e5cf3}{get\-Nom\-Carte\-Defaut} () const 
+\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{group__inf2990_ga9e8d745ff895e25d5d7bdf3a79ef2341}{charger\-Carte\-Defaut} ()
+\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{group__inf2990_ga9a4209b0cd0a7f296aca339a495f6c01}{charger\-Carte\-Campagne\-Defaut} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga2078e6964e0e3991cdc3926da825412d}{sauvegarder\-Configuration} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur1\-Propulsion, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur1\-Tourner\-Gauche, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur1\-Tourner\-Droite, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur1\-Manoeuvre, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur1\-Tir, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur2\-Propulsion, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur2\-Tourner\-Gauche, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur2\-Tourner\-Droite, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur2\-Manoeuvre, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} touche\-Joueur2\-Tir, double duree\-Jeu, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} points\-De\-Vie\-Station, bool apparition\-Asteroide, bool changement\-Mode, bool eclairage, bool cible\-Joueur, bool cadre\-Depart, bool zone\-Passage, bool attraction\-Port) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga74edda2c2220100dfa1a59b20291610b}{charger\-Configuration} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur1\-Propulsion, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur1\-Tourner\-Gauche, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur1\-Tourner\-Droite, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur1\-Manoeuvre, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur1\-Tir, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur2\-Propulsion, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur2\-Tourner\-Gauche, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur2\-Tourner\-Droite, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur2\-Manoeuvre, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&touche\-Joueur2\-Tir, double \&duree\-Jeu, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \&points\-De\-Vie\-Station, bool \&apparition\-Asteroide, bool \&changement\-Mode, bool \&eclairage, bool \&cible\-Joueur, bool \&cadre\-Depart, bool \&zone\-Passage, bool \&attraction\-Port, bool \&fichier\-Existe) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gaf25915bc26ca653ace2a0b4df3a4d808}{sauvegarder\-Config\-Campagne} (bool mode\-Coop, bool joueur2\-Virtuel, vector$<$ \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} $>$ liste\-Carte)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga2020824a2c8ca40060649cd759f728f5}{charger\-Config\-Campagne} (bool \&mode\-Coop, bool \&joueur2\-Virtuel, bool \&fichier, vector$<$ \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string} $>$ \&liste\-Carte)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui s'occupe de la gestion des cartes et des fichiers X\-M\-L C'est une classe singleton. 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_gestionnaire_x_m_l_8h}{Gestionnaire\-X\-M\-L.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_gestionnaire_x_m_l_8cpp}{Gestionnaire\-X\-M\-L.\-cpp}\end{DoxyCompactItemize}

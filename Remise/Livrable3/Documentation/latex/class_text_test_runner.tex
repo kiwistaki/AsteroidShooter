@@ -1,0 +1,110 @@
+\hypertarget{class_text_test_runner}{\section{Text\-Test\-Runner Class Reference}
+\label{class_text_test_runner}\index{Text\-Test\-Runner@{Text\-Test\-Runner}}
+}
+
+
+A text mode test runner.
+
+The test runner manage the life cycle of the added tests.  
+
+
+
+
+{\ttfamily \#include $<$Text\-Test\-Runner.\-h$>$}
+
+Inheritance diagram for Text\-Test\-Runner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_test_runner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}{{\bfseries Text\-Test\-Runner} (\hyperlink{class_outputter}{Outputter} $\ast$outputter=N\-U\-L\-L)}\label{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}
+
+\item 
+\hypertarget{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{bool {\bfseries run} (std\-::string test\-Path=\char`\"{}\char`\"{}, bool do\-Wait=false, bool do\-Print\-Result=true, bool do\-Print\-Progress=true)}\label{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}
+
+\item 
+\hypertarget{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{void {\bfseries set\-Outputter} (\hyperlink{class_outputter}{Outputter} $\ast$outputter)}\label{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}
+
+\item 
+\hypertarget{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}{\hyperlink{class_test_result_collector}{Test\-Result\-Collector} \& {\bfseries result} () const }\label{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}
+
+\item 
+\hypertarget{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}{\hyperlink{class_test_result}{Test\-Result} \& {\bfseries event\-Manager} () const }\label{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}
+
+\item 
+\hypertarget{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}{virtual void {\bfseries run} (\hyperlink{class_test_result}{Test\-Result} \&controller, const std\-::string \&test\-Path=\char`\"{}\char`\"{})}\label{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}{virtual void {\bfseries wait} (bool do\-Wait)}\label{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}
+
+\item 
+\hypertarget{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}{virtual void {\bfseries print\-Result} (bool do\-Print\-Result)}\label{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_test_runner_a61cf52af4ee1c64e0e8d07fe86b91ea7}{\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$ {\bfseries m\-\_\-result}}\label{class_text_test_runner_a61cf52af4ee1c64e0e8d07fe86b91ea7}
+
+\item 
+\hypertarget{class_text_test_runner_acfe13b2f69c0113670e3ba72704c0cf5}{\hyperlink{class_test_result}{Test\-Result} $\ast$ {\bfseries m\-\_\-event\-Manager}}\label{class_text_test_runner_acfe13b2f69c0113670e3ba72704c0cf5}
+
+\item 
+\hypertarget{class_text_test_runner_a01e4b671a1e8a32781ef6bcb91e4e95e}{\hyperlink{class_outputter}{Outputter} $\ast$ {\bfseries m\-\_\-outputter}}\label{class_text_test_runner_a01e4b671a1e8a32781ef6bcb91e4e95e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A text mode test runner.
+
+The test runner manage the life cycle of the added tests. 
+
+The test runner can run only one of the added tests or all the tests.
+
+\hyperlink{class_test_runner}{Test\-Runner} prints out a trace as the tests are executed followed by a summary at the end. The trace and summary print are optional.
+
+Here is an example of use\-:
+
+
+\begin{DoxyCode}
+CppUnit::TextTestRunner runner;
+runner.addTest( ExampleTestCase::suite() );
+runner.run( \textcolor{stringliteral}{""}, \textcolor{keyword}{true} );    \textcolor{comment}{// Run all tests and wait}
+\end{DoxyCode}
+
+
+The trace is printed using a \hyperlink{class_text_test_progress_listener}{Text\-Test\-Progress\-Listener}. The summary is printed using a \hyperlink{class_text_outputter}{Text\-Outputter}.
+
+You can specify an alternate \hyperlink{class_outputter}{Outputter} at construction or later with set\-Outputter().
+
+After construction, you can register additional \hyperlink{class_test_listener}{Test\-Listener} to event\-Manager(), for a custom progress trace, for example.
+
+
+\begin{DoxyCode}
+CppUnit::TextTestRunner runner;
+runner.addTest( ExampleTestCase::suite() );
+runner.setOutputter( CppUnit::CompilerOutputter::defaultOutputter( 
+                         &runner.result(),
+                         std::cerr ) );
+MyCustomProgressTestListener progress;
+runner.eventManager().addListener( &progress );
+runner.run( \textcolor{stringliteral}{""}, \textcolor{keyword}{true} );    \textcolor{comment}{// Run all tests and wait}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_compiler_outputter}{Compiler\-Outputter}, \hyperlink{class_xml_outputter}{Xml\-Outputter}, \hyperlink{class_text_outputter}{Text\-Outputter}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/ui/text/Text\-Test\-Runner.\-h\end{DoxyCompactItemize}

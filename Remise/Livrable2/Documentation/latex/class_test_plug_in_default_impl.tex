@@ -1,0 +1,122 @@
+\hypertarget{class_test_plug_in_default_impl}{\section{Test\-Plug\-In\-Default\-Impl Class Reference}
+\label{class_test_plug_in_default_impl}\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}}
+}
+
+
+Default implementation of test plug-\/in interface.
+
+Override get\-Suite\-Name() to specify the suite name. Default is \char`\"{}\-All Tests\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Plug\-In\-Default\-Impl.\-h$>$}
+
+Inheritance diagram for Test\-Plug\-In\-Default\-Impl\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_test_plug_in_default_impl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_plug_in_default_impl_a47fd7f8f4bf3faad9118c3319a31b4c8}{Test\-Plug\-In\-Default\-Impl} ()
+\item 
+virtual \hyperlink{class_test_plug_in_default_impl_abd24e4636ca281cfe40ab07103862896}{$\sim$\-Test\-Plug\-In\-Default\-Impl} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_plug_in_default_impl_a37c0b83c0a94ef97113b35ae70316883}{initialize} (\hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} $\ast$registry, const \hyperlink{class_plug_in_parameters}{Plug\-In\-Parameters} \&parameters)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_plug_in_default_impl_a0180a801dd78be5741a200e866684b20}{add\-Listener} (\hyperlink{class_test_result}{Test\-Result} $\ast$event\-Manager)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_plug_in_default_impl_a26364a3a81e48ff9adcef1a5cd3e40df}{remove\-Listener} (\hyperlink{class_test_result}{Test\-Result} $\ast$event\-Manager)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_plug_in_default_impl_aed4c5b89adaa0bb0b4f11cc4aca782a2}{add\-Xml\-Outputter\-Hooks} (\hyperlink{class_xml_outputter}{Xml\-Outputter} $\ast$outputter)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}{remove\-Xml\-Outputter\-Hooks} ()
+\begin{DoxyCompactList}\small\item\em Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_plug_in_default_impl_aab567f339bbda38e759b7bd631ad8b8c}{uninitialize} (\hyperlink{class_test_factory_registry}{Test\-Factory\-Registry} $\ast$registry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Default implementation of test plug-\/in interface.
+
+Override get\-Suite\-Name() to specify the suite name. Default is \char`\"{}\-All Tests\char`\"{}. 
+
+Cpp\-Unit\-Test\-Plug\-In\-::get\-Test\-Suite() returns a suite that contains all the test registered to the default test factory registry ( \hyperlink{class_test_factory_registry_a1331b28bb1a8bc3db6b8e5ec994ef4ab}{Test\-Factory\-Registry\-::get\-Registry()} ). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_plug_in_default_impl_a47fd7f8f4bf3faad9118c3319a31b4c8}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}}
+\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{Test\-Plug\-In\-Default\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Plug\-In\-Default\-Impl\-::\-Test\-Plug\-In\-Default\-Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_test_plug_in_default_impl_a47fd7f8f4bf3faad9118c3319a31b4c8}
+\hypertarget{class_test_plug_in_default_impl_abd24e4636ca281cfe40ab07103862896}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!$\sim$\-Test\-Plug\-In\-Default\-Impl@{$\sim$\-Test\-Plug\-In\-Default\-Impl}}
+\index{$\sim$\-Test\-Plug\-In\-Default\-Impl@{$\sim$\-Test\-Plug\-In\-Default\-Impl}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{$\sim$\-Test\-Plug\-In\-Default\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual Test\-Plug\-In\-Default\-Impl\-::$\sim$\-Test\-Plug\-In\-Default\-Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_plug_in_default_impl_abd24e4636ca281cfe40ab07103862896}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_plug_in_default_impl_a0180a801dd78be5741a200e866684b20}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!add\-Listener@{add\-Listener}}
+\index{add\-Listener@{add\-Listener}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{add\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Plug\-In\-Default\-Impl\-::add\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{event\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_test_plug_in_default_impl_a0180a801dd78be5741a200e866684b20}
+\hypertarget{class_test_plug_in_default_impl_aed4c5b89adaa0bb0b4f11cc4aca782a2}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!add\-Xml\-Outputter\-Hooks@{add\-Xml\-Outputter\-Hooks}}
+\index{add\-Xml\-Outputter\-Hooks@{add\-Xml\-Outputter\-Hooks}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{add\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Plug\-In\-Default\-Impl\-::add\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Outputter} $\ast$}]{outputter}
+\end{DoxyParamCaption}
+)}}\label{class_test_plug_in_default_impl_aed4c5b89adaa0bb0b4f11cc4aca782a2}
+\hypertarget{class_test_plug_in_default_impl_a37c0b83c0a94ef97113b35ae70316883}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!initialize@{initialize}}
+\index{initialize@{initialize}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Plug\-In\-Default\-Impl\-::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Factory\-Registry} $\ast$}]{registry, }
+\item[{const {\bf Plug\-In\-Parameters} \&}]{parameters}
+\end{DoxyParamCaption}
+)}}\label{class_test_plug_in_default_impl_a37c0b83c0a94ef97113b35ae70316883}
+\hypertarget{class_test_plug_in_default_impl_a26364a3a81e48ff9adcef1a5cd3e40df}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!remove\-Listener@{remove\-Listener}}
+\index{remove\-Listener@{remove\-Listener}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{remove\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Plug\-In\-Default\-Impl\-::remove\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{event\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_test_plug_in_default_impl_a26364a3a81e48ff9adcef1a5cd3e40df}
+\hypertarget{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}}
+\index{remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{remove\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Plug\-In\-Default\-Impl\-::remove\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_plug_in_default_impl_aa4fa891e799ff362dece734417afd93d}
+
+
+Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. 
+
+Can be used to free some resources allocated by \hyperlink{class_test_plug_in_default_impl_aed4c5b89adaa0bb0b4f11cc4aca782a2}{add\-Xml\-Outputter\-Hooks()}. 
+
+Implements \hyperlink{struct_cpp_unit_test_plug_in_a045727ad9658525838b0b9157065fbcd}{Cpp\-Unit\-Test\-Plug\-In}.
+
+\hypertarget{class_test_plug_in_default_impl_aab567f339bbda38e759b7bd631ad8b8c}{\index{Test\-Plug\-In\-Default\-Impl@{Test\-Plug\-In\-Default\-Impl}!uninitialize@{uninitialize}}
+\index{uninitialize@{uninitialize}!TestPlugInDefaultImpl@{Test\-Plug\-In\-Default\-Impl}}
+\subsubsection[{uninitialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Plug\-In\-Default\-Impl\-::uninitialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Factory\-Registry} $\ast$}]{registry}
+\end{DoxyParamCaption}
+)}}\label{class_test_plug_in_default_impl_aab567f339bbda38e759b7bd631ad8b8c}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\hyperlink{_test_plug_in_default_impl_8h}{Test\-Plug\-In\-Default\-Impl.\-h}\end{DoxyCompactItemize}

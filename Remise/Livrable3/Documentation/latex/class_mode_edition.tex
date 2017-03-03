@@ -1,0 +1,58 @@
+\hypertarget{class_mode_edition}{\section{Mode\-Edition Class Reference}
+\label{class_mode_edition}\index{Mode\-Edition@{Mode\-Edition}}
+}
+
+
+Le mode edition permet a l'utilisateur d'ajouter, de modifier et de supprimer les objets (portails, bonus accelerateurs, barrieres protectrices, stations, spatiales, positions de depart) sur la zone de jeu. Il est egalement possible modifier differentes constantes qui affectent le comportement des objets. La zone de jeu creee peut etre sauvegardee dans un fichier X\-M\-L.  
+
+
+
+
+{\ttfamily \#include $<$Mode\-Edition.\-h$>$}
+
+Inheritance diagram for Mode\-Edition\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mode_edition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__inf2990_ga0aa05c104a50d0e25c6e7f82fbb142ff}{\hyperlink{group__inf2990_ga0aa05c104a50d0e25c6e7f82fbb142ff}{Mode\-Edition} (\hyperlink{class_carte}{Carte} \&carte, \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$vue)}\label{group__inf2990_ga0aa05c104a50d0e25c6e7f82fbb142ff}
+
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gae3468af0e1eea13d063a084401c34a05}{virtual \hyperlink{group__inf2990_gae3468af0e1eea13d063a084401c34a05}{$\sim$\-Mode\-Edition} ()}\label{group__inf2990_gae3468af0e1eea13d063a084401c34a05}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gac35939dea30e8f7de122a30e7d38d9a0}{void \hyperlink{group__inf2990_gac35939dea30e8f7de122a30e7d38d9a0}{set\-Command} (int numero\-Outil)}\label{group__inf2990_gac35939dea30e8f7de122a30e7d38d9a0}
+
+\begin{DoxyCompactList}\small\item\em Setter Unsetter pour la commande en cours. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga6afae356465e03636187c5e62190c501}{void {\bfseries unset\-Command} ()}\label{group__inf2990_ga6afae356465e03636187c5e62190c501}
+
+\item 
+\hypertarget{group__inf2990_ga39858d3c94a25354f54068c3b32cab2a}{virtual void \hyperlink{group__inf2990_ga39858d3c94a25354f54068c3b32cab2a}{update} (float delta\-T)}\label{group__inf2990_ga39858d3c94a25354f54068c3b32cab2a}
+
+\begin{DoxyCompactList}\small\item\em Update recoit les informations et laisse le jeu analyser les donnees. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga47db3339cda33fdc249548620e0dcc8f}{set\-Position\-Angle\-Scale\-Objet\-Selectionne} (float pos\-X, float pos\-Y, float pos\-Z, float angle, float scale\-X, float scale\-Y, float scale\-Z)
+\item 
+vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \& \hyperlink{group__inf2990_ga75b06b061177f481474fd9d0a9892f94}{get\-Objets\-Selectionnes} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Le mode edition permet a l'utilisateur d'ajouter, de modifier et de supprimer les objets (portails, bonus accelerateurs, barrieres protectrices, stations, spatiales, positions de depart) sur la zone de jeu. Il est egalement possible modifier differentes constantes qui affectent le comportement des objets. La zone de jeu creee peut etre sauvegardee dans un fichier X\-M\-L. 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_mode_edition_8h}{Mode\-Edition.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_mode_edition_8cpp}{Mode\-Edition.\-cpp}\end{DoxyCompactItemize}

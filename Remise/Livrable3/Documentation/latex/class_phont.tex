@@ -1,0 +1,68 @@
+\hypertarget{class_phont}{\section{Phont Class Reference}
+\label{class_phont}\index{Phont@{Phont}}
+}
+
+
+Gère l'affichage de texte basé sur une image de caractères générés par Bitmap Font Generator v1.\-12 (\href{http://www.angelcode.com/products/bmfont/}{\tt http\-://www.\-angelcode.\-com/products/bmfont/}). L'image doit être de type Windows bitmap 8-\/bit, et les pixels \char`\"{}allumés\char`\"{} doivent être de couleur à l'index 0x00 de la palette du fichier. Le fichier de description \char`\"{}.\-fnt\char`\"{} doit être de type texte. Ne gère pas le kerning inter-\/caractère pour l'instant.  
+
+
+
+
+{\ttfamily \#include $<$Phont.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_phont_1_1bmp__dib__v3__header}{bmp\-\_\-dib\-\_\-v3\-\_\-header}
+\item 
+struct \hyperlink{struct_phont_1_1bmp__header}{bmp\-\_\-header}
+\item 
+struct \hyperlink{struct_phont_1_1bmp__magic}{bmp\-\_\-magic}
+\item 
+struct \hyperlink{struct_phont_1_1phont__bfg__char}{phont\-\_\-bfg\-\_\-char}
+\item 
+struct \hyperlink{struct_phont_1_1phont__bfg__common}{phont\-\_\-bfg\-\_\-common}
+\item 
+struct \hyperlink{struct_phont_1_1phont__bfg__info}{phont\-\_\-bfg\-\_\-info}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gab2ec4e2ae40b3644ca6dc0abd5073cee}{Phont} ()
+\item 
+\hyperlink{group__inf2990_gaf9e2c4f842acc78f27c788f826692904}{$\sim$\-Phont} ()
+\item 
+bool \hyperlink{group__inf2990_gac70234e3204adaff1867f6f6dcc2e898}{load} (const char $\ast$pref, const char $\ast$name)
+\item 
+bool \hyperlink{group__inf2990_ga53d59b77a24bdc41ffc8af8771c2f5ba}{unload} (void)
+\item 
+bool \hyperlink{group__inf2990_gad6af7c11f0f5d4ee4d051afb10b63ed2}{is\-Loaded} (void) const 
+\item 
+G\-Luint \hyperlink{group__inf2990_ga706abd83f388aea17f1e116b7bc47210}{get\-C\-L\-Base} (void) const 
+\item 
+struct \hyperlink{struct_phont_1_1phont__bfg__info}{phont\-\_\-bfg\-\_\-info} \hyperlink{group__inf2990_gae46aef4ee45f71024683ae54175f18a9}{get\-B\-F\-G\-Info} (void) const 
+\item 
+struct \hyperlink{struct_phont_1_1phont__bfg__common}{phont\-\_\-bfg\-\_\-common} \hyperlink{group__inf2990_gac997be23fc42587352802c2f3ba0dea1}{get\-B\-F\-G\-Common} (void) const 
+\item 
+struct \hyperlink{struct_phont_1_1phont__bfg__char}{phont\-\_\-bfg\-\_\-char} \hyperlink{group__inf2990_gaff25d5a18f785a21cedf1d83e165905a}{get\-Char\-Info} (const unsigned int index) const 
+\item 
+unsigned int \hyperlink{group__inf2990_ga695d6ed81c9ba23f2dc97dc0cca6a11f}{get\-Char\-Count} (void) const 
+\item 
+unsigned int \hyperlink{group__inf2990_gafd6111a4af16dc7fc4e327caa9da623c}{get\-Text\-Length} (const char $\ast$text) const 
+\item 
+bool \hyperlink{group__inf2990_gabcb889f54b041875e6aa378e722891e9}{print} (G\-Luint width, G\-Luint height, G\-Luint vp\-\_\-x, G\-Luint vp\-\_\-y, bool keep\-\_\-gl, const char $\ast$format,...) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gère l'affichage de texte basé sur une image de caractères générés par Bitmap Font Generator v1.\-12 (\href{http://www.angelcode.com/products/bmfont/}{\tt http\-://www.\-angelcode.\-com/products/bmfont/}). L'image doit être de type Windows bitmap 8-\/bit, et les pixels \char`\"{}allumés\char`\"{} doivent être de couleur à l'index 0x00 de la palette du fichier. Le fichier de description \char`\"{}.\-fnt\char`\"{} doit être de type texte. Ne gère pas le kerning inter-\/caractère pour l'instant. 
+
+\begin{DoxyAuthor}{Author}
+Philippe Proulx 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Affichage\-Texte/Phont.\-h\item 
+Cadriciel/\-Sources/\-C++/\-Affichage\-Texte/\hyperlink{_phont_8cpp}{Phont.\-cpp}\end{DoxyCompactItemize}

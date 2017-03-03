@@ -1,0 +1,114 @@
+\hypertarget{class_brief_test_progress_listener}{\section{Brief\-Test\-Progress\-Listener Class Reference}
+\label{class_brief_test_progress_listener}\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}}
+}
+
+
+\hyperlink{class_test_listener}{Test\-Listener} that prints the name of each test before running it.  
+
+
+
+
+{\ttfamily \#include $<$Brief\-Test\-Progress\-Listener.\-h$>$}
+
+Inheritance diagram for Brief\-Test\-Progress\-Listener\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_brief_test_progress_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_brief_test_progress_listener_a7af12547b437fcddab52e7b0f0d47782}{Brief\-Test\-Progress\-Listener} ()
+\item 
+virtual \hyperlink{class_brief_test_progress_listener_a9e1cf4460bdb460e14009d1629454881}{$\sim$\-Brief\-Test\-Progress\-Listener} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_brief_test_progress_listener_ab4196e15752bb2be443e72418500e20e}{start\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Called when just before a \hyperlink{class_test_case}{Test\-Case} is run. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_brief_test_progress_listener_a21f8658a9c19c67220241656cfad30ce}{add\-Failure} (const \hyperlink{class_test_failure}{Test\-Failure} \&failure)
+\begin{DoxyCompactList}\small\item\em Called when a failure occurs while running a test. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_brief_test_progress_listener_a49cbd9152ea35a21f6525773660ee119}{end\-Test} (\hyperlink{class_test}{Test} $\ast$test)
+\begin{DoxyCompactList}\small\item\em Called just after a \hyperlink{class_test_case}{Test\-Case} was run (even if a failure occured). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_test_listener}{Test\-Listener} that prints the name of each test before running it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_brief_test_progress_listener_a7af12547b437fcddab52e7b0f0d47782}{\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}!Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}}
+\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}!BriefTestProgressListener@{Brief\-Test\-Progress\-Listener}}
+\subsubsection[{Brief\-Test\-Progress\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}Brief\-Test\-Progress\-Listener\-::\-Brief\-Test\-Progress\-Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_brief_test_progress_listener_a7af12547b437fcddab52e7b0f0d47782}
+Constructs a \hyperlink{class_brief_test_progress_listener}{Brief\-Test\-Progress\-Listener} object. \hypertarget{class_brief_test_progress_listener_a9e1cf4460bdb460e14009d1629454881}{\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}!$\sim$\-Brief\-Test\-Progress\-Listener@{$\sim$\-Brief\-Test\-Progress\-Listener}}
+\index{$\sim$\-Brief\-Test\-Progress\-Listener@{$\sim$\-Brief\-Test\-Progress\-Listener}!BriefTestProgressListener@{Brief\-Test\-Progress\-Listener}}
+\subsubsection[{$\sim$\-Brief\-Test\-Progress\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual Brief\-Test\-Progress\-Listener\-::$\sim$\-Brief\-Test\-Progress\-Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_brief_test_progress_listener_a9e1cf4460bdb460e14009d1629454881}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_brief_test_progress_listener_a21f8658a9c19c67220241656cfad30ce}{\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!BriefTestProgressListener@{Brief\-Test\-Progress\-Listener}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Brief\-Test\-Progress\-Listener\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Failure} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_brief_test_progress_listener_a21f8658a9c19c67220241656cfad30ce}
+
+
+Called when a failure occurs while running a test. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+{\itshape failure} is a temporary object that is destroyed after the method call. Use \hyperlink{class_test_failure_a0f0c86f12431ea8adde3e70e0cb52db7}{Test\-Failure\-::clone()} to create a duplicate. 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{class_test_listener_a103216a5814c907f7b752b969477e765}{Test\-Listener}.
+
+\hypertarget{class_brief_test_progress_listener_a49cbd9152ea35a21f6525773660ee119}{\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}!end\-Test@{end\-Test}}
+\index{end\-Test@{end\-Test}!BriefTestProgressListener@{Brief\-Test\-Progress\-Listener}}
+\subsubsection[{end\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Brief\-Test\-Progress\-Listener\-::end\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_brief_test_progress_listener_a49cbd9152ea35a21f6525773660ee119}
+
+
+Called just after a \hyperlink{class_test_case}{Test\-Case} was run (even if a failure occured). 
+
+
+
+Reimplemented from \hyperlink{class_test_listener_ae8ccd0f55dd9aa7eafded05ba14f9ac6}{Test\-Listener}.
+
+\hypertarget{class_brief_test_progress_listener_ab4196e15752bb2be443e72418500e20e}{\index{Brief\-Test\-Progress\-Listener@{Brief\-Test\-Progress\-Listener}!start\-Test@{start\-Test}}
+\index{start\-Test@{start\-Test}!BriefTestProgressListener@{Brief\-Test\-Progress\-Listener}}
+\subsubsection[{start\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Brief\-Test\-Progress\-Listener\-::start\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf Test} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_brief_test_progress_listener_ab4196e15752bb2be443e72418500e20e}
+
+
+Called when just before a \hyperlink{class_test_case}{Test\-Case} is run. 
+
+
+
+Reimplemented from \hyperlink{class_test_listener_a5546d4420e7412234915113b1ea5ad77}{Test\-Listener}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_brief_test_progress_listener_8h}{Brief\-Test\-Progress\-Listener.\-h}\end{DoxyCompactItemize}

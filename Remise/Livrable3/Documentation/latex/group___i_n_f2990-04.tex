@@ -1,0 +1,183 @@
+\hypertarget{group___i_n_f2990-04}{\section{I\-N\-F2990-\/04}
+\label{group___i_n_f2990-04}\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_accelerateur}{Accelerateur}
+\begin{DoxyCompactList}\small\item\em Cette classe qui permet de creer des accelerateurs. \end{DoxyCompactList}\item 
+class \hyperlink{class_asteroide}{Asteroide}
+\begin{DoxyCompactList}\small\item\em Cette classe qui permet de creer des asteroides. \end{DoxyCompactList}\item 
+class \hyperlink{class_barriere}{Barriere}
+\begin{DoxyCompactList}\small\item\em Cette classe qui permet de creer des barrieres. \end{DoxyCompactList}\item 
+class \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait}
+\begin{DoxyCompactList}\small\item\em Cette classe abstraite servira de modele pour les objets du jeu. \end{DoxyCompactList}\item 
+class \hyperlink{class_portail}{Portail}
+\begin{DoxyCompactList}\small\item\em Cette classe qui permet de creer des Portails. \end{DoxyCompactList}\item 
+class \hyperlink{class_position_depart}{Position\-Depart}
+\begin{DoxyCompactList}\small\item\em Cette classe permet de creer des position de depart. \end{DoxyCompactList}\item 
+class \hyperlink{class_projectile}{Projectile}
+\begin{DoxyCompactList}\small\item\em Cette classe qui permet de creer des Projectiles. \end{DoxyCompactList}\item 
+class \hyperlink{class_station}{Station}
+\begin{DoxyCompactList}\small\item\em Classe permettant la creation d'une station spatiale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries A\-C\-C\-E\-L\-E\-R\-A\-T\-E\-U\-R} = 0, 
+{\bfseries A\-S\-T\-E\-R\-O\-I\-D\-E}, 
+{\bfseries B\-A\-R\-R\-I\-E\-R\-E}, 
+{\bfseries P\-O\-R\-T\-A\-I\-L}, 
+\\*
+{\bfseries P\-R\-O\-J\-E\-C\-T\-I\-L\-E}, 
+{\bfseries S\-T\-A\-T\-I\-O\-N}, 
+{\bfseries V\-A\-I\-S\-S\-E\-A\-U}, 
+{\bfseries P\-O\-S\-I\-T\-I\-O\-N\-D\-E\-P\-A\-R\-T}, 
+\\*
+{\bfseries V\-A\-I\-S\-S\-E\-A\-U\-V\-I\-R\-T\-U\-E\-L}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___i_n_f2990-04_ga2cd5d23fdefd5a5db303a8c7e2af9c3c}{Position\-Depart\-::\-Position\-Depart} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{group___i_n_f2990-04_ga48b038debe01d96507a78be1940891f8}{Position\-Depart\-::\-Position\-Depart} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position\-Depart, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, unsigned int poids)
+\item 
+\hyperlink{group___i_n_f2990-04_ga407a4f493c341f2b9ce6f05d575676aa}{Position\-Depart\-::\-Position\-Depart} (const \hyperlink{class_position_depart}{Position\-Depart} \&position\-Depart)
+\item 
+virtual \hyperlink{group___i_n_f2990-04_ga7223f64532a213cd4faf6e29aa5c5a30}{Position\-Depart\-::$\sim$\-Position\-Depart} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual Type \hyperlink{group___i_n_f2990-04_gae4b1d64b04abfd849ef302e41c6fc6d1}{Position\-Depart\-::get\-Type} ()
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group___i_n_f2990-04_gac089935dcf561edb43c8a402e6f6ace5}{Position\-Depart\-::update} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+\hypertarget{group___i_n_f2990-04_ga8d1a454a58e20a9dda3d393d2ed02271}{virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group___i_n_f2990-04_ga8d1a454a58e20a9dda3d393d2ed02271}{Position\-Depart\-::clone} () const }\label{group___i_n_f2990-04_ga8d1a454a58e20a9dda3d393d2ed02271}
+
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___i_n_f2990-04_gae4b1d64b04abfd849ef302e41c6fc6d1}{\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!INF2990-04@{I\-N\-F2990-\/04}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}Type Position\-Depart\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{group___i_n_f2990-04_gae4b1d64b04abfd849ef302e41c6fc6d1}
+
+
+Permet d'obtenir le type de l'element. 
+
+Methode qui retourne le type de noeud
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aucun} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type\-::\-Position\-Depart. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a06be76cc9ea3eaa3de4e263c9e5e21a3}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{group___i_n_f2990-04_ga2cd5d23fdefd5a5db303a8c7e2af9c3c}{\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}!Position\-Depart@{Position\-Depart}}
+\index{Position\-Depart@{Position\-Depart}!INF2990-04@{I\-N\-F2990-\/04}}
+\subsubsection[{Position\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}Position\-Depart\-::\-Position\-Depart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___i_n_f2990-04_ga2cd5d23fdefd5a5db303a8c7e2af9c3c}
+
+
+Constructeur. 
+
+Constructeur par defaut
+
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{group___i_n_f2990-04_ga48b038debe01d96507a78be1940891f8}{\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}!Position\-Depart@{Position\-Depart}}
+\index{Position\-Depart@{Position\-Depart}!INF2990-04@{I\-N\-F2990-\/04}}
+\subsubsection[{Position\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}Position\-Depart\-::\-Position\-Depart (
+\begin{DoxyParamCaption}
+\item[{{\bf Vecteur3f}}]{position\-Depart, }
+\item[{{\bf Vecteur3f}}]{taille, }
+\item[{{\bf Vecteur3f}}]{direction\-Vitesse, }
+\item[{unsigned int}]{poids}
+\end{DoxyParamCaption}
+)}}\label{group___i_n_f2990-04_ga48b038debe01d96507a78be1940891f8}
+Constructeur par parametres 
+\begin{DoxyParams}{Parameters}
+{\em position\-Depart} & La position de depart \\
+\hline
+{\em taille} & La taille de l'element \\
+\hline
+{\em direction\-Vitesse} & La vitesse de l'element \\
+\hline
+{\em poids} & Le poids de l'element\\
+\hline
+\end{DoxyParams}
+Constructeur par parametre
+
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{group___i_n_f2990-04_ga407a4f493c341f2b9ce6f05d575676aa}{\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}!Position\-Depart@{Position\-Depart}}
+\index{Position\-Depart@{Position\-Depart}!INF2990-04@{I\-N\-F2990-\/04}}
+\subsubsection[{Position\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}Position\-Depart\-::\-Position\-Depart (
+\begin{DoxyParamCaption}
+\item[{const {\bf Position\-Depart} \&}]{Position\-Depart}
+\end{DoxyParamCaption}
+)}}\label{group___i_n_f2990-04_ga407a4f493c341f2b9ce6f05d575676aa}
+Constructeur par parametre
+
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{group___i_n_f2990-04_gac089935dcf561edb43c8a402e6f6ace5}{\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}!update@{update}}
+\index{update@{update}!INF2990-04@{I\-N\-F2990-\/04}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Position\-Depart\-::update (
+\begin{DoxyParamCaption}
+\item[{float}]{delta\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{group___i_n_f2990-04_gac089935dcf561edb43c8a402e6f6ace5}
+
+
+Mise a jour. 
+
+Methode qui permet d'actualiser le rendu de l'objet
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aucun.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_aee3ed1d4ee01b0374387fcb9ef8a4e74}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{group___i_n_f2990-04_ga7223f64532a213cd4faf6e29aa5c5a30}{\index{I\-N\-F2990-\/04@{I\-N\-F2990-\/04}!$\sim$\-Position\-Depart@{$\sim$\-Position\-Depart}}
+\index{$\sim$\-Position\-Depart@{$\sim$\-Position\-Depart}!INF2990-04@{I\-N\-F2990-\/04}}
+\subsubsection[{$\sim$\-Position\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}Position\-Depart\-::$\sim$\-Position\-Depart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{group___i_n_f2990-04_ga7223f64532a213cd4faf6e29aa5c5a30}
+
+
+Destructeur. 
+
+Destructeur
+
+\begin{DoxyReturn}{Returns}
+Aucune (destructeur). 
+\end{DoxyReturn}

@@ -1,0 +1,116 @@
+\hypertarget{class_commande_mode_edition}{\section{Commande\-Mode\-Edition Interface Reference}
+\label{class_commande_mode_edition}\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}}
+}
+
+
+L'interface \hyperlink{class_commande_mode_edition}{Commande\-Mode\-Edition} permet de definir les commandes qui peuvent etres executes sur les differents objets en mode edition.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Mode\-Edition.\-h$>$}
+
+Inheritance diagram for Commande\-Mode\-Edition\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_commande_mode_edition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_mode_edition_ae6d4fef67683ce568a8c34b7329fd759}{Commande\-Mode\-Edition} ()
+\item 
+virtual \hyperlink{class_commande_mode_edition_af499078eaf3c840c1abb885c18581221}{$\sim$\-Commande\-Mode\-Edition} ()
+\item 
+virtual void \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{executer} (int mouse\-X, int mouse\-Y, int boutton, int touche)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_commande_mode_edition_ade7653be98ae5dd9da895a34983ec680}{mouse\-X\-\_\-}
+\item 
+int \hyperlink{class_commande_mode_edition_a6128370123ce4b6e6fb8571c953241e4}{mouse\-Y\-\_\-}
+\item 
+int \hyperlink{class_commande_mode_edition_a02fd21f564101674d5c8af535322ea02}{last\-Mouse\-X\-\_\-}
+\item 
+int \hyperlink{class_commande_mode_edition_a42bd29db98adec623e8c7cd5771783f3}{last\-Mouse\-Y\-\_\-}
+\item 
+int \hyperlink{class_commande_mode_edition_a84e2d980201bc0649b2af9c9f4bff7e6}{boutton\-\_\-}
+\item 
+int \hyperlink{class_commande_mode_edition_a3a522c03034a54eb01178e8c8af9a8db}{touche\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+L'interface \hyperlink{class_commande_mode_edition}{Commande\-Mode\-Edition} permet de definir les commandes qui peuvent etres executes sur les differents objets en mode edition. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_mode_edition_ae6d4fef67683ce568a8c34b7329fd759}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!Commande\-Mode\-Edition@{Commande\-Mode\-Edition}}
+\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{Commande\-Mode\-Edition}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Mode\-Edition\-::\-Commande\-Mode\-Edition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_commande_mode_edition_ae6d4fef67683ce568a8c34b7329fd759}
+Constructeur \hypertarget{class_commande_mode_edition_af499078eaf3c840c1abb885c18581221}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!$\sim$\-Commande\-Mode\-Edition@{$\sim$\-Commande\-Mode\-Edition}}
+\index{$\sim$\-Commande\-Mode\-Edition@{$\sim$\-Commande\-Mode\-Edition}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{$\sim$\-Commande\-Mode\-Edition}]{\setlength{\rightskip}{0pt plus 5cm}virtual Commande\-Mode\-Edition\-::$\sim$\-Commande\-Mode\-Edition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_commande_mode_edition_af499078eaf3c840c1abb885c18581221}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!executer@{executer}}
+\index{executer@{executer}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Commande\-Mode\-Edition\-::executer (
+\begin{DoxyParamCaption}
+\item[{int}]{mouse\-X, }
+\item[{int}]{mouse\-Y, }
+\item[{int}]{boutton, }
+\item[{int}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}
+Fonction a implementer dans les classes derivees. Execute l'action que la commande doit effectuer 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_commande_selection_a1fdf079ab482bbcceb87a7d2eb72c7be}{Commande\-Selection}, \hyperlink{class_commande_duplication_ab8f7e0df61599b747d80c06548b630a9}{Commande\-Duplication}, \hyperlink{class_commande_rotation_a2ee611526f6ed7720821dbf8e577fe64}{Commande\-Rotation}, \hyperlink{class_commande_suppression_a8e3947cc0dcdcb85348e5c873f6def44}{Commande\-Suppression}, \hyperlink{class_commande_deplacement_a8a591ce694d95d57409f14597d0b1e9c}{Commande\-Deplacement}, \hyperlink{class_commande_mise_a_echelle_a03aabe2e5d3a20928b041cfe5595715b}{Commande\-Mise\-A\-Echelle}, \hyperlink{class_commande_ajout_portail_a1b5ac4fd38f34e785aa61a3ce6fd5702}{Commande\-Ajout\-Portail}, \hyperlink{group__inf2990_ga803d538d34b6d32dd88def5126d0684b}{Commande\-Zoom\-Loupe}, \hyperlink{class_commande_ajout_barriere_a23c6176e97b56fed95b2e02b37515290}{Commande\-Ajout\-Barriere}, \hyperlink{class_commande_ajout_station_spatial_a92ca290ca6ca127e618e3463bf3fe75b}{Commande\-Ajout\-Station\-Spatial}, and \hyperlink{class_commande_ajout_accelerateur_a1537ffad37fa05fa20cdbd414890adb3}{Commande\-Ajout\-Accelerateur}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_commande_mode_edition_a84e2d980201bc0649b2af9c9f4bff7e6}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!boutton\-\_\-@{boutton\-\_\-}}
+\index{boutton\-\_\-@{boutton\-\_\-}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{boutton\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Commande\-Mode\-Edition\-::boutton\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_commande_mode_edition_a84e2d980201bc0649b2af9c9f4bff7e6}
+Boutton presentement clique avec la souris \hypertarget{class_commande_mode_edition_a02fd21f564101674d5c8af535322ea02}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!last\-Mouse\-X\-\_\-@{last\-Mouse\-X\-\_\-}}
+\index{last\-Mouse\-X\-\_\-@{last\-Mouse\-X\-\_\-}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{last\-Mouse\-X\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Commande\-Mode\-Edition\-::last\-Mouse\-X\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_commande_mode_edition_a02fd21f564101674d5c8af535322ea02}
+Derniere position en X de la souris \hypertarget{class_commande_mode_edition_a42bd29db98adec623e8c7cd5771783f3}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!last\-Mouse\-Y\-\_\-@{last\-Mouse\-Y\-\_\-}}
+\index{last\-Mouse\-Y\-\_\-@{last\-Mouse\-Y\-\_\-}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{last\-Mouse\-Y\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Commande\-Mode\-Edition\-::last\-Mouse\-Y\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_commande_mode_edition_a42bd29db98adec623e8c7cd5771783f3}
+Derniere position en Y de la souris \hypertarget{class_commande_mode_edition_ade7653be98ae5dd9da895a34983ec680}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!mouse\-X\-\_\-@{mouse\-X\-\_\-}}
+\index{mouse\-X\-\_\-@{mouse\-X\-\_\-}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{mouse\-X\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Commande\-Mode\-Edition\-::mouse\-X\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_commande_mode_edition_ade7653be98ae5dd9da895a34983ec680}
+Position en X de la souris \hypertarget{class_commande_mode_edition_a6128370123ce4b6e6fb8571c953241e4}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!mouse\-Y\-\_\-@{mouse\-Y\-\_\-}}
+\index{mouse\-Y\-\_\-@{mouse\-Y\-\_\-}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{mouse\-Y\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Commande\-Mode\-Edition\-::mouse\-Y\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_commande_mode_edition_a6128370123ce4b6e6fb8571c953241e4}
+Position en Y de la souris \hypertarget{class_commande_mode_edition_a3a522c03034a54eb01178e8c8af9a8db}{\index{Commande\-Mode\-Edition@{Commande\-Mode\-Edition}!touche\-\_\-@{touche\-\_\-}}
+\index{touche\-\_\-@{touche\-\_\-}!CommandeModeEdition@{Commande\-Mode\-Edition}}
+\subsubsection[{touche\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Commande\-Mode\-Edition\-::touche\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_commande_mode_edition_a3a522c03034a54eb01178e8c8af9a8db}
+Touche presentement appuye avec le clavier 
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_mode_edition_8h}{Commande\-Mode\-Edition.\-h}\end{DoxyCompactItemize}

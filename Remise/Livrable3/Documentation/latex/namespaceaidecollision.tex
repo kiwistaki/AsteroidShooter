@@ -1,0 +1,569 @@
+\hypertarget{namespaceaidecollision}{\section{aidecollision Namespace Reference}
+\label{namespaceaidecollision}\index{aidecollision@{aidecollision}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision}
+\begin{DoxyCompactList}\small\item\em Structure contenant les informations d'une collision. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceaidecollision_a1c8613e2393aa3268262f9d23d60c0c9}{Collision} \{ \\*
+{\bfseries C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-A\-U\-C\-U\-N\-E} = 0, 
+{\bfseries C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-S\-E\-G\-M\-E\-N\-T\-\_\-\-P\-R\-E\-M\-I\-E\-R\-P\-O\-I\-N\-T}, 
+{\bfseries C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-S\-E\-G\-M\-E\-N\-T}, 
+{\bfseries C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-S\-E\-G\-M\-E\-N\-T\-\_\-\-D\-E\-U\-X\-I\-E\-M\-E\-P\-O\-I\-N\-T}, 
+\\*
+{\bfseries C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-S\-P\-H\-E\-R\-E}, 
+{\bfseries C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-A\-R\-C}
+ \}
+\begin{DoxyCompactList}\small\item\em Type de collisions possibles avec un segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \hyperlink{namespaceaidecollision_a76a6a46bdde378dd6781ae23c1bfa313}{calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point1, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point2, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position, double rayon, bool collision\-Avec\-Points=true)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet circulaire avec un segment de droite. \end{DoxyCompactList}\item 
+\hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \hyperlink{namespaceaidecollision_aa891c68d5b7e4fa059cfa0cca600cc52}{calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&position, double rayon, bool collision\-Avec\-Points=true)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet spherique avec un segment de droite. \end{DoxyCompactList}\item 
+\hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \hyperlink{namespaceaidecollision_aa7ef6624305b37a13f5c583bbbc41882}{calculer\-Collision\-Cercle} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&centre\-Cercle, double rayon\-Cercle, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position\-Objet, double rayon\-Objet)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet circulaire avec un cercle. \end{DoxyCompactList}\item 
+\hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \hyperlink{namespaceaidecollision_abd98f8eab0ec2b1370fecaf55b9dcf55}{calculer\-Collision\-Arc} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&centre\-Cercle, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point\-Arc1, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point\-Arc2, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position\-Objet, double rayon\-Objet)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet circulaire avec un arc de cercle. \end{DoxyCompactList}\item 
+\hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \hyperlink{namespaceaidecollision_ab4172fb76b2ff4925328f52459a134ab}{calculer\-Collision\-Sphere} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&centre\-Sphere, double rayon\-Sphere, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&position\-Objet, double rayon\-Objet)
+\begin{DoxyCompactList}\small\item\em Calcule la collision d'un objet spherique avec une sphere. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_adfb0d490d1e7e1eb0b7d34a7ecba982f}{calculer\-Force\-Rebondissement2\-D} (const \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \&details, double constante\-Rebondissement)
+\begin{DoxyCompactList}\small\item\em Calcule la force en deux dimensions a partir d'une collision. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_aeb5fa0c355658723c12093e3c65dfca3}{calculer\-Force\-Rebondissement3\-D} (const \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \&details, double constante\-Rebondissement)
+\begin{DoxyCompactList}\small\item\em Calcule la force en trois dimensions a partir d'une collision. \end{DoxyCompactList}\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_ab12dd816a00b79e23993bc1e27fd7859}{calculer\-Force\-Amortissement2\-D} (const \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \&details, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&vitesse, double constante\-Amortissement)
+\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_a2d14adb05414527ee23e93d54f656277}{calculer\-Force\-Amortissement3\-D} (const \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} \&details, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&vitesse, double constante\-Amortissement)
+\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_a85a0be1f19e12cd25413002996b24bb1}{calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point1, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&point2, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position, double rayon, bool collision\-Avec\-Points, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&vitesse, \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} $\ast$retour\-Details)
+\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_a7b4ab7ec2265e5a0c9d85f80b0243cb9}{calculer\-Collision\-Segment} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point1, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&point2, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&position, double rayon, bool collision\-Avec\-Points, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&vitesse, \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} $\ast$retour\-Details)
+\item 
+\hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \hyperlink{namespaceaidecollision_ac7a15fb1d1661183de87524a1a7084fb}{calculer\-Collision\-Cercle} (const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&centre\-Cercle, double rayon\-Cercle, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&position\-Objet, double rayon\-Objet, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga6f7808e68c967b90bd7e737b7e1b78de}{Vecteur2} \&vitesse, \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} $\ast$retour\-Details)
+\item 
+\hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \hyperlink{namespaceaidecollision_a32afc8d28fb424bc014af013be76c9fa}{calculer\-Collision\-Sphere} (const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&centre\-Sphere, double rayon\-Sphere, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&position\-Objet, double rayon\-Objet, double constante\-Rebondissement, double constante\-Amortissement, const \hyperlink{group__utilitaire_ga541aa4837ad9250d3a248dc82ee9ad4d}{Vecteur3} \&vitesse, \hyperlink{classaidecollision_1_1_details_collision}{Details\-Collision} $\ast$retour\-Details)
+\item 
+double \hyperlink{namespaceaidecollision_a6237077a29518539015295311e39e2cc}{calculer\-Combinaison\-Rebondissement} (double constante1, double constante2)
+\begin{DoxyCompactList}\small\item\em Calcule la combinaison de deux constantes de rebondissement. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceaidecollision_a617db5046c54f02f5bfa501aadc368d8}{calculer\-Combinaison\-Amortissement} (double constante1, double constante2)
+\begin{DoxyCompactList}\small\item\em Calcule la combinaison de deux constantes d'amortissement. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceaidecollision_a680fa1bfbc3e0d711f5934ec4602e228}{calculer\-Intersection\-Point\-Triangle} (const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&point, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&p1, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&p2, const \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \&p3)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Espace de nom contenant des fonctions utiles pour le calcul des forces causees par les collisions. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceaidecollision_abd98f8eab0ec2b1370fecaf55b9dcf55}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Arc@{calculer\-Collision\-Arc}}
+\index{calculer\-Collision\-Arc@{calculer\-Collision\-Arc}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Details\-Collision} aidecollision\-::calculer\-Collision\-Arc (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2} \&}]{centre\-Cercle, }
+\item[{const {\bf Vecteur2} \&}]{point\-Arc1, }
+\item[{const {\bf Vecteur2} \&}]{point\-Arc2, }
+\item[{const {\bf Vecteur2} \&}]{position\-Objet, }
+\item[{double}]{rayon\-Objet}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_abd98f8eab0ec2b1370fecaf55b9dcf55}
+
+
+Calcule la collision d'un objet circulaire avec un arc de cercle. 
+
+Cette fonction calcule l'intersection d'un cercle identifie par son centre et son rayon, avec un arc de cercle identifie par ses deux extremites et son centre.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em centre\-Cercle} & \-: Centre de l'arc avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em point\-Arc1} & \-: Premiere extremite de l'arc avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em point\-Arc2} & \-: Seconde extremite de l'arc avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em position\-Objet} & \-: Position de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Objet} & \-: Rayon de l'objet peut-\/etre en collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure contenant de l'information sur la collision. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_aa7ef6624305b37a13f5c583bbbc41882}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Cercle@{calculer\-Collision\-Cercle}}
+\index{calculer\-Collision\-Cercle@{calculer\-Collision\-Cercle}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Cercle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Details\-Collision} aidecollision\-::calculer\-Collision\-Cercle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2} \&}]{centre\-Cercle, }
+\item[{double}]{rayon\-Cercle, }
+\item[{const {\bf Vecteur2} \&}]{position\-Objet, }
+\item[{double}]{rayon\-Objet}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_aa7ef6624305b37a13f5c583bbbc41882}
+
+
+Calcule la collision d'un objet circulaire avec un cercle. 
+
+Cette fonction calcule l'intersection d'un cercle avec un autre cercle, chacun identifie par son centre et son rayon.
+
+Elle ne fait qu'appeler la version 3\-D de cette meme fonction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em centre\-Cercle} & \-: Centre du cercle avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Cercle} & \-: Rayon du cercle avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em position\-Objet} & \-: Position de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Objet} & \-: Rayon de l'objet peut-\/etre en collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure contenant de l'information sur la collision. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_ac7a15fb1d1661183de87524a1a7084fb}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Cercle@{calculer\-Collision\-Cercle}}
+\index{calculer\-Collision\-Cercle@{calculer\-Collision\-Cercle}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Cercle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur2} aidecollision\-::calculer\-Collision\-Cercle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2} \&}]{centre\-Cercle, }
+\item[{double}]{rayon\-Cercle, }
+\item[{const {\bf Vecteur2} \&}]{position\-Objet, }
+\item[{double}]{rayon\-Objet, }
+\item[{double}]{constante\-Rebondissement, }
+\item[{double}]{constante\-Amortissement, }
+\item[{const {\bf Vecteur2} \&}]{vitesse, }
+\item[{Details\-Collision $\ast$}]{retour\-Details = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_ac7a15fb1d1661183de87524a1a7084fb}
+Calcule la force en deux dimensions causee par la collision d'un objet circulaire avec un cercle.
+
+Cette fonction calcule la force causee par la collision d'un cercle avec un autre cercle, chacun identifie par son centre et son rayon. Elle tient compte d'une force de rebondissement ainsi qu'une force d'amortissement.
+
+Elle ne fait qu'appeler la version 3\-D de cette meme fonction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em centre\-Cercle} & \-: Centre du cercle avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Cercle} & \-: Rayon du cercle avec lequel on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em position\-Objet} & \-: Position de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Objet} & \-: Rayon de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Rebondissement} & \-: Constante de rebondissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Amortissement} & \-: Constante d'amortissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em vitesse} & \-: Vitesse de l'objet en collision. \\
+\hline
+\mbox{\tt out}  & {\em retour\-Details} & \-: Pointeur pour retourner les details de la collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en deux dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a76a6a46bdde378dd6781ae23c1bfa313}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Segment@{calculer\-Collision\-Segment}}
+\index{calculer\-Collision\-Segment@{calculer\-Collision\-Segment}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Segment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Details\-Collision} aidecollision\-::calculer\-Collision\-Segment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2} \&}]{point1, }
+\item[{const {\bf Vecteur2} \&}]{point2, }
+\item[{const {\bf Vecteur2} \&}]{position, }
+\item[{double}]{rayon, }
+\item[{bool}]{collision\-Avec\-Points}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a76a6a46bdde378dd6781ae23c1bfa313}
+
+
+Calcule la collision d'un objet circulaire avec un segment de droite. 
+
+Cette fonction calcule l'intersection d'un cercle, identifie par son centre et son rayon, avec un segment de droite, identifie par les coordonnees de chacune de ses extremites.
+
+Elle ne fait qu'appeler la version 3\-D de cette meme fonction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point1} & \-: Premiere extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em point2} & \-: Seconde extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em position} & \-: Centre du cercle. \\
+\hline
+\mbox{\tt in}  & {\em rayon} & \-: Rayon du cercle. \\
+\hline
+\mbox{\tt in}  & {\em collision\-Avec\-Points} & \-: Vrai si on veut les collisions avec les extremites.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure contenant de l'information sur la collision. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_aa891c68d5b7e4fa059cfa0cca600cc52}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Segment@{calculer\-Collision\-Segment}}
+\index{calculer\-Collision\-Segment@{calculer\-Collision\-Segment}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Segment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Details\-Collision} aidecollision\-::calculer\-Collision\-Segment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{point1, }
+\item[{const {\bf Vecteur3} \&}]{point2, }
+\item[{const {\bf Vecteur3} \&}]{position, }
+\item[{double}]{rayon, }
+\item[{bool}]{collision\-Avec\-Points}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_aa891c68d5b7e4fa059cfa0cca600cc52}
+
+
+Calcule la collision d'un objet spherique avec un segment de droite. 
+
+Cette fonction calcule l'intersection d'une sphere, identifiee par son centre et son rayon, avec un segment de droite, identifie par les coordonnees de chacune de ses extremites.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point1} & \-: Premiere extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em point2} & \-: Seconde extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em position} & \-: Centre de la sphere. \\
+\hline
+\mbox{\tt in}  & {\em rayon} & \-: Rayon de la sphere. \\
+\hline
+\mbox{\tt in}  & {\em collision\-Avec\-Points} & \-: Vrai si on veut les collisions avec les extremites.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure contenant de l'information sur la collision. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a85a0be1f19e12cd25413002996b24bb1}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Segment@{calculer\-Collision\-Segment}}
+\index{calculer\-Collision\-Segment@{calculer\-Collision\-Segment}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Segment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur2} aidecollision\-::calculer\-Collision\-Segment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur2} \&}]{point1, }
+\item[{const {\bf Vecteur2} \&}]{point2, }
+\item[{const {\bf Vecteur2} \&}]{position, }
+\item[{double}]{rayon, }
+\item[{bool}]{collision\-Avec\-Points, }
+\item[{double}]{constante\-Rebondissement, }
+\item[{double}]{constante\-Amortissement, }
+\item[{const {\bf Vecteur2} \&}]{vitesse, }
+\item[{Details\-Collision $\ast$}]{retour\-Details = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a85a0be1f19e12cd25413002996b24bb1}
+Calcule la force en deux dimensions causee par la collision d'un objet circulaire avec un segment de droite.
+
+Cette fonction calcule la force causee par la collision d'un cercle, identifie par son centre et son rayon, avec un segment de droite, identifie par les coordonnees de chacune de ses extremites. Elle tient compte d'une force de rebondissement ainsi qu'une force d'amortissement.
+
+Elle ne fait qu'appeler la version 3\-D de cette meme fonction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point1} & \-: Premiere extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em point2} & \-: Seconde extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em position} & \-: Centre du cercle. \\
+\hline
+\mbox{\tt in}  & {\em rayon} & \-: Rayon du cercle. \\
+\hline
+\mbox{\tt in}  & {\em collision\-Avec\-Points} & \-: Vrai si on veut les collisions avec les extremites. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Rebondissement} & \-: Constante de rebondissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Amortissement} & \-: Constante d'amortissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em vitesse} & \-: Vitesse de l'objet en collision. \\
+\hline
+\mbox{\tt out}  & {\em retour\-Details} & \-: Pointeur pour retourner les details de la collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en deux dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a7b4ab7ec2265e5a0c9d85f80b0243cb9}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Segment@{calculer\-Collision\-Segment}}
+\index{calculer\-Collision\-Segment@{calculer\-Collision\-Segment}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Segment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur3} aidecollision\-::calculer\-Collision\-Segment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{point1, }
+\item[{const {\bf Vecteur3} \&}]{point2, }
+\item[{const {\bf Vecteur3} \&}]{position, }
+\item[{double}]{rayon, }
+\item[{bool}]{collision\-Avec\-Points, }
+\item[{double}]{constante\-Rebondissement, }
+\item[{double}]{constante\-Amortissement, }
+\item[{const {\bf Vecteur3} \&}]{vitesse, }
+\item[{Details\-Collision $\ast$}]{retour\-Details = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a7b4ab7ec2265e5a0c9d85f80b0243cb9}
+Calcule la force en trois dimensions causee par la collision d'un objet spherique avec un segment de droite.
+
+Cette fonction calcule la force causee par la collision d'un cercle, identifie par son centre et son rayon, avec un segment de droite, identifie par les coordonnees de chacune de ses extremites. Elle tient compte d'une force de rebondissement ainsi qu'une force d'amortissement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point1} & \-: Premiere extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em point2} & \-: Seconde extremite du segment de droite. \\
+\hline
+\mbox{\tt in}  & {\em position} & \-: Centre du cercle. \\
+\hline
+\mbox{\tt in}  & {\em rayon} & \-: Rayon du cercle. \\
+\hline
+\mbox{\tt in}  & {\em collision\-Avec\-Points} & \-: Vrai si on veut les collisions avec les extremites. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Rebondissement} & \-: Constante de rebondissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Amortissement} & \-: Constante d'amortissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em vitesse} & \-: Vitesse de l'objet en collision. \\
+\hline
+\mbox{\tt out}  & {\em retour\-Details} & \-: Pointeur pour retourner les details de la collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en trois dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_ab4172fb76b2ff4925328f52459a134ab}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Sphere@{calculer\-Collision\-Sphere}}
+\index{calculer\-Collision\-Sphere@{calculer\-Collision\-Sphere}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Details\-Collision} aidecollision\-::calculer\-Collision\-Sphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{centre\-Sphere, }
+\item[{double}]{rayon\-Sphere, }
+\item[{const {\bf Vecteur3} \&}]{position\-Objet, }
+\item[{double}]{rayon\-Objet}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_ab4172fb76b2ff4925328f52459a134ab}
+
+
+Calcule la collision d'un objet spherique avec une sphere. 
+
+Cette fonction calcule l'intersection d'une sphere avec une autre sphere, chacune identifiee par son centre et son rayon.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em centre\-Sphere} & \-: Centre de la sphere avec laquelle on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Sphere} & \-: Rayon de la sphere avec laquelle on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em position\-Objet} & \-: Position de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Objet} & \-: Rayon de l'objet peut-\/etre en collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure contenant de l'information sur la collision. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a32afc8d28fb424bc014af013be76c9fa}{\index{aidecollision@{aidecollision}!calculer\-Collision\-Sphere@{calculer\-Collision\-Sphere}}
+\index{calculer\-Collision\-Sphere@{calculer\-Collision\-Sphere}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Collision\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur3} aidecollision\-::calculer\-Collision\-Sphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3} \&}]{centre\-Sphere, }
+\item[{double}]{rayon\-Sphere, }
+\item[{const {\bf Vecteur3} \&}]{position\-Objet, }
+\item[{double}]{rayon\-Objet, }
+\item[{double}]{constante\-Rebondissement, }
+\item[{double}]{constante\-Amortissement, }
+\item[{const {\bf Vecteur3} \&}]{vitesse, }
+\item[{Details\-Collision $\ast$}]{retour\-Details = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a32afc8d28fb424bc014af013be76c9fa}
+Calcule la force en trois dimensions causee par la collision d'un objet spherique avec une sphere.
+
+Cette fonction calcule la force causee par la collision d'une sphere avec une autre sphere, chacune identifiee par son centre et son rayon. Elle tient compte d'une force de rebondissement ainsi qu'une force d'amortissement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em centre\-Sphere} & \-: Centre de la sphere avec laquelle on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Sphere} & \-: Rayon de la sphere avec laquelle on teste la collision. \\
+\hline
+\mbox{\tt in}  & {\em position\-Objet} & \-: Position de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em rayon\-Objet} & \-: Rayon de l'objet peut-\/etre en collision. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Rebondissement} & \-: Constante de rebondissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Amortissement} & \-: Constante d'amortissement de l'objet. \\
+\hline
+\mbox{\tt in}  & {\em vitesse} & \-: Vitesse de l'objet en collision. \\
+\hline
+\mbox{\tt out}  & {\em retour\-Details} & \-: Pointeur pour retourner les details de la collision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en trois dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a617db5046c54f02f5bfa501aadc368d8}{\index{aidecollision@{aidecollision}!calculer\-Combinaison\-Amortissement@{calculer\-Combinaison\-Amortissement}}
+\index{calculer\-Combinaison\-Amortissement@{calculer\-Combinaison\-Amortissement}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Combinaison\-Amortissement}]{\setlength{\rightskip}{0pt plus 5cm}double aidecollision\-::calculer\-Combinaison\-Amortissement (
+\begin{DoxyParamCaption}
+\item[{double}]{constante1, }
+\item[{double}]{constante2}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a617db5046c54f02f5bfa501aadc368d8}
+
+
+Calcule la combinaison de deux constantes d'amortissement. 
+
+Cette fonction calcule la constante resultant de la combinaison de deux corps en collision possedant chacun leur constante d'amortissement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em constante1} & \-: La constante du premier objet. \\
+\hline
+\mbox{\tt in}  & {\em constante2} & \-: La constante du second objet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constante resultante pour les deux objets. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a6237077a29518539015295311e39e2cc}{\index{aidecollision@{aidecollision}!calculer\-Combinaison\-Rebondissement@{calculer\-Combinaison\-Rebondissement}}
+\index{calculer\-Combinaison\-Rebondissement@{calculer\-Combinaison\-Rebondissement}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Combinaison\-Rebondissement}]{\setlength{\rightskip}{0pt plus 5cm}double aidecollision\-::calculer\-Combinaison\-Rebondissement (
+\begin{DoxyParamCaption}
+\item[{double}]{constante1, }
+\item[{double}]{constante2}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a6237077a29518539015295311e39e2cc}
+
+
+Calcule la combinaison de deux constantes de rebondissement. 
+
+Cette fonction calcule la constante resultant de la combinaison de deux corps en collision possedant chacun leur constante de rebondissement.
+
+Elle utilise le modele de ressort en serie qui se compriment l'un l'autre.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em constante1} & \-: La constante du premier objet. \\
+\hline
+\mbox{\tt in}  & {\em constante2} & \-: La constante du second objet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constante resultante pour les deux objets. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_ab12dd816a00b79e23993bc1e27fd7859}{\index{aidecollision@{aidecollision}!calculer\-Force\-Amortissement2\-D@{calculer\-Force\-Amortissement2\-D}}
+\index{calculer\-Force\-Amortissement2\-D@{calculer\-Force\-Amortissement2\-D}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Force\-Amortissement2\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur2} aidecollision\-::calculer\-Force\-Amortissement2\-D (
+\begin{DoxyParamCaption}
+\item[{const Details\-Collision \&}]{details, }
+\item[{const {\bf Vecteur2} \&}]{vitesse, }
+\item[{double}]{constante\-Amortissement}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_ab12dd816a00b79e23993bc1e27fd7859}
+Calcule la force d'amortissement en deux dimensions au cours d'une collision.
+
+Cette fonction calcule une force d'amortissement proportionnelle a la vitesse et dans sa direction, causee par une collision.
+
+Elle ne fait qu'appeler la version 3\-D de cette meme fonction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em details} & \-: Details de la collision. \\
+\hline
+\mbox{\tt in}  & {\em vitesse} & \-: Vitesse de l'objet en collision. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Amortissement} & \-: Constante d'amortissement de l'objet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en deux dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a2d14adb05414527ee23e93d54f656277}{\index{aidecollision@{aidecollision}!calculer\-Force\-Amortissement3\-D@{calculer\-Force\-Amortissement3\-D}}
+\index{calculer\-Force\-Amortissement3\-D@{calculer\-Force\-Amortissement3\-D}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Force\-Amortissement3\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur3} aidecollision\-::calculer\-Force\-Amortissement3\-D (
+\begin{DoxyParamCaption}
+\item[{const Details\-Collision \&}]{details, }
+\item[{const {\bf Vecteur3} \&}]{vitesse, }
+\item[{double}]{constante\-Amortissement}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a2d14adb05414527ee23e93d54f656277}
+Calcule la force d'amortissement en trois dimensions au cours d'une collision.
+
+Cette fonction calcule une force d'amortissement proportionnelle a la vitesse et dans sa direction, causee par une collision.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em details} & \-: Details de la collision. \\
+\hline
+\mbox{\tt in}  & {\em vitesse} & \-: Vitesse de l'objet en collision. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Amortissement} & \-: Constante d'amortissement de l'objet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en trois dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_adfb0d490d1e7e1eb0b7d34a7ecba982f}{\index{aidecollision@{aidecollision}!calculer\-Force\-Rebondissement2\-D@{calculer\-Force\-Rebondissement2\-D}}
+\index{calculer\-Force\-Rebondissement2\-D@{calculer\-Force\-Rebondissement2\-D}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Force\-Rebondissement2\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur2} aidecollision\-::calculer\-Force\-Rebondissement2\-D (
+\begin{DoxyParamCaption}
+\item[{const Details\-Collision \&}]{details, }
+\item[{double}]{constante\-Rebondissement}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_adfb0d490d1e7e1eb0b7d34a7ecba982f}
+
+
+Calcule la force en deux dimensions a partir d'une collision. 
+
+Cette fonction calcule la force causee par une collision a partir de la loi des ressorts qui stipule que la force est proportionnelle a une constante caracterisant le ressort (dans ce cas l'objet sur lequel on rebondit) et a l'etirement ou la compression du ressort (dans ce cas l'enfoncement).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em details} & \-: Details de la collision. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Rebondissement} & \-: Constante de rebondissement de l'objet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en deux dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_aeb5fa0c355658723c12093e3c65dfca3}{\index{aidecollision@{aidecollision}!calculer\-Force\-Rebondissement3\-D@{calculer\-Force\-Rebondissement3\-D}}
+\index{calculer\-Force\-Rebondissement3\-D@{calculer\-Force\-Rebondissement3\-D}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Force\-Rebondissement3\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vecteur3} aidecollision\-::calculer\-Force\-Rebondissement3\-D (
+\begin{DoxyParamCaption}
+\item[{const Details\-Collision \&}]{details, }
+\item[{double}]{constante\-Rebondissement}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_aeb5fa0c355658723c12093e3c65dfca3}
+
+
+Calcule la force en trois dimensions a partir d'une collision. 
+
+Cette fonction calcule la force causee par une collision a partir de la loi des ressorts qui stipule que la force est proportionnelle a une constante caracterisant le ressort (dans ce cas l'objet sur lequel on rebondit) et a l'etirement ou la compression du ressort (dans ce cas l'enfoncement).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em details} & \-: Details de la collision. \\
+\hline
+\mbox{\tt in}  & {\em constante\-Rebondissement} & \-: Constante de rebondissement de l'objet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Force causee par la collision, en trois dimensions. 
+\end{DoxyReturn}
+\hypertarget{namespaceaidecollision_a680fa1bfbc3e0d711f5934ec4602e228}{\index{aidecollision@{aidecollision}!calculer\-Intersection\-Point\-Triangle@{calculer\-Intersection\-Point\-Triangle}}
+\index{calculer\-Intersection\-Point\-Triangle@{calculer\-Intersection\-Point\-Triangle}!aidecollision@{aidecollision}}
+\subsubsection[{calculer\-Intersection\-Point\-Triangle}]{\setlength{\rightskip}{0pt plus 5cm}bool aidecollision\-::calculer\-Intersection\-Point\-Triangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3f} \&}]{point, }
+\item[{const {\bf Vecteur3f} \&}]{p1, }
+\item[{const {\bf Vecteur3f} \&}]{p2, }
+\item[{const {\bf Vecteur3f} \&}]{p3}
+\end{DoxyParamCaption}
+)}}\label{namespaceaidecollision_a680fa1bfbc3e0d711f5934ec4602e228}
+Calcule l'intersection entre un point et un triangle 
+\begin{DoxyParams}{Parameters}
+{\em point} & Le point avec lequel on veut tester l'intersection \\
+\hline
+{\em p1} & Le premier sommet du triangle \\
+\hline
+{\em p2} & Le second sommet du triangle \\
+\hline
+{\em p3} & Le troisieme sommet du triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le point est dans le triangle, false sinon 
+\end{DoxyReturn}

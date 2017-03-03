@@ -1,0 +1,174 @@
+\hypertarget{class_plug_in_manager}{\section{Plug\-In\-Manager Class Reference}
+\label{class_plug_in_manager}\index{Plug\-In\-Manager@{Plug\-In\-Manager}}
+}
+
+
+Manges Test\-Plug\-In.  
+
+
+
+
+{\ttfamily \#include $<$Plug\-In\-Manager.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_plug_in_manager_1_1_plug_in_info}{Plug\-In\-Info}
+\begin{DoxyCompactList}\small\item\em (I\-N\-T\-E\-R\-N\-A\-L) Information about a specific plug-\/in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_plug_in_manager_a7789a7e258e750bd14267d20cac7d288}{Plug\-In\-Manager} ()
+\item 
+virtual \hyperlink{class_plug_in_manager_a093797f2d979b22fcf8df2230985b246}{$\sim$\-Plug\-In\-Manager} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_aa617ef22c19ff90d7a56cd048c975afa}{load} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&library\-File\-Name, const \hyperlink{class_plug_in_parameters}{Plug\-In\-Parameters} \&parameters=\hyperlink{class_plug_in_parameters}{Plug\-In\-Parameters}())
+\begin{DoxyCompactList}\small\item\em Loads the specified plug-\/in. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_a5366b1e0e2e96e84d09e26893c00c4bf}{unload} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&library\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Unloads the specified plug-\/in. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_a3c51a256e3d6ee3bf6fa6c98d74053d1}{add\-Listener} (\hyperlink{class_test_result}{Test\-Result} $\ast$event\-Manager)
+\begin{DoxyCompactList}\small\item\em Gives a chance to each loaded plug-\/in to register \hyperlink{class_test_listener}{Test\-Listener}. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_aea9b8b61e256169b823516868e1d8ad0}{remove\-Listener} (\hyperlink{class_test_result}{Test\-Result} $\ast$event\-Manager)
+\begin{DoxyCompactList}\small\item\em Gives a chance to each loaded plug-\/in to unregister \hyperlink{class_test_listener}{Test\-Listener}. For each plug-\/in, call \hyperlink{struct_cpp_unit_test_plug_in_a8f36157014b515d38efbc8ab67923d85}{Cpp\-Unit\-Test\-Plug\-In\-::remove\-Listener()}. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_a4a9c64e0ac3f762b100b993d7e33f889}{add\-Xml\-Outputter\-Hooks} (\hyperlink{class_xml_outputter}{Xml\-Outputter} $\ast$outputter)
+\begin{DoxyCompactList}\small\item\em Provides a way for the plug-\/in to register some \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook}. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_a0fe59f82fd430ea57159a6ffad9a4035}{remove\-Xml\-Outputter\-Hooks} ()
+\begin{DoxyCompactList}\small\item\em Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_plug_in_manager_afc1fa045afaac73cd44f69839056f1e1}{unload} (\hyperlink{struct_plug_in_manager_1_1_plug_in_info}{Plug\-In\-Info} \&plug\-In)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manges Test\-Plug\-In. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_plug_in_manager_a7789a7e258e750bd14267d20cac7d288}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!Plug\-In\-Manager@{Plug\-In\-Manager}}
+\index{Plug\-In\-Manager@{Plug\-In\-Manager}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{Plug\-In\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Plug\-In\-Manager\-::\-Plug\-In\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_a7789a7e258e750bd14267d20cac7d288}
+Constructs a \hyperlink{class_plug_in_manager}{Plug\-In\-Manager} object. \hypertarget{class_plug_in_manager_a093797f2d979b22fcf8df2230985b246}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!$\sim$\-Plug\-In\-Manager@{$\sim$\-Plug\-In\-Manager}}
+\index{$\sim$\-Plug\-In\-Manager@{$\sim$\-Plug\-In\-Manager}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{$\sim$\-Plug\-In\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}virtual Plug\-In\-Manager\-::$\sim$\-Plug\-In\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_plug_in_manager_a093797f2d979b22fcf8df2230985b246}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_plug_in_manager_a3c51a256e3d6ee3bf6fa6c98d74053d1}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!add\-Listener@{add\-Listener}}
+\index{add\-Listener@{add\-Listener}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{add\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::add\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{event\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_a3c51a256e3d6ee3bf6fa6c98d74053d1}
+
+
+Gives a chance to each loaded plug-\/in to register \hyperlink{class_test_listener}{Test\-Listener}. 
+
+For each plug-\/in, call \hyperlink{struct_cpp_unit_test_plug_in_aad8038dc72d0f9798379937fe5692c97}{Cpp\-Unit\-Test\-Plug\-In\-::add\-Listener()}. \hypertarget{class_plug_in_manager_a4a9c64e0ac3f762b100b993d7e33f889}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!add\-Xml\-Outputter\-Hooks@{add\-Xml\-Outputter\-Hooks}}
+\index{add\-Xml\-Outputter\-Hooks@{add\-Xml\-Outputter\-Hooks}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{add\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::add\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+\item[{{\bf Xml\-Outputter} $\ast$}]{outputter}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_a4a9c64e0ac3f762b100b993d7e33f889}
+
+
+Provides a way for the plug-\/in to register some \hyperlink{class_xml_outputter_hook}{Xml\-Outputter\-Hook}. 
+
+\hypertarget{class_plug_in_manager_aa617ef22c19ff90d7a56cd048c975afa}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!load@{load}}
+\index{load@{load}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::load (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{library\-File\-Name, }
+\item[{const {\bf Plug\-In\-Parameters} \&}]{parameters = {\ttfamily {\bf Plug\-In\-Parameters}()}}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_aa617ef22c19ff90d7a56cd048c975afa}
+
+
+Loads the specified plug-\/in. 
+
+After being loaded, the \hyperlink{struct_cpp_unit_test_plug_in_aec670330e7fced26c2a66b1dcd56edc0}{Cpp\-Unit\-Test\-Plug\-In\-::initialize()} is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em library\-File\-Name} & Name of the file that contains the Test\-Plug\-In. \\
+\hline
+{\em parameters} & List of string passed to the plug-\/in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the \hyperlink{class_dynamic_library_manager}{Dynamic\-Library\-Manager} associated to the library. Valid until the library is unloaded. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_dynamic_library_manager_exception}{Dynamic\-Library\-Manager\-Exception}} & is thrown if an error occurs during loading. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_plug_in_manager_aea9b8b61e256169b823516868e1d8ad0}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!remove\-Listener@{remove\-Listener}}
+\index{remove\-Listener@{remove\-Listener}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{remove\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::remove\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{event\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_aea9b8b61e256169b823516868e1d8ad0}
+
+
+Gives a chance to each loaded plug-\/in to unregister \hyperlink{class_test_listener}{Test\-Listener}. For each plug-\/in, call \hyperlink{struct_cpp_unit_test_plug_in_a8f36157014b515d38efbc8ab67923d85}{Cpp\-Unit\-Test\-Plug\-In\-::remove\-Listener()}. 
+
+\hypertarget{class_plug_in_manager_a0fe59f82fd430ea57159a6ffad9a4035}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}}
+\index{remove\-Xml\-Outputter\-Hooks@{remove\-Xml\-Outputter\-Hooks}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{remove\-Xml\-Outputter\-Hooks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::remove\-Xml\-Outputter\-Hooks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_a0fe59f82fd430ea57159a6ffad9a4035}
+
+
+Called when the \hyperlink{class_xml_outputter}{Xml\-Outputter} is destroyed. 
+
+Can be used to free some resources allocated by \hyperlink{class_plug_in_manager_a4a9c64e0ac3f762b100b993d7e33f889}{add\-Xml\-Outputter\-Hooks()}. \hypertarget{class_plug_in_manager_a5366b1e0e2e96e84d09e26893c00c4bf}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!unload@{unload}}
+\index{unload@{unload}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{unload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::unload (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{library\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_plug_in_manager_a5366b1e0e2e96e84d09e26893c00c4bf}
+
+
+Unloads the specified plug-\/in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em library\-File\-Name} & Name of the file that contains the Test\-Plug\-In passed to a previous call to \hyperlink{class_plug_in_manager_aa617ef22c19ff90d7a56cd048c975afa}{load()}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plug_in_manager_afc1fa045afaac73cd44f69839056f1e1}{\index{Plug\-In\-Manager@{Plug\-In\-Manager}!unload@{unload}}
+\index{unload@{unload}!PlugInManager@{Plug\-In\-Manager}}
+\subsubsection[{unload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Plug\-In\-Manager\-::unload (
+\begin{DoxyParamCaption}
+\item[{{\bf Plug\-In\-Info} \&}]{plug\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plug_in_manager_afc1fa045afaac73cd44f69839056f1e1}
+Unloads the specified plug-\/in. 
+\begin{DoxyParams}{Parameters}
+{\em plug\-In} & Information about the plug-\/in. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/plugin/\hyperlink{_plug_in_manager_8h}{Plug\-In\-Manager.\-h}\end{DoxyCompactItemize}

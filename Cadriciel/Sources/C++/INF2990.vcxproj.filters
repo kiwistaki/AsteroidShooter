@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Environnement">
+      <UniqueIdentifier>{b13dbdb1-cc2a-4e36-9a35-c52570449d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface">
+      <UniqueIdentifier>{c6bd3f9c-d667-48a1-8aae-154a5de4c711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Configuration">
+      <UniqueIdentifier>{d4ef3242-13cf-45e7-a434-bdabacf4a324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arbre">
+      <UniqueIdentifier>{7472a721-0254-4bca-944a-d230f0ffb5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arbre\Usines">
+      <UniqueIdentifier>{ad5ae0d0-5415-47db-a98a-9a074962b455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arbre\Noeuds">
+      <UniqueIdentifier>{673b2491-ee8e-448a-877c-dcffa5036e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Application">
+      <UniqueIdentifier>{c845f3fe-60ec-4b69-870e-1b94806be78e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Environnement">
+      <UniqueIdentifier>{9442597c-399a-4cb0-95f0-8ce763870496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface">
+      <UniqueIdentifier>{6c8e2c48-de9f-4091-bc76-fed408577f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Configuration">
+      <UniqueIdentifier>{737950f1-92e0-48cc-99df-484ed3bae29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Arbre">
+      <UniqueIdentifier>{824db547-4831-4bb7-b7f2-70d05299ed49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Arbre\Usines">
+      <UniqueIdentifier>{2d7e83f6-88e0-4835-a145-53a4c662829e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Arbre\Noeuds">
+      <UniqueIdentifier>{adf7252c-e0c2-4e7e-9194-a254f846e61d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Arbre\Modeles">
+      <UniqueIdentifier>{d8be4f7f-ac4e-4fbe-be6f-a0b17cb46c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arbre\Modeles">
+      <UniqueIdentifier>{c2321d7b-a6f3-4c59-8e3a-29312f3411ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tests">
+      <UniqueIdentifier>{0dbbcffd-49b5-4878-a09c-22650c7a5093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tests">
+      <UniqueIdentifier>{d13df2a5-057c-4e3f-b7b4-d458ca9ae3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application\Jeu">
+      <UniqueIdentifier>{3de878fa-fbb8-4dac-8a31-42d3179dbf2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ElementObjet">
+      <UniqueIdentifier>{fd22ad37-84e1-4ef5-b7c5-ae7f28b8e9f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application\Jeu\ModeEdition">
+      <UniqueIdentifier>{679ff08c-f289-4975-bd0e-078a61d6a1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application\Jeu\ModeJeu">
+      <UniqueIdentifier>{85baafda-cee9-4a1f-ae4c-d64f378686bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ElementObjet">
+      <UniqueIdentifier>{c43b3908-a478-4cbe-b5c8-40e8e26dfefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{4a324388-bea8-423a-bc50-ccdf2fef915c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Jeu">
+      <UniqueIdentifier>{8279d1d5-1b56-40fb-93e5-5da7b4026320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Jeu\ModeEdition">
+      <UniqueIdentifier>{0282a28a-1471-4556-8e26-e7e6d1c98271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Jeu\ModeJeu">
+      <UniqueIdentifier>{a24fa8a5-0d7f-4aa6-9dfd-8ac4df873994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AffichageTexte">
+      <UniqueIdentifier>{abe072b5-3b8b-47a0-ac45-8e1624b691f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AffichageTexte">
+      <UniqueIdentifier>{7a3fac95-f772-428f-b67e-002ef6eb22ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\FacadeModele.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Environnement\UtilitaireINF2990.cpp">
+      <Filter>Source Files\Environnement</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\FacadeJNI.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\ConfigScene.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\ArbreRendu.cpp">
+      <Filter>Source Files\Arbre</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\ArbreRenduINF2990.cpp">
+      <Filter>Source Files\Arbre</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudAbstrait.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudComposite.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Modeles\Modele3D.cpp">
+      <Filter>Source Files\Arbre\Modeles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\ConfigSceneTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\NoeudAbstraitTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\BancTests.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GestionnaireXML.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudAccelerateur.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudAsteroide.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudBarriere.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudPortail.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudProjectile.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudStation.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudVaisseau.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\ModeEdition.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeDeplacement.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeSuppression.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeDuplication.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeMiseAEchelle.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeRotation.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\JeuAbstrait.cpp">
+      <Filter>Source Files\Application\Jeu</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Accelerateur.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Asteroide.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\ElementJeuAbstrait.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Vaisseau.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Barriere.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Projectile.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Station.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\Portail.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\PositionDepart.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeSelection.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeAjoutAccelerateur.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeAjoutBarriere.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeAjoutPortail.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeAjoutStationSpatial.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Noeuds\NoeudPositionDepart.cpp">
+      <Filter>Source Files\Arbre\Noeuds</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeEdition\CommandeZoomLoupe.cpp">
+      <Filter>Source Files\Application\Jeu\ModeEdition</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Modeles\GestionnaireRessources.cpp">
+      <Filter>Source Files\Arbre\Modeles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestVaisseau.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\ProjectionOrthoTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Vecteur3fTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\NoeudCompositeTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\VaisseauVirtuel.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="Environnement\ModeApproche.cpp">
+      <Filter>Source Files\Environnement</Filter>
+    </ClCompile>
+    <ClCompile Include="Environnement\ModeRecherche.cpp">
+      <Filter>Source Files\Environnement</Filter>
+    </ClCompile>
+    <ClCompile Include="Environnement\ModeAttaque.cpp">
+      <Filter>Source Files\Environnement</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\AffichageDebogage.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Carte.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Environnement\EtatJoueurVirtuel.cpp">
+      <Filter>Source Files\Environnement</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\BoiteEnglobanteOrienteeTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementObjet\VaisseauJoueur.cpp">
+      <Filter>Source Files\ElementObjet</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre\Modeles\GestionnaireAsteroide.cpp">
+      <Filter>Source Files\Arbre\Modeles</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GestionnaireCollision.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeJeu\ModeJeu.cpp">
+      <Filter>Source Files\Application\Jeu\ModeJeu</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeJeu\ModePartieRapide.cpp">
+      <Filter>Source Files\Application\Jeu\ModeJeu</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeJeu\ModeTest.cpp">
+      <Filter>Source Files\Application\Jeu\ModeJeu</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Jeu\ModeJeu\ModeCampagne.cpp">
+      <Filter>Source Files\Application\Jeu\ModeJeu</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\QuadTree.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GestionnaireSon.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GestionnaireAnimation.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="AffichageTexte\Phont.cpp">
+      <Filter>Source Files\AffichageTexte</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\FacadeModele.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Environnement\UtilitaireINF2990.h">
+      <Filter>Header Files\Environnement</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\FacadeJNI.h">
+      <Filter>Header Files\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\ConfigScene.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\ArbreRendu.h">
+      <Filter>Header Files\Arbre</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\ArbreRenduINF2990.h">
+      <Filter>Header Files\Arbre</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeud.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudAbstrait.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudComposite.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Modeles\Modele3D.h">
+      <Filter>Header Files\Arbre\Modeles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\ConfigSceneTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\NoeudAbstraitTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Carte.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\JeuAbstrait.h">
+      <Filter>Header Files\Application\Jeu</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Asteroide.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\ElementJeuAbstrait.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Station.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Vaisseau.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeDeplacement.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeDuplication.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeMiseAEchelle.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeModeEdition.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeRotation.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeSelection.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeSuppression.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GestionnaireXML.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudAccelerateur.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudAsteroide.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudBarriere.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudPortail.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudProjectile.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudStation.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudVaisseau.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudAccelerateur.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudAsteroide.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudBarriere.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudPortail.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudProjectile.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudStation.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudVaisseau.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\ModeEdition.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Accelerateur.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Barriere.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Portail.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\Projectile.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeAjoutAccelerateur.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeAjoutBarriere.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeAjoutPortail.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeAjoutStationSpatial.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\PositionDepart.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Usines\UsineNoeudPositionDepart.h">
+      <Filter>Header Files\Arbre\Usines</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Noeuds\NoeudPositionDepart.h">
+      <Filter>Header Files\Arbre\Noeuds</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeEdition\CommandeZoomLoupe.h">
+      <Filter>Header Files\Application\Jeu\ModeEdition</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Modeles\GestionnaireRessources.h">
+      <Filter>Header Files\Arbre\Modeles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\ProjectionOrthoTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestVaisseau.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Vecteur3fTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\BancTests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\NoeudCompositeTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Commun\Utilitaire\EtatJoueurVirtuel.h">
+      <Filter>Header Files\Environnement</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\VaisseauVirtuel.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="Environnement\ModeApproche.h">
+      <Filter>Header Files\Environnement</Filter>
+    </ClInclude>
+    <ClInclude Include="Environnement\ModeAttaque.h">
+      <Filter>Header Files\Environnement</Filter>
+    </ClInclude>
+    <ClInclude Include="Environnement\ModeRecherche.h">
+      <Filter>Header Files\Environnement</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\AffichageDebogage.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\BoiteEnglobanteOrienteeTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementObjet\VaisseauJoueur.h">
+      <Filter>Header Files\ElementObjet</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre\Modeles\GestionnaireAsteroide.h">
+      <Filter>Header Files\Arbre\Modeles</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GestionnaireCollision.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeJeu\ModeTest.h">
+      <Filter>Header Files\Application\Jeu\ModeJeu</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeJeu\ModeJeu.h">
+      <Filter>Header Files\Application\Jeu\ModeJeu</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeJeu\ModePartieRapide.h">
+      <Filter>Header Files\Application\Jeu\ModeJeu</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeJeu\ModeCampagne.h">
+      <Filter>Header Files\Application\Jeu\ModeJeu</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\FoncteurType.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Jeu\ModeJeu\ComparateurCartes.h">
+      <Filter>Header Files\Application\Jeu\ModeJeu</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\QuadTree.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GestionnaireSon.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GestionnaireAnimation.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="AffichageTexte\Phont.h">
+      <Filter>Header Files\AffichageTexte</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+\hypertarget{svpostnm_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svpostnm.h File Reference}
+\label{svpostnm_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svpostnm.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svpostnm.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svpostnm_8h_a4278ed29769718d7616e5405b62da673}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E}~\char`\"{}postscript-\/font-\/\hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}\char`\"{}
+\item 
+\#define \hyperlink{svpostnm_8h_ab4f9a7c70bce4c28aff7caf76f80ce40}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C}(class\-\_\-, get\-\_\-ps\-\_\-font\-\_\-name\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef const char $\ast$($\ast$ \hyperlink{svpostnm_8h_a091c73200559857e21713dfe76815832}{F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{svpostnm_8h_ab0a9786804fe42e792db8a4ccd810093}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E} (Ps\-Font\-Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svpostnm_8h_ab4f9a7c70bce4c28aff7caf76f80ce40}{\index{svpostnm.\-h@{svpostnm.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C}!svpostnm.h@{svpostnm.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-P\-S\-F\-O\-N\-T\-N\-A\-M\-E\-R\-E\-C(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{get\-\_\-ps\-\_\-font\-\_\-name\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{svpostnm_8h_ab4f9a7c70bce4c28aff7caf76f80ce40}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_PsFontNameRec class\_ =                   \(\backslash\)
+  \{                                                                \(\backslash\)
+    get\_ps\_font\_name\_                                              \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{svpostnm_8h_a4278ed29769718d7616e5405b62da673}{\index{svpostnm.\-h@{svpostnm.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E}!svpostnm.h@{svpostnm.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-P\-O\-S\-T\-S\-C\-R\-I\-P\-T\-\_\-\-F\-O\-N\-T\-\_\-\-N\-A\-M\-E~\char`\"{}postscript-\/font-\/{\bf name}\char`\"{}}}\label{svpostnm_8h_a4278ed29769718d7616e5405b62da673}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svpostnm_8h_a091c73200559857e21713dfe76815832}{\index{svpostnm.\-h@{svpostnm.\-h}!F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func@{F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func}}
+\index{F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func@{F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func}!svpostnm.h@{svpostnm.\-h}}
+\subsubsection[{F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$($\ast$ F\-T\-\_\-\-Ps\-Name\-\_\-\-Get\-Func)({\bf F\-T\-\_\-\-Face} {\bf face})}}\label{svpostnm_8h_a091c73200559857e21713dfe76815832}
+
+
+\subsection{Function Documentation}
+\hypertarget{svpostnm_8h_ab0a9786804fe42e792db8a4ccd810093}{\index{svpostnm.\-h@{svpostnm.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!svpostnm.h@{svpostnm.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E (
+\begin{DoxyParamCaption}
+\item[{Ps\-Font\-Name}]{}
+\end{DoxyParamCaption}
+)}}\label{svpostnm_8h_ab0a9786804fe42e792db8a4ccd810093}

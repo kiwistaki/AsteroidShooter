@@ -1,0 +1,82 @@
+\hypertarget{class_jeu_abstrait}{\section{Jeu\-Abstrait Class Reference}
+\label{class_jeu_abstrait}\index{Jeu\-Abstrait@{Jeu\-Abstrait}}
+}
+
+
+Classe abstraite representant les fonctionalites de bases des differents modes de jeux.  
+
+
+
+
+{\ttfamily \#include $<$Jeu\-Abstrait.\-h$>$}
+
+Inheritance diagram for Jeu\-Abstrait\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_jeu_abstrait}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga24222f4c947cc57c4063bc4bdde23985}{Jeu\-Abstrait} (\hyperlink{class_carte}{Carte} \&carte, \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$vue)
+\item 
+virtual \hyperlink{group__inf2990_gaeaa1ca9db48bba9637245331fa257076}{$\sim$\-Jeu\-Abstrait} ()
+\item 
+void \hyperlink{group__inf2990_ga670cec0b00bf489f54a95f3362cd8584}{set\-Carte} (\hyperlink{class_carte}{Carte} \&carte)
+\item 
+\hyperlink{class_carte}{Carte} \& \hyperlink{group__inf2990_ga473ce72116fb23851e8da0bddfbc71d6}{get\-Carte} () const 
+\item 
+void \hyperlink{group__inf2990_gaeb3f920fd8f1163b527156a102a675b4}{set\-Vue} (\hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$vue)
+\item 
+virtual void \hyperlink{group__inf2990_ga8aed09e66590b4f339b9290c8d3d70e6}{update} (float delta\-T)
+\item 
+void \hyperlink{group__inf2990_gac60bf135740871b1770283e508d263df}{recevoir\-Inputs} (int mouse\-X, int mouse\-Y, int boutton, int touche, int scroll)
+\item 
+\hypertarget{group__inf2990_ga2c3bb5664ace8e802d897a39f6801dab}{virtual void {\bfseries set\-Pourcentage\-Deplacement} (bool est\-Ortho)}\label{group__inf2990_ga2c3bb5664ace8e802d897a39f6801dab}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__inf2990_ga5349be037dec2b73adb0fbcca724eb2c}{\hyperlink{class_carte}{Carte} \& \hyperlink{group__inf2990_ga5349be037dec2b73adb0fbcca724eb2c}{carte\-\_\-}}\label{group__inf2990_ga5349be037dec2b73adb0fbcca724eb2c}
+
+\begin{DoxyCompactList}\small\item\em La carte qui contient tous les objets. \end{DoxyCompactList}\item 
+\hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$ \hyperlink{group__inf2990_ga5d11ef13ab8e861e9c6c14b722ac85bf}{vue\-\_\-}
+\item 
+int \hyperlink{group__inf2990_gaebf64b4f7fa00bda679ed2815c3030cc}{mouse\-X\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga20f528aad2f2937cf34559ec8091cc22}{mouse\-Y\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga5f106517d59dda12c86741443236f981}{last\-Mouse\-X\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga24d07ce8ed9d2e9176deaaefd8937dd2}{last\-Mouse\-Y\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga6aefbc7c04b8d51ef72b4648f5278ba4}{boutton\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga076e503a05fd9f20e5ecc64e91eabf7f}{touche\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga231796955c445be70dc2273b6de8da36}{previous\-Touche\-\_\-}
+\item 
+int \hyperlink{group__inf2990_ga388bde29eb1b80839575085a97dd6063}{scroll\-\_\-}
+\item 
+\hypertarget{group__inf2990_ga41985d319601cbba0f6da4ed8d6387fb}{float {\bfseries pourcentage\-Deplacement\-\_\-}}\label{group__inf2990_ga41985d319601cbba0f6da4ed8d6387fb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe abstraite representant les fonctionalites de bases des differents modes de jeux. 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\hyperlink{_jeu_abstrait_8h}{Jeu\-Abstrait.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\hyperlink{_jeu_abstrait_8cpp}{Jeu\-Abstrait.\-cpp}\end{DoxyCompactItemize}

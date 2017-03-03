@@ -1,0 +1,93 @@
+\hypertarget{class_commande_deplacement}{\section{Commande\-Deplacement Class Reference}
+\label{class_commande_deplacement}\index{Commande\-Deplacement@{Commande\-Deplacement}}
+}
+
+
+La classe \hyperlink{class_commande_deplacement}{Commande\-Deplacement} permet de modifier la position dans l'espace d'un ou de plusieurs objets selectionnes.  
+
+
+
+
+{\ttfamily \#include $<$Commande\-Deplacement.\-h$>$}
+
+Inheritance diagram for Commande\-Deplacement\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_commande_deplacement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commande_deplacement_a4a68767331241858637dc60272c11d1e}{Commande\-Deplacement} (const \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} \&vue, \hyperlink{class_carte}{Carte} \&carte, const vector$<$ \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ $>$ \&objets\-Selectionnes)
+\item 
+virtual \hyperlink{class_commande_deplacement_af5fcff826a06cb9cf11645c7a551af27}{$\sim$\-Commande\-Deplacement} ()
+\item 
+virtual void \hyperlink{class_commande_deplacement_a8a591ce694d95d57409f14597d0b1e9c}{executer} (int mouse\-X, int mouse\-Y, int boutton, int touche)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{class_commande_deplacement}{Commande\-Deplacement} permet de modifier la position dans l'espace d'un ou de plusieurs objets selectionnes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_commande_deplacement_a4a68767331241858637dc60272c11d1e}{\index{Commande\-Deplacement@{Commande\-Deplacement}!Commande\-Deplacement@{Commande\-Deplacement}}
+\index{Commande\-Deplacement@{Commande\-Deplacement}!CommandeDeplacement@{Commande\-Deplacement}}
+\subsubsection[{Commande\-Deplacement}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Deplacement\-::\-Commande\-Deplacement (
+\begin{DoxyParamCaption}
+\item[{const {\bf vue\-::\-Vue} \&}]{vue, }
+\item[{{\bf Carte} \&}]{carte, }
+\item[{const vector$<$ {\bf Element\-Jeu\-Abstrait} $\ast$ $>$ \&}]{objets\-Selectionnes}
+\end{DoxyParamCaption}
+)}}\label{class_commande_deplacement_a4a68767331241858637dc60272c11d1e}
+Constructeur 
+\begin{DoxyParams}{Parameters}
+{\em vue} & La vue du jeu. Utilise pour transformer les points de l'ecran dans l'espace de la camera \\
+\hline
+{\em carte} & La carte sur laquelle ajouter l'objet. \\
+\hline
+{\em objets\-Selectionnes} & Une reference vers un vecteur qui contiendra les objets selectionnes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_commande_deplacement_af5fcff826a06cb9cf11645c7a551af27}{\index{Commande\-Deplacement@{Commande\-Deplacement}!$\sim$\-Commande\-Deplacement@{$\sim$\-Commande\-Deplacement}}
+\index{$\sim$\-Commande\-Deplacement@{$\sim$\-Commande\-Deplacement}!CommandeDeplacement@{Commande\-Deplacement}}
+\subsubsection[{$\sim$\-Commande\-Deplacement}]{\setlength{\rightskip}{0pt plus 5cm}Commande\-Deplacement\-::$\sim$\-Commande\-Deplacement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_deplacement_af5fcff826a06cb9cf11645c7a551af27}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_commande_deplacement_a8a591ce694d95d57409f14597d0b1e9c}{\index{Commande\-Deplacement@{Commande\-Deplacement}!executer@{executer}}
+\index{executer@{executer}!CommandeDeplacement@{Commande\-Deplacement}}
+\subsubsection[{executer}]{\setlength{\rightskip}{0pt plus 5cm}void Commande\-Deplacement\-::executer (
+\begin{DoxyParamCaption}
+\item[{int}]{mouse\-X, }
+\item[{int}]{mouse\-Y, }
+\item[{int}]{boutton, }
+\item[{int}]{touche}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_commande_deplacement_a8a591ce694d95d57409f14597d0b1e9c}
+Execute la commande. Deplace les objets selectionnes a partir du mouvement de la souris. 
+\begin{DoxyParams}{Parameters}
+{\em mouse\-X} & La position X de la souris \\
+\hline
+{\em mouse\-Y} & La position Y de la souris \\
+\hline
+{\em bouton} & L'etat des boutons de la souris \\
+\hline
+{\em touche} & Touche du clavier appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_commande_mode_edition_aca77e9bb8557971af33748041975eecb}{Commande\-Mode\-Edition}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/\hyperlink{_commande_deplacement_8h}{Commande\-Deplacement.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Edition/Commande\-Deplacement.\-cpp\end{DoxyCompactItemize}

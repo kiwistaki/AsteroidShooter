@@ -1,0 +1,65 @@
+\hypertarget{class_test_case}{\section{Test\-Case Class Reference}
+\label{class_test_case}\index{Test\-Case@{Test\-Case}}
+}
+
+
+A single test object.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Case.\-h$>$}
+
+Inheritance diagram for Test\-Case\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.962963cm]{class_test_case}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_case_af81ee40f823e03175e2f2b965ff3661a}{{\bfseries Test\-Case} (const std\-::string \&name)}\label{class_test_case_af81ee40f823e03175e2f2b965ff3661a}
+
+\item 
+\hypertarget{class_test_case_a6bc50d62de5b2d0addf9b0167e34b134}{virtual void \hyperlink{class_test_case_a6bc50d62de5b2d0addf9b0167e34b134}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$result)}\label{class_test_case_a6bc50d62de5b2d0addf9b0167e34b134}
+
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_test_case_a833448555e5ce90d826f2b411f47ec3d}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\item 
+\hypertarget{class_test_case_a6b55957ac1dfef01e5d9fa2475676f34}{virtual void \hyperlink{class_test_case_a6b55957ac1dfef01e5d9fa2475676f34}{run\-Test} ()}\label{class_test_case_a6b55957ac1dfef01e5d9fa2475676f34}
+
+\begin{DoxyCompactList}\small\item\em F\-I\-X\-M\-E\-: this should probably be pure virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single test object. 
+
+This class is used to implement a simple test case\-: define a subclass that overrides the run\-Test method.
+
+You don't usually need to use that class, but \hyperlink{class_test_fixture}{Test\-Fixture} and \hyperlink{class_test_caller}{Test\-Caller} instead.
+
+You are expected to subclass \hyperlink{class_test_case}{Test\-Case} is you need to write a class similiar to \hyperlink{class_test_caller}{Test\-Caller}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_case_a833448555e5ce90d826f2b411f47ec3d}{\index{Test\-Case@{Test\-Case}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!TestCase@{Test\-Case}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Test\-Case\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_case_a833448555e5ce90d826f2b411f47ec3d}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Implements \hyperlink{class_test_a5e024da199f811a33264e432c21dcc94}{Test}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Case.\-h\end{DoxyCompactItemize}

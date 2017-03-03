@@ -1,0 +1,135 @@
+\hypertarget{class_test_result_collector}{\section{Test\-Result\-Collector Class Reference}
+\label{class_test_result_collector}\index{Test\-Result\-Collector@{Test\-Result\-Collector}}
+}
+
+
+Collects test result.
+
+A \hyperlink{class_test_result_collector}{Test\-Result\-Collector} is a \hyperlink{class_test_listener}{Test\-Listener} which collects the results of executing a test case. It is an instance of the Collecting Parameter pattern.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Result\-Collector.\-h$>$}
+
+Inheritance diagram for Test\-Result\-Collector\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_result_collector}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}{typedef Cpp\-Unit\-Deque\\*
+$<$ \hyperlink{class_test_failure}{Test\-Failure} $\ast$ $>$ {\bfseries Test\-Failures}}\label{class_test_result_collector_a8ae051e883095aee10d9f777664fe8af}
+
+\item 
+\hypertarget{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}{typedef Cpp\-Unit\-Deque$<$ \hyperlink{class_test}{Test} $\ast$ $>$ {\bfseries Tests}}\label{class_test_result_collector_a6ab73f8a52311857afa98a1ef049e30a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_collector_a8bc475c91000fca9f0ed34e105577767}{Test\-Result\-Collector} (\hyperlink{class_synchronized_object_1_1_synchronization_object}{Synchronization\-Object} $\ast$sync\-Object=0)
+\item 
+\hypertarget{class_test_result_collector_a2e905ace0bcb819bbe190faf16ea1aed}{virtual \hyperlink{class_test_result_collector_a2e905ace0bcb819bbe190faf16ea1aed}{$\sim$\-Test\-Result\-Collector} ()}\label{class_test_result_collector_a2e905ace0bcb819bbe190faf16ea1aed}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_test_result_collector_a647d3e05ffc8fcf7023fea2f7c9f95cb}{void \hyperlink{class_test_result_collector_a647d3e05ffc8fcf7023fea2f7c9f95cb}{start\-Test} (\hyperlink{class_test}{Test} $\ast$test)}\label{class_test_result_collector_a647d3e05ffc8fcf7023fea2f7c9f95cb}
+
+\begin{DoxyCompactList}\small\item\em Called when just before a \hyperlink{class_test_case}{Test\-Case} is run. \end{DoxyCompactList}\item 
+void \hyperlink{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}{add\-Failure} (const \hyperlink{class_test_failure}{Test\-Failure} \&failure)
+\begin{DoxyCompactList}\small\item\em Called when a failure occurs while running a test. \end{DoxyCompactList}\item 
+\hypertarget{class_test_result_collector_a1e20981cc1e127942154a643639d4740}{virtual void {\bfseries reset} ()}\label{class_test_result_collector_a1e20981cc1e127942154a643639d4740}
+
+\item 
+\hypertarget{class_test_result_collector_ac832652158423deae9c2815ba616e836}{virtual int {\bfseries run\-Tests} () const }\label{class_test_result_collector_ac832652158423deae9c2815ba616e836}
+
+\item 
+\hypertarget{class_test_result_collector_a0dc4aa03e6b22907cd44cf30a9ea0af3}{virtual int {\bfseries test\-Errors} () const }\label{class_test_result_collector_a0dc4aa03e6b22907cd44cf30a9ea0af3}
+
+\item 
+\hypertarget{class_test_result_collector_a583a62791337a71725a719f57dc654e2}{virtual int {\bfseries test\-Failures} () const }\label{class_test_result_collector_a583a62791337a71725a719f57dc654e2}
+
+\item 
+\hypertarget{class_test_result_collector_a73417ff24fff145f3575c3860d8e9340}{virtual int {\bfseries test\-Failures\-Total} () const }\label{class_test_result_collector_a73417ff24fff145f3575c3860d8e9340}
+
+\item 
+\hypertarget{class_test_result_collector_a9c04c7276b1b19879cc3d51e9e9f33ff}{virtual const Test\-Failures \& {\bfseries failures} () const }\label{class_test_result_collector_a9c04c7276b1b19879cc3d51e9e9f33ff}
+
+\item 
+\hypertarget{class_test_result_collector_a25890515b8eba397855a64582d3e7a9b}{virtual const Tests \& {\bfseries tests} () const }\label{class_test_result_collector_a25890515b8eba397855a64582d3e7a9b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_result_collector_ae3ca204ba9e242a368843e91acf94766}{void {\bfseries free\-Failures} ()}\label{class_test_result_collector_ae3ca204ba9e242a368843e91acf94766}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_test_result_collector_a63950609cce95633b56850da67d4bfe0}{Tests {\bfseries m\-\_\-tests}}\label{class_test_result_collector_a63950609cce95633b56850da67d4bfe0}
+
+\item 
+\hypertarget{class_test_result_collector_ae2958ff17d1fd73092bf8ec4fc5db08f}{Test\-Failures {\bfseries m\-\_\-failures}}\label{class_test_result_collector_ae2958ff17d1fd73092bf8ec4fc5db08f}
+
+\item 
+\hypertarget{class_test_result_collector_a42fdacb6076281e8abb6eba08063fb4e}{int {\bfseries m\-\_\-test\-Errors}}\label{class_test_result_collector_a42fdacb6076281e8abb6eba08063fb4e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collects test result.
+
+A \hyperlink{class_test_result_collector}{Test\-Result\-Collector} is a \hyperlink{class_test_listener}{Test\-Listener} which collects the results of executing a test case. It is an instance of the Collecting Parameter pattern. 
+
+The test framework distinguishes between failures and errors. A failure is anticipated and checked for with assertions. Errors are unanticipated problems signified by exceptions that are not generated by the framework. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_listener}{Test\-Listener}, \hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_result_collector_a8bc475c91000fca9f0ed34e105577767}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!Test\-Result\-Collector@{Test\-Result\-Collector}}
+\index{Test\-Result\-Collector@{Test\-Result\-Collector}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{Test\-Result\-Collector}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Result\-Collector\-::\-Test\-Result\-Collector (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronization\-Object} $\ast$}]{sync\-Object = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_test_result_collector_a8bc475c91000fca9f0ed34e105577767}
+Constructs a \hyperlink{class_test_result_collector}{Test\-Result\-Collector} object. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}{\index{Test\-Result\-Collector@{Test\-Result\-Collector}!add\-Failure@{add\-Failure}}
+\index{add\-Failure@{add\-Failure}!TestResultCollector@{Test\-Result\-Collector}}
+\subsubsection[{add\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}void Test\-Result\-Collector\-::add\-Failure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Test\-Failure} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_result_collector_af53cbc55621f0eb0dc02d8b0203ea321}
+
+
+Called when a failure occurs while running a test. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_test_failure}{Test\-Failure}. 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+{\itshape failure} is a temporary object that is destroyed after the method call. Use Test\-Failure\-::clone() to create a duplicate. 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{class_test_listener_a103216a5814c907f7b752b969477e765}{Test\-Listener}.
+
+
+
+Reimplemented in \hyperlink{class_text_test_result_a05d3b0e8e51b3430092166bbc3d17708}{Text\-Test\-Result}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/Test\-Result\-Collector.\-h\end{DoxyCompactItemize}

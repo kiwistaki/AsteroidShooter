@@ -1,0 +1,134 @@
+\hypertarget{class_asteroide}{\section{Asteroide Class Reference}
+\label{class_asteroide}\index{Asteroide@{Asteroide}}
+}
+
+
+Cette classe qui permet de creer des asteroides.  
+
+
+
+
+{\ttfamily \#include $<$Asteroide.\-h$>$}
+
+Inheritance diagram for Asteroide\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_asteroide}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gafe350047342cca5e224b5c2ea5f9b959}{Asteroide} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga34973732c5bfa698b0ff88af487e528a}{Asteroide} (\hyperlink{group__utilitaire_ga6a8205c734fc1c9d1272ea424efb2606}{Vecteur4f} cadre\-Depart, \hyperlink{group__utilitaire_ga6a8205c734fc1c9d1272ea424efb2606}{Vecteur4f} zone\-Passage)
+\item 
+\hyperlink{group__inf2990_ga2ffd65671cd6e71ec7a565f896dc65e8}{Asteroide} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position\-Depart, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, float poids, unsigned int point\-De\-Vie)
+\item 
+\hyperlink{group__inf2990_ga23517155b85bb5ea1646ab2c6f3d4e85}{Asteroide} (const \hyperlink{class_asteroide}{Asteroide} \&asteroide)
+\item 
+virtual \hyperlink{group__inf2990_ga539ed35e6f89029a69eb76626da9263b}{$\sim$\-Asteroide} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_asteroide_a5755520c095800c4c9e39b8271ef4ac6}{get\-Point\-De\-Vie} ()
+\item 
+void \hyperlink{group__inf2990_gaefe6b772d03b0731087364ecbbde23d5}{set\-Point\-De\-Vie} (int point\-De\-Vie)
+\item 
+virtual Type \hyperlink{group__inf2990_gad5cb221ede09ce81ef9621b89dcf694c}{get\-Type} ()
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga853919162f10be16bdd57e918a9328cf}{update} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_gaa93e8b00c94001bc04893450b8969eff}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait})
+\begin{DoxyCompactList}\small\item\em Permet de verifier la collision entre les types d'objets concernés et de les traiter. \end{DoxyCompactList}\item 
+\hypertarget{class_asteroide_ab02167e3b62f74da70f5798473850368}{virtual bool \hyperlink{class_asteroide_ab02167e3b62f74da70f5798473850368}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_asteroide_ab02167e3b62f74da70f5798473850368}
+
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_gaacd8ed8d91f5047c64f30ed4ded1797b}{check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)
+\item 
+\hypertarget{group__inf2990_ga83d33ed67b297a1f2ed72ac61bee6f7c}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{group__inf2990_ga83d33ed67b297a1f2ed72ac61bee6f7c}
+
+\item 
+\hypertarget{group__inf2990_ga322ab7d5fc10bc7f634637ad0ee23dbb}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{group__inf2990_ga322ab7d5fc10bc7f634637ad0ee23dbb}
+
+\item 
+\hypertarget{group__inf2990_gad444d75b00ce0a2b639493eaeb7d235f}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{group__inf2990_gad444d75b00ce0a2b639493eaeb7d235f}
+
+\item 
+\hypertarget{group__inf2990_ga4924790f413b4ab5a806336f75fdaf73}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{group__inf2990_ga4924790f413b4ab5a806336f75fdaf73}
+
+\item 
+\hypertarget{group__inf2990_gacb843b3baa58aea8738b896a89d2a397}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_gacb843b3baa58aea8738b896a89d2a397}
+
+\item 
+virtual void \hyperlink{group__inf2990_gacb7ff9a98ed4e8d479a53f27dbc85abd}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element\-Abstrait)
+\item 
+\hypertarget{class_asteroide_a46e8e4136e20a963806352bbf211ddcf}{virtual void \hyperlink{class_asteroide_a46e8e4136e20a963806352bbf211ddcf}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_asteroide_a46e8e4136e20a963806352bbf211ddcf}
+
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gacff4cd10df330e8a475b92fc02a032fa}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{group__inf2990_gacff4cd10df330e8a475b92fc02a032fa}
+
+\item 
+\hypertarget{group__inf2990_gafe8369d563ba8b4090cd0d43da798759}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{group__inf2990_gafe8369d563ba8b4090cd0d43da798759}
+
+\item 
+\hypertarget{group__inf2990_ga5cdf0287f470382de9578ef9b9f1464b}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{group__inf2990_ga5cdf0287f470382de9578ef9b9f1464b}
+
+\item 
+\hypertarget{group__inf2990_ga8e7a199105a2eafb19313a270611d907}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{group__inf2990_ga8e7a199105a2eafb19313a270611d907}
+
+\item 
+\hypertarget{group__inf2990_gad3a829a9d1abaf60877eeccafcb46cb6}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{group__inf2990_gad3a829a9d1abaf60877eeccafcb46cb6}
+
+\item 
+\hypertarget{group__inf2990_ga83b3c697a22bf368404885447df096ff}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_ga83b3c697a22bf368404885447df096ff}
+
+\item 
+\hypertarget{group__inf2990_ga0435fde4382c3e1aab88e59e20ef88fe}{virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group__inf2990_ga0435fde4382c3e1aab88e59e20ef88fe}{clone} () const }\label{group__inf2990_ga0435fde4382c3e1aab88e59e20ef88fe}
+
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+\hypertarget{class_asteroide_aa9bbb9c8bf57d673b0f2ac601cb9b1a3}{bool {\bfseries can\-Be\-Attracted} ()}\label{class_asteroide_aa9bbb9c8bf57d673b0f2ac601cb9b1a3}
+
+\item 
+void \hyperlink{group__inf2990_gaf86b02c1c4205d216acb360289b89758}{set\-Can\-Be\-Attracted} (bool can\-Be\-Attracted)
+\item 
+\hypertarget{group__inf2990_ga15fe29fbb48ceb5c85b6357ab68906a2}{virtual float {\bfseries get\-Rayon} ()}\label{group__inf2990_ga15fe29fbb48ceb5c85b6357ab68906a2}
+
+\item 
+\hypertarget{group__inf2990_ga060fb438b9556e7d1257c5ea104655a0}{void {\bfseries set\-Cible} (bool est\-Cible)}\label{group__inf2990_ga060fb438b9556e7d1257c5ea104655a0}
+
+\item 
+\hypertarget{class_asteroide_a8f7207da543636a93e55c8e1cc575ad7}{void {\bfseries set\-To\-Be\-Deleted} (bool to\-Be\-Deleted)}\label{class_asteroide_a8f7207da543636a93e55c8e1cc575ad7}
+
+\item 
+\hypertarget{class_asteroide_abd796f2331249a74d1f9d874efe23627}{bool {\bfseries is\-To\-Be\-Deleted} ()}\label{class_asteroide_abd796f2331249a74d1f9d874efe23627}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe qui permet de creer des asteroides. 
+
+La classe Asteroid contiendra un pointeur vers un noeud\-Asteroid afin que celle-\/ci s'occupe de la texture de l'asteroid. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_asteroide_a5755520c095800c4c9e39b8271ef4ac6}{\index{Asteroide@{Asteroide}!get\-Point\-De\-Vie@{get\-Point\-De\-Vie}}
+\index{get\-Point\-De\-Vie@{get\-Point\-De\-Vie}!Asteroide@{Asteroide}}
+\subsubsection[{get\-Point\-De\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Asteroide\-::get\-Point\-De\-Vie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_asteroide_a5755520c095800c4c9e39b8271ef4ac6}
+Permet d'obtenir les points de vie \begin{DoxyReturn}{Returns}
+Le nombre de point de vie 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_asteroide_8h}{Asteroide.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/Asteroide.\-cpp\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_portail_8cpp}{Portail.\-cpp}\end{DoxyCompactItemize}

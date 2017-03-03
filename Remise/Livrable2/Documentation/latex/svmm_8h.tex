@@ -1,0 +1,81 @@
+\hypertarget{svmm_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svmm.h File Reference}
+\label{svmm_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svmm.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/services/svmm.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svmm_8h_a63a030aa0c4eb0547881486ae48b92f8}{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S}~\char`\"{}multi-\/masters\char`\"{}
+\item 
+\#define \hyperlink{svmm_8h_a148c2158e7217753fbf14c2221fbee7f}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C}(class\-\_\-, get\-\_\-mm\-\_\-, set\-\_\-mm\-\_\-design\-\_\-,set\-\_\-mm\-\_\-blend\-\_\-, get\-\_\-mm\-\_\-var\-\_\-, set\-\_\-var\-\_\-design\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svmm_8h_ab68c1995d7dab7d847e24340d5a943bd}{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{ftmm_8h_af349b829776b1ad7a6ac7b3727f02949}{F\-T\-\_\-\-Multi\-\_\-\-Master} $\ast$master)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svmm_8h_a0abb7f2dd3bad487bf479556feb47efc}{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{ftmm_8h_a8cc5244cf5aea6eb854c995feec06785}{F\-T\-\_\-\-M\-M\-\_\-\-Var} $\ast$$\ast$master)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svmm_8h_a0d9d6289850dc3f403609de32f858f50}{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} num\-\_\-coords, \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long} $\ast$\hyperlink{glew_8h_acdbd39c05bd58b1a6ce737d0189ee608}{coords})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svmm_8h_ac61765fa718f21c7130d28560b4fc0a8}{F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} num\-\_\-coords, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} $\ast$\hyperlink{glew_8h_acdbd39c05bd58b1a6ce737d0189ee608}{coords})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{svmm_8h_aa68fb2b33a3242451264fa06b87fbf7f}{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} num\-\_\-coords, \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long} $\ast$\hyperlink{glew_8h_acdbd39c05bd58b1a6ce737d0189ee608}{coords})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{svmm_8h_af642d95ec3f75607f3352218c50f8338}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E} (Multi\-Masters)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svmm_8h_a148c2158e7217753fbf14c2221fbee7f}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-U\-L\-T\-I\-M\-A\-S\-T\-E\-R\-S\-R\-E\-C(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{get\-\_\-mm\-\_\-, }
+\item[{}]{set\-\_\-mm\-\_\-design\-\_\-, }
+\item[{}]{set\-\_\-mm\-\_\-blend\-\_\-, }
+\item[{}]{get\-\_\-mm\-\_\-var\-\_\-, }
+\item[{}]{set\-\_\-var\-\_\-design\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{svmm_8h_a148c2158e7217753fbf14c2221fbee7f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_MultiMastersRec class\_ =                           \(\backslash\)
+  \{                                                                          \(\backslash\)
+    get\_mm\_, set\_mm\_design\_, set\_mm\_blend\_, get\_mm\_var\_, set\_var\_design\_     \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{svmm_8h_a63a030aa0c4eb0547881486ae48b92f8}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S}}
+\index{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S@{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-M\-U\-L\-T\-I\-\_\-\-M\-A\-S\-T\-E\-R\-S~\char`\"{}multi-\/masters\char`\"{}}}\label{svmm_8h_a63a030aa0c4eb0547881486ae48b92f8}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svmm_8h_ab68c1995d7dab7d847e24340d5a943bd}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func@{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func@{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-Multi\-\_\-\-Master} $\ast$master)}}\label{svmm_8h_ab68c1995d7dab7d847e24340d5a943bd}
+\hypertarget{svmm_8h_a0abb7f2dd3bad487bf479556feb47efc}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func@{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func@{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Get\-\_\-\-M\-M\-\_\-\-Var\-\_\-\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-M\-M\-\_\-\-Var} $\ast$$\ast$master)}}\label{svmm_8h_a0abb7f2dd3bad487bf479556feb47efc}
+\hypertarget{svmm_8h_aa68fb2b33a3242451264fa06b87fbf7f}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func@{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func@{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Blend\-\_\-\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-U\-Int} num\-\_\-coords, {\bf F\-T\-\_\-\-Long} $\ast${\bf coords})}}\label{svmm_8h_aa68fb2b33a3242451264fa06b87fbf7f}
+\hypertarget{svmm_8h_a0d9d6289850dc3f403609de32f858f50}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func@{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func@{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Set\-\_\-\-M\-M\-\_\-\-Design\-\_\-\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-U\-Int} num\-\_\-coords, {\bf F\-T\-\_\-\-Long} $\ast${\bf coords})}}\label{svmm_8h_a0d9d6289850dc3f403609de32f858f50}
+\hypertarget{svmm_8h_ac61765fa718f21c7130d28560b4fc0a8}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func@{F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func}}
+\index{F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func@{F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Set\-\_\-\-Var\-\_\-\-Design\-\_\-\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-U\-Int} num\-\_\-coords, {\bf F\-T\-\_\-\-Fixed} $\ast${\bf coords})}}\label{svmm_8h_ac61765fa718f21c7130d28560b4fc0a8}
+
+
+\subsection{Function Documentation}
+\hypertarget{svmm_8h_af642d95ec3f75607f3352218c50f8338}{\index{svmm.\-h@{svmm.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}!svmm.h@{svmm.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E (
+\begin{DoxyParamCaption}
+\item[{Multi\-Masters}]{}
+\end{DoxyParamCaption}
+)}}\label{svmm_8h_af642d95ec3f75607f3352218c50f8338}

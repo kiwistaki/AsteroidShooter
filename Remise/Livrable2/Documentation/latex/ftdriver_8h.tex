@@ -1,0 +1,201 @@
+\hypertarget{ftdriver_8h}{\section{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftdriver.h File Reference}
+\label{ftdriver_8h}\index{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftdriver.\-h@{Cadriciel/\-Commun/\-Externe/\-Free\-Type/include/freetype/internal/ftdriver.\-h}}
+}
+{\ttfamily \#include $<$ft2build.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_t___driver___class_rec__}{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ftdriver_8h_ad6a3ab73418a25a836af7bab141022b9}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}(a\-\_\-, b\-\_\-)
+\item 
+\#define \hyperlink{ftdriver_8h_ad6ebab82752358828cd2359c863aa2c9}{F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R}(class\-\_\-)
+\item 
+\#define \hyperlink{ftdriver_8h_a900fad4e5330bc26673edd0acea0500c}{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R}(class\-\_\-,flags\-\_\-, size\-\_\-, name\-\_\-, version\-\_\-, requires\-\_\-,interface\-\_\-, init\-\_\-, done\-\_\-, get\-\_\-interface\-\_\-,face\-\_\-object\-\_\-size\-\_\-, size\-\_\-object\-\_\-size\-\_\-,slot\-\_\-object\-\_\-size\-\_\-, init\-\_\-face\-\_\-, done\-\_\-face\-\_\-,init\-\_\-size\-\_\-, done\-\_\-size\-\_\-, init\-\_\-slot\-\_\-, done\-\_\-slot\-\_\-,old\-\_\-set\-\_\-char\-\_\-sizes\-\_\-, old\-\_\-set\-\_\-pixel\-\_\-sizes\-\_\-,load\-\_\-glyph\-\_\-, get\-\_\-kerning\-\_\-, attach\-\_\-file\-\_\-,get\-\_\-advances\-\_\-, request\-\_\-size\-\_\-, select\-\_\-size\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftdriver_8h_ad0b0c47fbd51cf9ece953ad7c128fb56}{F\-T\-\_\-\-Face\-\_\-\-Done\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_a03cb45682a7dcf4cb1853eacde8b4b75}{F\-T\-\_\-\-Size\-\_\-\-Init\-Func} )(\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\-T\-\_\-\-Size} \hyperlink{_free_image_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size})
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftdriver_8h_a89d0743c19dbf86b2acc3fede1c01924}{F\-T\-\_\-\-Size\-\_\-\-Done\-Func} )(\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\-T\-\_\-\-Size} \hyperlink{_free_image_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_ad30bf90e127e3df02357bd24f18ceef6}{F\-T\-\_\-\-Slot\-\_\-\-Init\-Func} )(\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot)
+\item 
+typedef \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void}($\ast$ \hyperlink{ftdriver_8h_af39a98af7a7049e40cba28998cd3041e}{F\-T\-\_\-\-Slot\-\_\-\-Done\-Func} )(\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_ab8ff88e57cf69bca80247b9a3901b7c7}{F\-T\-\_\-\-Size\-\_\-\-Request\-Func} )(\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\-T\-\_\-\-Size} \hyperlink{_free_image_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, \hyperlink{freetype_8h_a7306d364ecf834b999a7d8462d0c8668}{F\-T\-\_\-\-Size\-\_\-\-Request} req)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_ad6a508cfe17214601e352ee86a5d03fb}{F\-T\-\_\-\-Size\-\_\-\-Select\-Func} )(\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\-T\-\_\-\-Size} \hyperlink{_free_image_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, \hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\-T\-\_\-\-U\-Long} size\-\_\-index)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_a73b185c451439bad0662d57a081ced42}{F\-T\-\_\-\-Slot\-\_\-\-Load\-Func} )(\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\-T\-\_\-\-Glyph\-Slot} slot, \hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\-T\-\_\-\-Size} \hyperlink{_free_image_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} glyph\-\_\-index, F\-T\-\_\-\-Int32 load\-\_\-flags)
+\item 
+typedef \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int}($\ast$ \hyperlink{ftdriver_8h_a10dda49acd184bd184a4bbfc9332a441}{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func} )(\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\-T\-\_\-\-Char\-Map} charmap, \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long} charcode)
+\item 
+typedef \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long}($\ast$ \hyperlink{ftdriver_8h_ad91d0296f6a7b4b597057b4c6d0f2ca4}{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func} )(\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\-T\-\_\-\-Char\-Map} charmap, \hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\-T\-\_\-\-Long} charcode)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_ac3afb0c464aee1deafd9a61be788a77d}{F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} left\-\_\-glyph, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} right\-\_\-glyph, \hyperlink{ftimage_8h_ab158b5a7e422acb1968af95db786d018}{F\-T\-\_\-\-Vector} $\ast$kerning)
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_a4c6096b135eb0816d99ede6ec51be0a5}{F\-T\-\_\-\-Face\-\_\-\-Attach\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\-T\-\_\-\-Stream} \hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream})
+\item 
+typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_aef2dc5f84efac8f3aced4aacb32c534d}{F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func} )(\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} \hyperlink{glew_8h_a1d06221983ffd8920e50099d6382e24f}{first}, \hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\-T\-\_\-\-U\-Int} \hyperlink{_free_image_8h_a10b284d589000663becfbc6867a3a9f7}{count}, F\-T\-\_\-\-Int32 \hyperlink{fmod__output_8h_a8ebee2eff6f539ce9c42ace5e311cfce}{flags}, \hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\-T\-\_\-\-Fixed} $\ast$advances)
+\item 
+typedef struct \hyperlink{struct_f_t___driver___class_rec__}{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec\-\_\-} \hyperlink{ftdriver_8h_a72ccdcfe3de967c77a3bbe1a8f4db764}{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec}
+\item 
+typedef struct \\*
+\hyperlink{struct_f_t___driver___class_rec__}{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec\-\_\-} $\ast$ \hyperlink{ftdriver_8h_abb8124be69e585349506b14fa2dba4de}{F\-T\-\_\-\-Driver\-\_\-\-Class}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ftheader_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef \hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\-T\-\_\-\-Error}($\ast$ \hyperlink{ftdriver_8h_a702229b1ccc371a3f06b8f0fce3ed012}{F\-T\-\_\-\-Face\-\_\-\-Init\-Func} )(\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\-T\-\_\-\-Stream} \hyperlink{glew_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}, \hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\-T\-\_\-\-Face} \hyperlink{glew_8h_a676ca580c460c0154eb58200433d2a9e}{face}, \hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\-T\-\_\-\-Int} typeface\-\_\-index, \hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\-T\-\_\-\-Int} num\-\_\-params, \hyperlink{freetype_8h_a0b96ed5cf9b897c90409981c43633d55}{F\-T\-\_\-\-Parameter} $\ast$parameters)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ftdriver_8h_ad6ebab82752358828cd2359c863aa2c9}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R@{F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R}}
+\index{F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R@{F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-D\-R\-I\-V\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{ftdriver_8h_ad6ebab82752358828cd2359c863aa2c9}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+FT\_CALLBACK\_TABLE                  \(\backslash\)
+  const \hyperlink{struct_f_t___driver___class_rec__}{FT\_Driver\_ClassRec}  class\_;
+\end{DoxyCode}
+\hypertarget{ftdriver_8h_a900fad4e5330bc26673edd0acea0500c}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-, }
+\item[{}]{flags\-\_\-, }
+\item[{}]{size\-\_\-, }
+\item[{}]{name\-\_\-, }
+\item[{}]{version\-\_\-, }
+\item[{}]{requires\-\_\-, }
+\item[{}]{interface\-\_\-, }
+\item[{}]{init\-\_\-, }
+\item[{}]{done\-\_\-, }
+\item[{}]{get\-\_\-interface\-\_\-, }
+\item[{}]{face\-\_\-object\-\_\-size\-\_\-, }
+\item[{}]{size\-\_\-object\-\_\-size\-\_\-, }
+\item[{}]{slot\-\_\-object\-\_\-size\-\_\-, }
+\item[{}]{init\-\_\-face\-\_\-, }
+\item[{}]{done\-\_\-face\-\_\-, }
+\item[{}]{init\-\_\-size\-\_\-, }
+\item[{}]{done\-\_\-size\-\_\-, }
+\item[{}]{init\-\_\-slot\-\_\-, }
+\item[{}]{done\-\_\-slot\-\_\-, }
+\item[{}]{old\-\_\-set\-\_\-char\-\_\-sizes\-\_\-, }
+\item[{}]{old\-\_\-set\-\_\-pixel\-\_\-sizes\-\_\-, }
+\item[{}]{load\-\_\-glyph\-\_\-, }
+\item[{}]{get\-\_\-kerning\-\_\-, }
+\item[{}]{attach\-\_\-file\-\_\-, }
+\item[{}]{get\-\_\-advances\-\_\-, }
+\item[{}]{request\-\_\-size\-\_\-, }
+\item[{}]{select\-\_\-size\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{ftdriver_8h_a900fad4e5330bc26673edd0acea0500c}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+FT\_CALLBACK\_TABLE\_DEF                                                      \(\backslash\)
+  const \hyperlink{struct_f_t___driver___class_rec__}{FT\_Driver\_ClassRec} class\_ =                                          \(\backslash\)
+  \{                                                                          \hyperlink{ftobjs_8h_a01436c1329b1a9e4e314900b3ee17db6}{\(\backslash\)}
+\hyperlink{ftobjs_8h_a01436c1329b1a9e4e314900b3ee17db6}{    FT\_DEFINE\_ROOT\_MODULE}(flags\_,size\_,name\_,version\_,requires\_,interface\_,  \(\backslash\)
+                          init\_,done\_,get\_interface\_)                        \(\backslash\)
+                                                                             \(\backslash\)
+    face\_object\_size\_,                                                       \(\backslash\)
+    size\_object\_size\_,                                                       \(\backslash\)
+    slot\_object\_size\_,                                                       \(\backslash\)
+                                                                             \(\backslash\)
+    init\_face\_,                                                              \(\backslash\)
+    done\_face\_,                                                              \(\backslash\)
+                                                                             \(\backslash\)
+    init\_size\_,                                                              \(\backslash\)
+    done\_size\_,                                                              \(\backslash\)
+                                                                             \(\backslash\)
+    init\_slot\_,                                                              \(\backslash\)
+    done\_slot\_,                                                              \hyperlink{ftdriver_8h_ad6a3ab73418a25a836af7bab141022b9}{\(\backslash\)}
+\hyperlink{ftdriver_8h_ad6a3ab73418a25a836af7bab141022b9}{                                                                             \(\backslash\)}
+\hyperlink{ftdriver_8h_ad6a3ab73418a25a836af7bab141022b9}{    FT\_DEFINE\_DRIVERS\_OLD\_INTERNALS}(old\_set\_char\_sizes\_, 
+      old\_set\_pixel\_sizes\_) \(\backslash\)
+                                                                             \(\backslash\)
+    load\_glyph\_,                                                             \(\backslash\)
+                                                                             \(\backslash\)
+    get\_kerning\_,                                                            \(\backslash\)
+    attach\_file\_,                                                            \(\backslash\)
+    get\_advances\_,                                                           \(\backslash\)
+                                                                             \(\backslash\)
+    request\_size\_,                                                           \(\backslash\)
+    select\_size\_                                                             \(\backslash\)
+  \};
+\end{DoxyCode}
+\hypertarget{ftdriver_8h_ad6a3ab73418a25a836af7bab141022b9}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}}
+\index{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S@{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-D\-R\-I\-V\-E\-R\-S\-\_\-\-O\-L\-D\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S(
+\begin{DoxyParamCaption}
+\item[{}]{a\-\_\-, }
+\item[{}]{b\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{ftdriver_8h_ad6a3ab73418a25a836af7bab141022b9}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ftdriver_8h_a10dda49acd184bd184a4bbfc9332a441}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func@{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func}}
+\index{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func@{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-U\-Int}($\ast$ F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Index\-Func)({\bf F\-T\-\_\-\-Char\-Map} charmap, {\bf F\-T\-\_\-\-Long} charcode)}}\label{ftdriver_8h_a10dda49acd184bd184a4bbfc9332a441}
+\hypertarget{ftdriver_8h_ad91d0296f6a7b4b597057b4c6d0f2ca4}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func@{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func}}
+\index{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func@{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Long}($\ast$ F\-T\-\_\-\-Char\-Map\-\_\-\-Char\-Next\-Func)({\bf F\-T\-\_\-\-Char\-Map} charmap, {\bf F\-T\-\_\-\-Long} charcode)}}\label{ftdriver_8h_ad91d0296f6a7b4b597057b4c6d0f2ca4}
+\hypertarget{ftdriver_8h_abb8124be69e585349506b14fa2dba4de}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Driver\-\_\-\-Class@{F\-T\-\_\-\-Driver\-\_\-\-Class}}
+\index{F\-T\-\_\-\-Driver\-\_\-\-Class@{F\-T\-\_\-\-Driver\-\_\-\-Class}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Driver\-\_\-\-Class}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec\-\_\-} $\ast$ {\bf F\-T\-\_\-\-Driver\-\_\-\-Class}}}\label{ftdriver_8h_abb8124be69e585349506b14fa2dba4de}
+\hypertarget{ftdriver_8h_a72ccdcfe3de967c77a3bbe1a8f4db764}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec@{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec}}
+\index{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec@{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec\-\_\-}  {\bf F\-T\-\_\-\-Driver\-\_\-\-Class\-Rec}}}\label{ftdriver_8h_a72ccdcfe3de967c77a3bbe1a8f4db764}
+\hypertarget{ftdriver_8h_a4c6096b135eb0816d99ede6ec51be0a5}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Face\-\_\-\-Attach\-Func@{F\-T\-\_\-\-Face\-\_\-\-Attach\-Func}}
+\index{F\-T\-\_\-\-Face\-\_\-\-Attach\-Func@{F\-T\-\_\-\-Face\-\_\-\-Attach\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Face\-\_\-\-Attach\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Face\-\_\-\-Attach\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-Stream} {\bf stream})}}\label{ftdriver_8h_a4c6096b135eb0816d99ede6ec51be0a5}
+\hypertarget{ftdriver_8h_ad0b0c47fbd51cf9ece953ad7c128fb56}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Face\-\_\-\-Done\-Func@{F\-T\-\_\-\-Face\-\_\-\-Done\-Func}}
+\index{F\-T\-\_\-\-Face\-\_\-\-Done\-Func@{F\-T\-\_\-\-Face\-\_\-\-Done\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Face\-\_\-\-Done\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Face\-\_\-\-Done\-Func)({\bf F\-T\-\_\-\-Face} {\bf face})}}\label{ftdriver_8h_ad0b0c47fbd51cf9ece953ad7c128fb56}
+\hypertarget{ftdriver_8h_aef2dc5f84efac8f3aced4aacb32c534d}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func@{F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func}}
+\index{F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func@{F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Face\-\_\-\-Get\-Advances\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-U\-Int} {\bf first}, {\bf F\-T\-\_\-\-U\-Int} {\bf count}, F\-T\-\_\-\-Int32 {\bf flags}, {\bf F\-T\-\_\-\-Fixed} $\ast$advances)}}\label{ftdriver_8h_aef2dc5f84efac8f3aced4aacb32c534d}
+\hypertarget{ftdriver_8h_ac3afb0c464aee1deafd9a61be788a77d}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func@{F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func}}
+\index{F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func@{F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Face\-\_\-\-Get\-Kerning\-Func)({\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-U\-Int} left\-\_\-glyph, {\bf F\-T\-\_\-\-U\-Int} right\-\_\-glyph, {\bf F\-T\-\_\-\-Vector} $\ast$kerning)}}\label{ftdriver_8h_ac3afb0c464aee1deafd9a61be788a77d}
+\hypertarget{ftdriver_8h_a89d0743c19dbf86b2acc3fede1c01924}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Size\-\_\-\-Done\-Func@{F\-T\-\_\-\-Size\-\_\-\-Done\-Func}}
+\index{F\-T\-\_\-\-Size\-\_\-\-Done\-Func@{F\-T\-\_\-\-Size\-\_\-\-Done\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Size\-\_\-\-Done\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Size\-\_\-\-Done\-Func)({\bf F\-T\-\_\-\-Size} {\bf size})}}\label{ftdriver_8h_a89d0743c19dbf86b2acc3fede1c01924}
+\hypertarget{ftdriver_8h_a03cb45682a7dcf4cb1853eacde8b4b75}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Size\-\_\-\-Init\-Func@{F\-T\-\_\-\-Size\-\_\-\-Init\-Func}}
+\index{F\-T\-\_\-\-Size\-\_\-\-Init\-Func@{F\-T\-\_\-\-Size\-\_\-\-Init\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Size\-\_\-\-Init\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Size\-\_\-\-Init\-Func)({\bf F\-T\-\_\-\-Size} {\bf size})}}\label{ftdriver_8h_a03cb45682a7dcf4cb1853eacde8b4b75}
+\hypertarget{ftdriver_8h_ab8ff88e57cf69bca80247b9a3901b7c7}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Size\-\_\-\-Request\-Func@{F\-T\-\_\-\-Size\-\_\-\-Request\-Func}}
+\index{F\-T\-\_\-\-Size\-\_\-\-Request\-Func@{F\-T\-\_\-\-Size\-\_\-\-Request\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Size\-\_\-\-Request\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Size\-\_\-\-Request\-Func)({\bf F\-T\-\_\-\-Size} {\bf size}, {\bf F\-T\-\_\-\-Size\-\_\-\-Request} req)}}\label{ftdriver_8h_ab8ff88e57cf69bca80247b9a3901b7c7}
+\hypertarget{ftdriver_8h_ad6a508cfe17214601e352ee86a5d03fb}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Size\-\_\-\-Select\-Func@{F\-T\-\_\-\-Size\-\_\-\-Select\-Func}}
+\index{F\-T\-\_\-\-Size\-\_\-\-Select\-Func@{F\-T\-\_\-\-Size\-\_\-\-Select\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Size\-\_\-\-Select\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Size\-\_\-\-Select\-Func)({\bf F\-T\-\_\-\-Size} {\bf size}, {\bf F\-T\-\_\-\-U\-Long} size\-\_\-index)}}\label{ftdriver_8h_ad6a508cfe17214601e352ee86a5d03fb}
+\hypertarget{ftdriver_8h_af39a98af7a7049e40cba28998cd3041e}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Slot\-\_\-\-Done\-Func@{F\-T\-\_\-\-Slot\-\_\-\-Done\-Func}}
+\index{F\-T\-\_\-\-Slot\-\_\-\-Done\-Func@{F\-T\-\_\-\-Slot\-\_\-\-Done\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Slot\-\_\-\-Done\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ F\-T\-\_\-\-Slot\-\_\-\-Done\-Func)({\bf F\-T\-\_\-\-Glyph\-Slot} slot)}}\label{ftdriver_8h_af39a98af7a7049e40cba28998cd3041e}
+\hypertarget{ftdriver_8h_ad30bf90e127e3df02357bd24f18ceef6}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Slot\-\_\-\-Init\-Func@{F\-T\-\_\-\-Slot\-\_\-\-Init\-Func}}
+\index{F\-T\-\_\-\-Slot\-\_\-\-Init\-Func@{F\-T\-\_\-\-Slot\-\_\-\-Init\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Slot\-\_\-\-Init\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Slot\-\_\-\-Init\-Func)({\bf F\-T\-\_\-\-Glyph\-Slot} slot)}}\label{ftdriver_8h_ad30bf90e127e3df02357bd24f18ceef6}
+\hypertarget{ftdriver_8h_a73b185c451439bad0662d57a081ced42}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Slot\-\_\-\-Load\-Func@{F\-T\-\_\-\-Slot\-\_\-\-Load\-Func}}
+\index{F\-T\-\_\-\-Slot\-\_\-\-Load\-Func@{F\-T\-\_\-\-Slot\-\_\-\-Load\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Slot\-\_\-\-Load\-Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Slot\-\_\-\-Load\-Func)({\bf F\-T\-\_\-\-Glyph\-Slot} slot, {\bf F\-T\-\_\-\-Size} {\bf size}, {\bf F\-T\-\_\-\-U\-Int} glyph\-\_\-index, F\-T\-\_\-\-Int32 load\-\_\-flags)}}\label{ftdriver_8h_a73b185c451439bad0662d57a081ced42}
+
+
+\subsection{Variable Documentation}
+\hypertarget{ftdriver_8h_a702229b1ccc371a3f06b8f0fce3ed012}{\index{ftdriver.\-h@{ftdriver.\-h}!F\-T\-\_\-\-Face\-\_\-\-Init\-Func@{F\-T\-\_\-\-Face\-\_\-\-Init\-Func}}
+\index{F\-T\-\_\-\-Face\-\_\-\-Init\-Func@{F\-T\-\_\-\-Face\-\_\-\-Init\-Func}!ftdriver.h@{ftdriver.\-h}}
+\subsubsection[{F\-T\-\_\-\-Face\-\_\-\-Init\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-T\-\_\-\-B\-E\-G\-I\-N\-\_\-\-H\-E\-A\-D\-E\-R} typedef {\bf F\-T\-\_\-\-Error}($\ast$ F\-T\-\_\-\-Face\-\_\-\-Init\-Func)({\bf F\-T\-\_\-\-Stream} {\bf stream}, {\bf F\-T\-\_\-\-Face} {\bf face}, {\bf F\-T\-\_\-\-Int} typeface\-\_\-index, {\bf F\-T\-\_\-\-Int} num\-\_\-params, {\bf F\-T\-\_\-\-Parameter} $\ast$parameters)}}\label{ftdriver_8h_a702229b1ccc371a3f06b8f0fce3ed012}

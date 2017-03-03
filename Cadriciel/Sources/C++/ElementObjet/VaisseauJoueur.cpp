@@ -1,0 +1,100 @@
+///////////////////////////////////////////////////////////////////////////////
+/// @file Vaisseau.cpp
+/// @author FloopyDisketeers
+/// @date 2014-01-27
+/// @version 1.0
+///
+/// @addtogroup inf2990 INF2990
+/// @{
+///////////////////////////////////////////////////////////////////////////////
+#include "VaisseauJoueur.h"
+
+#include "../Arbre/ArbreRenduINF2990.h"
+#include "../Application/FacadeModele.h"
+
+////////////////////////////////////////////////////////////////////////
+///
+/// @fn Vaisseau::Vaisseau()
+///
+/// Constructeur par defaut
+///
+/// @return Aucune (constructeur).
+///
+////////////////////////////////////////////////////////////////////////
+VaisseauJoueur::VaisseauJoueur(bool joueur1) : Vaisseau(joueur1){
+}
+
+////////////////////////////////////////////////////////////////////////
+///
+/// @fn Vaisseau::Vaisseau(Vecteur3f positionDepart, Vecteur3f taille, Vecteur3f directionVitesse, unsigned int poids)
+///
+/// Constructeur par parametre
+///
+/// @return Aucune (constructeur).
+///
+////////////////////////////////////////////////////////////////////////
+VaisseauJoueur::VaisseauJoueur( Vecteur3f positionDepart,
+								Vecteur3f taille, Vecteur3f directionVitesse, float poids,
+								bool joueur1) : Vaisseau( positionDepart, taille, directionVitesse, poids, joueur1){
+}
+
+////////////////////////////////////////////////////////////////////////
+///
+/// @fn Vaisseau::Vaisseau(const Vaisseau& vaisseau)
+///
+/// Constructeur par copie
+///
+/// @return Aucune (constructeur).
+///
+////////////////////////////////////////////////////////////////////////
+VaisseauJoueur::VaisseauJoueur(const VaisseauJoueur& vaisseau) : Vaisseau(vaisseau) {
+
+}
+
+////////////////////////////////////////////////////////////////////////
+///
+/// @fn Vaisseau::~Vaisseau()
+///
+/// Destructeur
+///
+/// @return Aucune (destructeur).
+///
+////////////////////////////////////////////////////////////////////////
+VaisseauJoueur::~VaisseauJoueur(){
+}
+
+////////////////////////////////////////////////////////////////////////
+///
+/// @fn Vaisseau::getType()
+///
+/// Methode qui retourne le type de noeud
+///
+/// @param[in] aucun
+///
+/// @return Type::VAISSEAU.
+///
+////////////////////////////////////////////////////////////////////////
+Type VaisseauJoueur::getType(){
+	return VAISSEAU;
+}
+
+
+////////////////////////////////////////////////////////////////////////
+///
+/// @fn void Vaisseau::update(float deltaT)
+///
+/// Methode qui permet de updater les objets selon 
+///
+/// @param[in] poids : poids du vaisseau
+///
+/// @return Aucune.
+///
+////////////////////////////////////////////////////////////////////////
+void VaisseauJoueur::update(float deltaT) {
+	Vaisseau::update(deltaT);
+}
+
+ElementJeuAbstrait* VaisseauJoueur::clone() const
+{
+	return new VaisseauJoueur(*this);
+}

@@ -1,0 +1,186 @@
+\hypertarget{class_text_test_runner}{\section{Text\-Test\-Runner Class Reference}
+\label{class_text_test_runner}\index{Text\-Test\-Runner@{Text\-Test\-Runner}}
+}
+
+
+A text mode test runner.
+
+The test runner manage the life cycle of the added tests.  
+
+
+
+
+{\ttfamily \#include $<$Text\-Test\-Runner.\-h$>$}
+
+Inheritance diagram for Text\-Test\-Runner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_test_runner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}{Text\-Test\-Runner} (\hyperlink{class_outputter}{Outputter} $\ast$outputter=\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual \hyperlink{class_text_test_runner_a8105da57dba58aa4319058b03f348693}{$\sim$\-Text\-Test\-Runner} ()
+\item 
+bool \hyperlink{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{run} (\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} test\-Path=\char`\"{}\char`\"{}, bool do\-Wait=false, bool do\-Print\-Result=true, bool do\-Print\-Progress=true)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{set\-Outputter} (\hyperlink{class_outputter}{Outputter} $\ast$outputter)
+\item 
+\hyperlink{class_test_result_collector}{Test\-Result\-Collector} \& \hyperlink{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}{result} () const 
+\item 
+\hyperlink{class_test_result}{Test\-Result} \& \hyperlink{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}{event\-Manager} () const 
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}{run} (\hyperlink{class_test_result}{Test\-Result} \&controller, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&test\-Path=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}{wait} (bool do\-Wait)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}{print\-Result} (bool do\-Print\-Result)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_collector}{Test\-Result\-Collector} $\ast$ \hyperlink{class_text_test_runner_a61cf52af4ee1c64e0e8d07fe86b91ea7}{m\-\_\-result}
+\item 
+\hyperlink{class_test_result}{Test\-Result} $\ast$ \hyperlink{class_text_test_runner_acfe13b2f69c0113670e3ba72704c0cf5}{m\-\_\-event\-Manager}
+\item 
+\hyperlink{class_outputter}{Outputter} $\ast$ \hyperlink{class_text_test_runner_a01e4b671a1e8a32781ef6bcb91e4e95e}{m\-\_\-outputter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A text mode test runner.
+
+The test runner manage the life cycle of the added tests. 
+
+The test runner can run only one of the added tests or all the tests.
+
+\hyperlink{class_test_runner}{Test\-Runner} prints out a trace as the tests are executed followed by a summary at the end. The trace and summary print are optional.
+
+Here is an example of use\-:
+
+
+\begin{DoxyCode}
+CppUnit::TextTestRunner runner;
+runner.addTest( ExampleTestCase::suite() );
+runner.run( \textcolor{stringliteral}{""}, \textcolor{keyword}{true} );    \textcolor{comment}{// Run all tests and wait}
+\end{DoxyCode}
+
+
+The trace is printed using a \hyperlink{class_text_test_progress_listener}{Text\-Test\-Progress\-Listener}. The summary is printed using a \hyperlink{class_text_outputter}{Text\-Outputter}.
+
+You can specify an alternate \hyperlink{class_outputter}{Outputter} at construction or later with \hyperlink{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{set\-Outputter()}.
+
+After construction, you can register additional \hyperlink{class_test_listener}{Test\-Listener} to \hyperlink{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}{event\-Manager()}, for a custom progress trace, for example.
+
+
+\begin{DoxyCode}
+CppUnit::TextTestRunner runner;
+runner.addTest( ExampleTestCase::suite() );
+runner.setOutputter( CppUnit::CompilerOutputter::defaultOutputter( 
+                         &runner.result(),
+                         std::cerr ) );
+MyCustomProgressTestListener progress;
+runner.eventManager().addListener( &progress );
+runner.run( \textcolor{stringliteral}{""}, \textcolor{keyword}{true} );    \textcolor{comment}{// Run all tests and wait}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_compiler_outputter}{Compiler\-Outputter}, \hyperlink{class_xml_outputter}{Xml\-Outputter}, \hyperlink{class_text_outputter}{Text\-Outputter}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!Text\-Test\-Runner@{Text\-Test\-Runner}}
+\index{Text\-Test\-Runner@{Text\-Test\-Runner}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{Text\-Test\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}Text\-Test\-Runner\-::\-Text\-Test\-Runner (
+\begin{DoxyParamCaption}
+\item[{{\bf Outputter} $\ast$}]{outputter = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}
+\hypertarget{class_text_test_runner_a8105da57dba58aa4319058b03f348693}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!$\sim$\-Text\-Test\-Runner@{$\sim$\-Text\-Test\-Runner}}
+\index{$\sim$\-Text\-Test\-Runner@{$\sim$\-Text\-Test\-Runner}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{$\sim$\-Text\-Test\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}virtual Text\-Test\-Runner\-::$\sim$\-Text\-Test\-Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_test_runner_a8105da57dba58aa4319058b03f348693}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!event\-Manager@{event\-Manager}}
+\index{event\-Manager@{event\-Manager}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{event\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Result}\& Text\-Test\-Runner\-::event\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}
+\hypertarget{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!print\-Result@{print\-Result}}
+\index{print\-Result@{print\-Result}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{print\-Result}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Test\-Runner\-::print\-Result (
+\begin{DoxyParamCaption}
+\item[{bool}]{do\-Print\-Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}
+\hypertarget{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!result@{result}}
+\index{result@{result}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Result\-Collector}\& Text\-Test\-Runner\-::result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}
+\hypertarget{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!run@{run}}
+\index{run@{run}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}bool Text\-Test\-Runner\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf std\-::string}}]{test\-Path = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{bool}]{do\-Wait = {\ttfamily false}, }
+\item[{bool}]{do\-Print\-Result = {\ttfamily true}, }
+\item[{bool}]{do\-Print\-Progress = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}
+\hypertarget{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!run@{run}}
+\index{run@{run}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Test\-Runner\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} \&}]{controller, }
+\item[{const {\bf std\-::string} \&}]{test\-Path = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}
+\hypertarget{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!set\-Outputter@{set\-Outputter}}
+\index{set\-Outputter@{set\-Outputter}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{set\-Outputter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Text\-Test\-Runner\-::set\-Outputter (
+\begin{DoxyParamCaption}
+\item[{{\bf Outputter} $\ast$}]{outputter}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}
+\hypertarget{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!wait@{wait}}
+\index{wait@{wait}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{wait}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Text\-Test\-Runner\-::wait (
+\begin{DoxyParamCaption}
+\item[{bool}]{do\-Wait}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_text_test_runner_acfe13b2f69c0113670e3ba72704c0cf5}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!m\-\_\-event\-Manager@{m\-\_\-event\-Manager}}
+\index{m\-\_\-event\-Manager@{m\-\_\-event\-Manager}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{m\-\_\-event\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Result}$\ast$ Text\-Test\-Runner\-::m\-\_\-event\-Manager\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_text_test_runner_acfe13b2f69c0113670e3ba72704c0cf5}
+\hypertarget{class_text_test_runner_a01e4b671a1e8a32781ef6bcb91e4e95e}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!m\-\_\-outputter@{m\-\_\-outputter}}
+\index{m\-\_\-outputter@{m\-\_\-outputter}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{m\-\_\-outputter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Outputter}$\ast$ Text\-Test\-Runner\-::m\-\_\-outputter\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_text_test_runner_a01e4b671a1e8a32781ef6bcb91e4e95e}
+\hypertarget{class_text_test_runner_a61cf52af4ee1c64e0e8d07fe86b91ea7}{\index{Text\-Test\-Runner@{Text\-Test\-Runner}!m\-\_\-result@{m\-\_\-result}}
+\index{m\-\_\-result@{m\-\_\-result}!TextTestRunner@{Text\-Test\-Runner}}
+\subsubsection[{m\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Result\-Collector}$\ast$ Text\-Test\-Runner\-::m\-\_\-result\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_text_test_runner_a61cf52af4ee1c64e0e8d07fe86b91ea7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/ui/text/\hyperlink{ui_2text_2_text_test_runner_8h}{Text\-Test\-Runner.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\hypertarget{class_test_runner_1_1_wrapping_suite}{\section{Test\-Runner\-:\-:Wrapping\-Suite Class Reference}
+\label{class_test_runner_1_1_wrapping_suite}\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}}
+}
+
+
+(I\-N\-T\-E\-R\-N\-A\-L) Mutating test suite.  
+
+
+
+
+{\ttfamily \#include $<$Test\-Runner.\-h$>$}
+
+Inheritance diagram for Test\-Runner\-:\-:Wrapping\-Suite\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_test_runner_1_1_wrapping_suite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_runner_1_1_wrapping_suite_a3edce0cce0e3fdc996994d3dfe8f35fb}{Wrapping\-Suite} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{fmod__codec_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}=\char`\"{}All Tests\char`\"{})
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}{get\-Child\-Test\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of direct child of the test. \end{DoxyCompactList}\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns the test name. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}{run} (\hyperlink{class_test_result}{Test\-Result} $\ast$\hyperlink{glew_8h_a5fb5836a37f7607602a16ad733ed6357}{result})
+\begin{DoxyCompactList}\small\item\em Run the test, collecting results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}{do\-Get\-Child\-Test\-At} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{fmod__codec_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const 
+\begin{DoxyCompactList}\small\item\em Returns the child test of the specified valid index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_test_runner_1_1_wrapping_suite_af38cfc83ff00ccc6231e479874931d04}{has\-Only\-One\-Test} () const 
+\item 
+\hyperlink{class_test}{Test} $\ast$ \hyperlink{class_test_runner_1_1_wrapping_suite_a6ca61a2aa4d3832525333fef9ccad961}{get\-Unique\-Child\-Test} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(I\-N\-T\-E\-R\-N\-A\-L) Mutating test suite. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_test_runner_1_1_wrapping_suite_a3edce0cce0e3fdc996994d3dfe8f35fb}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!Wrapping\-Suite@{Wrapping\-Suite}}
+\index{Wrapping\-Suite@{Wrapping\-Suite}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{Wrapping\-Suite}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Runner\-::\-Wrapping\-Suite\-::\-Wrapping\-Suite (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{name = {\ttfamily \char`\"{}All~Tests\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_test_runner_1_1_wrapping_suite_a3edce0cce0e3fdc996994d3dfe8f35fb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}}
+\index{do\-Get\-Child\-Test\-At@{do\-Get\-Child\-Test\-At}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{do\-Get\-Child\-Test\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Runner\-::\-Wrapping\-Suite\-::do\-Get\-Child\-Test\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_test_runner_1_1_wrapping_suite_a84e5ef67fbdd8beec998923532849cb5}
+
+
+Returns the child test of the specified valid index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero based valid index of the child test to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the test. Never {\ttfamily N\-U\-L\-L}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_test_a5c2ca854987799dca293ba78689bf64d}{Test}.
+
+\hypertarget{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!get\-Child\-Test\-Count@{get\-Child\-Test\-Count}}
+\index{get\-Child\-Test\-Count@{get\-Child\-Test\-Count}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{get\-Child\-Test\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Test\-Runner\-::\-Wrapping\-Suite\-::get\-Child\-Test\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_runner_1_1_wrapping_suite_a5ef6d3d00fbc6493c06a2dc1f0e93077}
+
+
+Returns the number of direct child of the test. 
+
+
+
+Implements \hyperlink{class_test_a7aaab95037b7222573471074c56df85b}{Test}.
+
+\hypertarget{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Test\-Runner\-::\-Wrapping\-Suite\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_runner_1_1_wrapping_suite_a500c7e2413a4830b87d8ab061251f856}
+
+
+Returns the test name. 
+
+Each test has a name. This name may be used to find the test in a suite or registry of tests. 
+
+Reimplemented from \hyperlink{class_test_composite_addf2aec7ab7233e433cb5bdf98defb61}{Test\-Composite}.
+
+\hypertarget{class_test_runner_1_1_wrapping_suite_a6ca61a2aa4d3832525333fef9ccad961}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!get\-Unique\-Child\-Test@{get\-Unique\-Child\-Test}}
+\index{get\-Unique\-Child\-Test@{get\-Unique\-Child\-Test}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{get\-Unique\-Child\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test}$\ast$ Test\-Runner\-::\-Wrapping\-Suite\-::get\-Unique\-Child\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_runner_1_1_wrapping_suite_a6ca61a2aa4d3832525333fef9ccad961}
+\hypertarget{class_test_runner_1_1_wrapping_suite_af38cfc83ff00ccc6231e479874931d04}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!has\-Only\-One\-Test@{has\-Only\-One\-Test}}
+\index{has\-Only\-One\-Test@{has\-Only\-One\-Test}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{has\-Only\-One\-Test}]{\setlength{\rightskip}{0pt plus 5cm}bool Test\-Runner\-::\-Wrapping\-Suite\-::has\-Only\-One\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_test_runner_1_1_wrapping_suite_af38cfc83ff00ccc6231e479874931d04}
+\hypertarget{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}{\index{Test\-Runner\-::\-Wrapping\-Suite@{Test\-Runner\-::\-Wrapping\-Suite}!run@{run}}
+\index{run@{run}!TestRunner::WrappingSuite@{Test\-Runner\-::\-Wrapping\-Suite}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Test\-Runner\-::\-Wrapping\-Suite\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Result} $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_test_runner_1_1_wrapping_suite_aa486bfea64b60206ac1d8fbb006f2f64}
+
+
+Run the test, collecting results. 
+
+
+
+Reimplemented from \hyperlink{class_test_composite_a2ba14045b1a1e83963dd4db746b04dfd}{Test\-Composite}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_test_runner_8h}{Test\-Runner.\-h}\end{DoxyCompactItemize}

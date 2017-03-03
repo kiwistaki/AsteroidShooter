@@ -1,0 +1,287 @@
+\hypertarget{class_vecteur3_d}{\section{Vecteur3\-D$<$ T $>$ Class Template Reference}
+\label{class_vecteur3_d}\index{Vecteur3\-D$<$ T $>$@{Vecteur3\-D$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Vecteur.\-h$>$}
+
+Inheritance diagram for Vecteur3\-D$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vecteur3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T2 $>$ }\\\hyperlink{class_vecteur3_d_a4e440b6497113a0898d55d9ef8b6fe98}{Vecteur3\-D} (const \hyperlink{class_vecteur3_d}{Vecteur3\-D}$<$ T2 $>$ \&u)
+\item 
+\hyperlink{class_vecteur3_d_a3dac3fef39e0de25b9cf4105ea4f54c1}{Vecteur3\-D} (const T \hyperlink{glew_8h_ad77deca22f617d3f0e0eb786445689fc}{x}=0, const T \hyperlink{glew_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}=0, const T \hyperlink{glew_8h_a826e1ac898f4ef56cea62219f74607db}{z}=0)
+\item 
+\hyperlink{class_vecteur3_d_aee3fa82fca12f7c5716617997e0a07b4}{Vecteur3\-D} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 3 $>$ \&\hyperlink{glew_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}, const \hyperlink{class_vecteur}{Vecteur}$<$ T, 3 $>$ \&\hyperlink{glew_8h_a9a09a1837922b2b806f4589096a52049}{v2})
+\item 
+\hyperlink{class_vecteur3_d_a6f4a132eaeff0688956279fd4c194908}{Vecteur3\-D} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 3 $>$ \&\hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v})
+\item 
+const \hyperlink{class_vecteur3_d}{Vecteur3\-D} \& \hyperlink{class_vecteur3_d_ae71f89b1a7176fd7c9703c7e26c8d50d}{operator=} (const \hyperlink{class_vecteur}{Vecteur}$<$ T, 3 $>$ \&\hyperlink{glew_8h_a6509431814422c215a65946289dd98b8}{v})
+\item 
+T \hyperlink{class_vecteur3_d_abad73b19714098f545f6dd4260f0e479}{lire\-Theta} () const 
+\item 
+T \hyperlink{class_vecteur3_d_addb40be5e1fef2ac222282a9a8653a1d}{lire\-Phi} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_vecteur3_d_aaca3efa6e3de652ae9a5b0d068217daf}{lire\-Coord\-Spheriques} (T \&\hyperlink{glew_8h_afc1d5bdb45878ca9a9eb0b223d646b35}{r}, T \&phi, T \&theta) const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_vecteur3_d_a7ebfed587f8295fa90dded603ffd9495}{assigner\-Coord\-Spheriques} (const T \hyperlink{glew_8h_afc1d5bdb45878ca9a9eb0b223d646b35}{r}, const T phi, const T theta)
+\item 
+\hyperlink{class_vecteur3_d}{Vecteur3\-D} \hyperlink{class_vecteur3_d_a5026a41f03a1b0a31158b9a29ef27177}{tourner} (const T \hyperlink{glew_8h_a6d7a98b0d979b9411a4344a98a7a6122}{angle}, const \hyperlink{class_vecteur3_d}{Vecteur3\-D} \&axe) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vecteur3_d}{Vecteur3\-D} \hyperlink{class_vecteur3_d_ad694a02c6636d9364299682ca69a7818}{produit\-Vectoriel} (const \hyperlink{class_vecteur3_d}{Vecteur3\-D} \&A, const \hyperlink{class_vecteur3_d}{Vecteur3\-D} \&B)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Vecteur3\-D$<$ T $>$}
+
+Classe generique pour implanter des vecteurs en 3\-D.
+
+Cette classe generique est definie pour les vecteurs de dimension 3. Les operations necessaires sont definies, soient\-:
+\begin{DoxyItemize}
+\item les constructeurs ;
+\item operateur = ;
+\item calcul de l'angle de rotation ;
+\item calcul de l'angle de elevation ;
+\item transformation du vecteur en coordonees spheriques ;
+\item le produit vectoriel.
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Alex Duru 
+
+Ionut Alexandrescu 
+
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/02-\/23 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vecteur3_d_a4e440b6497113a0898d55d9ef8b6fe98}{\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3\-D@{Vecteur3\-D}}
+\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{Vecteur3\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class T2 $>$ {\bf Vecteur3\-D}$<$ T $>$\-::{\bf Vecteur3\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3\-D}$<$ T2 $>$ \&}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_a4e440b6497113a0898d55d9ef8b6fe98}
+Constructeur avec conversion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em u} & \-: Le vecteur a copier dans le nouveau vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_a3dac3fef39e0de25b9cf4105ea4f54c1}{\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3\-D@{Vecteur3\-D}}
+\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{Vecteur3\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur3\-D}$<$ T $>$\-::{\bf Vecteur3\-D} (
+\begin{DoxyParamCaption}
+\item[{const T}]{x = {\ttfamily 0}, }
+\item[{const T}]{y = {\ttfamily 0}, }
+\item[{const T}]{z = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_a3dac3fef39e0de25b9cf4105ea4f54c1}
+Constructeur par parametres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & \-: La coordonnee en {\itshape x}. \\
+\hline
+\mbox{\tt in}  & {\em y} & \-: La coordonnee en {\itshape y}. \\
+\hline
+\mbox{\tt in}  & {\em z} & \-: La coordonnee en {\itshape z}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_aee3fa82fca12f7c5716617997e0a07b4}{\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3\-D@{Vecteur3\-D}}
+\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{Vecteur3\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur3\-D}$<$ T $>$\-::{\bf Vecteur3\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 3 $>$ \&}]{v1, }
+\item[{const {\bf Vecteur}$<$ T, 3 $>$ \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_aee3fa82fca12f7c5716617997e0a07b4}
+Constructeur a partir de deux points. Le vecteur construit est dirige du premier vers le second.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v1} & \-: Le premier vecteur (source). \\
+\hline
+\mbox{\tt in}  & {\em v2} & \-: Le second vecteur (destination).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_a6f4a132eaeff0688956279fd4c194908}{\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3\-D@{Vecteur3\-D}}
+\index{Vecteur3\-D@{Vecteur3\-D}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{Vecteur3\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur3\-D}$<$ T $>$\-::{\bf Vecteur3\-D} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 3 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_a6f4a132eaeff0688956279fd4c194908}
+Constructeur copie.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & \-: Le vecteur a copier dans le nouveau vecteur.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vecteur3_d_a7ebfed587f8295fa90dded603ffd9495}{\index{Vecteur3\-D@{Vecteur3\-D}!assigner\-Coord\-Spheriques@{assigner\-Coord\-Spheriques}}
+\index{assigner\-Coord\-Spheriques@{assigner\-Coord\-Spheriques}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{assigner\-Coord\-Spheriques}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf void} {\bf Vecteur3\-D}$<$ T $>$\-::assigner\-Coord\-Spheriques (
+\begin{DoxyParamCaption}
+\item[{const T}]{r, }
+\item[{const T}]{phi, }
+\item[{const T}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_a7ebfed587f8295fa90dded603ffd9495}
+Cette fonction assigne les coordonnees du vecteur qui sont donnees en coordonnees spheriques.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em r} & \-: Le rayon des coordonnees spheriques. \\
+\hline
+\mbox{\tt in}  & {\em phi} & \-: L'angle d'elevation des coordonnees spheriques. \\
+\hline
+\mbox{\tt in}  & {\em theta} & \-: L'angle de rotation des coordonnees spheriques.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_aaca3efa6e3de652ae9a5b0d068217daf}{\index{Vecteur3\-D@{Vecteur3\-D}!lire\-Coord\-Spheriques@{lire\-Coord\-Spheriques}}
+\index{lire\-Coord\-Spheriques@{lire\-Coord\-Spheriques}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{lire\-Coord\-Spheriques}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf void} {\bf Vecteur3\-D}$<$ T $>$\-::lire\-Coord\-Spheriques (
+\begin{DoxyParamCaption}
+\item[{T \&}]{r, }
+\item[{T \&}]{phi, }
+\item[{T \&}]{theta}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_aaca3efa6e3de652ae9a5b0d068217daf}
+Cette fonction retourne les coordonnees spheriques du vecteur via les parametres passes en reference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em r} & \-: Le rayon des coordonnees spheriques. \\
+\hline
+\mbox{\tt out}  & {\em phi} & \-: L'angle d'elevation des coordonnees spheriques. \\
+\hline
+\mbox{\tt out}  & {\em theta} & \-: L'angle de rotation des coordonnees spheriques.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_addb40be5e1fef2ac222282a9a8653a1d}{\index{Vecteur3\-D@{Vecteur3\-D}!lire\-Phi@{lire\-Phi}}
+\index{lire\-Phi@{lire\-Phi}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{lire\-Phi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vecteur3\-D}$<$ T $>$\-::lire\-Phi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_addb40be5e1fef2ac222282a9a8653a1d}
+Cette fonction calcule l'angle d'elevation du vecteur 3\-D. Le vecteur dirige vers l'axe des Z positifs, k, (0,0,1), aura comme angle 0.
+
+\begin{DoxyReturn}{Returns}
+L'angle d'elevation du vecteur 3\-D. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_abad73b19714098f545f6dd4260f0e479}{\index{Vecteur3\-D@{Vecteur3\-D}!lire\-Theta@{lire\-Theta}}
+\index{lire\-Theta@{lire\-Theta}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{lire\-Theta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vecteur3\-D}$<$ T $>$\-::lire\-Theta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_abad73b19714098f545f6dd4260f0e479}
+Cette fonction calcule l'angle de rotation ({\itshape xy}) du vecteur 3\-D.
+
+\begin{DoxyReturn}{Returns}
+L'angle de rotation du vecteur 3\-D. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_ae71f89b1a7176fd7c9703c7e26c8d50d}{\index{Vecteur3\-D@{Vecteur3\-D}!operator=@{operator=}}
+\index{operator=@{operator=}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const {\bf Vecteur3\-D} \& {\bf Vecteur3\-D}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur}$<$ T, 3 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_ae71f89b1a7176fd7c9703c7e26c8d50d}
+Surcharge de l'operateur d'assignation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & \-: Le vecteur a copier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La reference vers l'objet assigne afin de respecter la semantique de l'operateur d'assignation C++. 
+\end{DoxyReturn}
+\hypertarget{class_vecteur3_d_a5026a41f03a1b0a31158b9a29ef27177}{\index{Vecteur3\-D@{Vecteur3\-D}!tourner@{tourner}}
+\index{tourner@{tourner}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{tourner}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur3\-D} {\bf Vecteur3\-D}$<$ T $>$\-::tourner (
+\begin{DoxyParamCaption}
+\item[{const T}]{angle, }
+\item[{const {\bf Vecteur3\-D}$<$ T $>$ \&}]{axe}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vecteur3_d_a5026a41f03a1b0a31158b9a29ef27177}
+Cette fonction calcule la rotation d'un vecteur autour d'un axe arbitraire.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & \-: L'angle de rotation, en radians. \\
+\hline
+\mbox{\tt in}  & {\em axe} & \-: L'axe de rotation (vecteur unitaire).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le vecteur apres la rotation. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_vecteur3_d_ad694a02c6636d9364299682ca69a7818}{\index{Vecteur3\-D@{Vecteur3\-D}!produit\-Vectoriel@{produit\-Vectoriel}}
+\index{produit\-Vectoriel@{produit\-Vectoriel}!Vecteur3D@{Vecteur3\-D}}
+\subsubsection[{produit\-Vectoriel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vecteur3\-D} produit\-Vectoriel (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vecteur3\-D}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vecteur3\-D}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_vecteur3_d_ad694a02c6636d9364299682ca69a7818}
+Cette fonction calcule le produit vectoriel des deux vecteurs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & \-: Le premier vecteur du produit. \\
+\hline
+\mbox{\tt in}  & {\em B} & \-: Le second vecteur du produit.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le produit vectoriel des deux vecteurs. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Utilitaire/\hyperlink{_vecteur_8h}{Vecteur.\-h}\end{DoxyCompactItemize}

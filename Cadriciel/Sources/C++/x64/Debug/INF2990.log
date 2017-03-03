@@ -1,0 +1,92 @@
+﻿Build started 2014-04-22 1:47:42 PM.
+     1>Project "C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\INF2990.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\..\Commun\Externe\FreeImage\include /I"C:\Program Files\Java\jdk1.7.0_51/include" /I"C:\Program Files\Java\jdk1.7.0_51/include/win32" /I../../Commun/Externe/JAWT_info/include /I../../Commun/Utilitaire /I../../Commun/Utilitaire/Vue /I../../Commun/Chargeur3ds/Chargeur3ds/Sources /IApplication /IArbre /IArbre/Noeuds /IArbre/Usines /IArbre/Modeles /IConfiguration /IEnvironnement /IInterface /I../../Commun/Externe/tinyxml/include /I../../Commun/Externe/assimp/include /I../../Commun/Externe/cppunit/include /ITests /I../../Commun/Externe/FreeType/include /Zi /nologo /W3 /WX- /Od /D WIN32 /D GLEW_STATIC /D _DEBUG /D _WINDOWS /D _USRDLL /D INF2990_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt Application\Carte.cpp Application\FacadeModele.cpp Application\GestionnaireAnimation.cpp
+         GestionnaireAnimation.cpp
+         Generating Code...
+         Compiling...
+         FacadeModele.cpp
+         Carte.cpp
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../../Exe/DLL/INF2990.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\Java\jdk1.7.0_51/lib" /LIBPATH:"../../Commun/Externe/xerces-c/lib" /LIBPATH:../../Commun/Externe/FreeType/lib /LIBPATH:../../Commun/Externe/GLEW/lib /LIBPATH:../../Commun/Externe/tinyxml/lib /LIBPATH:../../Commun/Externe/assimp/lib /LIBPATH:../../Commun/Externe/cppunit/lib /LIBPATH:../../Commun/Externe/FMOD/lib glew32s.lib opengl32.lib jawt.lib glu32.lib freetype246_D_x64.lib glew32s.lib tinyxml_D_x64.lib assimp_D_x64.lib cppunit_D_x64.lib fmodex64_vc.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\INF2990.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Exe\DLL\INF2990.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"../../Exe/DLL/INF2990.lib" /MACHINE:X64 /DLL x64\Debug\Phont.obj
+         x64\Debug\AffichageDebogage.obj
+         x64\Debug\Carte.obj
+         x64\Debug\FacadeModele.obj
+         x64\Debug\GestionnaireAnimation.obj
+         x64\Debug\GestionnaireCollision.obj
+         x64\Debug\GestionnaireSon.obj
+         x64\Debug\GestionnaireXML.obj
+         x64\Debug\JeuAbstrait.obj
+         x64\Debug\CommandeAjoutAccelerateur.obj
+         x64\Debug\CommandeAjoutBarriere.obj
+         x64\Debug\CommandeAjoutPortail.obj
+         x64\Debug\CommandeAjoutStationSpatial.obj
+         x64\Debug\CommandeDeplacement.obj
+         x64\Debug\CommandeDuplication.obj
+         x64\Debug\CommandeMiseAEchelle.obj
+         x64\Debug\CommandeRotation.obj
+         x64\Debug\CommandeSelection.obj
+         x64\Debug\CommandeSuppression.obj
+         x64\Debug\CommandeZoomLoupe.obj
+         x64\Debug\ModeEdition.obj
+         x64\Debug\ModeCampagne.obj
+         x64\Debug\ModeJeu.obj
+         x64\Debug\ModePartieRapide.obj
+         x64\Debug\ModeTest.obj
+         x64\Debug\QuadTree.obj
+         x64\Debug\GestionnaireAsteroide.obj
+         x64\Debug\GestionnaireRessources.obj
+         x64\Debug\Modele3D.obj
+         x64\Debug\NoeudAccelerateur.obj
+         x64\Debug\NoeudAsteroide.obj
+         x64\Debug\NoeudBarriere.obj
+         x64\Debug\NoeudPortail.obj
+         x64\Debug\NoeudPositionDepart.obj
+         x64\Debug\NoeudProjectile.obj
+         x64\Debug\NoeudStation.obj
+         x64\Debug\NoeudVaisseau.obj
+         x64\Debug\Accelerateur.obj
+         x64\Debug\Asteroide.obj
+         x64\Debug\Barriere.obj
+         x64\Debug\ElementJeuAbstrait.obj
+         x64\Debug\Portail.obj
+         x64\Debug\PositionDepart.obj
+         x64\Debug\Projectile.obj
+         x64\Debug\Station.obj
+         x64\Debug\Vaisseau.obj
+         x64\Debug\VaisseauJoueur.obj
+         x64\Debug\VaisseauVirtuel.obj
+         x64\Debug\EtatJoueurVirtuel.obj
+         x64\Debug\ModeApproche.obj
+         x64\Debug\ModeAttaque.obj
+         x64\Debug\ModeRecherche.obj
+         x64\Debug\UtilitaireINF2990.obj
+         x64\Debug\FacadeJNI.obj
+         x64\Debug\ConfigScene.obj
+         x64\Debug\ArbreRendu.obj
+         x64\Debug\ArbreRenduINF2990.obj
+         x64\Debug\NoeudAbstrait.obj
+         x64\Debug\NoeudComposite.obj
+         x64\Debug\BancTests.obj
+         x64\Debug\BoiteEnglobanteOrienteeTest.obj
+         x64\Debug\ConfigSceneTest.obj
+         x64\Debug\NoeudAbstraitTest.obj
+         x64\Debug\NoeudCompositeTest.obj
+         x64\Debug\TestVaisseau.obj
+         x64\Debug\ProjectionOrthoTest.obj
+         x64\Debug\Vecteur3fTest.obj
+         "C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\x64\Debug\Utilitaire.lib"
+            Creating library ../../Exe/DLL/INF2990.lib and object ../../Exe/DLL/INF2990.exp
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         INF2990.vcxproj -> C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\../../Exe/DLL/INF2990.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../Exe/DLL/INF2990.dll;#2" /manifest x64\Debug\INF2990.dll.intermediate.manifest
+       PostBuildEvent:
+         "C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\..\Java\LancerInterfaceGraphiqueTests.bat"
+         :VCEnd
+     1>Done Building Project "C:\Users\Kenny\Desktop\inf2990-04\Cadriciel\Sources\C++\INF2990.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.51

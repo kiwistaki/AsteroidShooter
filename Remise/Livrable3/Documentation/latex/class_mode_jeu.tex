@@ -1,0 +1,65 @@
+\hypertarget{class_mode_jeu}{\section{Mode\-Jeu Class Reference}
+\label{class_mode_jeu}\index{Mode\-Jeu@{Mode\-Jeu}}
+}
+
+
+Classe contenant les fonctionalites en lien avec le gameplay (une partie est en cours), donc la zone de jeu a ete chargee et le(s) joueur(s) puvent controler leur vaisseau. La minuterie part, les animations, la physique du jeu et les regles sont appliquees. La barre de menus devient visible seulement lorsque la partie est en pause (bouton \char`\"{}\-E\-S\-C\char`\"{}). Les deux options de la barres de menus sont \-: retourner au menu principal et changer de camera. \char`\"{}\-Backspace\char`\"{} reinitialise la partie Les modes suivent le command pattern.  
+
+
+
+
+{\ttfamily \#include $<$Mode\-Jeu.\-h$>$}
+
+Inheritance diagram for Mode\-Jeu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mode_jeu}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__inf2990_ga71285f3153fb23eef836554fd235cddf}{Liste\-Commandes} \{ {\bfseries P\-A\-U\-S\-E}, 
+{\bfseries R\-E\-I\-N\-I\-T\-I\-A\-L\-I\-S\-E\-R}, 
+{\bfseries N\-O\-M\-B\-R\-E\-C\-O\-M\-M\-A\-N\-D\-E\-S}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerations des commandes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga8e1c11efcd2c69971fb4862da5a9307e}{Mode\-Jeu} (\hyperlink{class_carte}{Carte} \&carte, \hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$vue)
+\item 
+\hypertarget{group__inf2990_gabe9c0c22f3c612975783b898cb873b9e}{virtual \hyperlink{group__inf2990_gabe9c0c22f3c612975783b898cb873b9e}{$\sim$\-Mode\-Jeu} ()}\label{group__inf2990_gabe9c0c22f3c612975783b898cb873b9e}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga9dc0e59a90ca442a5ca07e810e8eaa62}{virtual void \hyperlink{group__inf2990_ga9dc0e59a90ca442a5ca07e810e8eaa62}{update} (float delta\-T)}\label{group__inf2990_ga9dc0e59a90ca442a5ca07e810e8eaa62}
+
+\begin{DoxyCompactList}\small\item\em Update recoit les informations et laisse le jeu analyser les donnees. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gaf96271bae84dac32f8dd5ce7e7eb4bb7}{logique\-Vaisseaux} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Methode qui s'occupe de la logique des vaisseaux Joueurs. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga46958594262809ada6a0bcf7bc53bd2c}{virtual void \hyperlink{group__inf2990_ga46958594262809ada6a0bcf7bc53bd2c}{traitement\-Initial} ()}\label{group__inf2990_ga46958594262809ada6a0bcf7bc53bd2c}
+
+\begin{DoxyCompactList}\small\item\em Methode qui definit le mode et la position des joueurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__inf2990_gab9c63901c8b14b0d0a11de3e76e686a0}{float \hyperlink{group__inf2990_gab9c63901c8b14b0d0a11de3e76e686a0}{temps\-Jeu\-\_\-}}\label{group__inf2990_gab9c63901c8b14b0d0a11de3e76e686a0}
+
+\begin{DoxyCompactList}\small\item\em Attribut pour la duree de jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe contenant les fonctionalites en lien avec le gameplay (une partie est en cours), donc la zone de jeu a ete chargee et le(s) joueur(s) puvent controler leur vaisseau. La minuterie part, les animations, la physique du jeu et les regles sont appliquees. La barre de menus devient visible seulement lorsque la partie est en pause (bouton \char`\"{}\-E\-S\-C\char`\"{}). Les deux options de la barres de menus sont \-: retourner au menu principal et changer de camera. \char`\"{}\-Backspace\char`\"{} reinitialise la partie Les modes suivent le command pattern. 
+
+\begin{DoxyAuthor}{Author}
+Floppy\-Disketeers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014-\/01-\/21 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Jeu/\hyperlink{_mode_jeu_8h}{Mode\-Jeu.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\-Jeu/\-Mode\-Jeu/\hyperlink{_mode_jeu_8cpp}{Mode\-Jeu.\-cpp}\end{DoxyCompactItemize}

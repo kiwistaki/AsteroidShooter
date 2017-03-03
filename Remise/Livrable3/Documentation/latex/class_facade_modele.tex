@@ -1,0 +1,168 @@
+\hypertarget{class_facade_modele}{\section{Facade\-Modele Class Reference}
+\label{class_facade_modele}\index{Facade\-Modele@{Facade\-Modele}}
+}
+
+
+Classe qui constitue une interface (une facade) sur l'ensemble du modele et des classes qui le composent.  
+
+
+
+
+{\ttfamily \#include $<$Facade\-Modele.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__inf2990_gabf12ccafbabf1049cb8327cf78699a1b}{initialiser\-Open\-G\-L} (H\-W\-N\-D h\-Wnd)
+\item 
+void \hyperlink{group__inf2990_gaddb877ab50988fa2508dc3b84838a88d}{charger\-Configuration} (string nom\-Fichier)
+\item 
+void \hyperlink{group__inf2990_gac6f2eb4311410473faeab6ce4906be3b}{enregistrer\-Configuration} (string nom\-Fichier) const 
+\item 
+void \hyperlink{group__inf2990_gac7b831ce13626514e9637c4533d7c15d}{liberer\-Open\-G\-L} ()
+\begin{DoxyCompactList}\small\item\em Libere le contexte Open\-G\-L. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gac014b43b148f4ef4bb2cf035a329af85}{afficher} (bool en\-Pause) const 
+\begin{DoxyCompactList}\small\item\em Affiche le contenu du modele. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga23bed5e3b226e446cfee30084150f7f7}{afficher\-Base} () const 
+\begin{DoxyCompactList}\small\item\em Affiche la base du contenu du modele. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gac57075e080a711485f2c4603c239b374}{void \hyperlink{group__inf2990_gac57075e080a711485f2c4603c239b374}{positionner\-Lumieres} () const }\label{group__inf2990_gac57075e080a711485f2c4603c239b374}
+
+\begin{DoxyCompactList}\small\item\em Initialise l'eclairage. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga249167a1dcfc9593e6a3009fe4b1488d}{recevoir\-Input} (int mouse\-X, int mouse\-Y, int boutton, int touche, int scroll)
+\item 
+\hyperlink{classvue_1_1_vue}{vue\-::\-Vue} $\ast$ \hyperlink{group__inf2990_gaa56cf96b7e381e0f14e2c9a55be913bf}{obtenir\-Vue} ()
+\begin{DoxyCompactList}\small\item\em Retourne la vue courante. \end{DoxyCompactList}\item 
+const \hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\-Rendu\-I\-N\-F2990} $\ast$ \hyperlink{group__inf2990_gaf578161d03b2157cdaa3182900ff61cc}{obtenir\-Arbre\-Rendu\-I\-N\-F2990} () const 
+\begin{DoxyCompactList}\small\item\em Retourne l'arbre de rendu. \end{DoxyCompactList}\item 
+\hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\-Rendu\-I\-N\-F2990} $\ast$ \hyperlink{group__inf2990_ga12d5594db6a9507b24c7e1ffcd6751af}{obtenir\-Arbre\-Rendu\-I\-N\-F2990} ()
+\begin{DoxyCompactList}\small\item\em Retourne l'arbre de rendu. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga17ff9b1c855fc92e4599e90dd955494c}{initialiser} ()
+\item 
+void \hyperlink{group__inf2990_ga6bece5354242a7fe65730f9fd19ff9d2}{initialiser\-Mode\-Edition} ()
+\item 
+void \hyperlink{group__inf2990_ga6ceb0a801047a98e2262537e00face8e}{initialiser\-Partie\-Rapide} (string nom\-Carte, bool mode\-Coop, bool joueur2\-Virtuel)
+\item 
+void \hyperlink{group__inf2990_ga58c1592e43adfcbfe018e2999ec54cc1}{initialiser\-Mode\-Campagne} (bool mode\-Coop, bool joueur2\-Virtuel, vector$<$ string $>$ cartes)
+\item 
+string \hyperlink{group__inf2990_gabc87c923450bc5fcc6e6c613c8865cab}{obtenir\-Informations} ()
+\item 
+void \hyperlink{group__inf2990_ga339a0bfdab7f4dd0bd275ce1543e9256}{prochaine\-Partie} ()
+\item 
+void \hyperlink{group__inf2990_ga6398bf1dc8c02d73af9998ac4e808727}{initialiser\-Mode\-Test} ()
+\item 
+void \hyperlink{group__inf2990_ga24dcb4e32cf104797158b398bafbfbb7}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Anime la scene. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga4866a15c25c30931bbcf98b4e9125b1e}{set\-Commande} (int numero\-Outil)
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'appeler une commande. \end{DoxyCompactList}\item 
+string \hyperlink{group__inf2990_ga484d69b2f9c6a4ac4c7587d877f8bb84}{get\-Nom\-Carte\-Actuelle} ()
+\begin{DoxyCompactList}\small\item\em Methode qui permet de recuperer le nom de la carte. \end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{group__inf2990_ga19898acea4e21bbe0bebed9011564af5}{get\-Carte} ()
+\item 
+\hypertarget{class_facade_modele_a0d405f6bece9e0e409d70c38b68e65e9}{void {\bfseries set\-Carte} (\hyperlink{class_carte}{Carte} $\ast$carte)}\label{class_facade_modele_a0d405f6bece9e0e409d70c38b68e65e9}
+
+\item 
+void \hyperlink{group__inf2990_gaf9c0417629871508d0d7ebed21108126}{set\-Position\-Angle\-Scale\-Objet\-Selectionne} (float pos\-X, float pos\-Y, float pos\-Z, float angle, float scale\-X, float scale\-Y, float scale\-Z)
+\item 
+bool \hyperlink{group__inf2990_ga8112f8d4623f5696ac46a1b501fe6a8b}{get\-Position\-Angle\-Scale\-Type\-Objet\-Selectionne} (float floats\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{group__inf2990_ga5ea9f06fe4eaa7e7c6571d3d7c4956d8}{get\-Touches\-Duree\-Jeu\-Point\-De\-Vie} (float floats\mbox{[}$\,$\mbox{]})
+\item 
+size\-\_\-t \hyperlink{group__inf2990_ga39f0aad80adc1f4cedf86cf538904e8e}{get\-Nombre\-Objets\-Selectionnes} ()
+\item 
+void \hyperlink{group__inf2990_gafae55091b248c33936c27127f0f45143}{map\-Commande} (int commande, int touche)
+\begin{DoxyCompactList}\small\item\em Methode qui permet de map la commande a une touche spécifique pour le mode Jeu. \end{DoxyCompactList}\item 
+\hypertarget{class_facade_modele_a5df881c88ba9425c5217834a5ab89013}{map$<$ int, int $>$ $\ast$ {\bfseries get\-Map\-Commandes} ()}\label{class_facade_modele_a5df881c88ba9425c5217834a5ab89013}
+
+\item 
+void \hyperlink{group__inf2990_gad73b58407c4f900294e585912d917f3b}{recevoir\-Multiple\-Input} (const vector$<$ int $>$ \&touches)
+\item 
+\hypertarget{class_facade_modele_a8533b2ced3306018bb25ed68ec3bd944}{const vector$<$ int $>$ \& {\bfseries get\-Touches\-Appuyees} () const }\label{class_facade_modele_a8533b2ced3306018bb25ed68ec3bd944}
+
+\item 
+\hypertarget{class_facade_modele_ab1824da8a9019558983b7ca5d36e4d20}{void \hyperlink{class_facade_modele_ab1824da8a9019558983b7ca5d36e4d20}{set\-Duree\-Jeu} (double duree)}\label{class_facade_modele_ab1824da8a9019558983b7ca5d36e4d20}
+
+\begin{DoxyCompactList}\small\item\em Permet de recuperer le temps de jeu. \end{DoxyCompactList}\item 
+\hypertarget{class_facade_modele_a27a077831c8d0b13cf28410dc16fc432}{double {\bfseries get\-Duree\-Jeu} ()}\label{class_facade_modele_a27a077831c8d0b13cf28410dc16fc432}
+
+\item 
+\hypertarget{class_facade_modele_a8fab5568d4fdbe20593238bf51b20920}{void \hyperlink{class_facade_modele_a8fab5568d4fdbe20593238bf51b20920}{set\-Pts\-Vie\-Station} (int pts\-Vie)}\label{class_facade_modele_a8fab5568d4fdbe20593238bf51b20920}
+
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir les points de vies des stations. \end{DoxyCompactList}\item 
+\hypertarget{class_facade_modele_af1d34ad2b4f42cec6b18159cf5eb5bd6}{int {\bfseries get\-Pts\-De\-Vie\-Station} ()}\label{class_facade_modele_af1d34ad2b4f42cec6b18159cf5eb5bd6}
+
+\item 
+\hypertarget{class_facade_modele_ad967921ed4603493f18df218a9c6ca96}{void {\bfseries set\-Temps\-Jeu} (int temps)}\label{class_facade_modele_ad967921ed4603493f18df218a9c6ca96}
+
+\item 
+\hypertarget{class_facade_modele_a9d0b28f4f0a3866411fd0ba7b5c69e4a}{int {\bfseries get\-Temps\-Jeu} () const }\label{class_facade_modele_a9d0b28f4f0a3866411fd0ba7b5c69e4a}
+
+\item 
+\hypertarget{class_facade_modele_ad7341a892b7674d2c7920e33ecc223e0}{void {\bfseries set\-Statut\-Jeu} (int statut)}\label{class_facade_modele_ad7341a892b7674d2c7920e33ecc223e0}
+
+\item 
+\hypertarget{class_facade_modele_a83bc0b2bfe74b4021902f52cab516122}{int {\bfseries get\-Statut\-Jeu} () const }\label{class_facade_modele_a83bc0b2bfe74b4021902f52cab516122}
+
+\item 
+void \hyperlink{group__inf2990_ga7ffb8a9cdcfe5e2d8d67983280916891}{set\-Canvas\-Size\-Max} (float largeur\-Max\-Canvas, float hauteur\-Max\-Canvas)
+\begin{DoxyCompactList}\small\item\em Setter les plus gros grandeur du canvas. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga93621ecc38bc7fe371d52b265b04aa6d}{void \hyperlink{group__inf2990_ga93621ecc38bc7fe371d52b265b04aa6d}{set\-Type\-De\-Vue} (bool est\-Ortho)}\label{group__inf2990_ga93621ecc38bc7fe371d52b265b04aa6d}
+
+\begin{DoxyCompactList}\small\item\em Méthode permettant de changer le type de vue du mode en cours. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gad36485663b0950182bf9b1bba9ed90e2}{allumer\-Lumiere\-Ambiante} ()
+\item 
+\hypertarget{group__inf2990_gad9ae5672a0563833d98805f68018e9ba}{void \hyperlink{group__inf2990_gad9ae5672a0563833d98805f68018e9ba}{eteindre\-Lumiere\-Ambiante} ()}\label{group__inf2990_gad9ae5672a0563833d98805f68018e9ba}
+
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'eteindre la lumiere ambiante. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gaf4fc4013245579ec5bc11cfcc768b322}{void \hyperlink{group__inf2990_gaf4fc4013245579ec5bc11cfcc768b322}{allumer\-Lumiere\-Diffuse} ()}\label{group__inf2990_gaf4fc4013245579ec5bc11cfcc768b322}
+
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'activer la lumiere diffuse. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga8e4767df14d92d52bc3f0575b763ca53}{void \hyperlink{group__inf2990_ga8e4767df14d92d52bc3f0575b763ca53}{eteindre\-Lumiere\-Diffuse} ()}\label{group__inf2990_ga8e4767df14d92d52bc3f0575b763ca53}
+
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'eteindre la lumiere diffuse. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gacb719c4fe76a3faa7eb23ad3fcf30ad7}{void \hyperlink{group__inf2990_gacb719c4fe76a3faa7eb23ad3fcf30ad7}{allumer\-Lumiere\-Spot} ()}\label{group__inf2990_gacb719c4fe76a3faa7eb23ad3fcf30ad7}
+
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'activer la lumiere spot. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga1802403115bae86fe223014578876e6f}{void \hyperlink{group__inf2990_ga1802403115bae86fe223014578876e6f}{eteindre\-Lumiere\-Spot} ()}\label{group__inf2990_ga1802403115bae86fe223014578876e6f}
+
+\begin{DoxyCompactList}\small\item\em Methode qui permet d'eteindre la lumiere spot. \end{DoxyCompactList}\item 
+\hypertarget{class_facade_modele_a93590ba2d322a2c59ef620ee08309f4c}{bool {\bfseries is\-Mode\-Edition} ()}\label{class_facade_modele_a93590ba2d322a2c59ef620ee08309f4c}
+
+\item 
+\hypertarget{class_facade_modele_a9422fe483bbc7acfc6c31589d2366acd}{bool {\bfseries is\-Mode\-Ortho} ()}\label{class_facade_modele_a9422fe483bbc7acfc6c31589d2366acd}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_facade_modele}{Facade\-Modele} $\ast$ \hyperlink{group__inf2990_gaf52e6d65d1a911d3e1699fc30af97d38}{obtenir\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Obtient l'instance unique de la classe. \end{DoxyCompactList}\item 
+static void \hyperlink{group__inf2990_gacbf0495fda26f5be37089470dc5f4372}{liberer\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Libere l'instance unique de la classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_facade_modele_af4cac1d2a4218533e3915af80b11544b}{\hyperlink{class_phont}{Phont} \hyperlink{class_facade_modele_af4cac1d2a4218533e3915af80b11544b}{phont\-Texte\-\_\-}}\label{class_facade_modele_af4cac1d2a4218533e3915af80b11544b}
+
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+\hypertarget{class_facade_modele_a50c67384dd40197c99de11c0f8ae8e9d}{\hyperlink{class_phont}{Phont} {\bfseries phont\-Vie\-\_\-}}\label{class_facade_modele_a50c67384dd40197c99de11c0f8ae8e9d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui constitue une interface (une facade) sur l'ensemble du modele et des classes qui le composent. 
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/02-\/20 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_facade_modele_8h}{Facade\-Modele.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Application/\hyperlink{_facade_modele_8cpp}{Facade\-Modele.\-cpp}\end{DoxyCompactItemize}

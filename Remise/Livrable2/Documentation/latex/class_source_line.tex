@@ -1,0 +1,135 @@
+\hypertarget{class_source_line}{\section{Source\-Line Class Reference}
+\label{class_source_line}\index{Source\-Line@{Source\-Line}}
+}
+
+
+Represents a source line location.
+
+Used to capture the failure location in assertion.  
+
+
+
+
+{\ttfamily \#include $<$Source\-Line.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_source_line_ab320a0cc6ccb20391487b622698c9ea8}{Source\-Line} ()
+\item 
+\hyperlink{class_source_line_a9fb221c8969d14c88b909af568ab91d5}{Source\-Line} (const \hyperlink{class_source_line}{Source\-Line} \&other)
+\item 
+\hyperlink{class_source_line_a2a6cc3b13b3e76b64475ba2e9aff29d0}{Source\-Line} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{class_source_line_a1571a51d45ebcea382b86224ef767a2e}{file\-Name}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_source_line_ada3cce7f748d6fedffc7f3e9a348bc54}{line\-Number})
+\item 
+\hyperlink{class_source_line}{Source\-Line} \& \hyperlink{class_source_line_a25e0e26b31c067a85d008240764ed47e}{operator=} (const \hyperlink{class_source_line}{Source\-Line} \&other)
+\item 
+virtual \hyperlink{class_source_line_afe82eb20dbe4291911d7e369b96b04aa}{$\sim$\-Source\-Line} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_source_line_a4ebbbf64f2d1688803298dd83cba6c77}{is\-Valid} () const 
+\item 
+\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_source_line_ada3cce7f748d6fedffc7f3e9a348bc54}{line\-Number} () const 
+\item 
+\hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \hyperlink{class_source_line_a1571a51d45ebcea382b86224ef767a2e}{file\-Name} () const 
+\item 
+bool \hyperlink{class_source_line_a6c9eff68161f364725b3a51fc60c3e01}{operator==} (const \hyperlink{class_source_line}{Source\-Line} \&other) const 
+\item 
+bool \hyperlink{class_source_line_aa4633f46f9c9f470c6b680327d002e86}{operator!=} (const \hyperlink{class_source_line}{Source\-Line} \&other) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a source line location.
+
+Used to capture the failure location in assertion. 
+
+Use the \hyperlink{_source_line_8h_a76898763afdc78bf5924dd7744b4c630}{C\-P\-P\-U\-N\-I\-T\-\_\-\-S\-O\-U\-R\-C\-E\-L\-I\-N\-E()} macro to construct that object. Typically used when writing an assertion macro in association with \hyperlink{struct_asserter}{Asserter}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_asserter}{Asserter}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_source_line_ab320a0cc6ccb20391487b622698c9ea8}{\index{Source\-Line@{Source\-Line}!Source\-Line@{Source\-Line}}
+\index{Source\-Line@{Source\-Line}!SourceLine@{Source\-Line}}
+\subsubsection[{Source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Source\-Line\-::\-Source\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_source_line_ab320a0cc6ccb20391487b622698c9ea8}
+\hypertarget{class_source_line_a9fb221c8969d14c88b909af568ab91d5}{\index{Source\-Line@{Source\-Line}!Source\-Line@{Source\-Line}}
+\index{Source\-Line@{Source\-Line}!SourceLine@{Source\-Line}}
+\subsubsection[{Source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Source\-Line\-::\-Source\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Source\-Line} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_source_line_a9fb221c8969d14c88b909af568ab91d5}
+\hypertarget{class_source_line_a2a6cc3b13b3e76b64475ba2e9aff29d0}{\index{Source\-Line@{Source\-Line}!Source\-Line@{Source\-Line}}
+\index{Source\-Line@{Source\-Line}!SourceLine@{Source\-Line}}
+\subsubsection[{Source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Source\-Line\-::\-Source\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{file\-Name, }
+\item[{{\bf int}}]{line\-Number}
+\end{DoxyParamCaption}
+)}}\label{class_source_line_a2a6cc3b13b3e76b64475ba2e9aff29d0}
+\hypertarget{class_source_line_afe82eb20dbe4291911d7e369b96b04aa}{\index{Source\-Line@{Source\-Line}!$\sim$\-Source\-Line@{$\sim$\-Source\-Line}}
+\index{$\sim$\-Source\-Line@{$\sim$\-Source\-Line}!SourceLine@{Source\-Line}}
+\subsubsection[{$\sim$\-Source\-Line}]{\setlength{\rightskip}{0pt plus 5cm}virtual Source\-Line\-::$\sim$\-Source\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_source_line_afe82eb20dbe4291911d7e369b96b04aa}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_source_line_a1571a51d45ebcea382b86224ef767a2e}{\index{Source\-Line@{Source\-Line}!file\-Name@{file\-Name}}
+\index{file\-Name@{file\-Name}!SourceLine@{Source\-Line}}
+\subsubsection[{file\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} Source\-Line\-::file\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_source_line_a1571a51d45ebcea382b86224ef767a2e}
+\hypertarget{class_source_line_a4ebbbf64f2d1688803298dd83cba6c77}{\index{Source\-Line@{Source\-Line}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!SourceLine@{Source\-Line}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Source\-Line\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_source_line_a4ebbbf64f2d1688803298dd83cba6c77}
+\hypertarget{class_source_line_ada3cce7f748d6fedffc7f3e9a348bc54}{\index{Source\-Line@{Source\-Line}!line\-Number@{line\-Number}}
+\index{line\-Number@{line\-Number}!SourceLine@{Source\-Line}}
+\subsubsection[{line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Source\-Line\-::line\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_source_line_ada3cce7f748d6fedffc7f3e9a348bc54}
+\hypertarget{class_source_line_aa4633f46f9c9f470c6b680327d002e86}{\index{Source\-Line@{Source\-Line}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!SourceLine@{Source\-Line}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Source\-Line\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Source\-Line} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_source_line_aa4633f46f9c9f470c6b680327d002e86}
+\hypertarget{class_source_line_a25e0e26b31c067a85d008240764ed47e}{\index{Source\-Line@{Source\-Line}!operator=@{operator=}}
+\index{operator=@{operator=}!SourceLine@{Source\-Line}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Source\-Line}\& Source\-Line\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Source\-Line} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_source_line_a25e0e26b31c067a85d008240764ed47e}
+\hypertarget{class_source_line_a6c9eff68161f364725b3a51fc60c3e01}{\index{Source\-Line@{Source\-Line}!operator==@{operator==}}
+\index{operator==@{operator==}!SourceLine@{Source\-Line}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Source\-Line\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Source\-Line} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_source_line_a6c9eff68161f364725b3a51fc60c3e01}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Commun/\-Externe/cppunit/include/cppunit/\hyperlink{_source_line_8h}{Source\-Line.\-h}\end{DoxyCompactItemize}

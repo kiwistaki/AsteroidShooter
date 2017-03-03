@@ -1,0 +1,131 @@
+\hypertarget{class_noeud_asteroide}{\section{Noeud\-Asteroide Class Reference}
+\label{class_noeud_asteroide}\index{Noeud\-Asteroide@{Noeud\-Asteroide}}
+}
+
+
+Cette classe permet d'afficher un asteroide grace a l'arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\-Asteroide.\-h$>$}
+
+Inheritance diagram for Noeud\-Asteroide\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_asteroide}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_noeud_asteroide_a6879cff59fdc09b742b9e0850bec62a8}{Noeud\-Asteroide} (const std\-::string \&type)
+\item 
+\hyperlink{class_noeud_asteroide_a0cf8165f8385ddfc802312eb3c4abe57}{Noeud\-Asteroide} (const \hyperlink{class_noeud_asteroide}{Noeud\-Asteroide} \&src)
+\item 
+\hyperlink{class_noeud_asteroide_adbf6fbd81915741bb2f2c44907489e6e}{$\sim$\-Noeud\-Asteroide} ()
+\item 
+\hypertarget{class_noeud_asteroide_a987232997d11bee582d5e26cbda9851d}{void {\bfseries set\-Cible} (bool est\-Cible)}\label{class_noeud_asteroide_a987232997d11bee582d5e26cbda9851d}
+
+\item 
+virtual void \hyperlink{class_noeud_asteroide_a4f0750d3acc170de96351168456835d8}{animer} (float dt)
+\item 
+virtual void \hyperlink{class_noeud_asteroide_ab0db59bbf10bb8c24ccf62b84cf2bf10}{afficher\-Concret} () const 
+\begin{DoxyCompactList}\small\item\em Le dessin concret du noeud (pour le moment c'est temporaire. \end{DoxyCompactList}\item 
+\hypertarget{class_noeud_asteroide_aa61b44a5531337050117382dd2bbd94d}{void {\bfseries set\-Rayon} (float rayon)}\label{class_noeud_asteroide_aa61b44a5531337050117382dd2bbd94d}
+
+\item 
+\hypertarget{class_noeud_asteroide_a2924a9031e94faaf53a26b2afc8f360c}{float {\bfseries get\-Rayon} () const }\label{class_noeud_asteroide_a2924a9031e94faaf53a26b2afc8f360c}
+
+\item 
+\hypertarget{class_noeud_asteroide_a490e5be76099dfa581df7c104b69162d}{void {\bfseries set\-Angle\-X} (float angle)}\label{class_noeud_asteroide_a490e5be76099dfa581df7c104b69162d}
+
+\item 
+\hypertarget{class_noeud_asteroide_a22a25b8240e0d3bb45e3295192dd42e9}{void {\bfseries set\-Angle\-Y} (float angle)}\label{class_noeud_asteroide_a22a25b8240e0d3bb45e3295192dd42e9}
+
+\item 
+\hypertarget{class_noeud_asteroide_a8674615a93c162a4fdc17768ab0aef0c}{void {\bfseries set\-Angle\-Z} (float angle)}\label{class_noeud_asteroide_a8674615a93c162a4fdc17768ab0aef0c}
+
+\item 
+\hypertarget{class_noeud_asteroide_a80b8db5ca5b9ae9ae14da2397aab19b5}{float {\bfseries get\-Angle\-X} ()}\label{class_noeud_asteroide_a80b8db5ca5b9ae9ae14da2397aab19b5}
+
+\item 
+\hypertarget{class_noeud_asteroide_a7b242e9e31832e72914cb31493521f3e}{float {\bfseries get\-Angle\-Y} ()}\label{class_noeud_asteroide_a7b242e9e31832e72914cb31493521f3e}
+
+\item 
+\hypertarget{class_noeud_asteroide_a8c5d24777b1f52bdc9a630250e46a3dc}{float {\bfseries get\-Angle\-Z} ()}\label{class_noeud_asteroide_a8c5d24777b1f52bdc9a630250e46a3dc}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe permet d'afficher un asteroide grace a l'arbre de rendu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_noeud_asteroide_a6879cff59fdc09b742b9e0850bec62a8}{\index{Noeud\-Asteroide@{Noeud\-Asteroide}!Noeud\-Asteroide@{Noeud\-Asteroide}}
+\index{Noeud\-Asteroide@{Noeud\-Asteroide}!NoeudAsteroide@{Noeud\-Asteroide}}
+\subsubsection[{Noeud\-Asteroide}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Asteroide\-::\-Noeud\-Asteroide (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_asteroide_a6879cff59fdc09b742b9e0850bec62a8}
+Constructeur. Creer la liste d'affichage pour l'asteroide 
+\begin{DoxyParams}{Parameters}
+{\em type} & Le type du noeud \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_asteroide_a0cf8165f8385ddfc802312eb3c4abe57}{\index{Noeud\-Asteroide@{Noeud\-Asteroide}!Noeud\-Asteroide@{Noeud\-Asteroide}}
+\index{Noeud\-Asteroide@{Noeud\-Asteroide}!NoeudAsteroide@{Noeud\-Asteroide}}
+\subsubsection[{Noeud\-Asteroide}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Asteroide\-::\-Noeud\-Asteroide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Noeud\-Asteroide} \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_asteroide_a0cf8165f8385ddfc802312eb3c4abe57}
+Constructeur par copie 
+\begin{DoxyParams}{Parameters}
+{\em src} & L'objet que l'on veut copier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_noeud_asteroide_adbf6fbd81915741bb2f2c44907489e6e}{\index{Noeud\-Asteroide@{Noeud\-Asteroide}!$\sim$\-Noeud\-Asteroide@{$\sim$\-Noeud\-Asteroide}}
+\index{$\sim$\-Noeud\-Asteroide@{$\sim$\-Noeud\-Asteroide}!NoeudAsteroide@{Noeud\-Asteroide}}
+\subsubsection[{$\sim$\-Noeud\-Asteroide}]{\setlength{\rightskip}{0pt plus 5cm}Noeud\-Asteroide\-::$\sim$\-Noeud\-Asteroide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_noeud_asteroide_adbf6fbd81915741bb2f2c44907489e6e}
+Destructeur 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_noeud_asteroide_ab0db59bbf10bb8c24ccf62b84cf2bf10}{\index{Noeud\-Asteroide@{Noeud\-Asteroide}!afficher\-Concret@{afficher\-Concret}}
+\index{afficher\-Concret@{afficher\-Concret}!NoeudAsteroide@{Noeud\-Asteroide}}
+\subsubsection[{afficher\-Concret}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\-Asteroide\-::afficher\-Concret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_noeud_asteroide_ab0db59bbf10bb8c24ccf62b84cf2bf10}
+
+
+Le dessin concret du noeud (pour le moment c'est temporaire. 
+
+Transformation par rapport a l'objet lui-\/meme 
+
+Reimplemented from \hyperlink{group__inf2990_ga330df455c8b08440d3c8e64d0a480391}{Noeud\-Abstrait}.
+
+\hypertarget{class_noeud_asteroide_a4f0750d3acc170de96351168456835d8}{\index{Noeud\-Asteroide@{Noeud\-Asteroide}!animer@{animer}}
+\index{animer@{animer}!NoeudAsteroide@{Noeud\-Asteroide}}
+\subsubsection[{animer}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\-Asteroide\-::animer (
+\begin{DoxyParamCaption}
+\item[{float}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_noeud_asteroide_a4f0750d3acc170de96351168456835d8}
+Animation du noeud 
+
+Reimplemented from \hyperlink{group__inf2990_gadc6ebe69894dbb682fdd0ecb1b6c11e9}{Noeud\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/\hyperlink{_noeud_asteroide_8h}{Noeud\-Asteroide.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\-Noeuds/Noeud\-Asteroide.\-cpp\end{DoxyCompactItemize}

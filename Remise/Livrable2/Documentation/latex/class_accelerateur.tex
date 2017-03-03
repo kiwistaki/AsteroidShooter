@@ -1,0 +1,258 @@
+\hypertarget{class_accelerateur}{\section{Accelerateur Class Reference}
+\label{class_accelerateur}\index{Accelerateur@{Accelerateur}}
+}
+
+
+Cette classe qui permet de creer des accelerateurs.  
+
+
+
+
+{\ttfamily \#include $<$Accelerateur.\-h$>$}
+
+Inheritance diagram for Accelerateur\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_accelerateur}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gaa9565cdb55e423b975ed39344f2c57a9}{Accelerateur} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga225372057b8bc81b0488af790df85fae}{Accelerateur} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position\-Depart, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, \hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} poids)
+\item 
+\hyperlink{group__inf2990_gac826e93cf1b9d277f38ca09d52636a43}{Accelerateur} (const \hyperlink{class_accelerateur}{Accelerateur} \&accelerateur)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie. \end{DoxyCompactList}\item 
+virtual \hyperlink{group__inf2990_ga3e17016992773f130a44cd9f70249e85}{$\sim$\-Accelerateur} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual \hyperlink{group___i_n_f2990-04_ga1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{group__inf2990_ga2ee3174059cff90eda7941e20699f2c8}{get\-Type} ()
+\begin{DoxyCompactList}\small\item\em Retourne le type de l'element. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga5bfc1b71b8460b0d34667ab37e1881ff}{update} (\hyperlink{fmod_8h_aeb841aa4b4b5f444b5d739d865b420af}{float} delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group__inf2990_ga56f704dcb76a319389d98488226e2b55}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_gadae7daa610394fcc68cdfc663e464595}{check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\begin{DoxyCompactList}\small\item\em Permet de verifier la collision entre un accelerateur et un vaisseau ainsi que de la traiter. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_ga5a2f46d23dac6e1999aaf918609c58fa}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+virtual bool \hyperlink{class_accelerateur_a508a92e1d984eeae57f1bbdd84c84322}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_accelerateur_aa85ee233f8bc86cf6c826acc0580e0a2}{check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)
+\item 
+virtual bool \hyperlink{class_accelerateur_a869783e0782c83f7eea473b618b14220}{check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)
+\item 
+virtual bool \hyperlink{class_accelerateur_ab61bf9baed0ba9963341ca3d8fbf1c60}{check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)
+\item 
+virtual bool \hyperlink{class_accelerateur_ac7e350f65c76b6d5afdb3f42212e32f5}{check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)
+\item 
+virtual bool \hyperlink{class_accelerateur_aeb1f74adbddbddf58d2dc09c8f6c2e34}{check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga6a95509f0fcb19be7475a4a5474583a4}{traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_ab4e3a5f0fb2efdafe4ef6746068c73b0}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_ada602e23f6c55a15519d9b552ea3c58b}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_a883b1b41fa23cf033517a2da5f51ccbd}{traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_a10595ee8cf0d6f79609733c543971a69}{traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_af07cb95ae53037e8947353254ee6ece5}{traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_ab14c0dd64c691ee4d586dfeef881ec2b}{traiter\-Collision} (\hyperlink{class_position_depart}{Position\-Depart} $\ast$position\-Depart)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_a7e55fed6f2d27c73b3b4063f5c992174}{traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{class_accelerateur_a6797ee1374e0cbff0e02b4374da67c35}{traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{group__inf2990_ga9f211d39002f7446242da80a6c643945}{T\-E\-M\-P\-S\-\_\-\-D\-I\-N\-A\-C\-T\-I\-V\-I\-T\-E} = 5.\-0f
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe qui permet de creer des accelerateurs. 
+
+La classe \hyperlink{class_accelerateur}{Accelerateur} contiendra un pointeur vers un noeud\-Accelerateur afin que celle-\/ci s'occupe de la texture de l'accelerateur. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_accelerateur_a508a92e1d984eeae57f1bbdd84c84322}{\index{Accelerateur@{Accelerateur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Accelerateur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerateur} $\ast$}]{accelerateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_a508a92e1d984eeae57f1bbdd84c84322}
+
+
+Methode pour verifier si une collision existe. 
+
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a11071c15797deae04611da1a0642435a}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_aa85ee233f8bc86cf6c826acc0580e0a2}{\index{Accelerateur@{Accelerateur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Accelerateur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Asteroide} $\ast$}]{asteroide}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_aa85ee233f8bc86cf6c826acc0580e0a2}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_ad1ffd24fa801a4e3c64e86a9886d690c}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_a869783e0782c83f7eea473b618b14220}{\index{Accelerateur@{Accelerateur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Accelerateur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Barriere} $\ast$}]{barriere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_a869783e0782c83f7eea473b618b14220}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_aebace6178f519dd1e5d845731ddb8063}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_ab61bf9baed0ba9963341ca3d8fbf1c60}{\index{Accelerateur@{Accelerateur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Accelerateur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Portail} $\ast$}]{portail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_ab61bf9baed0ba9963341ca3d8fbf1c60}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a90210e78428103adf589e8c29c8076b0}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_ac7e350f65c76b6d5afdb3f42212e32f5}{\index{Accelerateur@{Accelerateur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Accelerateur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile} $\ast$}]{projectile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_ac7e350f65c76b6d5afdb3f42212e32f5}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_aba1ceab5eb1460937054a77b2bf10fbc}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_aeb1f74adbddbddf58d2dc09c8f6c2e34}{\index{Accelerateur@{Accelerateur}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Accelerateur\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Station} $\ast$}]{station}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_aeb1f74adbddbddf58d2dc09c8f6c2e34}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_adf9a2cc6ca52d89b93dbdb44ab932add}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_ab4e3a5f0fb2efdafe4ef6746068c73b0}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Element\-Jeu\-Abstrait} $\ast$}]{element\-Jeu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_ab4e3a5f0fb2efdafe4ef6746068c73b0}
+Methode qui permet d$<$effectuer le traitement de la collision avec le type d'objet La plupart du temps rien ne se passe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em element\-Jeu} & \-: l'autre objet avec lequel il faut verifier la collision\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{group__inf2990_gaaa60e09cf00bea42f27017e1a7a48e7b}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_ada602e23f6c55a15519d9b552ea3c58b}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerateur} $\ast$}]{accelerateur}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_ada602e23f6c55a15519d9b552ea3c58b}
+
+
+Methode pour traiter la collision si elle a lui avec les differents elements. 
+
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a22e8f47285f64372043dc89916c5eac5}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_a883b1b41fa23cf033517a2da5f51ccbd}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Asteroide} $\ast$}]{asteroide}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_a883b1b41fa23cf033517a2da5f51ccbd}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_af6218ea1d9fc026a8f39fbe09a90bfa0}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_a10595ee8cf0d6f79609733c543971a69}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Barriere} $\ast$}]{barriere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_a10595ee8cf0d6f79609733c543971a69}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a97210da984bc5f5024f603e6aba2130f}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_af07cb95ae53037e8947353254ee6ece5}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Portail} $\ast$}]{portail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_af07cb95ae53037e8947353254ee6ece5}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_a2500f6eadb72cb87d1fdc2aa96f4d69b}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_ab14c0dd64c691ee4d586dfeef881ec2b}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Position\-Depart} $\ast$}]{position\-Depart}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_ab14c0dd64c691ee4d586dfeef881ec2b}
+\hypertarget{class_accelerateur_a7e55fed6f2d27c73b3b4063f5c992174}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile} $\ast$}]{projectile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_a7e55fed6f2d27c73b3b4063f5c992174}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_ab06625e0b65cd4e3c96893b2a30ca110}{Element\-Jeu\-Abstrait}.
+
+\hypertarget{class_accelerateur_a6797ee1374e0cbff0e02b4374da67c35}{\index{Accelerateur@{Accelerateur}!traiter\-Collision@{traiter\-Collision}}
+\index{traiter\-Collision@{traiter\-Collision}!Accelerateur@{Accelerateur}}
+\subsubsection[{traiter\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Accelerateur\-::traiter\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Station} $\ast$}]{station}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_accelerateur_a6797ee1374e0cbff0e02b4374da67c35}
+
+
+Implements \hyperlink{class_element_jeu_abstrait_aa757ff192c8fb88de966112d58fdc2a9}{Element\-Jeu\-Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_accelerateur_8h}{Accelerateur.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_accelerateur_8cpp}{Accelerateur.\-cpp}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_projectile_8cpp}{Projectile.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{class_barriere}{\section{Barriere Class Reference}
+\label{class_barriere}\index{Barriere@{Barriere}}
+}
+
+
+Cette classe qui permet de creer des barrieres.  
+
+
+
+
+{\ttfamily \#include $<$Barriere.\-h$>$}
+
+Inheritance diagram for Barriere\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_barriere}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gacf2b80faa55444228db735390db40fc7}{Barriere} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga17283625d17ad9370a60c00357b1bf3e}{Barriere} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position1, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position2, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} taille, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} direction\-Vitesse, float poids)
+\item 
+\hyperlink{group__inf2990_ga87db720230a9aced41fe2d33918f68d8}{Barriere} (const \hyperlink{class_barriere}{Barriere} \&barriere)
+\item 
+virtual \hyperlink{group__inf2990_ga99e534cc4cdddfce853a07d870270989}{$\sim$\-Barriere} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gad85230f246a469fb21f367df473049a3}{virtual bool \hyperlink{group__inf2990_gad85230f246a469fb21f367df473049a3}{check\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)}\label{group__inf2990_gad85230f246a469fb21f367df473049a3}
+
+\begin{DoxyCompactList}\small\item\em Check Collision. \end{DoxyCompactList}\item 
+\hypertarget{class_barriere_ad512ec476e54d29b8edd022a31573764}{virtual bool \hyperlink{class_barriere_ad512ec476e54d29b8edd022a31573764}{check\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_barriere_ad512ec476e54d29b8edd022a31573764}
+
+\begin{DoxyCompactList}\small\item\em Methode pour verifier si une collision existe. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga046dcb0b3592e83e6ceecb848c138185}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{group__inf2990_ga046dcb0b3592e83e6ceecb848c138185}
+
+\item 
+\hypertarget{class_barriere_a3f1b279f8b739e3d06b39d5f6fabc30c}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{class_barriere_a3f1b279f8b739e3d06b39d5f6fabc30c}
+
+\item 
+\hypertarget{class_barriere_aafcaa584b3a1b994cb94fa192505c659}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{class_barriere_aafcaa584b3a1b994cb94fa192505c659}
+
+\item 
+\hypertarget{group__inf2990_ga7a3b327a7f30283a2e6b79bc79eb0040}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{group__inf2990_ga7a3b327a7f30283a2e6b79bc79eb0040}
+
+\item 
+\hypertarget{class_barriere_afd75ee9a9f902f065384684520438feb}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{class_barriere_afd75ee9a9f902f065384684520438feb}
+
+\item 
+\hypertarget{group__inf2990_ga92014a0e895d1a7dd1c637a2033c2809}{virtual bool {\bfseries check\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_ga92014a0e895d1a7dd1c637a2033c2809}
+
+\item 
+virtual bool \hyperlink{group__inf2990_gac7d66192494684c4e7bcdd00fa9b7ab2}{check\-Collision\-Joueur\-Virtuel} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$joueur\-Virtuel)
+\begin{DoxyCompactList}\small\item\em Permet au joueur virtuel de ne pas tirer sur une barrier. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gafc3817554324d494409e24e195088892}{traiter\-Collision} (\hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$element)
+\item 
+\hypertarget{class_barriere_a06cd05cc1baba83705e4999d1109c4b0}{virtual void \hyperlink{class_barriere_a06cd05cc1baba83705e4999d1109c4b0}{traiter\-Collision} (\hyperlink{class_accelerateur}{Accelerateur} $\ast$accelerateur)}\label{class_barriere_a06cd05cc1baba83705e4999d1109c4b0}
+
+\begin{DoxyCompactList}\small\item\em Methode pour traiter la collision si elle a lui avec les differents elements. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_ga187a42d83d5060894239c0ba34d18a8e}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_asteroide}{Asteroide} $\ast$asteroide)}\label{group__inf2990_ga187a42d83d5060894239c0ba34d18a8e}
+
+\item 
+\hypertarget{class_barriere_aceff2c03891e91ab4e6e43785d0680ee}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_barriere}{Barriere} $\ast$barriere)}\label{class_barriere_aceff2c03891e91ab4e6e43785d0680ee}
+
+\item 
+\hypertarget{class_barriere_a253f995214d58262ef072d47f705573b}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_portail}{Portail} $\ast$portail)}\label{class_barriere_a253f995214d58262ef072d47f705573b}
+
+\item 
+\hypertarget{group__inf2990_gaa09a3ee20ab537a1c4f37ad3edcb55b6}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_projectile}{Projectile} $\ast$projectile)}\label{group__inf2990_gaa09a3ee20ab537a1c4f37ad3edcb55b6}
+
+\item 
+\hypertarget{class_barriere_a321838647c5e214b6c0f7374b23f7dfa}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_station}{Station} $\ast$station)}\label{class_barriere_a321838647c5e214b6c0f7374b23f7dfa}
+
+\item 
+\hypertarget{group__inf2990_ga09b425373e5f02b1cbe200e71e006cfd}{virtual void {\bfseries traiter\-Collision} (\hyperlink{class_vaisseau}{Vaisseau} $\ast$vaisseau)}\label{group__inf2990_ga09b425373e5f02b1cbe200e71e006cfd}
+
+\item 
+virtual Type \hyperlink{group__inf2990_ga9a0160da5089efa38867ad45782ae40d}{get\-Type} ()
+\begin{DoxyCompactList}\small\item\em Permet d'obtenir le type de l'element. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga171ffac6e81bf3bbd884212945946354}{update} (float delta\-T)
+\begin{DoxyCompactList}\small\item\em Mise a jour. \end{DoxyCompactList}\item 
+\hypertarget{group__inf2990_gad0aa2475444721471fc452d1b6f9438e}{virtual \hyperlink{class_element_jeu_abstrait}{Element\-Jeu\-Abstrait} $\ast$ \hyperlink{group__inf2990_gad0aa2475444721471fc452d1b6f9438e}{clone} () const }\label{group__inf2990_gad0aa2475444721471fc452d1b6f9438e}
+
+\begin{DoxyCompactList}\small\item\em Permet de cloner l'element. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga00c08e4b911e95aa83ddcd087ff09294}{position\-Barriere} (\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position1, \hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} position2)
+\item 
+\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} \hyperlink{group__inf2990_ga9993ac42c28c45c33526233cfcc302e0}{get\-Position\-Pt1} ()
+\item 
+\hypertarget{group__inf2990_ga45d889538f981bc7d4ebdb631b570ffe}{\hyperlink{group__utilitaire_ga6b2956069f76c7e27df4f79f87e5a48c}{Vecteur3f} {\bfseries get\-Position\-Pt2} ()}\label{group__inf2990_ga45d889538f981bc7d4ebdb631b570ffe}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cette classe qui permet de creer des barrieres. 
+
+La classe \hyperlink{class_barriere}{Barriere} contiendra un pointeur vers un noeud\-Barriere afin que celle-\/ci s'occupe de la texture de la barriere. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_barriere_8h}{Barriere.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Element\-Objet/\hyperlink{_barriere_8cpp}{Barriere.\-cpp}\end{DoxyCompactItemize}

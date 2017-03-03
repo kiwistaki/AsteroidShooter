@@ -1,0 +1,58 @@
+\hypertarget{class_arbre_rendu}{\section{Arbre\-Rendu Class Reference}
+\label{class_arbre_rendu}\index{Arbre\-Rendu@{Arbre\-Rendu}}
+}
+
+
+Classe d'arbre de rendu qui contient la racine de l'arbre de rendu avec les usines qui permettent d'ajouter des noeuds a cet arbre.  
+
+
+
+
+{\ttfamily \#include $<$Arbre\-Rendu.\-h$>$}
+
+Inheritance diagram for Arbre\-Rendu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_arbre_rendu}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gaef1e98a66c4f1d3b468c786edee45ae6}{Arbre\-Rendu} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut. \end{DoxyCompactList}\item 
+virtual \hyperlink{group__inf2990_gadb462923759da0ff632dad097b7bfdab}{$\sim$\-Arbre\-Rendu} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_gaef33737fda55a3916e895e1adc3e88ae}{ajouter\-Usine} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&\hyperlink{fmod_8h_a5338b9cb3874378d7e5adfbe80a8a381}{type}, const \hyperlink{class_usine_noeud}{Usine\-Noeud} $\ast$usine)
+\item 
+\hyperlink{class_noeud_abstrait}{Noeud\-Abstrait} $\ast$ \hyperlink{group__inf2990_ga33ae9013f9cec73854d32527b85b41f9}{creer\-Noeud} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&type\-Nouveau\-Noeud) const 
+\item 
+\hyperlink{class_noeud_abstrait}{Noeud\-Abstrait} $\ast$ \hyperlink{group__inf2990_gac10e5f0623af502d67f72aef764206a3}{ajouter\-Nouveau\-Noeud} (const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&nom\-Parent, const \hyperlink{glew_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\-::string} \&type\-Nouveau\-Noeud)
+\item 
+virtual \hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{group__inf2990_ga0155db63d70675bcec04034112447dab}{afficher} () const 
+\begin{DoxyCompactList}\small\item\em Affiche le noeud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_free_image_8h_a425076c7067a1b5166e2cc530e914814}{unsigned} \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{group__inf2990_gacf0e53d52040b07cd6550fda79867bd5}{calculer\-Profondeur\-Maximale} ()
+\begin{DoxyCompactList}\small\item\em Calcule la profondeur maximale possible pour l'arbre de rendu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe d'arbre de rendu qui contient la racine de l'arbre de rendu avec les usines qui permettent d'ajouter des noeuds a cet arbre. 
+
+La profondeur de cet arbre est limitee par la taille de la pile des matrices et la taille de la pile des noms pour la selection Open\-G\-L, etant donne que chaque niveau de l'arbre effectue un \char`\"{}push\char`\"{} sur chacune de ces piles lors du rendu. L'arbre ne verifie pas que la profondeur reste sous la limite, mais il offre des fonctions permettant de le verifier aisement.
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/01-\/28 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\hyperlink{_arbre_rendu_8h}{Arbre\-Rendu.\-h}\item 
+Cadriciel/\-Sources/\-C++/\-Arbre/\hyperlink{_arbre_rendu_8cpp}{Arbre\-Rendu.\-cpp}\end{DoxyCompactItemize}

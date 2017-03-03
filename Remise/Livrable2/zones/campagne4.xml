@@ -1,0 +1,21 @@
+<?xml version="1,0" ?>
+<Root>
+    <NiveauDiff diff="0" />
+    <FrequenceAsteroide frequenceAsteroide="1.239" />
+    <NbMinDeStation nbMinDeStation="2" />
+    <BonusAcceleration bonusAcceleration="10" />
+    <ConteneurElement>
+        <Element type="7" id="1" posX="-50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="7" id="2" posX="50" posY="0" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="2" id="3" posX="-994.918" posY="-358.007" posZ="0" angle="-32.8766" axeX="0" axeY="0" axeZ="1" tailleX="13.1903" tailleY="1" tailleZ="1" />
+        <Element type="2" id="4" posX="-1076.53" posY="530.059" posZ="-0" angle="-145.158" axeX="0" axeY="0" axeZ="1" tailleX="11.255" tailleY="1" tailleZ="1" />
+        <Element type="5" id="5" posX="-1038.33" posY="83.4191" posZ="-0" angle="701.224" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="5" id="6" posX="944.564" posY="10.4274" posZ="-0" angle="690.824" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="2" id="7" posX="1062.63" posY="462.281" posZ="-0" angle="-40.4056" axeX="0" axeY="0" axeZ="1" tailleX="9.75934" tailleY="1" tailleZ="1" />
+        <Element type="2" id="8" posX="1067.84" posY="-387.551" posZ="-0" angle="-141.638" axeX="0" axeY="0" axeZ="1" tailleX="10.5849" tailleY="1" tailleZ="1" />
+        <Element type="3" id="9" posX="-1590.48" posY="-820.288" posZ="0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="10" />
+        <Element type="3" id="10" posX="1541.86" posY="823.763" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" idFrere="9" />
+        <Element type="0" id="11" posX="59.0353" posY="743.82" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+        <Element type="0" id="12" posX="55.5626" posY="-563.079" posZ="-0" angle="0" axeX="0" axeY="0" axeZ="1" tailleX="1" tailleY="1" tailleZ="1" />
+    </ConteneurElement>
+</Root>
